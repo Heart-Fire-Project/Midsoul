@@ -67,7 +67,7 @@ team modify dead collisionRule never
 team modify dead deathMessageVisibility never
 team modify dead seeFriendlyInvisibles false
 team remove protect
-team add protect "灵魂守护者"
+team add protect "灵魂守卫者"
 team modify protect color red
 team modify protect collisionRule never
 team modify protect deathMessageVisibility never

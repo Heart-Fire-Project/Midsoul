@@ -25,15 +25,15 @@ execute if score $kit_anime temp matches 60 run title @a[team=prepare] subtitle 
 # 身份确认 (80t-90t)
 execute if score $kit_anime temp matches 80 run title @a[team=alive] subtitle {"translate":"ms.title.kit.alive","fallback": "⚕ 灵魂 ⚕","color": "#52E5E7"}
 execute if score $kit_anime temp matches 80 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.5","fallback": "灵魂守","color": "#FFD5D5"}
-execute if score $kit_anime temp matches 82 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.6","fallback": "灵魂守护","color": "#FFAAAA"}
-execute if score $kit_anime temp matches 84 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.7","fallback": "灵魂守护者","color": "#FF8080"}
-execute if score $kit_anime temp matches 86 run title @a[team=protect] subtitle {"translate":"ms.title.kit.protect","fallback": "⚕ 灵魂守护者 ⚕","color": "red"}
+execute if score $kit_anime temp matches 82 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.6","fallback": "灵魂守卫","color": "#FFAAAA"}
+execute if score $kit_anime temp matches 84 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.7","fallback": "灵魂守卫者","color": "#FF8080"}
+execute if score $kit_anime temp matches 86 run title @a[team=protect] subtitle {"translate":"ms.title.kit.protect","fallback": "⚕ 灵魂守卫者 ⚕","color": "red"}
 
 # 身份说明 (120t)
 execute if score $kit_anime temp matches 120 run title @a times 3 70 2
 execute if score $kit_anime temp matches 120 run title @a subtitle ""
 execute if score $kit_anime temp matches 120 run title @a[team=alive] title {"translate":"ms.title.kit.alive","fallback": "⚕ 灵魂 ⚕","color": "#52E5E7"}
-execute if score $kit_anime temp matches 120 run title @a[team=protect] title {"translate":"ms.title.kit.protect","fallback": "⚕ 灵魂守护者 ⚕","color": "red"}
+execute if score $kit_anime temp matches 120 run title @a[team=protect] title {"translate":"ms.title.kit.protect","fallback": "⚕ 灵魂守卫者 ⚕","color": "red"}
 execute if score $kit_anime temp matches 135 run title @a[team=alive] subtitle {"translate":"ms.title.alive.goal","fallback": "收集碎片, 于月下复活自己"}
 execute if score $kit_anime temp matches 135 run title @a[team=protect] subtitle {"translate":"ms.title.protect.goal","fallback": "阻止灵魂, 让他们终困于此"}
 
@@ -42,11 +42,11 @@ execute if score $kit_anime temp matches 140 run function game:state/1/give_tale
 
 # 音效
 execute if score $kit_anime temp matches 1 run playsound block.beacon.activate ambient @a[team=!admin] 0 1000000 0 1000000
-execute if score $kit_anime temp matches 40 run playsound block.stone_button.click_on ambient @a[team=prepare] 0 1000000 0 1000000
-execute if score $kit_anime temp matches 60 run playsound block.stone_button.click_on ambient @a[team=prepare] 0 1000000 0 1000000
+execute if score $kit_anime temp matches 40 run playsound block.dispenser.dispense ambient @a[team=prepare] 0 1000000 0 1000000
+execute if score $kit_anime temp matches 60 run playsound block.dispenser.dispense ambient @a[team=prepare] 0 1000000 0 1000000
 
 execute if score $kit_anime temp matches 80 run playsound ambient.basalt_deltas.mood ambient @a[team=alive] 0 1000000 0 1000000
-execute if score $kit_anime temp matches 80 run playsound block.stone_button.click_on ambient @a[team=protect] 0 1000000 0 1000000
-execute if score $kit_anime temp matches 82 run playsound block.stone_button.click_on ambient @a[team=protect] 0 1000000 0 1000000
-execute if score $kit_anime temp matches 84 run playsound block.stone_button.click_on ambient @a[team=protect] 0 1000000 0 1000000
+execute if score $kit_anime temp matches 80 run playsound block.dispenser.dispense ambient @a[team=protect] 0 1000000 0 1000000
+execute if score $kit_anime temp matches 82 run playsound block.dispenser.dispense ambient @a[team=protect] 0 1000000 0 1000000
+execute if score $kit_anime temp matches 84 run playsound block.dispenser.dispense ambient @a[team=protect] 0 1000000 0 1000000
 execute if score $kit_anime temp matches 86 run playsound block.end_portal.spawn ambient @a[team=protect] 0 1000000 0 1000000
