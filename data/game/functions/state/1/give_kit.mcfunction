@@ -9,31 +9,33 @@ execute if score $kit_anime temp matches 80 run team join alive @a[scores={playe
 execute if score $kit_anime temp matches 80 run team join protect @a[scores={player_id=1}]
 
 # 主标题显示 (1t)
-execute if score $kit_anime temp matches 1 run title @a[team=!admin] title {"text": "午夜 🔯 灵魂","color": "#BC78EC"}
+execute if score $kit_anime temp matches 1 run title @a[team=!admin] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color": "#BC78EC"}
 
 # 身份主标题 (23t)
 execute if score $kit_anime temp matches 22 run title @a times 3 90 2
 execute if score $kit_anime temp matches 22 run title @a subtitle ""
-execute if score $kit_anime temp matches 23 run title @a[team=prepare] title "你的身份是"
+execute if score $kit_anime temp matches 23 run title @a[team=prepare] title {"translate":"ms.title.kit","fallback":"你的身份是"}
 
 # 身份副标题 (40t / 60t)
-execute if score $kit_anime temp matches 40 run title @a[team=prepare] subtitle "灵"
-execute if score $kit_anime temp matches 60 run title @a[team=prepare] subtitle "灵魂"
+execute if score $kit_anime temp matches 40 run title @a[team=prepare] subtitle {"translate":"ms.title.kit.anime.1","fallback":"灵"}
+execute if score $kit_anime temp matches 45 run title @a[team=prepare] subtitle {"translate":"ms.title.kit.anime.2","fallback":"灵"}
+execute if score $kit_anime temp matches 50 run title @a[team=prepare] subtitle {"translate":"ms.title.kit.anime.3","fallback":"灵魂"}
+execute if score $kit_anime temp matches 60 run title @a[team=prepare] subtitle {"translate":"ms.title.kit.anime.4","fallback":"灵魂"}
 
 # 身份确认 (80t-90t)
-execute if score $kit_anime temp matches 80 run title @a[team=alive] subtitle {"text": "⚕ 灵魂 ⚕","color": "#52E5E7"}
-execute if score $kit_anime temp matches 80 run title @a[team=protect] subtitle {"text": "灵魂守","color": "#FFD5D5"}
-execute if score $kit_anime temp matches 82 run title @a[team=protect] subtitle {"text": "灵魂守护","color": "#FFAAAA"}
-execute if score $kit_anime temp matches 84 run title @a[team=protect] subtitle {"text": "灵魂守护者","color": "#FF8080"}
-execute if score $kit_anime temp matches 86 run title @a[team=protect] subtitle {"text": "⚕ 灵魂守护者 ⚕","color": "red"}
+execute if score $kit_anime temp matches 80 run title @a[team=alive] subtitle {"translate":"ms.title.kit.alive","fallback": "⚕ 灵魂 ⚕","color": "#52E5E7"}
+execute if score $kit_anime temp matches 80 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.5","fallback": "灵魂守","color": "#FFD5D5"}
+execute if score $kit_anime temp matches 82 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.6","fallback": "灵魂守护","color": "#FFAAAA"}
+execute if score $kit_anime temp matches 84 run title @a[team=protect] subtitle {"translate":"ms.title.kit.anime.7","fallback": "灵魂守护者","color": "#FF8080"}
+execute if score $kit_anime temp matches 86 run title @a[team=protect] subtitle {"translate":"ms.title.kit.protect","fallback": "⚕ 灵魂守护者 ⚕","color": "red"}
 
 # 身份说明 (120t)
 execute if score $kit_anime temp matches 120 run title @a times 3 70 2
 execute if score $kit_anime temp matches 120 run title @a subtitle ""
-execute if score $kit_anime temp matches 120 run title @a[team=alive] title {"text": "⚕ 灵魂 ⚕","color": "#52E5E7"}
-execute if score $kit_anime temp matches 120 run title @a[team=protect] title {"text": "⚕ 灵魂守护者 ⚕","color": "red"}
-execute if score $kit_anime temp matches 135 run title @a[team=alive] subtitle "收集碎片, 于月下复活自己"
-execute if score $kit_anime temp matches 135 run title @a[team=protect] subtitle "阻止灵魂, 让他们终困于此"
+execute if score $kit_anime temp matches 120 run title @a[team=alive] title {"translate":"ms.title.kit.alive","fallback": "⚕ 灵魂 ⚕","color": "#52E5E7"}
+execute if score $kit_anime temp matches 120 run title @a[team=protect] title {"translate":"ms.title.kit.protect","fallback": "⚕ 灵魂守护者 ⚕","color": "red"}
+execute if score $kit_anime temp matches 135 run title @a[team=alive] subtitle {"translate":"ms.title.alive.goal","fallback": "收集碎片, 于月下复活自己"}
+execute if score $kit_anime temp matches 135 run title @a[team=protect] subtitle {"translate":"ms.title.protect.goal","fallback": "阻止灵魂, 让他们终困于此"}
 
 # 进行技能与天赋的发放 (140t)
 execute if score $kit_anime temp matches 140 run function game:state/1/give_talent

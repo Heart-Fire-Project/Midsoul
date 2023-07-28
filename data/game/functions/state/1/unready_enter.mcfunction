@@ -1,5 +1,5 @@
 # 未准备玩家
-tellraw @s ["\n",{"selector":"@s"},{"text": " » ","color": "gray","bold": true}, {"text": "旁观游戏\n","color": "gray"}]
+tellraw @s ["\n",{"selector":"@s"},{"text": " » ","color": "gray","bold": true}, {"translate":"ms.join.spec","fallback":"旁观游戏","color": "gray"},"\n"]
 
 # 赋予状态
 effect clear @s

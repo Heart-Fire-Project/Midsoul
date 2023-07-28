@@ -132,4 +132,4 @@ scoreboard players set $gamelock data 0
 scoreboard players set $initcheck data 51121
 scoreboard players set $shard_goal data 16
 
-tellraw @a ["\n",{"selector":"@s"},{"text": " » ","color": "light_purple","bold": true}, {"text": "游戏已被重置!\n","color": "light_purple"}]
+tellraw @a ["\n",{"selector":"@s"},{"text": " » ","color": "light_purple","bold": true}, {"translate":"ms.init","fallback": "游戏已被重置!","color": "light_purple"},"\n"]

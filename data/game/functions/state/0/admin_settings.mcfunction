@@ -1,16 +1,9 @@
-# 神の力量 (没做完)
-tellraw @s [{"text": "\n » ","color": "light_purple","bold": true},{"text": "设置面板","color": "light_purple"}]
-tellraw @s "没做完, 有的这几项都是例子"
+# 设置面板
+tellraw @s [{"text": "\n » ","color": "light_purple","bold": true},{"translate":"ms.setting","fallback": "设置面板","color": "light_purple"}]
 
-# 游戏锁定
-execute if score $gamelock data matches 1 run tellraw @s [{"text":"[游戏锁定]","color":"light_purple","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/gamelock_off"},"hoverEvent":{"action":"show_text","value":"阻止游戏开始"}}]
-execute if score $gamelock data matches 0 run tellraw @s [{"text":"[游戏锁定]","color":"gray","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/gamelock_on"},"hoverEvent":{"action":"show_text","value":"阻止游戏开始"}}]
+# 游戏锁定, 重置游戏, 退出管理
+execute if score $gamelock data matches 1 run tellraw @s [{"translate":"ms.setting.gamelock","fallback":"[锁定游戏]","color":"light_purple","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/gamelock_off"},"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.setting.gamelock.hover","fallback":"阻止游戏开始"}]}}," ",{"translate":"ms.setting.init","fallback":"[重置游戏]","color":"red","clickEvent":{"action":"run_command","value":"/function game:init"},"hoverEvent":{"action":"show_text","value":" "}}," ",{"translate":"ms.setting.leave","fallback":"[退出设置]","color":"yellow","clickEvent":{"action":"run_command","value":"/function game:state/0/admin_leaving"},"hoverEvent":{"action":"show_text","value":" "}}]
+execute if score $gamelock data matches 0 run tellraw @s [{"translate":"ms.setting.gamelock","fallback":"[锁定游戏]","color":"gray","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/gamelock_on"},"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.setting.gamelock.hover","fallback":"阻止游戏开始"}]}}," ",{"translate":"ms.setting.init","fallback":"[重置游戏]","color":"red","clickEvent":{"action":"run_command","value":"/function game:init"},"hoverEvent":{"action":"show_text","value":" "}}," ",{"translate":"ms.setting.leave","fallback":"[退出设置]","color":"yellow","clickEvent":{"action":"run_command","value":"/function game:state/0/admin_leaving"},"hoverEvent":{"action":"show_text","value":" "}}]
 
 # 碎片需求量
-tellraw @s [{"text":"[-]","color":"red","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/goal_minus"}},{"text": "  需要收集 ","color":"white"},{"score":{"objective":"data","name":"$shard_goal"},"color": "aqua"},{"text": "x 碎片  ","color":"white"},{"text":"[+]","color":"green","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/goal_plus"}}]
-
-# 重置游戏
-tellraw @s {"text":"[重置游戏]","color":"white","clickEvent":{"action":"run_command","value":"/function game:init"}}
-
-# 润出管理
-tellraw @s {"text":"[退出管理]","color":"yellow","clickEvent":{"action":"run_command","value":"/function game:state/0/admin_leaving"}}
+tellraw @s [{"text":"[-]","color":"red","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/goal_minus"}},"  ",{"translate":"ms.setting.goal","fallback":"需要收集 %s 碎片","color":"white","with":[{"score":{"objective":"data","name":"$shard_goal"},"color": "aqua"}]},"  ",{"text":"[+]","color":"green","clickEvent":{"action":"run_command","value":"/function game:state/0/settings/goal_plus"}}]
