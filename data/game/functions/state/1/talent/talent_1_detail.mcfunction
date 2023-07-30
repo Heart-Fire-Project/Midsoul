@@ -5,5 +5,5 @@ tellraw @a[team=alive,scores={talent_1=3}] {"translate":"ms.talent.003desc","fal
 
 # 守卫者方
 tellraw @a[team=protect,scores={talent_1=1}] {"translate":"ms.talent.101desc","fallback":" 灵魂玩家不再显示红色警戒条"}
-tellraw @a[team=protect,scores={talent_1=2}] {"translate":"ms.talent.102desc","fallback":" 有灵魂解除了垂死状态时, 即刻高亮并小幅降低全体灵魂速度"}
+tellraw @a[team=protect,scores={talent_1=2}] {"translate":"ms.talent.102desc","fallback":" 每当灵魂解除垂死状态时, 即刻高亮并小幅降低全体灵魂速度"}
 tellraw @a[team=protect,scores={talent_1=3}] {"translate":"ms.talent.103desc","fallback":" 小幅度减少自身擦刀时间"}
