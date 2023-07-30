@@ -10,3 +10,6 @@ gamemode spectator @s
 
 # 传送玩家
 tp @s 0 253 0
+
+# 加一个tag
+tag @s add game_player
