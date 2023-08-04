@@ -1,5 +1,5 @@
 # 已准备玩家
-tellraw @s ["\n",{"selector":"@s"},{"text": " » ","color": "aqua","bold": true}, {"translate":"ms.join.play","fallback":"参与游戏","color": "aqua"},"\n"]
+tellraw @s ["\n",{"selector":"@s"},{"text": " » ","color": "aqua","bold": true},{"translate":"ms.join.play","fallback":"参与游戏","color": "aqua"},"\n"]
 
 # 赋予状态
 effect clear @s

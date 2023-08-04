@@ -20,7 +20,7 @@ gamerule doTileDrops false
 gamerule doMobLoot false
 gamerule doTraderSpawning false
 gamerule drowningDamage false
-gamerule doLimitedCrafting true
+gamerule sendCommandFeedback false
 gamerule announceAdvancements true
 gamerule fallDamage false
 
@@ -129,7 +129,12 @@ function game:state/0/enter
 
 # 重置默认设置
 scoreboard players set $gamelock data 0
+scoreboard players set $map_random data 0
+scoreboard players set $map_select data 1
+scoreboard players set $cd_speed data 10
+scoreboard players set $collect_speed data 10
 scoreboard players set $initcheck data 51121
-scoreboard players set $shard_goal data 16
+scoreboard players set $10 data 10
+scoreboard players set $show_mark data 0
 
-tellraw @a ["\n",{"selector":"@s"},{"text": " » ","color": "light_purple","bold": true}, {"translate":"ms.init","fallback": "游戏已被重置!","color": "light_purple"},"\n"]
+tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.init","fallback": " 重置了游戏","color": "#BC78EC"},"\n"]

@@ -1,7 +1,8 @@
-# game 是贯穿真整个游戏的, warn 用于红色警戒条
-bossbar remove midsoul:game
+bossbar remove midsoul:info
+bossbar remove midsoul:heed
 bossbar remove midsoul:warn
-bossbar add midsoul:game "午夜灵魂"
-bossbar add midsoul:warn "你离死不远了"
+bossbar add midsoul:info "主信息显示"
+bossbar add midsoul:heed "离死不远了"
+bossbar add midsoul:warn "马上就寄了"
+bossbar set midsoul:heed color yellow
 bossbar set midsoul:warn color red
-bossbar set midsoul:warn visible false
