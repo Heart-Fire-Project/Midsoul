@@ -1,6 +1,6 @@
 # 随机一个技能, 天赋相同再刷一次就完事了
 scoreboard players set $random_min data 1
-scoreboard players set $random_max data 2
+scoreboard players set $random_max data 3
 function base:random
 execute store result score @s skill run scoreboard players get $random data
 

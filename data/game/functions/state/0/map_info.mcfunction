@@ -10,6 +10,6 @@ execute if score $map_select data matches 1 run tellraw @s [" ◈ ",{"translate"
 execute if score $map_select data matches 2 run tellraw @s [" ◈ ",{"translate":"ms.map.complex","fallback":"复杂程度"},{"text":" | »»»»","color": "gold"},{"text": "»","color": "white"}]
 execute if score $map_select data matches 3 run tellraw @s [" ◈ ",{"translate":"ms.map.complex","fallback":"复杂程度"},{"text":" | »»»»»","color": "red"},{"text": "","color": "white"}]
 
-execute if score $map_select data matches 1 run tellraw @s [" ◈ ",{"translate":"ms.map.author","fallback":"作者信息"}," | WHLDTITAN"]
-execute if score $map_select data matches 2 run tellraw @s [" ◈ ",{"translate":"ms.map.author","fallback":"作者信息"}," | Kapanas & oozner"]
-execute if score $map_select data matches 3 run tellraw @s [" ◈ ",{"translate":"ms.map.author","fallback":"作者信息"}," | ZachOBuilds"]
+execute if score $map_select data matches 1 run tellraw @s [" ◈ ",{"translate":"ms.map.author","fallback":"作者鸣谢"}," | WHLDTITAN"]
+execute if score $map_select data matches 2 run tellraw @s [" ◈ ",{"translate":"ms.map.author","fallback":"作者鸣谢"}," | Kapanas & oozner"]
+execute if score $map_select data matches 3 run tellraw @s [" ◈ ",{"translate":"ms.map.author","fallback":"作者鸣谢"}," | ZachOBuilds"]
