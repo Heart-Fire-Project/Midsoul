@@ -7,14 +7,14 @@ tag @e remove enter_chosen
 
 # 赋予状态
 effect clear @s
-effect give @s darkness 13 6 true
-effect give @s slowness 13 9 true
-effect give @s levitation 13 199 true
-effect give @s glowing 13 6 true
-effect give @s bad_omen 13 6
+effect give @s darkness 14 6 true
+effect give @s slowness 14 9 true
+effect give @s levitation 14 199 true
+effect give @s glowing 14 6 true
+effect give @s bad_omen 14 6
 
 # 改变模式
 gamemode adventure @s
 
 # 教学
-tellraw @s[tag=!protect_played] [{"text": " » ","bold": true,"color": "red"},{"translate":"ms.tutorial.protect.enter","fallback": "在正式开始之前, 不妨再看看技能描述?","bold": false}]
+tellraw @s[tag=!protect_tr] [{"text": " » ","bold": true,"color": "red"},{"translate":"ms.tutorial.protect.enter","fallback": "在正式开始之前, 不妨再看看技能描述?","bold": false}]

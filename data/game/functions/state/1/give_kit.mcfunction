@@ -49,4 +49,4 @@ execute if score $kit_anime temp matches 80 run playsound ambient.basalt_deltas.
 execute if score $kit_anime temp matches 80 run playsound block.dispenser.dispense ambient @a[team=protect] 0 1000000 0 1000000
 execute if score $kit_anime temp matches 82 run playsound block.dispenser.dispense ambient @a[team=protect] 0 1000000 0 1000000
 execute if score $kit_anime temp matches 84 run playsound block.dispenser.dispense ambient @a[team=protect] 0 1000000 0 1000000
-execute if score $kit_anime temp matches 86 run playsound block.end_portal.spawn ambient @a[team=protect] 0 1000000 0 1000000
+execute if score $kit_anime temp matches 86 run playsound block.respawn_anchor.set_spawn ambient @a[team=protect] 0 1000000 0 1000000

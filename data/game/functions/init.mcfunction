@@ -11,7 +11,7 @@ gamerule doFireTick false
 gamerule doMobSpawning false
 gamerule keepInventory true
 gamerule doWeatherCycle false
-gamerule reducedDebugInfo true
+gamerule naturalRegeneration false
 gamerule doImmediateRespawn true
 gamerule mobGriefing false
 gamerule randomTickSpeed 0
@@ -45,11 +45,12 @@ scoreboard objectives remove countdown
 scoreboard objectives add countdown dummy "个人计时"
 scoreboard objectives remove health
 scoreboard objectives add health health "生命值"
-scoreboard objectives modify health rendertype hearts
 scoreboard objectives remove data
 scoreboard objectives add data dummy "游戏数据"
 scoreboard objectives remove leave_game
 scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
+scoreboard objectives remove sneak_time
+scoreboard objectives add sneak_time minecraft.custom:sneak_time "蹲下时间"
 scoreboard objectives remove player_id
 scoreboard objectives add player_id dummy "玩家编号"
 
@@ -134,7 +135,14 @@ scoreboard players set $map_select data 1
 scoreboard players set $cd_speed data 10
 scoreboard players set $collect_speed data 10
 scoreboard players set $initcheck data 51121
-scoreboard players set $10 data 10
 scoreboard players set $show_mark data 0
+
+# 常数项
+scoreboard players set $4 data 4
+scoreboard players set $10 data 10
+scoreboard players set $16 data 16
+scoreboard players set $61 data 61
+scoreboard players set $182 data 182
+scoreboard players set $1000 data 1000
 
 tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.init","fallback": " 重置了游戏","color": "#BC78EC"},"\n"]
