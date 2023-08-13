@@ -141,8 +141,13 @@ scoreboard players set $show_mark data 0
 scoreboard players set $4 data 4
 scoreboard players set $10 data 10
 scoreboard players set $16 data 16
+scoreboard players set $30 data 30
 scoreboard players set $61 data 61
+scoreboard players set $64 data 64
 scoreboard players set $182 data 182
+scoreboard players set $200 data 200
+scoreboard players set $600 data 600
 scoreboard players set $1000 data 1000
+scoreboard players set $2000 data 2000
 
 tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.init","fallback": " 重置了游戏","color": "#BC78EC"},"\n"]

@@ -1,0 +1,7 @@
+# 根据物品给技能
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:phantom_membrane"}]}] as @s at @s run function game:state/3/skill/active/skill_001_a
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:soul_lantern"}]}] as @s at @s run function game:state/3/skill/active/skill_002_a
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:recovery_compass"}]}] as @s at @s run function game:state/3/skill/active/skill_003
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:spectral_arrow"}]}] as @s at @s run function game:state/3/skill/active/skill_101
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:echo_shard"}]}] as @s at @s run function game:state/3/skill/active/skill_102_a
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] as @s at @s run function game:state/3/skill/active/skill_103_a

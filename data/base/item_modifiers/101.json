@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.skill.101item\",\"fallback\": \"虔诚力场\",\"italic\": false,\"color\":\"red\"}',Lore:['{\"translate\":\"ms.skill.101desc\",\"fallback\": \" 即刻高亮全部灵魂, 其中距离你最近的灵魂效果时长翻倍\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

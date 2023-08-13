@@ -1,0 +1,1 @@
+execute as @e[tag=blue] run data modify entity @s Glowing set value 0b

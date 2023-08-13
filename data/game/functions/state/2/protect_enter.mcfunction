@@ -17,4 +17,4 @@ effect give @s bad_omen 14 6
 gamemode adventure @s
 
 # 教学
-tellraw @s[tag=!protect_tr] [{"text": " » ","bold": true,"color": "red"},{"translate":"ms.tutorial.protect.enter","fallback": "在正式开始之前, 不妨再看看技能描述?","bold": false}]
+execute if entity @s[tag=!protect_tr] run function base:totorial/enter_game

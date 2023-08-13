@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.skill.103item\",\"fallback\": \"唤灵留迹\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.103desc\",\"fallback\": \" 标记最近的灵魂, 在其移动时将会有轨迹出现\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

@@ -7,5 +7,5 @@ tellraw @a[team=alive,scores={talent_2=4}] {"translate":"ms.talent.004","fallbac
 # 守卫者方
 tellraw @a[team=protect,scores={talent_2=1}] {"translate":"ms.talent.101","fallback":" [天赋] 抱火寝薪 | ⏳ -s  ▶ -s","color": "gold"}
 tellraw @a[team=protect,scores={talent_2=2}] {"translate":"ms.talent.102","fallback":" [天赋] 火冒三丈 | ⏳ 60s  ▶ 3s","color": "gold"}
-tellraw @a[team=protect,scores={talent_2=3}] {"translate":"ms.talent.103","fallback":" [天赋] 灵力掌控 | ⏳ -s  ▶ -s","color": "gold"}
+tellraw @a[team=protect,scores={talent_2=3}] {"translate":"ms.talent.103","fallback":" [天赋] 祛灵十字 | ⏳ -s  ▶ -s","color": "gold"}
 tellraw @a[team=protect,scores={talent_2=4}] {"translate":"ms.talent.104","fallback":" [天赋] 隐于迷雾 | ⏳ 60s  ▶ 5s","color": "gold"}

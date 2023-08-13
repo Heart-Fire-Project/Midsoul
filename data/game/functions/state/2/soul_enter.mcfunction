@@ -12,4 +12,4 @@ effect give @s speed 13 2 false
 gamemode adventure @s
 
 # 教学
-tellraw @s[tag=!soul_tr] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.soul.enter","fallback": "现在你可以观察地图, 并且远离发着红光的地方……","bold": false}]
+execute if entity @s[tag=!soul_tr] run function base:totorial/enter_game

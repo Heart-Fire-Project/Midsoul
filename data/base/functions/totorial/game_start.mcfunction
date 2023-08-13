@@ -1,0 +1,2 @@
+tellraw @s[team=alive,tag=!soul_tr] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.soul.start","fallback": "找到散落在地上的灵魂碎片, 蹲下来收集它们……小心别被逮到了!","bold": false}]
+tellraw @s[team=protect,tag=!protect_tr] [{"text": " » ","bold": true,"color": "red"},{"translate":"ms.tutorial.protect.start","fallback": "你跑的比灵魂要快一点, 借用这个优势灭掉他们!","bold": false}]

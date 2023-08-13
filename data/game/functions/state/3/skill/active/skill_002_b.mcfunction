@@ -1,0 +1,3 @@
+execute if entity @a[tag=skill_002_active] unless entity @a[team=alive,scores={state=1}] run function game:state/3/skill/active/skill_002_c
+execute if entity @a[tag=skill_002_active] if entity @a[team=alive,scores={state=1}] run kill @e[tag=gold,limit=1,sort=random]
+execute if entity @a[tag=skill_002_active] if entity @a[team=alive,scores={state=1}] as @r[team=alive,scores={state=1}] at @s run function game:state/3/soul_heal

@@ -1,12 +1,4 @@
-# 统一设置样式
-bossbar set midsoul:info style progress
-bossbar set midsoul:heed style progress
-bossbar set midsoul:warn style progress
-
 # 设置数值
-execute store result bossbar midsoul:info max run scoreboard players get $shard_goal temp
-execute store result bossbar midsoul:heed max run scoreboard players get $shard_goal temp
-execute store result bossbar midsoul:warn max run scoreboard players get $shard_goal temp
 execute store result bossbar midsoul:info value run scoreboard players get $shard_collected temp
 execute store result bossbar midsoul:heed value run scoreboard players get $shard_collected temp
 execute store result bossbar midsoul:warn value run scoreboard players get $shard_collected temp
@@ -20,16 +12,17 @@ bossbar set midsoul:warn name [{"translate":"ms.bossbar.3.warn","fallback": "�
 execute as @a[team=alive] at @s unless entity @a[team=protect,distance=0..24] run tag @s add bossbar_info
 execute as @a[team=alive] at @s if entity @a[team=protect,distance=9..24] run tag @s add bossbar_heed
 execute as @a[team=alive] at @s if entity @a[team=protect,distance=0..9] run tag @s add bossbar_warn
-execute as @a[team=protect] at @s unless entity @a[team=alive,distance=0..24] run tag @s add bossbar_info
-execute as @a[team=protect] at @s if entity @a[team=alive,distance=0..24] run tag @s add bossbar_heed
+execute as @a[team=protect] at @s unless entity @a[team=alive,distance=0..24,scores={state=0}] run tag @s add bossbar_info
+execute as @a[team=protect] at @s if entity @a[team=alive,distance=0..24,scores={state=0}] run tag @s add bossbar_heed
 tag @a[team=unready] add bossbar_info
 
 # 教程
-tellraw @a[team=alive,tag=!bossbar_tr,tag=bossbar_heed] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.bossbar","fallback": "通过最上方的气流判断可以注意到敌方的存在, 且灵魂对之更加敏感!","bold": false}]
-tellraw @a[team=protect,tag=!bossbar_tr,tag=bossbar_heed] [{"text": " » ","bold": true,"color": "red"},{"translate":"ms.tutorial.bossbar","fallback": "通过最上方的气流判断可以注意到敌方的存在, 且灵魂对之更加敏感!","bold": false}]
-tag @a[tag=!bossbar_tr,tag=bossbar_heed] add bossbar_tr
+execute as @a[tag=!bossbar_tr,tag=bossbar_heed] run function base:totorial/bossbar
 
 # 天赋影响
+execute as @a[team=protect,tag=talent_104_active] at @s if entity @a[team=alive,distance=0..8,scores={state=0}] run effect clear @s invisibility
+execute as @a[team=alive,tag=bossbar_warn,scores={talent_1=2,talent_1_cd=..0,state=0}] at @s run function game:state/3/skill/active/talent_002
+execute as @a[team=alive,tag=bossbar_warn,scores={talent_2=2,talent_2_cd=..0,state=0}] at @s run function game:state/3/skill/active/talent_002
 execute if entity @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn] add bossbar_heed
 execute if entity @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn] remove bossbar_warn
 execute if entity @a[team=protect,scores={talent_2=1}] run tag @a[tag=bossbar_warn] add bossbar_heed

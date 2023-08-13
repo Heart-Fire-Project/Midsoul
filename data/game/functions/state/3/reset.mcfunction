@@ -2,29 +2,49 @@ scoreboard players set $shard_collected temp 0
 scoreboard players set $shard_goal temp 0
 execute as @e[tag=marker_blue] run scoreboard players add $shard_goal temp 1
 
+# Bossbar 设置
+bossbar set midsoul:info style progress
+bossbar set midsoul:heed style progress
+bossbar set midsoul:warn style progress
+execute store result bossbar midsoul:info max run scoreboard players get $shard_goal temp
+execute store result bossbar midsoul:heed max run scoreboard players get $shard_goal temp
+execute store result bossbar midsoul:warn max run scoreboard players get $shard_goal temp
+
 # 重置计分板
+scoreboard players reset $soul_rank temp
 scoreboard players reset @a countdown
 scoreboard players reset @a sneak_time
 scoreboard players set @a state 0
 
 # 天赋或技能CD
-# 分数为 时间*10
+# 分数为 时间*200
 scoreboard players reset * skill_cd
 scoreboard players reset * talent_1_cd
 scoreboard players reset * talent_2_cd
-scoreboard players set @a[team=alive,scores={skill=1}] skill_cd 900
-scoreboard players set @a[team=alive,scores={skill=2}] skill_cd 1000
-scoreboard players set @a[team=alive,scores={skill=3}] skill_cd 700
-scoreboard players set @a[team=protect,scores={skill=1}] skill_cd 700
-scoreboard players set @a[team=protect,scores={skill=2}] skill_cd 700
-scoreboard players set @a[team=protect,scores={skill=3}] skill_cd 800
-scoreboard players set @a[team=alive,scores={talent_1=2}] talent_1_cd 600
-scoreboard players set @a[team=protect,scores={talent_1=2}] talent_1_cd 600
-scoreboard players set @a[team=protect,scores={talent_1=4}] talent_1_cd 600
-scoreboard players set @a[team=alive,scores={talent_2=2}] talent_2_cd 600
-scoreboard players set @a[team=protect,scores={talent_2=2}] talent_2_cd 600
-scoreboard players set @a[team=protect,scores={talent_2=4}] talent_2_cd 600
+scoreboard players set @a[team=alive,scores={skill=1}] skill_cd 18000
+scoreboard players set @a[team=alive,scores={skill=2}] skill_cd 24000
+scoreboard players set @a[team=alive,scores={skill=3}] skill_cd 14000
+scoreboard players set @a[team=protect,scores={skill=1}] skill_cd 14000
+scoreboard players set @a[team=protect,scores={skill=2}] skill_cd 20000
+scoreboard players set @a[team=protect,scores={skill=3}] skill_cd 16000
+scoreboard players set @a[team=alive,scores={talent_1=2}] talent_1_cd 12000
+scoreboard players set @a[team=protect,scores={talent_1=2}] talent_1_cd 12000
+scoreboard players set @a[team=protect,scores={talent_1=4}] talent_1_cd 12000
+scoreboard players set @a[team=alive,scores={talent_2=2}] talent_2_cd 12000
+scoreboard players set @a[team=protect,scores={talent_2=2}] talent_2_cd 12000
+scoreboard players set @a[team=protect,scores={talent_2=4}] talent_2_cd 12000
+
+# 天赋或技能标签
+tag @a remove just_healed
+tag @a remove heal_damage
+tag @a remove skill_001_active
+tag @a remove skill_002_active
+tag @a remove skill_102_active
+tag @a remove skill_102_double
+tag @a remove skill_103_active
+tag @a remove talent_001_active
+tag @a remove talent_004_active
+tag @a remove talent_104_active
 
 # 教程
-tellraw @a[team=alive,tag=!soul_tr] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.soul.start","fallback": "找到散落在地上的灵魂碎片, 蹲下来收集它们……小心别被逮到了!","bold": false}]
-tellraw @a[team=protect,tag=!protect_tr] [{"text": " » ","bold": true,"color": "red"},{"translate":"ms.tutorial.protect.start","fallback": "你跑的比灵魂要快一点, 借用这个优势灭掉他们!","bold": false}]
+execute as @a run function base:totorial/game_start
