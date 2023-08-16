@@ -139,9 +139,12 @@ scoreboard players set $show_mark data 0
 
 # 常数项
 scoreboard players set $4 data 4
+scoreboard players set $5 data 5
 scoreboard players set $10 data 10
 scoreboard players set $16 data 16
+scoreboard players set $20 data 20
 scoreboard players set $30 data 30
+scoreboard players set $60 data 60
 scoreboard players set $61 data 61
 scoreboard players set $64 data 64
 scoreboard players set $182 data 182
@@ -151,3 +154,7 @@ scoreboard players set $1000 data 1000
 scoreboard players set $2000 data 2000
 
 tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.init","fallback": " 重置了游戏","color": "#BC78EC"},"\n"]
+
+# 其他信息
+# Datapack by Roser
+# Copyright © 2023 Heart-Fire Project. Some rights reserved.

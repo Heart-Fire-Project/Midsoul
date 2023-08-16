@@ -1,5 +1,7 @@
+# 添加基础tag
 tag @s add collecting
 tag @s add healing
+
 # 根据情况判断收集类型
 execute unless score @s sneak_time matches 1.. run tag @s remove collecting
 execute unless score @s sneak_time matches 1.. run tag @s remove healing
@@ -22,12 +24,15 @@ execute if entity @s[tag=collect_finish] at @s as @e[distance=..1,tag=blue] run 
 execute if entity @s[tag=collect_finish] at @s as @e[distance=..1,tag=blue] run kill @s
 execute if entity @s[tag=collect_finish] run function game:state/3/map_variable
 execute if entity @s[tag=collect_finish] run function game:state/3/map_stage
+
 # 若本次完成救治
 execute if entity @s[tag=healing,scores={countdown=2001..}] run tag @s add heal_finish
-execute if entity @s[tag=heal_finish] as @r[team=alive,scores={state=1}] at @s run function game:state/3/soul_heal
+execute if score $state data matches 3 if entity @s[tag=heal_finish] as @r[team=alive,scores={state=1}] at @s run function game:state/3/soul_heal
+execute if score $state data matches 4 if entity @s[tag=heal_finish] as @r[team=alive,scores={state=1}] at @s run function game:state/4/soul_heal
 execute if entity @s[tag=heal_finish] at @s at @e[distance=..1,tag=gold] run particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a
 execute if entity @s[tag=heal_finish] at @s as @e[distance=..1,tag=gold] run playsound item.trident.return ambient @a ~ ~ ~
 execute if entity @s[tag=heal_finish] at @s as @e[distance=..1,tag=gold] run kill @s
+
 # 天赋影响
 execute if entity @s[tag=collect_finish,scores={talent_1=1}] run tag @s add talent_001_active
 execute if entity @s[tag=collect_finish,scores={talent_2=1}] run tag @s add talent_001_active
