@@ -12,5 +12,5 @@ execute if score $real_start countdown matches 1..5 run playsound minecraft:bloc
 execute store result bossbar midsoul:info value run scoreboard players get $real_start countdown
 bossbar set midsoul:info name {"translate":"ms.bossbar.2.wait","fallback":"即将 » %s « 开始","with":[{"score":{"objective":"countdown","name":"$real_start"}}],"color": "aqua"} 
 
-execute unless score $real_start countdown matches 0..13 run function game:state/3/enter
+execute if score $real_start countdown matches -1 run function game:state/3/enter
 execute if score $real_start countdown matches ..-1 run scoreboard players reset $real_start countdown

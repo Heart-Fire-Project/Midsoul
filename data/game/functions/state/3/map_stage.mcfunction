@@ -20,9 +20,9 @@ execute if score $map temp matches 3 if score $shard_collected temp matches 36 r
 
 # 处理
 execute if score $soul_rank temp matches 10..30 run playsound minecraft:block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
-execute if score $soul_rank temp matches 10 run tellraw @s [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.1","fallback": "灵气初起 · I · 碎片被收集时邻近的碎片将产生共鸣","bold": false}]
-execute if score $soul_rank temp matches 20 run tellraw @s [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.2","fallback": "灵气渐浓 · II · 灵魂附近的碎片将与之共鸣","bold": false}]
-execute if score $soul_rank temp matches 30 run tellraw @s [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.3","fallback": "灵气全开 · III · 所有剩余碎片开始共鸣","bold": false}]
+execute if score $soul_rank temp matches 10 run tellraw @a[team=!admin] [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.1","fallback": "灵气初起 · I · 碎片被收集时邻近的碎片将产生共鸣","bold": false}]
+execute if score $soul_rank temp matches 20 run tellraw @a[team=!admin] [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.2","fallback": "灵气渐浓 · II · 灵魂附近的碎片将与之共鸣","bold": false}]
+execute if score $soul_rank temp matches 30 run tellraw @a[team=!admin] [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.3","fallback": "灵气全开 · III · 所有剩余碎片开始共鸣","bold": false}]
 execute if score $soul_rank temp matches 30 run execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
 execute if score $soul_rank temp matches 10..30 as @a[team=!admin,tag=!rank_tr] run function base:totorial/soul_rank
 execute if score $soul_rank temp matches 10..30 run scoreboard players operation $soul_rank temp /= $10 data

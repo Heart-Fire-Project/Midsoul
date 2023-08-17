@@ -157,4 +157,4 @@ tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@
 
 # 其他信息
 # Datapack by Roser
-# Copyright © 2023 Heart-Fire Project. Some rights reserved.
+# Copyright © 2023 Heart Fire Project. Some rights reserved.

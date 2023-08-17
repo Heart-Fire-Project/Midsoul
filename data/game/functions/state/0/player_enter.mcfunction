@@ -11,6 +11,7 @@ effect give @s saturation infinite 0 true
 effect give @s instant_health 1 10 true
 effect give @s resistance infinite 4 true
 effect give @s weakness infinite 4 true
+effect give @s regeneration infinite 4 true
 
 # 改变模式
 gamemode adventure @s[team=!admin]
