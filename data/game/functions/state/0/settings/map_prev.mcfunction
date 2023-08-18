@@ -1,6 +1,6 @@
 scoreboard players remove $map_select data 1
 execute if score $map_select data matches 0 run scoreboard players set $map_select data 3
-execute if score $map_select data matches 1 run tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.setting.map_change","fallback":" 切换地图至 ","color": "#BC78EC"},{"translate":"ms.map.1","fallback": "聚光圣殿","color": "light_purple"},"\n"]
-execute if score $map_select data matches 2 run tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.setting.map_change","fallback":" 切换地图至 ","color": "#BC78EC"},{"translate":"ms.map.2","fallback": "镇灵塔楼","color": "light_purple"},"\n"]
-execute if score $map_select data matches 3 run tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.setting.map_change","fallback":" 切换地图至 ","color": "#BC78EC"},{"translate":"ms.map.3","fallback": "山间湖谷","color": "light_purple"},"\n"]
+execute if score $map_select data matches 1 run tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.setting.map_change","fallback":"%s 切换地图至 %s","color": "#BC78EC","with":[{"selector":"@s"},{"translate":"ms.map.1","fallback": "聚光圣殿","color": "light_purple"}]},"\n"]
+execute if score $map_select data matches 2 run tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.setting.map_change","fallback":"%s 切换地图至 %s","color": "#BC78EC","with":[{"selector":"@s"},{"translate":"ms.map.2","fallback": "镇灵塔楼","color": "light_purple"}]},"\n"]
+execute if score $map_select data matches 3 run tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.setting.map_change","fallback":"%s 切换地图至 %s","color": "#BC78EC","with":[{"selector":"@s"},{"translate":"ms.map.3","fallback": "山间湖谷","color": "light_purple"}]},"\n"]
 function game:state/0/admin_settings

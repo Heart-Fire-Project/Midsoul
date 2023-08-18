@@ -35,7 +35,7 @@ item replace entity @s armor.feet with air
 item replace entity @s hotbar.0 with air
 item replace entity @s[team=!protect] hotbar.1 with air
 item replace entity @s[team=protect,scores={state=1}] hotbar.1 with air
-item replace entity @s[team=protect,scores={state=0}] hotbar.1 with golden_sword{display:{Name:'[{"translate":"ms.weapon","fallback": "祛灵刃","italic": false}]',Lore:['{"translate":"ms.weapon.desc","fallback": "斩断一切不净之物","italic": false,"color": "gray"}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:0.1,Name:"attack",Slot:"mainhand",Operation:0,UUID:[I;7,4,1,9]},{AttributeName:"generic.attack_speed",Amount:-3,Name:"attack",Slot:"mainhand",Operation:0,UUID:[I;2,0,2,3]}],HideFlags:63}
+item replace entity @s[team=protect,scores={state=0}] hotbar.1 with golden_sword{display:{Name:'[{"translate":"ms.weapon","fallback": "祛灵刃","italic": false}]',Lore:['{"translate":"ms.weapon.desc","fallback": "斩断一切不净之物","italic": false,"color": "gray"}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:0.1,Name:"attack",Slot:"mainhand",Operation:0,UUID:[I;7,4,1,9]},{AttributeName:"generic.attack_speed",Amount:4,Name:"attack",Slot:"mainhand",Operation:0,UUID:[I;2,0,2,3]}],HideFlags:63}
 item replace entity @s hotbar.2 with air
 item replace entity @s hotbar.3 with air
 item replace entity @s hotbar.4 with air
