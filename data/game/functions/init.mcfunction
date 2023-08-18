@@ -153,7 +153,7 @@ scoreboard players set $600 data 600
 scoreboard players set $1000 data 1000
 scoreboard players set $2000 data 2000
 
-tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.init","fallback": " 重置了游戏","color": "#BC78EC"},"\n"]
+tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"selector":"@s"},{"translate":"ms.info.init","fallback": " 重置了游戏","color": "#BC78EC"},"\n"]
 
 # 其他信息
 # Datapack by Roser

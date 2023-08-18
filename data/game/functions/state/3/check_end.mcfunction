@@ -6,5 +6,5 @@ execute if score $shard_collected temp = $shard_goal temp run function game:stat
 # 若已经死的差不多
 scoreboard players reset $alive temp
 execute as @a[team=alive] run scoreboard players add $alive temp 1
-execute if score $alive temp matches 1 run tellraw @a[team=!admin] [{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.info.immd_open","fallback": "灵力集中于一人身上, 传送门即刻开启!","bold": false}]
+execute if score $alive temp matches 1 run tellraw @a[team=!admin] [{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.info.open","fallback": "灵力集中于一人身上, 传送门即刻开启!","bold": false}]
 execute if score $alive temp matches 1 run function game:state/4/enter

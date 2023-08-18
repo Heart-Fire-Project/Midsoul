@@ -1,4 +1,4 @@
 {
     "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.skill.102item\",\"fallback\": \"灵力掌控\",\"italic\": false,\"color\":\"red\"}',Lore:['{\"translate\":\"ms.skill.102desc\",\"fallback\": \" 技能期间每有一个碎片被收集, 你都会在技能后获取一小段高额伤害与移速加成\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+    "tag": "{display:{Name:'{\"translate\":\"ms.skill.102\",\"fallback\": \"灵力掌控\",\"italic\": false,\"color\":\"red\"}',Lore:['{\"translate\":\"ms.skill.102.desc\",\"fallback\": \"技能期间每有一个碎片被收集, 你都会在技能后获取一小段高额伤害与移速加成\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
 }

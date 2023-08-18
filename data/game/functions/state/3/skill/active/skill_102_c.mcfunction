@@ -9,4 +9,4 @@ execute if score $skill_102 temp matches 5 run particle dust_color_transition 0.
 
 # 其他提示
 playsound block.end_portal_frame.fill player @s ~ ~ ~ 1000000
-title @s actionbar {"translate":"ms.skill.102stack","fallback": "灵力掌控 » 叠加 %s 层","color": "red","with":[{"score":{"objective":"temp","name":"$skill_102"}}]}
+title @s actionbar {"translate":"ms.skill.102.stack","fallback": "灵力掌控 » 叠加 %s 层","color": "red","with":[{"score":{"objective":"temp","name":"$skill_102"}}]}

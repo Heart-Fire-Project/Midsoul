@@ -1,4 +1,4 @@
 {
     "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.skill.002item\",\"fallback\": \"灵灯之筑\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.002desc\",\"fallback\": \" 持续发光且速度大幅降低, 结束后使一个灵魂解除垂死状态, 若无陷入垂死状态的灵魂, 则灵魂守护者持续发光且速度小幅降低\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+    "tag": "{display:{Name:'{\"translate\":\"ms.skill.002\",\"fallback\": \"灵灯之筑\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.002.desc\",\"fallback\": \"持续发光且速度大幅降低, 结束后使一个灵魂解除垂死状态, 若无陷入垂死状态的灵魂, 则灵魂守护者持续发光且速度小幅降低\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
 }

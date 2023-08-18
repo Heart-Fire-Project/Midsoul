@@ -1,4 +1,4 @@
-title @s actionbar {"translate":"ms.talent.104active","fallback": "天赋触发 » 隐于迷雾","color": "red"}
+title @s actionbar [{"translate":"ms.talent.active","fallback":"天赋触发","color": "red"}," » ",{"translate":"ms.talent.104","fallback":"隐于迷雾"}]
 
 playsound entity.evoker.cast_spell player @s
 particle spit ~ ~1 ~ 0.2 0.1 0.2 0.7 60 force @a

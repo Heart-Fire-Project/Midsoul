@@ -1,8 +1,7 @@
 # 状态 1 - 初始
 scoreboard players set $state data 1
-execute as @a[team=prepare,limit=5,sort=random] run function game:state/1/prepare_enter
+execute as @a[team=prepare] run function game:state/1/prepare_enter
 execute as @a[team=unready] run function game:state/1/unready_enter
-execute as @a[team=prepare,tag=!game_player] run function game:state/1/maxed_out
 
 # Bossbar 设置
 bossbar set midsoul:info players @a[team=unready]

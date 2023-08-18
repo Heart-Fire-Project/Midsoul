@@ -1,4 +1,4 @@
-title @s actionbar {"translate":"ms.talent.002active","fallback": "天赋触发 » 赴汤蹈火","color": "aqua"}
+title @s actionbar [{"translate":"ms.talent.active","fallback":"天赋触发","color": "aqua"}," » ",{"translate":"ms.talent.002","fallback":"赴汤蹈火"}]
 
 playsound entity.elder_guardian.curse player @s ~ ~ ~ 1 1
 particle enchanted_hit ~ ~0.2 ~ 0.1 0.1 0.1 0.7 24 force @a

@@ -1,4 +1,4 @@
-title @s actionbar {"translate":"ms.talent.001active","fallback": "天赋触发 » 全神贯注","color": "aqua"}
+title @s actionbar [{"translate":"ms.talent.active","fallback":"天赋触发","color": "aqua"}," » ",{"translate":"ms.talent.001","fallback":"全神贯注"}]
 
 # 分情况触发
 effect give @s[tag=collect_finish] speed 3
