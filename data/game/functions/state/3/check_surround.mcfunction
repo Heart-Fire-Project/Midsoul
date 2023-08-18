@@ -12,7 +12,7 @@ execute at @s unless entity @e[tag=gold,distance=..1] run tag @s remove healing
 execute if entity @s[tag=!healing,tag=!collecting] run scoreboard players reset @s countdown
 execute if entity @s[tag=collecting] unless score @s countdown matches 0..1000 run scoreboard players set @s countdown -10
 execute if entity @s[tag=collecting] if score @s countdown matches -10..1000 run scoreboard players operation @s countdown += $collect_speed data
-execute if entity @s[tag=collecting,tag=talent_001_active] if score @s countdown matches 0..1000 at @s run function game:state/3/skill/active/talent_001
+execute if entity @s[tag=collecting,tag=talent_001_active] if score @s countdown matches 0..1000 at @s run function game:state/3/skill/talent_001
 execute if entity @s[tag=healing] unless score @s countdown matches 0..2000 run scoreboard players set @s countdown -10
 execute if entity @s[tag=healing] if score @s countdown matches -10..2000 run scoreboard players operation @s countdown += $collect_speed data
 
@@ -36,13 +36,13 @@ execute if entity @s[tag=heal_finish] at @s as @e[distance=..1,tag=gold] run kil
 # 天赋影响
 execute if entity @s[tag=collect_finish,scores={talent_1=1}] run tag @s add talent_001_active
 execute if entity @s[tag=collect_finish,scores={talent_2=1}] run tag @s add talent_001_active
-execute as @s[tag=collect_finish,tag=talent_001_active] at @s run function game:state/3/skill/active/talent_001
+execute as @s[tag=collect_finish,tag=talent_001_active] at @s run function game:state/3/skill/talent_001
 execute if entity @s[tag=collect_finish,scores={talent_1=4}] run tag @s add talent_004_active
 execute if entity @s[tag=collect_finish,scores={talent_2=4}] run tag @s add talent_004_active
-execute as @s[tag=collect_finish,tag=talent_004_active,scores={health=..19}] at @s run function game:state/3/skill/active/talent_004_a
-execute if entity @a[tag=collect_finish] if entity @a[tag=skill_102_active] as @a[tag=skill_102_active] at @s run function game:state/3/skill/active/skill_102_c
-execute if entity @a[tag=heal_finish] as @a[team=protect,scores={talent_1=2,talent_1_cd=..0}] at @s run function game:state/3/skill/active/talent_102
-execute if entity @a[tag=heal_finish] as @a[team=protect,scores={talent_2=2,talent_2_cd=..0}] at @s run function game:state/3/skill/active/talent_102
+execute as @s[tag=collect_finish,tag=talent_004_active,scores={health=..19}] at @s run function game:state/3/skill/talent_004_a
+execute if entity @a[tag=collect_finish] if entity @a[tag=skill_102_active] as @a[tag=skill_102_active] at @s run function game:state/3/skill/skill_102_c
+execute if entity @a[tag=heal_finish] as @a[team=protect,scores={talent_1=2,talent_1_cd=..0}] at @s run function game:state/3/skill/talent_102
+execute if entity @a[tag=heal_finish] as @a[team=protect,scores={talent_2=2,talent_2_cd=..0}] at @s run function game:state/3/skill/talent_102
 tag @s remove collect_finish
 tag @s remove heal_finish
 
