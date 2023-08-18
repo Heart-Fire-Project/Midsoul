@@ -4,5 +4,5 @@ function game:state/3/give_effect
 function base:totorial/hit_soul
 function game:state/3/refresh_inventory
 
-execute as @s[scores={talent_1=3}] at @s run function game:state/3/skill/active/talent_103
-execute as @s[scores={talent_2=3}] at @s run function game:state/3/skill/active/talent_103
+execute as @s[scores={talent_1=3}] at @s run function game:state/3/skill/talent_103
+execute as @s[scores={talent_2=3}] at @s run function game:state/3/skill/talent_103

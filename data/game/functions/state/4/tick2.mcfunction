@@ -6,13 +6,9 @@ execute as @a[scores={state=1,countdown=0},team=alive] run function game:state/3
 execute as @a[scores={state=1,countdown=0},team=protect] run function game:state/4/player_hit_fin
 
 # 时间触发型天赋
-execute as @a[team=protect,scores={talent_1=4,talent_1_cd=..0}] at @s run function game:state/3/skill/active/talent_104
-execute as @a[team=protect,scores={talent_2=4,talent_2_cd=..0}] at @s run function game:state/3/skill/active/talent_104
+execute as @a[team=protect,scores={talent_1=4,talent_1_cd=..0}] at @s run function game:state/3/skill/talent_104
+execute as @a[team=protect,scores={talent_2=4,talent_2_cd=..0}] at @s run function game:state/3/skill/talent_104
 execute if entity @a[tag=talent_104_active] at @a[team=protect] run effect give @a[team=alive,distance=33..] glowing 1 0
-
-# 技能物品处理
-kill @e[type=item,tag=!game_entity]
-item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:firework_star"}]}] weapon.offhand with air
 
 # 灵气处理
 execute if score $soul_rank temp matches 2 run function game:state/3/glow_give
