@@ -7,6 +7,6 @@ execute as @e[tag=new_gold] run tag @s remove new_gold
 execute as @e[tag=gold_empty] run tag @s remove gold_empty
 
 # 广而告之
-tellraw @a[team=!admin] [{"text": " » ","color": "gold","bold": true},{"selector":"@s","bold": false},{"translate":"ms.info.lamp","fallback": " 陷入垂死状态, 一盏灵魂之灯已经点亮……","bold": false}]
+tellraw @a[team=!admin] [{"text": " » ","color": "gold","bold": true},{"selector":"@s","bold": false},{"translate":"ms.info.lamp","fallback": " 陷入垂死状态, 一盏灵魂之灯已经出现……","bold": false}]
 playsound block.conduit.deactivate player @a[team=!admin] 0 1000000 0 1000000
 execute as @a[team=!admin,tag=!lamp_tr] run function base:totorial/lamp
