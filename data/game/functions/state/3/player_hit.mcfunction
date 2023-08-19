@@ -1,4 +1,4 @@
-scoreboard players set @s countdown 31
+scoreboard players set @s countdown 71
 scoreboard players set @s state 1
 function game:state/3/give_effect
 function base:totorial/hit_soul

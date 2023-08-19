@@ -3,7 +3,7 @@ title @s actionbar [{"translate":"ms.talent.active","fallback":"天赋触发","c
 playsound entity.elder_guardian.curse player @s ~ ~ ~ 1 1
 particle enchanted_hit ~ ~0.2 ~ 0.1 0.1 0.1 0.7 24 force @a
 
-effect give @s speed 1 2
+effect give @s speed 3 2
 scoreboard players set @s[scores={talent_1=2}] talent_1_cd 12000
 scoreboard players set @s[scores={talent_2=2}] talent_2_cd 12000
 

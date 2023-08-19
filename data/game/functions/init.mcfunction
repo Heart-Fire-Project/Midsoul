@@ -143,15 +143,15 @@ scoreboard players set $5 data 5
 scoreboard players set $10 data 10
 scoreboard players set $16 data 16
 scoreboard players set $20 data 20
-scoreboard players set $30 data 30
+scoreboard players set $70 data 70
 scoreboard players set $60 data 60
 scoreboard players set $61 data 61
 scoreboard players set $64 data 64
 scoreboard players set $182 data 182
 scoreboard players set $200 data 200
+scoreboard players set $256 data 256
 scoreboard players set $600 data 600
 scoreboard players set $1000 data 1000
-scoreboard players set $2000 data 2000
 
 tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.info.init","fallback": "%s 重置了游戏","color": "#BC78EC","with":[{"selector":"@s"}]},"\n"]
 

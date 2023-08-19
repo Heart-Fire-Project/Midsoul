@@ -7,6 +7,6 @@ tag @s add skill_102_active
 scoreboard players reset $skill_102 temp
 schedule function game:state/3/skill/skill_102_b 30s replace
 
-scoreboard players set @s skill_cd 20000
+scoreboard players set @s skill_cd 18000
 function game:state/3/refresh_inventory
 item replace entity @s weapon.offhand with air
