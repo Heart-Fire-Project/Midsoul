@@ -21,18 +21,18 @@ scoreboard players set @a state 0
 scoreboard players reset * skill_cd
 scoreboard players reset * talent_1_cd
 scoreboard players reset * talent_2_cd
-scoreboard players set @a[team=alive,scores={skill=1}] skill_cd 18000
-scoreboard players set @a[team=alive,scores={skill=2}] skill_cd 24000
-scoreboard players set @a[team=alive,scores={skill=3}] skill_cd 14000
-scoreboard players set @a[team=protect,scores={skill=1}] skill_cd 14000
-scoreboard players set @a[team=protect,scores={skill=2}] skill_cd 20000
-scoreboard players set @a[team=protect,scores={skill=3}] skill_cd 16000
+scoreboard players set @a[team=alive,scores={skill=1}] skill_cd 21000
+scoreboard players set @a[team=alive,scores={skill=2}] skill_cd 27000
+scoreboard players set @a[team=alive,scores={skill=3}] skill_cd 18000
+scoreboard players set @a[team=protect,scores={skill=1}] skill_cd 21000
+scoreboard players set @a[team=protect,scores={skill=2}] skill_cd 27000
+scoreboard players set @a[team=protect,scores={skill=3}] skill_cd 18000
 scoreboard players set @a[team=alive,scores={talent_1=2}] talent_1_cd 12000
 scoreboard players set @a[team=protect,scores={talent_1=2}] talent_1_cd 12000
-scoreboard players set @a[team=protect,scores={talent_1=4}] talent_1_cd 12000
+scoreboard players set @a[team=protect,scores={talent_1=4}] talent_1_cd 18000
 scoreboard players set @a[team=alive,scores={talent_2=2}] talent_2_cd 12000
 scoreboard players set @a[team=protect,scores={talent_2=2}] talent_2_cd 12000
-scoreboard players set @a[team=protect,scores={talent_2=4}] talent_2_cd 12000
+scoreboard players set @a[team=protect,scores={talent_2=4}] talent_2_cd 18000
 
 # 天赋或技能标签
 tag @a remove just_healed

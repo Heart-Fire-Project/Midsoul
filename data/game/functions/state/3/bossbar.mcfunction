@@ -10,8 +10,8 @@ bossbar set midsoul:warn name [{"translate":"ms.bossbar.3.warn","fallback": "�
 
 # 选取范围
 execute as @a[team=alive] at @s unless entity @a[team=protect,distance=0..24] run tag @s add bossbar_info
-execute as @a[team=alive] at @s if entity @a[team=protect,distance=9..24] run tag @s add bossbar_heed
-execute as @a[team=alive] at @s if entity @a[team=protect,distance=0..9] run tag @s add bossbar_warn
+execute as @a[team=alive] at @s if entity @a[team=protect,distance=13..24] run tag @s add bossbar_heed
+execute as @a[team=alive] at @s if entity @a[team=protect,distance=0..13] run tag @s add bossbar_warn
 execute as @a[team=protect] at @s unless entity @a[team=alive,distance=0..24,scores={state=0}] run tag @s add bossbar_info
 execute as @a[team=protect] at @s if entity @a[team=alive,distance=0..24,scores={state=0}] run tag @s add bossbar_heed
 tag @a[team=unready] add bossbar_info
@@ -20,13 +20,13 @@ tag @a[team=unready] add bossbar_info
 execute as @a[tag=!bossbar_tr,tag=bossbar_heed] run function base:totorial/bossbar
 
 # 天赋影响
-execute as @a[team=protect,tag=talent_104_active] at @s if entity @a[team=alive,distance=0..8,scores={state=0}] run effect clear @s invisibility
+execute as @a[team=protect,tag=talent_104_active] at @s if entity @a[team=alive,distance=0..20,scores={state=0}] run effect clear @s invisibility
 execute as @a[team=alive,tag=bossbar_warn,scores={talent_1=2,talent_1_cd=..0,state=0}] at @s run function game:state/3/skill/talent_002
 execute as @a[team=alive,tag=bossbar_warn,scores={talent_2=2,talent_2_cd=..0,state=0}] at @s run function game:state/3/skill/talent_002
-execute if entity @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn] add bossbar_heed
-execute if entity @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn] remove bossbar_warn
-execute if entity @a[team=protect,scores={talent_2=1}] run tag @a[tag=bossbar_warn] add bossbar_heed
-execute if entity @a[team=protect,scores={talent_2=1}] run tag @a[tag=bossbar_warn] remove bossbar_warn
+execute at @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn,distance=8..] add bossbar_heed
+execute at @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn,distance=8..] remove bossbar_warn
+execute at @a[team=protect,scores={talent_2=1}] run tag @a[tag=bossbar_warn,distance=8..] add bossbar_heed
+execute at @a[team=protect,scores={talent_2=1}] run tag @a[tag=bossbar_warn,distance=8..] remove bossbar_warn
 
 # 设置
 bossbar set midsoul:info players @a[tag=bossbar_info]
