@@ -11,7 +11,6 @@ execute as @a[scores={skill_cd=..0,state=0},tag=!skill_on] run function game:sta
 execute as @a run function game:state/3/set_exp
 
 # 杂项处理
-execute as @a at @s if block ~ ~-1 ~ farmland run effect give @s slow_falling 1 0 true
 stopsound @a * entity.player.levelup
 execute at @a[tag=skill_103_active] run particle end_rod ~ ~0.5 ~ 0 0 0 0 1 force @a
 execute at @a[tag=skill_103_active] run particle end_rod ~ ~32 ~ 0 0 0 0 1 force @a

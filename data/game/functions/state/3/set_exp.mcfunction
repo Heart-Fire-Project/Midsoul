@@ -23,7 +23,6 @@ xp add @s[scores={temp=2}] 2 points
 xp add @s[scores={temp=3}] 3 points
 
 # 设置等级
-# 支持 0~256
 scoreboard players reset @s temp
 execute if entity @s[scores={state=1}] run scoreboard players operation @s temp = @s countdown
 execute if entity @s[scores={state=0}] run scoreboard players operation @s temp = @s skill_cd
@@ -33,6 +32,7 @@ scoreboard players set @s[scores={temp=..0}] temp 0
 scoreboard players operation @s[scores={state=1}] temp /= $10 data
 scoreboard players operation @s[scores={state=0}] temp /= $200 data
 scoreboard players operation @s temp %= $256 data
+xp set @s[scores={temp=0..63}] 0 levels
 xp set @s[scores={temp=64..127}] 64 levels
 xp set @s[scores={temp=128..191}] 128 levels
 xp set @s[scores={temp=192..}] 192 levels

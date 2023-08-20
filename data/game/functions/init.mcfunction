@@ -144,7 +144,7 @@ scoreboard players set $10 data 10
 scoreboard players set $16 data 16
 scoreboard players set $20 data 20
 scoreboard players set $70 data 70
-scoreboard players set $60 data 60
+scoreboard players set $40 data 40
 scoreboard players set $61 data 61
 scoreboard players set $64 data 64
 scoreboard players set $182 data 182

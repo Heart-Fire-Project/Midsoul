@@ -2,7 +2,7 @@
 scoreboard players set $state data 1
 
 # 版本检查
-tellraw @a[team=!admin] [{"text": " » ","bold": true},{"translate":"ms.info.mpver","fallback": "当前地图版本","bold": false}," ",{"text": "Alpha 3.3","bold": false}]
+tellraw @a[team=!admin] [{"text": " » ","bold": true},{"translate":"ms.info.mpver","fallback": "当前地图版本","bold": false}," ",{"text": "Alpha 3.4","bold": false}]
 tellraw @a[team=!admin] [{"text": " » ","bold": true},{"translate":"ms.info.rpver","fallback": "你没有安装多语言包","bold": false}," ",{"translate":"ms.ver","fallback": "","bold": false}]
 
 # 入场

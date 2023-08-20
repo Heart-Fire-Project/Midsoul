@@ -60,11 +60,11 @@ execute if score $shard_collected temp matches 18 run setblock 1153 29 1102 red_
 
 # 山间湖谷
 # Max 40
-execute if score $shard_collected temp matches 03 run setblock 1130 70 -902 crying_obsidian
-execute if score $shard_collected temp matches 06 run setblock 1131 70 -902 crying_obsidian
-execute if score $shard_collected temp matches 09 run setblock 1132 70 -901 crying_obsidian
-execute if score $shard_collected temp matches 12 run setblock 1130 70 -901 crying_obsidian
-execute if score $shard_collected temp matches 15 run setblock 1130 70 -900 crying_obsidian
-execute if score $shard_collected temp matches 18 run setblock 1132 70 -902 crying_obsidian
-execute if score $shard_collected temp matches 03 run setblock 1131 70 -900 crying_obsidian
-execute if score $shard_collected temp matches 06 run setblock 1132 70 -900 crying_obsidian
+execute if score $shard_collected temp matches 05 run setblock 1130 70 -902 crying_obsidian
+execute if score $shard_collected temp matches 10 run setblock 1131 70 -902 crying_obsidian
+execute if score $shard_collected temp matches 15 run setblock 1132 70 -901 crying_obsidian
+execute if score $shard_collected temp matches 20 run setblock 1130 70 -901 crying_obsidian
+execute if score $shard_collected temp matches 25 run setblock 1130 70 -900 crying_obsidian
+execute if score $shard_collected temp matches 30 run setblock 1132 70 -902 crying_obsidian
+execute if score $shard_collected temp matches 35 run setblock 1131 70 -900 crying_obsidian
+execute if score $shard_collected temp matches 40 run setblock 1132 70 -900 crying_obsidian

@@ -9,7 +9,7 @@ title @a subtitle {"translate":"ms.title.portal","fallback": "⚜ 传送门已�
 playsound minecraft:entity.warden.emerge player @a[team=!admin] 0 1000000 0 1000000
 
 # 设置倒计时
-scoreboard players operation $shard_goal temp *= $60 data
+scoreboard players operation $shard_goal temp *= $40 data
 scoreboard players operation $portal countdown = $shard_goal temp
 execute store result bossbar midsoul:info max run scoreboard players get $portal countdown
 

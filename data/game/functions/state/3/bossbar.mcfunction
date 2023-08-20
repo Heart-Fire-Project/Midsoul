@@ -15,6 +15,7 @@ execute as @a[team=alive] at @s if entity @a[team=protect,distance=0..13] run ta
 execute as @a[team=protect] at @s unless entity @a[team=alive,distance=0..24,scores={state=0}] run tag @s add bossbar_info
 execute as @a[team=protect] at @s if entity @a[team=alive,distance=0..24,scores={state=0}] run tag @s add bossbar_heed
 tag @a[team=unready] add bossbar_info
+tag @a[team=dead] add bossbar_info
 
 # 教程
 execute as @a[tag=!bossbar_tr,tag=bossbar_heed] run function base:totorial/bossbar

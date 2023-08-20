@@ -21,7 +21,10 @@ item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:firework_star"}
 item replace entity @a[nbt={Inventory:[{Slot:-106b,id:"minecraft:golden_sword"}]}] weapon.offhand with air
 execute as @a[team=!admin] run function game:state/3/refresh_inventory
 
-# 额外附加的部分
+# 本状态特有的部分
 scoreboard players remove $portal countdown 1
 execute as @a[team=alive,scores={state=0}] at @s if entity @e[tag=purple,distance=..0.3] run function game:state/4/soul_escape
 execute if score $portal countdown matches 0 run function game:state/4/check_end
+
+scoreboard players reset $portal_count temp
+execute as @e[tag=purple] run scoreboard players add $portal_count temp 1

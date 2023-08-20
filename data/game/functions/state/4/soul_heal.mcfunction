@@ -4,6 +4,6 @@ tellraw @a[team=!admin] [{"text": " » ","color": "gold","bold": true},{"selecto
 playsound block.conduit.activate player @a[team=!admin] 0 1000000 0 1000000
 function game:state/4/give_effect
 function game:state/3/refresh_inventory
-effect give @s speed 7 4 true
-effect give @s resistance 7 4 true
+effect give @s speed 20 4 true
+effect give @s resistance 20 4 true
 tag @s add just_healed
