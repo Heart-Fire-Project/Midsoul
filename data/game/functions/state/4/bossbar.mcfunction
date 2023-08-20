@@ -1,13 +1,13 @@
 # 乱码从 30 秒开始随机闪烁
 # 0-30s 每 5 秒升高 5% 几率
 scoreboard players set $random_min data 1
-execute if score $portal temp matches 2.. if score $portal countdown matches 600.. run scoreboard players set $random_max data 1000
-execute if score $portal temp matches 2.. if score $portal countdown matches 500..600 run scoreboard players set $random_max data 1053
-execute if score $portal temp matches 2.. if score $portal countdown matches 400..500 run scoreboard players set $random_max data 1111
-execute if score $portal temp matches 2.. if score $portal countdown matches 300..400 run scoreboard players set $random_max data 1176
-execute if score $portal temp matches 2.. if score $portal countdown matches 200..300 run scoreboard players set $random_max data 1250
-execute if score $portal temp matches 2.. if score $portal countdown matches 100..200 run scoreboard players set $random_max data 1333
-execute if score $portal temp matches 2.. if score $portal countdown matches 000..100 run scoreboard players set $random_max data 1429
+execute if score $portal_count temp matches 2.. if score $portal countdown matches 600.. run scoreboard players set $random_max data 1000
+execute if score $portal_count temp matches 2.. if score $portal countdown matches 500..600 run scoreboard players set $random_max data 1053
+execute if score $portal_count temp matches 2.. if score $portal countdown matches 400..500 run scoreboard players set $random_max data 1111
+execute if score $portal_count temp matches 2.. if score $portal countdown matches 300..400 run scoreboard players set $random_max data 1176
+execute if score $portal_count temp matches 2.. if score $portal countdown matches 200..300 run scoreboard players set $random_max data 1250
+execute if score $portal_count temp matches 2.. if score $portal countdown matches 100..200 run scoreboard players set $random_max data 1333
+execute if score $portal_count temp matches 2.. if score $portal countdown matches 000..100 run scoreboard players set $random_max data 1429
 function base:random
 
 # 设置名称
