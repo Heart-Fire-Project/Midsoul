@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.talent.002\",\"fallback\": \"赴汤蹈火\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.002.desc\",\"fallback\": \"近距离内有灵魂守卫者时, 获得中幅加速\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

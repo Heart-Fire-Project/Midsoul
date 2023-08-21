@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.talent.104\",\"fallback\": \"隐于迷雾\",\"italic\": false,\"color\":\"red\"}',Lore:['{\"translate\":\"ms.talent.104.desc\",\"fallback\": \"使全体灵魂陷入一段时间黑暗, 在下次攻击到灵魂前持续高亮距你较远的灵魂, 在靠近灵魂前持续隐身, 攻击到灵魂时重新开始冷却\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

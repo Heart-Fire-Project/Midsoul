@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.talent.001\",\"fallback\": \"全神贯注\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.001.desc\",\"fallback\": \"收集到灵魂碎片后, 速度提升, 下一次收集速度提升\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

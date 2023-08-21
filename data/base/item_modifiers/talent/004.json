@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.talent.004\",\"fallback\": \"魂魄汲取\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.004.desc\",\"fallback\": \"收集到灵魂碎片时, 自身回复微量生命\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

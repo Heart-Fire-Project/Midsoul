@@ -7,7 +7,7 @@ execute as @e[tag=purple_empty] run tag @s remove purple_empty
 
 # 广而告之
 title @a title ""
-title @a subtitle {"translate":"ms.title.portal_next","fallback": "⚜ 第二传送门已出现 ⚜","color": "#BC78EC"}
+title @a subtitle {"translate":"ms.title.portal_next","fallback": "⚜ 第二传送门已出现 ⚜","color": "#FF96F9"}
 playsound minecraft:entity.warden.attack_impact player @a[team=!admin] 0 1000000 0 1000000 0.7
 
 # 重新设置倒计时

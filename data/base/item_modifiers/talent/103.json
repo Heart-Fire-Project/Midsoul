@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.talent.103\",\"fallback\": \"祛灵十字\",\"italic\": false,\"color\":\"red\"}',Lore:['{\"translate\":\"ms.talent.103.desc\",\"fallback\": \"小幅度减少自身擦刀时间\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

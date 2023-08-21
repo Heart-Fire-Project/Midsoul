@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.talent.102\",\"fallback\": \"火冒三丈\",\"italic\": false,\"color\":\"red\"}',Lore:['{\"translate\":\"ms.talent.102.desc\",\"fallback\": \"每当灵魂解除垂死状态时, 即刻高亮并小幅降低全体灵魂速度\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}
