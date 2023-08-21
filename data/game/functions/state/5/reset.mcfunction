@@ -12,6 +12,8 @@ scoreboard players set $shard_goal temp 0
 # 清除标签
 tag @a remove just_healed
 tag @a remove heal_damage
+tag @a remove healed_1
+tag @a remove healed_2
 tag @a remove skill_001_active
 tag @a remove skill_002_active
 tag @a remove skill_102_active

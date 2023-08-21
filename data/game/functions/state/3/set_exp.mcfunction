@@ -3,7 +3,10 @@ scoreboard players operation @s temp = @s countdown
 scoreboard players operation @s temp *= $182 data
 scoreboard players operation @s[tag=collecting] temp /= $600 data
 scoreboard players operation @s[tag=healing] temp /= $1000 data
-scoreboard players operation @s[scores={state=1},team=alive] temp /= $600 data
+scoreboard players operation @s[scores={state=1},team=alive,tag=!healed_1,tag=!healed_2] temp /= $600 data
+scoreboard players operation @s[scores={state=1},team=alive,tag=healed_1,tag=!healed_2] temp /= $450 data
+scoreboard players operation @s[scores={state=1},team=alive,tag=healed_1,tag=healed_2] temp /= $300 data
+scoreboard players operation @s[scores={state=1},team=alive,tag=!healed_1,tag=healed_2] temp /= $150 data
 scoreboard players operation @s[scores={state=1},team=protect] temp /= $70 data
 xp set @s 38 levels
 xp set @s[scores={temp=0..60}] 0 points
@@ -23,6 +26,7 @@ xp add @s[scores={temp=2}] 2 points
 xp add @s[scores={temp=3}] 3 points
 
 # 设置等级
+# 最多 255
 scoreboard players reset @s temp
 execute if entity @s[scores={state=1}] run scoreboard players operation @s temp = @s countdown
 execute if entity @s[scores={state=0}] run scoreboard players operation @s temp = @s skill_cd

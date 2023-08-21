@@ -37,6 +37,8 @@ scoreboard players set @a[team=protect,scores={talent_2=4}] talent_2_cd 18000
 # 天赋或技能标签
 tag @a remove just_healed
 tag @a remove heal_damage
+tag @a remove healed_1
+tag @a remove healed_2
 tag @a remove skill_001_active
 tag @a remove skill_002_active
 tag @a remove skill_102_active
