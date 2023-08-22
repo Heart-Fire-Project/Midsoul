@@ -5,8 +5,12 @@ execute if score $kit_anime temp matches 201.. run scoreboard players reset $kit
 execute if score $kit_anime temp matches 1..200 run schedule function game:state/1/give_kit 1t replace
 
 # 角色分配 (80t)
-execute if score $kit_anime temp matches 80 run team join alive @a[scores={player_id=2..}]
 execute if score $kit_anime temp matches 80 run team join protect @a[scores={player_id=1}]
+execute if score $kit_anime temp matches 80 run team join alive @a[scores={player_id=2..6}]
+execute if score $kit_anime temp matches 80 run team join protect @a[scores={player_id=7}]
+execute if score $kit_anime temp matches 80 run team join alive @a[scores={player_id=8..13}]
+execute if score $kit_anime temp matches 80 run team join protect @a[scores={player_id=14}]
+execute if score $kit_anime temp matches 80 run team join alive @a[scores={player_id=15..}]
 
 # 主标题显示 (1t)
 execute if score $kit_anime temp matches 1 run title @a[team=!admin] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color": "#BC78EC"}

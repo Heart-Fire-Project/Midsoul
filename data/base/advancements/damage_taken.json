@@ -6,9 +6,6 @@
                 "damage": {
                     "taken": {
                         "min": 0.1
-                    },
-                    "type": {
-                        "is_magic": false
                     }
                 }
             }
