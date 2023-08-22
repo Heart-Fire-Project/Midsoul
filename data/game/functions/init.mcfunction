@@ -53,6 +53,16 @@ scoreboard objectives remove sneak_time
 scoreboard objectives add sneak_time minecraft.custom:sneak_time "蹲下时间"
 scoreboard objectives remove player_id
 scoreboard objectives add player_id dummy "玩家编号"
+scoreboard objectives remove stat_temp_collect
+scoreboard objectives add stat_temp_collect dummy "统计数据:玩家本局收集碎片次数"
+scoreboard objectives remove stat_temp_heal
+scoreboard objectives add stat_temp_heal dummy "统计数据:玩家本局救助次数"
+
+scoreboard objectives add stat_kill dummy "统计数据:玩家击杀次数"
+scoreboard objectives add stat_dead dummy "统计数据:玩家死亡次数"
+scoreboard objectives add stat_finish dummy "统计数据:玩家复活次数"
+scoreboard objectives add stat_collect dummy "统计数据:玩家总收集碎片次数"
+scoreboard objectives add stat_temp_heal dummy "统计数据:玩家总救助次数"
 
 # 游玩队伍
 team remove alive

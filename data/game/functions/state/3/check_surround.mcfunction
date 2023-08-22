@@ -20,6 +20,7 @@ execute if entity @s[tag=healing] if score @s countdown matches -10..1000 run sc
 
 # 若本次完成收集
 execute if entity @s[tag=collecting,scores={countdown=601..}] run tag @s add collect_finish
+execute if entity @s[tag=collect_finish] as @s run scoreboard players add @s stat_temp_collect 1
 execute if entity @s[tag=collect_finish] at @s as @e[distance=..1,tag=blue] run scoreboard players add $shard_collected temp 1
 execute if entity @s[tag=collect_finish] at @s at @e[distance=..1,tag=blue] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 execute if entity @s[tag=collect_finish] at @s as @e[distance=..1,tag=blue] run playsound block.respawn_anchor.charge ambient @a ~ ~ ~
@@ -29,6 +30,7 @@ execute if entity @s[tag=collect_finish] run function game:state/3/map_stage
 
 # 若本次完成救治
 execute if entity @s[tag=healing,scores={countdown=1001..}] run tag @s add heal_finish
+execute if entity @s[tag=heal_finish] as @s run scoreboard players add @s stat_temp_heal 1
 execute if score $state data matches 3 if entity @s[tag=heal_finish] as @r[team=alive,scores={state=1}] at @s run function game:state/3/soul_heal
 execute if score $state data matches 4 if entity @s[tag=heal_finish] as @r[team=alive,scores={state=1}] at @s run function game:state/4/soul_heal
 execute if entity @s[tag=heal_finish] at @s at @e[distance=..1,tag=gold] run particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a

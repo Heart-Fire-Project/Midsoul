@@ -60,7 +60,7 @@ execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"transl
 
 # 给点钱吧QAQ
 execute if score $end_anime temp matches 121 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
-execute if score $end_anime temp matches 121 run tellraw @a[team=!admin] [{"translate":"ms.info.donate","fallback":"[在爱发电上赞助我们]","color": "#946CE6","clickEvent":{"action":"open_url","value":"https://afdian.net/a/HfPro"},"hoverEvent":{"action":"show_text","value":"给点钱吧 QAQ"}}]
+execute if score $end_anime temp matches 121 run tellraw @a[team=!admin] [{"translate":"ms.info.donate","fallback":"[在爱发电上赞助我们]","color": "#946CE6","clickEvent":{"action":"open_url","value":"https://afdian.net/a/HfPro"},"hoverEvent":{"action":"show_text","value":"给点钱吧 QAQ"}}," ",{"translate":"ms.info.github","fallback":"[在 GitHub 上反馈]","color": "#946CE6","clickEvent":{"action":"open_url","value":"https://github.com/Heart-Fire-Project/midnight-soul-dp/issues"},"hoverEvent":{"action":"show_text","value":"欢迎反馈地图存在的 Bug 或你的意见！"}}]
 
 # 把玩家都丢回去
 execute if score $end_anime temp matches 161 run function game:state/0/enter
