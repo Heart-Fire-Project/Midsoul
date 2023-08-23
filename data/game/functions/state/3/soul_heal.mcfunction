@@ -8,7 +8,7 @@ function game:state/3/refresh_inventory
 effect give @s speed 20 4 true
 effect give @s resistance 20 4 true
 tag @s add just_healed
-tp @s @r[tag=marker_gold]
+tp @s @e[tag=marker_gold,sort=random,limit=1]
 
 tag @s[tag=healed_1,tag=healed_2] remove healed_1
 tag @s[tag=healed_1,tag=!healed_2] add healed_2

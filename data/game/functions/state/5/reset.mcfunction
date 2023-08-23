@@ -4,8 +4,8 @@ execute as @a[team=alive] run function game:state/3/soul_died
 # 统计数据
 scoreboard players add @a[team=dead] stat_dead 1
 scoreboard players add @a[team=finish] stat_finish 1
-scoreboard players operation @s stat_collect += @s stat_temp_collect
-scoreboard players operation @s stat_heal += @s stat_temp_heal
+execute as @a run scoreboard players operation @s stat_total_collect += @s stat_temp_collect
+execute as @a run scoreboard players operation @s stat_total_heal += @s stat_temp_heal
 
 # 重置计分板
 scoreboard players reset @a stat_temp_collect
