@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.lobby.unready\",\"fallback\": \"未准备 - 按 [%s] 准备\",\"italic\": false,\"color\":\"gray\",\"with\":[{\"keybind\":\"key.swapOffhand\"}]}'},HideFlags:63}"
+}
