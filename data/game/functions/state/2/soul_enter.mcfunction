@@ -14,4 +14,4 @@ effect give @s speed 13 2 false
 gamemode adventure @s
 
 # 教学
-execute if entity @s[tag=!soul_tr] run function base:totorial/enter_game
+execute if entity @s[tag=!soul_tr] run function base:tutorial/enter_game

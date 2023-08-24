@@ -7,4 +7,4 @@ effect give @a[team=alive] slowness 3 0
 scoreboard players set @s[scores={talent_1=2}] talent_1_cd 12000
 scoreboard players set @s[scores={talent_2=2}] talent_2_cd 12000
 
-execute as @s[tag=!talent_tr] run function base:totorial/talent
+execute as @s[tag=!talent_tr] run function base:tutorial/talent

@@ -14,7 +14,7 @@ scoreboard players operation $portal countdown = $shard_goal temp
 execute store result bossbar midsoul:info max run scoreboard players get $portal countdown
 
 # 教程
-execute as @a[team=!admin,tag=!portal_tr] run function base:totorial/portal
+execute as @a[team=!admin,tag=!portal_tr] run function base:tutorial/portal
 
 # 效果
 execute as @a[team=!admin] run function game:state/4/give_effect

@@ -7,4 +7,4 @@ playsound block.beacon.power_select player @s[tag=!collect_finish] ~ ~ ~ 1000000
 execute if entity @s[tag=!collect_finish] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 tag @s[tag=!collect_finish] remove talent_001_active
 
-execute if entity @s[tag=!talent_tr] run function base:totorial/talent
+execute if entity @s[tag=!talent_tr] run function base:tutorial/talent

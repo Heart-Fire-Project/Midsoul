@@ -4,4 +4,4 @@ playsound entity.evoker.prepare_attack player @s
 particle enchant ~ ~0.2 ~ 0.2 0.1 0.2 1 128 force @a
 scoreboard players remove @s countdown 14
 
-execute as @s[tag=!talent_tr] run function base:totorial/talent
+execute as @s[tag=!talent_tr] run function base:tutorial/talent

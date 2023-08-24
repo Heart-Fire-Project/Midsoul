@@ -24,7 +24,7 @@ execute if score $soul_rank temp matches 10 run tellraw @a[team=!admin] [{"text"
 execute if score $soul_rank temp matches 20 run tellraw @a[team=!admin] [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.2","fallback": "灵气渐浓 · II · 灵魂附近的碎片将与之共鸣","bold": false}]
 execute if score $soul_rank temp matches 30 run tellraw @a[team=!admin] [{"text": " » ","color": "blue","bold": true},{"translate":"ms.info.rank.3","fallback": "灵气全开 · III · 所有剩余碎片开始共鸣","bold": false}]
 execute if score $soul_rank temp matches 30 run execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
-execute if score $soul_rank temp matches 10..30 as @a[team=!admin,tag=!rank_tr] run function base:totorial/soul_rank
+execute if score $soul_rank temp matches 10..30 as @a[team=!admin,tag=!rank_tr] run function base:tutorial/soul_rank
 execute if score $soul_rank temp matches 10..30 run scoreboard players operation $soul_rank temp /= $10 data
 execute if score $soul_rank temp matches 1 run execute at @a[tag=collect_finish] as @e[tag=blue,distance=..12] run data modify entity @s Glowing set value 1b
 execute if score $soul_rank temp matches 1 run schedule function game:state/3/glow_take 3s replace

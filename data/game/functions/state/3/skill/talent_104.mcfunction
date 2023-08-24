@@ -9,4 +9,4 @@ tag @s add talent_104_active
 scoreboard players set @s[scores={talent_1=4}] talent_1_cd 18000
 scoreboard players set @s[scores={talent_2=4}] talent_2_cd 18000
 
-execute as @s[tag=!talent_tr] run function base:totorial/talent
+execute as @s[tag=!talent_tr] run function base:tutorial/talent

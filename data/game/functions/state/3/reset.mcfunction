@@ -49,4 +49,4 @@ tag @a remove talent_004_active
 tag @a remove talent_104_active
 
 # 教程
-execute as @a run function base:totorial/game_start
+execute as @a run function base:tutorial/game_start

@@ -1,4 +1,5 @@
 effect clear @s
+effect give @s[tag=in_locker] invisibility 1 49 true
 effect give @s saturation infinite 10 true
 effect give @s[team=protect] speed infinite 0 true
 effect give @s[scores={state=1}] slowness infinite 49 true

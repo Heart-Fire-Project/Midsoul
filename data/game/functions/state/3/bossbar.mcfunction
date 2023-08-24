@@ -18,7 +18,7 @@ tag @a[team=unready] add bossbar_info
 tag @a[team=dead] add bossbar_info
 
 # 教程
-execute as @a[tag=!bossbar_tr,tag=bossbar_heed] run function base:totorial/bossbar
+execute as @a[tag=!bossbar_tr,tag=bossbar_heed] run function base:tutorial/bossbar
 
 # 天赋影响
 execute at @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn,distance=8..] add bossbar_heed

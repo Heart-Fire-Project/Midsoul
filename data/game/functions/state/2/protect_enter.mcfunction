@@ -16,4 +16,4 @@ effect give @s bad_omen 14 6
 gamemode adventure @s
 
 # 教学
-execute if entity @s[tag=!protect_tr] run function base:totorial/enter_game
+execute if entity @s[tag=!protect_tr] run function base:tutorial/enter_game
