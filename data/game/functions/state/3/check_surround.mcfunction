@@ -1,4 +1,4 @@
-# 添加基础tag
+# 添加基础 tag
 tag @s add collecting
 tag @s add healing
 
@@ -7,8 +7,16 @@ execute unless score @s sneak_time matches 1.. run tag @s remove collecting
 execute unless score @s sneak_time matches 1.. run tag @s remove healing
 execute at @s unless entity @e[tag=blue,distance=..1] run tag @s remove collecting
 execute at @s unless entity @e[tag=gold,distance=..1] run tag @s remove healing
-execute as @s[tag=!collecting] at @s if entity @e[tag=blue,distance=..1] run title @s actionbar [{"translate":"ms.hint.shard","fallback": "长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color": "blue"}]
-execute as @s[tag=!healing] at @s if entity @e[tag=gold,distance=..1] run title @s actionbar [{"translate":"ms.hint.light","fallback": "长按 [%s] 以点亮","with":[{"keybind":"key.sneak"}],"color": "gold"}]
+
+# 收集提示
+execute as @s[tag=!collecting] at @s if entity @e[tag=blue,distance=..1] run tag @s add collect_hint
+execute as @s[tag=!healing] at @s if entity @e[tag=gold,distance=..1] run tag @s add heal_hint
+execute as @s[tag=collect_hint] run title @s actionbar [{"translate":"ms.hint.shard","fallback": "长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color": "blue"}]
+execute as @s[tag=heal_hint] run title @s actionbar [{"translate":"ms.hint.light","fallback": "长按 [%s] 以点亮","with":[{"keybind":"key.sneak"}],"color": "gold"}]
+execute as @s[tag=collect_hint] at @s unless entity @e[tag=blue,distance=..1] run title @s actionbar ""
+execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run title @s actionbar ""
+execute as @s[tag=collect_hint] at @s unless entity @e[tag=blue,distance=..1] run tag @s remove collect_hint
+execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run tag @s remove heal_hint
 
 # 分数为 时间*200
 execute if entity @s[tag=!healing,tag=!collecting] run scoreboard players reset @s countdown

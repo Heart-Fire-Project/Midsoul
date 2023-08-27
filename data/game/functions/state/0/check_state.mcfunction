@@ -1,9 +1,5 @@
-# 检测准备人数
-# 重置人数
-team join unready @a[team=]
-scoreboard players set $prepare data 0
-
 # 数人头
+scoreboard players set $prepare data 0
 execute as @e[team=prepare] run scoreboard players add $prepare data 1
 
 execute unless score $gamelock data matches 1 run function game:state/0/ready_process

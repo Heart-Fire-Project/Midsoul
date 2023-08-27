@@ -1,0 +1,25 @@
+name: 地图优化
+description: 对地图中不合理或可以添加的要素做出建议
+title: "[地图优化] "
+labels: "» 优化"
+body:
+- type: textarea
+  id: "yml-1"
+  attributes:
+    label: 位置
+    description: "尽量具体描述该地的位置，直接扔个坐标也可以"
+  validations:
+    required: true
+- type: textarea
+  id: "yml-2"
+  attributes:
+    label: 建议
+    description: "尽量详细地描述你觉得可以怎样修改"
+  validations:
+    required: true
+- type: textarea
+  id: "yml-3"
+  attributes:
+    label: 附件
+    description: "如果可以的话，给一个例子让我们看看是极好的"
+    placeholder: "把截图粘贴到这里，或者直接把文件拖进来"

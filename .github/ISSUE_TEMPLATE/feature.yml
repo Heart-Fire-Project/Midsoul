@@ -1,0 +1,28 @@
+name: 新功能提案
+description: 大幅度的修改某一项内容，或者是新加一项内容
+title: "[新功能] "
+labels: "» 新功能"
+body:
+- type: markdown
+  attributes:
+    value: "现在比较繁忙，新功能很可能会被拖很久……但你可以先扔这"
+- type: textarea
+  id: "yml-1"
+  attributes:
+    label: 描述
+    description: "详细描述这个新功能是怎样的"
+  validations:
+    required: true
+- type: textarea
+  id: "yml-2"
+  attributes:
+    label: 原因
+    description: "为什么你觉得这个功能是必要的"
+  validations:
+    required: true
+- type: textarea
+  id: "yml-3"
+  attributes:
+    label: 附件
+    description: "如果有原案之类的话，最好可以贴个例子到这里"
+    placeholder: "把截图粘贴到这里，或者直接把文件拖进来"

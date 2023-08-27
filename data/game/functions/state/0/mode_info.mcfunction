@@ -1,0 +1,2 @@
+execute if score $mode_select data matches 1 run tellraw @s {"translate":"ms.mode.1.desc","fallback":"双方随机天赋、技能。","color":"gray"}
+execute if score $mode_select data matches 2 run tellraw @s {"translate":"ms.mode.2.desc","fallback":"双方分别选择禁用对方天赋、技能，之后自选天赋、技能。","color":"gray"}

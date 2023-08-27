@@ -36,26 +36,25 @@ item replace entity @s hotbar.0 with air
 item replace entity @s hotbar.1 with air
 item replace entity @s hotbar.2 with air
 item replace entity @s hotbar.3 with air
+item replace entity @s hotbar.4 with air
 item replace entity @s hotbar.5 with air
 item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
-item replace entity @s hotbar.8 with air
-
 # 他真准备了吗
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:gray_dye"}]}] as @s run team join prepare
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:gray_dye"}]}] as @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 1000000 0.1 1
-execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:lime_dye"}]}] as @s run team join unready
-execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:lime_dye"}]}] as @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 1000000 1 1
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:purple_dye"}]}] as @s run team join unready
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:purple_dye"}]}] as @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 1000000 1 1
 
 # 让物品摇滚出去
-kill @e[type=item,distance=..3]
+kill @e[type=item,tag=!game_entity]
 
 # 技能处理
-item replace entity @s[team=unready] hotbar.4 with gray_dye
-item replace entity @s[team=prepare] hotbar.4 with lime_dye
+item replace entity @s[team=unready] hotbar.8 with gray_dye
+item replace entity @s[team=prepare] hotbar.8 with purple_dye
 
 # 处理数据
-item modify entity @s[team=unready] hotbar.4 base:item/lobby_unready
-item modify entity @s[team=prepare] hotbar.4 base:item/lobby_prepare
+item modify entity @s[team=unready] hotbar.8 base:item/lobby_unready
+item modify entity @s[team=prepare] hotbar.8 base:item/lobby_prepare
 
 item replace entity @s weapon.offhand with air

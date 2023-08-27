@@ -1,4 +1,4 @@
 {
     "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.lobby.ready\",\"fallback\": \"已准备 - 按 [%s] 取消\",\"italic\": false,\"color\":\"green\",\"with\":[{\"keybind\":\"key.swapOffhand\"}]}'},HideFlags:63}"
+    "tag": "{display:{Name:'{\"translate\":\"ms.lobby.ready\",\"fallback\": \"已准备 - 按 [%s] 取消\",\"italic\": false,\"color\":\"#BC78EC\",\"with\":[{\"keybind\":\"key.swapOffhand\"}]}'},HideFlags:63}"
 }

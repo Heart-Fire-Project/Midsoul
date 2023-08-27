@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 新技能/天赋提案
+    url: https://github.com/Heart-Fire-Project/midnight-soul-dp/discussions/new?category=%E6%96%B0%E7%82%B9%E5%AD%90
+    about: 如果有新点子的话就用这个
+  - name: 在社区中提问
+    url: https://github.com/Heart-Fire-Project/midnight-soul-dp/discussions/new?category=q-a
+    about: 对什么东西抱有小小的疑问就用这个

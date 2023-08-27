@@ -1,6 +1,7 @@
 scoreboard players set $shard_collected temp 0
-scoreboard players set $shard_goal temp 0
-execute as @e[tag=marker_blue] run scoreboard players add $shard_goal temp 1
+execute if score $map temp matches 1 run scoreboard players set $shard_goal temp 24
+execute if score $map temp matches 2 run scoreboard players set $shard_goal temp 18
+execute if score $map temp matches 3 run scoreboard players set $shard_goal temp 40
 
 # Bossbar 设置
 bossbar set midsoul:info style progress
