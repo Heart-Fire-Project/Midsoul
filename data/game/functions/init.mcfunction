@@ -1,7 +1,7 @@
 # 重置游戏
 
 # 游戏设定
-setworldspawn 0 263 0
+setworldspawn -55 270 7
 forceload remove all
 time set midnight
 weather clear

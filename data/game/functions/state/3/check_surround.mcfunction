@@ -5,18 +5,24 @@ tag @s add healing
 # 根据情况判断收集类型
 execute unless score @s sneak_time matches 1.. run tag @s remove collecting
 execute unless score @s sneak_time matches 1.. run tag @s remove healing
+execute unless score @s sneak_time matches 1.. run tag @s remove opening
 execute at @s unless entity @e[tag=blue,distance=..1] run tag @s remove collecting
 execute at @s unless entity @e[tag=gold,distance=..1] run tag @s remove healing
+execute at @s unless entity @e[tag=gray,distance=..1] run tag @s remove opening
 
 # 收集提示
 execute as @s[tag=!collecting] at @s if entity @e[tag=blue,distance=..1] run tag @s add collect_hint
 execute as @s[tag=!healing] at @s if entity @e[tag=gold,distance=..1] run tag @s add heal_hint
+execute as @s[tag=!opening] at @s if entity @e[tag=gray,distance=..1] run tag @s add chest_hint
 execute as @s[tag=collect_hint] run title @s actionbar [{"translate":"ms.hint.shard","fallback": "长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color": "blue"}]
 execute as @s[tag=heal_hint] run title @s actionbar [{"translate":"ms.hint.light","fallback": "长按 [%s] 以点亮","with":[{"keybind":"key.sneak"}],"color": "gold"}]
+execute as @s[tag=chest_hint] run title @s actionbar [{"translate":"ms.hint.chest","fallback": "长按 [%s] 以开启","with":[{"keybind":"key.sneak"}],"color": "yellow"}]
 execute as @s[tag=collect_hint] at @s unless entity @e[tag=blue,distance=..1] run title @s actionbar ""
 execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run title @s actionbar ""
+execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run title @s actionbar ""
 execute as @s[tag=collect_hint] at @s unless entity @e[tag=blue,distance=..1] run tag @s remove collect_hint
 execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run tag @s remove heal_hint
+execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run tag @s remove chest_hint
 
 # 分数为 时间*200
 execute if entity @s[tag=!healing,tag=!collecting] run scoreboard players reset @s countdown
@@ -44,6 +50,14 @@ execute if score $state data matches 4 if entity @s[tag=heal_finish] as @r[team=
 execute if entity @s[tag=heal_finish] at @s at @e[distance=..1,tag=gold] run particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a
 execute if entity @s[tag=heal_finish] at @s as @e[distance=..1,tag=gold] run playsound item.trident.return ambient @a ~ ~ ~
 execute if entity @s[tag=heal_finish] at @s as @e[distance=..1,tag=gold] run kill @s
+
+# 若本次完成开启
+execute if entity @s[tag=opening,scores={countdown=801..}] run tag @s add open_finish
+execute if entity @s[tag=open_finish] as @s run scoreboard players add @s stat_temp_open 1
+execute if entity @s[tag=open_finish] at @s at @e[distance=..1,tag=gray] run particle happy_villager ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
+execute if entity @s[tag=open_finish] at @s as @e[distance=..1,tag=gray] run playsound block.chest.open ambient @a ~ ~ ~
+execute if entity @s[tag=open_finish] at @s as @e[distance=..1,tag=gray] run kill @s
+execute if entity @s[tag=open_finish] run function game:state/3/chest_open
 
 # 天赋影响
 execute if entity @s[tag=collect_finish,scores={talent_1=1}] run tag @s add talent_001_active

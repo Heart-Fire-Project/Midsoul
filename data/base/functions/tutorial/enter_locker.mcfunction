@@ -1,2 +1,0 @@
-tellraw @s[team=alive] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.enter.locker.soul","fallback": "待在里面能使你隐身，但并不免疫发光，只能让你暂时躲避一下？","bold": false}]
-tag @s[tag=!enter_locker_tr] add enter_locker_tr

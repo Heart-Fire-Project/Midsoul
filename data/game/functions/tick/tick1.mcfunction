@@ -11,4 +11,4 @@ execute if score $state data matches 0 run function game:state/0/tick1
 execute if score $state data matches 3 run function game:state/3/tick1
 execute if score $state data matches 4 run function game:state/4/tick1
 
-spawnpoint @a 0 263 0
+spawnpoint @a -55 270 7

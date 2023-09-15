@@ -1,9 +1,6 @@
 # 侦测玩家蹲下
 execute as @a[team=alive,scores={state=0}] run function game:state/3/check_surround
 
-# 进入柜子判定
-execute as @e[tag=marker_black] at @s run execute as @a[distance=..5] at @s run function game:state/3/enter_locker
-
 # 计算玩家冷却
 scoreboard players operation @a[scores={skill_cd=1..}] skill_cd -= $cd_speed data
 scoreboard players operation @a[scores={talent_1_cd=1..}] talent_1_cd -= $cd_speed data

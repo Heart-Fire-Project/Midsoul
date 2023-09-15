@@ -9,7 +9,7 @@ execute if score $state data matches 4 run bossbar set midsoul:info players @a[t
 execute if score $state data matches 5 run bossbar set midsoul:info players
 
 # 按照逻辑传送
-execute if score $state data matches 0 run tp @s 3 257 3 135 0
+execute if score $state data matches 0 run tp @s -55 270 7 -45 0
 execute if score $state data matches 1 run tp @s 0 1000 0
 execute if score $state data matches 2..5 run tp @s @a[limit=1,team=protect]
 

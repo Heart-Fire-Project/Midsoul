@@ -17,7 +17,7 @@ effect give @s regeneration infinite 4 true
 gamemode adventure @s[team=!admin]
 
 # 传送玩家
-tp @s[team=!admin] 3 257 3 135 0
+tp @s[team=!admin] -55 270 7 135 0
 
 # 重置队伍
 team join unready @s

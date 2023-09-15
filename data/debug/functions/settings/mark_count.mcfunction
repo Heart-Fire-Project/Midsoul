@@ -15,4 +15,4 @@ tellraw @s ["\n",{"translate":"ms.debug.mark.count","fallback": " 300 格内的�
 tellraw @s [{"translate":"ms.debug.mark.count.blue","fallback": " 灵魂碎片 » %s","color": "blue","with":[{"score":{"name":"$mark_count_blue","objective":"temp"}}]}]
 tellraw @s [{"translate":"ms.debug.mark.count.purple","fallback": " 传送门 » %s","color": "light_purple","with":[{"score":{"name":"$mark_count_purple","objective":"temp"}}]}]
 tellraw @s [{"translate":"ms.debug.mark.count.gold","fallback": " 灵魂之灯 » %s","color": "gold","with":[{"score":{"name":"$mark_count_gold","objective":"temp"}}]}]
-tellraw @s [{"translate":"ms.debug.mark.count.black","fallback": " 柜子 » %s","color": "gray","with":[{"score":{"name":"$mark_count_black","objective":"temp"}}]},"\n"]
+tellraw @s [{"translate":"ms.debug.mark.count.black","fallback": " 灵魂宝物箱 » %s","color": "gray","with":[{"score":{"name":"$mark_count_black","objective":"temp"}}]},"\n"]
