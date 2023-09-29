@@ -27,6 +27,8 @@ gamerule fallDamage false
 # 记分板
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy "临时数据"
+scoreboard objectives remove item
+scoreboard objectives add item dummy "携带道具"
 scoreboard objectives remove skill
 scoreboard objectives add skill dummy "携带技能"
 scoreboard objectives remove talent_1
@@ -170,6 +172,7 @@ scoreboard players set $256 data 256
 scoreboard players set $300 data 300
 scoreboard players set $450 data 450
 scoreboard players set $600 data 600
+scoreboard players set $800 data 800
 scoreboard players set $1000 data 1000
 
 tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.info.init","fallback": "%s 重置了游戏","color": "#BC78EC","with":[{"selector":"@s"}]},"\n"]

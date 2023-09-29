@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{display:{Name:'{\"translate\":\"ms.item.001\",\"fallback\": \"无懈可击\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.item.001.desc\",\"fallback\": \"启用宝物后的 0.8 秒内免疫所有伤害。\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+}

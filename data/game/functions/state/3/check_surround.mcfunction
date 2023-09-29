@@ -1,6 +1,7 @@
 # 添加基础 tag
 tag @s add collecting
 tag @s add healing
+tag @s add opening
 
 # 根据情况判断收集类型
 execute unless score @s sneak_time matches 1.. run tag @s remove collecting
@@ -25,12 +26,14 @@ execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run t
 execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run tag @s remove chest_hint
 
 # 分数为 时间*200
-execute if entity @s[tag=!healing,tag=!collecting] run scoreboard players reset @s countdown
+execute if entity @s[tag=!healing,tag=!collecting,tag=!opening] run scoreboard players reset @s countdown
 execute if entity @s[tag=collecting] unless score @s countdown matches 0..600 run scoreboard players set @s countdown -10
 execute if entity @s[tag=collecting] if score @s countdown matches -10..600 run scoreboard players operation @s countdown += $collect_speed data
 execute if entity @s[tag=collecting,tag=talent_001_active] if score @s countdown matches 0..1000 at @s run function game:state/3/skill/talent_001
 execute if entity @s[tag=healing] unless score @s countdown matches 0..1000 run scoreboard players set @s countdown -10
 execute if entity @s[tag=healing] if score @s countdown matches -10..1000 run scoreboard players operation @s countdown += $collect_speed data
+execute if entity @s[tag=opening] unless score @s countdown matches 0..800 run scoreboard players set @s countdown -10
+execute if entity @s[tag=opening] if score @s countdown matches -10..800 run scoreboard players operation @s countdown += $collect_speed data
 
 # 若本次完成收集
 execute if entity @s[tag=collecting,scores={countdown=601..}] run tag @s add collect_finish
@@ -71,6 +74,7 @@ execute if entity @a[tag=heal_finish] as @a[team=protect,scores={talent_1=2,tale
 execute if entity @a[tag=heal_finish] as @a[team=protect,scores={talent_2=2,talent_2_cd=..0}] at @s run function game:state/3/skill/talent_102
 tag @s remove collect_finish
 tag @s remove heal_finish
+tag @s remove open_finish
 
 # 每次循环后
 scoreboard players remove @s[scores={sneak_time=1..}] sneak_time 1

@@ -2,6 +2,7 @@
 scoreboard players operation @s temp = @s countdown
 scoreboard players operation @s temp *= $182 data
 scoreboard players operation @s[tag=collecting] temp /= $600 data
+scoreboard players operation @s[tag=opening] temp /= $800 data
 scoreboard players operation @s[tag=healing] temp /= $1000 data
 scoreboard players operation @s[scores={state=1},team=alive,tag=!healed_1,tag=!healed_2] temp /= $600 data
 scoreboard players operation @s[scores={state=1},team=alive,tag=healed_1,tag=!healed_2] temp /= $450 data

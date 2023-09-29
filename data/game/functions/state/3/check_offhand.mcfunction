@@ -5,3 +5,6 @@ execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:recovery_compass"
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:spectral_arrow"}]}] as @s at @s run function game:state/3/skill/skill_101
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:echo_shard"}]}] as @s at @s run function game:state/3/skill/skill_102_a
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] as @s at @s run function game:state/3/skill/skill_103_a
+
+# 道具
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_chestplate"}]}] as @s at @s run function game:state/3/item/item_1_a

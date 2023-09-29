@@ -39,7 +39,6 @@ item replace entity @s hotbar.5 with air
 item replace entity @s hotbar.6 with air
 
 # 武器处理
-item replace entity @s[team=!protect] hotbar.1 with air
 item replace entity @s[team=protect,scores={state=1}] hotbar.1 with air
 item replace entity @s[team=protect,scores={state=0}] hotbar.1 with golden_sword{display:{Name:'[{"translate":"ms.weapon","fallback": "祛灵刃","italic": false}]',Lore:['{"translate":"ms.weapon.desc","fallback": "斩断一切不净之物","italic": false,"color": "gray"}']},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:0.1,Name:"attack",Slot:"mainhand",Operation:0,UUID:[I;7,4,1,9]},{AttributeName:"generic.attack_speed",Amount:4,Name:"attack",Slot:"mainhand",Operation:0,UUID:[I;2,0,2,3]}],HideFlags:63}
 
@@ -73,7 +72,13 @@ item replace entity @s[scores={talent_2=3},team=protect] hotbar.8 with redstone
 item replace entity @s[scores={talent_2=4},team=protect] hotbar.8 with black_candle
 execute if score @s talent_2_cd matches 1.. unless entity @s[tag=talent_104_active] run item replace entity @s hotbar.8 with firework_star
 
+# 道具处理
+item replace entity @s[team=!protect] hotbar.1 with barrier
+item replace entity @s[scores={item=1},team=alive] hotbar.1 with iron_chestplate
+
 # 处理数据
+item modify entity @s[team=alive,scores={state=1}] hotbar.1 base:item/000
+item modify entity @s[team=alive,scores={item=1}] hotbar.1 base:item/001
 item modify entity @s[team=alive,scores={skill=1}] hotbar.4 base:skill/001
 item modify entity @s[team=alive,scores={skill=2}] hotbar.4 base:skill/002
 item modify entity @s[team=alive,scores={skill=3}] hotbar.4 base:skill/003

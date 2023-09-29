@@ -6,10 +6,12 @@ scoreboard players add @a[team=dead] stat_dead 1
 scoreboard players add @a[team=finish] stat_finish 1
 execute as @a run scoreboard players operation @s stat_total_collect += @s stat_temp_collect
 execute as @a run scoreboard players operation @s stat_total_heal += @s stat_temp_heal
+execute as @a run scoreboard players operation @s stat_total_open += @s stat_temp_open
 
 # 重置计分板
 scoreboard players reset @a stat_temp_collect
 scoreboard players reset @a stat_temp_heal
+scoreboard players reset @a stat_temp_open
 scoreboard players reset $soul_rank temp
 scoreboard players reset @a countdown
 scoreboard players reset @a sneak_time
