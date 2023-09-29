@@ -102,6 +102,9 @@ team modify lamp color gold
 team remove portal
 team add portal "传送门"
 team modify portal color light_purple
+team remove chest
+team add chest "灵魂宝物箱"
+team modify chest color gray
 
 # 全局队伍
 team remove prepare

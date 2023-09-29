@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:knowledge_book"
+      },
+      "title": {
+        "translate": "ms.achv.hidden.root",
+        "fallback": "特殊"
+      },
+      "description": "",
+      "background": "textures/block/oak_planks.png",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location"
+      }
+    }
+  }
+  
