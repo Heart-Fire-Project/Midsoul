@@ -148,6 +148,7 @@ scoreboard players set $cd_speed data 10
 scoreboard players set $collect_speed data 10
 scoreboard players set $initcheck data 51121
 scoreboard players set $show_mark data 0
+scoreboard players set $show_donate_tip data 0
 
 # 常数项
 scoreboard players set $4 data 4
