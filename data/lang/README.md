@@ -27,9 +27,11 @@ The full map of Midnight Soul **300+** text has been fully adapted and localized
 >
 > 🟥 The map development team has no members who are proficient in this language and needs help.
 
+If the current version of the language does not match the map, it may need to be updated.
+
 | Name (transliteration)                                       | Language                               | Locale Code | Current version      | Official language                                            | Contributor            | Official support |
 | ------------------------------------------------------------ | -------------------------------------- | ----------- | -------------------- | ------------------------------------------------------------ | ---------------------- | ---------------- |
-| 简体中文（中国大陆） (*Jiǎntǐ Zhōngwén (Zhōngguó Dàlù)*)     | Chinese Simplified (China; Mandarin)   | zh_cn       | **Default language** | **Chinese mainland**, Singapore, Malaysia                    | Midnight Soul Dev Team | 🟩                |
+| 简体中文（中国大陆） (*Jiǎntǐ Zhōngwén (Zhōngguó Dàlù)*)     | Chinese Simplified (China; Mandarin)   | zh_cn       | Beta 1.0 | **Chinese mainland**, Singapore, Malaysia                    | Midnight Soul Dev Team | 🟩                |
 | 繁體中文（台灣） (*Fántǐ Zhōngwén (Táiwān)*)                 | Chinese Traditional (Taiwan; Mandarin) | zh_tw       | No available version | **Taiwan (Republic of China)**                               | Midnight Soul Dev Team | 🟩🟪               |
 | 繁體中文（香港特別行政區） (*Fàahntái Jūngmàhn (Hēunggóng Dahkbiht Hàhngjingkēui)*) | Chinese Traditional (Hong Kong; Mix)   | zh_hk       | No available version | **Hong Kong SAR**, Macau SAR                                 | Midnight Soul Dev Team | 🟩🟪               |
 | 梗体中文 (*Gěngtǐ Zhōngwén*)                                 |                                        | zh_meme     | No available version |                                                              | Midnight Soul Dev Team | 🟩🟪               |
