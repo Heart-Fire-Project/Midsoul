@@ -58,10 +58,11 @@ execute if score $end_anime temp matches 51 if score $finish temp matches ..-4 r
 scoreboard players operation $temp_end stat_temp_play_time = $temp stat_temp_play_time
 execute store result score $temp_m stat_temp_play_time run scoreboard players operation $temp_end stat_temp_play_time /= $1200 data
 scoreboard players operation $temp_end stat_temp_play_time = $temp stat_temp_play_time
-execute store result score $temp_s stat_temp_play_time run scoreboard players operation $temp_end stat_temp_play_time %= $20 data
-scoreboard players operation $temp_end_m stat_temp_play_time = $temp_m stat_temp_play_time
-execute store result score $temp_rs stat_temp_play_time run scoreboard players operation $temp_end_m stat_temp_play_time *= $60 data
-scoreboard players operation $temp_s stat_temp_play_time -= $temp_rs stat_temp_play_time
+execute store result score $temp_s stat_temp_play_time run scoreboard players operation $temp_end stat_temp_play_time %= $1200 data
+scoreboard players operation $temp_s stat_temp_play_time /= $20 data
+#scoreboard players operation $temp_end_m stat_temp_play_time = $temp_m stat_temp_play_time
+#execute store result score $temp_rs stat_temp_play_time run scoreboard players operation $temp_end_m stat_temp_play_time *= $60 data
+#scoreboard players operation $temp_s stat_temp_play_time -= $temp_rs stat_temp_play_time
 execute if score $end_anime temp matches 71 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.1","fallback": "------- 详细结果 -------"}
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.2","fallback": "灵魂守卫者"}," » ",{"selector":"@a[team=protect]"}]
