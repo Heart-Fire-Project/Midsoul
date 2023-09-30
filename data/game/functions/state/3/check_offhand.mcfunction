@@ -1,4 +1,4 @@
-# 根据物品给技能
+# 技能
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:phantom_membrane"}]}] as @s at @s run function game:state/3/skill/skill_001_a
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:soul_lantern"}]}] as @s at @s run function game:state/3/skill/skill_002_a
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:recovery_compass"}]}] as @s at @s run function game:state/3/skill/skill_003

@@ -63,7 +63,7 @@ execute if entity @s[tag=open_finish] as @s run scoreboard players add @s stat_t
 execute if entity @s[tag=open_finish] at @s at @e[distance=..1,tag=gray] run particle happy_villager ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 execute if entity @s[tag=open_finish] at @s as @e[distance=..1,tag=gray] run playsound block.chest.open ambient @a ~ ~ ~
 execute if entity @s[tag=open_finish] at @s as @e[distance=..1,tag=gray] run kill @s
-execute if entity @s[tag=open_finish] run function game:state/3/chest_open
+execute if entity @s[tag=open_finish] run function game:state/3/chest_open_soul
 
 # 天赋影响
 execute if entity @s[tag=collect_finish,scores={talent_1=1}] run tag @s add talent_001_active

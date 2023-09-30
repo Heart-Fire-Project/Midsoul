@@ -1,5 +1,6 @@
 # 侦测玩家蹲下
-execute as @a[team=alive,scores={state=0}] run function game:state/3/check_surround
+execute as @a[team=alive,scores={state=0}] run function game:state/3/check_surround_soul
+execute as @a[team=protect,scores={state=0}] run function game:state/3/check_surround_protect
 
 # 计算玩家冷却
 scoreboard players operation @a[scores={skill_cd=1..}] skill_cd -= $cd_speed data
