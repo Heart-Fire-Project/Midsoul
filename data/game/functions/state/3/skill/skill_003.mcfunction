@@ -1,4 +1,5 @@
 title @s actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color": "aqua"}," » ",{"translate":"ms.skill.003","fallback":"逆向追踪"}]
+scoreboard players add @s stat_temp_skill 1
 
 playsound entity.evoker.cast_spell player @s
 particle minecraft:sculk_charge_pop ~ ~0.2 ~ 0.2 0.1 0.2 0.1 12 force @a

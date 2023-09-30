@@ -1,4 +1,5 @@
 title @s actionbar [{"translate":"ms.talent.active","fallback":"天赋触发","color": "red"}," » ",{"translate":"ms.talent.102","fallback":"火冒三丈"}]
+scoreboard players add @s stat_temp_talent 1
 
 playsound entity.ravager.roar player @s
 particle angry_villager ~ ~1.8 ~ 0.3 0.1 0.3 1 12 force @a

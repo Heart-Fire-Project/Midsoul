@@ -41,6 +41,11 @@ execute if score $end_anime temp matches 42 unless entity @a[team=protect] run s
 # -2 - 守卫 略胜一筹
 # -4 - 守卫 大获全胜
 
+# 统计数据
+execute if score $end_anime temp matches 51 if score $finish temp matches 1..4 run scoreboard players add @a[team=soul] stat_total_win 1
+execute if score $end_anime temp matches 51 if score $finish temp matches 0 run scoreboard players add @a[team=!admin] stat_total_draw 1
+execute if score $end_anime temp matches 51 if score $finish temp matches -4..-1 run scoreboard players add @a[team=protect] stat_total_win 1
+
 # 小标题
 execute if score $end_anime temp matches 51 run playsound entity.warden.sonic_boom player @a[team=!admin] 0 1000000 0 1000000
 execute if score $end_anime temp matches 51 if score $finish temp matches 4.. run title @a[team=!admin] subtitle {"translate":"ms.end.a","fallback": "灵魂方 大获全胜","color": "aqua"}
@@ -50,13 +55,22 @@ execute if score $end_anime temp matches 51 if score $finish temp matches -3..-1
 execute if score $end_anime temp matches 51 if score $finish temp matches ..-4 run title @a[team=!admin] subtitle {"translate":"ms.end.e","fallback": "灵魂守护者 大获全胜","color": "red"}
 
 # 详细信息
+scoreboard players operation $temp_end stat_temp_play_time = $temp stat_temp_play_time
+execute store result score $temp_m stat_temp_play_time run scoreboard players operation $temp_end stat_temp_play_time /= $1200 data
+scoreboard players operation $temp_end stat_temp_play_time = $temp stat_temp_play_time
+execute store result score $temp_s stat_temp_play_time run scoreboard players operation $temp_end stat_temp_play_time %= $20 data
+scoreboard players operation $temp_end_m stat_temp_play_time = $temp_m stat_temp_play_time
+execute store result score $temp_rs stat_temp_play_time run scoreboard players operation $temp_end_m stat_temp_play_time *= $60 data
+scoreboard players operation $temp_s stat_temp_play_time -= $temp_rs stat_temp_play_time
 execute if score $end_anime temp matches 71 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.1","fallback": "------- 详细结果 -------"}
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.2","fallback": "灵魂守卫者"}," » ",{"selector":"@a[team=protect]"}]
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.3","fallback": "复活灵魂"}," » ",{"selector":"@a[team=finish]"}]
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.4","fallback": "死亡灵魂"}," » ",{"selector":"@a[team=dead]"}]
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.time","fallback": "持续时间 » %s 分 %s 秒","with":[{"score":{"name":"$temp_m","objective":"stat_temp_play_time"}},{"score":{"name":"$temp_s","objective":"stat_temp_play_time"}}]}
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.5","fallback": "等待稍后回到大厅…"}
 execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.6","fallback": "---------------------"}
+execute if score $end_anime temp matches 71 run scoreboard players reset * stat_temp_play_time
 
 # 给点钱吧QAQ
 execute if score $end_anime temp matches 121 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
@@ -66,6 +80,6 @@ execute if score $end_anime temp matches 121 unless score $show_donate_tip data 
 # 把玩家都丢回去
 execute if score $end_anime temp matches 161 run function game:state/0/enter
 
-# 清除这个烂摊子
+# 清理
 execute if score $end_anime temp matches 181 run kill @e[tag=game_entity]
 execute if score $end_anime temp matches 191 run forceload remove all

@@ -59,7 +59,6 @@ execute if entity @s[tag=heal_finish] at @s as @e[distance=..1,tag=gold] run kil
 
 # 若本次完成开启
 execute if entity @s[tag=opening,scores={countdown=801..}] run tag @s add open_finish
-execute if entity @s[tag=open_finish] as @s run scoreboard players add @s stat_temp_open 1
 execute if entity @s[tag=open_finish] at @s at @e[distance=..1,tag=gray] run particle happy_villager ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 execute if entity @s[tag=open_finish] at @s as @e[distance=..1,tag=gray] run playsound block.chest.open ambient @a ~ ~ ~
 execute if entity @s[tag=open_finish] at @s as @e[distance=..1,tag=gray] run kill @s

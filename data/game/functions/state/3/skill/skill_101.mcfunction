@@ -1,4 +1,5 @@
 title @s actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color": "red"}," » ",{"translate":"ms.skill.101","fallback":"虔诚力场"}]
+scoreboard players add @s stat_temp_skill 1
 
 playsound block.enchantment_table.use player @s
 particle totem_of_undying ~ ~1 ~ 0.2 0.1 0.2 0.1 64 force @a

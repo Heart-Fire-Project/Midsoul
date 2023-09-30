@@ -6,3 +6,4 @@ function game:state/3/refresh_inventory
 scoreboard players set @s[scores={talent_1=4}] talent_1_cd 18000
 scoreboard players set @s[scores={talent_2=4}] talent_2_cd 18000
 tag @s remove talent_104_active
+tag @s remove hit_soul

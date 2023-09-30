@@ -1,4 +1,5 @@
 title @s actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color": "aqua"}," » ",{"translate":"ms.skill.002","fallback":"灵灯之筑"}]
+scoreboard players add @s stat_temp_skill 1
 
 playsound block.amethyst_block.chime player @s ~ ~ ~ 1000000
 particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a

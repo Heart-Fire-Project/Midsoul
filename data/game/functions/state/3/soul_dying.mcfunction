@@ -6,6 +6,9 @@ scoreboard players set @s[tag=healed_1,tag=healed_2] countdown 301
 scoreboard players set @s[tag=!healed_1,tag=healed_2] countdown 151
 scoreboard players set @s state 1
 
+scoreboard players add @a[scores={talent_1=3},team=alive] stat_temp_talent 1
+scoreboard players add @a[scores={talent_2=3},team=alive] stat_temp_talent 1
+
 function game:state/3/refresh_inventory
 function game:state/3/give_effect
 function game:state/3/new_light

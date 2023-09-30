@@ -1,4 +1,5 @@
 title @s actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color": "red"}," » ",{"translate":"ms.skill.102","fallback":"唤灵留迹"}]
+scoreboard players add @s stat_temp_skill 1
 
 playsound block.bell.resonate player @s
 particle end_rod ~ ~0.3 ~ 0.2 0.1 0.2 0.2 64 force @a

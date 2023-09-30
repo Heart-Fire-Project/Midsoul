@@ -1,4 +1,5 @@
 title @s actionbar [{"translate":"ms.talent.active","fallback":"天赋触发","color": "aqua"}," » ",{"translate":"ms.talent.001","fallback":"全神贯注"}]
+scoreboard players add @s stat_temp_talent 1
 
 # 分情况触发
 effect give @s[tag=collect_finish] speed 3 1

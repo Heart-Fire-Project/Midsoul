@@ -3,6 +3,7 @@ scoreboard players set @s state 1
 function game:state/3/give_effect
 function base:tutorial/hit_soul
 function game:state/3/refresh_inventory
+tag @s add hit_soul
 
 execute as @s[scores={talent_1=3}] at @s run function game:state/3/skill/talent_103
 execute as @s[scores={talent_2=3}] at @s run function game:state/3/skill/talent_103

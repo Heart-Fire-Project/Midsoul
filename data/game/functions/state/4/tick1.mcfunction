@@ -7,6 +7,10 @@ scoreboard players operation @a[scores={skill_cd=1..}] skill_cd -= $cd_speed dat
 scoreboard players operation @a[scores={talent_1_cd=1..}] talent_1_cd -= $cd_speed data
 scoreboard players operation @a[scores={talent_2_cd=1..}] talent_2_cd -= $cd_speed data
 execute as @a[scores={skill_cd=..0,state=0},tag=!skill_on] run function game:state/3/skill/skill_active
+execute as @a[scores={item=1..}] run function game:state/3/check_offhand
+
+# 统计
+scoreboard players add $temp stat_temp_play_time 1
 
 # 刷新经验条
 execute as @a run function game:state/3/set_exp

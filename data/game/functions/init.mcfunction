@@ -59,6 +59,18 @@ scoreboard objectives remove stat_temp_collect
 scoreboard objectives add stat_temp_collect dummy "玩家本局收集碎片次数"
 scoreboard objectives remove stat_temp_heal
 scoreboard objectives add stat_temp_heal dummy "玩家本局救助次数"
+scoreboard objectives remove stat_temp_open
+scoreboard objectives add stat_temp_open dummy "玩家本局开启灵魂宝物箱次数"
+scoreboard objectives remove stat_temp_down
+scoreboard objectives add stat_temp_down dummy "玩家本局击倒次数"
+scoreboard objectives remove stat_temp_skill
+scoreboard objectives add stat_temp_skill dummy "玩家本局技能使用次数"
+scoreboard objectives remove stat_temp_talent
+scoreboard objectives add stat_temp_talent dummy "玩家本局天赋使用次数"
+scoreboard objectives remove stat_temp_item
+scoreboard objectives add stat_temp_item dummy "玩家本局道具使用次数"
+scoreboard objectives remove stat_temp_play_time
+scoreboard objectives add stat_temp_play_time dummy "玩家本局对局持续时间"
 scoreboard objectives remove stat_check
 scoreboard objectives add stat_check trigger "查询统计数据"
 
@@ -67,6 +79,14 @@ scoreboard objectives add stat_dead dummy "玩家死亡次数"
 scoreboard objectives add stat_finish dummy "玩家复活次数"
 scoreboard objectives add stat_total_collect dummy "玩家总收集碎片次数"
 scoreboard objectives add stat_total_heal dummy "玩家总救助次数"
+scoreboard objectives add stat_total_open dummy "玩家总开启灵魂宝物箱次数"
+scoreboard objectives add stat_total_down dummy "玩家总击倒次数"
+scoreboard objectives add stat_total_skill dummy "玩家总技能使用次数"
+scoreboard objectives add stat_total_talent dummy "玩家总天赋使用次数"
+scoreboard objectives add stat_total_item dummy "玩家总道具使用次数"
+scoreboard objectives add stat_total_play_time dummy "玩家总对局持续时间"
+scoreboard objectives add stat_total_win dummy "玩家总对局获胜次数"
+scoreboard objectives add stat_total_draw dummy "玩家总对局平局次数"
 
 # 游玩队伍
 team remove alive
@@ -174,6 +194,7 @@ scoreboard players set $450 data 450
 scoreboard players set $600 data 600
 scoreboard players set $800 data 800
 scoreboard players set $1000 data 1000
+scoreboard players set $1200 data 1200
 
 tellraw @a ["\n",{"text": " » ","color": "#BC78EC","bold": true},{"translate":"ms.info.init","fallback": "%s 重置了游戏","color": "#BC78EC","with":[{"selector":"@s"}]},"\n"]
 
