@@ -1,3 +1,6 @@
+# 清理遗留实体
+kill @e[tag=game_entity]
+
 # 生成碎片
 execute at @e[tag=marker_blue] run summon item ~ ~0.5 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"minecraft:echo_shard",Count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute at @e[tag=new_blue] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
