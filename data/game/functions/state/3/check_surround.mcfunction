@@ -11,6 +11,9 @@ execute at @s unless entity @e[tag=blue,distance=..1] run tag @s remove collecti
 execute at @s unless entity @e[tag=gold,distance=..1] run tag @s remove healing
 execute at @s unless entity @e[tag=gray,distance=..1] run tag @s remove opening
 
+# 教程
+execute as @s[tag=!opening,tag=!near_chest_tr] at @s if entity @e[tag=gray,distance=..1] run function base:tutorial/near_chest
+
 # 收集提示
 execute as @s[tag=!collecting] at @s if entity @e[tag=blue,distance=..1] run tag @s add collect_hint
 execute as @s[tag=!healing] at @s if entity @e[tag=gold,distance=..1] run tag @s add heal_hint
