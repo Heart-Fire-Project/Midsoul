@@ -11,6 +11,8 @@ execute as @a[scores={item=1..}] run function game:state/3/check_offhand
 
 # 统计
 scoreboard players add $temp stat_temp_play_time 1
+scoreboard players add @a[team=protect] stat_temp_play_time 1
+scoreboard players add @a[team=alive] stat_temp_play_time 1
 
 # 刷新经验条
 execute as @a run function game:state/3/set_exp

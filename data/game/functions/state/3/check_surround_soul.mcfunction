@@ -20,7 +20,7 @@ execute as @s[tag=!healing] at @s if entity @e[tag=gold,distance=..1] run tag @s
 execute as @s[tag=!opening] at @s if entity @e[tag=gray,distance=..1] run tag @s add chest_hint
 execute as @s[tag=collect_hint] run title @s actionbar [{"translate":"ms.hint.shard","fallback": "长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color": "blue"}]
 execute as @s[tag=heal_hint] run title @s actionbar [{"translate":"ms.hint.light","fallback": "长按 [%s] 以点亮","with":[{"keybind":"key.sneak"}],"color": "gold"}]
-execute as @s[tag=chest_hint] run title @s actionbar [{"translate":"ms.hint.chest","fallback": "长按 [%s] 以开启","with":[{"keybind":"key.sneak"}],"color": "yellow"}]
+execute as @s[tag=chest_hint] run title @s actionbar [{"translate":"ms.hint.chest","fallback": "长按 [%s] 以开启","with":[{"keybind":"key.sneak"}],"color": "gray"}]
 execute as @s[tag=collect_hint] at @s unless entity @e[tag=blue,distance=..1] run title @s actionbar ""
 execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run title @s actionbar ""
 execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run title @s actionbar ""

@@ -4,6 +4,7 @@ execute unless score $initcheck data matches 51121 run function game:init
 execute as @a at @s if block ~ ~-1 ~ farmland run effect give @s slow_falling 1 0 true
 
 function base:bossbar/tick1
+execute as @a unless score @s leave_game matches -2147483648..2147483647 run function game:new_player
 execute as @a unless score @s leave_game matches 0 run function game:player_enter
 execute as @a[x=-5,y=263,z=-5,dx=11,dy=2,dz=11] run function game:player_death
 

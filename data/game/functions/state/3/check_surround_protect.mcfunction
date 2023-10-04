@@ -10,7 +10,7 @@ execute as @s[tag=!opening,tag=!near_chest_tr] at @s if entity @e[tag=gray,dista
 
 # 收集提示
 execute as @s[tag=!opening] at @s if entity @e[tag=gray,distance=..1] run tag @s add chest_hint
-execute as @s[tag=chest_hint] run title @s actionbar [{"translate":"ms.hint.chest","fallback": "长按 [%s] 以开启","with":[{"keybind":"key.sneak"}],"color": "yellow"}]
+execute as @s[tag=chest_hint] run title @s actionbar [{"translate":"ms.hint.chest","fallback": "长按 [%s] 以开启","with":[{"keybind":"key.sneak"}],"color": "gray"}]
 execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run title @s actionbar ""
 execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run tag @s remove chest_hint
 
