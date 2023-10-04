@@ -48,6 +48,17 @@ tag @a remove skill_103_active
 tag @a remove talent_001_active
 tag @a remove talent_004_active
 tag @a remove talent_104_active
+tag @a add no_hit
+
+scoreboard players reset @a stat_temp_collect
+scoreboard players reset @a stat_temp_heal
+scoreboard players reset @a stat_temp_open
+scoreboard players reset @a stat_temp_hit
+scoreboard players reset @a stat_temp_skill
+scoreboard players reset @a stat_temp_talent
+scoreboard players reset @a stat_temp_item
+scoreboard players reset @a stat_temp_down
+scoreboard players reset @a stat_temp_play_time
 
 # 教程
 execute as @a run function base:tutorial/game_start

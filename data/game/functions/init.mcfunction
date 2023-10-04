@@ -27,6 +27,10 @@ gamerule fallDamage false
 # 记分板
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy "临时数据"
+scoreboard objectives remove temp2
+scoreboard objectives add temp2 dummy "临时数据2"
+scoreboard objectives remove temp_exp
+scoreboard objectives add temp_exp dummy "待计算经验值"
 scoreboard objectives remove item
 scoreboard objectives add item dummy "携带道具"
 scoreboard objectives remove skill
@@ -49,18 +53,20 @@ scoreboard objectives remove health
 scoreboard objectives add health health "生命值"
 scoreboard objectives remove data
 scoreboard objectives add data dummy "游戏数据"
-scoreboard objectives remove leave_game
-scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
 scoreboard objectives remove sneak_time
 scoreboard objectives add sneak_time minecraft.custom:sneak_time "蹲下时间"
 scoreboard objectives remove player_id
 scoreboard objectives add player_id dummy "玩家编号"
+
+scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
 scoreboard objectives remove stat_temp_collect
 scoreboard objectives add stat_temp_collect dummy "玩家本局收集碎片次数"
 scoreboard objectives remove stat_temp_heal
 scoreboard objectives add stat_temp_heal dummy "玩家本局救助次数"
 scoreboard objectives remove stat_temp_open
 scoreboard objectives add stat_temp_open dummy "玩家本局开启灵魂宝物箱次数"
+scoreboard objectives remove stat_temp_hit
+scoreboard objectives add stat_temp_hit dummy "玩家本局攻击次数"
 scoreboard objectives remove stat_temp_down
 scoreboard objectives add stat_temp_down dummy "玩家本局击倒次数"
 scoreboard objectives remove stat_temp_skill
@@ -80,6 +86,7 @@ scoreboard objectives add stat_finish dummy "玩家复活次数"
 scoreboard objectives add stat_total_collect dummy "玩家总收集碎片次数"
 scoreboard objectives add stat_total_heal dummy "玩家总救助次数"
 scoreboard objectives add stat_total_open dummy "玩家总开启灵魂宝物箱次数"
+scoreboard objectives add stat_total_hit dummy "玩家总攻击次数"
 scoreboard objectives add stat_total_down dummy "玩家总击倒次数"
 scoreboard objectives add stat_total_skill dummy "玩家总技能使用次数"
 scoreboard objectives add stat_total_talent dummy "玩家总天赋使用次数"
@@ -87,6 +94,8 @@ scoreboard objectives add stat_total_item dummy "玩家总道具使用次数"
 scoreboard objectives add stat_total_play_time dummy "玩家总对局持续时间"
 scoreboard objectives add stat_total_win dummy "玩家总对局获胜次数"
 scoreboard objectives add stat_total_draw dummy "玩家总对局平局次数"
+scoreboard objectives add stat_level dummy "玩家等级"
+scoreboard objectives add stat_exp dummy "玩家经验"
 
 # 游玩队伍
 team remove alive
@@ -176,15 +185,16 @@ scoreboard players set $show_mark data 0
 scoreboard players set $show_donate_tip data 0
 
 # 常数项
+scoreboard players set $2 data 2
 scoreboard players set $4 data 4
 scoreboard players set $5 data 5
 scoreboard players set $10 data 10
 scoreboard players set $16 data 16
 scoreboard players set $20 data 20
-scoreboard players set $70 data 70
 scoreboard players set $40 data 40
 scoreboard players set $61 data 61
 scoreboard players set $64 data 64
+scoreboard players set $70 data 70
 scoreboard players set $150 data 150
 scoreboard players set $182 data 182
 scoreboard players set $200 data 200

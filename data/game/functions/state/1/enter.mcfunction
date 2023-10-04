@@ -22,6 +22,6 @@ title @a times 3 14 2
 # 准备下一步
 function game:state/1/playerid_set
 
-
+scoreboard objectives setdisplay list
 tag @a remove game_player
 clear @a[team=!admin]
