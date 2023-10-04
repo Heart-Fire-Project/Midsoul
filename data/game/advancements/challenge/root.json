@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:redstone_block"
+      },
+      "title": {
+        "translate": "ms.achv.challenge.root",
+        "fallback": "挑战"
+      },
+      "description": "",
+      "background": "textures/block/obsidian.png",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location"
+      }
+    }
+  }
+  

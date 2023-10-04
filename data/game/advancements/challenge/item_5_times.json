@@ -1,0 +1,39 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:chest"
+      },
+      "title": {
+        "translate": "ms.achv.challenge.item_5_times",
+        "fallback": "道具大师"
+      },
+      "description": {
+        "translate": "ms.achv.challenge.desc.item_5_times",
+        "fallback": "你的道具是批发的吗？"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "game:challenge/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "stat_temp_item": {
+                  "min": 5
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  
