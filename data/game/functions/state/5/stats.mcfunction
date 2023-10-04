@@ -22,7 +22,6 @@ tag @a remove winner
 scoreboard players set #max temp_exp 0
 execute as @a run scoreboard players operation #max temp_exp > @s temp_exp
 execute as @a run execute if score @s temp_exp = #max temp_exp run tag @s add winner
-tellraw @a[team=!admin] [{"text": " » ","color": "gold","bold": true},{"selector":"@a[tag=winner]","bold": false}," ",{"translate":"ms.info.winner","fallback": "是本场最佳选手!","bold": false}]
 
 # 重置计分板
 scoreboard players reset @a stat_temp_collect
