@@ -48,9 +48,11 @@ item replace entity @s[scores={state=0,skill_cd=1..}] hotbar.4 with firework_sta
 item replace entity @s[scores={state=0,skill_cd=..0,skill=1},team=alive] hotbar.4 with phantom_membrane
 item replace entity @s[scores={state=0,skill_cd=..0,skill=2},team=alive] hotbar.4 with soul_lantern
 item replace entity @s[scores={state=0,skill_cd=..0,skill=3},team=alive] hotbar.4 with recovery_compass
+item replace entity @s[scores={state=0,skill_cd=..0,skill=4},team=alive] hotbar.4 with chest
 item replace entity @s[scores={state=0,skill_cd=..0,skill=1},team=protect] hotbar.4 with spectral_arrow
 item replace entity @s[scores={state=0,skill_cd=..0,skill=2},team=protect] hotbar.4 with echo_shard
 item replace entity @s[scores={state=0,skill_cd=..0,skill=3},team=protect] hotbar.4 with compass
+item replace entity @s[scores={state=0,skill_cd=..0,skill=4},team=protect] hotbar.4 with ender_chest
 
 # 天赋处理
 item replace entity @s[scores={talent_1=1},team=alive] hotbar.7 with glow_ink_sac
@@ -82,9 +84,11 @@ item modify entity @s[team=alive,scores={item=1}] hotbar.1 base:item/001
 item modify entity @s[team=alive,scores={skill=1}] hotbar.4 base:skill/001
 item modify entity @s[team=alive,scores={skill=2}] hotbar.4 base:skill/002
 item modify entity @s[team=alive,scores={skill=3}] hotbar.4 base:skill/003
+item modify entity @s[team=alive,scores={skill=4}] hotbar.4 base:skill/004
 item modify entity @s[team=protect,scores={skill=1}] hotbar.4 base:skill/101
 item modify entity @s[team=protect,scores={skill=2}] hotbar.4 base:skill/102
 item modify entity @s[team=protect,scores={skill=3}] hotbar.4 base:skill/103
+item modify entity @s[team=protect,scores={skill=4}] hotbar.4 base:skill/104
 item modify entity @s[team=alive,scores={talent_1=1}] hotbar.7 base:talent/001
 item modify entity @s[team=alive,scores={talent_1=2}] hotbar.7 base:talent/002
 item modify entity @s[team=alive,scores={talent_1=3}] hotbar.7 base:talent/003

@@ -17,6 +17,9 @@ scoreboard players add @a[team=alive] stat_temp_play_time 1
 # 刷新经验条
 execute as @a run function game:state/3/set_exp
 
+# 触发技能
+execute as @e[tag=game_entity,tag=gray,tag=cursed] at @s as @a[distance=..5] run function game:state/3/skill/skill_104_b
+
 # 触发天赋
 execute at @a[tag=skill_103_active] run particle end_rod ~ ~0.5 ~ 0 0 0 0 1 force @a
 execute at @a[tag=skill_103_active] run particle end_rod ~ ~32 ~ 0 0 0 0 1 force @a
