@@ -1,4 +1,4 @@
 {
     "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.skill.004\",\"fallback\": \"隔空取物\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.004.desc\",\"fallback\": \"随机开启一个灵魂宝物箱\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
+    "tag": "{display:{Name:'{\"translate\":\"ms.skill.004\",\"fallback\": \"隔空取物\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.004.desc\",\"fallback\": \"随机获得一个灵魂宝物\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
 }
