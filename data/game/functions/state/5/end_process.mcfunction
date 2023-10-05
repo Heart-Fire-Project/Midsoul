@@ -61,13 +61,13 @@ scoreboard players operation $temp_end stat_temp_play_time = $temp stat_temp_pla
 execute store result score $temp_s stat_temp_play_time run scoreboard players operation $temp_end stat_temp_play_time %= $1200 data
 scoreboard players operation $temp_s stat_temp_play_time /= $20 data
 execute if score $end_anime temp matches 71 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
-execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.1","fallback": "------- 详细结果 -------"}
-execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.2","fallback": "灵魂守卫者"}," » ",{"selector":"@a[team=protect]"}]
-execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.3","fallback": "复活灵魂"}," » ",{"selector":"@a[team=finish]"}]
-execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.4","fallback": "死亡灵魂"}," » ",{"selector":"@a[team=dead]"}]
-execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.7","fallback": "持续时间 » %s 分 %s 秒","with":[{"score":{"name":"$temp_m","objective":"stat_temp_play_time"}},{"score":{"name":"$temp_s","objective":"stat_temp_play_time"}}]}
-execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.5","fallback": "等待稍后回到大厅…"}
-execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.6","fallback": "---------------------"}
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.1","fallback": "------- 详细结果 -------","color":"gray"}
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.2","fallback": "灵魂守卫者","color":"red"}," » ",{"selector":"@a[team=protect]"}]
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.3","fallback": "复活灵魂","color":"green"}," » ",{"selector":"@a[team=finish]"}]
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] [{"translate":"ms.info.end.4","fallback": "死亡灵魂","color":"gray"}," » ",{"selector":"@a[team=dead]"}]
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.7","fallback": "持续时间 » %s 分 %s 秒","color":"aqua","with":[{"score":{"name":"$temp_m","objective":"stat_temp_play_time"}},{"score":{"name":"$temp_s","objective":"stat_temp_play_time"}}]}
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.5","fallback": "等待稍后回到大厅…","color":"gray"}
+execute if score $end_anime temp matches 71 run tellraw @a[team=!admin] {"translate":"ms.info.end.6","fallback": "---------------------","color":"gray"}
 
 # 个人数据结算
 execute if score $end_anime temp matches 91 run function game:state/5/stats
