@@ -59,19 +59,23 @@ item replace entity @s[scores={talent_1=1},team=alive] hotbar.7 with glow_ink_sa
 item replace entity @s[scores={talent_1=2},team=alive] hotbar.7 with blaze_powder
 item replace entity @s[scores={talent_1=3},team=alive] hotbar.7 with magma_cream
 item replace entity @s[scores={talent_1=4},team=alive] hotbar.7 with soul_torch
+item replace entity @s[scores={talent_1=5},team=alive] hotbar.7 with feather
 item replace entity @s[scores={talent_1=1},team=protect] hotbar.7 with crimson_fungus
 item replace entity @s[scores={talent_1=2},team=protect] hotbar.7 with red_dye
 item replace entity @s[scores={talent_1=3},team=protect] hotbar.7 with redstone
 item replace entity @s[scores={talent_1=4},team=protect] hotbar.7 with black_candle
+item replace entity @s[scores={talent_1=5},team=protect] hotbar.7 with compass
 execute if score @s talent_1_cd matches 1.. unless entity @s[tag=talent_104_active] run item replace entity @s hotbar.7 with firework_star
 item replace entity @s[scores={talent_2=1},team=alive] hotbar.8 with glow_ink_sac
 item replace entity @s[scores={talent_2=2},team=alive] hotbar.8 with blaze_powder
 item replace entity @s[scores={talent_2=3},team=alive] hotbar.8 with magma_cream
 item replace entity @s[scores={talent_2=4},team=alive] hotbar.8 with soul_torch
+item replace entity @s[scores={talent_2=5},team=alive] hotbar.8 with feather
 item replace entity @s[scores={talent_2=1},team=protect] hotbar.8 with crimson_fungus
 item replace entity @s[scores={talent_2=2},team=protect] hotbar.8 with red_dye
 item replace entity @s[scores={talent_2=3},team=protect] hotbar.8 with redstone
 item replace entity @s[scores={talent_2=4},team=protect] hotbar.8 with black_candle
+item replace entity @s[scores={talent_2=5},team=protect] hotbar.8 with compass
 execute if score @s talent_2_cd matches 1.. unless entity @s[tag=talent_104_active] run item replace entity @s hotbar.8 with firework_star
 
 # 道具处理
@@ -93,17 +97,21 @@ item modify entity @s[team=alive,scores={talent_1=1}] hotbar.7 base:talent/001
 item modify entity @s[team=alive,scores={talent_1=2}] hotbar.7 base:talent/002
 item modify entity @s[team=alive,scores={talent_1=3}] hotbar.7 base:talent/003
 item modify entity @s[team=alive,scores={talent_1=4}] hotbar.7 base:talent/004
+item modify entity @s[team=alive,scores={talent_1=5}] hotbar.7 base:talent/005
 item modify entity @s[team=protect,scores={talent_1=1}] hotbar.7 base:talent/101
 item modify entity @s[team=protect,scores={talent_1=2}] hotbar.7 base:talent/102
 item modify entity @s[team=protect,scores={talent_1=3}] hotbar.7 base:talent/103
 item modify entity @s[team=protect,scores={talent_1=4}] hotbar.7 base:talent/104
+item modify entity @s[team=protect,scores={talent_1=5}] hotbar.7 base:talent/105
 item modify entity @s[team=alive,scores={talent_2=1}] hotbar.8 base:talent/001
 item modify entity @s[team=alive,scores={talent_2=2}] hotbar.8 base:talent/002
 item modify entity @s[team=alive,scores={talent_2=3}] hotbar.8 base:talent/003
 item modify entity @s[team=alive,scores={talent_2=4}] hotbar.8 base:talent/004
+item modify entity @s[team=alive,scores={talent_2=5}] hotbar.8 base:talent/005
 item modify entity @s[team=protect,scores={talent_2=1}] hotbar.8 base:talent/101
 item modify entity @s[team=protect,scores={talent_2=2}] hotbar.8 base:talent/102
 item modify entity @s[team=protect,scores={talent_2=3}] hotbar.8 base:talent/103
 item modify entity @s[team=protect,scores={talent_2=4}] hotbar.8 base:talent/104
+item modify entity @s[team=protect,scores={talent_2=5}] hotbar.8 base:talent/105
 
 item replace entity @s weapon.offhand with air

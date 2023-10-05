@@ -33,9 +33,11 @@ scoreboard players set @a[team=protect,scores={skill=4}] skill_cd 21600
 scoreboard players set @a[team=alive,scores={talent_1=2}] talent_1_cd 9600
 scoreboard players set @a[team=protect,scores={talent_1=2}] talent_1_cd 9600
 scoreboard players set @a[team=protect,scores={talent_1=4}] talent_1_cd 14400
+scoreboard players set @a[team=protect,scores={talent_1=5}] talent_1_cd 14400
 scoreboard players set @a[team=alive,scores={talent_2=2}] talent_2_cd 9600
 scoreboard players set @a[team=protect,scores={talent_2=2}] talent_2_cd 9600
 scoreboard players set @a[team=protect,scores={talent_2=4}] talent_2_cd 14400
+scoreboard players set @a[team=protect,scores={talent_2=5}] talent_2_cd 14400
 
 # 天赋或技能标签
 tag @a remove just_healed

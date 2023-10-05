@@ -23,8 +23,12 @@ execute as @a[tag=!bossbar_tr,tag=bossbar_heed] run function base:tutorial/bossb
 # 天赋影响
 execute at @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn,distance=8..] add bossbar_heed
 execute at @a[team=protect,scores={talent_1=1}] run tag @a[tag=bossbar_warn,distance=8..] remove bossbar_warn
+execute at @a[team=alive,scores={talent_1=5}] run tag @a[tag=bossbar_heed,distance=0..24] add bossbar_info
+execute at @a[team=alive,scores={talent_1=5}] run tag @a[tag=bossbar_heed,distance=0..24] remove bossbar_heed
 execute at @a[team=protect,scores={talent_2=1}] run tag @a[tag=bossbar_warn,distance=8..] add bossbar_heed
 execute at @a[team=protect,scores={talent_2=1}] run tag @a[tag=bossbar_warn,distance=8..] remove bossbar_warn
+execute at @a[team=alive,scores={talent_2=5}] run tag @a[tag=bossbar_heed,distance=0..24] add bossbar_info
+execute at @a[team=alive,scores={talent_2=5}] run tag @a[tag=bossbar_heed,distance=0..24] remove bossbar_heed
 
 # 设置
 bossbar set midsoul:info players @a[tag=bossbar_info]
