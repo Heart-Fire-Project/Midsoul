@@ -6,13 +6,13 @@ execute store result score @s skill run scoreboard players get $random data
 
 # 随机第一个天赋
 scoreboard players set $random_min data 1
-scoreboard players set $random_max data 4
+scoreboard players set $random_max data 5
 function base:random
 execute store result score @s talent_1 run scoreboard players get $random data
 
 # 随机第二个天赋
 scoreboard players set $random_min data 1
-scoreboard players set $random_max data 4
+scoreboard players set $random_max data 5
 function base:random
 execute store result score @s talent_2 run scoreboard players get $random data
 
