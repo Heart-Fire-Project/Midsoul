@@ -9,7 +9,7 @@
       },
       "description": {
         "translate": "ms.achv.hidden.desc.ice",
-        "fallback": "收集碎片的时候也可以适当放松一下。"
+        "fallback": "收集碎片的时候也可以适当放松一下"
       },
       "show_toast": true,
       "announce_to_chat": false,

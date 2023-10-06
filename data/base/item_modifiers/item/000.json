@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.item.000\",\"fallback\": \"无法使用\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.item.000.desc\",\"fallback\": \"濒死状态下，灵魂宝物无法被使用。\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
-}

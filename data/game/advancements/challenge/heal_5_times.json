@@ -9,7 +9,7 @@
       },
       "description": {
         "translate": "ms.achv.challenge.desc.heal_5_times",
-        "fallback": "比起这个荣誉，我更关心你的队友是怎么做到的。"
+        "fallback": "比起这个荣誉, 我更关心你的队友是怎么做到的"
       },
       "frame": "challenge",
       "show_toast": true,

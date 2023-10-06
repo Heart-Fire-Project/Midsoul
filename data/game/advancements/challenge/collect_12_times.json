@@ -9,7 +9,7 @@
       },
       "description": {
         "translate": "ms.achv.challenge.desc.collect_12_times",
-        "fallback": "到处都是碎片，跟回家了一样。"
+        "fallback": "到处都是碎片, 跟回家了一样"
       },
       "frame": "challenge",
       "show_toast": true,

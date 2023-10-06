@@ -2,4 +2,4 @@
 function game:state/0/check_state
 execute as @a[team=!admin] run function game:state/0/refresh_inventory
 
-execute as @a if score @s stat_exp >= @s temp2 at @s run function base:exp/level/up
+tp @a[x=-100,y=200,z=0,dx=200,dy=50,dz=200,team=!admin] -53.5 270 30.5 0 0

@@ -9,4 +9,4 @@ execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:compass"}]}] as @
 execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:ender_chest"}]}] as @s at @s run function game:state/3/skill/skill_104_a
 
 # 道具
-execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_chestplate"}]}] as @s at @s run function game:state/3/item/item_1_a
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_chestplate"}]}] as @s at @s run function game:state/3/item/1

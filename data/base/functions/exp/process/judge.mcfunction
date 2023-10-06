@@ -7,4 +7,6 @@ execute as @a[scores={temp_exp=121..500}] at @s run function base:exp/process/e
 execute as @a[scores={temp_exp=501..1000}] at @s run function base:exp/process/f
 execute as @a[scores={temp_exp=1000..}] at @s run function base:exp/process/g
 
+execute as @a if score @s stat_exp >= @s max_exp at @s run function base:exp/level/up
 execute as @a[team=!admin] run function base:exp/level/show
+execute as @a[team=!admin] run function base:exp/level/set_exp

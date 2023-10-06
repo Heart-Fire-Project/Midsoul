@@ -27,8 +27,8 @@ gamerule fallDamage false
 # 记分板
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy "临时数据"
-scoreboard objectives remove temp2
-scoreboard objectives add temp2 dummy "临时数据2"
+scoreboard objectives remove max_exp
+scoreboard objectives add max_exp dummy "经验上限"
 scoreboard objectives remove temp_exp
 scoreboard objectives add temp_exp dummy "待计算经验值"
 scoreboard objectives remove item
@@ -192,6 +192,7 @@ scoreboard players set $10 data 10
 scoreboard players set $16 data 16
 scoreboard players set $20 data 20
 scoreboard players set $40 data 40
+scoreboard players set $50 data 50
 scoreboard players set $61 data 61
 scoreboard players set $64 data 64
 scoreboard players set $70 data 70

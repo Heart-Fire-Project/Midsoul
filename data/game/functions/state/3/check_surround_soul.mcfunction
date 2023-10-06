@@ -18,15 +18,15 @@ execute as @s[tag=!opening,tag=!near_chest_tr] at @s if entity @e[tag=gray,dista
 execute as @s[tag=!collecting] at @s if entity @e[tag=blue,distance=..1] run tag @s add collect_hint
 execute as @s[tag=!healing] at @s if entity @e[tag=gold,distance=..1] run tag @s add heal_hint
 execute as @s[tag=!opening] at @s if entity @e[tag=gray,distance=..1] run tag @s add chest_hint
-execute as @s[tag=collect_hint] run title @s actionbar [{"translate":"ms.hint.shard","fallback": "长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color": "blue"}]
-execute as @s[tag=heal_hint] run title @s actionbar [{"translate":"ms.hint.light","fallback": "长按 [%s] 以点亮","with":[{"keybind":"key.sneak"}],"color": "gold"}]
-execute as @s[tag=chest_hint] run title @s actionbar [{"translate":"ms.hint.chest","fallback": "长按 [%s] 以开启","with":[{"keybind":"key.sneak"}],"color": "gray"}]
+execute as @s[tag=collect_hint,tag=!collecting] run title @s actionbar [{"translate":"ms.hint.shard","fallback": "长按 [%s] 以收集","with":[{"keybind":"key.sneak"}],"color": "blue"}]
+execute as @s[tag=heal_hint,tag=!healing] run title @s actionbar [{"translate":"ms.hint.light","fallback": "长按 [%s] 以点亮","with":[{"keybind":"key.sneak"}],"color": "gold"}]
+execute as @s[tag=chest_hint,tag=!opening] run title @s actionbar [{"translate":"ms.hint.chest","fallback": "长按 [%s] 以开启","with":[{"keybind":"key.sneak"}],"color": "gray"}]
+execute as @s[tag=collect_hint] at @s unless entity @s[tag=!collecting] run tag @s remove collect_hint
+execute as @s[tag=heal_hint] at @s unless entity @s[tag=!healing] run tag @s remove heal_hint
+execute as @s[tag=chest_hint] at @s unless entity @s[tag=!opening] run tag @s remove chest_hint
 execute as @s[tag=collect_hint] at @s unless entity @e[tag=blue,distance=..1] run title @s actionbar ""
 execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run title @s actionbar ""
 execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run title @s actionbar ""
-execute as @s[tag=collect_hint] at @s unless entity @e[tag=blue,distance=..1] run tag @s remove collect_hint
-execute as @s[tag=heal_hint] at @s unless entity @e[tag=gold,distance=..1] run tag @s remove heal_hint
-execute as @s[tag=chest_hint] at @s unless entity @e[tag=gray,distance=..1] run tag @s remove chest_hint
 
 # 分数为 时间*200
 execute if entity @s[tag=!healing,tag=!collecting,tag=!opening] run scoreboard players reset @s countdown

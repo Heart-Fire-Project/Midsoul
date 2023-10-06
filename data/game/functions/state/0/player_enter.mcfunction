@@ -1,5 +1,6 @@
-# 血量重置
+# 数值重置
 attribute @s generic.max_health base set 20
+attribute @s generic.movement_speed base set 0.1
 
 # 经验重置
 xp set @s 0 points
@@ -21,5 +22,3 @@ tp @s[team=!admin] -55 270 7 135 0
 
 # 重置队伍
 team join unready @s
-
-function game:state/0/set_exp

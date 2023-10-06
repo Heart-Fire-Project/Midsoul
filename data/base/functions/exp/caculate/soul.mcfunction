@@ -39,11 +39,12 @@ execute store result score $temp_s temp run scoreboard players operation @s stat
 scoreboard players operation $temp_s temp /= $20 data
 scoreboard players operation $cacu_m temp = $temp_m temp
 scoreboard players operation $cacu_s temp = $temp_s temp
-execute store result score @s temp run scoreboard players operation $cacu_m temp *= $20 data
+execute store result score @s temp run scoreboard players operation $cacu_m temp *= $50 data
 scoreboard players operation $cacu_s temp /= $2 data
-scoreboard players operation @s temp += $cacu_s 
+scoreboard players operation @s temp += $cacu_s temp
 execute if score @s temp matches 1000.. run scoreboard players set @s temp 1000
-tellraw @s[scores={stat_temp_play_time=1..}] [{"translate":"ms.caculate.soul.3","fallback": "存活时长"}," ",{"score":{"objective":"temp","name":"$temp_m"}},":",{"score":{"objective":"temp","name":"$temp_s"}}," » +",{"score":{"objective":"temp","name":"@s"}}]
+execute if score $temp_s temp matches 10..59 run tellraw @s[scores={stat_temp_play_time=1..}] [{"translate":"ms.caculate.soul.3","fallback": "存活时长"}," ",{"score":{"objective":"temp","name":"$temp_m"}},":",{"score":{"objective":"temp","name":"$temp_s"}}," » +",{"score":{"objective":"temp","name":"@s"}}]
+execute if score $temp_s temp matches 0..9 run tellraw @s[scores={stat_temp_play_time=1..}] [{"translate":"ms.caculate.soul.3","fallback": "存活时长"}," ",{"score":{"objective":"temp","name":"$temp_m"}},":0",{"score":{"objective":"temp","name":"$temp_s"}}," » +",{"score":{"objective":"temp","name":"@s"}}]
 scoreboard players operation @s temp_exp += @s temp
 
 scoreboard players operation @s temp = @s stat_temp_heal

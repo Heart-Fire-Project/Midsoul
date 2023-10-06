@@ -6,8 +6,8 @@ execute as @a[scores={state=1,countdown=0},team=alive] run function game:state/3
 execute as @a[scores={state=1,countdown=0},team=protect] run function game:state/4/player_hit_fin
 
 # 时间触发型天赋
-execute as @a[team=protect,scores={talent_1=4,talent_1_cd=..0}] at @s run function game:state/3/skill/talent_104
-execute as @a[team=protect,scores={talent_2=4,talent_2_cd=..0}] at @s run function game:state/3/skill/talent_104
+execute as @a[team=protect,scores={talent_1=4,talent_1_cd=..0},tag=!talent_104_active] at @s run function game:state/3/skill/talent_104
+execute as @a[team=protect,scores={talent_2=4,talent_2_cd=..0},tag=!talent_104_active] at @s run function game:state/3/skill/talent_104
 execute if entity @a[tag=talent_104_active] at @a[team=protect] run effect give @a[team=alive,distance=33..] glowing 1 0
 
 # 灵气处理

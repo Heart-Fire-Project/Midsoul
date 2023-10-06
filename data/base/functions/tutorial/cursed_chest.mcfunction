@@ -1,3 +1,3 @@
-tellraw @s[team=alive] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.chest.cursed.soul","fallback": "你经过了一个被诅咒的灵魂宝物箱……它会减缓你的速度并让你发光，开启它以绝后患。","bold": false}]
-tellraw @s[team=protect] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.chest.cursed.protect","fallback": "你经过了一个被诅咒的灵魂宝物箱，它会给予你更强大的力量……","bold": false}]
+tellraw @s[team=alive] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.chest.cursed.soul","fallback": "你经过了一个被诅咒的灵魂宝物箱……它会减缓你的速度并让你发光, 开启它以绝后患","bold": false}]
+tellraw @s[team=protect] [{"text": " » ","bold": true,"color": "aqua"},{"translate":"ms.tutorial.chest.cursed.protect","fallback": "你经过了一个被诅咒的灵魂宝物箱, 它会给予你更强大的力量……","bold": false}]
 tag @s[tag=!cursed_chest_tr] add cursed_chest_tr

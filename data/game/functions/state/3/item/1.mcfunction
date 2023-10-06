@@ -3,9 +3,7 @@ scoreboard players add @s stat_temp_item 1
 
 playsound minecraft:block.anvil.place player @a
 particle minecraft:enchant ~ ~1 ~ 0.1 0.05 0.1 3 100 force @a
-tag @s add item_1_active
-effect give @s[tag=item_1_active] resistance infinite 5
-schedule function game:state/3/item/item_1_b 16t replace
+effect give @s resistance 1 4
 
 scoreboard players set @s item -1
 function game:state/3/refresh_inventory

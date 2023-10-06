@@ -75,12 +75,14 @@ item replace entity @s[scores={talent_2=4},team=protect] hotbar.8 with black_can
 execute if score @s talent_2_cd matches 1.. unless entity @s[tag=talent_104_active] run item replace entity @s hotbar.8 with firework_star
 
 # 道具处理
-item replace entity @s[team=!protect] hotbar.1 with barrier
+item replace entity @s[scores={item=-1},team=alive] hotbar.1 with structure_void
 item replace entity @s[scores={item=1},team=alive] hotbar.1 with iron_chestplate
+item replace entity @s[scores={state=1},team=alive] hotbar.1 with barrier
 
 # 处理数据
-item modify entity @s[team=alive,scores={state=1}] hotbar.1 base:item/000
+item modify entity @s[team=alive,scores={item=-1}] hotbar.1 base:item/empty
 item modify entity @s[team=alive,scores={item=1}] hotbar.1 base:item/001
+item modify entity @s[team=alive,scores={state=1}] hotbar.1 base:item/000
 item modify entity @s[team=alive,scores={skill=1}] hotbar.4 base:skill/001
 item modify entity @s[team=alive,scores={skill=2}] hotbar.4 base:skill/002
 item modify entity @s[team=alive,scores={skill=3}] hotbar.4 base:skill/003
