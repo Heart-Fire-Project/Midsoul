@@ -85,35 +85,13 @@ item replace entity @s[scores={state=1},team=alive] hotbar.1 with barrier
 
 # 处理数据
 item modify entity @s[team=alive,scores={item=-1}] hotbar.1 base:item/empty
-item modify entity @s[team=alive,scores={item=1}] hotbar.1 base:item/001
+$item modify entity @s[team=alive,scores={item=1}] hotbar.1 base:item/00$(item)
 item modify entity @s[team=alive,scores={state=1}] hotbar.1 base:item/000
-item modify entity @s[team=alive,scores={skill=1}] hotbar.4 base:skill/001
-item modify entity @s[team=alive,scores={skill=2}] hotbar.4 base:skill/002
-item modify entity @s[team=alive,scores={skill=3}] hotbar.4 base:skill/003
-item modify entity @s[team=alive,scores={skill=4}] hotbar.4 base:skill/004
-item modify entity @s[team=protect,scores={skill=1}] hotbar.4 base:skill/101
-item modify entity @s[team=protect,scores={skill=2}] hotbar.4 base:skill/102
-item modify entity @s[team=protect,scores={skill=3}] hotbar.4 base:skill/103
-item modify entity @s[team=protect,scores={skill=4}] hotbar.4 base:skill/104
-item modify entity @s[team=alive,scores={talent_1=1}] hotbar.7 base:talent/001
-item modify entity @s[team=alive,scores={talent_1=2}] hotbar.7 base:talent/002
-item modify entity @s[team=alive,scores={talent_1=3}] hotbar.7 base:talent/003
-item modify entity @s[team=alive,scores={talent_1=4}] hotbar.7 base:talent/004
-item modify entity @s[team=alive,scores={talent_1=5}] hotbar.7 base:talent/005
-item modify entity @s[team=protect,scores={talent_1=1}] hotbar.7 base:talent/101
-item modify entity @s[team=protect,scores={talent_1=2}] hotbar.7 base:talent/102
-item modify entity @s[team=protect,scores={talent_1=3}] hotbar.7 base:talent/103
-item modify entity @s[team=protect,scores={talent_1=4}] hotbar.7 base:talent/104
-item modify entity @s[team=protect,scores={talent_1=5}] hotbar.7 base:talent/105
-item modify entity @s[team=alive,scores={talent_2=1}] hotbar.8 base:talent/001
-item modify entity @s[team=alive,scores={talent_2=2}] hotbar.8 base:talent/002
-item modify entity @s[team=alive,scores={talent_2=3}] hotbar.8 base:talent/003
-item modify entity @s[team=alive,scores={talent_2=4}] hotbar.8 base:talent/004
-item modify entity @s[team=alive,scores={talent_2=5}] hotbar.8 base:talent/005
-item modify entity @s[team=protect,scores={talent_2=1}] hotbar.8 base:talent/101
-item modify entity @s[team=protect,scores={talent_2=2}] hotbar.8 base:talent/102
-item modify entity @s[team=protect,scores={talent_2=3}] hotbar.8 base:talent/103
-item modify entity @s[team=protect,scores={talent_2=4}] hotbar.8 base:talent/104
-item modify entity @s[team=protect,scores={talent_2=5}] hotbar.8 base:talent/105
+$item modify entity @s[team=alive,scores={skill=$(skill)}] hotbar.4 base:skill/00$(skill)
+$item modify entity @s[team=protect,scores={skill=$(skill)}] hotbar.4 base:skill/10$(skill)
+$item modify entity @s[team=alive,scores={talent_1=$(talent_1)}] hotbar.7 base:talent/00$(talent_1)
+$item modify entity @s[team=protect,scores={talent_1=$(talent_1)}] hotbar.7 base:talent/10$(talent_1)
+$item modify entity @s[team=alive,scores={talent_2=$(talent_2)}] hotbar.8 base:talent/00$(talent_2)
+$item modify entity @s[team=protect,scores={talent_2=$(talent_2)}] hotbar.8 base:talent/10$(talent_2)
 
 item replace entity @s weapon.offhand with air

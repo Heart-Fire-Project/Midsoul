@@ -30,4 +30,4 @@ execute as @a[team=alive,scores={talent_2=2,talent_2_cd=..0,state=0}] at @s if e
 # 技能相关处理
 stopsound @a * entity.player.levelup
 kill @e[type=item,tag=!game_entity]
-execute as @a[team=!admin] run function game:state/3/refresh_inventory
+execute as @a[team=!admin] run function game:state/3/refresh_inventory with entity @s Score
