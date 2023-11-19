@@ -1,4 +1,5 @@
 # 状态 4 - 逃离
+scoreboard players set $sub_state data 0
 scoreboard players set $state data 4
 
 # Bossbar 调整

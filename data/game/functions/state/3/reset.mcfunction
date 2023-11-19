@@ -16,6 +16,7 @@ scoreboard players reset $soul_rank temp
 scoreboard players reset @a countdown
 scoreboard players reset @a sneak_time
 scoreboard players set @a state 0
+scoreboard players set $sub_state data 0
 
 # 天赋或技能CD
 # 分数为 时间*200
