@@ -2,7 +2,7 @@
 
 **午夜灵魂原版现已停止维护！** 原有的 Issues 将不再继续处理，最新进度请关注：[午夜灵魂 Reset](https://github.com/Heart-Fire-Project/midnight-soul/tree/Reset)
 
-帮助我们本地化，请访问我们的 Crowdin 页面：
+帮助我们本地化，请访问我们的 Crowdin 页面：[Midnight Soul dashboard in Crowdin](https://crowdin.com/project/midnight-soul)
 
 # FAQ
 
