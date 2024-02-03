@@ -59,7 +59,8 @@ execute if score $5_ending countdown matches 128 if score $min cacu matches ..09
 execute if score $5_ending countdown matches 128 if score $min cacu matches 10.. if score $sec cacu matches ..09 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:0%s","with":[{"score":{"name":"$min","objective":"cacu"}},{"score":{"name":"$sec","objective":"cacu"}}]}]
 execute if score $5_ending countdown matches 128 if score $min cacu matches 10.. if score $sec cacu matches 10.. run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:%s","with":[{"score":{"name":"$min","objective":"cacu"}},{"score":{"name":"$sec","objective":"cacu"}}]}]
 # 个人结算
-execute if score $5_ending countdown matches 128 run function main:state/5/stats
+execute if score $5_ending countdown matches 128 run function main:state/5/exp
+execute if score $5_ending countdown matches 128 unless score $mode temp matches 2 run function main:state/5/stats
 execute if score $5_ending countdown matches 128 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"稍后回到大厅……"},"\n"]
 
 # 反馈链接
