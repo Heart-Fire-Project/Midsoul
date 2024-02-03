@@ -59,7 +59,7 @@ execute if score $5_ending countdown matches 128 if score $min cacu matches ..09
 execute if score $5_ending countdown matches 128 if score $min cacu matches 10.. if score $sec cacu matches ..09 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:0%s","with":[{"score":{"name":"$min","objective":"cacu"}},{"score":{"name":"$sec","objective":"cacu"}}]}]
 execute if score $5_ending countdown matches 128 if score $min cacu matches 10.. if score $sec cacu matches 10.. run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:%s","with":[{"score":{"name":"$min","objective":"cacu"}},{"score":{"name":"$sec","objective":"cacu"}}]}]
 # 个人结算
-execute if score $5_ending countdown matches 128 unless score $mode temp matches 2 run function main:state/5/stats
+execute if score $5_ending countdown matches 128 run function main:state/5/stats
 execute if score $5_ending countdown matches 128 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"稍后回到大厅……"},"\n"]
 
 # 反馈链接
@@ -67,10 +67,8 @@ execute if score $5_ending countdown matches 80 run tellraw @a[team=!admin] [{"t
 execute if score $5_ending countdown matches 80 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
 
 # 全场最佳
-execute if score $gamemode data matches 1 run scoreboard players set $show_mvp data 1
-execute if score $gamemode data matches 2 run scoreboard players set $show_mvp data 0
-execute if score $show_mvp data matches 1 if score $5_ending countdown matches 80 run title @a[team=!admin] title {"translate":"ms.info.end.winner","fallback":"全场最佳","color":"#7367F0"}
-execute if score $show_mvp data matches 1 if score $5_ending countdown matches 80 run title @a[team=!admin] subtitle {"selector":"@a[tag=winner]","color":"#BC78EC"}
+execute if score $5_ending countdown matches 80 run title @a[team=!admin] title {"translate":"ms.info.end.winner","fallback":"全场最佳","color":"#7367F0"}
+execute if score $5_ending countdown matches 80 run title @a[team=!admin] subtitle {"selector":"@a[tag=winner]","color":"#BC78EC"}
 
 # 把玩家都丢回去
 execute if score $5_ending countdown matches 40 run function main:state/0/enter

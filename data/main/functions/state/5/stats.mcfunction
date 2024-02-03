@@ -24,3 +24,6 @@ tag @a remove winner
 scoreboard players set #max exp_temp 0
 execute as @a run scoreboard players operation #max exp_temp > @s exp_temp
 execute as @a run execute if score @s exp_temp = #max exp_temp run tag @s add winner
+
+# 无法获取经验值判定
+execute if score $mode temp matches 2 run scoreboard players reset @a exp_temp
