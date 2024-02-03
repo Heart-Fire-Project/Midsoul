@@ -8,6 +8,9 @@ bossbar set midsoul:info color blue
 bossbar set midsoul:info style notched_6
 bossbar set midsoul:info max 6
 
+# 设置一次计分板
+scoreboard players set $2_starting countdown 6
+
 # 设置标题
 title @a times 3 54 2
 title @a title ""
