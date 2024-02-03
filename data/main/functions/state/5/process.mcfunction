@@ -26,11 +26,11 @@ execute if score $5_ending countdown matches 160 run scoreboard players operatio
 execute if score $5_ending countdown matches 160 unless entity @a[team=protect] run scoreboard players set $finish temp 4
 
 # 统计数据
-execute if score $5_ending countdown matches 149 run scoreboard players add @a[tag=game_player] stat_play 1
+execute if score $5_ending countdown matches 149 run scoreboard players add @a[tag=game_player,team=!admin] stat_play 1
 execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=finish] stat_win 1
 execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=dead] stat_win 1
 execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=protect] stat_lose 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 0 run scoreboard players add @a[tag=game_player] stat_draw 1
+execute if score $5_ending countdown matches 149 if score $finish temp matches 0 run scoreboard players add @a[tag=game_player,team=!admin] stat_draw 1
 execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=protect] stat_win 1
 execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=finish] stat_lose 1
 execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=dead] stat_lose 1
