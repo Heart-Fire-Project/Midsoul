@@ -10,17 +10,12 @@ execute as @a run scoreboard players operation @s stat_total_talent += @s stat_t
 execute as @a run scoreboard players operation @s stat_total_item += @s stat_temp_item
 execute as @a run scoreboard players operation @s stat_play_time += @s stat_temp_play_time
 
-# 玩家经验计算
-execute as @a[team=protect] run function main:state/5/caculate/1/protect
-execute as @a[team=dead] run function main:state/5/caculate/1/soul
-execute as @a[team=finish] run function main:state/5/caculate/1/soul
-scoreboard players reset @a[team=unready] exp_temp
-
-# 清除标签
-tag @s remove game_player
-
-# 计算最高分玩家
-tag @a remove winner
-scoreboard players set #max exp_temp 0
-execute as @a run scoreboard players operation #max exp_temp > @s exp_temp
-execute as @a run execute if score @s exp_temp = #max exp_temp run tag @s add winner
+# 胜 / 平 / 输 / 总
+scoreboard players add @a[tag=game_player,team=!admin] stat_play 1
+execute if score $finish temp matches 1.. run scoreboard players add @a[team=finish] stat_win 1
+execute if score $finish temp matches 1.. run scoreboard players add @a[team=dead] stat_win 1
+execute if score $finish temp matches 1.. run scoreboard players add @a[team=protect] stat_lose 1
+execute if score $finish temp matches 0 run scoreboard players add @a[tag=game_player,team=!admin] stat_draw 1
+execute if score $finish temp matches ..-1 run scoreboard players add @a[team=protect] stat_win 1
+execute if score $finish temp matches ..-1 run scoreboard players add @a[team=finish] stat_lose 1
+execute if score $finish temp matches ..-1 run scoreboard players add @a[team=dead] stat_lose 1

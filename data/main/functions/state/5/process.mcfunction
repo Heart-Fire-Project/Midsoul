@@ -25,16 +25,6 @@ execute if score $5_ending countdown matches 160 as @a[team=dead] run scoreboard
 execute if score $5_ending countdown matches 160 run scoreboard players operation $finish temp -= $dead temp
 execute if score $5_ending countdown matches 160 unless entity @a[team=protect] run scoreboard players set $finish temp 4
 
-# 统计数据
-execute if score $5_ending countdown matches 149 run scoreboard players add @a[tag=game_player] stat_play 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=finish] stat_win 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=dead] stat_win 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=protect] stat_lose 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 0 run scoreboard players add @a[tag=game_player] stat_draw 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=protect] stat_win 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=finish] stat_lose 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=dead] stat_lose 1
-
 # 小标题
 execute if score $5_ending countdown matches 149 run playsound entity.warden.sonic_boom player @a[team=!admin] 0 1000000 0 1000000
 execute if score $5_ending countdown matches 149 if score $finish temp matches 3.. run title @a[team=!admin] subtitle {"translate":"ms.end.a","fallback":"灵魂方 大获全胜","color":"aqua"}
@@ -59,14 +49,17 @@ execute if score $5_ending countdown matches 128 if score $min cacu matches ..09
 execute if score $5_ending countdown matches 128 if score $min cacu matches 10.. if score $sec cacu matches ..09 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:0%s","with":[{"score":{"name":"$min","objective":"cacu"}},{"score":{"name":"$sec","objective":"cacu"}}]}]
 execute if score $5_ending countdown matches 128 if score $min cacu matches 10.. if score $sec cacu matches 10.. run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:%s","with":[{"score":{"name":"$min","objective":"cacu"}},{"score":{"name":"$sec","objective":"cacu"}}]}]
 # 个人结算
+execute if score $5_ending countdown matches 128 run function main:state/5/exp
 execute if score $5_ending countdown matches 128 unless score $mode temp matches 2 run function main:state/5/stats
 execute if score $5_ending countdown matches 128 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"稍后回到大厅……"},"\n"]
 
-# 剩下的
+# 反馈链接
+execute if score $5_ending countdown matches 80 run tellraw @a[team=!admin] [{"translate":"ms.info.feedback","fallback":"反馈","color":"yellow"}," - ",{"text":"[GitHub]","color":"#7B63AB","clickEvent":{"action":"open_url","value":"https://github.com/Heart-Fire-Project/midnight-soul/issues/new/choose"}}," ",{"translate":"ms.info.qq","fallback":"[QQ 群]","color":"#FFA488","clickEvent":{"action":"open_url","value":"https://qm.qq.com/cgi-bin/qm/qr?k=7lBn2CFMzpVvyAuan2Io-ifop62kNMGc&jump_from=webapi&authKey=sZcLbYxG4wtm0qq52m4D0+RTdnuHeIH3A+2qlyMClRU3mZgudXh0abRoiIR38gPj"}}," ",{"translate":"ms.info.dc","fallback":"[Discord]","color": "#0066FF","clickEvent":{"action":"open_url","value":"https://discord.com/invite/gWZVkvNS"}}," ",{"translate":"ms.info.forum","fallback":"[论坛]","color": "#FFDD55","clickEvent":{"action":"open_url","value":"https://forum.hfpro.top/"}},"\n"]
 execute if score $5_ending countdown matches 80 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
+
+# 全场最佳
 execute if score $5_ending countdown matches 80 run title @a[team=!admin] title {"translate":"ms.info.end.winner","fallback":"全场最佳","color":"#7367F0"}
 execute if score $5_ending countdown matches 80 run title @a[team=!admin] subtitle {"selector":"@a[tag=winner]","color":"#BC78EC"}
-execute if score $5_ending countdown matches 80 run tellraw @a[team=!admin] [{"translate":"ms.info.feedback","fallback":"反馈","color":"yellow"}," - ",{"text":"[GitHub]","color":"#7B63AB","clickEvent":{"action":"open_url","value":"https://github.com/Heart-Fire-Project/midnight-soul/issues/new/choose"}}," ",{"translate":"ms.info.qq","fallback":"[QQ 群]","color":"#FFA488","clickEvent":{"action":"open_url","value":"https://qm.qq.com/cgi-bin/qm/qr?k=7lBn2CFMzpVvyAuan2Io-ifop62kNMGc&jump_from=webapi&authKey=sZcLbYxG4wtm0qq52m4D0+RTdnuHeIH3A+2qlyMClRU3mZgudXh0abRoiIR38gPj"}}," ",{"translate":"ms.info.dc","fallback":"[Discord]","color": "#0066FF","clickEvent":{"action":"open_url","value":"https://discord.com/invite/gWZVkvNS"}}," ",{"translate":"ms.info.forum","fallback":"[论坛]","color": "#FFDD55","clickEvent":{"action":"open_url","value":"https://forum.hfpro.top/"}},"\n"]
 
 # 把玩家都丢回去
 execute if score $5_ending countdown matches 40 run function main:state/0/enter
