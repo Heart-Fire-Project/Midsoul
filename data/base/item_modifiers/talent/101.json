@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.talent.101\",\"fallback\": \"抱火寝薪\",\"italic\": false,\"color\":\"red\"}',Lore:['{\"translate\":\"ms.talent.101.desc\",\"fallback\": \"灵魂玩家红色警戒条生效范围缩小\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
-}

@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.skill.104\",\"fallback\": \"恶灵诅咒\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.104.desc\",\"fallback\": \"为一个随机的灵魂宝物箱增加诅咒效果\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
-}

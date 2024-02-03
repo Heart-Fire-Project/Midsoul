@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.mark.red\",\"fallback\":\"删除标记\",\"italic\":false,\"color\":\"red\"}'},HideFlags:63,CustomModelData:79014}"
+}

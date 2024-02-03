@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.talent.101\",\"fallback\":\"抱火寝薪\",\"italic\":false,\"color\":\"gold\"}',Lore:['{\"translate\":\"ms.talent.101.desc.a\",\"fallback\":\"灵魂“气流紊乱”探测范围缩小至 8 格\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72101}"
+}

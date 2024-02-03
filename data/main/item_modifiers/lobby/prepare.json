@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.lobby.ready\",\"fallback\":\"已准备 - 按 [%s] 取消\",\"italic\":false,\"color\":\"#7367F0\",\"with\":[{\"keybind\":\"key.swapOffhand\"}]}'},HideFlags:63,CustomModelData:70001}"
+}

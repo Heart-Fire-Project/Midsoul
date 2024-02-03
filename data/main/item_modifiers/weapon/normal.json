@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.weapon\",\"fallback\":\"祛灵刃\",\"italic\":false,\"color\":\"white\"}',Lore:['{\"translate\":\"ms.weapon.desc\",\"fallback\":\"斩断一切不净之物\",\"italic\":false,\"color\":\"gray\"}']},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:10,Name:\"attack\",Slot:\"mainhand\",Operation:0,UUID:[I;7,4,1,9]},{AttributeName:\"generic.attack_speed\",Amount:777,Name:\"attack\",Slot:\"mainhand\",Operation:0,UUID:[I;2,0,2,3]}],Unbreakable:1b,HideFlags:63}"
+}

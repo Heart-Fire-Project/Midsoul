@@ -1,0 +1,45 @@
+>>定义
+- 垂死状态
+{"translate":"ms.tooltip.dying","fallback":"垂死状态","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.dying.detail","fallback":"受到致命攻击后进入，在一定时间后死亡"}]}}
+- 危机状态
+{"translate":"ms.tooltip.emergency","fallback":"危机状态","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tooltip.emergency.detail","fallback":"移速提升至 160% 且伤害翻倍"}]}}
+- 诅咒
+{"translate":"ms.tooltip.curse","fallback":"诅咒","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.curse.detail","fallback":"高亮灵魂并使其小幅减速，若是守卫者则高亮全体灵魂并小幅加速\n加减速幅度为 20%/15%；若是开启时以上效果翻倍"}]}}
+- 警戒条
+{"translate":"ms.tooltip.heed","fallback":"气息感应","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.heed.detail.a","fallback":"根据敌方单位的远近，在屏幕上方以 Bossbar 的形式显示\n从远至近分别为"},{"translate":"ms.tootip.heed.detail.b","fallback":"稳定","color":"aqua"},"/",{"translate":"ms.tootip.heed.detail.c","fallback":"异常","color":"yellow"},"/",{"translate":"ms.tootip.heed.detail.d","fallback":"紊乱","color":"red"},"，",{"translate":"ms.tootip.heed.detail.e","fallback":"其中只有灵魂方会显示紊乱"}]}}
+- 灵气
+{"translate":"ms.tooltip.aura","fallback":"灵气等级","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tooltip.aura.detail","fallback":"随碎片收集进度提升，逐渐提示剩余碎片的位置"}]}}
+
+
+>>效果
+> 加速
+- [小幅] 速度 +20%
+{"translate":"ms.tooltip.speed","fallback":"加速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.speed.1","fallback":"移动速度 +20%"}]}}
+- [中幅] 速度 +40%
+{"translate":"ms.tooltip.speed","fallback":"加速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.speed.2","fallback":"移动速度 +40%"}]}}
+- [中幅] 速度 +60%
+{"translate":"ms.tooltip.speed","fallback":"加速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.speed.3","fallback":"移动速度 +60%"}]}}
+- [大幅] 速度 +80%
+{"translate":"ms.tooltip.speed","fallback":"加速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.speed.4","fallback":"移动速度 +80%"}]}}
+- [大幅] 速度 +100%
+{"translate":"ms.tooltip.speed","fallback":"加速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.speed.5","fallback":"移动速度 +100%"}]}}
+- [极大幅] 速度 +120%
+{"translate":"ms.tooltip.speed","fallback":"加速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.speed.6","fallback":"移动速度 +120%"}]}}
+- [极大幅] 速度 +140%
+{"translate":"ms.tooltip.speed","fallback":"加速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.speed.7","fallback":"移动速度 +140%"}]}}
+
+> 减速
+- [小幅] 速度 -15%
+{"translate":"ms.tooltip.slowness","fallback":"减速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.slowness.1","fallback":"移动速度 -15%"}]}}
+- [中幅] 速度 -30%
+{"translate":"ms.tooltip.slowness","fallback":"减速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.slowness.2","fallback":"移动速度 -30%"}]}}
+- [中幅] 速度 -45%
+{"translate":"ms.tooltip.slowness","fallback":"减速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.slowness.3","fallback":"移动速度 -45%"}]}}
+- [大幅] 速度 -60%
+{"translate":"ms.tooltip.slowness","fallback":"减速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.slowness.4","fallback":"移动速度 -60%"}]}}
+- [大幅] 速度 -75%
+{"translate":"ms.tooltip.slowness","fallback":"减速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.slowness.5","fallback":"移动速度 -75%"}]}}
+- [极大幅] 速度 -90%
+{"translate":"ms.tooltip.slowness","fallback":"减速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.slowness.6","fallback":"移动速度 -90%"}]}}
+- [极大幅] 速度 -100%
+{"translate":"ms.tooltip.slowness","fallback":"减速","underlined":true,"hoverEvent":{"action":"show_text","contents":[{"translate":"ms.tootip.slowness.7","fallback":"移动速度 -100%"}]}}

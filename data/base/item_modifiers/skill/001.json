@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.skill.001\",\"fallback\": \"幻影迷踪\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.001.desc\",\"fallback\": \"隐身且速度大幅提升, 但你受到的伤害同样大幅提升\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
-}
