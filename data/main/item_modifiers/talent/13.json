@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.talent.103\",\"fallback\":\"祛灵十字\",\"italic\":false,\"color\":\"gold\"}',Lore:['{\"translate\":\"ms.talent.103.desc.a\",\"fallback\":\"攻击后的擦刀时间 -20%\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72103}"
+}

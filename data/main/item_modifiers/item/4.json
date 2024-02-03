@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.item.4\",\"fallback\":\"相位替换\",\"italic\":false,\"color\":\"#33FFAA\"}',Lore:['{\"translate\":\"ms.item.4.desc\",\"fallback\":\"与最远的灵魂交换位置\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:73004}"
+}

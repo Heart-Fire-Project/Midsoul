@@ -1,2 +1,0 @@
-execute as @e[tag=blue] at @s run data modify entity @s Glowing set value 0b
-execute as @e[tag=blue] at @s if entity @a[team=alive,scores={state=0},distance=..12] run data modify entity @s Glowing set value 1b

@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.talent.004\",\"fallback\":\"魂魄汲取\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.004.desc.a\",\"fallback\":\"收集到灵魂碎片时，回复 1 血量\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72004}"
+}

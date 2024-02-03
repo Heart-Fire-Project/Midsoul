@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.talent.001\",\"fallback\":\"全神贯注\",\"italic\":false,\"color\":\"aqua\"}',Lore:['[{\"text\":\"▶ 3s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.talent.001.desc.a\",\"fallback\":\"收集灵魂碎片后，移速 +40%，下一次\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.001.desc.b\",\"fallback\":\"收集开始时视为已收集 0.3s\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.001.desc.c\",\"fallback\":\"收集中断不返还效果\",\"italic\":true,\"color\":\"gray\"}']},HideFlags:63,CustomModelData:72001}"
+}

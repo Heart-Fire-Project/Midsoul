@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.skill.003\",\"fallback\": \"逆向追踪\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.skill.003.desc\",\"fallback\": \"即刻高亮灵魂守卫者, 灵魂守卫者距离你越近生效时间越长\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
-}

@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.skill.001\",\"fallback\":\"幻影迷踪\",\"italic\":false,\"color\":\"#5599FF\"}',Lore:['[{\"text\":\"⏲ 60s  ▶ 10s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.skill.001.desc.a\",\"fallback\":\"隐身且移速 +100%\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:71001}"
+}

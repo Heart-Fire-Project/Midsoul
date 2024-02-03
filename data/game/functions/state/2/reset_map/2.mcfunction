@@ -1,1 +1,0 @@
-fill 1153 29 1101 1149 29 1105 red_candle[lit=false] replace red_candle

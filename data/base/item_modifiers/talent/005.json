@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.talent.005\",\"fallback\": \"蹑手蹑脚\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.005.desc\",\"fallback\": \"蹲下时不会被灵魂守卫者警戒条感应到\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
-}

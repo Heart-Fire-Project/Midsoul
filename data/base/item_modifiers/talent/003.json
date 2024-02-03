@@ -1,4 +1,0 @@
-{
-    "function": "set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"ms.talent.003\",\"fallback\": \"同生共死\",\"italic\": false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.003.desc\",\"fallback\": \"有灵魂处于垂死状态时, 速度小幅度提升, 效果不叠加\",\"italic\": false,\"color\":\"gray\"}']},HideFlags:63}"
-}

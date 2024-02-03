@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.item.2\",\"fallback\":\"共鸣引力\",\"italic\":false,\"color\":\"#33FFAA\"}',Lore:['{\"translate\":\"ms.item.2.desc\",\"fallback\":\"将半径 7.5 格内的碎片吸引到脚下\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:73002}"
+}

@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.item.3\",\"fallback\":\"无垠时界\",\"italic\":false,\"color\":\"#33FFAA\"}',Lore:['{\"translate\":\"ms.item.3.desc\",\"fallback\":\"即刻减少 30 秒技能冷却\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:73003}"
+}

@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.item.1\",\"fallback\":\"无懈可击\",\"italic\":false,\"color\":\"#33FFAA\"}',Lore:['[{\"text\":\"▶ 0.8s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.item.1.desc\",\"fallback\":\"生效期间不会受到任何伤害\",\"italic\":false,\"color\":\"white\"}']},Trim:{material:\"minecraft:amethyst\",pattern:\"minecraft:spire\"},HideFlags:63,CustomModelData:73001}"
+}

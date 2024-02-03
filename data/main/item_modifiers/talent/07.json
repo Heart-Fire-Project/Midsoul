@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{display:{Name:'{\"translate\":\"ms.talent.007\",\"fallback\":\"灵气感知\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.007.desc.a\",\"fallback\":\"碎片收集速度 +5%；灵气等级每提升\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.007.desc.b\",\"fallback\":\"一级，额外提升 5%，至多 +20%\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72007}"
+}
