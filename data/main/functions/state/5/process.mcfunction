@@ -62,11 +62,15 @@ execute if score $5_ending countdown matches 128 if score $min cacu matches 10..
 execute if score $5_ending countdown matches 128 unless score $mode temp matches 2 run function main:state/5/stats
 execute if score $5_ending countdown matches 128 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"稍后回到大厅……"},"\n"]
 
-# 剩下的
-execute if score $5_ending countdown matches 80 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
-execute if score $5_ending countdown matches 80 run title @a[team=!admin] title {"translate":"ms.info.end.winner","fallback":"全场最佳","color":"#7367F0"}
-execute if score $5_ending countdown matches 80 run title @a[team=!admin] subtitle {"selector":"@a[tag=winner]","color":"#BC78EC"}
+# 反馈链接
 execute if score $5_ending countdown matches 80 run tellraw @a[team=!admin] [{"translate":"ms.info.feedback","fallback":"反馈","color":"yellow"}," - ",{"text":"[GitHub]","color":"#7B63AB","clickEvent":{"action":"open_url","value":"https://github.com/Heart-Fire-Project/midnight-soul/issues/new/choose"}}," ",{"translate":"ms.info.qq","fallback":"[QQ 群]","color":"#FFA488","clickEvent":{"action":"open_url","value":"https://qm.qq.com/cgi-bin/qm/qr?k=7lBn2CFMzpVvyAuan2Io-ifop62kNMGc&jump_from=webapi&authKey=sZcLbYxG4wtm0qq52m4D0+RTdnuHeIH3A+2qlyMClRU3mZgudXh0abRoiIR38gPj"}}," ",{"translate":"ms.info.dc","fallback":"[Discord]","color": "#0066FF","clickEvent":{"action":"open_url","value":"https://discord.com/invite/gWZVkvNS"}}," ",{"translate":"ms.info.forum","fallback":"[论坛]","color": "#FFDD55","clickEvent":{"action":"open_url","value":"https://forum.hfpro.top/"}},"\n"]
+execute if score $5_ending countdown matches 80 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
+
+# 全场最佳
+execute if score $gamemode data matches 1 run scoreboard players set $show_mvp data 1
+execute if score $gamemode data matches 2 run scoreboard players set $show_mvp data 0
+execute if score $show_mvp data matches 1 if score $5_ending countdown matches 80 run title @a[team=!admin] title {"translate":"ms.info.end.winner","fallback":"全场最佳","color":"#7367F0"}
+execute if score $show_mvp data matches 1 if score $5_ending countdown matches 80 run title @a[team=!admin] subtitle {"selector":"@a[tag=winner]","color":"#BC78EC"}
 
 # 把玩家都丢回去
 execute if score $5_ending countdown matches 40 run function main:state/0/enter
