@@ -25,16 +25,6 @@ execute if score $5_ending countdown matches 160 as @a[team=dead] run scoreboard
 execute if score $5_ending countdown matches 160 run scoreboard players operation $finish temp -= $dead temp
 execute if score $5_ending countdown matches 160 unless entity @a[team=protect] run scoreboard players set $finish temp 4
 
-# 统计数据
-execute if score $5_ending countdown matches 149 run scoreboard players add @a[tag=game_player,team=!admin] stat_play 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=finish] stat_win 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=dead] stat_win 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 1.. run scoreboard players add @a[team=protect] stat_lose 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches 0 run scoreboard players add @a[tag=game_player,team=!admin] stat_draw 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=protect] stat_win 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=finish] stat_lose 1
-execute if score $5_ending countdown matches 149 if score $finish temp matches ..-1 run scoreboard players add @a[team=dead] stat_lose 1
-
 # 小标题
 execute if score $5_ending countdown matches 149 run playsound entity.warden.sonic_boom player @a[team=!admin] 0 1000000 0 1000000
 execute if score $5_ending countdown matches 149 if score $finish temp matches 3.. run title @a[team=!admin] subtitle {"translate":"ms.end.a","fallback":"灵魂方 大获全胜","color":"aqua"}
