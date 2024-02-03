@@ -78,7 +78,7 @@ execute if score $end_anime temp matches 91 run scoreboard players reset * stat_
 execute if score $end_anime temp matches 121 run playsound ui.button.click player @a[team=!admin] 0 1000000 0 1000000
 execute if score $end_anime temp matches 121 run title @a[team=!admin] title {"translate":"ms.end.winner","fallback": "全场最佳","color": "gold"}
 execute if score $end_anime temp matches 121 run title @a[team=!admin] subtitle {"selector":"@a[tag=winner]"}
-execute if score $end_anime temp matches 121 run tellraw @a[team=!admin] [{"translate":"ms.info.feedback","fallback":"反馈","hoverEvent":{"action":"show_text","value":"欢迎反馈地图存在的 Bug 或你的意见！"},"color": "yellow"}," - ",{"text":"[GitHub]","color": "#7B63AB","clickEvent":{"action":"open_url","value":"https://github.com/Heart-Fire-Project/midnight-soul-dp/issues/new/choose"}}]
+execute if score $end_anime temp matches 121 run tellraw @a[team=!admin] [{"translate":"ms.info.feedback","fallback":"反馈","hoverEvent":{"action":"show_text","value":"欢迎反馈地图存在的 Bug 或你的意见！"},"color": "yellow"}," - ",{"text":"[GitHub]","color": "#7B63AB","clickEvent":{"action":"open_url","value":"https://github.com/Heart-Fire-Project/midnight-soul/issues/new/choose"}}]
 execute if score $end_anime temp matches 121 unless score $show_donate_tip data matches 1 run tellraw @a[team=!admin] [{"translate":"ms.info.donate","fallback":"赞助","color": "light_purple"}," - ",{"translate":"ms.info.afdian","fallback":"[爱发电]","color": "#946CE6","clickEvent":{"action":"open_url","value":"https://afdian.net/a/HfPro"}}]
 
 # 把玩家都丢回去

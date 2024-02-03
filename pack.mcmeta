@@ -1,13 +1,6 @@
-{
-<<<<<<< Updated upstream
-   "pack": {
-      "pack_format": 15,
-      "description": "午夜灵魂数据包\nMidsoul Datapack\n1.0"
-=======
    "pack":{
       "pack_format":26,
       "description":"午夜灵魂\nMidnight Soul\nVer Σ"
->>>>>>> Stashed changes
    },
    "filter":{
       "block":[

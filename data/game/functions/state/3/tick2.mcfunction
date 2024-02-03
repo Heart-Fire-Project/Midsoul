@@ -12,3 +12,6 @@ execute if entity @a[tag=talent_104_active] at @a[team=protect] run effect give 
 
 # 灵气处理
 execute if score $soul_rank temp matches 2 run function game:state/3/glow_give
+
+# 特殊阶段
+execute if score $now_play_time temp matches 18000..19200 run effect give @a[team=alive] glowing 1 0 true
