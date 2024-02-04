@@ -90,8 +90,7 @@ tag @a remove talent_1_on
 tag @a remove talent_2_on
 tag @a remove item_on
 tag @a remove double_damage
-tag @a remove just_healed
-tag @a remove heal_damage
+tag @a remove hit_soul
 
 # 清空临时数据
 scoreboard players reset @a stat_temp_collect

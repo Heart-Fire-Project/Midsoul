@@ -14,3 +14,4 @@ effect clear @s
 kill @e[tag=gold,limit=1,sort=random]
 
 scoreboard players add @a[team=protect] stat_kill 1
+scoreboard players add @s stat_dead 1
