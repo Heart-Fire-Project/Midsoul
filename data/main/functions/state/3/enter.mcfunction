@@ -24,6 +24,7 @@ playsound minecraft:block.end_portal.spawn player @a[team=!admin] 0 1000000 0 10
 scoreboard players set $shard_collect temp 0
 scoreboard players reset $aura_rank temp
 scoreboard players reset $force_end temp
+scoreboard players reset $play_time temp
 scoreboard players reset @a countdown
 scoreboard players reset @a sneak_time
 scoreboard players reset @a sleep_detect

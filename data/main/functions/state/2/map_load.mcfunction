@@ -4,6 +4,7 @@ scoreboard players operation $map temp = $random data
 execute unless score $gamemap data matches 0 run scoreboard players operation $map temp = $gamemap data
 
 # 添加强制加载
+forceload remove all
 # 1 - 聚光圣殿
 execute if score $map temp matches 1 run forceload add 1000 0 1250 200
 execute if score $map temp matches 1 run forceload add 1000 201 1250 360

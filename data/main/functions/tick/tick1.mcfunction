@@ -1,7 +1,8 @@
 schedule function main:tick/tick1 1t replace
 
 execute unless score $initcheck data matches 51121 run function main:init
-execute as @a at @s if block ~ ~-1 ~ farmland run effect give @s slow_falling 1 0 true
+execute as @a at @s if block ~ ~-0.5 ~ farmland run effect give @s slow_falling 1 0 true
+execute as @a at @s unless block ~ ~-0.5 ~ farmland run effect clear @s slow_falling
 
 execute as @a unless score @s leave_game matches -2147483648..2147483647 run function main:new_player
 execute as @a unless score @s leave_game matches 0 run function main:player_enter

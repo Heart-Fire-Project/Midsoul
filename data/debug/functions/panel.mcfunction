@@ -26,3 +26,7 @@ execute unless score $cooldown_speed data matches 7777777 run tellraw @s [" ",{"
 execute if score $cooldown_speed data matches 7777777 run tellraw @s [" ",{"translate":"ms.setting.cd","fallback":"冷却速度"},"  ",{"text":" [-]  ","color":"red","clickEvent":{"action":"run_command","value":"/trigger interact_check set 961"}},{"text":"Inf","color":"aqua"},{"text":"x","color":"blue"},{"text":"  [+] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger interact_check set 962"}}]
 
 playsound ui.loom.select_pattern player @s
+
+# 自动进入 admin
+title @s[team=!admin] actionbar [{"text":"💠 ","color":"light_purple"},{"translate":"ms.info.admin","fallback":"你已自动进入 admin 队伍"}," 💠"]
+team join admin @s[team=!admin]

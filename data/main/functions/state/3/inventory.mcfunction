@@ -106,8 +106,9 @@ item replace entity @s[scores={item=6},team=soul] hotbar.1 with quartz
 item replace entity @s[scores={state=1},team=soul] hotbar.1 with barrier
 
 # 数据处理
-item modify entity @s[team=protect,tag=!double_damage] hotbar.1 main:weapon/normal
-item modify entity @s[team=protect,tag=double_damage] hotbar.1 main:weapon/double
+item modify entity @s[team=protect,tag=!double_damage,scores={state=0}] hotbar.1 main:weapon/normal
+item modify entity @s[team=protect,tag=double_damage,scores={state=0}] hotbar.1 main:weapon/double
+item modify entity @s[team=protect,scores={state=1}] hotbar.1 main:weapon/recover
 item modify entity @s[team=soul,scores={item=0}] hotbar.1 main:item/0
 $item modify entity @s[team=soul,scores={item=1..}] hotbar.1 main:item/$(item)
 $item modify entity @s[team=soul] hotbar.4 main:skill/0$(skill)
