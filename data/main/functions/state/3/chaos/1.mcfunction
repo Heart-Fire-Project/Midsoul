@@ -7,7 +7,7 @@ execute if score $chaos temp matches 1200 if score $alive temp matches 3.. run t
 
 # 特殊效果
 effect give @a[tag=chaos_selected] glowing 1 0 true
-effect give @a[tag=!chaos_selected] resistance 1 4 true
+execute if score $alive temp matches 3.. run effect give @a[tag=!chaos_selected] resistance 1 4 true
 
 # 倒计时
 scoreboard players remove $chaos temp 1
