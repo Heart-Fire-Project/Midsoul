@@ -36,6 +36,9 @@ execute at @e[tag=cursed] run function main:state/3/cursed_chest
 # 刷新经验条
 execute as @a[tag=game_player] run function main:state/3/set_exp
 
+# 异象
+execute if score $chaos data matches 1 run function main:state/3/chaos/1
+
 # 其他的部分
 execute as @a[scores={sleep_detect=1..},team=soul] run function main:state/3/wake_up
 stopsound @a * entity.player.levelup

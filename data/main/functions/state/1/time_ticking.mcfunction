@@ -20,7 +20,8 @@ execute if score $1_ticking countdown matches 260 run scoreboard players operati
 execute if score $1_ticking countdown matches 260 run execute if entity @a[team=prepare,scores={player_id=0}] run function main:state/1/time_ticking
 
 # [255] 游戏主标题
-execute if score $1_ticking countdown matches 255 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0"}
+execute if score $1_ticking countdown matches 255 if score $chaos data matches 1..1 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0","obfuscated":true}
+execute if score $1_ticking countdown matches 255 unless score $chaos data matches 1..1 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0"}
 
 # [240] 告知游戏版本
 execute if score $1_ticking countdown matches 240 run tellraw @a[team=!admin] [{"text":" » ","bold":true},{"translate":"ms.info.mpver","fallback":"当前地图版本","bold":false}," ",{"text":"Σ Reset","bold":false}]
@@ -67,13 +68,15 @@ execute if score $1_ticking countdown matches 125 run title @a[team=protect] sub
 # [120] 技能与天赋随机
 execute if score $1_ticking countdown matches 120 as @a[team=!admin] run function main:state/1/ability/random
 
-# [100 - 050] 详细能力展示
+# [100 - 050] 详细展示
 execute if score $1_ticking countdown matches 100 run function main:state/1/ability/skill
 execute if score $1_ticking countdown matches 090 run function main:state/1/ability/skill_detail
 execute if score $1_ticking countdown matches 080 run function main:state/1/ability/talent {"num":1}
 execute if score $1_ticking countdown matches 070 run function main:state/1/ability/talent_detail {"num":1}
 execute if score $1_ticking countdown matches 060 run function main:state/1/ability/talent {"num":2}
 execute if score $1_ticking countdown matches 050 run function main:state/1/ability/talent_detail {"num":2}
+execute if score $1_ticking countdown matches 040 run function main:state/1/chaos/chaos
+execute if score $1_ticking countdown matches 040 run function main:state/1/chaos/chaos_detail
 
 # [000] 进入下一阶段
 execute if score $1_ticking countdown matches 000 run function main:state/2/enter

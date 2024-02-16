@@ -18,6 +18,11 @@ execute if entity @a[team=admin] run bossbar set midsoul:info max 400
 # 设置标题
 title @a times 3 20 2
 
+# 异象判断
+function base:random {storage:"data",max:"100",min:"1"}
+execute unless score $random data <= $chaos_chance data run scoreboard players set $chaos data 0
+execute if score $random data <= $chaos_chance data run function main:state/1/chaos/random
+
 # 计分板
 scoreboard players set $1_ticking countdown 260
 execute if entity @a[team=admin] run scoreboard players set $1_ticking countdown 400
