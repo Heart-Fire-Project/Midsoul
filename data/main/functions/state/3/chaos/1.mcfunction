@@ -1,5 +1,5 @@
 # 重置计时
-execute if score $chaos temp matches 0.. run scoreboard players set $chaos temp 1200
+execute if score $chaos temp matches ..0 run scoreboard players set $chaos temp 1200
 
 # 重新选择
 execute if score $chaos temp matches 1200 run tag @a remove chaos_selected
