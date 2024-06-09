@@ -214,7 +214,7 @@ scoreboard players set $cooldown_speed data 10
 scoreboard players set $collect_speed data 10
 scoreboard players set $show_mark data 0
 scoreboard players set $initcheck data 51121
-scoreboard players set $chaos_chance data 40
+scoreboard players set $echo_chance data 40
 
 # 常数项
 scoreboard players set #-1 data -1

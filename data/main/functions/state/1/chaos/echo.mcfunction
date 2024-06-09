@@ -1,0 +1,1 @@
+execute if score $echo data matches 1 run tellraw @a [{"translate":"ms.echo","fallback":" 回响 ","color":"light_purple","bold":true},{"text":"✦ ","bold":false},{"translate":"ms.echo.001","fallback":"目标锁定","bold":false}]

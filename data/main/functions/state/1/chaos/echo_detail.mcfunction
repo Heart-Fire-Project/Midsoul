@@ -1,0 +1,2 @@
+execute if score $echo data matches 1 run tellraw @a [" ",{"translate":"ms.echo.001.desc.a","fallback":"每 60 秒标记 2 位灵魂并令其发光，未被标记的灵魂不会被守卫者伤害"}]
+execute if score $echo data matches 1 run tellraw @a [" ",{"translate":"ms.echo.001.desc.b","fallback":"剩余灵魂少于 3 人时不再生效","color":"gray"}]

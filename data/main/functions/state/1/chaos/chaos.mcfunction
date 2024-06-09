@@ -1,1 +1,0 @@
-execute if score $chaos data matches 1 run tellraw @a [{"translate":"ms.chaos","fallback":" [异象] ","color":"light_purple"},{"translate":"ms.chaos.001","fallback":"目标锁定"}]

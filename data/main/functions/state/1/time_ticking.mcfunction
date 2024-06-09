@@ -1,31 +1,42 @@
 # [385] 管理员提示
 execute if score $1_ticking countdown matches 385 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"translate":"ms.starting.admin.info","fallback":"等待管理员选择是否加入游戏……","bold":false},"\n"]
 
-# [360] 消磨时间小提示
-execute if score $1_ticking countdown matches 360 run function base:random {storage:"data",max:"10",min:"1"}
-execute if score $1_ticking countdown matches 360 if score $random data matches 01 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.01","fallback":"灵魂之灯不只有你可以看到，守卫者也能看到……","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 02 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.02","fallback":"遇到灰色潜影盒时，不妨开启它获得灵魂宝物","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 03 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.03","fallback":"开启被诅咒的灵魂宝物箱后，会得到负面效果","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 04 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.04","fallback":"最终阶段第一传送门倒计时结束后，还有第二个传送门","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 05 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.05","fallback":"部分天赋会影响你的气息探测","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 06 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.06","fallback":"在某张地图中，有个废弃的传送门。无人知晓它的来历……","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 07 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.07","fallback":"有的宝物能救你的队友于水火之中……你问为什么不是你？","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 08 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.08","fallback":"遇见悬浮的东西，你就应该踩上去试试","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 09 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.09","fallback":"龙卷风是对单的，跑酷是让人追的","bold":false},"\n"]
-execute if score $1_ticking countdown matches 360 if score $random data matches 10 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.10","fallback":"如果你看到这个，代表你应该给点建议","bold":false},"\n"]
-
 # [260] 给予序号
 execute if score $1_ticking countdown matches 260 run scoreboard players add $player_id temp 1
 execute if score $1_ticking countdown matches 260 run scoreboard players operation @r[team=prepare,scores={player_id=0}] player_id = $player_id temp
 execute if score $1_ticking countdown matches 260 run execute if entity @a[team=prepare,scores={player_id=0}] run function main:state/1/time_ticking
 
 # [255] 游戏主标题
-execute if score $1_ticking countdown matches 255 if score $chaos data matches 1..1 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0","obfuscated":true}
-execute if score $1_ticking countdown matches 255 unless score $chaos data matches 1..1 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0"}
+execute if score $1_ticking countdown matches 255 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0"}
 
-# [240] 告知游戏版本
-execute if score $1_ticking countdown matches 240 run tellraw @a[team=!admin] [{"text":" » ","bold":true},{"translate":"ms.info.mpver","fallback":"当前地图版本","bold":false}," ",{"text":"Σ Reset","bold":false}]
-execute if score $1_ticking countdown matches 240 run tellraw @a[team=!admin] [{"text":" » ","bold":true},{"translate":"ms.info.rpver","fallback":"多语言包版本","bold":false}," ",{"translate":"ms.ver","fallback":"-","bold":false},"\n"]
+# [250 - 239] 回响触发版标题
+execute if score $1_ticking countdown matches 250 unless score $echo data matches 0 run title @a times 0 1 2
+execute if score $1_ticking countdown matches 239..250 unless score $echo data matches 0 run function base:random {"min":1,"max":100,"storage":data}
+execute if score $1_ticking countdown matches 239..250 unless score $echo data matches 0 if score $random data matches 1..30 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0","obfuscated":true}
+execute if score $1_ticking countdown matches 239..250 unless score $echo data matches 0 if score $random data matches 31..100 run title @a[team=prepare] title {"translate":"ms.title","fallback":"午夜 🔯 灵魂","color":"#7367F0","obfuscated":false}
+
+# [250] 告知异象
+execute if score $1_ticking countdown matches 250 unless score $echo data matches 0 run function main:state/1/echo/echo
+execute if score $1_ticking countdown matches 250 unless score $echo data matches 0 run function main:state/1/echo/echo_detail
+
+# [245] 告知游戏版本
+execute if score $1_ticking countdown matches 245 run tellraw @a[team=!admin] [{"text":" » ","bold":true},{"translate":"ms.info.mpver","fallback":"当前地图版本","bold":false}," ",{"text":"1.0.1","bold":false}]
+execute if score $1_ticking countdown matches 245 run tellraw @a[team=!admin] [{"text":" » ","bold":true},{"translate":"ms.info.rpver","fallback":"多语言包版本","bold":false}," ",{"translate":"ms.ver","fallback":"-","bold":false},"\n"]
+
+# [240] 小提示
+execute if score $1_ticking countdown matches 240 run function base:random {storage:"data",max:"12",min:"1"}
+execute if score $1_ticking countdown matches 240 if score $random data matches 01 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.01","fallback":"正在赶往灵魂之灯的可不止是你的队友！","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 02 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.02","fallback":"灵魂宝物们都不弱，不过你只能拿一个","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 03 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.03","fallback":"有时灵魂宝物箱会伴有减益效果，开启它以绝后患！","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 04 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.04","fallback":"被堵门了？别急，传送门可不止有一个！","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 05 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.05","fallback":"注意你的气息探测条！不过也不要太相信它……","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 06 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.06","fallback":"场地内奇怪的结构可能只是北·彩蛋·遥先生留下的痕迹","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 07 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.07","fallback":"有的宝物能救你的队友于水火之中……你问为什么不是你？","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 08 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.08","fallback":"以普遍理性而言，悬浮在空中的东西底下都有个啥撑着它……","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 09 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.09","fallback":"你被卡住的概率很小，但绝不是 0，要是真发生了记得点一下反馈","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 10 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.10","fallback":"有任何建议都可以通过最后的反馈链接提交给我们！","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 11 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.11","fallback":"心火计划诚招：建筑/策划/美工/建筑/程序/建筑","bold":false},"\n"]
+execute if score $1_ticking countdown matches 240 if score $random data matches 12 run tellraw @a[team=!admin] [{"text":" » ","color":"#7367F0","bold":true},{"text":"Tips! ","bold":false},{"translate":"ms.tip.12","fallback":"如果没有明确规定……把实体渲染距离拉满是一个好选择！","bold":false},"\n"]
 
 # [235] 身份主标题
 execute if score $1_ticking countdown matches 235 run title @a times 3 90 2
@@ -75,8 +86,6 @@ execute if score $1_ticking countdown matches 080 run function main:state/1/abil
 execute if score $1_ticking countdown matches 070 run function main:state/1/ability/talent_detail {"num":1}
 execute if score $1_ticking countdown matches 060 run function main:state/1/ability/talent {"num":2}
 execute if score $1_ticking countdown matches 050 run function main:state/1/ability/talent_detail {"num":2}
-execute if score $1_ticking countdown matches 040 run function main:state/1/chaos/chaos
-execute if score $1_ticking countdown matches 040 run function main:state/1/chaos/chaos_detail
 
 # [000] 进入下一阶段
 execute if score $1_ticking countdown matches 000 run function main:state/2/enter
