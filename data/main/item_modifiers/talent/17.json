@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.107\",\"fallback\":\"碎片侵蚀\",\"italic\":false,\"color\":\"gold\"}',Lore:['[{\"text\":\"⏲ 40s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.talent.107.desc.a\",\"fallback\":\"污染场上的一个碎片；被污染的碎片在\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.107.desc.b\",\"fallback\":\"被收集时将会释放一个烟花\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.107.desc.c\",\"fallback\":\"最多同时对 3 个碎片生效\",\"italic\":true,\"color\":\"gray\"}']},HideFlags:63,CustomModelData:72107}"
-}

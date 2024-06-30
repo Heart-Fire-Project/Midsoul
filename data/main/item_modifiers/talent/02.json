@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.002\",\"fallback\":\"赴汤蹈火\",\"italic\":false,\"color\":\"aqua\"}',Lore:['[{\"text\":\"⏲ 60s  ▶ 3s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.talent.002.desc.a\",\"fallback\":\"当 12 格内有守卫者时，移速 +60%\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72002}"
-}

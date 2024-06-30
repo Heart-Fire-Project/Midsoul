@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.item.5\",\"fallback\":\"高效制冷\",\"italic\":false,\"color\":\"#33FFAA\"}',Lore:['{\"translate\":\"ms.item.5.desc.a\",\"fallback\":\"放置一个高效制冷模块，其朝向与你的\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.item.5.desc.b\",\"fallback\":\"视角相同；守卫者经过时移速 -45%\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.item.5.desc.c\",\"fallback\":\"持续到另一制冷模块被部署或被拆除\",\"color\":\"gray\"}']},HideFlags:63,CustomModelData:73005}"
-}

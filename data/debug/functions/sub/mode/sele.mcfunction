@@ -1,5 +1,0 @@
-tellraw @s [{"translate":"ms.setting.mode","fallback":" 模式 »","color":"#7367F0"}]
-execute if score $gamemode data matches 1 run tellraw @s [{"text":" [","color":"aqua"},{"translate":"ms.mode.1","fallback":"灵气碎片","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger interact_check set 211"}},{"text":"]","color":"aqua"},{"text":" [","color":"gray"},{"translate":"ms.mode.2","fallback":"针锋奔逃","color":"gray","clickEvent":{"action":"run_command","value":"/trigger interact_check set 212"}},{"text":"]","color":"gray"},"\n"]
-execute if score $gamemode data matches 2 run tellraw @s [{"text":" [","color":"gray"},{"translate":"ms.mode.1","fallback":"灵气碎片","color":"gray","clickEvent":{"action":"run_command","value":"/trigger interact_check set 211"}},{"text":"]","color":"gray"},{"text":" [","color":"aqua"},{"translate":"ms.mode.2","fallback":"针锋奔逃","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger interact_check set 212"}},{"text":"]","color":"aqua"},"\n"]
-
-playsound ui.loom.select_pattern player @s

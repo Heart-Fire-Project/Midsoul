@@ -1,15 +1,28 @@
-## 午夜灵魂 数据包仓库
+## 🔯 欢迎来到午夜灵魂~~的再次重写版~~
 
-> 最后一次编辑版本号 » Σ | 2024/01/17
+> 最后一次编辑版本号 » +1 | 2024/06/30  
+> Click [Here](https://github.com/Heart-Fire-Project/Midsoul/blob/plus/README_en.md) for English version
 
-这里是心火计划的原创微恐非对称竞技地图：**午夜灵魂**的数据包仓库!
+🚧 这里是施工重地 🚧
 
-说实话这是一个没啥基础的人写的作品……我是一边学一边写的，所以其中的部分早期代码可以称得上是低血压治疗利器，也就是会出现一些奇奇怪怪的东西。但我也懒得把这堆东西再写一遍了，反正能跑就行了（
+再一次地，这里是**午夜灵魂**的数据包仓库，只不过这次是 plus 分支
 
-在游玩过程中出现问题可以提交 Issue，虽然可能处理速度不是很快就是了；如果你很有实力，你也可以提交 Pull Request 来帮助我们！
+托了 Mojang 的福，在重置版完成后约莫两个月他们就改了数据包架构……不过都这样了，那这次我们就彻底摒弃之前的版本。在本次重写中，我们将尽可能地去优化各个方面，包括：
 
-#### 相关链接
-- [地图发布页](https://blog.hfpro.top/2023/midnight-soul/) 下载与游玩地图、
-- [爱发电页面](https://afdian.net/@HfPro) 支持我们的开发
-- [心火计划官网](https://hfpro.top/) ~~看看GPT大作~~
-- [加入反馈群聊](https://qm.qq.com/cgi-bin/qm/qr?k=7lBn2CFMzpVvyAuan2Io-ifop62kNMGc&jump_from=webapi&authKey=sZcLbYxG4wtm0qq52m4D0+RTdnuHeIH3A+2qlyMClRU3mZgudXh0abRoiIR38gPj) 摇人，或者和开发人员直接对线
+- 正式升级到 1.21
+- 全新的大厅及功能
+- 更平衡的游戏相关机制
+- 画了多年大饼的~~异象~~回响
+- 新的游戏中教程（是的它回来了）  
+……还有更多！
+
+由于目前仍处于开发阶段，所以**请不要**使用该版本的数据包进行游戏，也**不要**基于此版本提交 issue
+
+### 🛠️ 当前进度
+🟥🟥🟥🟥🟥🟥🟥
+
+### 🔗 相关链接
+- [下载地图](https://alpha.hfpro.top/maps/9-midsoul/) **旧**地图下载
+- [进行资助](https://afdian.net/@HfPro) 激励我们进行开发
+- [团队官网](https://hfpro.top/) 在这里看到我们团队的其他作品
+- [反馈群聊](https://qm.qq.com/cgi-bin/qm/qr?k=YNaHDYBSXIR-Fo-bBjaANk5GCmKOZogo&jump_from=webapi&authKey=t4k2yVndCqo/5jzIxYEpL1hxHRu44roVJ32G8meHgPHCMen05GsvcGLVz+f9LQGK) 不想反馈也可以进来聊天打游戏的

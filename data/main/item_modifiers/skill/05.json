@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.skill.005\",\"fallback\":\"锚定虚影\",\"italic\":false,\"color\":\"#5599FF\"}',Lore:['[{\"text\":\"⏲ 90s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.skill.005.desc.a\",\"fallback\":\"初始冷却减半；首次施放时原地生成一\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.005.desc.b\",\"fallback\":\"个虚影锚点，第二次及之后施放时生成\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.005.desc.c\",\"fallback\":\"一个虚影锚点并传送至上一个虚影锚点\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.005.desc.d\",\"fallback\":\"虚影锚点仅对己方可见\",\"italic\":true,\"color\":\"gray\"}']},HideFlags:63,CustomModelData:71005}"
-}

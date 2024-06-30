@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.104\",\"fallback\":\"隐于迷雾\",\"italic\":false,\"color\":\"gold\"}',Lore:['[{\"text\":\"⏲ 90s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.talent.104.desc.a\",\"fallback\":\" · 立刻给予全体灵魂 5 秒黑暗\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.104.desc.b\",\"fallback\":\" · 持续高亮 40 格外的灵魂\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.104.desc.c\",\"fallback\":\" · 获得隐身效果\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.104.desc.d\",\"fallback\":\"在 20 格内有灵魂时将会解除\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.104.desc.e\",\"fallback\":\"攻击时将立刻重设冷却为最大值\",\"italic\":true,\"color\":\"gray\"}']},HideFlags:63,CustomModelData:72104}"
-}

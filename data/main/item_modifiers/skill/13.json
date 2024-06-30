@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.skill.103\",\"fallback\":\"唤灵留迹\",\"italic\":false,\"color\":\"red\"}',Lore:['[{\"text\":\"⏲ 60s  ▶ 20s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.skill.103.desc.a\",\"fallback\":\"移速 +20%；标记最近的灵魂后传送\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.103.desc.b\",\"fallback\":\"到其附近并令其高亮 5 秒，被标记的\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.103.desc.c\",\"fallback\":\"灵魂将显示尾迹并在空中显示痕迹\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:71103}"
-}

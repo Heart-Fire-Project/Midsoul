@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.item.6\",\"fallback\":\"太空体验\",\"italic\":false,\"color\":\"#33FFAA\"}',Lore:['[{\"text\":\"▶ 5s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.item.6.desc\",\"fallback\":\"令守卫者无法主动改变高度\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:73006}"
-}

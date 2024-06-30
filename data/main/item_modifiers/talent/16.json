@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.106\",\"fallback\":\"目标探知\",\"italic\":false,\"color\":\"gold\"}',Lore:['[{\"text\":\"▶ 3s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.talent.106.desc.a\",\"fallback\":\"擦刀结束后高亮最近的灵魂\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72106}"
-}

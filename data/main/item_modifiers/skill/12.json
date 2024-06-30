@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.skill.102\",\"fallback\":\"灵力掌控\",\"italic\":false,\"color\":\"red\"}',Lore:['[{\"text\":\"⏲ 70s  ▶ 30s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.skill.102.desc.a\",\"fallback\":\"技能结束后的 10 秒内移速 +100%；\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.102.desc.b\",\"fallback\":\"在技能持续时间内每有 1 个碎片被收\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.102.desc.c\",\"fallback\":\"集则附加 6 秒的伤害翻倍，从第二层\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.102.desc.d\",\"fallback\":\"开始额外延长 5 秒移速加成\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.102.desc.e\",\"fallback\":\"附加效果最多叠加 5 层\",\"italic\":true,\"color\":\"gray\"}']},HideFlags:63,CustomModelData:71102}"
-}

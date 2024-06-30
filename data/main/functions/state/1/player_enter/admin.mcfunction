@@ -1,3 +1,0 @@
-# 管理员提示
-tellraw @s ["\n",{"text":" » ","color":"#7367F0","bold":true},{"translate":"ms.starting.admin","fallback":"游戏已经开始，请选择你是否想参加游戏……","color":"#7367F0"}]
-tellraw @s ["     ",{"translate":"ms.starting.admin.t","fallback":"[参加本场游戏]","color":"green","clickEvent":{"action":"run_command","value":"/trigger interact_check set -1"}}," ",{"translate":"ms.starting.admin.f","fallback":"[不参加本场游戏]","color":"red","clickEvent":{"action":"run_command","value":"/trigger interact_check set -2"}},"\n"]
