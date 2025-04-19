@@ -1,4 +1,4 @@
-tellraw @a[team=!admin] [{"text":"","color":"light_purple"},{"text":"» ","bold":true},{"translate":"ms.echo.1=8","fallback":"命运交响曲"},{"text":" ❖ "},{"translate":"ms.echo.active","fallback":"回响效果已触发"}]
+tellraw @a[team=!admin] [{"text":"","color":"light_purple"},{"text":"» ","bold":true},{"translate":"ms.echo.8","fallback":"命运交响曲"},{"text":" ❖ "},{"translate":"ms.echo.active","fallback":"回响效果已触发"}]
 playsound entity.wind_charge.wind_burst player @a[team=!admin] 0 1000000 0 1000000
 
 # 按序处理

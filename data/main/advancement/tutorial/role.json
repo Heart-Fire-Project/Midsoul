@@ -5,7 +5,7 @@
             "id":"firework_rocket"
         },
         "title":{
-            "translate":"ms.turorial.0",
+            "translate":"ms.tutorial.0",
             "fallback":"对局阵营"
         },
         "description":[

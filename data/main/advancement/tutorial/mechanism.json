@@ -5,7 +5,7 @@
             "id":"piston"
         },
         "title":{
-            "translate":"ms.turorial.2",
+            "translate":"ms.tutorial.2",
             "fallback":"游戏机制"
         },
         "description":[

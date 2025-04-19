@@ -5,7 +5,7 @@
             "id":"glow_squid_spawn_egg"
         },
         "title":{
-            "translate":"ms.turorial.1",
+            "translate":"ms.tutorial.1",
             "fallback":"交互物件"
         },
         "description":[

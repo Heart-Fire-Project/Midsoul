@@ -8,8 +8,7 @@
             {
                 "translate":"ms.adv.hidden.4",
                 "fallback":"还是跑酷高手"
-            },
-            "    04"
+            }
         ],
         "description":[
             {
@@ -23,7 +22,7 @@
             "\n\n",
             {
                 "translate":"ms.adv.hidden.4.desc.1",
-                "fallback":"制作者纪录是 3:42",
+                "fallback":"全制作组就一个跑完全程的。",
                 "color":"gray",
                 "italic":true
             },

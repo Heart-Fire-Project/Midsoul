@@ -92,12 +92,12 @@ execute if score $index_type setting matches 4 run summon item -5 12.1 4 {Tags:[
 execute if score $index_type setting matches 4 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"amethyst_shard"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 图鉴 I
-execute if score $index_type setting matches 5 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.01",fallb_2:"I01",fallb_3:"无懈可击",command:"trigger interact_check set 3001"}
-execute if score $index_type setting matches 5 run function base:merge_sign {x:"-1",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.02",fallb_2:"I02",fallb_3:"共鸣引力",command:"trigger interact_check set 3002"}
-execute if score $index_type setting matches 5 run function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.03",fallb_2:"I03",fallb_3:"无垠时界",command:"trigger interact_check set 3003"}
-execute if score $index_type setting matches 5 run function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.04",fallb_2:"I04",fallb_3:"相位替换",command:"trigger interact_check set 3004"}
-execute if score $index_type setting matches 5 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.05",fallb_2:"I05",fallb_3:"高效制冷",command:"trigger interact_check set 3005"}
-execute if score $index_type setting matches 5 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.06",fallb_2:"I06",fallb_3:"太空体验",command:"trigger interact_check set 3006"}
+execute if score $index_type setting matches 5 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.1",fallb_2:"I01",fallb_3:"无懈可击",command:"trigger interact_check set 3001"}
+execute if score $index_type setting matches 5 run function base:merge_sign {x:"-1",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.2",fallb_2:"I02",fallb_3:"共鸣引力",command:"trigger interact_check set 3002"}
+execute if score $index_type setting matches 5 run function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.3",fallb_2:"I03",fallb_3:"无垠时界",command:"trigger interact_check set 3003"}
+execute if score $index_type setting matches 5 run function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.4",fallb_2:"I04",fallb_3:"相位替换",command:"trigger interact_check set 3004"}
+execute if score $index_type setting matches 5 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.5",fallb_2:"I05",fallb_3:"高效制冷",command:"trigger interact_check set 3005"}
+execute if score $index_type setting matches 5 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.6",fallb_2:"I06",fallb_3:"太空体验",command:"trigger interact_check set 3006"}
 execute if score $index_type setting matches 5 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_type setting matches 5 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_type setting matches 5 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}

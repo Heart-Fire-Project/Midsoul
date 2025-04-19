@@ -13,11 +13,11 @@ execute if score $5_ending countdown matches 180 run scoreboard players operatio
 execute if score $5_ending countdown matches 180 run scoreboard players operation $result data -= $soul_death data
 execute if score $5_ending countdown matches 175 run title @a times 0 45 3
 execute if score $5_ending countdown matches 175 run playsound entity.warden.sonic_boom player @a[team=!admin] 0 1000000 0 1000000
-execute if score $5_ending countdown matches 175 if score $result data matches 3.. run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.5.end.a","fallback":"灵魂方大获全胜"}," ⚕"]
-execute if score $5_ending countdown matches 175 if score $result data matches 1..2 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.5.end.b","fallback":"灵魂方获胜","color":"#52E5E7"}," ⚕"]
-execute if score $5_ending countdown matches 175 if score $result data matches 0 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"#DDDDDD"},{"translate":"ms.5.end.c","fallback":"平局"}," ⚕"]
-execute if score $5_ending countdown matches 175 if score $result data matches -2..-1 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"red"},{"translate":"ms.5.end.d","fallback":"守卫者获胜"}," ⚕"]
-execute if score $5_ending countdown matches 175 if score $result data matches ..-3 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"red"},{"translate":"ms.5.end.e","fallback":"守卫者大获全胜"}," ⚕"]
+execute if score $5_ending countdown matches 175 if score $result data matches 3.. run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.info.end.a","fallback":"灵魂方大获全胜"}," ⚕"]
+execute if score $5_ending countdown matches 175 if score $result data matches 1..2 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"#52E5E7"},{"translate":"ms.info.end.b","fallback":"灵魂方获胜","color":"#52E5E7"}," ⚕"]
+execute if score $5_ending countdown matches 175 if score $result data matches 0 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"#DDDDDD"},{"translate":"ms.info.end.c","fallback":"平局"}," ⚕"]
+execute if score $5_ending countdown matches 175 if score $result data matches -2..-1 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"red"},{"translate":"ms.info.end.d","fallback":"守卫者获胜"}," ⚕"]
+execute if score $5_ending countdown matches 175 if score $result data matches ..-3 run title @a[team=!admin] subtitle [{"text":"⚕ ","color":"red"},{"translate":"ms.info.end.e","fallback":"守卫者大获全胜"}," ⚕"]
 execute if score $5_ending countdown matches 135 run title @a times 0 1 0
 execute if score $5_ending countdown matches 135 run title @a[team=!admin] title ""
 execute if score $5_ending countdown matches 134 run title @a[team=!admin] title [{"score":{"name":"$soul_revive","objective":"data"},"color":"#52E5E7"},{"text":" - ","color":"white"},{"score":{"name":"$soul_death","objective":"data"},"color":"red"}]
@@ -37,11 +37,11 @@ execute if score $5_ending countdown matches 125 if score $min temp2 matches ..0
 execute if score $5_ending countdown matches 125 if score $min temp2 matches ..09 if score $sec temp2 matches 10.. run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"对局持续时间"}," » ",{"translate":"ms.notrans","fallback":"0%s:%s","with":[{"score":{"name":"$min","objective":"temp2"}},{"score":{"name":"$sec","objective":"temp2"}}]}]
 execute if score $5_ending countdown matches 125 if score $min temp2 matches 10.. if score $sec temp2 matches ..09 run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"对局持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:0%s","with":[{"score":{"name":"$min","objective":"temp2"}},{"score":{"name":"$sec","objective":"temp2"}}]}]
 execute if score $5_ending countdown matches 125 if score $min temp2 matches 10.. if score $sec temp2 matches 10.. run tellraw @a[team=!admin] [{"translate":"ms.info.end.5","fallback":"对局持续时间"}," » ",{"translate":"ms.notrans","fallback":"%s:%s","with":[{"score":{"name":"$min","objective":"temp2"}},{"score":{"name":"$sec","objective":"temp2"}}]}]
-execute if score $5_ending countdown matches 125 if score $result data matches 3.. run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"aqua"},{"text":"» ","bold":true},{"translate":"ms.5.end.a","fallback":"灵魂方大获全胜"}," (+",{"score":{"name":"$result","objective":"data"}},")"]
-execute if score $5_ending countdown matches 125 if score $result data matches 1..2 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"aqua"},{"text":"» ","bold":true},{"translate":"ms.5.end.a","fallback":"灵魂方获胜"}," (+",{"score":{"name":"$result","objective":"data"}},")"]
-execute if score $5_ending countdown matches 125 if score $result data matches 0 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"#DDDDDD"},{"text":"» ","bold":true},{"translate":"ms.5.end.a","fallback":"平局"}," (±",{"score":{"name":"$result","objective":"data"}},")"]
-execute if score $5_ending countdown matches 125 if score $result data matches -2..-1 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"red"},{"text":"» ","bold":true},{"translate":"ms.5.end.a","fallback":"守卫者获胜"}," (",{"score":{"name":"$result","objective":"data"}},")"]
-execute if score $5_ending countdown matches 125 if score $result data matches ..-3 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"red"},{"text":"» ","bold":true},{"translate":"ms.5.end.a","fallback":"守卫者大获全胜"}," (",{"score":{"name":"$result","objective":"data"}},")"]
+execute if score $5_ending countdown matches 125 if score $result data matches 3.. run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"aqua"},{"text":"» ","bold":true},{"translate":"ms.info.end.a","fallback":"灵魂方大获全胜"}," (+",{"score":{"name":"$result","objective":"data"}},")"]
+execute if score $5_ending countdown matches 125 if score $result data matches 1..2 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"aqua"},{"text":"» ","bold":true},{"translate":"ms.info.end.b","fallback":"灵魂方获胜"}," (+",{"score":{"name":"$result","objective":"data"}},")"]
+execute if score $5_ending countdown matches 125 if score $result data matches 0 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"#DDDDDD"},{"text":"» ","bold":true},{"translate":"ms.info.end.c","fallback":"平局"}," (±",{"score":{"name":"$result","objective":"data"}},")"]
+execute if score $5_ending countdown matches 125 if score $result data matches -2..-1 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"red"},{"text":"» ","bold":true},{"translate":"ms.info.end.d","fallback":"守卫者获胜"}," (",{"score":{"name":"$result","objective":"data"}},")"]
+execute if score $5_ending countdown matches 125 if score $result data matches ..-3 run tellraw @a[team=!admin] [{"text":"","bold":false,"color":"red"},{"text":"» ","bold":true},{"translate":"ms.info.end.e","fallback":"守卫者大获全胜"}," (",{"score":{"name":"$result","objective":"data"}},")"]
 
 # 详细数据
 execute if score $5_ending countdown matches 125 as @a[team=revive,scores={setting.simplified_result=0}] run function main:state/5/stat/soul
@@ -70,7 +70,7 @@ execute if score $5_ending countdown matches 100 run title @a[team=!admin] subti
 execute if score $5_ending countdown matches 100 if score $mode data matches 2 run scoreboard players set @a exp_temp 0
 
 # 剩下的部分
-execute if score $5_ending countdown matches 80 run tellraw @a[team=!admin] [{"text":"» ","bold":true},{"translate":"ms.end.return","fallback":"稍后返回大厅……","bold":false}]
+execute if score $5_ending countdown matches 80 run tellraw @a[team=!admin] [{"text":"» ","bold":true},{"translate":"ms.info.return","fallback":"稍后返回大厅……","bold":false}]
 execute if score $5_ending countdown matches 30 run function main:state/0/enter
 execute if score $5_ending countdown matches 20 run kill @e[tag=game_entity]
 execute if score $5_ending countdown matches 10 run title @a reset

@@ -8,8 +8,7 @@
             {
                 "translate":"ms.adv.hidden.3",
                 "fallback":"出金了"
-            },
-            "                 03"
+            }
         ],
         "description":[
             {
@@ -18,7 +17,7 @@
             },
             {
                 "translate":"ms.adv.hidden.3.desc.0",
-                "fallback":"在大厅中听到 1% 概率的八音盒"
+                "fallback":"听到只有 1% 机率出现的乐曲"
             },
             "\n\n",
             {

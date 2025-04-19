@@ -5,7 +5,7 @@
             "id":"player_head"
         },
         "title":{
-            "translate":"ms.turorial.3",
+            "translate":"ms.tutorial.3",
             "fallback":"玩家事件"
         },
         "description":[

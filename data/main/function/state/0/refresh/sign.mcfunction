@@ -1,6 +1,6 @@
 # 公告栏
 function base:merge_sign {x:"2",y:"1",z:"3",glow:"1",color:"white",trans_2:"ms.sign.contact",trans_3:"ms.sign.1",fallb_2:"[联系我们]",fallb_3:"> 交流与反馈 <",command:"trigger interact_check set 1"}
-function base:merge_sign {x:"1",y:"1",z:"3",glow:"1",color:"orange",trans_2:"ms.sign.major_update",trans_3:"ms.sign.2",fallb_2:"[重大更新]",fallb_3:"2.0 💠 风吹璨落时",command:"trigger interact_check set 2"}
+function base:merge_sign {x:"1",y:"1",z:"3",glow:"1",color:"orange",trans_2:"ms.sign.major_update",trans_3:"ms.sign.2",fallb_2:"[重大更新]",fallb_3:"2.0 💠 混沌回响",command:"trigger interact_check set 2"}
 function base:merge_sign {x:"0",y:"1",z:"3",glow:"1",color:"light_blue",trans_2:"ms.sign.event",trans_3:"ms.sign.3",fallb_2:"[活动]",fallb_3:"午夜灵魂官方服务器",command:"trigger interact_check set 3"}
 
 # 鸣谢列表
