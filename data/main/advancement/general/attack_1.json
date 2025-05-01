@@ -12,10 +12,10 @@
         ],
         "description":[
             {
-                "translate":"ms.goal.hit.single",
-                "fallback":"· 单场攻击到灵魂 %s 次",
+                "translate":"ms.goal.down.single",
+                "fallback":"· 单场击倒 %s 次灵魂",
                 "with":[
-                    "3"
+                    "1"
                 ],
                 "color":"white"
             },
@@ -48,8 +48,8 @@
                 "player":[
                     {
                         "scores":{
-                            "temp.hit":{
-                                "min":3
+                            "temp.down":{
+                                "min":1
                             }
                         },
                         "condition":"entity_scores",

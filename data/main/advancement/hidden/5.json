@@ -1,13 +1,13 @@
 {
-    "parent":"main:hidden/root",
+    "parent":"main:hidden/4",
     "display":{
         "icon":{
-            "id":"acacia_sign"
+            "id":"tuff_bricks"
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.1",
-                "fallback":"神经病文案撰写"
+                "translate":"ms.adv.hidden.5",
+                "fallback":"跑酷高手"
             }
         ],
         "description":[
@@ -16,13 +16,13 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.1.desc.0",
-                "fallback":"找到隐秘的告示牌"
+                "translate":"ms.adv.hidden.5.desc.0",
+                "fallback":"在 5:00 内完成隐藏跑酷"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.1.desc.1",
-                "fallback":"数据包和神经病都是SJB",
+                "translate":"ms.adv.hidden.5.desc.1",
+                "fallback":"你猜这个神经跑酷是谁做的^^",
                 "color":"gray",
                 "italic":true
             },
@@ -31,23 +31,12 @@
                 "translate":"ms.adv.pts",
                 "fallback":"💠 进度点数 +%s",
                 "with":[
-                    "5"
+                    "20"
                 ],
                 "color":"aqua"
-            },
-            "\n",
-            {
-                "translate":"ms.adv.reward",
-                "fallback":"奖励：",
-                "color":"green"
-            },
-            {
-                "translate":"ms.text.2",
-                "fallback":"无拘",
-                "color":"blue"
             }
         ],
-        "frame":"task",
+        "frame":"challenge",
         "show_toast":true,
         "announce_to_chat":false,
         "hidden":true
@@ -58,6 +47,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/5"
+        "function":"main:lib/advancement/normal/20"
     }
 }

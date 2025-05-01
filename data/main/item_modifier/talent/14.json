@@ -59,7 +59,7 @@
             },
             {
                 "translate":"ms.talent.104.desc.f",
-                "fallback":"攻击到灵魂时立刻重设冷却为最大值",
+                "fallback":"攻击到目标时立刻重设冷却为最大值",
                 "color":"gray",
                 "italic":false
             }

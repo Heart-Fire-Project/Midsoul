@@ -2,12 +2,12 @@
     "parent":"main:hidden/3",
     "display":{
         "icon":{
-            "id":"tuff_bricks"
+            "id":"ominous_bottle"
         },
         "title":[
             {
                 "translate":"ms.adv.hidden.4",
-                "fallback":"还是跑酷高手"
+                "fallback":"渴了请去喝水"
             }
         ],
         "description":[
@@ -17,12 +17,12 @@
             },
             {
                 "translate":"ms.adv.hidden.4.desc.0",
-                "fallback":"在 5:00 内完成隐藏跑酷"
+                "fallback":"喝掉你的技能"
             },
             "\n\n",
             {
                 "translate":"ms.adv.hidden.4.desc.1",
-                "fallback":"全制作组就一个跑完全程的。",
+                "fallback":"喝下不详之瓶小心变成丰川祥子。",
                 "color":"gray",
                 "italic":true
             },
@@ -31,22 +31,31 @@
                 "translate":"ms.adv.pts",
                 "fallback":"💠 进度点数 +%s",
                 "with":[
-                    "20"
+                    "5"
                 ],
                 "color":"aqua"
             }
         ],
-        "frame":"challenge",
+        "frame":"task",
         "show_toast":true,
         "announce_to_chat":false,
         "hidden":true
     },
     "criteria":{
         "secret":{
-            "trigger":"impossible"
+            "trigger":"consume_item",
+            "conditions":{
+                "item":{
+                    "components":{
+                        "custom_data":{"type":"skill",
+                            "id":71104
+                        }
+                    }
+                }
+            }
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/20"
+        "function":"main:lib/advancement/normal/5"
     }
 }

@@ -4,7 +4,7 @@ scoreboard players set @s state 0
 function main:state/0/parkour/time_format {source:"parkour_tick"}
 
 # ???
-execute if score @s temp2 matches ..6000 run advancement grant @s only main:hidden/4
+execute if score @s temp2 matches ..6000 run advancement grant @s only main:hidden/5
 
 # 完成特效
 execute at @s run summon firework_rocket ~ ~2 ~ {LifeTime:7,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{flight_duration:1,explosions:[{has_twinkle:1b,has_trail:1b,shape:small_ball,colors:[I;6688755],fade_colors:[I;6648575]}]}}}}

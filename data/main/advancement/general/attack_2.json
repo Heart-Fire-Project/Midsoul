@@ -12,8 +12,8 @@
         ],
         "description":[
             {
-                "translate":"ms.goal.down.single",
-                "fallback":"· 单场击倒 %s 次灵魂",
+                "translate":"ms.goal.hit.single",
+                "fallback":"· 单场击中目标 %s 次",
                 "with":[
                     "3"
                 ],
@@ -22,7 +22,7 @@
             "\n\n",
             {
                 "translate":"ms.adv.attack.2.desc",
-                "fallback":"您让灵魂之灯多了不少。",
+                "fallback":"您成功震慑了灵魂。",
                 "color":"gray",
                 "italic":true
             },
@@ -48,7 +48,7 @@
                 "player":[
                     {
                         "scores":{
-                            "temp.down":{
+                            "temp.hit":{
                                 "min":3
                             }
                         },

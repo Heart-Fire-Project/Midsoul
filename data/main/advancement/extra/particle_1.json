@@ -22,7 +22,7 @@
             "\n\n",
             {
                 "translate":"ms.particle.1.desc",
-                "fallback":"星辉指引方向，刃尖挑破虚妄。",
+                "fallback":"星辉引方向，刃尖挑虚妄。",
                 "color":"gray",
                 "italic":true
             }

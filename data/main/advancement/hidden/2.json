@@ -7,7 +7,7 @@
         "title":[
             {
                 "translate":"ms.adv.hidden.2",
-                "fallback":"飞的没边了"
+                "fallback":"巡空者"
             }
         ],
         "description":[
@@ -17,7 +17,7 @@
             },
             {
                 "translate":"ms.adv.hidden.2.desc.0",
-                "fallback":"在游戏中，持续滞空 10 秒"
+                "fallback":"在游戏中，持续滞空 9 秒"
             },
             "\n\n",
             {
@@ -60,7 +60,7 @@
                     {
                         "scores":{
                             "off_ground":{
-                                "min":200
+                                "min":180
                             }
                         },
                         "condition":"entity_scores",

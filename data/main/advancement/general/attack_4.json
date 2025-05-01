@@ -13,16 +13,16 @@
         "description":[
             {
                 "translate":"ms.goal.hit.single",
-                "fallback":"· 单场攻击到灵魂 %s 次",
+                "fallback":"· 单场击中目标 %s 次",
                 "with":[
-                    "10"
+                    "6"
                 ],
                 "color":"white"
             },
             "\n\n",
             {
                 "translate":"ms.adv.attack.4.desc",
-                "fallback":"您这样会没有灵魂朋友的……",
+                "fallback":"您的事迹让灵魂闻风丧胆。",
                 "color":"gray",
                 "italic":true
             },
@@ -49,7 +49,7 @@
                     {
                         "scores":{
                             "temp.hit":{
-                                "min":10
+                                "min":6
                             }
                         },
                         "condition":"entity_scores",

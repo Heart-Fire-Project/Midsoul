@@ -15,7 +15,7 @@
                 "translate":"ms.goal.play",
                 "fallback":"· 完成 %s 场游戏",
                 "with":[
-                    "16"
+                    "4"
                 ],
                 "color":"white"
             },
@@ -40,7 +40,7 @@
                     {
                         "scores":{
                             "stat.play":{
-                                "min":16
+                                "min":4
                             }
                         },
                         "condition":"entity_scores",

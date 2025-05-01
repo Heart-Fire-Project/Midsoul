@@ -22,7 +22,7 @@
             "\n\n",
             {
                 "translate":"ms.particle.2.desc",
-                "fallback":"碎片凝于大地，灵烬蚀尽伪契。",
+                "fallback":"碎片凝大地，灵烬蚀伪契。",
                 "color":"gray",
                 "italic":true
             }
