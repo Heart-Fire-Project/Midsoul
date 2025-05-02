@@ -45,7 +45,7 @@ scoreboard players add @a[tag=game_player] temp.time 1
 
 # 其他的部分
 execute if entity @e[tag=open_purple] run effect give @e[team=soul,scores={state=0}] glowing infinite 6 true
-execute as @a[team=soul] at @s if entity @e[tag=open_purple,distance=..0.5] run function main:state/4/revive
+execute as @a[team=soul,scores={state=0}] at @s if entity @e[tag=open_purple,distance=..0.5] run function main:state/4/revive
 execute as @a[scores={sleep_detect=1..},team=soul] run function main:state/3/event/wake_up
 kill @e[type=item,tag=!game_entity]
 execute as @a at @s unless block ~ ~ ~ air run scoreboard players reset @s off_ground

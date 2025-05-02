@@ -58,6 +58,7 @@ execute if score $5_ending countdown matches 125 if score $mode data matches 1 a
 
 # 记录数据
 execute if score $5_ending countdown matches 125 run tag @a remove mvp
+execute if score $5_ending countdown matches 125 run scoreboard players set $highest temp 0
 execute if score $5_ending countdown matches 125 run scoreboard players operation $highest temp > @a[tag=game_player] exp_temp
 execute if score $5_ending countdown matches 125 as @a if score @s exp_temp = $highest temp run tag @s add mvp
 execute if score $5_ending countdown matches 125 if score $mode data matches 1 as @a[tag=game_player] run function main:state/5/stat/record
