@@ -17,8 +17,8 @@ scoreboard players set $talent_007 data 20
 execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
 
 # 教程
-advancement grant @a[tag=game_player] only main:tutorial/mechanism_3
-advancement grant @a[team=guardian] only main:tutorial/attack_4
+advancement grant @a[tag=game_player] only main:tutorial/mechanism/3
+advancement grant @a[team=guardian] only main:tutorial/attack/4
 
 # 可以调整的就调整基础速度
 execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.14

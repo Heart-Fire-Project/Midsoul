@@ -22,7 +22,7 @@ bossbar set midsoul:heed players @a[tag=!warn,tag=heed,team=!admin]
 bossbar set midsoul:warn players @a[tag=warn,team=!admin]
 
 # 教程
-advancement grant @a[tag=heed] only main:tutorial/mechanism_1
+advancement grant @a[tag=heed] only main:tutorial/mechanism/1
 
 # 清除标签
 tag @a remove heed

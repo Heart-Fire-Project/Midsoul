@@ -1,8 +1,0 @@
-{
-    "parent":"main:extra/particle_9",
-    "criteria":{
-        "command":{
-            "trigger":"location"
-        }
-    }
-}

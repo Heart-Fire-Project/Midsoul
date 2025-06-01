@@ -27,4 +27,4 @@ effect give @s speed 7 2 true
 gamemode adventure @s
 
 # 教程
-advancement grant @s only main:tutorial/role_1
+advancement grant @s only main:tutorial/role/1

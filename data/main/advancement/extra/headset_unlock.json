@@ -1,8 +1,0 @@
-{
-    "parent":"main:extra/headset_3",
-    "criteria":{
-        "command":{
-            "trigger":"location"
-        }
-    }
-}

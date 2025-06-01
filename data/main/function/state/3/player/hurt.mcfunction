@@ -15,4 +15,4 @@ execute at @s[tag=soul_down] run summon marker ~ ~0.2 ~ {Tags:[death_mark,game_e
 tp @n[tag=death_mark] @s
 
 # 教程
-advancement grant @s only main:tutorial/attack_1
+advancement grant @s only main:tutorial/attack/1

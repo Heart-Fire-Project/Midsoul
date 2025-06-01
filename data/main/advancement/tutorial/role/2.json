@@ -1,0 +1,34 @@
+{
+    "parent":"main:tutorial/role/1",
+    "display":{
+        "icon":{
+            "id":"golden_sword"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.0-2",
+                "fallback":"灵魂守卫者"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.0-2.desc",
+                "fallback":"    欢迎进入午夜灵魂！如果这是你的第一局游戏，那你还挺幸运的！\n    作为灵魂守卫者，你的目标就是拿手里的剑把他们全斩断！准备开始吧！",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+            
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial"
+    }
+}

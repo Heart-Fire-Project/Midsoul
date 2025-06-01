@@ -1,8 +1,0 @@
-{
-    "parent":"main:extra/text_2",
-    "criteria":{
-        "command":{
-            "trigger":"location"
-        }
-    }
-}

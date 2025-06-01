@@ -67,7 +67,7 @@ execute if score $1_process countdown matches 1020 run scoreboard objectives set
 
 # 1020 | 详情信息
 execute if score $1_process countdown matches 1020 unless score $echo data matches 0 as @a[team=!admin] run function main:lib/echo
-execute if score $1_process countdown matches 1020 unless score $echo data matches 0 run advancement grant @a[tag=game_player] only main:tutorial/mechanism_4
+execute if score $1_process countdown matches 1020 unless score $echo data matches 0 run advancement grant @a[tag=game_player] only main:tutorial/mechanism/4
 
 # 1019 | 阵营分配标题
 execute if score $1_process countdown matches 1019 run title @a times 3 50 2

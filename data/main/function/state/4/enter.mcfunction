@@ -1,8 +1,16 @@
 # 状态 4 - 充能
 scoreboard players set $state data 4
 
-# 生成传送门
-execute at @e[tag=marker_purple,limit=2,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+# 生成传送门 | 两个传送门相距至少 60 格
+execute at @e[tag=marker_purple,limit=1,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+execute at @n[tag=new_purple] at @e[tag=marker_purple,limit=1,sort=random,distance=60..] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+
+# 如果就是很巧，没有符合条件的第二个点位，那就挑最远的
+scoreboard players set $temp temp 0
+execute as @e[tag=new_purple] run scoreboard players add $temp temp 1
+execute if score $temp temp matches 1 at @n[tag=new_purple] at @e[tag=marker_purple,limit=1,sort=furthest] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+
+# 善后工作
 execute as @e[tag=new_purple] run team join portal @s
 scoreboard players set @e[tag=new_purple] countdown 0
 execute at @e[tag=new_purple] run summon text_display ~ ~1.2 ~ {Tags:["game_entity","purple_progress"],interpolation_duration:15,start_interpolation:0,billboard:"center",alignment:"center",line_width:200,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
@@ -36,5 +44,5 @@ execute if score $echo data matches 7 as @a[team=guardian,scores={state=0}] run 
 execute if score $echo data matches 9 run scoreboard players set @e[tag=purple] countdown 999999999
 
 # 教程
-advancement grant @a[tag=game_player] only main:tutorial/interact_4
-advancement grant @a[team=guardian] only main:tutorial/attack_4
+advancement grant @a[tag=game_player] only main:tutorial/interact/4
+advancement grant @a[team=guardian] only main:tutorial/attack/4

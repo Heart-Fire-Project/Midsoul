@@ -1,8 +1,0 @@
-{
-    "parent":"main:general/attack_3",
-    "criteria":{
-        "command":{
-            "trigger":"location"
-        }
-    }
-}

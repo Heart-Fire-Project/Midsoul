@@ -67,7 +67,7 @@ execute if score $aura_rank data matches ..1 if score $shard_collect data = $ran
 execute if score $aura_rank data matches ..2 if score $shard_collect data = $rank_3 temp run scoreboard players set $aura_rank data -3
 
 # 教程
-execute if score $aura_rank data matches -3..-1 run advancement grant @a[tag=game_player] only main:tutorial/mechanism_3
+execute if score $aura_rank data matches -3..-1 run advancement grant @a[tag=game_player] only main:tutorial/mechanism/3
 
 # 解析灵气等级变化
 execute if score $aura_rank data matches -3..-1 run playsound block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000

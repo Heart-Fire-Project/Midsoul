@@ -2,11 +2,11 @@
 # 点位不能重合
 execute as @e[tag=marker_gold] at @s unless entity @e[distance=..3,tag=gold] run tag @s add gold_empty
 
-# 不能离守卫者太近：守卫者周边 24 格内不会生成灵魂之灯
-execute at @a[team=guardian] run tag @e[distance=..24,tag=marker_gold] add no_summon
+# 不能离守卫者太近：守卫者周边 35 格内不会生成灵魂之灯
+execute at @a[team=guardian] run tag @e[distance=..35,tag=marker_gold] add no_summon
 
-# 应该离灵魂近点：尽量选择 40 格内的点位
-execute at @a[team=soul,scores={state=0}] run tag @e[distance=..40,tag=marker_gold] add good_summon
+# 应该离灵魂近点，但也不能太近：尽量选择 50~80 格内的点位
+execute at @a[team=soul,scores={state=0}] run tag @e[distance=50..80,tag=marker_gold] add good_summon
 
 # 选择优先点位，若无效则扩大范围
 tag @e[tag=good_summon,tag=gold_empty,tag=!no_summon,limit=1,sort=random] add gold_select
@@ -26,4 +26,4 @@ tag @e remove good_summon
 tag @e remove gold_select
 
 # 教程
-advancement grant @a[tag=game_player] only main:tutorial/interact_2
+advancement grant @a[tag=game_player] only main:tutorial/interact/2

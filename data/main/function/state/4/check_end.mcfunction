@@ -9,7 +9,7 @@ execute unless entity @a[team=soul,scores={state=0}] run function main:state/5/e
 # 若仅剩一位灵魂，应用自回
 execute if score $alive data matches 1 if score $4_onesoul countdown matches 0 run tellraw @a[team=!admin] [{"text":"» ","color":"#CC81F0","bold":true},{"translate":"ms.info.4.onesoul","fallback":"灵气集聚 ⚜ 传送门将缓慢自动充能","bold":false}]
 execute if score $alive data matches 1 if score $4_onesoul countdown matches 0 run playsound block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
-execute if score $alive data matches 1 if score $4_onesoul countdown matches 0 run advancement grant @a[tag=game_player] only main:tutorial/mechanism_3
+execute if score $alive data matches 1 if score $4_onesoul countdown matches 0 run advancement grant @a[tag=game_player] only main:tutorial/mechanism/3
 execute if score $alive data matches 1 if score $4_onesoul countdown matches 0 run scoreboard players set $4_onesoul countdown 1
 
 # 若时间已到

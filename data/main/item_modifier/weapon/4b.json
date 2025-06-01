@@ -18,7 +18,7 @@
             },
             {
                 "translate":"ms.weapon.4.desc",
-                "fallback":"手感火热……不是用来怼的！",
+                "fallback":"手感火热……不防水！",
                 "color":"#CCCCCC",
                 "italic":false
             }

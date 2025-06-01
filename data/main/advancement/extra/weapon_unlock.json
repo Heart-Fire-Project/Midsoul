@@ -1,8 +1,0 @@
-{
-    "parent":"main:extra/weapon_4",
-    "criteria":{
-        "command":{
-            "trigger":"location"
-        }
-    }
-}

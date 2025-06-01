@@ -1,0 +1,34 @@
+{
+    "parent":"main:tutorial/attack/3",
+    "display":{
+        "icon":{
+            "id":"diamond_boots"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.3-4",
+                "fallback":"危机与一刀斩"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.3-4.desc",
+                "fallback":"    在传送门出现，或者是游戏时间达到阈值后，你将会进入危机状态。\n    在危机状态下，你的移速会进一步提升，并且可以一击杀死灵魂……简单来说就是你被强化了，快去乱杀。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+            
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial"
+    }
+}

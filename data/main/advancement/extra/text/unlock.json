@@ -1,0 +1,8 @@
+{
+    "parent":"main:extra/text/2",
+    "criteria":{
+        "command":{
+            "trigger":"location"
+        }
+    }
+}

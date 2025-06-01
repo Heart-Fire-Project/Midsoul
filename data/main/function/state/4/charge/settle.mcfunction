@@ -26,14 +26,14 @@ execute if score $alive data matches 1 run scoreboard players operation @s count
 
 # 充能进度结算 | 求平均值，再乘相应倍率
 # 交互人数 |   1   |   2   |   3   |   4
-# 进度倍率 |  1.0  |  1.7  |  2.2  |  2.5
+# 进度倍率 |  1.0  |  1.5  |  1.7  |  1.8
 scoreboard players set $plus temp 0
 execute as @a[tag=purple_interact,tag=interacting,distance=..0.5] run scoreboard players operation $plus temp += @s countdown
 scoreboard players operation $plus temp /= $num temp
 execute store result storage ms:temp value double 1 run scoreboard players get $plus temp
-execute if score $num temp matches 2 store result score $plus temp run data get storage ms:temp value 1.7
-execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 2.2
-execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 2.5
+execute if score $num temp matches 2 store result score $plus temp run data get storage ms:temp value 1.5
+execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 1.7
+execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 1.8
 execute if score $num temp matches 1.. run scoreboard players operation @s countdown += $plus temp
 
 # 充能完毕？

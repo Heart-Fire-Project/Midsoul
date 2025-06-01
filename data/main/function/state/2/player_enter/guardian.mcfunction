@@ -18,4 +18,4 @@ effect give @s glowing 7 6 true
 gamemode adventure @s
 
 # 教程
-advancement grant @s only main:tutorial/role_2
+advancement grant @s only main:tutorial/role/2

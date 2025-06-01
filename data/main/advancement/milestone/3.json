@@ -84,7 +84,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:general/attack_2":true
+                                    "main:general/attack/2":true
                                 }
                             }
                         }

@@ -1,0 +1,8 @@
+{
+    "parent":"main:general/collect/3",
+    "criteria":{
+        "command":{
+            "trigger":"location"
+        }
+    }
+}
