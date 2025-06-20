@@ -1,14 +1,19 @@
 # 状态 4 - 充能
 scoreboard players set $state data 4
 
-# 生成传送门 | 两个传送门相距至少 60 格
+# 生成传送门 | 两个传送门相距 60~80 格
 execute at @e[tag=marker_purple,limit=1,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
-execute at @n[tag=new_purple] at @e[tag=marker_purple,limit=1,sort=random,distance=60..] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+execute at @n[tag=new_purple] at @e[tag=marker_purple,limit=1,sort=random,distance=60..80] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 
-# 如果就是很巧，没有符合条件的第二个点位，那就挑最远的
+# 没有符合的 | 改为 50~90 格
 scoreboard players set $temp temp 0
 execute as @e[tag=new_purple] run scoreboard players add $temp temp 1
-execute if score $temp temp matches 1 at @n[tag=new_purple] at @e[tag=marker_purple,limit=1,sort=furthest] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+execute if score $temp temp matches 1 at @n[tag=new_purple] at @e[tag=marker_purple,limit=1,sort=random,distance=50..90] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+
+# 还没有就开摆
+scoreboard players set $temp temp 0
+execute as @e[tag=new_purple] run scoreboard players add $temp temp 1
+execute if score $temp temp matches 1 at @n[tag=new_purple] at @e[tag=marker_purple,limit=1,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 
 # 善后工作
 execute as @e[tag=new_purple] run team join portal @s
@@ -21,11 +26,12 @@ title @a subtitle {"translate":"ms.title.4.portal","fallback":"⚜ 传送门已�
 playsound entity.warden.attack_impact player @a[team=!admin] 0 1000000 0 1000000 0.7
 
 # 设置计时
-scoreboard players set $4_onesoul countdown 0
+scoreboard players set $4_single state 0
+scoreboard players set $4_finale state 0
 scoreboard players set $4_process countdown 0
 execute store result score $4_portal countdown run data get storage ms:map size
-scoreboard players operation $4_portal countdown *= #400 data
-scoreboard players add $4_portal countdown 2000
+scoreboard players operation $4_portal countdown *= #600 data
+scoreboard players add $4_portal countdown 3000
 
 # 初始化 Bossbar
 bossbar set midsoul:info style notched_12

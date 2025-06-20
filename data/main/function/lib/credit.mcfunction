@@ -23,9 +23,9 @@ execute if score @s temp matches 4 run tellraw @s [{"text":"✒ ","color":"gray"
 # 5 - 测试人员
 execute if score @s temp matches 5 run tellraw @s [{"text":"","color":"white"},{"text":"\n» ","bold":true},{"translate":"ms.credit.tester.0","fallback":"以下名称皆按照首字母顺序排列"}]
 execute if score @s temp matches 5 run tellraw @s [{"text":"","color":"#339A8D"},{"text":"» ","bold":true},{"translate":"ms.credit.tester.1","fallback":"Σ Reset 公测参与者"}]
-execute if score @s temp matches 5 run tellraw @s "A02wa, Enmusubi, Inkiss, KSXG, Last_Dust, Nai_ShenShen, YQ_CN"
+execute if score @s temp matches 5 run tellraw @s [{"text":"A02wa","color":"white"},{"text":", ","color":"gray"},"Enmusubi",{"text":", ","color":"gray"},"Inkiss",{"text":", ","color":"gray"},"KSXG",{"text":", ","color":"gray"},"Last_Dust",{"text":", ","color":"gray"},"Nai_ShenShen",{"text":", ","color":"gray"},"YQ_CN"]
 execute if score @s temp matches 5 run tellraw @s [{"text":"","color":"#FFCA95"},{"text":"» ","bold":true},{"translate":"ms.credit.tester.2","fallback":"Plus v2 公测参与者"}]
-execute if score @s temp matches 5 run tellraw @s "--"
+execute if score @s temp matches 5 run tellraw @s [{"text":"Bai_cu","color":"white"},{"text":", ","color":"gray"},"beiweide303",{"text":", ","color":"gray"},"LoyVol",{"text":", ","color":"gray"},"SaKuraYeager",{"text":", ","color":"gray"},"Mol1Sama",{"text":", ","color":"gray"},"Tian_wg",{"text":", ","color":"gray"},"XuanYu1725_XYU"]
 
 # 6 - 以及……
 execute if score @s temp matches 6 run tellraw @s [{"text":"","color":"#97B9E0"},{"text":"\n» ","bold":true},{"translate":"ms.credit.other","fallback":"以及……"}]

@@ -1,5 +1,5 @@
-scoreboard players operation @s temp = $interact_speed setting
-scoreboard players operation @s temp *= #20 data
-scoreboard players operation @s temp /= #100 data
+scoreboard players operation @s temp2 = $interact_speed setting
+scoreboard players operation @s temp2 *= #20 data
+scoreboard players operation @s temp2 /= #100 data
 
-scoreboard players operation @s countdown -= @s temp
+scoreboard players operation @s countdown -= @s temp2

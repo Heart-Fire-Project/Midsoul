@@ -22,19 +22,24 @@ execute if score @s countdown matches ..-1 run scoreboard players set @s countdo
 # 自充能进度结算
 scoreboard players operation $plus temp = $interact_speed setting
 scoreboard players operation $plus temp /= #2 data
-execute if score $alive data matches 1 run scoreboard players operation @s countdown += $plus temp
+execute if score $4_single state matches 1 run scoreboard players operation @s countdown += $plus temp
+
+# 极速充能结算
+scoreboard players operation $plus temp = $interact_speed setting
+scoreboard players operation $plus temp *= #7 data
+execute if score $4_finale state matches 1 if entity @a[team=soul,distance=..5] run scoreboard players operation @s countdown += $plus temp
 
 # 充能进度结算 | 求平均值，再乘相应倍率
 # 交互人数 |   1   |   2   |   3   |   4
-# 进度倍率 |  1.0  |  1.5  |  1.7  |  1.8
+# 进度倍率 |  100  |  125  |  140  |  150
 scoreboard players set $plus temp 0
 execute as @a[tag=purple_interact,tag=interacting,distance=..0.5] run scoreboard players operation $plus temp += @s countdown
 scoreboard players operation $plus temp /= $num temp
 execute store result storage ms:temp value double 1 run scoreboard players get $plus temp
-execute if score $num temp matches 2 store result score $plus temp run data get storage ms:temp value 1.5
-execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 1.7
-execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 1.8
+execute if score $num temp matches 2 store result score $plus temp run data get storage ms:temp value 1.25
+execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 1.4
+execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 1.5
 execute if score $num temp matches 1.. run scoreboard players operation @s countdown += $plus temp
 
 # 充能完毕？
-execute if score @s countdown matches 8000.. run function main:state/4/charge/finish
+execute if score @s countdown matches 6000.. run function main:state/4/charge/finish

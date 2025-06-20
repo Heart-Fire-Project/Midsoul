@@ -33,7 +33,7 @@ tag @s[tag=!gray_interact] remove gray_hint
 
 # 刷新进程
 scoreboard players reset @s[tag=!interacting] countdown
-scoreboard players operation @s[tag=interacting] countdown += $interact_speed setting
+scoreboard players operation @s[tag=interacting] temp = $interact_speed setting
 
 # 判定：进行交互时
 execute as @s[scores={talent_1=1},tag=blue_interact,tag=interacting,tag=talent_1_on] at @s run function main:state/3/ability/talent/001b
@@ -41,6 +41,11 @@ execute as @s[scores={talent_2=1},tag=blue_interact,tag=interacting,tag=talent_2
 execute as @s[scores={talent_1=7},tag=interacting] at @s run function main:state/3/ability/talent/007
 execute as @s[scores={talent_2=7},tag=interacting] at @s run function main:state/3/ability/talent/007
 execute if score $echo data matches 6 as @s[team=soul,tag=interacting] run function main:state/3/echo/06
+
+# 阶段判定与结算
+execute if score $state data matches 4 as @s[tag=interacting] run scoreboard players operation @s temp *= #15 data
+execute if score $state data matches 4 as @s[tag=interacting] run scoreboard players operation @s temp /= #10 data
+scoreboard players operation @s[tag=interacting] countdown += @s temp
 
 # 收集完成
 execute as @s[tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..0.5] at @s run function main:state/3/interaction/blue with storage ms:map

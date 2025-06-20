@@ -5,6 +5,6 @@ tag @s[scores={talent_1=1}] remove talent_1_on
 tag @s[scores={talent_2=1}] remove talent_2_on
 
 # 计算并应用效果
-scoreboard players operation @s temp = $interact_speed setting
-scoreboard players operation @s temp *= #10 data
-scoreboard players operation @s countdown += @s temp
+scoreboard players operation @s temp2 = $interact_speed setting
+scoreboard players operation @s temp2 *= #10 data
+scoreboard players operation @s temp += @s temp2

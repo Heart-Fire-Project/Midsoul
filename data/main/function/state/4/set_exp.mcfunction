@@ -13,7 +13,7 @@ scoreboard players set @s[tag=blue_interact] temp 700
 scoreboard players set @s[tag=E02] temp 700
 scoreboard players set @s[tag=gold_interact] temp 1400
 scoreboard players set @s[tag=gray_interact] temp 1000
-scoreboard players set @s[tag=purple_interact] temp 8000
+scoreboard players set @s[tag=purple_interact] temp 6000
 scoreboard players operation @s[tag=purple_interact] countdown = @n[tag=purple] countdown
 scoreboard players set @s[scores={state=1,temp.dying=1},team=soul] temp 12000
 scoreboard players set @s[scores={state=1,temp.dying=2},team=soul] temp 8000

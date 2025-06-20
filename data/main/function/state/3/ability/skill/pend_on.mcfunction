@@ -1,5 +1,7 @@
-scoreboard players operation @s[scores={skill_tick=0..}] skill_tick -= $cooldown_speed setting
-execute if score $echo data matches 4 run scoreboard players operation @s[scores={skill_tick=0..}] skill_tick += $cooldown_speed setting
+scoreboard players operation @s[scores={skill_tick=0..}] temp = $cooldown_speed setting
+execute if score $state data matches 4 run scoreboard players operation @s[scores={skill_tick=0..}] temp += $cooldown_speed setting
+execute if score $echo data matches 4 run scoreboard players set @s temp 0
+scoreboard players operation @s[scores={skill_tick=0..}] skill_tick -= @s temp
 scoreboard players set @s[scores={skill_tick=..0}] skill_tick 0
 
 # 教程
