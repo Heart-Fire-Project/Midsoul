@@ -4,7 +4,7 @@ tag @s add purple_interact
 
 # 判断交互类型
 execute unless score @s sneak_time matches 1.. run tag @s remove interacting
-execute unless entity @e[tag=purple,distance=..0.5,tag=!open_purple] run tag @s remove purple_interact
+execute unless entity @e[tag=purple,distance=..0.7,tag=!open_purple] run tag @s remove purple_interact
 
 # 交互提示
 execute as @s[tag=purple_hint] run title @s actionbar [{"translate":"ms.hint.purple","fallback":"长按 [%s] 以充能","with":[{"keybind":"key.sneak"}],"color":"light_purple"}]

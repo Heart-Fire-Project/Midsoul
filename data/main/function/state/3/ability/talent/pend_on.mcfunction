@@ -1,4 +1,4 @@
-$scoreboard players operation @s[scores={talent_$(num)_tick=1..}] temp -= $cooldown_speed setting
+$scoreboard players operation @s[scores={talent_$(num)_tick=1..}] temp = $cooldown_speed setting
 $scoreboard players operation @s[scores={talent_$(num)_tick=1..}] talent_$(num)_tick -= @s temp
 $scoreboard players set @s[scores={talent_$(num)_tick=..0}] talent_$(num)_tick 0
 

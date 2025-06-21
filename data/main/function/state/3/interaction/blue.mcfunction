@@ -1,4 +1,4 @@
-tag @a[distance=..0.5,tag=blue_interact,scores={countdown=700..}] add interact_fin
+tag @a[distance=..0.7,tag=blue_interact,scores={countdown=700..}] add interact_fin
 
 # 完成碎片收集
 scoreboard players add @a[tag=interact_fin] temp.collect 1

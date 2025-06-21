@@ -7,10 +7,10 @@ execute if score $echo data matches 2 run tag @s[team=soul] add E02
 
 # 判断交互类型
 execute unless score @s sneak_time matches 1.. run tag @s remove interacting
-execute unless entity @e[tag=blue,distance=..0.5] run tag @s remove blue_interact
-execute unless entity @e[tag=gold,distance=..0.5] run tag @s remove gold_interact
-execute unless entity @e[tag=gray,distance=..0.5] run tag @s remove gray_interact
-execute unless entity @e[tag=fake_blue,distance=..0.5] run tag @s remove E02
+execute unless entity @e[tag=blue,distance=..0.7] run tag @s remove blue_interact
+execute unless entity @e[tag=gold,distance=..0.7] run tag @s remove gold_interact
+execute unless entity @e[tag=gray,distance=..0.7] run tag @s remove gray_interact
+execute unless entity @e[tag=fake_blue,distance=..0.7] run tag @s remove E02
 tag @s[tag=!blue_interact,tag=!gold_interact,tag=!gray_interact,tag=!E02] remove interacting
 
 # 交互提示
@@ -42,13 +42,12 @@ execute as @s[scores={talent_1=7},tag=interacting] at @s run function main:state
 execute as @s[scores={talent_2=7},tag=interacting] at @s run function main:state/3/ability/talent/007
 execute if score $echo data matches 6 as @s[team=soul,tag=interacting] run function main:state/3/echo/06
 
-# 阶段判定与结算
-execute if score $state data matches 4 as @s[tag=interacting] run scoreboard players operation @s temp *= #15 data
-execute if score $state data matches 4 as @s[tag=interacting] run scoreboard players operation @s temp /= #10 data
+# 额外判定与结算
+execute if score $undying data matches 1 run scoreboard players operation @s[tag=gold_interact] temp += $interact_speed setting
 scoreboard players operation @s[tag=interacting] countdown += @s temp
 
 # 收集完成
-execute as @s[tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..0.5] at @s run function main:state/3/interaction/blue with storage ms:map
-execute as @s[tag=gold_interact,scores={countdown=1400..}] as @e[tag=gold,distance=..0.5] at @s run function main:state/3/interaction/gold
-execute as @s[tag=gray_interact,scores={countdown=1000..}] as @e[tag=gray,distance=..0.5] at @s run function main:state/3/interaction/gray
-execute as @s[tag=E02,scores={countdown=700..}] as @e[tag=fake_blue,distance=..0.5] at @s run function main:state/3/echo/02a
+execute as @s[tag=blue_interact,scores={countdown=700..}] as @e[tag=blue,distance=..0.7] at @s run function main:state/3/interaction/blue with storage ms:map
+execute as @s[tag=gold_interact,scores={countdown=1400..}] as @e[tag=gold,distance=..0.7] at @s run function main:state/3/interaction/gold
+execute as @s[tag=gray_interact,scores={countdown=1000..}] as @e[tag=gray,distance=..0.7] at @s run function main:state/3/interaction/gray
+execute as @s[tag=E02,scores={countdown=700..}] as @e[tag=fake_blue,distance=..0.7] at @s run function main:state/3/echo/02a

@@ -17,6 +17,12 @@ execute as @a at @s unless block ~ ~-0.5 ~ farmland run effect clear @s slow_fal
 spawnpoint @a 0 -5 0
 execute as @a unless score @s interact_check matches 0 run scoreboard players enable @s interact_check
 
+# 对剩余玩家进行一次计数，以供函数使用
+scoreboard players reset $alive data
+execute as @a[team=soul] run scoreboard players add $alive data 1
+scoreboard players reset $undying data
+execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
+
 # 定向至其他函数
 function debug:tick1
 execute if score $state data matches 0 run function main:state/0/tick1

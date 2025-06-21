@@ -288,8 +288,7 @@ scoreboard players set #64 data 64
 scoreboard players set #100 data 100
 scoreboard players set #182 data 182
 scoreboard players set #256 data 256
-scoreboard players set #600 data 600
-scoreboard players set #6000 data 6000
+scoreboard players set #8000 data 8000
 scoreboard players set #10000 data 10000
 scoreboard players set #18000 data 18000
 

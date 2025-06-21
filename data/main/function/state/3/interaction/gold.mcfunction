@@ -1,4 +1,4 @@
-tag @a[distance=..0.5,tag=gold_interact,scores={countdown=1400..}] add interact_fin
+tag @a[distance=..0.7,tag=gold_interact,scores={countdown=1400..}] add interact_fin
 
 # 完成灵灯点亮
 scoreboard players add @a[tag=interact_fin] temp.heal 1

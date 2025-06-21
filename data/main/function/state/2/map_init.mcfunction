@@ -4,9 +4,9 @@ execute if score $map data matches 2 run fill 1049 41 -999 1053 41 -995 red_cand
 execute if score $map data matches 3 run fill -870 20 1100 -868 20 1098 obsidian replace crying_obsidian
 
 # 设置地图信息
-execute if score $map data matches 1 run data merge storage ms:map {shard_goal:24s,shard_summon:30s,chest_summon:5s,chest_max:14s,size:3s}
-execute if score $map data matches 2 run data merge storage ms:map {shard_goal:18s,shard_summon:21s,chest_summon:4s,chest_max:10s,size:2s}
-execute if score $map data matches 3 run data merge storage ms:map {shard_goal:40s,shard_summon:48s,chest_summon:6s,chest_max:15s,size:5s}
+execute if score $map data matches 1 run data merge storage ms:map {shard_goal:24s,shard_summon:30s,chest_summon:5s,chest_max:14s,original_goal:24s}
+execute if score $map data matches 2 run data merge storage ms:map {shard_goal:18s,shard_summon:21s,chest_summon:4s,chest_max:10s,original_goal:18s}
+execute if score $map data matches 3 run data merge storage ms:map {shard_goal:40s,shard_summon:48s,chest_summon:6s,chest_max:15s,original_goal:40s}
 
 # 相关回响
 execute store result score $goal temp run data get storage ms:map shard_goal

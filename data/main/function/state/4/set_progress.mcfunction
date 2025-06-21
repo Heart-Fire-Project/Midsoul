@@ -1,7 +1,7 @@
 # 计算百分比
-function base:caculate/percent {valueA:"@s",valueB:"#6000",sourceA:"countdown",sourceB:"data"}
-execute if score @s countdown matches ..5999 run data modify entity @n[tag=purple_progress] text set value '["[ ",{"score":{"name":"$front","objective":"temp2"}},"% ]"]'
-execute if score @s countdown matches 6000.. run data modify entity @n[tag=purple_progress] text set value '"[ 100% ]"'
+function base:caculate/percent {valueA:"@s",valueB:"#8000",sourceA:"countdown",sourceB:"data"}
+execute if score @s countdown matches ..7999 run data modify entity @n[tag=purple_progress] text set value '["[ ",{"score":{"name":"$front","objective":"temp2"}},"% ]"]'
+execute if score @s countdown matches 8000.. run data modify entity @n[tag=purple_progress] text set value '"[ 100% ]"'
 
 # 设置背景颜色
 execute if score $4_process_color countdown matches 31.. run scoreboard players set $4_process_color countdown 1

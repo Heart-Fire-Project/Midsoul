@@ -35,5 +35,10 @@ execute if score @s extra.text matches 2 run function main:lib/player/down/2
 function main:state/3/event/summon/gold
 playsound block.conduit.deactivate player @a[team=!admin] 0 1000000 0 1000000
 
+# 最终防线？
+scoreboard players reset $undying data
+execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
+execute if score $undying data matches 1 run playsound block.bell.use player @a[team=!admin] 0 1000000 0 1000000
+
 # 教程
 advancement grant @s only main:tutorial/attack/3

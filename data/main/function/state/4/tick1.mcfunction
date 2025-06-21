@@ -1,9 +1,3 @@
-# 对剩余玩家进行一次计数，以供函数使用
-scoreboard players reset $alive data
-execute as @a[team=soul] run scoreboard players add $alive data 1
-scoreboard players reset $undying data
-execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
-
 # 刷新 Bossbar
 function main:state/4/bossbar/pend
 
@@ -47,7 +41,7 @@ scoreboard players add @a[tag=game_player] temp.time 1
 
 # 其他的部分
 execute if entity @e[tag=open_purple] run effect give @e[team=soul,scores={state=0}] glowing infinite 6 true
-execute as @a[team=soul,scores={state=0}] at @s if entity @e[tag=open_purple,distance=..0.5] run function main:state/4/revive
+execute as @a[team=soul,scores={state=0}] at @s if entity @e[tag=open_purple,distance=..0.7] run function main:state/4/revive
 execute as @e[tag=open_purple] at @s run particle end_rod ~ ~1.6 ~ 0 24 0 0 10 force @a[team=!admin]
 execute as @a[scores={sleep_detect=1..},team=soul] run function main:state/3/event/wake_up
 kill @e[type=item,tag=!game_entity]

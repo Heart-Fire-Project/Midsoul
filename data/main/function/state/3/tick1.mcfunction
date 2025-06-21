@@ -1,7 +1,3 @@
-# 对剩余玩家进行一次计数，以供函数使用
-scoreboard players reset $alive data
-execute as @a[team=soul] run scoreboard players add $alive data 1
-
 # 刷新 Bossbar
 function main:state/3/bossbar/general
 

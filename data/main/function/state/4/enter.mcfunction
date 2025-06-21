@@ -29,9 +29,9 @@ playsound entity.warden.attack_impact player @a[team=!admin] 0 1000000 0 1000000
 scoreboard players set $4_single state 0
 scoreboard players set $4_finale state 0
 scoreboard players set $4_process countdown 0
-execute store result score $4_portal countdown run data get storage ms:map size
-scoreboard players operation $4_portal countdown *= #600 data
-scoreboard players add $4_portal countdown 3000
+execute store result score $4_portal countdown run data get storage ms:map original_goal
+scoreboard players operation $4_portal countdown *= #100 data
+scoreboard players add $4_portal countdown 1600
 
 # 初始化 Bossbar
 bossbar set midsoul:info style notched_12
