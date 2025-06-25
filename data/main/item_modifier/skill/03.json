@@ -35,7 +35,7 @@
             },
             {
                 "translate":"ms.skill.003.desc.b",
-                "fallback":"若距离 25 格以内附加移速 -30%；",
+                "fallback":"若距离 25 格以内附加移速 -30%%；",
                 "color":"white",
                 "italic":false
             },

@@ -29,7 +29,7 @@
             ],
             {
                 "translate":"ms.talent.003.desc",
-                "fallback":"有灵魂处于垂死状态时，移速 +20%",
+                "fallback":"有灵魂处于垂死状态时，移速 +20%%",
                 "color":"white",
                 "italic":false
             }

@@ -4,11 +4,11 @@ scoreboard players add @s temp.skill 1
 tag @s add skill_on
 
 # 设置计时
-scoreboard players set @s skill_tick -2400
+scoreboard players set @s tick.skill -2400
 scoreboard players set $temp temp 240
-execute unless score @s damage_tick >= $temp temp run scoreboard players set @s damage_tick 240
+execute unless score @s tick.enhance >= $temp temp run scoreboard players set @s tick.enhance 240
 
 # 选择目标
 tag @p[team=soul,scores={state=0}] add S102
-scoreboard players operation @s skill_102 = @a[tag=S102] player_id
+scoreboard players operation @s skill.102 = @a[tag=S102] player_id
 tag @a remove S102

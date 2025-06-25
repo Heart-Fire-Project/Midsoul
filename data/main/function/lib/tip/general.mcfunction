@@ -4,4 +4,4 @@ execute as @a[tag=game_player,team=guardian,scores={setting.ingame_tip=1}] run f
 
 # 每 4~7 分钟触发一次提示
 function base:random {max:"240",min:"420"}
-scoreboard players operation $ingame_tip countdown = $random temp2
+scoreboard players operation $ingame_tip tick.global = $random temp2

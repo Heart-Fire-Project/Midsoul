@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.skill.103.desc.a",
-                "fallback":"移速 +20%；",
+                "fallback":"移速 +20%%；",
                 "color":"white",
                 "italic":false
             },

@@ -4,5 +4,5 @@ particle enchant ~ ~0.2 ~ 0.2 0.1 0.2 1 128 force @a
 scoreboard players add @s temp.talent 1
 
 # 计算并应用效果
-scoreboard players operation @s countdown *= #8 data
-scoreboard players operation @s countdown /= #10 data
+scoreboard players operation @s tick.global *= #8 data
+scoreboard players operation @s tick.global /= #10 data

@@ -25,4 +25,4 @@ execute if score $mode setting matches 2 run data merge storage ms:mode {start:"
 scoreboard objectives setdisplay list stat.level
 scoreboard objectives setdisplay below_name stat.level
 scoreboard objectives setdisplay sidebar
-scoreboard players set $0_start countdown 1010000
+scoreboard players set $0_start tick.global 1010000

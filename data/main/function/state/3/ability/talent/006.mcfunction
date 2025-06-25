@@ -4,5 +4,5 @@ particle wax_on ~ ~0.3 ~ 0.25 0.3 0.25 3 7 force @a
 scoreboard players add @s temp.talent 1
 
 # 应用效果
-scoreboard players add @a[team=soul,scores={state=1}] countdown 1000
+scoreboard players add @a[team=soul,scores={state=1}] tick.global 1000
 execute at @a[team=soul,scores={state=1}] run particle dust_color_transition{from_color:808529,to_color:1152624,scale:1} ~ ~0.3 ~ 0.3 0.3 0.3 0.1 16 force @a

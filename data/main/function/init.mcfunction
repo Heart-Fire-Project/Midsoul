@@ -34,14 +34,16 @@ gamerule sendCommandFeedback false
 gamerule showDeathMessages false
 
 # 计分板
+scoreboard objectives remove data
+scoreboard objectives add data dummy "全局数据"
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy "临时数据"
 scoreboard objectives remove temp2
 scoreboard objectives add temp2 dummy "临时数据"
-scoreboard objectives remove exp_max
-scoreboard objectives add exp_max dummy "经验上限"
-scoreboard objectives remove exp_temp
-scoreboard objectives add exp_temp dummy "待计经验"
+scoreboard objectives remove exp.max
+scoreboard objectives add exp.max dummy "经验上限"
+scoreboard objectives remove exp.temp
+scoreboard objectives add exp.temp dummy "待计经验"
 scoreboard objectives remove item
 scoreboard objectives add item dummy "携带宝物"
 scoreboard objectives remove skill
@@ -50,44 +52,52 @@ scoreboard objectives remove talent_1
 scoreboard objectives add talent_1 dummy "携带天赋 1"
 scoreboard objectives remove talent_2
 scoreboard objectives add talent_2 dummy "携带天赋 2"
-scoreboard objectives remove item_tick
-scoreboard objectives add item_tick dummy "宝物计时"
-scoreboard objectives remove skill_tick
-scoreboard objectives add skill_tick dummy "技能计时"
-scoreboard objectives remove talent_1_tick
-scoreboard objectives add talent_1_tick dummy "天赋 1 计时"
-scoreboard objectives remove talent_2_tick
-scoreboard objectives add talent_2_tick dummy "天赋 2 计时"
-scoreboard objectives remove damage_tick
-scoreboard objectives add damage_tick dummy "伤害加成计时"
 scoreboard objectives remove state
 scoreboard objectives add state dummy "个人状态"
-scoreboard objectives remove countdown
-scoreboard objectives add countdown dummy "全局计时"
-scoreboard objectives remove parkour_tick
-scoreboard objectives add parkour_tick dummy "跑酷计时"
 scoreboard objectives remove health
 scoreboard objectives add health health "生命检测"
-scoreboard objectives remove data
-scoreboard objectives add data dummy "全局数据"
 scoreboard objectives remove setting
 scoreboard objectives add setting dummy "游戏设置"
 scoreboard objectives remove player_id
 scoreboard objectives add player_id dummy "玩家编号"
 scoreboard objectives remove music
 scoreboard objectives add music dummy "背景音乐"
-scoreboard objectives remove music_time
-scoreboard objectives add music_time dummy "音乐时间"
-scoreboard objectives remove sneak_time
-scoreboard objectives add sneak_time minecraft.custom:sneak_time "蹲下时间"
-scoreboard objectives remove sleep_detect
-scoreboard objectives add sleep_detect minecraft.custom:sleep_in_bed "睡眠检测"
-scoreboard objectives remove off_ground
-scoreboard objectives add off_ground dummy "滞空时间"
-scoreboard objectives remove interact_check
-scoreboard objectives add interact_check trigger "交互检测"
 
-scoreboard objectives add leave_game minecraft.custom:leave_game "离开游戏"
+scoreboard objectives remove tick.global
+scoreboard objectives add tick.global dummy "全局计时"
+scoreboard objectives remove tick.item
+scoreboard objectives add tick.item dummy "宝物计时"
+scoreboard objectives remove tick.skill
+scoreboard objectives add tick.skill dummy "技能计时"
+scoreboard objectives remove tick.talent_1
+scoreboard objectives add tick.talent_1 dummy "天赋 1 计时"
+scoreboard objectives remove tick.talent_2
+scoreboard objectives add tick.talent_2 dummy "天赋 2 计时"
+scoreboard objectives remove tick.using
+scoreboard objectives add tick.using dummy "物品使用计时"
+scoreboard objectives remove tick.enhance
+scoreboard objectives add tick.enhance dummy "伤害加成计时"
+scoreboard objectives remove tick.off_ground
+scoreboard objectives add tick.off_ground dummy "滞空计时"
+scoreboard objectives remove tick.parkour
+scoreboard objectives add tick.parkour dummy "跑酷计时"
+scoreboard objectives remove tick.music
+scoreboard objectives add tick.music dummy "音乐计时"
+
+scoreboard objectives remove detect.sneak
+scoreboard objectives add detect.sneak custom:sneak_time "蹲下检测"
+scoreboard objectives remove detect.sleep
+scoreboard objectives add detect.sleep custom:sleep_in_bed "睡眠检测"
+scoreboard objectives remove detect.crossbow
+scoreboard objectives add detect.crossbow used:crossbow "弩箭检测"
+scoreboard objectives remove detect.drop
+scoreboard objectives add detect.drop custom:drop "丢弃检测"
+scoreboard objectives remove detect.using
+scoreboard objectives add detect.using dummy "使用检测"
+scoreboard objectives remove detect.interact
+scoreboard objectives add detect.interact trigger "交互检测"
+
+scoreboard objectives add leave_game custom:leave_game "离开游戏"
 scoreboard objectives add soul_combo dummy "灵魂连击"
 
 scoreboard objectives remove temp.collect
@@ -247,9 +257,10 @@ bossbar add midsoul:2 "B"
 bossbar remove midsoul:3
 bossbar add midsoul:3 "C"
 
-# 伤害侦测初始化
-advancement revoke @a only main:damage/dealt
-advancement revoke @a only main:damage/taken
+# 进度侦测初始化
+advancement revoke @a only main:detect/damage_dealt
+advancement revoke @a only main:detect/damage_taken
+advancement revoke @a only main:detect/using_item
 
 # 重置默认设置
 scoreboard players set $mode setting 1

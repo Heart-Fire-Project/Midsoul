@@ -15,7 +15,7 @@ execute as @a at @s unless block ~ ~-0.5 ~ farmland run effect clear @s slow_fal
 
 # 重置玩家部分数据
 spawnpoint @a 0 -5 0
-execute as @a unless score @s interact_check matches 0 run scoreboard players enable @s interact_check
+execute as @a unless score @s detect.interact matches 0 run scoreboard players enable @s detect.interact
 
 # 对剩余玩家进行一次计数，以供函数使用
 scoreboard players reset $alive data
@@ -32,4 +32,4 @@ execute if score $state data matches 3 run function main:state/3/tick1
 execute if score $state data matches 4 run function main:state/4/tick1
 
 # 如果仍有交互侦测值，则为无效
-execute as @a unless score @s interact_check matches 0 run scoreboard players set @s interact_check 0
+execute as @a unless score @s detect.interact matches 0 run scoreboard players set @s detect.interact 0

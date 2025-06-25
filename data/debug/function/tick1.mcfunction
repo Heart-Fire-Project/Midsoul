@@ -1,5 +1,5 @@
 # 调试触发器定向
-execute as @a[team=admin,scores={interact_check=..-1}] run function debug:trigger
+execute as @a[team=admin,scores={detect.interact=..-1}] run function debug:trigger
 
 # 标记地点
 execute as @e[tag=summon_blue,type=shulker] at @s run function debug:sub/mark/blue

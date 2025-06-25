@@ -10,9 +10,9 @@ scoreboard players add @p[tag=hit_soul] temp.down 1
 tag @a remove hit_soul
 
 # 设置时间
-scoreboard players set @s[scores={temp.dying=1}] countdown 12000
-scoreboard players set @s[scores={temp.dying=2}] countdown 8000
-scoreboard players set @s[scores={temp.dying=3..}] countdown 4000
+scoreboard players set @s[scores={temp.dying=1}] tick.global 12000
+scoreboard players set @s[scores={temp.dying=2}] tick.global 8000
+scoreboard players set @s[scores={temp.dying=3..}] tick.global 4000
 
 # 取消正在进行的所有能力，并重设冷却
 execute as @s[tag=skill_on] run function main:state/3/ability/skill/reset

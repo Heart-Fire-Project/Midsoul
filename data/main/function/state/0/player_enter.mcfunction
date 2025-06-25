@@ -13,9 +13,9 @@ effect give @s weakness infinite 4 true
 effect give @s regeneration infinite 4 true
 
 # 杂项
-scoreboard players set @s countdown 0
+scoreboard players set @s tick.global 0
 scoreboard players set @s state 0
-scoreboard players enable @s interact_check
+scoreboard players enable @s detect.interact
 gamemode adventure @s
 team join spectator @s
 execute unless entity @s[x=-12,y=-1,z=-12,dx=16,dy=16,dz=16] unless entity @s[x=-1011,y=-2,z=-1015,dx=32,dy=18,dz=30] run tp @s[team=!admin] 0 0 0 135.0 -15.0

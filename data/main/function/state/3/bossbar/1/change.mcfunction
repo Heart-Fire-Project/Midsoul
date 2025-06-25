@@ -1,6 +1,7 @@
 # 通告
 tellraw @a[team=soul] [{"text":"» ","color":"#8080FF","bold":true},{"translate":"ms.info.aura.4s","fallback":"灵气满溢 ❖ 传送门正悄然形成，警惕已被强化的灵魂守卫者！","bold":false}]
 tellraw @a[team=guardian] [{"text":"» ","color":"#8080FF","bold":true},{"translate":"ms.info.aura.4g","fallback":"灵气满溢 ❖ 传送门正悄然形成，你已被强化，尽快去斩杀灵魂！","bold":false}]
+tellraw @a[team=dead] [{"text":"» ","color":"#8080FF","bold":true},{"translate":"ms.info.aura.4d","fallback":"灵气满溢 ❖ 传送门正悄然形成，游戏即将进入下一阶段……","bold":false}]
 playsound block.sculk_shrieker.shriek player @a[team=!admin] 0 1000000 0 1000000
 
 # Bossbar 调整 | 60 秒自动开门

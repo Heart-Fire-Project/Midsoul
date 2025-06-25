@@ -59,7 +59,7 @@
                 "player":[
                     {
                         "scores":{
-                            "off_ground":{
+                            "tick.off_ground":{
                                 "min":180
                             }
                         },

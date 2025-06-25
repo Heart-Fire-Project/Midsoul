@@ -5,8 +5,8 @@ scoreboard players add @s temp.talent 1
 
 # 施加效果
 tag @e[sort=random,limit=1,tag=blue] add T107
-scoreboard players add @s talent_107 1
+scoreboard players add @s talent.107 1
 
 # 重置冷却
-scoreboard players set @s[scores={talent_1=7}] talent_1_tick 8000
-scoreboard players set @s[scores={talent_2=7}] talent_2_tick 8000
+scoreboard players set @s[scores={talent_1=7}] tick.talent_1 8000
+scoreboard players set @s[scores={talent_2=7}] tick.talent_2 8000

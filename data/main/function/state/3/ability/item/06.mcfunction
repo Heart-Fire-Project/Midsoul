@@ -1,10 +1,3 @@
-title @s[scores={setting.ability_actionbar=2}] actionbar [{"translate":"ms.item.active","fallback":"宝物触发","color":"#33FFAA"}," » ",{"translate":"ms.item.6","fallback":"太空体验"}]
-playsound entity.firework_rocket.launch player @s
-tag @s add item_on
+title @s[scores={setting.ability_actionbar=2}] actionbar [{"translate":"ms.item.active","fallback":"宝物触发","color":"#33FFAA"}," » ",{"translate":"ms.item.6","fallback":"灵能冲击"}]
+scoreboard players set @s item 0
 scoreboard players add @s temp.item 1
-
-# 给予效果
-attribute @s gravity base set 0
-
-# 设置计时
-scoreboard players set @s item_tick -1400

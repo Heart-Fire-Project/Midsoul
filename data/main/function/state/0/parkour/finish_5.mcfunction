@@ -1,11 +1,11 @@
 # 开门大吉
 fill -6 16 -6 -7 17 -7 air
-scoreboard players set $0_parkour countdown 5
+scoreboard players set $0_parkour tick.global 5
 
 # 完成转换
-scoreboard players operation @s temp2 = @s parkour_tick
+scoreboard players operation @s temp2 = @s tick.parkour
 scoreboard players set @s state 0
-function main:state/0/parkour/time_format {source:"parkour_tick"}
+function main:state/0/parkour/time_format {source:"tick.parkour"}
 
 # 完成特效
 playsound entity.firework_rocket.blast player @s 0 1000000 0 1000000
@@ -22,6 +22,6 @@ execute if score @s stat.parkour_5 matches ..0 run tellraw @s ["   ",{"translate
 execute if score @s stat.parkour_5 matches 1.. run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ",{"storage":"ms:string","nbt":"result"}]
 
 # 个人最佳
-execute if score @s temp2 < @s stat.parkour_5 run scoreboard players set @s parkour_tick -52
-execute if score @s stat.parkour_5 matches ..0 run scoreboard players set @s parkour_tick -52
-execute if score @s parkour_tick matches -52 run scoreboard players operation @s stat.parkour_5 = @s temp2
+execute if score @s temp2 < @s stat.parkour_5 run scoreboard players set @s tick.parkour -52
+execute if score @s stat.parkour_5 matches ..0 run scoreboard players set @s tick.parkour -52
+execute if score @s tick.parkour matches -52 run scoreboard players operation @s stat.parkour_5 = @s temp2

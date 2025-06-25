@@ -3,7 +3,7 @@
         "function":"set_name",
         "name":{
             "translate":"ms.item.6",
-            "fallback":"太空体验",
+            "fallback":"灵能冲击",
             "color":"#33FFAA",
             "italic":false
         }
@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⌚ 7 > ",
+                    "text":"> ",
                     "color":"#33FFAA",
                     "italic":false
                 },
@@ -23,21 +23,32 @@
                 },
                 "/",
                 {
-                    "translate":"ms.tag.collect",
-                    "fallback":"收集"
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
                 }
             ],
             {
                 "translate":"ms.item.6.desc.a",
-                "fallback":"生效期间内你将不受重力影响",
+                "fallback":"若击中守卫者，使其在 12 秒内",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.item.6.desc.b",
-                "fallback":"不会改变初始动量",
-                "color":"gray",
+                "fallback":"失明且发光，造成的伤害 -4",
+                "color":"white",
                 "italic":false
+            },
+            {
+                "translate":"ms.item.6.desc.c",
+                "fallback":"按下 [%s] 即可直接发射",
+                "color":"gray",
+                "italic":false,
+                "with":[
+                    {
+                        "keybind":"key.use"
+                    }
+                ]
             }
         ],
         "mode":"replace_all"
@@ -52,7 +63,30 @@
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "hide_additional_tooltip":{},
+            "charged_projectiles":[
+                {
+                    "id":"tipped_arrow",
+                    "components":{
+                        "potion_contents":{
+                            "custom_effects":[
+                                {
+                                    "id":"blindness",
+                                    "duration":240
+                                },
+                                {
+                                    "id":"glowing",
+                                    "duration":240
+                                },
+                                {
+                                    "id":"weakness",
+                                    "duration":240
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
         }
     }
 ]

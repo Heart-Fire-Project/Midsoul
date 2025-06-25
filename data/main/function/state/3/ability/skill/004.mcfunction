@@ -9,11 +9,11 @@ tag @s remove S004_b
 
 # 判定：反向跑团
 function base:random {min:"1",max:"100"}
-execute if score @s skill_004 < $random temp2 run function main:state/3/ability/skill/004a
-execute if score @s skill_004 >= $random temp2 run function main:state/3/ability/skill/004b
+execute if score @s skill.004 < $random temp2 run function main:state/3/ability/skill/004a
+execute if score @s skill.004 >= $random temp2 run function main:state/3/ability/skill/004b
 
 # 设置计时
-scoreboard players set @s skill_tick -2400
+scoreboard players set @s tick.skill -2400
 
 # 提升失败概率
-scoreboard players add @s[scores={skill_004=..39}] skill_004 7
+scoreboard players add @s[scores={skill.004=..39}] skill.004 7

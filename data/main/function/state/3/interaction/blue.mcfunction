@@ -1,18 +1,20 @@
-tag @a[distance=..0.7,tag=blue_interact,scores={countdown=700..}] add interact_fin
+tag @a[distance=..0.7,tag=blue_interact,scores={tick.global=700..}] add interact_fin
 
 # 完成碎片收集
 scoreboard players add @a[tag=interact_fin] temp.collect 1
 scoreboard players add $shard_collect data 1
-execute if score $3_process countdown matches 18001.. run scoreboard players add $3_process countdown 100
-execute if score $state data matches 4 run scoreboard players add $4_portal countdown 300
+execute if score $3_process tick.global matches 18001.. run scoreboard players add $3_process tick.global 100
+execute if score $state data matches 4 run scoreboard players add $4_portal tick.global 300
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a
 
 # 判定：收集到灵魂碎片时
 execute as @a[tag=interact_fin,scores={talent_1=1}] at @s run function main:state/3/ability/talent/001a
 execute as @a[tag=interact_fin,scores={talent_2=1}] at @s run function main:state/3/ability/talent/001a
-execute as @a[tag=interact_fin,scores={talent_1=4}] at @s run function main:state/3/ability/talent/004
-execute as @a[tag=interact_fin,scores={talent_2=4}] at @s run function main:state/3/ability/talent/004
+scoreboard players remove @a[tag=interact_fin,tag=!talent_1_on,scores={talent_1=4}] talent.004 1
+scoreboard players remove @a[tag=interact_fin,tag=!talent_2_on,scores={talent_2=4}] talent.004 1
+execute as @a[tag=interact_fin,tag=!talent_1_on,scores={talent_1=4,talent.004=0}] run function main:state/3/ability/talent/004s
+execute as @a[tag=interact_fin,tag=!talent_2_on,scores={talent_2=4,talent.004=0}] run function main:state/3/ability/talent/004s
 execute if entity @a[team=soul,scores={state=1}] as @a[tag=interact_fin,scores={talent_1=6}] at @s run function main:state/3/ability/talent/006
 execute if entity @a[team=soul,scores={state=1}] as @a[tag=interact_fin,scores={talent_2=6}] at @s run function main:state/3/ability/talent/006
 execute if entity @s[tag=T107] run function main:state/3/ability/talent/107f

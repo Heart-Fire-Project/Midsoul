@@ -7,5 +7,5 @@ scoreboard players add @s temp.talent 1
 effect give @a[team=soul,limit=2,sort=furthest,scores={state=0}] glowing 5 0
 
 # 重置冷却
-scoreboard players set @s[scores={talent_1=5}] talent_1_tick 12000
-scoreboard players set @s[scores={talent_2=5}] talent_2_tick 12000
+scoreboard players set @s[scores={talent_1=5}] tick.talent_1 12000
+scoreboard players set @s[scores={talent_2=5}] tick.talent_2 12000

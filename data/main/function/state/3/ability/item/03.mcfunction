@@ -5,4 +5,4 @@ scoreboard players set @s item 0
 scoreboard players add @s temp.item 1
 
 # 减冷却
-scoreboard players remove @s[tag=!skill_on] skill_tick 6000
+scoreboard players remove @s[tag=!skill_on] tick.skill 6000

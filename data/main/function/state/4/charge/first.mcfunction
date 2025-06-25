@@ -1,5 +1,5 @@
 # 进入最终逃离
-scoreboard players set $4_process countdown 10000
+scoreboard players set $4_process tick.global 10000
 
 # 加速！
 execute as @a[team=soul,scores={state=0}] run attribute @s movement_speed base set 0.12

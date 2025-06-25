@@ -14,4 +14,4 @@ execute as @a[tag=ability_check] run scoreboard players add $check temp 1
 tellraw @a[team=!admin] [{"text":"","color":"#33FFAA"},{"text":"» ","bold":true},{"translate":"ms.info.1.ability","fallback":"%s 已完成能力选择","with":[{"selector":"@s"}]}," [",{"score":{"name":"$check","objective":"temp"},"color":"white"},"/",{"score":{"name":"$player","objective":"temp"}},"]"]
 
 # 检测是否可以结束
-execute unless entity @a[tag=!ability_check,tag=game_player] run scoreboard players set $1_process countdown 160
+execute unless entity @a[tag=!ability_check,tag=game_player] run scoreboard players set $1_process tick.global 160

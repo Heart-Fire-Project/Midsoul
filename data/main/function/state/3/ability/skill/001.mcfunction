@@ -10,4 +10,4 @@ execute unless entity @a[team=guardian,distance=..12] run effect give @s speed 1
 execute if entity @a[team=guardian,distance=..12] run effect give @s speed 10 6
 
 # 设置计时
-scoreboard players set @s skill_tick -2000
+scoreboard players set @s tick.skill -2000

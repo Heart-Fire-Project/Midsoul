@@ -14,5 +14,5 @@ tag @e remove no_summon
 # 生成了就滚
 execute if score $chest_current temp < $chest_max temp run tellraw @a[team=!admin] [{"text":"» ","color":"#CCCCCC","bold":true},{"translate":"ms.info.3.chest","fallback":"已生成数个灵魂宝物盒","bold":false}]
 execute if score $chest_current temp < $chest_max temp run playsound block.vault.reject_rewarded_player ambient @a[team=!admin] 0 1000000 0 1000000
-execute if score $chest_current temp < $chest_max temp run scoreboard players set $3_chest countdown 180
-execute if score $chest_current temp < $chest_max temp if score $echo data matches 4 run scoreboard players set $3_chest countdown 60
+execute if score $chest_current temp < $chest_max temp run scoreboard players set $3_chest tick.global 180
+execute if score $chest_current temp < $chest_max temp if score $echo data matches 4 run scoreboard players set $3_chest tick.global 60

@@ -1,4 +1,4 @@
 # 闪白特效
-title @s[scores={skill_tick=-2370,setting.ability_actionbar=2}] actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color":"white"}," » ",{"translate":"ms.skill.004","fallback":"铤而走险"}]
-title @s[tag=S004_a,scores={skill_tick=-2350,setting.ability_actionbar=1..}] actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color":"green"}," » ",{"translate":"ms.skill.004","fallback":"铤而走险"}]
-title @s[tag=S004_b,scores={skill_tick=-2350,setting.ability_actionbar=1..}] actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color":"red"}," » ",{"translate":"ms.skill.004","fallback":"铤而走险"}]
+title @s[scores={tick.skill=-2370,setting.ability_actionbar=2}] actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color":"white"}," » ",{"translate":"ms.skill.004","fallback":"铤而走险"}]
+title @s[tag=S004_a,scores={tick.skill=-2350,setting.ability_actionbar=1..}] actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color":"green"}," » ",{"translate":"ms.skill.004","fallback":"铤而走险"}]
+title @s[tag=S004_b,scores={tick.skill=-2350,setting.ability_actionbar=1..}] actionbar [{"translate":"ms.skill.active","fallback":"技能触发","color":"red"}," » ",{"translate":"ms.skill.004","fallback":"铤而走险"}]

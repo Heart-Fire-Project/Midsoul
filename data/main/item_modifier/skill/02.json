@@ -29,7 +29,7 @@
             ],
             {
                 "translate":"ms.skill.002.desc.a",
-                "fallback":"自身持续发光且移速 -60%；",
+                "fallback":"自身持续发光且移速 -60%%；",
                 "color":"white",
                 "italic":false
             },
@@ -47,7 +47,7 @@
             },
             {
                 "translate":"ms.skill.002.desc.d",
-                "fallback":"在 15 秒内发光且移速 -75%",
+                "fallback":"在 15 秒内发光且移速 -75%%",
                 "color":"white",
                 "italic":false
             }

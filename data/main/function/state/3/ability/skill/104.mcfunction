@@ -9,11 +9,11 @@ tag @e[tag=gray,tag=!cursed_gray,limit=1] add cursed_gray
 execute unless entity @e[tag=gray,tag=!cursed_gray,limit=1] run function main:state/3/ability/skill/104a
 
 # 给予效果
-scoreboard players reset $skill_104 temp
-execute as @e[tag=cursed_gray] run scoreboard players add $skill_104 temp 1
-scoreboard players add $skill_104 temp 1
-execute store result storage ms:temp num int 1 run scoreboard players get $skill_104 temp
+scoreboard players reset $skill.104 temp
+execute as @e[tag=cursed_gray] run scoreboard players add $skill.104 temp 1
+scoreboard players add $skill.104 temp 1
+execute store result storage ms:temp num int 1 run scoreboard players get $skill.104 temp
 function main:state/3/ability/skill/104b with storage ms:temp
 
 # 设置计时
-scoreboard players set @s skill_tick -2400
+scoreboard players set @s tick.skill -2400

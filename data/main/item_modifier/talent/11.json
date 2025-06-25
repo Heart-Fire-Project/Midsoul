@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.101.desc",
-                "fallback":"对自身的气息探测生效距离 -25%",
+                "fallback":"对自身的气息探测生效距离 -25%%",
                 "color":"white",
                 "italic":false
             }

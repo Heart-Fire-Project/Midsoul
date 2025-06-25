@@ -9,4 +9,4 @@ effect give @s glowing 15 0
 effect give @s slowness 15 3
 
 # 设置计时
-scoreboard players set @s skill_tick -3000
+scoreboard players set @s tick.skill -3000

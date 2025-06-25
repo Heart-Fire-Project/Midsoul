@@ -7,5 +7,5 @@ scoreboard players add @s temp.talent 1
 effect give @s speed 3 3
 
 # 重置冷却
-scoreboard players set @s[scores={talent_1=2}] talent_1_tick 12000
-scoreboard players set @s[scores={talent_2=2}] talent_2_tick 12000
+scoreboard players set @s[scores={talent_1=2}] tick.talent_1 12000
+scoreboard players set @s[scores={talent_2=2}] tick.talent_2 12000

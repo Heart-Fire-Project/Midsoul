@@ -1,7 +1,7 @@
 # 完成转换
-scoreboard players operation @s temp2 = @s parkour_tick
+scoreboard players operation @s temp2 = @s tick.parkour
 scoreboard players set @s state 0
-function main:state/0/parkour/time_format {source:"parkour_tick"}
+function main:state/0/parkour/time_format {source:"tick.parkour"}
 
 # ???
 execute if score @s temp2 matches ..6000 run advancement grant @s only main:hidden/5
@@ -21,7 +21,7 @@ execute if score @s stat.parkour_7 matches ..0 run tellraw @s ["   ",{"translate
 execute if score @s stat.parkour_7 matches 1.. run tellraw @s ["   ",{"translate":"ms.parkour.pb","fallback":"个人最佳"}," » ",{"storage":"ms:string","nbt":"result"}]
 
 # 个人最佳
-execute if score @s temp2 < @s stat.parkour_7 run scoreboard players set @s parkour_tick -52
-execute if score @s stat.parkour_7 matches ..0 run scoreboard players set @s parkour_tick -52
-execute if score @s parkour_tick matches -52 run scoreboard players operation @s stat.parkour_7 = @s temp2
-tag @s[scores={parkour_tick=-52}] add hidden_parkour
+execute if score @s temp2 < @s stat.parkour_7 run scoreboard players set @s tick.parkour -52
+execute if score @s stat.parkour_7 matches ..0 run scoreboard players set @s tick.parkour -52
+execute if score @s tick.parkour matches -52 run scoreboard players operation @s stat.parkour_7 = @s temp2
+tag @s[scores={tick.parkour=-52}] add hidden_parkour

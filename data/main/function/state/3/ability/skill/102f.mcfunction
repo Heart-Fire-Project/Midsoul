@@ -2,4 +2,4 @@ title @s[scores={setting.ability_actionbar=1..}] actionbar [{"translate":"ms.ski
 tag @s remove skill_on
 
 # 重置冷却
-scoreboard players set @s skill_tick 13000
+scoreboard players set @s tick.skill 13000

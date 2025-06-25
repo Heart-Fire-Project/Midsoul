@@ -36,13 +36,13 @@
             },
             {
                 "translate":"ms.skill.104.desc.c",
-                "fallback":"移速 +40%，",
+                "fallback":"移速 +40%%，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.d",
-                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%",
+                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%%",
                 "color":"white",
                 "italic":false
             },
@@ -55,13 +55,13 @@
             },
             {
                 "translate":"ms.skill.104.desc.f",
-                "fallback":"灵魂经过时自身发光且移速 -15%，",
+                "fallback":"灵魂经过时自身发光且移速 -15%%，",
                 "color":"gray",
                 "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.g",
-                "fallback":"守卫者经过时全体灵魂发光且自身移速 +20%；",
+                "fallback":"守卫者经过时全体灵魂发光且自身移速 +20%%；",
                 "color":"gray",
                 "italic":false
             },

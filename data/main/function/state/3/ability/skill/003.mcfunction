@@ -13,4 +13,4 @@ effect give @a[team=guardian,distance=12..25] slowness 5 1
 effect give @a[team=guardian,distance=0..12] slowness 10 1
 
 # 重置冷却
-scoreboard players set @s skill_tick 14000
+scoreboard players set @s tick.skill 14000

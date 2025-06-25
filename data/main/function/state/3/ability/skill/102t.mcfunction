@@ -1,5 +1,5 @@
 # 确定玩家位置
-scoreboard players operation $player_id temp = @s skill_102
+scoreboard players operation $player_id temp = @s skill.102
 execute as @a[team=soul] if score @s player_id = $player_id temp run tag @s add S102_t
 execute as @a[tag=S102_t] run function base:get_pos
 

@@ -11,4 +11,4 @@ effect give @s speed 12 6
 effect give @s invisibility 12 0
 
 # 设置计时
-scoreboard players set @s skill_tick -2400
+scoreboard players set @s tick.skill -2400

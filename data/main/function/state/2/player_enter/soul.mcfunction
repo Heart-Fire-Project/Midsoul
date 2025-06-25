@@ -11,8 +11,8 @@ tag @e[tag=map_enter] remove map_enter
 execute as @r[x=0,y=0,z=0,distance=..300,team=soul] run function main:state/2/player_enter/soul
 
 # 如果没人了就删掉所有 tag
-execute unless entity @a[x=0,y=0,z=0,distance=..300,] run tag @e remove enter_chosen
-execute unless entity @a[x=0,y=0,z=0,distance=..300,] run tag @e remove soul_select
+execute unless entity @a[x=0,y=0,z=0,distance=..300] run tag @e remove enter_chosen
+execute unless entity @a[x=0,y=0,z=0,distance=..300] run tag @e remove soul_select
 
 # 回响效果
 execute if score $echo data matches 6 run attribute @s movement_speed base set 0.11

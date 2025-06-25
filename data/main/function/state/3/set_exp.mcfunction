@@ -1,6 +1,6 @@
 # 设置等级数 | 技能 / 第二状态
-scoreboard players operation $tick temp = @s[scores={state=0}] skill_tick
-scoreboard players operation $tick temp = @s[scores={state=1}] countdown
+scoreboard players operation $tick temp = @s[scores={state=0}] tick.skill
+scoreboard players operation $tick temp = @s[scores={state=1}] tick.global
 execute if entity @s[tag=skill_on,scores={state=0}] run scoreboard players operation $tick temp *= #-1 data
 scoreboard players operation $tick temp /= #10 data
 scoreboard players add $tick temp 19
@@ -18,7 +18,7 @@ scoreboard players set @s[scores={state=1,temp.dying=2},team=soul] temp 8000
 scoreboard players set @s[scores={state=1,temp.dying=3..},team=soul] temp 4000
 scoreboard players set @s[scores={state=1},team=guardian] temp 1400
 
-function base:set_exp {current:"countdown",max:"temp",level:"temp2"}
+function base:set_exp {current:"tick.global",max:"temp",level:"temp2"}
 
 tag @s remove blue_interact
 tag @s remove gold_interact

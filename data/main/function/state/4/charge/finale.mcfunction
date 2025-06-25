@@ -1,7 +1,7 @@
 # 充能速度结算
 scoreboard players operation $plus temp = $interact_speed setting
 scoreboard players operation $plus temp *= #5 data
-scoreboard players operation @s countdown += $plus temp
+scoreboard players operation @s tick.global += $plus temp
 
 # 特效
 effect give @a[team=soul,distance=..3,scores={state=0}] glowing 1

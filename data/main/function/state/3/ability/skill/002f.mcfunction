@@ -5,9 +5,10 @@ tag @s remove skill_on
 execute unless entity @a[team=soul,scores={state=1}] run effect give @p[team=guardian] glowing 15 0
 execute unless entity @a[team=soul,scores={state=1}] run effect give @p[team=guardian] slowness 15 4
 execute unless entity @a[team=soul,scores={state=1}] at @p[team=guardian] run playsound block.anvil.land player @a
+execute unless entity @a[team=soul,scores={state=1}] at @s run playsound block.anvil.land player @s
 execute if entity @a[team=soul,scores={state=1}] run scoreboard players add @s temp.heal 1
 execute as @r[team=soul,scores={state=1}] run kill @e[tag=gold,limit=1]
 execute as @r[team=soul,scores={state=1}] run function main:state/3/player/healed
 
 # 重置冷却
-scoreboard players set @s skill_tick 15000
+scoreboard players set @s tick.skill 15000

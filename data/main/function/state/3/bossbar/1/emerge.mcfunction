@@ -1,5 +1,5 @@
 # 计算剩余时间
-scoreboard players operation $tick temp = $3_process countdown
+scoreboard players operation $tick temp = $3_process tick.global
 scoreboard players operation $tick temp -= #18000 data
 function base:caculate/time {tick:"$tick",source:"temp",unit:"sec"}
 
@@ -16,15 +16,15 @@ bossbar set midsoul:heed name [{"text":"❖   ","color":"yellow"},{"translate":"
 bossbar set midsoul:warn name [{"text":"❖   ","color":"red"},{"translate":"ms.bossbar.3.emerge","fallback":"传送门形成"}," » ",{"score":{"objective":"temp2","name":"$sec"},"color":"#E80505"},"   ❖"]
 
 # 仍在闪烁
-execute if score $3_process countdown matches 18002 run bossbar set midsoul:info name ""
-execute if score $3_process countdown matches 18004 run bossbar set midsoul:info name ""
-execute if score $3_process countdown matches 18006 run bossbar set midsoul:info name ""
-execute if score $3_process countdown matches 18002 run bossbar set midsoul:heed name ""
-execute if score $3_process countdown matches 18004 run bossbar set midsoul:heed name ""
-execute if score $3_process countdown matches 18006 run bossbar set midsoul:heed name ""
-execute if score $3_process countdown matches 18002 run bossbar set midsoul:warn name ""
-execute if score $3_process countdown matches 18004 run bossbar set midsoul:warn name ""
-execute if score $3_process countdown matches 18006 run bossbar set midsoul:warn name ""
+execute if score $3_process tick.global matches 18002 run bossbar set midsoul:info name ""
+execute if score $3_process tick.global matches 18004 run bossbar set midsoul:info name ""
+execute if score $3_process tick.global matches 18006 run bossbar set midsoul:info name ""
+execute if score $3_process tick.global matches 18002 run bossbar set midsoul:heed name ""
+execute if score $3_process tick.global matches 18004 run bossbar set midsoul:heed name ""
+execute if score $3_process tick.global matches 18006 run bossbar set midsoul:heed name ""
+execute if score $3_process tick.global matches 18002 run bossbar set midsoul:warn name ""
+execute if score $3_process tick.global matches 18004 run bossbar set midsoul:warn name ""
+execute if score $3_process tick.global matches 18006 run bossbar set midsoul:warn name ""
 
 # 持续伤害翻倍
-scoreboard players set @a[team=guardian] damage_tick 101
+scoreboard players set @a[team=guardian] tick.enhance 101

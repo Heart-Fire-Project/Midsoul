@@ -29,7 +29,7 @@
             ],
             {
                 "translate":"ms.skill.105.desc.a",
-                "fallback":"隐身且移速 +140%；",
+                "fallback":"隐身且移速 +140%%；",
                 "color":"white",
                 "italic":false
             },

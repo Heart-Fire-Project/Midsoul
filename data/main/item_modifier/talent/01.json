@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.001.desc.a",
-                "fallback":"收集到灵魂碎片时，移速 +40%；",
+                "fallback":"收集到灵魂碎片时，移速 +40%%；",
                 "color":"white",
                 "italic":false
             },

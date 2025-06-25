@@ -6,31 +6,40 @@ scoreboard players set $shard_collect data 0
 scoreboard players set $aura_rank data 0
 scoreboard players set $soul_death data 0
 scoreboard players set $soul_revive data 0
-scoreboard players set $stat_gametime countdown 0
-scoreboard players set $3_process countdown 0
-scoreboard players set $3_echo countdown -1
+scoreboard players set $stat_gametime tick.global 0
+scoreboard players set $3_process tick.global 0
+scoreboard players set $3_echo tick.global -1
 scoreboard players set @a state 0
 scoreboard players set @a item 0
-scoreboard players reset @a damage_tick
-scoreboard players reset @a countdown
-scoreboard players reset @a sneak_time
-scoreboard players reset @a sleep_detect
-scoreboard players reset @a off_ground
+scoreboard players reset @a tick.enhance
+scoreboard players reset @a tick.global
+scoreboard players reset @a detect.sneak
+scoreboard players reset @a detect.sleep
+scoreboard players reset @a detect.drop
+scoreboard players reset @a tick.off_ground
 
 # 游戏用新计分板
+scoreboard objectives remove talent.004
+scoreboard objectives add talent.004 dummy "魂魄汲取 - 剩余量"
+scoreboard players set @a[team=soul,scores={talent_1=4}] talent.004 2
+scoreboard players set @a[team=soul,scores={talent_2=4}] talent.004 2
+scoreboard objectives remove talent.004s
+scoreboard objectives add talent.004s dummy "魂魄汲取 - 需求量"
+scoreboard players set @a[team=soul,scores={talent_1=4}] talent.004s 2
+scoreboard players set @a[team=soul,scores={talent_2=4}] talent.004s 2
 scoreboard players set $talent_007 data 5
-scoreboard objectives remove talent_107
-scoreboard objectives add talent_107 dummy "碎片侵蚀 - 污染数"
-scoreboard players set @a[team=guardian,scores={talent_1=7}] talent_107 0
-scoreboard players set @a[team=guardian,scores={talent_2=7}] talent_107 0
-scoreboard objectives remove skill_004
-scoreboard objectives add skill_004 dummy "铤而走险 - 负面几率"
-scoreboard players set @a[team=soul,scores={skill=4}] skill_004 5
-scoreboard objectives remove skill_102
-scoreboard objectives add skill_102 dummy "灵力掌控 - 生效目标"
-scoreboard players set @a[team=guardian,scores={skill=2}] skill_102 0
-scoreboard objectives remove skill_103
-scoreboard objectives add skill_103 dummy "唤灵留迹 - 生效计时"
+scoreboard objectives remove talent.107
+scoreboard objectives add talent.107 dummy "碎片侵蚀 - 污染数"
+scoreboard players set @a[team=guardian,scores={talent_1=7}] talent.107 0
+scoreboard players set @a[team=guardian,scores={talent_2=7}] talent.107 0
+scoreboard objectives remove skill.004
+scoreboard objectives add skill.004 dummy "铤而走险 - 负面几率"
+scoreboard players set @a[team=soul,scores={skill=4}] skill.004 5
+scoreboard objectives remove skill.102
+scoreboard objectives add skill.102 dummy "灵力掌控 - 生效目标"
+scoreboard players set @a[team=guardian,scores={skill=2}] skill.102 0
+scoreboard objectives remove skill.103
+scoreboard objectives add skill.103 dummy "唤灵留迹 - 生效计时"
 
 # 生成碎片
 $execute at @e[tag=marker_blue,sort=random,limit=$(shard_summon)] run summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b,Invulnerable:1b}
@@ -45,8 +54,8 @@ $execute at @e[tag=marker_gray,sort=random,limit=$(chest_summon)] run summon blo
 execute at @e[tag=new_gray] run particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0.1 0.2 0 7 force @a
 execute as @e[tag=new_gray] run team join chest @s
 execute as @e[tag=new_gray] run tag @s remove new_gray
-scoreboard players set $3_chest countdown 180
-execute if score $echo data matches 4 run scoreboard players set $3_chest countdown 60
+scoreboard players set $3_chest tick.global 180
+execute if score $echo data matches 4 run scoreboard players set $3_chest tick.global 60
 
 # 标题
 title @a[team=!admin] title ""
@@ -65,27 +74,29 @@ $bossbar set midsoul:warn max $(shard_goal)
 # 初始冷却 | 以 0.1 刻为单位
 # 单次冷却 |  40  |  45  |  50  |  55  |  60  |  65  |  70  |  75  |  80  |  85  |  90
 # 实际写入 |  08  |  09  |  10  |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  
-scoreboard players reset * skill_tick
-scoreboard players reset * talent_1_tick
-scoreboard players reset * talent_2_tick
-scoreboard players set @a[team=soul,scores={skill=1}] skill_tick 12000
-scoreboard players set @a[team=soul,scores={skill=2}] skill_tick 15000
-scoreboard players set @a[team=soul,scores={skill=3}] skill_tick 14000
-scoreboard players set @a[team=soul,scores={skill=4}] skill_tick 12000
-scoreboard players set @a[team=soul,scores={skill=5}] skill_tick 09000
-scoreboard players set @a[team=guardian,scores={skill=1}] skill_tick 14000
-scoreboard players set @a[team=guardian,scores={skill=2}] skill_tick 13000
-scoreboard players set @a[team=guardian,scores={skill=3}] skill_tick 12000
-scoreboard players set @a[team=guardian,scores={skill=4}] skill_tick 12000
-scoreboard players set @a[team=guardian,scores={skill=5}] skill_tick 15000
-scoreboard players set @a[team=soul,scores={talent_1=2}] talent_1_tick 12000
-scoreboard players set @a[team=guardian,scores={talent_1=4}] talent_1_tick 18000
-scoreboard players set @a[team=guardian,scores={talent_1=5}] talent_1_tick 12000
-scoreboard players set @a[team=guardian,scores={talent_1=7}] talent_1_tick 08000
-scoreboard players set @a[team=soul,scores={talent_2=2}] talent_2_tick 12000
-scoreboard players set @a[team=guardian,scores={talent_2=4}] talent_2_tick 18000
-scoreboard players set @a[team=guardian,scores={talent_2=5}] talent_2_tick 12000
-scoreboard players set @a[team=guardian,scores={talent_2=7}] talent_2_tick 08000
+scoreboard players reset * tick.skill
+scoreboard players reset * tick.talent_1
+scoreboard players reset * tick.talent_2
+scoreboard players set @a[team=soul,scores={skill=1}] tick.skill 12000
+scoreboard players set @a[team=soul,scores={skill=2}] tick.skill 15000
+scoreboard players set @a[team=soul,scores={skill=3}] tick.skill 14000
+scoreboard players set @a[team=soul,scores={skill=4}] tick.skill 12000
+scoreboard players set @a[team=soul,scores={skill=5}] tick.skill 09000
+scoreboard players set @a[team=guardian,scores={skill=1}] tick.skill 14000
+scoreboard players set @a[team=guardian,scores={skill=2}] tick.skill 13000
+scoreboard players set @a[team=guardian,scores={skill=3}] tick.skill 12000
+scoreboard players set @a[team=guardian,scores={skill=4}] tick.skill 12000
+scoreboard players set @a[team=guardian,scores={skill=5}] tick.skill 15000
+scoreboard players set @a[team=soul,scores={talent_1=2}] tick.talent_1 12000
+scoreboard players set @a[team=soul,scores={talent_1=4}] tick.talent_1 00600
+scoreboard players set @a[team=guardian,scores={talent_1=4}] tick.talent_1 18000
+scoreboard players set @a[team=guardian,scores={talent_1=5}] tick.talent_1 12000
+scoreboard players set @a[team=guardian,scores={talent_1=7}] tick.talent_1 08000
+scoreboard players set @a[team=soul,scores={talent_2=2}] tick.talent_2 12000
+scoreboard players set @a[team=soul,scores={talent_2=4}] tick.talent_2 00600
+scoreboard players set @a[team=guardian,scores={talent_2=4}] tick.talent_2 18000
+scoreboard players set @a[team=guardian,scores={talent_2=5}] tick.talent_2 12000
+scoreboard players set @a[team=guardian,scores={talent_2=7}] tick.talent_2 08000
 
 # 初始化标签
 tag @a[team=soul] add no_hit
@@ -95,6 +106,7 @@ tag @a remove talent_1_on
 tag @a remove talent_2_on
 tag @a remove item_on
 tag @a remove hit_soul
+tag @a remove T004
 tag @a remove S004_a
 tag @a remove S004_b
 tag @e remove E05
@@ -106,7 +118,6 @@ scoreboard players reset * temp.dying
 scoreboard players reset * temp.heal
 scoreboard players reset * temp.hit
 scoreboard players reset * temp.item
-scoreboard players reset * temp.kill
 scoreboard players reset * temp.open
 scoreboard players reset * temp.skill
 scoreboard players reset * temp.talent

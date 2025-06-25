@@ -19,7 +19,7 @@ execute as @a[team=!admin] run attribute @s gravity base set 0.08
 execute as @a[team=!admin] run attribute @s jump_strength base set 0.42
 
 # 计分板
-scoreboard players set $2_starting countdown 120
+scoreboard players set $2_starting tick.global 120
 
 # 设置标题
 title @a times 3 54 2

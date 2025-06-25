@@ -13,15 +13,15 @@ $bossbar set midsoul:heed name [{"storage":"ms:temp","nbt":"aura1","color":"yell
 $bossbar set midsoul:warn name [{"storage":"ms:temp","nbt":"aura1","color":"red"},"   ",{"translate":"ms.bossbar.3.normal","fallback":"收集进度"}," » ",{"score":{"objective":"data","name":"$shard_collect"},"color":"#E80505"},"/$(shard_goal)","   ",{"storage":"ms:temp","nbt":"aura2"}]
 
 # 还在闪烁
-execute if score $3_process countdown matches 1 run bossbar set midsoul:info visible false
-execute if score $3_process countdown matches 2 run bossbar set midsoul:info visible true
-execute if score $3_process countdown matches 3 run bossbar set midsoul:info visible false
-execute if score $3_process countdown matches 4 run bossbar set midsoul:info visible true
-execute if score $3_process countdown matches 1 run bossbar set midsoul:heed visible false
-execute if score $3_process countdown matches 2 run bossbar set midsoul:heed visible true
-execute if score $3_process countdown matches 3 run bossbar set midsoul:heed visible false
-execute if score $3_process countdown matches 4 run bossbar set midsoul:heed visible true
-execute if score $3_process countdown matches 1 run bossbar set midsoul:warn visible false
-execute if score $3_process countdown matches 2 run bossbar set midsoul:warn visible true
-execute if score $3_process countdown matches 3 run bossbar set midsoul:warn visible false
-execute if score $3_process countdown matches 4 run bossbar set midsoul:warn visible true
+execute if score $3_process tick.global matches 1 run bossbar set midsoul:info visible false
+execute if score $3_process tick.global matches 2 run bossbar set midsoul:info visible true
+execute if score $3_process tick.global matches 3 run bossbar set midsoul:info visible false
+execute if score $3_process tick.global matches 4 run bossbar set midsoul:info visible true
+execute if score $3_process tick.global matches 1 run bossbar set midsoul:heed visible false
+execute if score $3_process tick.global matches 2 run bossbar set midsoul:heed visible true
+execute if score $3_process tick.global matches 3 run bossbar set midsoul:heed visible false
+execute if score $3_process tick.global matches 4 run bossbar set midsoul:heed visible true
+execute if score $3_process tick.global matches 1 run bossbar set midsoul:warn visible false
+execute if score $3_process tick.global matches 2 run bossbar set midsoul:warn visible true
+execute if score $3_process tick.global matches 3 run bossbar set midsoul:warn visible false
+execute if score $3_process tick.global matches 4 run bossbar set midsoul:warn visible true

@@ -1,7 +1,7 @@
-function base:caculate/time {unit:"sec",tick:"$4_portal",source:"countdown"}
+function base:caculate/time {unit:"sec",tick:"$4_portal",source:"tick.global"}
 
 # 设置进度
-execute store result bossbar midsoul:info value run scoreboard players get $4_portal countdown
+execute store result bossbar midsoul:info value run scoreboard players get $4_portal tick.global
 
 # 设置颜色
 execute if score $4_finale state matches 1 run bossbar set midsoul:info color pink
@@ -14,19 +14,19 @@ execute if score $4_finale state matches 1 if score $ms temp2 matches ..09 run b
 execute if score $4_finale state matches 1 if score $ms temp2 matches 10.. run bossbar set midsoul:info name [{"translate":"ms.bossbar.4.portal","fallback":"传送门 »","color":"#FF77EE"}," ",{"score":{"objective":"temp2","name":"$sec"},"color":"#FF96F9"},{"text":".","color":"#FF96F9"},{"score":{"objective":"temp2","name":"$ms"},"color":"#FF96F9"}," ",{"translate":"ms.bossbar.4.portal.2","fallback":"« 已开启"}]
 
 # 设置闪烁 - 气息探测失效
-execute if score $4_process countdown matches 10001 run bossbar set midsoul:info visible false
-execute if score $4_process countdown matches 10002 run bossbar set midsoul:info visible true
-execute if score $4_process countdown matches 10003 run bossbar set midsoul:info visible false
-execute if score $4_process countdown matches 10004 run bossbar set midsoul:info visible true
-execute if score $4_process countdown matches 10005 run bossbar set midsoul:info visible false
-execute if score $4_process countdown matches 10006 run bossbar set midsoul:info visible true
+execute if score $4_process tick.global matches 10001 run bossbar set midsoul:info visible false
+execute if score $4_process tick.global matches 10002 run bossbar set midsoul:info visible true
+execute if score $4_process tick.global matches 10003 run bossbar set midsoul:info visible false
+execute if score $4_process tick.global matches 10004 run bossbar set midsoul:info visible true
+execute if score $4_process tick.global matches 10005 run bossbar set midsoul:info visible false
+execute if score $4_process tick.global matches 10006 run bossbar set midsoul:info visible true
 
 # 设置闪烁 - 剩余时间不足
-execute if score $4_portal countdown matches 603 run bossbar set midsoul:info visible false
-execute if score $4_portal countdown matches 602 run bossbar set midsoul:info visible true
-execute if score $4_portal countdown matches 601 run bossbar set midsoul:info visible false
-execute if score $4_portal countdown matches 600 run bossbar set midsoul:info visible true
-execute if score $4_portal countdown matches 599 run bossbar set midsoul:info visible false
-execute if score $4_portal countdown matches 598 run bossbar set midsoul:info visible true
-execute if score $4_portal countdown matches 597 run bossbar set midsoul:info visible false
-execute if score $4_portal countdown matches 596 run bossbar set midsoul:info visible true
+execute if score $4_portal tick.global matches 603 run bossbar set midsoul:info visible false
+execute if score $4_portal tick.global matches 602 run bossbar set midsoul:info visible true
+execute if score $4_portal tick.global matches 601 run bossbar set midsoul:info visible false
+execute if score $4_portal tick.global matches 600 run bossbar set midsoul:info visible true
+execute if score $4_portal tick.global matches 599 run bossbar set midsoul:info visible false
+execute if score $4_portal tick.global matches 598 run bossbar set midsoul:info visible true
+execute if score $4_portal tick.global matches 597 run bossbar set midsoul:info visible false
+execute if score $4_portal tick.global matches 596 run bossbar set midsoul:info visible true

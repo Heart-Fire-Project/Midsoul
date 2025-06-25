@@ -30,7 +30,7 @@
             },
             {
                 "translate":"ms.talent.102.desc.b",
-                "fallback":"使全体灵魂发光且移速 -15%",
+                "fallback":"使全体灵魂发光且移速 -15%%",
                 "color":"white",
                 "italic":false
             }

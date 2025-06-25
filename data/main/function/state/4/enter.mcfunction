@@ -17,9 +17,9 @@ execute if score $temp temp matches 1 at @n[tag=new_purple] at @e[tag=marker_pur
 
 # 善后工作
 execute as @e[tag=new_purple] run team join portal @s
-scoreboard players set @e[tag=new_purple] countdown 0
+scoreboard players set @e[tag=new_purple] tick.global 0
 execute at @e[tag=new_purple] run summon text_display ~ ~1.2 ~ {Tags:["game_entity","purple_progress"],interpolation_duration:15,start_interpolation:0,billboard:"center",alignment:"center",line_width:200,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-scoreboard players set @e[tag=purple_progress] countdown 0
+scoreboard players set @e[tag=purple_progress] tick.global 0
 tag @e[tag=new_purple] remove new_purple
 title @a title ""
 title @a subtitle {"translate":"ms.title.4.portal","fallback":"⚜ 传送门已出现 ⚜","color":"#7367F0"}
@@ -28,18 +28,18 @@ playsound entity.warden.attack_impact player @a[team=!admin] 0 1000000 0 1000000
 # 设置计时
 scoreboard players set $4_single state 0
 scoreboard players set $4_finale state 0
-scoreboard players set $4_process countdown 0
-execute store result score $4_portal countdown run data get storage ms:map original_goal
-scoreboard players operation $4_portal countdown *= #100 data
-scoreboard players add $4_portal countdown 1600
+scoreboard players set $4_process tick.global 0
+execute store result score $4_portal tick.global run data get storage ms:map original_goal
+scoreboard players operation $4_portal tick.global *= #100 data
+scoreboard players add $4_portal tick.global 1600
 
 # 初始化 Bossbar
 bossbar set midsoul:info style notched_12
 bossbar set midsoul:heed style notched_12
 bossbar set midsoul:warn style notched_12
-execute store result bossbar midsoul:info max run scoreboard players get $4_portal countdown
-execute store result bossbar midsoul:heed max run scoreboard players get $4_portal countdown
-execute store result bossbar midsoul:warn max run scoreboard players get $4_portal countdown
+execute store result bossbar midsoul:info max run scoreboard players get $4_portal tick.global
+execute store result bossbar midsoul:heed max run scoreboard players get $4_portal tick.global
+execute store result bossbar midsoul:warn max run scoreboard players get $4_portal tick.global
 
 # 设置速度
 execute as @a[team=guardian] run attribute @s movement_speed base set 0.14
@@ -47,7 +47,7 @@ execute if score $echo data matches 7 as @a[team=soul,scores={state=0}] run attr
 execute if score $echo data matches 7 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.21
 
 # 回响效果
-execute if score $echo data matches 9 run scoreboard players set @e[tag=purple] countdown 999999999
+execute if score $echo data matches 9 run scoreboard players set @e[tag=purple] tick.global 999999999
 
 # 教程
 advancement grant @a[tag=game_player] only main:tutorial/interact/4

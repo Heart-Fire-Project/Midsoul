@@ -17,4 +17,4 @@ kill @e[tag=S005_t]
 tag @e remove S005_n
 
 # 重置冷却
-scoreboard players set @s skill_tick 18000
+scoreboard players set @s tick.skill 18000

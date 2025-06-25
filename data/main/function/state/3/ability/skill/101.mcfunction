@@ -9,4 +9,4 @@ effect give @p[team=soul,scores={state=0}] glowing 14 0
 effect give @a[team=soul,scores={state=0}] glowing 7 0
 
 # 设置计时
-scoreboard players set @s skill_tick -1400
+scoreboard players set @s tick.skill -1400

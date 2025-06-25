@@ -56,7 +56,8 @@ execute if entity @s[scores={item=2},team=soul] run item replace block 0 -7 0 co
 execute if entity @s[scores={item=3},team=soul] run item replace block 0 -7 0 container.1 with clock
 execute if entity @s[scores={item=4},team=soul] run item replace block 0 -7 0 container.1 with shaper_armor_trim_smithing_template
 execute if entity @s[scores={item=5},team=soul] run item replace block 0 -7 0 container.1 with player_head
-$execute if entity @s[scores={item=6},team=soul] run item replace block 0 -7 0 container.1 with quartz $(item_tick)
+execute if entity @s[scores={item=6},team=soul] run item replace block 0 -7 0 container.1 with crossbow
+execute if entity @s[scores={item=7},team=soul] run item replace block 0 -7 0 container.1 with tipped_arrow
 
 # 技能物品
 execute if entity @s[scores={skill=1},team=soul] run item replace block 0 -7 0 container.4 with phantom_membrane
@@ -69,7 +70,7 @@ $execute if entity @s[scores={skill=2},team=guardian] run item replace block 0 -
 execute if entity @s[scores={skill=3},team=guardian] run item replace block 0 -7 0 container.4 with compass
 execute if entity @s[scores={skill=4},team=guardian] run item replace block 0 -7 0 container.4 with ominous_bottle
 execute if entity @s[scores={skill=5},team=guardian] run item replace block 0 -7 0 container.4 with light_gray_dye
-execute if entity @s[scores={state=0,skill_tick=1..}] run item replace block 0 -7 0 container.4 with firework_star
+execute if entity @s[scores={state=0,tick.skill=1..}] run item replace block 0 -7 0 container.4 with firework_star
 execute if entity @s[scores={state=1}] run item replace block 0 -7 0 container.4 with barrier
 
 # 天赋物品 | 注意处理顺序
@@ -87,13 +88,15 @@ execute if entity @s[scores={talent_1=4},team=guardian] run item replace block 0
 execute if entity @s[scores={talent_1=5},team=guardian] run item replace block 0 -7 0 container.7 with recovery_compass
 execute if entity @s[scores={talent_1=6},team=guardian] run item replace block 0 -7 0 container.7 with redstone
 $execute if entity @s[scores={talent_1=7},team=guardian] run item replace block 0 -7 0 container.7 with amethyst_shard $(T107)
-execute if entity @s[scores={talent_1=2,talent_1_tick=1..},team=soul] run item replace block 0 -7 0 container.7 with firework_star
-execute if entity @s[scores={talent_1=7,talent_107=0},team=guardian] run item replace block 0 -7 0 container.7 with firework_star
+execute if entity @s[scores={talent_1=2,tick.talent_1=1..},team=soul] run item replace block 0 -7 0 container.7 with firework_star
+execute if entity @s[scores={talent_1=4},team=soul,tag=!T004] run item replace block 0 -7 0 container.7 with firework_star
+execute if entity @s[scores={talent_1=7,talent.107=0},team=guardian] run item replace block 0 -7 0 container.7 with firework_star
 item modify block 0 -7 0 container.7 {function:set_components,components:{max_stack_size:99}}
-$execute if entity @s[scores={talent_1=2},team=soul] run item modify block 0 -7 0 container.7 {function:set_count,count:$(talent_1_tick)}
-$execute if entity @s[scores={talent_1=4},team=guardian] run item modify block 0 -7 0 container.7 {function:set_count,count:$(talent_1_tick)}
-$execute if entity @s[scores={talent_1=5},team=guardian] run item modify block 0 -7 0 container.7 {function:set_count,count:$(talent_1_tick)}
-$execute if entity @s[scores={talent_1=7,talent_107=0},team=guardian] run item modify block 0 -7 0 container.7 {function:set_count,count:$(talent_1_tick)}
+$execute if entity @s[scores={talent_1=2},team=soul] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
+$execute if entity @s[scores={talent_1=4},team=soul] run item modify block 0 -7 0 container.7 {function:set_count,count:$(T004)}
+$execute if entity @s[scores={talent_1=4},team=guardian] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
+$execute if entity @s[scores={talent_1=5},team=guardian] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
+$execute if entity @s[scores={talent_1=7,talent.107=0},team=guardian] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
 execute if entity @s[scores={talent_2=1},team=soul] run item replace block 0 -7 0 container.8 with glow_ink_sac
 execute if entity @s[scores={talent_2=2},team=soul] run item replace block 0 -7 0 container.8 with blaze_powder
 execute if entity @s[scores={talent_2=3},team=soul] run item replace block 0 -7 0 container.8 with magma_cream
@@ -108,13 +111,15 @@ execute if entity @s[scores={talent_2=4},team=guardian] run item replace block 0
 execute if entity @s[scores={talent_2=5},team=guardian] run item replace block 0 -7 0 container.8 with recovery_compass
 execute if entity @s[scores={talent_2=6},team=guardian] run item replace block 0 -7 0 container.8 with redstone
 $execute if entity @s[scores={talent_2=7},team=guardian] run item replace block 0 -7 0 container.8 with amethyst_shard $(T107)
-execute if entity @s[scores={talent_2=2,talent_2_tick=1..},team=soul] run item replace block 0 -7 0 container.8 with firework_star
-execute if entity @s[scores={talent_2=7,talent_107=0},team=guardian] run item replace block 0 -7 0 container.8 with firework_star
+execute if entity @s[scores={talent_2=2,tick.talent_2=1..},team=soul] run item replace block 0 -7 0 container.8 with firework_star
+execute if entity @s[scores={talent_2=4},team=soul,tag=!T004] run item replace block 0 -7 0 container.8 with firework_star
+execute if entity @s[scores={talent_2=7,talent.107=0},team=guardian] run item replace block 0 -7 0 container.8 with firework_star
 item modify block 0 -7 0 container.8 {function:set_components,components:{max_stack_size:99}}
-$execute if entity @s[scores={talent_2=2},team=soul] run item modify block 0 -7 0 container.8 {function:set_count,count:$(talent_2_tick)}
-$execute if entity @s[scores={talent_2=4},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(talent_2_tick)}
-$execute if entity @s[scores={talent_2=5},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(talent_2_tick)}
-$execute if entity @s[scores={talent_2=7,talent_107=0},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(talent_2_tick)}
+$execute if entity @s[scores={talent_2=2},team=soul] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
+$execute if entity @s[scores={talent_2=4},team=soul] run item modify block 0 -7 0 container.8 {function:set_count,count:$(T004)}
+$execute if entity @s[scores={talent_2=4},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
+$execute if entity @s[scores={talent_2=5},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
+$execute if entity @s[scores={talent_2=7,talent.107=0},team=guardian] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
 
 # 设置改动侦测
 execute as @s[nbt=!{Inventory:[{Slot:20b}]}] run function main:lib/event/personal_setting {setting:"echo_info",limit:"2"}
@@ -132,9 +137,16 @@ execute if score @s setting.ability_actionbar matches 0 run item replace block 0
 item replace block 0 -7 0 container.14 with light[block_state={level:"7"}]
 item replace block 0 -7 0 container.15 with paper
 
+# 光效处理
+execute if entity @s[tag=skill_on] run item modify block 0 -7 0 container.4 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[tag=talent_1_on] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[tag=talent_2_on] run item modify block 0 -7 0 container.8 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[scores={tick.enhance=1..},team=guardian] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[tag=item_on,team=soul] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
+
 # 数据处理
 $execute if entity @s[team=guardian,scores={state=0}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)a
-$execute if entity @s[team=guardian,scores={state=0,damage_tick=1..}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)b
+$execute if entity @s[team=guardian,scores={state=0,tick.enhance=1..}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)b
 $execute if entity @s[team=guardian,scores={state=1}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
 $execute if entity @s[team=guardian,scores={skill=5},tag=skill_on] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
 $execute if entity @s[team=soul] run item modify block 0 -7 0 container.1 main:item/$(item)
@@ -144,13 +156,6 @@ $execute if entity @s[team=soul] run item modify block 0 -7 0 container.7 main:t
 $execute if entity @s[team=guardian] run item modify block 0 -7 0 container.7 main:talent/1$(talent_1)
 $execute if entity @s[team=soul] run item modify block 0 -7 0 container.8 main:talent/0$(talent_2)
 $execute if entity @s[team=guardian] run item modify block 0 -7 0 container.8 main:talent/1$(talent_2)
-
-# 光效处理
-execute if entity @s[tag=skill_on] run item modify block 0 -7 0 container.4 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[tag=talent_1_on] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[tag=talent_2_on] run item modify block 0 -7 0 container.8 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[scores={damage_tick=1..},team=guardian] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[tag=item_on,team=soul] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
 
 # 进行完全部处理之后再发到玩家手里
 item replace entity @s hotbar.1 from block 0 -7 0 container.1

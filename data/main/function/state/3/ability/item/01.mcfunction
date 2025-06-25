@@ -7,4 +7,4 @@ tag @s add item_on
 effect give @s resistance 1 4
 
 # 设置计时
-scoreboard players set @s item_tick -160
+scoreboard players set @s tick.item -160

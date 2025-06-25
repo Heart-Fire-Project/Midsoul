@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"> ",
+                    "text":"⚡ 3 > ",
                     "color":"aqua",
                     "italic":false
                 },
@@ -23,9 +23,21 @@
                 }
             ],
             {
-                "translate":"ms.talent.004.desc",
-                "fallback":"收集到灵魂碎片时，回复 1 血量",
+                "translate":"ms.talent.004.desc.a",
+                "fallback":"已蓄能且生命未满时，在 2 秒内回复 6 血量",
                 "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.004.desc.b",
+                "fallback":"蓄能初始需要收集 2 碎片，每次蓄能后 +3",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.004.desc.c",
+                "fallback":"可蓄能 2 次",
+                "color":"gray",
                 "italic":false
             }
         ],
