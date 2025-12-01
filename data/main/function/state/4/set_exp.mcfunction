@@ -18,8 +18,6 @@ scoreboard players operation @s[tag=purple_interact] tick.general = @n[tag=purpl
 scoreboard players set @s[scores={state=1,temp.dying=1},team=soul] temp 120000
 scoreboard players set @s[scores={state=1,temp.dying=2},team=soul] temp 80000
 scoreboard players set @s[scores={state=1,temp.dying=3..},team=soul] temp 40000
-execute if score $4_timeout state matches 0 run scoreboard players set @s[scores={state=1},team=guardian] temp 10000
-execute if score $4_timeout state matches 1 run scoreboard players set @s[scores={state=1},team=guardian] temp 6000
 
 function base:set_exp {current:"tick.general",max:"temp",level:"temp2"}
 

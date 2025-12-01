@@ -1,8 +1,6 @@
 # 出击 | 注意被强制擦刀的场合
 # 进入擦刀状态
 scoreboard players set @s tick.general 14000
-execute if score $state data matches 4 run scoreboard players set @s tick.general 10000
-execute if score $state data matches 4 if score $4_timeout state matches 1 run scoreboard players set @s tick.general 6000
 scoreboard players set @s state 1
 function main:state/3/player/effect
 tag @s[tag=!striked] add hit_soul
