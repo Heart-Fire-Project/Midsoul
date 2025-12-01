@@ -1,7 +1,7 @@
 {
     "parent":"main:extra/particle/9",
     "criteria":{
-        "command":{
+        "unlock":{
             "trigger":"location"
         }
     }

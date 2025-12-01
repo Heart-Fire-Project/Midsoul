@@ -1,5 +1,6 @@
 # 二分法逼近平方根
 # 需要参数：$result(设置为 0) $sum(开根目标值) $step(计算次数，精度)
+# 输出结果：$result(位于temp中)
 
 # 下一个待测值
 scoreboard players operation $test temp = $result temp

@@ -2,12 +2,12 @@
     "parent":"main:extra/particle/6",
     "display":{
         "icon":{
-            "id":"nether_star"
+            "id":"bubble_coral"
         },
         "title":[
             {
                 "translate":"ms.particle.7",
-                "fallback":"绚彩粉墨"
+                "fallback":"万象环身"
             }
         ],
         "description":[
@@ -22,7 +22,7 @@
             "\n\n",
             {
                 "translate":"ms.particle.7.desc",
-                "fallback":"修行初抵圆满。",
+                "fallback":"万象于你归一。",
                 "color":"gray",
                 "italic":true
             }
@@ -51,6 +51,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/particle"
+        "function":"main:lib/advancement/extra"
     }
 }

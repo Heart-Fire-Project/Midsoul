@@ -23,14 +23,8 @@
                 }
             ],
             {
-                "translate":"ms.talent.102.desc.a",
-                "fallback":"灵魂解除垂死状态时，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.102.desc.b",
-                "fallback":"使全体灵魂发光且移速 -15%%",
+                "translate":"ms.talent.102.desc",
+                "fallback":"灵魂解除垂死状态时，使全体灵魂发光且移速 -15%%",
                 "color":"white",
                 "italic":false
             }
@@ -40,14 +34,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"talent",
             "id":72102
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"red_dye"
         }
     }
 ]

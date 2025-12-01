@@ -40,14 +40,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71001
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"phantom_membrane"
         }
     }
 ]

@@ -25,23 +25,36 @@
                 {
                     "translate":"ms.tag.debuff",
                     "fallback":"妨害"
+                },
+                {
+                    "text":" >> ",
+                    "color":"#A77CFC"
+                },
+                {
+                    "translate":"enchantment.minecraft.punch",
+                    "color":"#A77CFC"
+                },
+                " ",
+                {
+                    "translate":"enchantment.level.3",
+                    "color":"#A77CFC"
                 }
             ],
             {
                 "translate":"ms.item.6.desc.a",
-                "fallback":"若击中守卫者，使其在 12 秒内",
+                "fallback":"若击中守卫者，使其在 12 秒内失明，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.item.6.desc.b",
-                "fallback":"失明且发光，造成的伤害 -4",
+                "fallback":"发光且造成的伤害 -4",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.item.6.desc.c",
-                "fallback":"按下 [%s] 即可直接发射",
+                "fallback":"短按 [%s] 发射以使用",
                 "color":"gray",
                 "italic":false,
                 "with":[
@@ -56,14 +69,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"item",
             "id":73006
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{},
+            "item_model":"crossbow",
             "charged_projectiles":[
                 {
                     "id":"tipped_arrow",
@@ -83,10 +95,21 @@
                                     "duration":240
                                 }
                             ]
-                        }
+                        },
+                        "potion_duration_scale":1
                     }
                 }
-            ]
+            ],
+            "enchantments":{
+                "punch":3
+            },
+            "enchantment_glint_override":false,
+            "tooltip_display":{
+                "hidden_components":[
+                    "charged_projectiles",
+                    "enchantments"
+                ]
+            }
         }
     }
 ]

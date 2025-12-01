@@ -39,14 +39,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"talent",
             "id":72106
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"redstone"
         }
     }
 ]

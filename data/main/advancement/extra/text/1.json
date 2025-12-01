@@ -15,14 +15,14 @@
                 "translate":"ms.goal.play",
                 "fallback":"· 完成 %s 场游戏",
                 "with":[
-                    "4"
+                    "12"
                 ],
                 "color":"white"
             },
             "\n\n",
             {
                 "translate":"ms.text.1.desc",
-                "fallback":"何以译？",
+                "fallback":"幽冥彼岸惊鸿照，魂灯引魄照影来。",
                 "color":"gray",
                 "italic":true
             }
@@ -40,7 +40,7 @@
                     {
                         "scores":{
                             "stat.play":{
-                                "min":4
+                                "min":12
                             }
                         },
                         "condition":"entity_scores",
@@ -51,6 +51,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/text"
+        "function":"main:lib/advancement/extra"
     }
 }

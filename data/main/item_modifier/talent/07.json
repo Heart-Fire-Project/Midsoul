@@ -24,13 +24,7 @@
             ],
             {
                 "translate":"ms.talent.007.desc.a",
-                "fallback":"交互速度 +5%%；",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.007.desc.b",
-                "fallback":"灵气等级每提升 1 级额外 +5%%",
+                "fallback":"交互速度 +5%%；灵气等级每提升 1 级额外 +5%%",
                 "color":"white",
                 "italic":false
             },
@@ -46,14 +40,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"talent",
             "id":72007
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"cyan_dye"
         }
     }
 ]

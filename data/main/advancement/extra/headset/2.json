@@ -7,7 +7,7 @@
         "title":[
             {
                 "translate":"ms.headset.2",
-                "fallback":"战场通讯员"
+                "fallback":"声波通讯"
             }
         ],
         "description":[
@@ -15,7 +15,7 @@
                 "translate":"ms.goal.win_guar",
                 "fallback":"· 作为守卫者，在 %s 场游戏中取得胜利",
                 "with":[
-                    "3"
+                    "5"
                 ],
                 "color":"white"
             },
@@ -40,7 +40,7 @@
                     {
                         "scores":{
                             "stat.win_guar":{
-                                "min":3
+                                "min":5
                             }
                         },
                         "condition":"entity_scores",
@@ -51,6 +51,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/headset"
+        "function":"main:lib/advancement/extra"
     }
 }

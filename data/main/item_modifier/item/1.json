@@ -34,22 +34,22 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"item",
             "id":73001
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{},
+            "item_model":"iron_chestplate",
             "trim":{
                 "material":"diamond",
-                "pattern":"snout",
-                "show_in_tooltip":false
+                "pattern":"snout"
             },
-            "attribute_modifiers":{
-                "modifiers":[],
-                "show_in_tooltip":false
+            "attribute_modifiers":[],
+            "tooltip_display":{
+                "hidden_components":[
+                    "trim"
+                ]
             }
         }
     }

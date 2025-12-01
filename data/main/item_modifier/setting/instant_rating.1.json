@@ -1,0 +1,42 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.setting.instant_rating",
+            "fallback":"即时表现分",
+            "color":"green",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            {
+                "translate":"ms.setting.enable",
+                "fallback":"✦ 已启用",
+                "color":"green",
+                "italic":false
+            },
+            {
+                "translate":"ms.setting.instant_rating.desc",
+                "fallback":"实时提示获得的表现分",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":74011
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "enchantment_glint_override":true,
+            "item_model":"ender_eye"
+        }
+    }
+]

@@ -12,7 +12,7 @@
         "function":"set_lore",
         "lore":[
             {
-                "translate":"ms.lore.disable",
+                "translate":"ms.setting.disable",
                 "fallback":"✧ 已关闭",
                 "color":"red",
                 "italic":false
@@ -23,21 +23,22 @@
                 "color":"white",
                 "italic":false
             }
-            
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"setting",
             "id":74040
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"light",
+            "block_state":{
+                "level":"0"
+            }
         }
     }
 ]

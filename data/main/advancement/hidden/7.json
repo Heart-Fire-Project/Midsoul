@@ -1,0 +1,66 @@
+{
+    "parent":"main:hidden/6",
+    "display":{
+        "icon":{
+            "id":"diamond_boots"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.hidden.7",
+                "fallback":"打车般的速度"
+            }
+        ],
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.7.goal",
+                "fallback":"在 486 秒内完成隐藏跑酷"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.hidden.7.desc",
+                "fallback":"至少你不用花六七十",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点 +%s",
+                "with":[
+                    "20"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"challenge",
+        "show_toast":true,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "stat.parkour_7":{
+                                "min":1,
+                                "max":9720
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/prize/20"
+    }
+}

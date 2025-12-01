@@ -26,4 +26,4 @@ execute if score @s detect.interact matches 408 run function debug:sub/binary {s
 execute if score @s detect.interact matches 409 run function debug:sub/binary {storage:"echo",target:"09"}
 
 # 能力分配方式
-execute if score @s detect.interact matches 500 run function debug:sub/next {type:"ability_apply",limit:"6"}
+execute if score @s detect.interact matches 500 run function debug:sub/next {type:"ability_assign",limit:"6"}

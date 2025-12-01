@@ -13,7 +13,7 @@
         "description":[
             {
                 "translate":"ms.tutorial.1-3.desc",
-                "fallback":"    灵魂宝物盒里装着各式各样的小道具；守卫者虽然无法持有宝物，但也可以开启宝物盒并利用其中的灵力……\n    灵魂宝物盒将周期刷新；未持有宝物的灵魂开启时可以获取一个灵魂宝物，持有宝物的灵魂开启时则会使守卫者发光。\n    守卫者开启时无法获取宝物，但会使自己加速且使灵魂发光。",
+                "fallback":"灵魂宝物盒将周期刷新，与其持续交互后即可将其打开。灵魂打开时可以获取一个宝物，若持有宝物则会使守卫者发光并回复生命；守卫者无法获取宝物，但可以使自己加速并使灵魂发光。",
                 "color":"white"
             }
         ],
@@ -25,10 +25,9 @@
     "criteria":{
         "tutorial":{
             "trigger":"impossible"
-            
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/tutorial"
+        "function":"main:lib/advancement/tutorial/interact/3"
     }
 }

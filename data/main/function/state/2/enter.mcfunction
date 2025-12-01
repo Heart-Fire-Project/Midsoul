@@ -1,4 +1,4 @@
-# 状态 2 - 入场
+# 阶段 2 - 入场
 scoreboard players set $state data 2
 
 # 地图初始化
@@ -19,12 +19,12 @@ execute as @a[team=!admin] run attribute @s gravity base set 0.08
 execute as @a[team=!admin] run attribute @s jump_strength base set 0.42
 
 # 计分板
-scoreboard players set $2_starting tick.global 120
+scoreboard players set $2_starting tick.general 120
 
 # 设置标题
 title @a times 3 54 2
 title @a title ""
-title @a[team=!admin] subtitle [{"text":"» ","color":"blue","bold":true},{"translate":"ms.title.2.starting","fallback":"游戏即将开始","bold":false},{"text":" «","bold":true}]
+title @a subtitle [{text:"» ",color:"#50A7D9",bold:true},{translate:"ms.title.2.starting",fallback:"游戏即将开始",bold:false},{text:" «",bold:true}]
 
 # 玩家入场
 function main:state/2/player_enter/general

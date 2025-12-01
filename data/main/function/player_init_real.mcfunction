@@ -2,13 +2,14 @@
 $scoreboard players reset $(target)
 $advancement revoke $(target) everything
 $scoreboard players set $(target) leave_game 1
+$scoreboard players set $(target) exp.temp 0
 
-# 设置个人设置
-$scoreboard players set $(target) setting.echo_info 1
+# 设置个人设定
+$scoreboard players set $(target) setting.instant_rating 1
 $scoreboard players set $(target) setting.interact_hint 1
-$scoreboard players set $(target) setting.ability_actionbar 2
+$scoreboard players set $(target) setting.ability_status 2
 $scoreboard players set $(target) setting.ingame_tip 1
-$scoreboard players set $(target) setting.simplified_result 1
+$scoreboard players set $(target) setting.echo_info 1
 
 # 设置统计数据
 $scoreboard players set $(target) stat.collect 0

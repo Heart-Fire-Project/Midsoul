@@ -24,7 +24,7 @@
         "show_toast":false,
         "announce_to_chat":false,
         "hidden":false,
-        "background":"textures/block/deepslate_tiles.png"
+        "background":"block/deepslate_tiles"
     },
     "criteria":{
         "unlock":{

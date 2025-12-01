@@ -1,0 +1,33 @@
+{
+    "parent":"main:tutorial/player/3",
+    "display":{
+        "icon":{
+            "id":"diamond_boots"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.2-4",
+                "fallback":"强化/复活"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.2-4.desc",
+                "fallback":"传送门出现后，守卫者就会被强化，其伤害与移速都会提升；而在其开启后，全部灵魂都会发光且移速提升，守卫者移速再提升。进入传送门后，灵魂便得以复活。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/player/4"
+    }
+}

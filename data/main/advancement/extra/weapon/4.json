@@ -12,17 +12,20 @@
         ],
         "description":[
             {
-                "translate":"ms.goal.milestone",
-                "fallback":"· 里程碑解锁至 Rank %s",
+                "translate":"ms.goal.adv",
+                "fallback":"· 达成进度 “%s”",
                 "with":[
-                    "3"
+                    {
+                        "translate":"ms.adv.kill.3",
+                        "fallback":"瀚海阑干百丈冰"
+                    }
                 ],
                 "color":"white"
             },
             "\n\n",
             {
                 "translate":"ms.weapon.4.desc",
-                "fallback":"手感火热……不防水！",
+                "fallback":"手感火热……注意防水！",
                 "color":"gray",
                 "italic":true
             }
@@ -38,19 +41,22 @@
             "conditions":{
                 "player":[
                     {
-                        "scores":{
-                            "extra.milestone":{
-                                "min":3
+                        "condition":"entity_properties",
+                        "entity":"this",
+                        "predicate":{
+                            "type_specific":{
+                                "type":"player",
+                                "advancements":{
+                                    "main:general/kill/3":true
+                                }
                             }
-                        },
-                        "condition":"entity_scores",
-                        "entity":"this"
+                        }
                     }
                 ]
             }
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/weapon"
+        "function":"main:lib/advancement/extra"
     }
 }

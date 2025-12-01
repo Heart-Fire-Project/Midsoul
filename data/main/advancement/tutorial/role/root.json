@@ -2,7 +2,7 @@
     "parent":"main:tutorial/root",
     "display":{
         "icon":{
-            "id":"firework_rocket"
+            "id":"copper_golem_statue"
         },
         "title":{
             "translate":"ms.tutorial.0",

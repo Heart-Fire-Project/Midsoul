@@ -18,6 +18,11 @@
                     "italic":false
                 },
                 {
+                    "translate":"ms.tag.kill",
+                    "fallback":"杀戮"
+                },
+                "/",
+                {
                     "translate":"ms.tag.debuff",
                     "fallback":"妨害"
                 }
@@ -30,43 +35,37 @@
             },
             {
                 "translate":"ms.skill.104.desc.b",
-                "fallback":"若没有未被诅咒的灵魂宝物盒则生成 2 个；",
+                "fallback":"若没有未被诅咒的灵魂宝物盒则生成 2 个；移速 +40%%，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.104.desc.c",
-                "fallback":"移速 +40%%，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.104.desc.d",
-                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%%",
+                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%%，上限 +200%%",
                 "color":"white",
                 "italic":false
             },
             "",
             {
-                "translate":"ms.skill.104.desc.e",
+                "translate":"ms.special.curse",
                 "fallback":"「诅咒」",
                 "color":"dark_red",
                 "italic":false
             },
             {
-                "translate":"ms.skill.104.desc.f",
+                "translate":"ms.special.curse.desc.a",
                 "fallback":"灵魂经过时自身发光且移速 -15%%，",
                 "color":"gray",
                 "italic":false
             },
             {
-                "translate":"ms.skill.104.desc.g",
+                "translate":"ms.special.curse.desc.b",
                 "fallback":"守卫者经过时全体灵魂发光且自身移速 +20%%；",
                 "color":"gray",
                 "italic":false
             },
             {
-                "translate":"ms.skill.104.desc.h",
+                "translate":"ms.special.curse.desc.c",
                 "fallback":"开启该灵魂宝物盒时获取更强的上述效果",
                 "color":"gray",
                 "italic":false
@@ -77,15 +76,25 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71104
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{},
-            "!ominous_bottle_amplifier":{}
+            "item_model":"ominous_bottle",
+            "consumable":{
+                "animation":"drink",
+                "consume_seconds":1.6,
+                "sound":"entity.generic.drink",
+                "has_consume_particles":false,
+                "on_consume_effects":[
+                    {
+                        "type":"play_sound",
+                        "sound":"item.ominous_bottle.dispose"
+                    }
+                ]
+            }
         }
     }
 ]

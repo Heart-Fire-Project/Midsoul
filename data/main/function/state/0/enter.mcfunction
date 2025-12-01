@@ -1,6 +1,7 @@
-# 状态 0 - 大厅
+# 阶段 0 - 大厅
 scoreboard players set $state data 0
 execute as @a[team=!admin] run function main:state/0/player_enter
+forceload add -16 -16 16 16
 
 # Bossbar
 bossbar set midsoul:info style notched_10
@@ -16,13 +17,17 @@ function main:state/0/refresh/block
 function main:state/0/refresh/sign
 function main:state/0/refresh/entity
 function main:state/0/refresh/index
+execute at @a if entity @e[tag=extra_entity,distance=..30] run function main:state/0/refresh/extra
 
 # 设置变量组
 execute if score $mode setting matches 1 run data merge storage ms:mode {start:"5",cancel:"4"}
 execute if score $mode setting matches 2 run data merge storage ms:mode {start:"2",cancel:"1"}
 
+# 重设速率
+execute if data storage ms:setting {reset_speed:true} run function debug:sub/game/restore_speed
+
 # 计分板
 scoreboard objectives setdisplay list stat.level
 scoreboard objectives setdisplay below_name stat.level
 scoreboard objectives setdisplay sidebar
-scoreboard players set $0_start tick.global 1010000
+scoreboard players set $0_start tick.general 1010000

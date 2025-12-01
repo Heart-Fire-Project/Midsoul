@@ -13,16 +13,16 @@
         "description":[
             {
                 "translate":"ms.goal.adv_pts",
-                "fallback":"· 进度点数达到 %s 点",
+                "fallback":"· 进度点达到 %s 点",
                 "with":[
-                    "30"
+                    "100"
                 ],
                 "color":"white"
             },
             "\n\n",
             {
                 "translate":"ms.weapon.1.desc",
-                "fallback":"以璀璨之刃斩不净之物。",
+                "fallback":"以璀璨之刃斩不净之物",
                 "color":"gray",
                 "italic":true
             }
@@ -40,7 +40,7 @@
                     {
                         "scores":{
                             "stat.adv_pt":{
-                                "min":30
+                                "min":100
                             }
                         },
                         "condition":"entity_scores",
@@ -51,6 +51,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/weapon"
+        "function":"main:lib/advancement/extra"
     }
 }

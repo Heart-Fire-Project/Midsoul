@@ -1,9 +1,11 @@
-# 50% 的概率最终输出为 3
-scoreboard players reset $E04 temp
-function base:random {max:"2",min:"1"}
+tellraw @a [{text:"",color:"light_purple"},{text:"» ",bold:true},{translate:"ms.echo.active",fallback:"回响触发"},{text:" ❖ "},{translate:"ms.echo.4",fallback:"天幕降落雷"}]
 
-execute if score $random temp2 matches 1 run scoreboard players set $random temp2 3
+# 哇，□□□□，哇这个雷劈过来，差点劈到我啊！
+execute at @e[tag=E04] run summon lightning_bolt
 
-execute if score $random temp2 matches 2 run scoreboard players set $E04 temp 1
-execute if score $E04 temp matches 1 run function base:random {max:"6",min:"1"}
-execute if score $E04 temp matches 1 if score $random temp2 matches 3.. run scoreboard players add $random temp2 1
+# 把守卫者劈懵
+execute at @e[tag=E04] as @a[distance=..3,team=guardian,scores={state=0}] run function main:lib/player/strike
+tag @e remove E04
+
+# 重设倒计时
+function main:state/3/echo/init {min:"20",max:"60"}

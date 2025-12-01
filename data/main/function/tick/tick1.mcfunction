@@ -23,13 +23,18 @@ execute as @a[team=soul] run scoreboard players add $alive data 1
 scoreboard players reset $undying data
 execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
 
+# 隐身侦测
+tag @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] add invisible
+tag @a[gamemode=spectator] add invisible
+execute as @a[tag=invisible] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] unless entity @s[gamemode=spectator] run tag @s remove invisible
+
 # 定向至其他函数
 function debug:tick1
-execute if score $state data matches 0 run function main:state/0/tick1
-execute if score $state data matches 1 run function main:state/1/tick1
-execute if score $state data matches 2 run function main:state/2/tick1
-execute if score $state data matches 3 run function main:state/3/tick1
 execute if score $state data matches 4 run function main:state/4/tick1
+execute if score $state data matches 3 run function main:state/3/tick1
+execute if score $state data matches 2 run function main:state/2/tick1
+execute if score $state data matches 1 run function main:state/1/tick1
+execute if score $state data matches 0 run function main:state/0/tick1
 
 # 如果仍有交互侦测值，则为无效
 execute as @a unless score @s detect.interact matches 0 run scoreboard players set @s detect.interact 0

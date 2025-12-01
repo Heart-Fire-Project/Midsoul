@@ -13,7 +13,7 @@
         "description":[
             {
                 "translate":"ms.tutorial.0-2.desc",
-                "fallback":"    欢迎进入午夜灵魂！如果这是你的第一局游戏，那你还挺幸运的！\n    作为灵魂守卫者，你的目标就是拿手里的剑把他们全斩断！准备开始吧！",
+                "fallback":"作为灵魂守卫者，你的目标很简单，就是将灵魂统统斩杀。",
                 "color":"white"
             }
         ],
@@ -25,10 +25,9 @@
     "criteria":{
         "tutorial":{
             "trigger":"impossible"
-            
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/tutorial"
+        "function":"main:lib/advancement/tutorial/role/2"
     }
 }

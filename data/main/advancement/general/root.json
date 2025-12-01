@@ -5,7 +5,7 @@
         },
         "title":{
             "translate":"ms.adv.general",
-            "fallback":"综合"
+            "fallback":"历程"
         },
         "description":[
             ""
@@ -14,7 +14,7 @@
         "show_toast":false,
         "announce_to_chat":false,
         "hidden":false,
-        "background":"textures/block/chiseled_quartz_block.png"
+        "background":"block/chiseled_quartz_block"
     },
     "criteria":{
         "unlock":{

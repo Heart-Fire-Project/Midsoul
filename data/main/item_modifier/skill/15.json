@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 75  ⌚ 12 > ",
+                    "text":"⚡ 70  ⌚ 12 > ",
                     "color":"red",
                     "italic":false
                 },
@@ -29,26 +29,31 @@
             ],
             {
                 "translate":"ms.skill.105.desc.a",
-                "fallback":"隐身且移速 +140%%；",
+                "fallback":"移速 +40%%；无法直接攻击，但可以释放剑气造成范围伤害；",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.105.desc.b",
-                "fallback":"技能持续时间内无法进行攻击，",
+                "fallback":"技能结束后进入擦刀状态",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.105.desc.c",
-                "fallback":"技能结束时自动对周围 2 格内的灵魂发动一次斩击，",
-                "color":"white",
+                "fallback":"剑气若造成伤害则技能时长延长 6 秒，否则技能立刻结束；至多延长 3 次",
+                "color":"gray",
                 "italic":false
             },
             {
                 "translate":"ms.skill.105.desc.d",
-                "fallback":"无论是否命中都会进入擦刀状态",
-                "color":"white",
+                "fallback":"选中武器并短按 [%s] 以释放剑气，对周围 3 格内的所有灵魂造成 5 伤害",
+                "with":[
+                    {
+                        "keybind":"key.drop"
+                    }
+                ],
+                "color":"gray",
                 "italic":false
             }
         ],
@@ -57,14 +62,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71105
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"light_gray_dye"
         }
     }
 ]

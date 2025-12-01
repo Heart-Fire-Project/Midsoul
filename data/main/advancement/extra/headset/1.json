@@ -7,7 +7,7 @@
         "title":[
             {
                 "translate":"ms.headset.1",
-                "fallback":"鬼亦独角兽"
+                "fallback":"银辉独角"
             }
         ],
         "description":[
@@ -15,7 +15,7 @@
                 "translate":"ms.goal.win_soul",
                 "fallback":"· 作为灵魂，在 %s 场游戏中取得胜利",
                 "with":[
-                    "12"
+                    "15"
                 ],
                 "color":"white"
             },
@@ -40,7 +40,7 @@
                     {
                         "scores":{
                             "stat.win_soul":{
-                                "min":12
+                                "min":15
                             }
                         },
                         "condition":"entity_scores",
@@ -51,6 +51,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/headset"
+        "function":"main:lib/advancement/extra"
     }
 }

@@ -2,12 +2,12 @@
     "parent":"main:hidden/3",
     "display":{
         "icon":{
-            "id":"ominous_bottle"
+            "id":"music_disc_creator_music_box"
         },
         "title":[
             {
                 "translate":"ms.adv.hidden.4",
-                "fallback":"渴了请去喝水"
+                "fallback":"1%% 的世界线"
             }
         ],
         "description":[
@@ -16,22 +16,22 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.4.desc.0",
-                "fallback":"喝掉你的技能"
+                "translate":"ms.adv.hidden.4.goal",
+                "fallback":"听到一首纯粹的乐曲"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.4.desc.1",
-                "fallback":"喝下不详之瓶小心变成丰川祥子。",
+                "translate":"ms.adv.hidden.4.desc",
+                "fallback":"为什么要演奏八音盒版本？",
                 "color":"gray",
                 "italic":true
             },
             "\n\n",
             {
                 "translate":"ms.adv.pts",
-                "fallback":"💠 进度点数 +%s",
+                "fallback":"💠 进度点 +%s",
                 "with":[
-                    "5"
+                    "10"
                 ],
                 "color":"aqua"
             }
@@ -43,19 +43,24 @@
     },
     "criteria":{
         "secret":{
-            "trigger":"consume_item",
+            "trigger":"location",
             "conditions":{
-                "item":{
-                    "components":{
-                        "custom_data":{"type":"skill",
-                            "id":71104
-                        }
+                "player":[
+                    {
+                        "scores":{
+                            "music":{
+                                "min":0,
+                                "max":0
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
                     }
-                }
+                ]
             }
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/5"
+        "function":"main:lib/advancement/prize/10"
     }
 }

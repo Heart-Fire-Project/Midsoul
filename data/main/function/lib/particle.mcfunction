@@ -1,0 +1,11 @@
+# 函数宏输入可见范围
+$execute at @s[scores={extra.particle=1}] run particle electric_spark ~ ~0.5 ~ 0.25 0.2 0.25 0 1 force $(range)
+$execute at @s[scores={extra.particle=2}] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 0 1 force $(range)
+$execute at @s[scores={extra.particle=3}] run particle ominous_spawning ~ ~0.3 ~ 0.15 0.1 0.15 0 1 force $(range)
+$execute at @s[scores={extra.particle=4}] run particle wax_on ~ ~0.5 ~ 0.25 0.1 0.25 1 1 force $(range)
+$execute at @s[scores={extra.particle=5}] run particle end_rod ~ ~0.5 ~ 0 0 0 0 1 force $(range)
+$execute at @s[scores={extra.particle=6}] run particle dust{color:[1,1,1],scale:1} ~ ~0.3 ~ 0.15 0.2 0.15 0 2 force $(range)
+$execute at @s[scores={extra.particle=7}] run particle witch ~ ~0.2 ~ 0.25 0.1 0.25 0 1 force $(range)
+$execute at @s[scores={extra.particle=8}] run particle cherry_leaves ~ ~0.5 ~ 0.12 0.12 0.12 0 1 force $(range)
+$execute at @s[scores={extra.particle=9}] run particle flame ~ ~0.3 ~ 0.15 0.2 0.15 0 1 force $(range)
+$execute at @s[scores={extra.particle=9}] run particle soul_fire_flame ~ ~0.3 ~ 0.15 0.2 0.15 0 1 force $(range)

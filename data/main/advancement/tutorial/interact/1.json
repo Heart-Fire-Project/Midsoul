@@ -13,7 +13,7 @@
         "description":[
             {
                 "translate":"ms.tutorial.1-1.desc",
-                "fallback":"    灵魂碎片就是漂浮在地上的……呃……碎片，其中蕴含的灵力是开启传送门的关键。\n    灵魂需要在其周围蹲下收集它们以获取灵力，开启传送门。",
+                "fallback":"与灵魂碎片持续交互就可以收集它们，填满计量条后就会使传送门出现。",
                 "color":"white"
             }
         ],
@@ -25,10 +25,9 @@
     "criteria":{
         "tutorial":{
             "trigger":"impossible"
-            
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/tutorial"
+        "function":"main:lib/advancement/tutorial/interact/1"
     }
 }

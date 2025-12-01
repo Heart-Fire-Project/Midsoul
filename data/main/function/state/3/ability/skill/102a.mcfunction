@@ -1,1 +1,1 @@
-$particle vibration{destination:{type:"block","pos":[$(x),$(y),$(z)]},arrival_in_ticks:$(duartion)} ~ ~0.5 ~ 0 0 0 0 1 force @s
+$particle vibration{destination:{type:"block",pos:[$(x),$(y),$(z)]},arrival_in_ticks:$(duartion)} ~ ~0.5 ~ 0 0 0 0 1 force @s

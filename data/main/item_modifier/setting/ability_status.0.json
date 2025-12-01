@@ -1,0 +1,41 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.setting.ability_status",
+            "fallback":"能力状态提示",
+            "color":"red",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            {
+                "translate":"ms.setting.disable",
+                "fallback":"✧ 已关闭",
+                "color":"red",
+                "italic":false
+            },
+            {
+                "translate":"ms.setting.ability_status.desc",
+                "fallback":"在能力状态改变时显示提示",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":74030
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"red_stained_glass"
+        }
+    }
+]

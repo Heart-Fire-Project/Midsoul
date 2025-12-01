@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.skill.101.desc.a",
-                "fallback":"即刻使全部灵魂发光，",
+                "fallback":"移速 +40%%；即刻使全部灵魂发光，",
                 "color":"white",
                 "italic":false
             },
@@ -40,14 +40,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71101
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"spectral_arrow"
         }
     }
 ]

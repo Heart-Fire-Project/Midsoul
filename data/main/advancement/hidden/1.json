@@ -2,12 +2,12 @@
     "parent":"main:hidden/root",
     "display":{
         "icon":{
-            "id":"acacia_sign"
+            "id":"waxed_weathered_copper"
         },
         "title":[
             {
                 "translate":"ms.adv.hidden.1",
-                "fallback":"神经病文案撰写"
+                "fallback":"蓦然回首"
             }
         ],
         "description":[
@@ -16,20 +16,20 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.1.desc.0",
-                "fallback":"找到隐秘的告示牌"
+                "translate":"ms.adv.hidden.1.goal",
+                "fallback":"回顾走来的路"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.1.desc.1",
-                "fallback":"数据包和神经病都是SJB",
+                "translate":"ms.adv.hidden.1.desc",
+                "fallback":"游戏一贯的套路罢了",
                 "color":"gray",
                 "italic":true
             },
             "\n\n",
             {
                 "translate":"ms.adv.pts",
-                "fallback":"💠 进度点数 +%s",
+                "fallback":"💠 进度点 +%s",
                 "with":[
                     "5"
                 ],
@@ -43,8 +43,8 @@
             },
             {
                 "translate":"ms.text.2",
-                "fallback":"无拘",
-                "color":"blue"
+                "fallback":"闲嬉",
+                "color":"#6281F1"
             }
         ],
         "frame":"task",
@@ -58,6 +58,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/5"
+        "function":"main:lib/advancement/prize/5"
     }
 }

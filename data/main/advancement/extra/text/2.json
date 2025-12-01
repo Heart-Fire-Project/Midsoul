@@ -2,27 +2,29 @@
     "parent":"main:extra/text/1",
     "display":{
         "icon":{
-            "id":"dragon_breath"
+            "id":"snout_armor_trim_smithing_template"
         },
         "title":[
             {
                 "translate":"ms.text.2",
-                "fallback":"无拘"
+                "fallback":"闲嬉"
             }
         ],
         "description":[
             {
-                "text":"· ",
+                "translate":"ms.goal.adv",
+                "fallback":"· 达成进度 “%s”",
+                "with":[
+                    {
+                        "text":"???"
+                    }
+                ],
                 "color":"white"
-            },
-            {
-                "text":"findTheSign",
-                "obfuscated":true
             },
             "\n\n",
             {
                 "translate":"ms.text.2.desc",
-                "fallback":"这是哪个神经病写的？",
+                "fallback":"觉得眼熟？这样的文本，此时此刻正在各个游戏上演！",
                 "color":"gray",
                 "italic":true
             }
@@ -54,6 +56,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/text"
+        "function":"main:lib/advancement/extra"
     }
 }

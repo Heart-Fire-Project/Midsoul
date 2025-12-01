@@ -1,3 +1,5 @@
 # 首次触发倒计时
-$function base:random {min:"$(min)",max:"$(max)"}
-scoreboard players operation $3_echo tick.global = $random temp2
+$execute store result score $3_echo tick.general run random value $(min)..$(max)
+
+# 卡西米尔的雨
+execute if score $echo data matches 4 run weather thunder 77419

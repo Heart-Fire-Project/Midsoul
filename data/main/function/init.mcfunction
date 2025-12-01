@@ -1,4 +1,4 @@
-tellraw @a [{"text":"» ","bold":true,"color":"#7367F0"},{"translate":"ms.info.init","fallback":"%s 正在执行初始化流程","bold":false,"with":[{"selector":"@s"}]}]
+tellraw @a [{text:"» ",bold:true,color:"#7367F0"},{translate:"ms.info.init",fallback:"%s 正在执行初始化流程",bold:false,with:[{selector:"@s"}]}]
 
 # 规则设定
 setworldspawn 0 0 0
@@ -6,32 +6,34 @@ forceload remove all
 time set midnight
 weather clear
 difficulty normal
-gamerule playersNetherPortalCreativeDelay 1010000
-gamerule playersNetherPortalDefaultDelay 1010000
 gamerule playersSleepingPercentage 101
-gamerule spawnRadius 0
 gamerule randomTickSpeed 0
-gamerule announceAdvancements true
+gamerule spawnRadius 0
+gamerule allowEnteringNetherUsingPortals false
 gamerule doDaylightCycle false
 gamerule doEntityDrops false
 gamerule doFireTick false
-gamerule doVinesSpread false
 gamerule doImmediateRespawn true
 gamerule doMobLoot false
 gamerule doMobSpawning false
-gamerule drowningDamage false
 gamerule doTileDrops false
+gamerule doVinesSpread false
 gamerule doWeatherCycle false
+gamerule drowningDamage false
 gamerule fallDamage false
 gamerule fireDamage false
 gamerule freezeDamage false
 gamerule keepInventory true
+gamerule locatorBar false
 gamerule mobGriefing false
 gamerule naturalRegeneration false
 gamerule projectilesCanBreakBlocks false
+gamerule pvp true
 gamerule reducedDebugInfo true
 gamerule sendCommandFeedback false
 gamerule showDeathMessages false
+gamerule spawnerBlocksEnabled false
+gamerule tntExplodes false
 
 # 计分板
 scoreboard objectives remove data
@@ -44,39 +46,41 @@ scoreboard objectives remove exp.max
 scoreboard objectives add exp.max dummy "经验上限"
 scoreboard objectives remove exp.temp
 scoreboard objectives add exp.temp dummy "待计经验"
-scoreboard objectives remove item
-scoreboard objectives add item dummy "携带宝物"
 scoreboard objectives remove skill
 scoreboard objectives add skill dummy "携带技能"
 scoreboard objectives remove talent_1
 scoreboard objectives add talent_1 dummy "携带天赋 1"
 scoreboard objectives remove talent_2
 scoreboard objectives add talent_2 dummy "携带天赋 2"
+scoreboard objectives remove item
+scoreboard objectives add item dummy "携带宝物"
 scoreboard objectives remove state
 scoreboard objectives add state dummy "个人状态"
 scoreboard objectives remove health
-scoreboard objectives add health health "生命检测"
+scoreboard objectives add health health "生命值"
 scoreboard objectives remove setting
-scoreboard objectives add setting dummy "游戏设置"
-scoreboard objectives remove player_id
-scoreboard objectives add player_id dummy "玩家编号"
+scoreboard objectives add setting dummy "游戏设定"
+scoreboard objectives remove entity_id
+scoreboard objectives add entity_id dummy "实体识别码"
 scoreboard objectives remove music
 scoreboard objectives add music dummy "背景音乐"
 
-scoreboard objectives remove tick.global
-scoreboard objectives add tick.global dummy "全局计时"
-scoreboard objectives remove tick.item
-scoreboard objectives add tick.item dummy "宝物计时"
+scoreboard objectives remove tick.general
+scoreboard objectives add tick.general dummy "全局计时"
 scoreboard objectives remove tick.skill
 scoreboard objectives add tick.skill dummy "技能计时"
 scoreboard objectives remove tick.talent_1
 scoreboard objectives add tick.talent_1 dummy "天赋 1 计时"
 scoreboard objectives remove tick.talent_2
 scoreboard objectives add tick.talent_2 dummy "天赋 2 计时"
+scoreboard objectives remove tick.item
+scoreboard objectives add tick.item dummy "宝物计时"
 scoreboard objectives remove tick.using
-scoreboard objectives add tick.using dummy "物品使用计时"
+scoreboard objectives add tick.using dummy "使用物品计时"
 scoreboard objectives remove tick.enhance
 scoreboard objectives add tick.enhance dummy "伤害加成计时"
+scoreboard objectives remove tick.invincible
+scoreboard objectives add tick.invincible dummy "被动无敌计时"
 scoreboard objectives remove tick.off_ground
 scoreboard objectives add tick.off_ground dummy "滞空计时"
 scoreboard objectives remove tick.parkour
@@ -87,7 +91,7 @@ scoreboard objectives add tick.music dummy "音乐计时"
 scoreboard objectives remove detect.sneak
 scoreboard objectives add detect.sneak custom:sneak_time "蹲下检测"
 scoreboard objectives remove detect.sleep
-scoreboard objectives add detect.sleep custom:sleep_in_bed "睡眠检测"
+scoreboard objectives add detect.sleep custom:sleep_in_bed "入睡检测"
 scoreboard objectives remove detect.crossbow
 scoreboard objectives add detect.crossbow used:crossbow "弩箭检测"
 scoreboard objectives remove detect.drop
@@ -100,73 +104,47 @@ scoreboard objectives add detect.interact trigger "交互检测"
 scoreboard objectives add leave_game custom:leave_game "离开游戏"
 scoreboard objectives add soul_combo dummy "灵魂连击"
 
-scoreboard objectives remove temp.collect
-scoreboard objectives add temp.collect dummy "单场碎片搜集"
-scoreboard objectives remove temp.heal
-scoreboard objectives add temp.heal dummy "单场队友救助"
-scoreboard objectives remove temp.open
-scoreboard objectives add temp.open dummy "单场宝盒开启"
-scoreboard objectives remove temp.dying
-scoreboard objectives add temp.dying dummy "单场陷入垂死"
-scoreboard objectives remove temp.hit
-scoreboard objectives add temp.hit dummy "单场玩家命中"
-scoreboard objectives remove temp.down
-scoreboard objectives add temp.down dummy "单场垂死攻击"
-scoreboard objectives remove temp.skill
-scoreboard objectives add temp.skill dummy "单场技能使用"
-scoreboard objectives remove temp.talent
-scoreboard objectives add temp.talent dummy "单场天赋使用"
-scoreboard objectives remove temp.item
-scoreboard objectives add temp.item dummy "单场宝物使用"
-scoreboard objectives remove temp.time
-scoreboard objectives add temp.time dummy "单场游玩时间"
-scoreboard objectives remove temp.track
-scoreboard objectives add temp.track dummy "单场追踪时间"
-scoreboard objectives remove temp.tie
-scoreboard objectives add temp.tie dummy "单场牵制时间"
-
-scoreboard objectives add stat.collect dummy "总碎片搜集"
-scoreboard objectives add stat.heal dummy "总队友救助"
-scoreboard objectives add stat.open dummy "总宝盒开启"
-scoreboard objectives add stat.dying dummy "总陷入垂死"
-scoreboard objectives add stat.hit dummy "总玩家命中"
-scoreboard objectives add stat.down dummy "总垂死攻击"
-scoreboard objectives add stat.skill dummy "总技能使用"
-scoreboard objectives add stat.talent dummy "总天赋使用"
-scoreboard objectives add stat.item dummy "总宝物使用"
-scoreboard objectives add stat.kill dummy "总有效击杀"
-scoreboard objectives add stat.death dummy "总死亡次数"
-scoreboard objectives add stat.revive dummy "总复活次数"
-scoreboard objectives add stat.time dummy "总游玩时间"
-scoreboard objectives add stat.win dummy "总获胜次数"
-scoreboard objectives add stat.win_soul dummy "总获胜次数 - 灵魂"
-scoreboard objectives add stat.win_guar dummy "总获胜次数 - 守卫"
-scoreboard objectives add stat.draw dummy "总平局次数"
-scoreboard objectives add stat.lose dummy "总落败次数"
-scoreboard objectives add stat.play dummy "总游玩次数"
-scoreboard objectives add stat.play_soul dummy "总游玩次数 - 灵魂"
-scoreboard objectives add stat.play_guar dummy "总游玩次数 - 守卫"
+scoreboard objectives add stat.collect dummy "总计碎片收集"
+scoreboard objectives add stat.heal dummy "总计队友救助"
+scoreboard objectives add stat.open dummy "总计宝盒开启"
+scoreboard objectives add stat.dying dummy "总计陷入垂死"
+scoreboard objectives add stat.hit dummy "总计目标命中"
+scoreboard objectives add stat.down dummy "总计玩家击倒"
+scoreboard objectives add stat.skill dummy "总计技能使用"
+scoreboard objectives add stat.talent dummy "总计天赋使用"
+scoreboard objectives add stat.item dummy "总计宝物使用"
+scoreboard objectives add stat.time dummy "总计游玩时间"
+scoreboard objectives add stat.kill dummy "有效击杀"
+scoreboard objectives add stat.death dummy "消亡次数"
+scoreboard objectives add stat.revive dummy "复活次数"
+scoreboard objectives add stat.win dummy "获胜次数"
+scoreboard objectives add stat.win_soul dummy "获胜次数 - 灵魂"
+scoreboard objectives add stat.win_guar dummy "获胜次数 - 守卫"
+scoreboard objectives add stat.draw dummy "平局次数"
+scoreboard objectives add stat.lose dummy "落败次数"
+scoreboard objectives add stat.play dummy "游玩次数"
+scoreboard objectives add stat.play_soul dummy "游玩次数 - 灵魂"
+scoreboard objectives add stat.play_guar dummy "游玩次数 - 守卫"
 scoreboard objectives add stat.mvp dummy "全场最佳次数"
 scoreboard objectives add stat.level dummy "玩家等级"
 scoreboard objectives add stat.exp dummy "玩家经验"
 scoreboard objectives add stat.adv dummy "达成进度数"
-scoreboard objectives add stat.adv_pt dummy "进度点数"
-scoreboard objectives add stat.rating dummy "当前短期分"
-scoreboard objectives add stat.single_record dummy "最高表现分纪录"
-scoreboard objectives add stat.rating_record dummy "最高短期分纪录"
+scoreboard objectives add stat.adv_pt dummy "进度点"
+scoreboard objectives add stat.rating dummy "短期分"
+scoreboard objectives add stat.single_record dummy "最高表现分"
+scoreboard objectives add stat.rating_record dummy "最高短期分"
 scoreboard objectives add stat.parkour_5 dummy "普通跑酷纪录"
 scoreboard objectives add stat.parkour_7 dummy "隐藏跑酷纪录"
 
-scoreboard objectives add setting.echo_info dummy "回响提示设置"
-scoreboard objectives add setting.interact_hint dummy "交互提示设置"
-scoreboard objectives add setting.ability_actionbar dummy "能力状态提示设置"
-scoreboard objectives add setting.ingame_tip dummy "Tip! 设置"
-scoreboard objectives add setting.simplified_result dummy "简洁结算设置"
+scoreboard objectives add setting.instant_rating dummy "即时表现分设定"
+scoreboard objectives add setting.interact_hint dummy "交互提示设定"
+scoreboard objectives add setting.ability_status dummy "能力状态提示设定"
+scoreboard objectives add setting.ingame_tip dummy "Tip! 设定"
+scoreboard objectives add setting.echo_info dummy "回响提示设定"
 
 scoreboard objectives add extra.particle dummy "粒子效果"
 scoreboard objectives add extra.headset dummy "饰品装配"
 scoreboard objectives add extra.text dummy "文本套组"
-scoreboard objectives add extra.milestone dummy "里程碑"
 scoreboard objectives add extra.weapon dummy "武器样式"
 
 # 队伍
@@ -175,7 +153,7 @@ team add soul "灵魂"
 team modify soul color aqua
 team modify soul collisionRule never
 team modify soul deathMessageVisibility never
-team modify soul seeFriendlyInvisibles false
+team modify soul seeFriendlyInvisibles true
 team modify soul friendlyFire false
 team modify soul nametagVisibility hideForOtherTeams
 team remove guardian
@@ -183,11 +161,11 @@ team add guardian "灵魂守卫者"
 team modify guardian color red
 team modify guardian collisionRule never
 team modify guardian deathMessageVisibility never
-team modify guardian seeFriendlyInvisibles false
+team modify guardian seeFriendlyInvisibles true
 team modify guardian friendlyFire false
 team modify guardian nametagVisibility hideForOtherTeams
 team remove dead
-team add dead "死亡"
+team add dead "消亡"
 team modify dead color dark_gray
 team modify dead collisionRule never
 team modify dead deathMessageVisibility never
@@ -262,18 +240,21 @@ advancement revoke @a only main:detect/damage_dealt
 advancement revoke @a only main:detect/damage_taken
 advancement revoke @a only main:detect/using_item
 
-# 重置默认设置
+# 重置默认设定
 scoreboard players set $mode setting 1
 scoreboard players set $map setting 0
-scoreboard players set $ability_apply setting 0
+scoreboard players set $ability_assign setting 0
 scoreboard players set $echo_chance setting 30
+scoreboard players set $mode_page setting 1
+scoreboard players set $map_page setting 1
 scoreboard players set $echo_page setting 1
-scoreboard players set $index_type setting 1
-scoreboard players set $cooldown_speed setting 10
-scoreboard players set $interact_speed setting 10
+scoreboard players set $index_page setting 1
+scoreboard players set $cooldown_speed setting 100
+scoreboard players set $interact_speed setting 100
+scoreboard players set $role_assign setting 0
 scoreboard players set $initcheck data 7419147
-data merge storage ms:setting {"show_mark":false,"setting_lock":false,"game_lock":false,"reduce_f3":true,"send_feedback":false}
-data merge storage ms:echo {"01":true,"02":true,"03":true,"04":true,"05":true,"06":true,"07":true,"08":true,"09":true}
+data merge storage ms:setting {show_mark:false,setting_lock:false,game_lock:false,reset_speed:false,random_custom:false}
+data merge storage ms:echo {01:true,02:true,03:true,04:true,05:true,06:true,07:true,08:true,09:true}
 
 # 常数项
 scoreboard players set #-1 data -1
@@ -291,17 +272,25 @@ scoreboard players set #16 data 16
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
 scoreboard players set #30 data 30
-scoreboard players set #40 data 40
 scoreboard players set #50 data 50
 scoreboard players set #60 data 60
+scoreboard players set #65 data 65
 scoreboard players set #61 data 61
 scoreboard players set #64 data 64
+scoreboard players set #75 data 75
 scoreboard players set #100 data 100
 scoreboard players set #182 data 182
 scoreboard players set #256 data 256
-scoreboard players set #8000 data 8000
 scoreboard players set #10000 data 10000
 scoreboard players set #18000 data 18000
+scoreboard players set #80000 data 80000
+
+# 版本数据
+scoreboard players set $build data 253
+scoreboard players set $map_max data 3
+scoreboard players set $skill_max data 5
+scoreboard players set $talent_max data 7
+scoreboard players set $item_max data 7
 
 # 进入大厅状态
 function main:state/0/enter

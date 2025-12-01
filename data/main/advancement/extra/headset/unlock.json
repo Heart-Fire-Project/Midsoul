@@ -1,7 +1,7 @@
 {
     "parent":"main:extra/headset/3",
     "criteria":{
-        "command":{
+        "unlock":{
             "trigger":"location"
         }
     }

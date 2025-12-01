@@ -10,5 +10,5 @@ function main:state/1/process
 function main:state/1/bossbar/spectator
 
 # 如果玩家都没了，则直接回到大厅
-execute unless entity @a[tag=game_player] unless score $1_process tick.global matches 1080..1200 run tellraw @a [{"text":"\n» ","color":"red","bold":true},{"translate":"ms.info.1.return","fallback":"未找到游戏玩家，进程终止","bold":false}]
-execute unless entity @a[tag=game_player] unless score $1_process tick.global matches 1080..1200 run function main:state/0/enter
+execute unless entity @a[tag=game_player] unless score $1_process tick.general matches 1080..1200 run tellraw @a [{text:"\n» ",color:"red",bold:true},{translate:"ms.info.1.return",fallback:"未找到游戏玩家，进程终止",bold:false}]
+execute unless entity @a[tag=game_player] unless score $1_process tick.general matches 1080..1200 run function main:state/0/enter

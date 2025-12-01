@@ -18,7 +18,7 @@
             },
             {
                 "translate":"ms.weapon.4.desc",
-                "fallback":"手感火热……不防水！",
+                "fallback":"手感火热……注意防水！",
                 "color":"#CCCCCC",
                 "italic":false
             }
@@ -28,36 +28,34 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"weapon",
-            "id":73104
+            "id":73100
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{},
-            "unbreakable":{
-                "show_in_tooltip":false
+            "!max_damage":{},
+            "item_model":"blaze_rod",
+            "enchantments":{
+                "sharpness":39
             },
-            "attribute_modifiers":{
-                "modifiers":[
-                    {
-                        "slot":"mainhand",
-                        "type":"attack_damage",
-                        "amount":20,
-                        "id":"weapon_atk",
-                        "operation":"add_value"
-                    },
-                    {
-                        "slot":"mainhand",
-                        "type":"attack_speed",
-                        "amount":777,
-                        "id":"weapon_ats",
-                        "operation":"add_value"
+            "tooltip_display":{
+                "hidden_components":[
+                    "enchantments"
+                ]
+            },
+            "attribute_modifiers":[
+                {
+                    "slot":"mainhand",
+                    "type":"attack_speed",
+                    "amount":777,
+                    "id":"weapon_ats",
+                    "operation":"add_value",
+                    "display":{
+                        "type":"hidden"
                     }
-                ],
-                "show_in_tooltip":false
-            }
+                }
+            ]
         }
     }
 ]

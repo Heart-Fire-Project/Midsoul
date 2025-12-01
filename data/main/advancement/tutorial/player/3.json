@@ -1,0 +1,33 @@
+{
+    "parent":"main:tutorial/player/2",
+    "display":{
+        "icon":{
+            "id":"snowball"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.2-3",
+                "fallback":"垂死/消亡"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.2-3.desc",
+                "fallback":"每次血量耗尽后，你都会进入垂死并开始倒计时；如果倒计时结束后仍未脱离垂死，那么你就会消亡。多次垂死时，倒计时将会缩短。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/player/3"
+    }
+}

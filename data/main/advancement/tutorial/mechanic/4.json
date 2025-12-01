@@ -1,0 +1,33 @@
+{
+    "parent":"main:tutorial/mechanic/3",
+    "display":{
+        "icon":{
+            "id":"purpur_block"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.3-4",
+                "fallback":"回响"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.3-4.desc",
+                "fallback":"回响是一种全局性的随机效果，它可能会改变部分机制甚至是整体玩法。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/mechanic/4"
+    }
+}

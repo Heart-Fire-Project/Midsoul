@@ -1,0 +1,33 @@
+{
+    "parent":"main:tutorial/player/4",
+    "display":{
+        "icon":{
+            "id":"totem_of_undying"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.2-5",
+                "fallback":"脱离垂死"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.2-5.desc",
+                "fallback":"脱离垂死时，你会被传送到被点亮的灵魂之灯处，并获得一定时间的加速与无敌。其中无敌的时间短于加速。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/player/5"
+    }
+}

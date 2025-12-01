@@ -1,0 +1,24 @@
+{
+    "parent":"main:general/root",
+    "display":{
+        "icon":{
+            "id":"paper"
+        },
+        "title":{
+            "translate":"ms.adv.play",
+            "fallback":"沉浸"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

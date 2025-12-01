@@ -51,6 +51,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/particle"
+        "function":"main:lib/advancement/extra"
     }
 }

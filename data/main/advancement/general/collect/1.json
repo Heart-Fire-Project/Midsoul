@@ -2,34 +2,34 @@
     "parent":"main:general/collect/root",
     "display":{
         "icon":{
-            "id":"echo_shard"
+            "id":"disc_fragment_5"
         },
         "title":[
             {
                 "translate":"ms.adv.collect.1",
-                "fallback":"一捧碎片"
+                "fallback":"40oz. to Freedom"
             }
         ],
         "description":[
             {
-                "translate":"ms.goal.collect.single",
-                "fallback":"· 单场收集 %s 个碎片",
+                "translate":"ms.goal.collect",
+                "fallback":"· 累计收集 %s 个碎片",
                 "with":[
-                    "6"
+                    "40"
                 ],
                 "color":"white"
             },
             "\n\n",
             {
                 "translate":"ms.adv.collect.1.desc",
-                "fallback":"您已经踏上正轨。",
+                "fallback":"微光初绽",
                 "color":"gray",
                 "italic":true
             },
             "\n\n",
             {
                 "translate":"ms.adv.pts",
-                "fallback":"💠 进度点数 +%s",
+                "fallback":"💠 进度点 +%s",
                 "with":[
                     "5"
                 ],
@@ -48,8 +48,8 @@
                 "player":[
                     {
                         "scores":{
-                            "temp.collect":{
-                                "min":6
+                            "stat.collect":{
+                                "min":40
                             }
                         },
                         "condition":"entity_scores",
@@ -60,6 +60,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/5"
+        "function":"main:lib/advancement/prize/5"
     }
 }

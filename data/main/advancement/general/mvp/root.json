@@ -1,0 +1,24 @@
+{
+    "parent":"main:general/root",
+    "display":{
+        "icon":{
+            "id":"amethyst_shard"
+        },
+        "title":{
+            "translate":"ms.adv.mvp",
+            "fallback":"高光"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "hidden":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

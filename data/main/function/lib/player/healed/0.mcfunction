@@ -1,1 +1,1 @@
-tellraw @a[team=!admin] [{"text":"» ","color":"yellow","bold":true},{"translate":"ms.info.3.healed.000","fallback":"%s 已脱离垂死状态","bold":false,"with":[{"selector":"@s"}]}]
+tellraw @a [{text:"» ",color:"yellow",bold:true},{translate:"ms.info.3.healed.000",fallback:"%s 已脱离垂死状态",bold:false,with:[{selector:"@s"}]}]

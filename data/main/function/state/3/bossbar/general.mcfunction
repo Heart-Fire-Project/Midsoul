@@ -1,7 +1,7 @@
 # 样式处理
-execute if score $mode setting matches 1 if score $3_process tick.global matches ..18000 run function main:state/3/bossbar/1/normal with storage ms:map
-execute if score $mode setting matches 1 if score $3_process tick.global matches 18001 run function main:state/3/bossbar/1/change
-execute if score $mode setting matches 1 if score $3_process tick.global matches 18001.. run function main:state/3/bossbar/1/emerge
+execute if score $mode setting matches 1 if score $3_process tick.general matches ..18000 run function main:state/3/bossbar/1/normal with storage ms:map
+execute if score $mode setting matches 1 if score $3_process tick.general matches 18001 run function main:state/3/bossbar/1/change
+execute if score $mode setting matches 1 if score $3_process tick.general matches 18001.. run function main:state/3/bossbar/1/emerge
 
 # 能力确认
 execute as @a[team=soul,scores={talent_1=5,detect.sneak=1..}] run tag @s add T005
@@ -17,15 +17,15 @@ execute as @a[team=soul] at @s if entity @a[distance=..12,team=guardian,tag=!T10
 execute as @a[team=soul] at @s if entity @a[distance=..9,team=guardian] run tag @s add warn
 
 # 设置可见玩家
-bossbar set midsoul:info players @a[tag=!warn,tag=!heed,team=!admin]
-bossbar set midsoul:heed players @a[tag=!warn,tag=heed,team=!admin]
-bossbar set midsoul:warn players @a[tag=warn,team=!admin]
+bossbar set midsoul:info players @a[tag=!warn,tag=!heed]
+bossbar set midsoul:heed players @a[tag=!warn,tag=heed]
+bossbar set midsoul:warn players @a[tag=warn]
 
 # 教程
-advancement grant @a[tag=heed] only main:tutorial/mechanism/1
+advancement grant @a[tag=heed] only main:tutorial/mechanic/1
 
 # 清除标签
 tag @a remove heed
 tag @a remove warn
 tag @a remove T005
-tag @a remove T101 
+tag @a remove T101

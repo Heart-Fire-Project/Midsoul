@@ -1,7 +1,7 @@
 {
-    "parent":"main:extra/text/2",
+    "parent":"main:extra/text/3",
     "criteria":{
-        "command":{
+        "unlock":{
             "trigger":"location"
         }
     }

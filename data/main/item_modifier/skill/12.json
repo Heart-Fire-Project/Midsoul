@@ -29,7 +29,7 @@
             ],
             {
                 "translate":"ms.skill.102.desc.a",
-                "fallback":"造成的伤害加倍；",
+                "fallback":"伤害提升至 20；",
                 "color":"white",
                 "italic":false
             },
@@ -51,14 +51,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71102
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"echo_shard"
         }
     }
 ]

@@ -3,7 +3,7 @@
         "function":"set_name",
         "name":{
             "translate":"ms.skill.002",
-            "fallback":"灵灯之筑",
+            "fallback":"灵灯熔铸",
             "color":"#5599FF",
             "italic":false
         }
@@ -29,26 +29,20 @@
             ],
             {
                 "translate":"ms.skill.002.desc.a",
-                "fallback":"自身持续发光且移速 -60%%；",
+                "fallback":"持续发光且移速 -75%%；技能结束时点亮最近的灵魂之灯，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.b",
-                "fallback":"技能结束后视为点亮一次灵魂之灯，",
+                "fallback":"若无则使最近的守卫者在 10 秒内发光且移速 -60%%",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.c",
-                "fallback":"若场上没有垂死灵魂则改为使最近的守卫者",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.002.desc.d",
-                "fallback":"在 15 秒内发光且移速 -75%%",
-                "color":"white",
+                "fallback":"触发点亮灵魂之灯效果后，本次技能冷却时间 +12 秒",
+                "color":"gray",
                 "italic":false
             }
         ],
@@ -57,14 +51,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71002
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"soul_lantern"
         }
     }
 ]

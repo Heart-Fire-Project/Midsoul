@@ -35,8 +35,14 @@
                 }
             ],
             {
-                "translate":"ms.item.4.desc",
-                "fallback":"与最远的灵魂交换位置",
+                "translate":"ms.item.4.desc.a",
+                "fallback":"与最远的灵魂交换位置，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.item.4.desc.b",
+                "fallback":"交换双方在 3 秒内移速 +100%%",
                 "color":"white",
                 "italic":false
             }
@@ -46,14 +52,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"item",
             "id":73004
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"shaper_armor_trim_smithing_template"
         }
     }
 ]

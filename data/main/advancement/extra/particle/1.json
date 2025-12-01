@@ -1,3 +1,4 @@
+
 {
     "parent":"main:extra/particle/root",
     "display":{
@@ -51,6 +52,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/extra/particle"
+        "function":"main:lib/advancement/extra"
     }
 }

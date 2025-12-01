@@ -12,7 +12,7 @@
         "function":"set_lore",
         "lore":[
             {
-                "translate":"ms.lore.enable",
+                "translate":"ms.setting.enable",
                 "fallback":"✦ 已启用",
                 "color":"green",
                 "italic":false
@@ -23,22 +23,20 @@
                 "color":"white",
                 "italic":false
             }
-            
         ],
         "mode":"replace_all"
     },
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"setting",
-            "id":74020
+            "id":74021
         }
     },
     {
         "function":"set_components",
         "components":{
             "enchantment_glint_override":true,
-            "hide_additional_tooltip":{}
+            "item_model":"echo_shard"
         }
     }
 ]

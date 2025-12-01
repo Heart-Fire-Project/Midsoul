@@ -1,5 +1,5 @@
 # 至少比出金概率大
-function base:random {min:"1",max:"100"}
+execute store result score $random temp2 run random value 1..100
 execute if score $random temp2 matches 1 run scoreboard players set @s temp 0
 execute if score $random temp2 matches 2..12 run scoreboard players set @s temp 1
 execute if score $random temp2 matches 13..23 run scoreboard players set @s temp 2

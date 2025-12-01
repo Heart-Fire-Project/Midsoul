@@ -13,7 +13,7 @@
         "description":[
             {
                 "translate":"ms.tutorial.0-1.desc",
-                "fallback":"    欢迎进入午夜灵魂！\n    作为灵魂，你的任务是召唤传送门，然后复活；现在，离发着红光的敌方远一点，准备开始游戏吧！",
+                "fallback":"作为灵魂，你的目标是收集散落的碎片，开启传送门，然后成功复活。",
                 "color":"white"
             }
         ],
@@ -25,10 +25,9 @@
     "criteria":{
         "tutorial":{
             "trigger":"impossible"
-            
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/tutorial"
+        "function":"main:lib/advancement/tutorial/role/1"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "parent":"main:general/collect/unlock",
+    "parent":"main:general/collect/3",
     "display":{
         "icon":{
             "id":"sculk_catalyst"
@@ -7,29 +7,29 @@
         "title":[
             {
                 "translate":"ms.adv.collect.4",
-                "fallback":"一泥头车碎片"
+                "fallback":"500 Channels"
             }
         ],
         "description":[
             {
-                "translate":"ms.goal.collect.single",
-                "fallback":"· 单场收集 %s 个碎片",
+                "translate":"ms.goal.collect",
+                "fallback":"· 累计收集 %s 个碎片",
                 "with":[
-                    "18"
+                    "500"
                 ],
                 "color":"white"
             },
             "\n\n",
             {
                 "translate":"ms.adv.collect.4.desc",
-                "fallback":"您的队友还在线吗？",
+                "fallback":"照亮未知",
                 "color":"gray",
                 "italic":true
             },
             "\n\n",
             {
                 "translate":"ms.adv.pts",
-                "fallback":"💠 进度点数 +%s",
+                "fallback":"💠 进度点 +%s",
                 "with":[
                     "20"
                 ],
@@ -39,7 +39,7 @@
         "frame":"challenge",
         "show_toast":true,
         "announce_to_chat":true,
-        "hidden":true
+        "hidden":false
     },
     "criteria":{
         "collect_single":{
@@ -48,8 +48,8 @@
                 "player":[
                     {
                         "scores":{
-                            "temp.collect":{
-                                "min":18
+                            "stat.collect":{
+                                "min":500
                             }
                         },
                         "condition":"entity_scores",
@@ -60,6 +60,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/20"
+        "function":"main:lib/advancement/prize/20"
     }
 }

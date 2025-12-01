@@ -1,10 +1,12 @@
 # 判定失败
 # 触发近距离效果
-execute if entity @a[team=guardian,distance=..20] run effect give @s slowness 12 3
+execute if entity @a[team=guardian,distance=..20] run effect give @s slowness 12 2
 
 # 触发远距离效果
-execute unless entity @a[team=guardian,distance=..20] run tp @s @p[team=guardian]
-execute unless entity @a[team=guardian,distance=..20] run effect give @s slowness 12 6
+execute unless entity @a[team=guardian,distance=..20] at @p[team=guardian] run tag @n[tag=marker_gold,distance=16..] add S004
+execute unless entity @a[team=guardian,distance=..20] run tp @s @n[tag=S004]
+execute unless entity @a[team=guardian,distance=..20] run effect give @s slowness 12 5
+tag @e remove S004
 
 # 补充效果
 tag @s add S004_b

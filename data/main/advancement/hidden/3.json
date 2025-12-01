@@ -2,12 +2,15 @@
     "parent":"main:hidden/2",
     "display":{
         "icon":{
-            "id":"music_disc_creator_music_box"
+            "id":"nether_star",
+            "components":{
+                "!enchantment_glint_override":{}
+            }
         },
         "title":[
             {
                 "translate":"ms.adv.hidden.3",
-                "fallback":"1%% 的奇迹"
+                "fallback":"自星辰而来"
             }
         ],
         "description":[
@@ -16,24 +19,35 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.3.desc.0",
-                "fallback":"听到大厅的隐藏背景音乐"
+                "translate":"ms.adv.hidden.3.goal",
+                "fallback":"试图运用重力砸瘪灵魂"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.3.desc.1",
-                "fallback":"为什么要演奏八音盒版本？",
+                "translate":"ms.adv.hidden.3.desc",
+                "fallback":"可惜灵魂不吃这一套",
                 "color":"gray",
                 "italic":true
             },
             "\n\n",
             {
                 "translate":"ms.adv.pts",
-                "fallback":"💠 进度点数 +%s",
+                "fallback":"💠 进度点 +%s",
                 "with":[
                     "10"
                 ],
                 "color":"aqua"
+            },
+            "\n",
+            {
+                "translate":"ms.adv.reward",
+                "fallback":"奖励：",
+                "color":"green"
+            },
+            {
+                "translate":"ms.weapon.3",
+                "fallback":"破魂锤",
+                "color":"#C5D2E7"
             }
         ],
         "frame":"task",
@@ -47,6 +61,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/10"
+        "function":"main:lib/advancement/prize/10"
     }
 }

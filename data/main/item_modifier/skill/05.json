@@ -29,26 +29,14 @@
             ],
             {
                 "translate":"ms.skill.005.desc.a",
-                "fallback":"首次施放时原地生成一个虚影锚点，",
+                "fallback":"施放时原地生成一个虚影锚点，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.005.desc.b",
-                "fallback":"第二次及之后施放时原地生成一个虚影锚点",
+                "fallback":"第二次及之后施放时传送至上一个虚影锚点",
                 "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.005.desc.c",
-                "fallback":"并传送至上一个虚影锚点",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.005.desc.d",
-                "fallback":"初始冷却减半；生成的锚点仅己方可见",
-                "color":"gray",
                 "italic":false
             }
         ],
@@ -57,14 +45,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71005
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"shulker_shell"
         }
     }
 ]

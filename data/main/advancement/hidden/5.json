@@ -2,12 +2,12 @@
     "parent":"main:hidden/4",
     "display":{
         "icon":{
-            "id":"tuff_bricks"
+            "id":"ominous_bottle"
         },
         "title":[
             {
                 "translate":"ms.adv.hidden.5",
-                "fallback":"跑酷高手"
+                "fallback":"你是真渴了"
             }
         ],
         "description":[
@@ -16,37 +16,46 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.5.desc.0",
-                "fallback":"在 5:00 内完成隐藏跑酷"
+                "translate":"ms.adv.hidden.5.goal",
+                "fallback":"喝掉不该喝的东西"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.5.desc.1",
-                "fallback":"你猜这个神经跑酷是谁做的^^",
+                "translate":"ms.adv.hidden.5.desc",
+                "fallback":"喝不祥之瓶会变成祥子吗？",
                 "color":"gray",
                 "italic":true
             },
             "\n\n",
             {
                 "translate":"ms.adv.pts",
-                "fallback":"💠 进度点数 +%s",
+                "fallback":"💠 进度点 +%s",
                 "with":[
-                    "20"
+                    "10"
                 ],
                 "color":"aqua"
             }
         ],
-        "frame":"challenge",
+        "frame":"task",
         "show_toast":true,
         "announce_to_chat":false,
         "hidden":true
     },
     "criteria":{
         "secret":{
-            "trigger":"impossible"
+            "trigger":"consume_item",
+            "conditions":{
+                "item":{
+                    "components":{
+                        "custom_data":{
+                            "id":71104
+                        }
+                    }
+                }
+            }
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/20"
+        "function":"main:lib/advancement/prize/10"
     }
 }

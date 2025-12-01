@@ -23,14 +23,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"item",
             "id":73000
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"structure_void"
         }
     }
 ]

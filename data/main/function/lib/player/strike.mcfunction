@@ -1,0 +1,3 @@
+# 以后会有更多模式，更多状态的吧……
+
+execute if score $state data matches 3..4 as @s[team=guardian] at @s run function main:state/3/player/guardian/strike

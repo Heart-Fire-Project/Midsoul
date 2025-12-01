@@ -30,7 +30,7 @@
             },
             {
                 "translate":"ms.item.5.desc.b",
-                "fallback":"守卫者经过时移速 -45%%",
+                "fallback":"守卫者经过其面前时移速 -45%%",
                 "color":"white",
                 "italic":false
             },
@@ -46,14 +46,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"item",
             "id":73005
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{},
+            "item_model":"player_head",
             "profile":{
                 "id":[
                     -2028710611,

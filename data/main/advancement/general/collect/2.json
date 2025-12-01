@@ -2,36 +2,36 @@
     "parent":"main:general/collect/1",
     "display":{
         "icon":{
-            "id":"sculk_sensor"
+            "id":"echo_shard"
         },
         "title":[
             {
                 "translate":"ms.adv.collect.2",
-                "fallback":"一宝盒碎片"
+                "fallback":"Centuries"
             }
         ],
         "description":[
             {
-                "translate":"ms.goal.collect.single",
-                "fallback":"· 单场收集 %s 个碎片",
+                "translate":"ms.goal.collect",
+                "fallback":"· 累计收集 %s 个碎片",
                 "with":[
-                    "10"
+                    "100"
                 ],
                 "color":"white"
             },
             "\n\n",
             {
                 "translate":"ms.adv.collect.2.desc",
-                "fallback":"您已经相当娴熟。",
+                "fallback":"归途渐明",
                 "color":"gray",
                 "italic":true
             },
             "\n\n",
             {
                 "translate":"ms.adv.pts",
-                "fallback":"💠 进度点数 +%s",
+                "fallback":"💠 进度点 +%s",
                 "with":[
-                    "10"
+                    "5"
                 ],
                 "color":"aqua"
             }
@@ -48,8 +48,8 @@
                 "player":[
                     {
                         "scores":{
-                            "temp.collect":{
-                                "min":10
+                            "stat.collect":{
+                                "min":100
                             }
                         },
                         "condition":"entity_scores",
@@ -60,6 +60,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/normal/10"
+        "function":"main:lib/advancement/prize/5"
     }
 }

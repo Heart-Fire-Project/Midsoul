@@ -24,13 +24,13 @@
             ],
             {
                 "translate":"ms.skill.004.desc.a",
-                "fallback":"若距离 20 格内有守卫者，则",
+                "fallback":"若距离守卫者不足 20 格，则",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.004.desc.b",
-                "fallback":"+ 自身移速 +100%% 且守卫者移速 -90%%",
+                "fallback":"+ 自身移速 +100%% 且使 20 格内的守卫者移速 -90%%",
                 "color":"green",
                 "italic":false
             },
@@ -42,7 +42,7 @@
             },
             {
                 "translate":"ms.skill.004.desc.d",
-                "fallback":"若距离 20 格内无守卫者，则",
+                "fallback":"若距离守卫者大于 20 格，则",
                 "color":"white",
                 "italic":false
             },
@@ -54,19 +54,19 @@
             },
             {
                 "translate":"ms.skill.004.desc.f",
-                "fallback":"- 或自身传送至最近的守卫者处并移速 -100%%",
+                "fallback":"- 或自身传送至最近的守卫者附近并移速 -90%%",
                 "color":"red",
                 "italic":false
             },
             {
                 "translate":"ms.skill.004.desc.g",
-                "fallback":"触发上述负面效果的概率初始为 5%%，但每次使用",
+                "fallback":"触发上述负面效果的概率初始为 5%%，",
                 "color":"gray",
                 "italic":false
             },
             {
                 "translate":"ms.skill.004.desc.h",
-                "fallback":"该技能都会 +7%%，至多提升至 40%%",
+                "fallback":"但每次使用该技能都会 +7%%，至多提升至 40%%",
                 "color":"gray",
                 "italic":false
             }
@@ -76,14 +76,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71004
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"dragon_breath"
         }
     }
 ]

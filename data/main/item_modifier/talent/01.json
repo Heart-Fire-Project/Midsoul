@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⌚ 3 > ",
+                    "text":"⚡ 50 > ",
                     "color":"aqua",
                     "italic":false
                 },
@@ -24,19 +24,13 @@
             ],
             {
                 "translate":"ms.talent.001.desc.a",
-                "fallback":"收集到灵魂碎片时，移速 +40%%；",
+                "fallback":"碎片收集速度 +25%%",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.talent.001.desc.b",
-                "fallback":"下一次收集所需时间 -0.5 秒",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.001.desc.c",
-                "fallback":"收集中断不会返还该效果",
+                "fallback":"持续时间无限，收集中断时重置",
                 "color":"gray",
                 "italic":false
             }
@@ -46,14 +40,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"talent",
             "id":72001
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"glow_ink_sac"
         }
     }
 ]

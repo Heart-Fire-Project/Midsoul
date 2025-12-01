@@ -24,18 +24,12 @@
             ],
             {
                 "translate":"ms.talent.107.desc.a",
-                "fallback":"污染场上的一个碎片；",
+                "fallback":"污染场上的一个碎片；被污染的碎片将在被收集时发射一个烟花",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.talent.107.desc.b",
-                "fallback":"被污染的碎片将在被收集时发射一个烟花",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.107.desc.c",
                 "fallback":"至多同时对 3 个碎片生效",
                 "color":"gray",
                 "italic":false
@@ -46,14 +40,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"talent",
             "id":72107
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"amethyst_shard"
         }
     }
 ]

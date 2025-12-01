@@ -5,11 +5,11 @@ execute if score @s detect.interact matches 3 run scoreboard players set @s temp
 execute if score @s detect.interact matches 1..99 run function main:lib/notice
 
 # 图鉴类型
-execute if score @s detect.interact matches 601 run function debug:sub/select {type:"index_type",num:"1"}
-execute if score @s detect.interact matches 602 run function debug:sub/select {type:"index_type",num:"2"}
-execute if score @s detect.interact matches 603 run function debug:sub/select {type:"index_type",num:"3"}
-execute if score @s detect.interact matches 604 run function debug:sub/select {type:"index_type",num:"4"}
-execute if score @s detect.interact matches 605 run function debug:sub/select {type:"index_type",num:"5"}
+execute if score @s detect.interact matches 601 run function debug:sub/select {type:"index_page",num:"1"}
+execute if score @s detect.interact matches 602 run function debug:sub/select {type:"index_page",num:"2"}
+execute if score @s detect.interact matches 603 run function debug:sub/select {type:"index_page",num:"3"}
+execute if score @s detect.interact matches 604 run function debug:sub/select {type:"index_page",num:"4"}
+execute if score @s detect.interact matches 605 run function debug:sub/select {type:"index_page",num:"5"}
 execute if score @s detect.interact matches 601..605 run function main:state/0/refresh/index
 
 # 鸣谢类
@@ -19,7 +19,8 @@ execute if score @s detect.interact matches 903 run scoreboard players set @s te
 execute if score @s detect.interact matches 904 run scoreboard players set @s temp 4
 execute if score @s detect.interact matches 905 run scoreboard players set @s temp 5
 execute if score @s detect.interact matches 906 run scoreboard players set @s temp 6
-execute if score @s detect.interact matches 901..906 run function main:lib/credit
+execute if score @s detect.interact matches 907 run scoreboard players set @s temp 7
+execute if score @s detect.interact matches 901..907 run function main:lib/credit
 
 # 技能类
 execute if score @s detect.interact matches 1001 run scoreboard players set @s skill 1
@@ -98,6 +99,7 @@ execute if score @s detect.interact matches 4300..4399 run function main:state/0
 execute if score @s detect.interact matches 4400 run scoreboard players set @s temp 0
 execute if score @s detect.interact matches 4401 run scoreboard players set @s temp 1
 execute if score @s detect.interact matches 4402 run scoreboard players set @s temp 2
+execute if score @s detect.interact matches 4403 run scoreboard players set @s temp 3
 execute if score @s detect.interact matches 4400..4499 run function main:state/0/extra/text
 
 # ???

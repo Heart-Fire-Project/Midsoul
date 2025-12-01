@@ -3,7 +3,7 @@
         "function":"set_name",
         "name":{
             "translate":"ms.weapon.3",
-            "fallback":"破魂砖",
+            "fallback":"破魂锤",
             "color":"dark_gray",
             "italic":false
         }
@@ -12,7 +12,7 @@
         "function":"set_lore",
         "lore":[
             {
-                "text":"🗡 -10 >",
+                "text":"🗡 0 >",
                 "color":"dark_gray",
                 "italic":false
             },
@@ -28,36 +28,26 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"weapon",
-            "id":73103
+            "id":73100
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{},
-            "unbreakable":{
-                "show_in_tooltip":false
-            },
-            "attribute_modifiers":{
-                "modifiers":[
-                    {
-                        "slot":"mainhand",
-                        "type":"attack_damage",
-                        "amount":-10,
-                        "id":"weapon_atk",
-                        "operation":"add_value"
-                    },
-                    {
-                        "slot":"mainhand",
-                        "type":"attack_speed",
-                        "amount":777,
-                        "id":"weapon_ats",
-                        "operation":"add_value"
+            "!max_damage":{},
+            "item_model":"mace",
+            "attribute_modifiers":[
+                {
+                    "slot":"mainhand",
+                    "type":"attack_speed",
+                    "amount":777,
+                    "id":"weapon_ats",
+                    "operation":"add_value",
+                    "display":{
+                        "type":"hidden"
                     }
-                ],
-                "show_in_tooltip":false
-            }
+                }
+            ]
         }
     }
 ]

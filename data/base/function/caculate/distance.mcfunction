@@ -1,7 +1,7 @@
 # 计算距离 | 最多支持距离 1023.0 格，若有需要自行调整 $step
-# 需要参数：xA yA zA xB yB zB (导入的数据应已*100 且无小数；可以与 caculate/selector_distance 配合使用)
-# 后置条件：caculate/sqrt_step caculate/tenths
-# 输出结果：$front(整数位) $behind(小数位) 
+# 需要参数：xA yA zA xB yB zB (导入的数据应当*100 且无小数；可以与 caculate/selector_distance 配合使用)
+# 需要前置：caculate/sqrt_step caculate/tenths
+# 输出结果：$front(整数位) $behind(小数位)
 
 # 计算距离
 $scoreboard players set $dx temp $(xA)

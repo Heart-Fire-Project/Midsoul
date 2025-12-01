@@ -29,22 +29,14 @@
                 "italic":false
             },
             {
-                "translate":"ms.item.6.desc.b",
-                "fallback":"长按 [%s] 以使用",
+                "translate":"ms.item.7.desc.b",
+                "fallback":"长按 [%s] 以使用；双击 [%s] 可丢弃该宝物",
                 "color":"gray",
                 "italic":false,
                 "with":[
                     {
                         "keybind":"key.use"
-                    }
-                ]
-            },
-            {
-                "translate":"ms.item.6.desc.c",
-                "fallback":"双击 [%s] 可丢弃该宝物",
-                "color":"gray",
-                "italic":false,
-                "with":[
+                    },
                     {
                         "keybind":"key.drop"
                     }
@@ -56,14 +48,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"item",
             "id":73007
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{},
+            "item_model":"tipped_arrow",
             "enchantment_glint_override":false,
             "consumable":{
                 "consume_seconds":1010000,
@@ -80,6 +71,11 @@
             },
             "potion_contents":{
                 "custom_color":12754943
+            },
+            "tooltip_display":{
+                "hidden_components":[
+                    "potion_contents"
+                ]
             }
         }
     }

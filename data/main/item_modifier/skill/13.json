@@ -36,7 +36,7 @@
             },
             {
                 "translate":"ms.skill.103.desc.c",
-                "fallback":"技能持续时间内被标记的灵魂会持续显示尾迹",
+                "fallback":"技能持续时间内被标记的灵魂会持续留下尾迹",
                 "color":"white",
                 "italic":false
             }
@@ -46,14 +46,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "type":"skill",
             "id":71103
         }
     },
     {
         "function":"set_components",
         "components":{
-            "hide_additional_tooltip":{}
+            "item_model":"compass"
         }
     }
 ]

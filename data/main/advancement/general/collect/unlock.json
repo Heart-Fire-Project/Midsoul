@@ -1,7 +1,7 @@
 {
-    "parent":"main:general/collect/3",
+    "parent":"main:general/collect/4",
     "criteria":{
-        "command":{
+        "unlock":{
             "trigger":"location"
         }
     }
