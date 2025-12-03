@@ -8,7 +8,7 @@ tp @s @e[tag=map_enter,limit=1]
 tag @e[tag=map_enter] remove map_enter
 
 # 如果还有人，则再次执行
-execute as @r[x=0,y=0,z=0,distance=..300,] run function main:state/2/player_enter/soul
+execute as @r[x=0,y=0,z=0,distance=..300,team=!admin] run function main:state/2/player_enter/soul
 
 # 如果没人了就删掉所有 tag
 execute unless entity @a[x=0,y=0,z=0,distance=..300,tag=game_player] run tag @e remove enter_chosen

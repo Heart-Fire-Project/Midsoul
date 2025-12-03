@@ -12,6 +12,7 @@ scoreboard players set @s[tag=!soul_down] tick.invincible 140
 
 # 没救了
 execute at @s[tag=soul_down] run summon marker ~ ~0.2 ~ {Tags:[death_mark,game_entity]}
+scoreboard players operation @n[tag=death_mark] entity_id = @s entity_id
 tp @n[tag=death_mark] @s
 
 # 教程

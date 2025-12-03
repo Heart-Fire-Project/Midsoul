@@ -1,1 +1,1 @@
-$scoreboard players set @a[scores={state=$(from)},limit=$(num),sort=random] state $(to)
+$scoreboard players set @a[scores={state=$(from)},limit=$(num),sort=random,team=prepare] state $(to)
