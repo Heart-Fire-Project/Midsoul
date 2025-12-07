@@ -24,7 +24,7 @@ execute if score $5_ending tick.general matches 132 run title @a title [{score:{
 execute if score $5_ending tick.general matches 131 run title @a title ""
 
 # 全局总览
-execute if score $5_ending tick.general matches 125 run function base:caculate/time {tick:"$stat_playtime",source:"tick.general",unit:"min"}
+execute if score $5_ending tick.general matches 125 run function base:caculate/time {tick:"$stat_gametime",source:"tick.general",unit:"min"}
 execute if score $5_ending tick.general matches 125 run playsound ui.button.click player @a 0 1000000 0 120000
 execute if score $5_ending tick.general matches 125 run tellraw @a ["\n\n\n\n\n\n\n\n\n\n"]
 execute if score $5_ending tick.general matches 125 run tellraw @a [{text:"-------------- ",color:"#7367F0"},{translate:"ms.info.end.1",fallback:"对局总览"}," --------------"]
