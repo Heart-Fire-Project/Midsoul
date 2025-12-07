@@ -13,6 +13,7 @@ tag @s remove game_player
 tag @s remove join_check
 tag @s remove ability_check
 tag @s remove echo_target
+tag @s remove rated_victim
 tag @s remove item_on
 tag @s remove skill_on
 tag @s remove talent_1_on

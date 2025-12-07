@@ -1,4 +1,8 @@
 # 出击 | 注意被强制擦刀的场合
+# 确认是否是有效击中
+execute unless entity @p[tag=rated_victim] run tag @s add striked
+tag @p[tag=rated_victim] remove rated_victim
+
 # 进入擦刀状态
 scoreboard players set @s tick.general 14000
 scoreboard players set @s state 1

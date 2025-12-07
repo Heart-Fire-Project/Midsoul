@@ -110,6 +110,7 @@ scoreboard players set @a[team=guardian,scores={talent_2=7}] tick.talent_2 08000
 # 初始化标签
 tag @a[team=soul] add no_hit
 tag @a remove echo_target
+tag @a remove rated_victim
 tag @a remove skill_on
 tag @a remove talent_1_on
 tag @a remove talent_2_on

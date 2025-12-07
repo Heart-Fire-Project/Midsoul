@@ -62,7 +62,7 @@ summon text_display -997 -0.7 -1007 {Tags:[extra_entity],text:[{translate:"ms.ex
 summon text_display -997 -0.85 -1007 {Tags:[extra_entity],text:[{translate:"ms.extra.text.desc",fallback:"天啊！翻译组最讨厌的一集！",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 function base:merge_sign {x:"-1001",y:"0",z:"-1007",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.text.0",fallb_2:"00",fallb_3:"趋光",command:"trigger detect.interact set 4400"}
 function base:merge_sign {x:"-1001",y:"0",z:"-1008",glow:"1",color:"white",trans_2:"",trans_3:"ms.text.1",fallb_2:"01",fallb_3:"溯回",command:"trigger detect.interact set 4401"}
-function base:merge_sign {x:"-1001",y:"0",z:"-1009",glow:"1",color:"white",trans_2:"",trans_3:"ms.text.2",fallb_2:"02",fallb_3:"无拘",command:"trigger detect.interact set 4402"}
+function base:merge_sign {x:"-1001",y:"0",z:"-1009",glow:"1",color:"white",trans_2:"",trans_3:"ms.text.2",fallb_2:"02",fallb_3:"闲嬉",command:"trigger detect.interact set 4402"}
 function base:merge_sign {x:"-1001",y:"0",z:"-1010",glow:"1",color:"white",trans_2:"",trans_3:"ms.text.3",fallb_2:"03",fallb_3:"灵兽",command:"trigger detect.interact set 4403"}
 setblock -1002 -1 -1007 black_wall_banner[facing=east]
 data merge block -1002 -1 -1007 {patterns:[{pattern:"mojang",color:"light_blue"},{pattern:"bricks",color:"black"},{pattern:"triangle_bottom",color:"light_blue"},{pattern:"rhombus",color:"black"},{pattern:"triangles_bottom",color:"cyan"},{pattern:"gradient_up",color:"light_blue"}]}

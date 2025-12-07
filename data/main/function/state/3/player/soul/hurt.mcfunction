@@ -2,6 +2,9 @@
 # 无伤判定失效
 tag @s remove no_hit
 
+# 侦测是否是符合条件的受击者
+execute if entity @a[team=guardian,distance=..3] run tag @s[scores={state=0,tick.invincible=0}] add rated_victim
+
 # 判定是否消亡
 execute store result score @s temp run data get entity @s Health 1000000
 execute if score @s temp matches ..0 run tag @s add soul_down

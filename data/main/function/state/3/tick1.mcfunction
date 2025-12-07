@@ -33,6 +33,7 @@ scoreboard players add @a[tag=game_player] temp.time 1
 scoreboard players remove @a[scores={tick.enhance=1..}] tick.enhance 1
 scoreboard players remove @a[scores={tick.invincible=1..}] tick.invincible 1
 effect give @a[scores={tick.invincible=20..}] resistance 1 4
+tag @a[tag=rated_victim,scores={tick.invincible=0}] remove rated_victim
 
 # 其他的部分
 execute as @a[scores={detect.sleep=1..},team=soul] run function main:state/3/event/wake_up
