@@ -1,4 +1,4 @@
-tag @a[distance=..0.7,tag=gray_interact,scores={tick.general=1000..}] add interact_fin
+tag @a[distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add interact_fin
 
 # 完成灵魂宝物盒开启
 scoreboard players add @a[tag=interact_fin] temp.open 1
@@ -9,7 +9,7 @@ playsound block.shulker_box.open player @a
 execute if score $echo data matches 3 as @a[team=guardian,tag=interact_fin,scores={tick.skill=1..}] run scoreboard players remove @s tick.skill 70000
 
 # 灵魂效果
-tag @e[team=soul,distance=..0.7,tag=gray_interact,scores={tick.general=1000..}] add target
+tag @e[team=soul,distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add target
 data modify storage ms:temp min set value 1
 execute store result storage ms:temp max int 1 run scoreboard players get $item_max data
 function base:random with storage ms:temp

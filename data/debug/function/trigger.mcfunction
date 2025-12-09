@@ -19,6 +19,7 @@ execute if score @s detect.interact matches -1200 run function debug:sub/select 
 execute if score @s detect.interact matches -1201 run function debug:sub/select {type:"map",num:"1"}
 execute if score @s detect.interact matches -1202 run function debug:sub/select {type:"map",num:"2"}
 execute if score @s detect.interact matches -1203 run function debug:sub/select {type:"map",num:"3"}
+execute if score @s detect.interact matches -1299 run function debug:sub/setting/map_tp
 
 # 回响
 execute if score @s detect.interact matches -1301 run function debug:sub/chance_minus {type:"echo"}
@@ -89,7 +90,8 @@ execute if score @s detect.interact matches -2450 run function debug:sub/speed_s
 execute if score @s detect.interact matches -2490 run function debug:sub/speed_select {type:"cooldown",value:"1000"}
 execute if score @s detect.interact matches -2499 run function debug:sub/speed_select {type:"cooldown",value:"1010000"}
 execute if score @s detect.interact matches -2500 run function debug:sub/game/restore_speed
-execute if score @s detect.interact matches -2501 run function debug:sub/binary {storage:"setting",target:reset_speed}
+execute if score @s detect.interact matches -2501 run function debug:sub/binary {storage:"setting",target:balanced_speed}
+execute if score @s detect.interact matches -2502 run function debug:sub/binary {storage:"setting",target:reset_speed}
 
 ## 杂项
 # 显示

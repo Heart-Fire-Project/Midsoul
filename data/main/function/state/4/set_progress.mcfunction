@@ -28,7 +28,7 @@ execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp
 execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp matches 11 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2134232279}
 execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp matches 12 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2134166230}
 execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp matches 13 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2134100437}
-execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp matches 14 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2133968107}
+execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp matches 14 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2134034644}
 execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp matches 15 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2133903314}
 execute if entity @s[tag=charging_purple] if score $value temp matches 00 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2140698203}
 execute if entity @s[tag=charging_purple] if score $value temp matches 01 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2140632409}
@@ -44,7 +44,7 @@ execute if entity @s[tag=charging_purple] if score $value temp matches 10 run da
 execute if entity @s[tag=charging_purple] if score $value temp matches 11 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2139711049}
 execute if entity @s[tag=charging_purple] if score $value temp matches 12 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2139579463}
 execute if entity @s[tag=charging_purple] if score $value temp matches 13 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2139513669}
-execute if entity @s[tag=charging_purple] if score $value temp matches 14 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2139383084}
+execute if entity @s[tag=charging_purple] if score $value temp matches 14 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2139447876}
 execute if entity @s[tag=charging_purple] if score $value temp matches 15 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2139316290}
 execute if entity @s[tag=open_purple] if score $value temp matches 00 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2143190422}
 execute if entity @s[tag=open_purple] if score $value temp matches 01 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2143124372}

@@ -11,3 +11,4 @@ data modify storage ms:map chest_max set from storage ms:temp chest_max
 data modify storage ms:map forceload1 set from storage ms:temp forceload1
 data modify storage ms:map forceload2 set from storage ms:temp forceload2
 data modify storage ms:map forceload3 set from storage ms:temp forceload3
+data modify storage ms:map center set from storage ms:temp center

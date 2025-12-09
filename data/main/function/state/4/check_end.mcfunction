@@ -17,7 +17,7 @@ execute unless entity @a[team=soul,scores={state=0}] if entity @e[tag=open_purpl
 execute unless entity @a[team=soul,scores={state=0}] run function main:state/5/enter
 
 # 剩余 42 秒，公布第三传送门位置
-execute unless data entity @n[tag=3rd_door] Glowing if score $4_portal tick.general matches ..840 run function main:state/4/announce_door
+execute unless data entity @n[tag=purple_3rd] Glowing if score $4_portal tick.general matches ..840 run function main:state/4/announce_door
 
 # 若只剩一位存活或仅剩 20 秒，开启终局
 execute if score $alive data matches 1 if score $4_finale state matches 0 run function main:state/4/finale

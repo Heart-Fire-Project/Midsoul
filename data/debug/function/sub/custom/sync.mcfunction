@@ -9,3 +9,4 @@ $data modify storage ms:temp chest_max set from storage ms:custom_$(num) chest_m
 $data modify storage ms:temp forceload1 set from storage ms:custom_$(num) forceload1
 $data modify storage ms:temp forceload2 set from storage ms:custom_$(num) forceload2
 $data modify storage ms:temp forceload3 set from storage ms:custom_$(num) forceload3
+$data modify storage ms:temp center set from storage ms:custom_$(num) center

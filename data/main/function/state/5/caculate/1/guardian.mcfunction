@@ -48,6 +48,7 @@ scoreboard players set @s temp 0
 scoreboard players operation @s temp = $soul_death data
 scoreboard players operation @s temp *= #75 data
 execute if score $soul_death data matches 3.. run scoreboard players add @s temp 35
+execute if score @s temp matches 411.. run scoreboard players set @s temp 410
 execute if score $result data matches 3.. run scoreboard players add @s temp 90
 execute if score $result data matches 1..2 run scoreboard players add @s temp 50
 execute if score $result data matches 0 run scoreboard players add @s temp 35

@@ -25,7 +25,7 @@ execute if score $echo_info temp matches 1 run clear @s firework_star[custom_dat
 execute if score $echo_info temp matches 1 run clear @s firework_star[custom_data={id:74051}]
 
 # 需要直接调整的场合
-tag @s[tag=blue_hint] remove blue_hint
-tag @s[tag=gold_hint] remove gold_hint
-tag @s[tag=gray_hint] remove gray_hint
-tag @s[tag=purple_hint] remove purple_hint
+tag @s[tag=hint_blue] remove hint_blue
+tag @s[tag=hint_gold] remove hint_gold
+tag @s[tag=hint_gray] remove hint_gray
+tag @s[tag=hint_purple] remove hint_purple

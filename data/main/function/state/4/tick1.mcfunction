@@ -44,12 +44,13 @@ scoreboard players remove @a[scores={tick.enhance=1..}] tick.enhance 1
 scoreboard players set @a[team=guardian] tick.enhance 100
 scoreboard players remove @a[scores={tick.invincible=1..}] tick.invincible 1
 effect give @a[scores={tick.invincible=20..}] resistance 1 4
+tag @a[tag=rated_victim,scores={tick.invincible=..138}] remove rated_victim
 
 # 其他的部分
 execute if entity @e[tag=open_purple] run effect give @e[team=soul,scores={state=0}] glowing infinite 6 true
 execute as @a[team=soul,scores={state=0}] at @s if entity @e[tag=open_purple,distance=..0.7] run function main:state/4/revive
 execute as @e[tag=open_purple] at @s run particle end_rod ~ ~1.6 ~ 0 24 0 0 10 force @a
-execute at @e[tag=3rd_door] unless data entity @n[tag=3rd_door] Glowing if entity @a[team=soul,distance=..3.5] run function main:state/4/announce_door
+execute at @e[tag=purple_3rd] unless data entity @n[tag=purple_3rd] Glowing if entity @a[team=soul,distance=..3.5] run function main:state/4/announce_door
 execute as @a[scores={detect.sleep=1..},team=soul] run function main:state/3/event/wake_up
 kill @e[type=item,tag=!game_entity]
 execute as @a at @s if block ~ ~ ~ water run scoreboard players reset @s tick.off_ground

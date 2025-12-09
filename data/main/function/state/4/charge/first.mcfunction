@@ -17,3 +17,6 @@ execute if score $echo data matches 6 as @a[team=guardian,scores={state=0}] run 
 bossbar set midsoul:info players @a
 bossbar set midsoul:heed players
 bossbar set midsoul:warn players
+
+# 教程！
+advancement grant @a[team=soul] only main:tutorial/player/4

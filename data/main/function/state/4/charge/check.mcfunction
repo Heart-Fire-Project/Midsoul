@@ -1,23 +1,23 @@
 # 添加基础 tag
 tag @s add interacting
-tag @s add purple_interact
+tag @s add interact_purple
 
 # 判断交互类型
 execute unless score @s detect.sneak matches 1.. run tag @s remove interacting
-execute unless entity @e[tag=purple,distance=..0.7,tag=!open_purple] run tag @s remove purple_interact
-tag @s[tag=!purple_interact] remove interacting
+execute unless entity @e[tag=purple,distance=..0.7,tag=!open_purple] run tag @s remove interact_purple
+tag @s[tag=!interact_purple] remove interacting
 
 # 交互提示
 tag @s remove show_title
 execute unless score @s tick.using matches 1.. run tag @s add show_title
-execute as @s[tag=purple_hint,tag=show_title] run title @s actionbar [{translate:"ms.hint.purple",fallback:"长按 [%s] 以充能",with:[{keybind:"key.sneak"}],color:"light_purple"}]
-execute as @s[tag=!interacting,tag=purple_interact,scores={setting.interact_hint=1}] run tag @s add purple_hint
-execute as @s[tag=purple_hint,tag=!purple_interact] run title @s actionbar ""
-tag @s[tag=interacting] remove purple_hint
-tag @s[tag=!purple_interact] remove purple_hint
+execute as @s[tag=hint_purple,tag=show_title] run title @s actionbar [{translate:"ms.hint.purple",fallback:"长按 [%s] 以充能",with:[{keybind:"key.sneak"}],color:"light_purple"}]
+execute as @s[tag=!interacting,tag=interact_purple,scores={setting.interact_hint=1}] run tag @s add hint_purple
+execute as @s[tag=hint_purple,tag=!interact_purple] run title @s actionbar ""
+tag @s[tag=interacting] remove hint_purple
+tag @s[tag=!interact_purple] remove hint_purple
 
 # 刷新进程 | 注意暂存，以供后续处理
-scoreboard players operation @s[tag=purple_interact,tag=interacting] temp = $interact_speed setting
+scoreboard players operation @s[tag=interact_purple,tag=interacting] temp = $interact_speed setting
 
 # 判定：进行交互时
 execute as @s[scores={talent_1=7},tag=interacting] run function main:state/3/ability/talent/007

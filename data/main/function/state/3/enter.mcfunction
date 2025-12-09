@@ -49,20 +49,12 @@ scoreboard objectives remove skill.105s
 scoreboard objectives add skill.105s dummy "雾影阴霾 / 加速重计倒数"
 
 # 生成碎片
-$execute at @e[tag=marker_blue,sort=random,limit=$(shard_summon)] run summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b,Invulnerable:1b}
-execute at @e[tag=new_blue] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
-execute as @e[tag=new_blue] run team join shard @s
-execute as @e[tag=new_blue] run tag @s remove new_blue
+$function main:state/3/event/summon/blue {num:"$(shard_summon)"}
 execute if score $echo data matches 2 store result storage ms:temp num int 1 run data get storage ms:map shard_summon 0.3
 execute if score $echo data matches 2 run function main:state/3/echo/02 with storage ms:temp
 
 # 生成初始宝盒
-$execute at @e[tag=marker_gray,sort=random,limit=$(chest_summon)] run summon block_display ~ ~ ~ {Tags:[game_entity,new_gray,gray],block_state:{Name:light_gray_shulker_box},transformation:{scale:[0.5f,0.5f,0.5f],translation:[-0.25f,0f,-0.25f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
-execute at @e[tag=new_gray] run particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0.1 0.2 0 7 force @a
-execute as @e[tag=new_gray] run team join chest @s
-execute as @e[tag=new_gray] run tag @s remove new_gray
-scoreboard players set $3_chest tick.general 180
-execute if score $echo data matches 4 run scoreboard players set $3_chest tick.general 60
+$function main:state/3/event/summon/gray {num:"$(chest_summon)"}
 
 # 标题
 title @a title ""

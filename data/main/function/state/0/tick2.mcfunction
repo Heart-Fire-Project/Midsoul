@@ -16,6 +16,8 @@ execute as @a[x=-14,y=39,z=3,dx=2,dy=2,dz=5] at @s run tp @s ~5 ~-39 ~6
 execute as @a[x=-1,y=-14,z=-11,dx=2,dy=2,dz=5] at @s run tp @s ~-8 ~14 ~20
 
 # 普通跑酷终点屏障侦测
+execute if entity @a[x=-7,y=18,z=-7,dx=1,dy=2,dz=1] run fill -6 16 -6 -7 17 -7 air
+execute if entity @a[x=-7,y=18,z=-7,dx=1,dy=2,dz=1] run scoreboard players set $0_parkour tick.general 3
 execute if score $0_parkour tick.general matches 1.. run scoreboard players remove $0_parkour tick.general 1
 execute if score $0_parkour tick.general matches ..0 run fill -6 16 -6 -7 17 -7 barrier
 

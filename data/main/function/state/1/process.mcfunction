@@ -16,12 +16,12 @@ execute if score $1_process tick.general matches 1439 run bossbar set midsoul:1 
 
 # 1439 >> 1320 | 管理员确认 中途
 execute if score $1_process tick.general matches 1320..1439 run function main:state/1/bossbar/admin
-execute if score $1_process tick.general matches 1320..1439 as @a[team=admin,scores={detect.interact=5000},tag=!join_check] run function main:state/1/player_enter/transfer
-execute if score $1_process tick.general matches 1320..1439 run tag @a[team=admin,scores={detect.interact=5001},tag=!join_check] add join_check
+execute if score $1_process tick.general matches 1320..1439 as @a[team=admin,scores={detect.interact=5000},tag=!check_join] run function main:state/1/player_enter/transfer
+execute if score $1_process tick.general matches 1320..1439 run tag @a[team=admin,scores={detect.interact=5001},tag=!check_join] add check_join
 execute if score $1_process tick.general matches 1380 run playsound block.note_block.xylophone player @a[team=!spectator] 0 1000000 0 120000
 execute if score $1_process tick.general matches 1360 run playsound block.note_block.xylophone player @a[team=!spectator] 0 1000000 0 120000
 execute if score $1_process tick.general matches 1340 run playsound block.note_block.xylophone player @a[team=!spectator] 0 1000000 0 120000
-execute unless entity @a[team=admin,tag=!join_check] if score $1_process tick.general matches 1320.. run scoreboard players set $1_process tick.general 1320
+execute unless entity @a[team=admin,tag=!check_join] if score $1_process tick.general matches 1320.. run scoreboard players set $1_process tick.general 1320
 
 # 1320 | 管理员确认 结束
 execute if score $1_process tick.general matches 1320 run playsound block.note_block.iron_xylophone player @a[team=!spectator] 0 1000000 0 120000
@@ -185,7 +185,7 @@ execute if score $1_process tick.general matches 959 if score $ability temp matc
 execute if score $1_process tick.general matches 959 if score $ability temp matches 2 run scoreboard players set $1_process tick.general 559
 
 # 959 >> 160 | 能力选择 中途
-execute if score $1_process tick.general matches 160..959 as @a[scores={detect.interact=5100..5400},tag=!ability_check,tag=game_player] run function main:state/1/ability/selecting
+execute if score $1_process tick.general matches 160..959 as @a[scores={detect.interact=5100..5400},tag=!check_ability,tag=game_player] run function main:state/1/ability/selecting
 execute if score $1_process tick.general matches 160..959 run function main:state/1/bossbar/ability
 execute if score $1_process tick.general matches 260 run playsound block.note_block.bit player @a[tag=game_player] 0 1000000 0 120000 1
 execute if score $1_process tick.general matches 240 run playsound block.note_block.bit player @a[tag=game_player] 0 1000000 0 120000 1

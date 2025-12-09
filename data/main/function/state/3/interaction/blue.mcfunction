@@ -1,4 +1,4 @@
-tag @a[distance=..0.7,tag=blue_interact,scores={tick.general=700..}] add interact_fin
+tag @a[distance=..0.7,tag=interact_blue,scores={tick.general=700..}] add interact_fin
 
 # 完成碎片收集
 scoreboard players add $shard_collect data 1
@@ -8,10 +8,27 @@ particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a ~ ~ ~ 0.5 1
 
 # 实时表现分
+scoreboard players operation $value temp = $soul_count data
+execute if score $value temp matches ..3 run scoreboard players set $value temp 4
 scoreboard players add @a[tag=interact_fin] temp.collect 1
-tellraw @a[tag=interact_fin,scores={setting.instant_rating=1}] [{text:" +20 | ",color:"#009295"},{translate:"ms.rating.collect",fallback:"碎片收集"}]
-tellraw @a[tag=interact_fin,scores={setting.instant_rating=1,temp.collect=5}] [{text:" +30 | ",color:"#009295"},{translate:"ms.rating.collect",fallback:"碎片收集"}," ×5"]
-tellraw @a[tag=interact_fin,scores={setting.instant_rating=1,temp.collect=10}] [{text:" +50 | ",color:"#009295"},{translate:"ms.rating.collect",fallback:"碎片收集"}," ×10"]
+scoreboard players set $score temp 800
+execute store result score $goal temp run data get storage ms:map shard_goal
+scoreboard players operation $score temp /= $goal temp
+scoreboard players operation $score temp *= $value temp
+scoreboard players operation $score temp /= #4 data
+tellraw @a[tag=interact_fin,scores={setting.instant_rating=1}] [{text:" +",color:"#009295"},{score:{name:"$score",objective:"temp"}}," | ",{translate:"ms.rating.collect",fallback:"碎片收集"}]
+scoreboard players operation $goal temp /= #4 data
+scoreboard players set $score temp 30
+scoreboard players operation $score temp *= $value temp
+scoreboard players operation $score temp /= #4 data
+execute as @a[tag=interact_fin,scores={setting.instant_rating=1}] if score @s temp.collect = $goal temp run tellraw @s [{text:" +",color:"#009295"},{score:{name:"$score",objective:"temp"}}," | ",{translate:"ms.rating.collect",fallback:"碎片收集"}," 25%"]
+execute store result score $goal temp run data get storage ms:map shard_goal
+scoreboard players operation $goal temp *= #2 data
+scoreboard players operation $goal temp /= #5 data
+scoreboard players set $score temp 50
+scoreboard players operation $score temp *= $value temp
+scoreboard players operation $score temp /= #4 data
+execute as @a[tag=interact_fin,scores={setting.instant_rating=1}] if score @s temp.collect = $goal temp run tellraw @s [{text:" +",color:"#009295"},{score:{name:"$score",objective:"temp"}}," | ",{translate:"ms.rating.collect",fallback:"碎片收集"}," 40%"]
 
 # 判定：收集到灵魂碎片时
 execute as @a[tag=interact_fin,scores={talent_1=1}] at @s run function main:state/3/ability/talent/001a

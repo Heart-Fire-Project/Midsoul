@@ -10,8 +10,8 @@ tag @s remove hidden_parkour
 tag @s remove queryer
 tag @s remove quering
 tag @s remove game_player
-tag @s remove join_check
-tag @s remove ability_check
+tag @s remove check_join
+tag @s remove check_ability
 tag @s remove echo_target
 tag @s remove rated_victim
 tag @s remove item_on

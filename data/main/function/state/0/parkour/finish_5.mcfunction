@@ -1,7 +1,3 @@
-# 开门大吉
-fill -6 16 -6 -7 17 -7 air
-scoreboard players set $0_parkour tick.general 5
-
 # 完成转换
 scoreboard players operation @s temp2 = @s tick.parkour
 scoreboard players set @s state 0

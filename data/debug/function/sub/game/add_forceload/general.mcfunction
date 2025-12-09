@@ -1,7 +1,7 @@
 # 为自定义地图添加常加载
 function main:lib/map/data
 scoreboard players reset $num temp
-execute unless data storage ms:temp {forceload1:""} run scoreboard players add $num temp 1
+execute unless data storage ms:temp {forceload1:"×"} run scoreboard players add $num temp 1
 execute unless data storage ms:temp {forceload2:""} run scoreboard players add $num temp 1
 execute unless data storage ms:temp {forceload3:""} run scoreboard players add $num temp 1
 

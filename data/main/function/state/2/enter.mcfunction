@@ -27,4 +27,4 @@ title @a title ""
 title @a subtitle [{text:"» ",color:"#50A7D9",bold:true},{translate:"ms.title.2.starting",fallback:"游戏即将开始",bold:false},{text:" «",bold:true}]
 
 # 玩家入场
-function main:state/2/player_enter/general
+function main:state/2/player_enter/general with storage ms:map

@@ -10,8 +10,9 @@ execute if score $shard_summon temp < $shard_goal temp run scoreboard players se
 execute if score $chest_max temp < $chest_summon temp run scoreboard players set $check_failure temp 1
 
 # 只要有一个，则判定为数据缺失
-execute if data storage ms:temp {forceload1:""} run scoreboard players set $check_failure temp 2
-execute if data storage ms:temp {shard_summon:""} run scoreboard players set $check_failure temp 2
-execute if data storage ms:temp {shard_goal:""} run scoreboard players set $check_failure temp 2
-execute if data storage ms:temp {chest_summon:""} run scoreboard players set $check_failure temp 2
-execute if data storage ms:temp {chest_max:""} run scoreboard players set $check_failure temp 2
+execute if data storage ms:temp {forceload1:"×"} run scoreboard players set $check_failure temp 2
+execute if data storage ms:temp {center:"×"} run scoreboard players set $check_failure temp 2
+execute if data storage ms:temp {shard_summon:"×"} run scoreboard players set $check_failure temp 2
+execute if data storage ms:temp {shard_goal:"×"} run scoreboard players set $check_failure temp 2
+execute if data storage ms:temp {chest_summon:"×"} run scoreboard players set $check_failure temp 2
+execute if data storage ms:temp {chest_max:"×"} run scoreboard players set $check_failure temp 2

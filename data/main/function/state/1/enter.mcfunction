@@ -4,8 +4,8 @@ stopsound @a record
 tp @e[type=mannequin,tag=lobby_entity] 0 -100 0
 kill @e[tag=lobby_entity]
 tag @a remove game_player
-tag @a remove join_check
-tag @a remove ability_check
+tag @a remove check_join
+tag @a remove check_ability
 
 # 强制结算经验
 execute as @a run scoreboard players operation @s stat.exp += @s exp.temp

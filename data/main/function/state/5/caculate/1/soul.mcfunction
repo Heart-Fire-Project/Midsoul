@@ -4,9 +4,20 @@ tellraw @s [{text:"-------------- ",color:"#7367F0"},{translate:"ms.info.end.11"
 # 碎片收集
 execute unless score @s temp.collect matches -2147483648..2147483647 run scoreboard players set @s temp.collect 0
 scoreboard players operation @s temp = @s temp.collect
-scoreboard players operation @s temp *= #20 data
-scoreboard players add @s[scores={temp.collect=5..}] temp 30
-scoreboard players add @s[scores={temp.collect=10..}] temp 50
+scoreboard players operation @s temp *= #800 data
+execute store result score $goal temp run data get storage ms:map shard_goal
+scoreboard players operation @s temp /= $goal temp
+execute store result score $bonus_1 temp run data get storage ms:map shard_goal
+scoreboard players operation $bonus_1 temp /= #4 data
+execute store result score $bonus_2 temp run data get storage ms:map shard_goal
+scoreboard players operation $bonus_2 temp *= #2 data
+scoreboard players operation $bonus_2 temp /= #5 data
+execute if score @s temp.collect >= $bonus_1 temp run scoreboard players add @s temp 30
+execute if score @s temp.collect >= $bonus_2 temp run scoreboard players add @s temp 50
+scoreboard players operation $value temp = $soul_count data
+execute if score $value temp matches ..3 run scoreboard players set $value temp 4
+scoreboard players operation @s temp *= $value temp
+scoreboard players operation @s temp /= #4 data
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.collect",fallback:"碎片收集",color:"#009295"}," | +",{text:"00",color:"#052A32"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.collect",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.collect",fallback:"碎片收集",color:"#009295"}," | +",{text:"0",color:"#052A32"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.collect",name:"@s"}},"×)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.collect",fallback:"碎片收集",color:"#009295"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.collect",name:"@s"}},"×)"]

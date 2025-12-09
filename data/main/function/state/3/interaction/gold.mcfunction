@@ -1,4 +1,4 @@
-tag @a[distance=..0.7,tag=gold_interact,scores={tick.general=1400..}] add interact_fin
+tag @a[distance=..0.7,tag=interact_gold,scores={tick.general=1400..}] add interact_fin
 
 # 完成灵灯点亮
 particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a

@@ -1,7 +1,7 @@
 # 出击 | 注意被强制擦刀的场合
 # 确认是否是有效击中
-execute unless entity @p[tag=rated_victim] run tag @s add striked
-tag @p[tag=rated_victim] remove rated_victim
+execute unless entity @p[tag=rated_victim,distance=..3] run tag @s add striked
+tag @p[tag=rated_victim,distance=..3] remove rated_victim
 
 # 进入擦刀状态
 scoreboard players set @s tick.general 14000
@@ -23,6 +23,9 @@ tellraw @s[tag=!striked,scores={setting.instant_rating=1,temp.hit=6}] [{text:" +
 
 # 进度
 execute if score @s tick.off_ground matches 20.. run advancement grant @s only main:hidden/3
+
+# 去除强制擦刀标签
+tag @s remove striked
 
 # 教程
 advancement grant @s[tag=!striked] only main:tutorial/player/2
