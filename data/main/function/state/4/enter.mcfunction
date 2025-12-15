@@ -49,7 +49,7 @@ execute store result bossbar midsoul:heed max run scoreboard players get $4_port
 execute store result bossbar midsoul:warn max run scoreboard players get $4_portal tick.general
 
 # 设置速度
-execute as @a[team=guardian] run attribute @s movement_speed base set 0.14
+execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.14
 execute if score $echo data matches 6 as @a[team=soul,scores={state=0}] run attribute @s movement_speed base set 0.175
 execute if score $echo data matches 6 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.21
 

@@ -10,8 +10,8 @@ execute at @a[team=soul,scores={state=0}] run tag @e[distance=50..80,tag=marker_
 
 # 选择优先点位，若无效则扩大范围
 tag @e[tag=summon_good,tag=!summon_bad,tag=!summon_no,limit=1,sort=random] add summon_select
-execute unless entity @e[tag=summon_select] run tag @e[tag=!summon_bad,tag=!summon_no,limit=1,sort=random] add summon_select
-execute unless entity @e[tag=summon_select] run tag @e[tag=!summon_no,limit=1,sort=random] add summon_select
+execute unless entity @e[tag=summon_select] run tag @e[tag=marker_gold,tag=!summon_bad,tag=!summon_no,limit=1,sort=random] add summon_select
+execute unless entity @e[tag=summon_select] run tag @e[tag=marker_gold,tag=!summon_no,limit=1,sort=random] add summon_select
 
 # 至少得到一个点位，进行生成
 execute at @e[tag=summon_select] run summon block_display ~ ~ ~ {Tags:[game_entity,new_gold,gold],Glowing:1b,block_state:{Name:soul_lantern},transformation:{scale:[1.4f,1.4f,1.4f],translation:[-0.7f,0f,-0.7f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}

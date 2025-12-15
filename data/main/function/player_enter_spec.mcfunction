@@ -1,3 +1,6 @@
+# 去除状态效果
+effect clear @s
+
 # 基础数值设定
 team join spectator @s
 attribute @s movement_speed base set 0.1

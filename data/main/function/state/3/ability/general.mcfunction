@@ -2,7 +2,7 @@
 execute as @a[team=soul,scores={tick.skill=-23700..-23500,skill=4}] run function main:state/3/ability/skill/004t
 execute at @e[tag=S005] run particle portal ~ ~0.2 ~ 0.2 0.3 0.2 1 4 force @a[team=soul]
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:state/3/ability/skill/102t
-execute as @a[scores={skill.103=1..}] at @s run function main:state/3/ability/skill/103t
+execute as @a[scores={skill.103=1..},team=soul] at @s run function main:state/3/ability/skill/103t
 execute as @a[scores={skill.105s=1..}] at @s run function main:state/3/ability/skill/105t
 
 # 天赋

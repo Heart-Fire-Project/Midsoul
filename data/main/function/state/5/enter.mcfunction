@@ -12,7 +12,7 @@ execute as @a[team=soul] run function main:state/3/player/soul/dead
 
 # 顺便让守卫者别一直在擦刀状态
 scoreboard players set @a[tag=game_player] state 0
-execute if score $mode data matches 1..2 as @a[team=guardian] run function main:state/3/effect
+execute if score $mode data matches 1..2 as @a[team=guardian] run function main:state/3/player/effect
 
 # 重设计分板
 scoreboard players set $5_ending tick.general 250
