@@ -13,7 +13,7 @@ tp @s @e[tag=S103_t,limit=1]
 
 # 给予效果
 effect give @s speed 20 0
-effect give @a[tag=S103] glowing 5 0
+effect give @a[tag=S103] glowing 3 0
 
 # 去除 tag
 tag @e remove S103

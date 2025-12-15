@@ -50,7 +50,7 @@ execute if score $index_page setting matches 2 run function base:merge_sign {x:"
 execute if score $index_page setting matches 2 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 2 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 2 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"spectral_arrow"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-execute if score $index_page setting matches 2 run summon item -1 12.1 4 {Tags:[index_entity],Item:{id:"echo_shard"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 2 run summon item -1 12.1 4 {Tags:[index_entity],Item:{id:"resin_clump"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 2 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"compass"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 2 run summon item -3 12.1 4 {Tags:[index_entity],Item:{id:"ominous_bottle"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 2 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"light_gray_dye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
@@ -70,7 +70,7 @@ execute if score $index_page setting matches 3 run summon item -1 12.1 4 {Tags:[
 execute if score $index_page setting matches 3 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"magma_cream"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 3 run summon item -3 12.1 4 {Tags:[index_entity],Item:{id:"soul_torch"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 3 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"feather"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-execute if score $index_page setting matches 3 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"echo_shard"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 3 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"prismarine_crystals"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 3 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"cyan_dye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 图鉴 T1
@@ -85,7 +85,7 @@ execute if score $index_page setting matches 4 run function base:merge_sign {x:"
 execute if score $index_page setting matches 4 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 4 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"crimson_fungus"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 4 run summon item -1 12.1 4 {Tags:[index_entity],Item:{id:"red_dye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-execute if score $index_page setting matches 4 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"book"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 4 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"blade_pottery_sherd"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 4 run summon item -3 12.1 4 {Tags:[index_entity],Item:{id:"black_candle"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 4 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"recovery_compass"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 4 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"redstone"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}

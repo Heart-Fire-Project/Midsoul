@@ -42,12 +42,12 @@ scoreboard players reset @s[tag=!interacting] tick.general
 scoreboard players operation @s[tag=interacting] temp = $interact_speed setting
 
 # 判定：进行交互时
-execute if score $echo data matches 8 as @s[tag=interact_blue,tag=interacting] run function main:state/3/echo/08
 execute as @s[scores={talent_1=1},tag=interact_blue,tag=interacting,tag=talent_1_on] run function main:state/3/ability/talent/001a
 execute as @s[scores={talent_2=1},tag=interact_blue,tag=interacting,tag=talent_2_on] run function main:state/3/ability/talent/001a
-execute as @s[scores={talent_1=7},tag=interacting] run function main:state/3/ability/talent/007
-execute as @s[scores={talent_2=7},tag=interacting] run function main:state/3/ability/talent/007
+execute as @s[team=soul,scores={talent_1=7},tag=interacting] run function main:state/3/ability/talent/007
+execute as @s[team=soul,scores={talent_2=7},tag=interacting] run function main:state/3/ability/talent/007
 execute if score $echo data matches 5 as @s[team=soul,tag=interacting] run function main:state/3/echo/05
+execute if score $echo data matches 8 as @s[tag=interact_blue,tag=interacting] run function main:state/3/echo/08
 
 # 额外判定与结算
 execute if score $undying data matches 1 run scoreboard players operation @s[tag=interact_gold] temp += $interact_speed setting

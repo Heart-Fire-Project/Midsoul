@@ -9,7 +9,7 @@ execute as @e[tag=new_gray] run team join chest @s
 execute as @e[tag=new_gray] run tag @s remove new_gray
 
 # 重置计时器
-execute if score $chest_current temp < $chest_max temp run scoreboard players set $3_chest tick.general 180
-execute if score $chest_current temp < $chest_max temp if score $echo data matches 3 run scoreboard players set $3_chest tick.general 60
+scoreboard players set $3_chest tick.general 180
+execute if score $echo data matches 3 run scoreboard players set $3_chest tick.general 60
 
 tag @e remove summon_no

@@ -40,7 +40,7 @@
     {
         "function":"set_components",
         "components":{
-            "item_model":"book"
+            "item_model":"blade_pottery_sherd"
         }
     }
 ]

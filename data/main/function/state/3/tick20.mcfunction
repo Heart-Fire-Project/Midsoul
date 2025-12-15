@@ -12,7 +12,7 @@ execute as @e[tag=blue,scores={tick.general=0}] run scoreboard players reset @s 
 
 # 灵魂宝物箱计时
 execute if score $3_chest tick.general matches 1.. run scoreboard players remove $3_chest tick.general 1
-execute if score $3_chest tick.general matches 0 run function main:state/3/event/summon/gray with storage ms:map
+execute if score $3_chest tick.general matches 0 run function main:state/3/event/summon/gray_refresh with storage ms:map
 
 # 游戏内提示计时
 execute if score $ingame_tip tick.general matches 1.. run scoreboard players remove $ingame_tip tick.general 1

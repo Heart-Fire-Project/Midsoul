@@ -46,7 +46,7 @@
     {
         "function":"set_components",
         "components":{
-            "item_model":"echo_shard"
+            "item_model":"prismarine_crystals"
         }
     }
 ]

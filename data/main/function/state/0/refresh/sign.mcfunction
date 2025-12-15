@@ -22,6 +22,8 @@ execute if score $map setting matches 2 run function base:merge_sign {x:"-11",y:
 execute unless score $map setting matches 2 run function base:merge_sign {x:"-11",y:"6",z:"-6",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.2",fallb_2:"02",fallb_3:"镇灵塔楼",command:"trigger detect.interact set 102"}
 execute if score $map setting matches 3 run function base:merge_sign {x:"-11",y:"6",z:"-5",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.map.3",fallb_2:"03",fallb_3:"山间湖谷",command:"trigger detect.interact set 103"}
 execute unless score $map setting matches 3 run function base:merge_sign {x:"-11",y:"6",z:"-5",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.3",fallb_2:"03",fallb_3:"山间湖谷",command:"trigger detect.interact set 103"}
+execute if score $map setting matches 4 run function base:merge_sign {x:"-11",y:"6",z:"-4",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.map.4",fallb_2:"04",fallb_3:"心火特区",command:"trigger detect.interact set 104"}
+execute unless score $map setting matches 4 run function base:merge_sign {x:"-11",y:"6",z:"-4",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.4",fallb_2:"04",fallb_3:"心火特区",command:"trigger detect.interact set 104"}
 
 # 模式设定
 execute if score $mode setting matches 1 run function base:merge_sign {x:"-8",y:"6",z:"-11",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.mode.1",fallb_2:"01",fallb_3:"灵气碎片",command:"trigger detect.interact set 201"}

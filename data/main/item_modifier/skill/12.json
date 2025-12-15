@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 65  ⌚ 12 > ",
+                    "text":"⚡ 60  ⌚ 12 > ",
                     "color":"red",
                     "italic":false
                 },
@@ -57,7 +57,7 @@
     {
         "function":"set_components",
         "components":{
-            "item_model":"echo_shard"
+            "item_model":"resin_clump"
         }
     }
 ]

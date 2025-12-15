@@ -7,7 +7,7 @@ playsound block.conduit.activate player @a 0 1000000 0 120000
 # 刷新效果
 function main:state/3/player/effect
 effect give @s speed 7 4
-effect give @s resistance 15 4
+scoreboard players set @s tick.invincible 300
 
 # 判定：灵魂解除垂死状态时
 execute as @a[team=soul,scores={talent_1=3,state=0}] run function main:state/3/ability/talent/003f

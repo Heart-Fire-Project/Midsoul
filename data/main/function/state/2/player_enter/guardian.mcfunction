@@ -14,6 +14,7 @@ execute as @r[x=0,y=0,z=0,distance=..300,team=guardian] run function main:state/
 effect clear @s
 attribute @s movement_speed base set 0
 attribute @s jump_strength base set 0
+attribute @s water_movement_efficiency base set 10
 effect give @s darkness 7 6 true
 effect give @s glowing 7 6 true
 

@@ -42,36 +42,8 @@ execute if entity @a[team=soul,scores={state=1}] as @a[tag=interact_fin,scores={
 execute if entity @s[tag=T107] run function main:state/3/ability/talent/107f
 execute if score $echo data matches 9 run function main:state/3/event/summon/blue {num:"1"}
 
-# 地图变量
-# 聚光圣殿 - 2*4*6
-execute if score $shard_collect data matches 04 run fill 1184 13 1127 1182 13 1129 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 04 run fill 1196 13 1133 1198 13 1131 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 08 run fill 1182 13 1130 1184 13 1132 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 08 run fill 1196 13 1130 1198 13 1128 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 12 run fill 1183 13 1133 1185 13 1135 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 12 run fill 1197 13 1127 1195 13 1125 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 16 run fill 1186 13 1137 1188 13 1135 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 16 run fill 1194 13 1125 1192 13 1123 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 20 run fill 1189 15 1135 1191 15 1137 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 20 run fill 1191 15 1123 1189 15 1125 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 24 run fill 1192 13 1136 1193 13 1137 pearlescent_froglight replace bone_block
-execute if score $shard_collect data matches 24 run fill 1188 13 1124 1187 13 1123 pearlescent_froglight replace bone_block
-# 镇灵塔楼 - 3*6
-execute if score $shard_collect data matches 03 run setblock 1051 41 -999 red_candle[lit=true]
-execute if score $shard_collect data matches 06 run setblock 1051 41 -995 red_candle[lit=true]
-execute if score $shard_collect data matches 09 run setblock 1049 41 -998 red_candle[lit=true]
-execute if score $shard_collect data matches 12 run setblock 1053 41 -996 red_candle[lit=true]
-execute if score $shard_collect data matches 15 run setblock 1053 41 -998 red_candle[lit=true]
-execute if score $shard_collect data matches 18 run setblock 1049 41 -996 red_candle[lit=true]
-# 山间湖谷 - 5*8
-execute if score $shard_collect data matches 05 run setblock -868 20 1100 crying_obsidian
-execute if score $shard_collect data matches 10 run setblock -870 20 1099 crying_obsidian
-execute if score $shard_collect data matches 15 run setblock -869 20 1098 crying_obsidian
-execute if score $shard_collect data matches 20 run setblock -868 20 1098 crying_obsidian
-execute if score $shard_collect data matches 25 run setblock -869 20 1100 crying_obsidian
-execute if score $shard_collect data matches 30 run setblock -868 20 1099 crying_obsidian
-execute if score $shard_collect data matches 35 run setblock -870 20 1098 crying_obsidian
-execute if score $shard_collect data matches 40 run setblock -870 20 1100 crying_obsidian
+# 地图内变量
+$function main:lib/map/variety/apply {shard_goal:"$(shard_goal)"}
 
 # 灵气等级 | 为玩家提供碎片提示
 # 1 - 收集展示邻近碎片 - 50%

@@ -18,6 +18,8 @@ execute as @a[team=soul,scores={talent_2=3,state=0}] run function main:state/3/a
 
 # 恢复玩家属性
 attribute @s movement_speed base set 0.1
+attribute @s sneaking_speed base set 0.3
+attribute @s water_movement_efficiency base set 0.0
 attribute @s scale base set 1.0
 attribute @s gravity base set 0.08
 attribute @s jump_strength base set 0.42

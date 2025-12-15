@@ -1,0 +1,1 @@
+execute if score $map data matches 4 run function main:lib/map/tick1/4

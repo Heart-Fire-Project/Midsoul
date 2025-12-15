@@ -7,6 +7,7 @@ execute if score @s detect.interact matches -4 run function debug:panel/4
 # 主要选项
 execute if score @s detect.interact matches -999..-100 run tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 execute if score @s detect.interact matches -777 run function debug:leave_admin
+execute if score @s detect.interact matches -888 run function debug:end_game
 execute if score @s detect.interact matches -999 run function main:init
 
 ## 设定
@@ -19,6 +20,7 @@ execute if score @s detect.interact matches -1200 run function debug:sub/select 
 execute if score @s detect.interact matches -1201 run function debug:sub/select {type:"map",num:"1"}
 execute if score @s detect.interact matches -1202 run function debug:sub/select {type:"map",num:"2"}
 execute if score @s detect.interact matches -1203 run function debug:sub/select {type:"map",num:"3"}
+execute if score @s detect.interact matches -1204 run function debug:sub/select {type:"map",num:"4"}
 execute if score @s detect.interact matches -1299 run function debug:sub/setting/map_tp
 
 # 回响
@@ -52,6 +54,7 @@ execute if score @s detect.interact matches -1602 run function debug:sub/binary 
 execute if score @s detect.interact matches -2101 if score $state data matches 3..4 run function debug:sub/game/switch_map_pre {value:"1"}
 execute if score @s detect.interact matches -2102 if score $state data matches 3..4 run function debug:sub/game/switch_map_pre {value:"2"}
 execute if score @s detect.interact matches -2103 if score $state data matches 3..4 run function debug:sub/game/switch_map_pre {value:"3"}
+execute if score @s detect.interact matches -2104 if score $state data matches 3..4 run function debug:sub/game/switch_map_pre {value:"4"}
 execute if score @s detect.interact matches -2191 if score $state data matches 3..4 run function debug:sub/game/switch_map_pre {value:"-1"}
 execute if score @s detect.interact matches -2192 if score $state data matches 3..4 run function debug:sub/game/switch_map_pre {value:"-2"}
 execute if score @s detect.interact matches -2193 if score $state data matches 3..4 run function debug:sub/game/switch_map_pre {value:"-3"}

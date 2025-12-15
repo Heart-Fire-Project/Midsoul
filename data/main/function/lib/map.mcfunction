@@ -31,6 +31,11 @@ execute if score $map setting matches 3 run tellraw @a [{text:"» ",bold:true,co
 execute if score $map setting matches 3 run tellraw @a ["     ◈ ",{translate:"ms.map.source",fallback:"地图原筑"}," | ZachOBuilds ",{text:"[🌐]",click_event:{action:"open_url",url:"https://www.minecraftmaps.com/48285-mountain-lake-village"},color:"aqua"}]
 execute if score $map setting matches 3 run data merge storage ms:temp {size:5,complex:3}
 
+execute if score $map setting matches 4 run tellraw @a [{text:"\n» ",bold:true,color:"#7367F0"},{translate:"ms.map.select",fallback:"选定游戏地图",bold:false}," ",{translate:"ms.map.4",fallback:"心火特区",bold:false,color:"aqua"}]
+execute if score $map setting matches 4 run tellraw @a [{text:"» ",bold:true,color:"gray"},{translate:"ms.map.4.desc",fallback:"并非由真实故事改编，我的意思是心火没钱买地皮",bold:false}]
+execute if score $map setting matches 4 run tellraw @a ["     ◈ ",{translate:"ms.map.builder",fallback:"地图构建"}," | Mol1Sama feat. Roser ",{text:"<",color:"#8080FF"},{text:"O",color:"#8E80FF"},{text:"r",color:"#9C80FF"},{text:"i",color:"#AA80FF"},{text:"g",color:"#B880FF"},{text:"i",color:"#C780FF"},{text:"n",color:"#D580FF"},{text:"a",color:"#E380FF"},{text:"l",color:"#F180FF"},{text:">",color:"#FF80FF"}]
+execute if score $map setting matches 4 run data merge storage ms:temp {size:3,complex:3}
+
 # 显示地图大小&复杂
 scoreboard players reset $size temp
 execute if data storage ms:temp {size:0} run scoreboard players set $size temp 0

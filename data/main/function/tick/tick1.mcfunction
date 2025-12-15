@@ -23,6 +23,9 @@ execute as @a[team=soul] run scoreboard players add $alive data 1
 scoreboard players reset $undying data
 execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
 
+# 地图特殊机制，一般是即时效果
+execute if score $state data matches 3..5 run function main:lib/map/tick1/general
+
 # 隐身侦测
 tag @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] add invisible
 tag @a[gamemode=spectator] add invisible

@@ -11,6 +11,7 @@ execute as @a[team=guardian] run scoreboard players remove $guardian temp 1
 execute if score $guardian temp matches ..0 run team join soul @a[team=prepare]
 
 # 第一次 | 遍历
+scoreboard players reset * temp2
 scoreboard players set $num temp 1
 execute as @a[scores={entity_id=1}] run function main:state/1/role/random/1r
 

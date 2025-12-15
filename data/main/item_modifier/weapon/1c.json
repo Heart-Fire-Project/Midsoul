@@ -36,6 +36,7 @@
         "components":{
             "!max_damage":{},
             "item_model":"diamond_sword",
+            "enchantments":{},
             "attribute_modifiers":[
                 {
                     "slot":"mainhand",

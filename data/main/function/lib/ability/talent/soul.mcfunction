@@ -20,6 +20,6 @@ $tellraw @s[scores={talent_$(num)=1}] [{translate:"ms.talent.001.desc",fallback:
 $tellraw @s[scores={talent_$(num)=2}] [{translate:"ms.talent.002.desc",fallback:"周围 12 格内有守卫者时，移速 +80%%"}]
 $tellraw @s[scores={talent_$(num)=3}] [{translate:"ms.talent.003.desc",fallback:"有灵魂处于垂死状态时，移速 +20%%"}]
 $tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent.004.desc",fallback:"已蓄能且生命未满时，在 2 秒内回复 6 血量"},"\n",{translate:"ms.talent.004.desc.sub",fallback:"蓄能初始需要收集 2 碎片，每次蓄能后 +3\n可蓄能 2 次",color:"gray"}]
-$tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.005.desc",fallback:"蹲下时不作为气息探测目标"}]
+$tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.005.desc",fallback:"蹲下时移动效率提升 100%，且不作为气息探测目标"}]
 $tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent.006.desc",fallback:"收集到灵魂碎片时，所有垂死灵魂的垂死状态持续时间 +5 秒"}]
 $tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent.007.desc",fallback:"交互速度 +5%%；灵气等级每提升 1 级额外 +5%%"},"\n",{translate:"ms.talent.007.desc.sub",fallback:"至多提升至 +20%%",color:"gray"}]

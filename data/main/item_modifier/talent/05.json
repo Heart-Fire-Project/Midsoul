@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.005.desc",
-                "fallback":"蹲下时不作为气息探测目标",
+                "fallback":"蹲下时移动效率提升 100%%，且不作为气息探测目标",
                 "color":"white",
                 "italic":false
             }

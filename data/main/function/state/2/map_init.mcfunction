@@ -1,5 +1,5 @@
 # 重置地图变量
-function main:lib/map/variety_reset
+function main:lib/map/variety/reset
 
 # 设置地图信息
 function main:lib/map/data

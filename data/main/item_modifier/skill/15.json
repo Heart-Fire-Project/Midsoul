@@ -41,18 +41,18 @@
             },
             {
                 "translate":"ms.skill.105.desc.c",
-                "fallback":"剑气若造成伤害则技能时长延长 6 秒，否则技能立刻结束；至多延长 3 次",
-                "color":"gray",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.105.desc.d",
                 "fallback":"选中武器并短按 [%s] 以释放剑气，对周围 3 格内的所有灵魂造成 5 伤害",
                 "with":[
                     {
                         "keybind":"key.drop"
                     }
                 ],
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.105.desc.d",
+                "fallback":"剑气若造成伤害则技能时长延长 6 秒，否则技能立刻结束；至多延长 3 次",
                 "color":"gray",
                 "italic":false
             }
