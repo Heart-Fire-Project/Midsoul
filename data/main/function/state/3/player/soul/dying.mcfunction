@@ -1,6 +1,8 @@
 # 被击倒
-execute as @e[tag=death_mark] if score @s entity_id = @n[tag=soul_down] entity_id run tag @s add target
+scoreboard players operation $value temp = @s entity_id
+execute as @e[tag=death_mark] if score @s entity_id = $value temp run tag @s add target
 tp @s @e[limit=1,tag=target]
+execute unless entity @e[tag=target] run tp @s @e[limit=1,tag=death_mark]
 kill @n[tag=death_mark]
 tag @s remove soul_down
 scoreboard players set @s state 1
