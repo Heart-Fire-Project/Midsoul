@@ -44,24 +44,27 @@ execute if score $5_ending tick.general matches 125 if score $result data matche
 # 个人结算
 execute if score $5_ending tick.general matches 125 as @a[team=revive] run function main:state/5/caculate/1/soul
 execute if score $5_ending tick.general matches 125 as @a[team=dead] run function main:state/5/caculate/1/soul
+execute if score $5_ending tick.general matches 125 as @a[team=soul] run function main:state/5/caculate/1/soul
 execute if score $5_ending tick.general matches 125 as @a[team=guardian] run function main:state/5/caculate/1/guardian
 
 # 短期分判定
-execute if score $5_ending tick.general matches 125 if score $mode data matches 1 as @a[tag=game_player] run function main:state/5/rating
+execute if score $affact_rating data matches 0 run data merge storage ms:mode {affact_rating:false}
+execute if score $5_ending tick.general matches 125 if data storage ms:mode {affact_rating:true} as @a[tag=game_player] run function main:state/5/rating
+execute if score $5_ending tick.general matches 125 if data storage ms:mode {affact_rating:false} run tellraw @a[tag=game_player] [{text:" × ",color:"gray"},{translate:"ms.info.no_rating",fallback:"本局游戏不影响短期分",bold:false}]
 
 # 记录数据
 execute if score $5_ending tick.general matches 125 run tag @a remove mvp
 execute if score $5_ending tick.general matches 125 run scoreboard players set $highest temp 0
 execute if score $5_ending tick.general matches 125 run scoreboard players operation $highest temp > @a[tag=game_player] exp.temp
 execute if score $5_ending tick.general matches 125 as @a if score @s exp.temp = $highest temp run tag @s add mvp
-execute if score $5_ending tick.general matches 125 if score $mode data matches 1 as @a[tag=game_player] run function main:state/5/record
+execute if score $5_ending tick.general matches 125 if data storage ms:mode {affact_data:true} as @a[tag=game_player] run function main:state/5/record
 
 # 全场最佳
 execute if score $5_ending tick.general matches 100 run title @a times 2 60 3
 execute if score $5_ending tick.general matches 100 run playsound ui.button.click player @a 0 1000000 0 120000
 execute if score $5_ending tick.general matches 100 run title @a title {translate:"ms.info.end.mvp",fallback:"全场最佳",color:"#96CBF1"}
 execute if score $5_ending tick.general matches 100 run title @a subtitle {selector:"@a[tag=mvp]",color:"yellow"}
-execute if score $5_ending tick.general matches 100 if score $mode data matches 2 run scoreboard players set @a exp.temp 0
+execute if score $5_ending tick.general matches 100 if data storage ms:mode {affact_exp:false} run scoreboard players set @a exp.temp 0
 
 # 剩下的部分
 execute if score $5_ending tick.general matches 80 run tellraw @a [{text:"» ",bold:true},{translate:"ms.info.return",fallback:"稍后返回大厅……",bold:false}]

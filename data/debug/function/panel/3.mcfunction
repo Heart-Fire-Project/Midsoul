@@ -7,7 +7,7 @@ execute store result storage ms:setting send_feedback byte 1 run gamerule sendCo
 
 # 信息
 tellraw @s {text:"午夜灵魂 // Midnight Soul",color:"#988FF4"}
-tellraw @s ["Version 2.0.0 Beta 8 (",{score:{name:"$build",objective:"data"}},")"]
+tellraw @s ["Version 2.0.0 Beta 9.X (",{score:{name:"$build",objective:"data"}},")"]
 tellraw @s {translate:"ms.version",fallback:"未装载语言包"}
 tellraw @s {translate:"ms.copyright",fallback:"© 2022-2025 心火计划"}
 tellraw @s ""

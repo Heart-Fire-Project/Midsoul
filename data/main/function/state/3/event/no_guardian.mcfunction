@@ -29,5 +29,7 @@ execute if score $color temp matches 8 run title @a[tag=show_title] actionbar [{
 execute if score $color temp matches 9 run title @a[tag=show_title] actionbar [{text:"⏳ ",color:"#FF5555"},{translate:"ms.info.no_guardian",fallback:"守卫者掉线，游戏将在 %s 秒后结束",with:[{score:{name:"$sec",objective:"temp2"}}]}," ⏳"]
 
 # 时间到就炸
+execute if score $3_noguar tick.general matches ..0 run scoreboard players set $affact_rating data 0
+execute if score $3_noguar tick.general matches ..0 run execute as @a[team=soul] run function main:state/4/revive
 execute if score $3_noguar tick.general matches ..0 run function main:state/5/enter
 scoreboard players remove $3_noguar tick.general 1

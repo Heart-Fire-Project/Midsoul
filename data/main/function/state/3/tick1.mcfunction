@@ -46,4 +46,4 @@ scoreboard players reset @a[gamemode=spectator] tick.off_ground
 execute as @a if data entity @s {OnGround:0b} run scoreboard players add @s tick.off_ground 1
 
 # 进程判定
-execute if score $mode data matches 1 run function main:state/3/check_end/1
+execute if data storage ms:mode {logic:"1"} run function main:state/3/check_end/1

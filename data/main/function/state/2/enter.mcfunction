@@ -29,4 +29,8 @@ title @a title ""
 title @a subtitle [{text:"» ",color:"#50A7D9",bold:true},{translate:"ms.title.2.starting",fallback:"游戏即将开始",bold:false},{text:" «",bold:true}]
 
 # 玩家入场
+scoreboard players set $soul_count data 0
+scoreboard players set $guardian_count data 0
+execute as @a[team=guardian] run scoreboard players add $guardian_count data 1
+execute as @a[team=soul] run scoreboard players add $soul_count data 1
 function main:state/2/player_enter/general with storage ms:map

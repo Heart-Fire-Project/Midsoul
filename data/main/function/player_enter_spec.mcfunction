@@ -28,6 +28,7 @@ tag @s remove talent_2_on
 scoreboard players reset @s music
 execute if score $state data matches 0 run function main:state/0/player_enter
 execute if score $state data matches 1 run function main:state/1/player_enter/spectator
+execute if score $state data matches 2..5 run function main:state/3/music_roll
 execute if score $state data matches 2..5 run gamemode spectator @s
 execute if score $state data matches 2..5 run tp @s @r[limit=1,tag=game_player]
 execute if score $state data matches 2..5 run tellraw @s [{text:"» ",bold:true},{translate:"ms.info.mid_spec",fallback:"游戏正在进行中，请稍作等候……",bold:false}]

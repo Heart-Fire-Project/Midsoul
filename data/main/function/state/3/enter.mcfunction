@@ -7,6 +7,7 @@ scoreboard players set $aura_rank data 0
 scoreboard players set $soul_death data 0
 scoreboard players set $soul_revive data 0
 scoreboard players set $stat_gametime tick.general 0
+scoreboard players set $affact_rating data 1
 scoreboard players set $echo_info tick.general 10
 scoreboard players set $3_process tick.general 0
 scoreboard players set $3_echo tick.general -1
@@ -159,3 +160,8 @@ item replace entity @a[tag=game_player] inventory.15 from block 0 -7 0 container
 
 # 去逃避
 execute if score $mode data matches 2 run function main:state/4/enter
+scoreboard players set $guardian temp 0
+execute as @a[team=guardian] run scoreboard players add $guardian temp 1
+execute unless score $guardian_count data = $guardian temp run scoreboard players set $affact_rating data 0
+execute unless score $guardian_count data = $guardian temp as @a[team=soul] run function main:state/4/revive
+execute unless score $guardian_count data = $guardian temp run function main:state/5/enter

@@ -39,9 +39,10 @@ execute if score @s[team=soul] detect.interact matches 5301..5399 run function m
 execute if score @s[team=guardian] detect.interact matches 5301..5399 run function main:lib/ability/talent/guar {num:"2"}
 
 # 锁定
-execute if score @s detect.interact matches 5400 run function main:state/1/ability/check
+execute if score @s detect.interact matches 5401 run function main:state/1/ability/check
 
 # 音效
-execute unless score @s detect.interact matches 5400 run playsound ui.button.click player @s 0 1000000 0 120000
-execute unless score @s detect.interact matches 5400 as @s[team=soul] run function main:state/1/ability/panel_s
-execute unless score @s detect.interact matches 5400 as @s[team=guardian] run function main:state/1/ability/panel_g
+execute unless score @s detect.interact matches 5400..5401 run playsound ui.button.click player @s 0 1000000 0 120000
+execute if score @s detect.interact matches 5400 run playsound block.vault.close_shutter player @s 0 1000000 0 120000
+execute unless score @s detect.interact matches 5401 as @s[team=soul] run function main:state/1/ability/panel_s
+execute unless score @s detect.interact matches 5401 as @s[team=guardian] run function main:state/1/ability/panel_g

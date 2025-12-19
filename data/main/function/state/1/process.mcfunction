@@ -76,7 +76,7 @@ execute if score $1_process tick.general matches 1260 unless score $echo data ma
 
 # 1239 | 阵营选择 跳过判定
 execute if score $1_process tick.general matches 1239 run scoreboard players operation $role_assign data = $role_assign setting
-execute if score $1_process tick.general matches 1239 if score $role_assign data matches 0 if score $mode data matches 1..2 run scoreboard players set $role_assign data 1
+execute if score $1_process tick.general matches 1239 if score $role_assign data matches 0 if data storage ms:mode {role:"1"} run scoreboard players set $role_assign data 1
 execute if score $1_process tick.general matches 1239 unless score $role_assign data matches 2..3 run scoreboard players set $1_process tick.general 1019
 
 # 1239 | 阵营选择 开始
@@ -185,7 +185,7 @@ execute if score $1_process tick.general matches 959 if score $ability temp matc
 execute if score $1_process tick.general matches 959 if score $ability temp matches 2 run scoreboard players set $1_process tick.general 559
 
 # 959 >> 160 | 能力选择 中途
-execute if score $1_process tick.general matches 160..959 as @a[scores={detect.interact=5100..5400},tag=!check_ability,tag=game_player] run function main:state/1/ability/selecting
+execute if score $1_process tick.general matches 160..959 as @a[scores={detect.interact=5100..5401},tag=!check_ability,tag=game_player] run function main:state/1/ability/selecting
 execute if score $1_process tick.general matches 160..959 run function main:state/1/bossbar/ability
 execute if score $1_process tick.general matches 260 run playsound block.note_block.bit player @a[tag=game_player] 0 1000000 0 120000 1
 execute if score $1_process tick.general matches 240 run playsound block.note_block.bit player @a[tag=game_player] 0 1000000 0 120000 1
