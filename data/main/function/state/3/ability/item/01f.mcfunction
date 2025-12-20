@@ -5,4 +5,4 @@ scoreboard players set @s item 0
 
 # 人为清除
 effect clear @s[scores={tick.invincible=..0}] resistance
-execute if score $two_guardian state matches 1 run effect give @s resistance infinite 0 true 
+execute if score $two_guardian state matches 1 run effect give @s resistance infinite 0 true

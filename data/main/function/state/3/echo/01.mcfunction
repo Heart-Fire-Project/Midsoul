@@ -2,7 +2,6 @@ tellraw @a [{text:"",color:"light_purple"},{text:"» ",bold:true},{translate:"ms
 
 # 去除掉已有 tag 与效果
 effect clear @a[tag=echo_target] glowing
-effect clear @a[tag=!echo_target] resistance
 tag @a remove echo_target
 
 # 重新选择目标
@@ -14,7 +13,9 @@ playsound block.bell.use player @a[tag=echo_target] 0 1000000 0 120000
 
 # 初始化效果
 effect give @a[tag=echo_target] glowing infinite 0 true
-effect give @a[tag=!echo_target] resistance infinite 4 true
 
 # 重设倒计时
 function main:state/3/echo/init {min:"45",max:"80"}
+scoreboard players operation $value temp = $3_echo tick.general
+scoreboard players operation $value temp *= #20 data
+scoreboard players operation @a[tag=!echo_target] tick.invincible > $value temp

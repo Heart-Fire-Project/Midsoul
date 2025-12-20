@@ -4,5 +4,5 @@ scoreboard players set $3_echo tick.general -1
 
 # 取消所有标记
 effect clear @a[tag=echo_target] glowing
-effect clear @a[tag=!echo_target] resistance
+scoreboard players set @a[tag=!echo_target] tick.invincible 0
 tag @a remove echo_target
