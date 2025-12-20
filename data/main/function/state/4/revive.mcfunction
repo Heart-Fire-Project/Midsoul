@@ -9,7 +9,6 @@ execute at @s run particle firework ~ ~0.4 ~ 0.2 0.1 0.2 0.5 256 force @a
 team join revive @s
 gamemode spectator @s
 playsound block.respawn_anchor.set_spawn player @a 0 1000000 0 120000 0.7
-kill @e[tag=gold,limit=1]
 effect clear @s
 
 # 恢复玩家属性
