@@ -30,8 +30,8 @@ execute as @a[tag=game_player] run function main:state/3/set_exp
 scoreboard players add $stat_gametime tick.general 1
 scoreboard players add $3_process tick.general 1
 scoreboard players add @a[tag=game_player] temp.time 1
-scoreboard players remove @a[scores={tick.enhance=1..}] tick.enhance 1
-scoreboard players remove @a[scores={tick.invincible=1..}] tick.invincible 1
+scoreboard players remove @a[scores={tick.enhance=1..,state=0}] tick.enhance 1
+scoreboard players remove @a[scores={tick.invincible=1..,state=0}] tick.invincible 1
 effect give @a[scores={tick.invincible=20..}] resistance 1 4
 tag @a[tag=rated_victim,scores={tick.invincible=..138}] remove rated_victim
 
