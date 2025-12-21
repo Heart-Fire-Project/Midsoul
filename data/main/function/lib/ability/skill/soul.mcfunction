@@ -12,7 +12,7 @@ tellraw @s[scores={skill=3}] [{text:"⚡ 70 > ",color:"#5599FF"},{translate:"ms.
 tellraw @s[scores={skill=4}] [{text:"⚡ 60  ⌚ 12 > ",color:"#5599FF"},{translate:"ms.tag.strategy",fallback:"策略"}]
 tellraw @s[scores={skill=5}] [{text:"⚡ 90 > ",color:"#5599FF"},{translate:"ms.tag.survive",fallback:"生存"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
 
-tellraw @s[scores={skill=1}] [{translate:"ms.skill.001.desc",fallback:"隐身；移速 +100%%，若距离守卫者不足 12 格则改为移速 +140%%"}]
+tellraw @s[scores={skill=1}] [{translate:"ms.skill.001.desc",fallback:"隐身且移速 +100%%；若距离守卫者 12 格以内则改为移速 +140%%"}]
 tellraw @s[scores={skill=2}] [{translate:"ms.skill.002.desc",fallback:"持续发光且移速 -75%%；技能结束时点亮最近的灵魂之灯，若无则使最近的守卫者在 10 秒内发光且移速 -60%%"},"\n",{translate:"ms.skill.002.desc.sub",fallback:"触发点亮灵魂之灯效果后，本次技能冷却时间 +12 秒",color:"gray"}]
 tellraw @s[scores={skill=3}] [{translate:"ms.skill.003.desc",fallback:"使所有守卫者获得发光，若距离 25 格以内附加移速 -30%%；守卫者距离你越近其所获得效果的时长越长"},"\n",{translate:"ms.skill.003.desc.sub",fallback:"距离 12 格以内时达到上限发光 30 秒与减速 15 秒",color:"gray"}]
 tellraw @s[scores={skill=4}] [{translate:"ms.skill.004.desc",fallback:"若距离守卫者不足 20 格，则自身移速 +100%% 且使 20 格内的守卫者移速 -90%%，或自身移速 -60%%；若距离守卫者大于 20 格，则使最近的守卫者发光并强制进入擦刀状态，或自身传送至最近的守卫者附近并移速 -90%%"},"\n",{translate:"ms.skill.004.desc.sub",fallback:"触发上述负面效果的概率初始为 5%%，但每次使用该技能都会 +7%%，至多提升至 40%%",color:"gray"}]
