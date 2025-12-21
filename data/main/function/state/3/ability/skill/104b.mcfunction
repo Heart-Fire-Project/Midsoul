@@ -1,1 +1,1 @@
-$effect give @s speed 12 $(num)
+$effect give @s speed 10 $(num)

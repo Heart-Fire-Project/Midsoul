@@ -14,7 +14,7 @@ scoreboard players set @a[tag=game_player] state 0
 execute if data storage ms:mode {logic:"1"} as @a[team=guardian] run function main:state/3/player/effect
 
 # 重设计分板
-scoreboard players set $5_ending tick.general 250
+scoreboard players set $5_ending tick.general 240
 
 # 回归初心，最终循环
 execute if data storage ms:mode {logic:"1"} run function main:state/5/loop/1

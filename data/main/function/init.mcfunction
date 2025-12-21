@@ -272,13 +272,14 @@ scoreboard players set #16 data 16
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
 scoreboard players set #30 data 30
+scoreboard players set #35 data 35
 scoreboard players set #50 data 50
 scoreboard players set #60 data 60
 scoreboard players set #65 data 65
 scoreboard players set #61 data 61
 scoreboard players set #64 data 64
-scoreboard players set #75 data 75
 scoreboard players set #100 data 100
+scoreboard players set #115 data 115
 scoreboard players set #182 data 182
 scoreboard players set #256 data 256
 scoreboard players set #800 data 800
@@ -287,7 +288,7 @@ scoreboard players set #18000 data 18000
 scoreboard players set #80000 data 80000
 
 # 版本数据
-scoreboard players set $build data 267
+scoreboard players set $build data 268
 scoreboard players set $map_max data 4
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7

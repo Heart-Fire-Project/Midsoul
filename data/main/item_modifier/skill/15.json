@@ -41,7 +41,7 @@
             },
             {
                 "translate":"ms.skill.105.desc.c",
-                "fallback":"选中武器并短按 [%s] 以释放剑气，对周围 3 格内的所有灵魂造成 5 伤害",
+                "fallback":"选中武器并短按 [%s] 以释放剑气，对周围 3 格内的所有灵魂造成可加成的 5 伤害",
                 "with":[
                     {
                         "keybind":"key.drop"

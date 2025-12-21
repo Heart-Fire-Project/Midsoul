@@ -12,9 +12,9 @@ scoreboard players add @s temp.dying 1
 
 # 实时表现分
 scoreboard players add @p[tag=hit_soul] temp.down 1
-tellraw @p[tag=hit_soul,scores={setting.instant_rating=1}] [{text:" +30 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}]
-tellraw @p[tag=hit_soul,scores={setting.instant_rating=1,temp.down=2}] [{text:" +20 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}," ×2"]
-tellraw @p[tag=hit_soul,scores={setting.instant_rating=1,temp.down=4}] [{text:" +35 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}," ×4"]
+tellraw @p[tag=hit_soul,scores={setting.instant_rating=1}] [{text:" +35 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}]
+tellraw @p[tag=hit_soul,scores={setting.instant_rating=1,temp.down=2}] [{text:" +25 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}," ×2"]
+tellraw @p[tag=hit_soul,scores={setting.instant_rating=1,temp.down=4}] [{text:" +40 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}," ×4"]
 tag @p[tag=hit_soul] remove hit_soul
 
 # 设置时间

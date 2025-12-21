@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 60  ⌚ 12 > ",
+                    "text":"⚡ 60  ⌚ 10 > ",
                     "color":"red",
                     "italic":false
                 },
@@ -41,7 +41,7 @@
             },
             {
                 "translate":"ms.skill.104.desc.c",
-                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%%，上限 +200%%",
+                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%%，上限 +140%%",
                 "color":"white",
                 "italic":false
             },

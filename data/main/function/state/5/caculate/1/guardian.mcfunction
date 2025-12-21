@@ -4,9 +4,9 @@ tellraw @s [{text:"-------------- ",color:"#7367F0"},{translate:"ms.info.end.11"
 # 利刃出击
 execute unless score @s temp.hit matches -2147483648..2147483647 run scoreboard players set @s temp.hit 0
 scoreboard players operation @s temp = @s temp.hit
-scoreboard players operation @s temp *= #20 data
-scoreboard players add @s[scores={temp.hit=3..}] temp 15
-scoreboard players add @s[scores={temp.hit=6..}] temp 25
+scoreboard players operation @s temp *= #30 data
+scoreboard players add @s[scores={temp.hit=3..}] temp 20
+scoreboard players add @s[scores={temp.hit=6..}] temp 35
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.hit",fallback:"利刃出击",color:"#FCEF01"}," | +",{text:"00",color:"#79550E"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.hit",fallback:"利刃出击",color:"#FCEF01"}," | +",{text:"0",color:"#79550E"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.hit",fallback:"利刃出击",color:"#FCEF01"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
@@ -15,9 +15,9 @@ scoreboard players operation @s exp.temp += @s temp
 # 击倒灵魂
 execute unless score @s temp.down matches -2147483648..2147483647 run scoreboard players set @s temp.down 0
 scoreboard players operation @s temp = @s temp.down
-scoreboard players operation @s temp *= #30 data
-scoreboard players add @s[scores={temp.down=2..}] temp 20
-scoreboard players add @s[scores={temp.down=4..}] temp 35
+scoreboard players operation @s temp *= #35 data
+scoreboard players add @s[scores={temp.down=2..}] temp 25
+scoreboard players add @s[scores={temp.down=4..}] temp 40
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.down",fallback:"击倒灵魂",color:"#E47227"}," | +",{text:"00",color:"#67423B"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.down",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.down",fallback:"击倒灵魂",color:"#E47227"}," | +",{text:"0",color:"#67423B"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.down",name:"@s"}},"×)"]
 tellraw @s[scores={temp.down=2..}] [{translate:"ms.rating.down",fallback:"击倒灵魂",color:"#E47227"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.down",name:"@s"}},"×)"]
@@ -46,9 +46,9 @@ scoreboard players operation @s exp.temp += @s temp
 # 对局综合
 scoreboard players set @s temp 0
 scoreboard players operation @s temp = $soul_death data
-scoreboard players operation @s temp *= #75 data
-execute if score $soul_death data matches 3.. run scoreboard players add @s temp 35
-execute if score @s temp matches 411.. run scoreboard players set @s temp 410
+scoreboard players operation @s temp *= #115 data
+execute if score $soul_death data matches 3.. run scoreboard players add @s temp 50
+execute if score @s temp matches 626.. run scoreboard players set @s temp 625
 execute if score $result data matches 3.. run scoreboard players add @s temp 90
 execute if score $result data matches 1..2 run scoreboard players add @s temp 50
 execute if score $result data matches 0 run scoreboard players add @s temp 35

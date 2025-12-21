@@ -17,9 +17,9 @@ scoreboard players set @s[scores={talent_2=4}] tick.talent_2 180000
 
 # 实时表现分
 scoreboard players add @s[tag=!striked] temp.hit 1
-tellraw @s[tag=!striked,scores={setting.instant_rating=1}] [{text:" +20 | ",color:"#FCEF01"},{translate:"ms.rating.hit",fallback:"利刃出击"}]
-tellraw @s[tag=!striked,scores={setting.instant_rating=1,temp.hit=3}] [{text:" +15 | ",color:"#FCEF01"},{translate:"ms.rating.hit",fallback:"利刃出击"}," ×3"]
-tellraw @s[tag=!striked,scores={setting.instant_rating=1,temp.hit=6}] [{text:" +25 | ",color:"#FCEF01"},{translate:"ms.rating.hit",fallback:"利刃出击"}," ×6"]
+tellraw @s[tag=!striked,scores={setting.instant_rating=1}] [{text:" +30 | ",color:"#FCEF01"},{translate:"ms.rating.hit",fallback:"利刃出击"}]
+tellraw @s[tag=!striked,scores={setting.instant_rating=1,temp.hit=3}] [{text:" +20 | ",color:"#FCEF01"},{translate:"ms.rating.hit",fallback:"利刃出击"}," ×3"]
+tellraw @s[tag=!striked,scores={setting.instant_rating=1,temp.hit=6}] [{text:" +35 | ",color:"#FCEF01"},{translate:"ms.rating.hit",fallback:"利刃出击"}," ×6"]
 
 # 进度
 execute if score @s tick.off_ground matches 20.. run advancement grant @s only main:hidden/3

@@ -33,6 +33,7 @@ execute as @a[tag=invisible] unless entity @s[nbt={active_effects:[{id:"minecraf
 
 # 定向至其他函数
 function debug:tick1
+execute if score $state data matches 5 run function main:state/5/tick1
 execute if score $state data matches 4 run function main:state/4/tick1
 execute if score $state data matches 3 run function main:state/3/tick1
 execute if score $state data matches 2 run function main:state/2/tick1

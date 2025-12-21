@@ -30,5 +30,5 @@ scoreboard players add @s stat.death 1
 scoreboard players add $soul_death data 1
 
 # 即时表现分
-execute if score $soul_death data matches ..5 run tellraw @a[team=guardian,scores={setting.instant_rating=1}] [{text:" +75 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}]
-execute if score $soul_death data matches 3 run tellraw @a[team=guardian,scores={setting.instant_rating=1}] [{text:" +35 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}," ×3"]
+execute if score $soul_death data matches ..5 run tellraw @a[team=guardian,scores={setting.instant_rating=1}] [{text:" +115 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}]
+execute if score $soul_death data matches 3 run tellraw @a[team=guardian,scores={setting.instant_rating=1}] [{text:" +50 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}," ×3"]
