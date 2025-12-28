@@ -28,13 +28,13 @@ execute if score @s detect.interact matches 1002 run scoreboard players set @s s
 execute if score @s detect.interact matches 1003 run scoreboard players set @s skill 3
 execute if score @s detect.interact matches 1004 run scoreboard players set @s skill 4
 execute if score @s detect.interact matches 1005 run scoreboard players set @s skill 5
-execute if score @s detect.interact matches 1001..1099 run function main:lib/ability/skill/soul
+execute if score @s detect.interact matches 1001..1099 run function main:lib/ability/skill/info_s
 execute if score @s detect.interact matches 1101 run scoreboard players set @s skill 1
 execute if score @s detect.interact matches 1102 run scoreboard players set @s skill 2
 execute if score @s detect.interact matches 1103 run scoreboard players set @s skill 3
 execute if score @s detect.interact matches 1104 run scoreboard players set @s skill 4
 execute if score @s detect.interact matches 1105 run scoreboard players set @s skill 5
-execute if score @s detect.interact matches 1101..1199 run function main:lib/ability/skill/guar
+execute if score @s detect.interact matches 1101..1199 run function main:lib/ability/skill/info_g
 
 # 天赋类
 execute if score @s detect.interact matches 2001 run scoreboard players set @s talent_1 1
@@ -44,7 +44,7 @@ execute if score @s detect.interact matches 2004 run scoreboard players set @s t
 execute if score @s detect.interact matches 2005 run scoreboard players set @s talent_1 5
 execute if score @s detect.interact matches 2006 run scoreboard players set @s talent_1 6
 execute if score @s detect.interact matches 2007 run scoreboard players set @s talent_1 7
-execute if score @s detect.interact matches 2001..2099 run function main:lib/ability/talent/soul {num:"1"}
+execute if score @s detect.interact matches 2001..2099 run function main:lib/ability/talent/info_s {num:"1"}
 execute if score @s detect.interact matches 2101 run scoreboard players set @s talent_1 1
 execute if score @s detect.interact matches 2102 run scoreboard players set @s talent_1 2
 execute if score @s detect.interact matches 2103 run scoreboard players set @s talent_1 3
@@ -52,7 +52,7 @@ execute if score @s detect.interact matches 2104 run scoreboard players set @s t
 execute if score @s detect.interact matches 2105 run scoreboard players set @s talent_1 5
 execute if score @s detect.interact matches 2106 run scoreboard players set @s talent_1 6
 execute if score @s detect.interact matches 2107 run scoreboard players set @s talent_1 7
-execute if score @s detect.interact matches 2101..2199 run function main:lib/ability/talent/guar {num:"1"}
+execute if score @s detect.interact matches 2101..2199 run function main:lib/ability/talent/info_g {num:"1"}
 
 # 宝物类
 execute if score @s detect.interact matches 3001 run scoreboard players set @s item 1
@@ -63,7 +63,7 @@ execute if score @s detect.interact matches 3005 run scoreboard players set @s i
 execute if score @s detect.interact matches 3006 run scoreboard players set @s item 6
 execute if score @s detect.interact matches 3007 run scoreboard players set @s item 7
 execute if score @s detect.interact matches 3100 run scoreboard players set @s item -1
-execute if score @s detect.interact matches 3001..3100 run function main:lib/ability/item
+execute if score @s detect.interact matches 3001..3100 run function main:lib/ability/item/info
 
 execute if score @s detect.interact matches 1001..3999 run playsound item.book.page_turn block @s ~ ~ ~
 

@@ -29,7 +29,7 @@
             ],
             {
                 "translate":"ms.skill.102.desc.a",
-                "fallback":"伤害提升至 20；",
+                "fallback":"获得伤害加成；",
                 "color":"white",
                 "italic":false
             },

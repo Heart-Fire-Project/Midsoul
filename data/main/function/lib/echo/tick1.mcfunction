@@ -1,0 +1,1 @@
+execute if score $echo data matches 1 as @a[tag=echo_target] at @s run function main:lib/event/mark/prepare {color:11479471,offset:2.25}

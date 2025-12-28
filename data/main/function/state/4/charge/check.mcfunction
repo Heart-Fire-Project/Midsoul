@@ -20,6 +20,4 @@ tag @s[tag=!interact_purple] remove hint_purple
 scoreboard players operation @s[tag=interact_purple,tag=interacting] temp = $interact_speed setting
 
 # 判定：进行交互时
-execute as @s[scores={talent_1=7},tag=interacting] run function main:state/3/ability/talent/007
-execute as @s[scores={talent_2=7},tag=interacting] run function main:state/3/ability/talent/007
-execute if score $echo data matches 5 as @s[team=soul,tag=interacting] run function main:state/3/echo/05
+function main:lib/action/interact/tick

@@ -30,10 +30,10 @@ scoreboard players set $plus temp 0
 execute as @a[tag=interact_purple,tag=interacting,distance=..0.7] run scoreboard players operation $plus temp += @s temp
 scoreboard players operation $plus temp /= $num temp
 execute store result storage ms:temp value int 1 run scoreboard players get $plus temp
-execute if score $num temp matches 2 store result score $plus temp run data get storage ms:temp value 1.3
-execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 1.5
-execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 1.6
+execute if score $num temp matches 2 store result score $plus temp run data get storage ms:temp value 1.25
+execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 1.4
+execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 1.5
 execute if score $num temp matches 1.. run scoreboard players operation @s tick.general += $plus temp
 
 # 充能完毕？
-execute if score @s tick.general matches 80000.. run function main:state/4/charge/finish
+execute if score @s tick.general matches 100000.. run function main:state/4/charge/finish

@@ -10,9 +10,9 @@ scoreboard players set @s[scores={temp2=..0}] temp2 0
 
 # 设置经验进度条 | 收集 / 第二状态
 scoreboard players set @s[tag=interact_blue] temp 7000
-scoreboard players set @s[tag=E02] temp 7000
 scoreboard players set @s[tag=interact_gold] temp 14000
 scoreboard players set @s[tag=interact_gray] temp 10000
+scoreboard players set @s[tag=E02] temp 7000
 scoreboard players set @s[scores={state=1,temp.dying=1},team=soul] temp 120000
 scoreboard players set @s[scores={state=1,temp.dying=2},team=soul] temp 80000
 scoreboard players set @s[scores={state=1,temp.dying=3..},team=soul] temp 40000

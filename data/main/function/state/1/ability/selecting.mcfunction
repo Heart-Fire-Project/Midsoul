@@ -7,8 +7,8 @@ execute if score @s detect.interact matches 5102 run scoreboard players set @s s
 execute if score @s detect.interact matches 5103 run scoreboard players set @s skill 3
 execute if score @s detect.interact matches 5104 run scoreboard players set @s skill 4
 execute if score @s detect.interact matches 5105 run scoreboard players set @s skill 5
-execute if score @s[team=soul] detect.interact matches 5101..5199 run function main:lib/ability/skill/soul
-execute if score @s[team=guardian] detect.interact matches 5101..5199 run function main:lib/ability/skill/guar
+execute if score @s[team=soul] detect.interact matches 5101..5199 run function main:lib/ability/skill/info_s
+execute if score @s[team=guardian] detect.interact matches 5101..5199 run function main:lib/ability/skill/info_g
 
 # 一天赋
 execute if score @s detect.interact matches 5200 run scoreboard players set @s temp 0
@@ -21,8 +21,8 @@ execute if score @s detect.interact matches 5206 run scoreboard players set @s t
 execute if score @s detect.interact matches 5207 run scoreboard players set @s temp 7
 execute if score @s detect.interact matches 5201..5299 if score @s temp = @s talent_2 run scoreboard players operation @s talent_1 >< @s talent_2
 execute if score @s detect.interact matches 5200..5299 run scoreboard players operation @s talent_1 = @s temp
-execute if score @s[team=soul] detect.interact matches 5201..5299 run function main:lib/ability/talent/soul {num:"1"}
-execute if score @s[team=guardian] detect.interact matches 5201..5299 run function main:lib/ability/talent/guar {num:"1"}
+execute if score @s[team=soul] detect.interact matches 5201..5299 run function main:lib/ability/talent/info_s {num:"1"}
+execute if score @s[team=guardian] detect.interact matches 5201..5299 run function main:lib/ability/talent/info_g {num:"1"}
 
 # 二天赋
 execute if score @s detect.interact matches 5300 run scoreboard players set @s temp 0
@@ -35,8 +35,8 @@ execute if score @s detect.interact matches 5306 run scoreboard players set @s t
 execute if score @s detect.interact matches 5307 run scoreboard players set @s temp 7
 execute if score @s detect.interact matches 5301..5399 if score @s temp = @s talent_1 run scoreboard players operation @s talent_2 >< @s talent_1
 execute if score @s detect.interact matches 5300..5399 run scoreboard players operation @s talent_2 = @s temp
-execute if score @s[team=soul] detect.interact matches 5301..5399 run function main:lib/ability/talent/soul {num:"2"}
-execute if score @s[team=guardian] detect.interact matches 5301..5399 run function main:lib/ability/talent/guar {num:"2"}
+execute if score @s[team=soul] detect.interact matches 5301..5399 run function main:lib/ability/talent/info_s {num:"2"}
+execute if score @s[team=guardian] detect.interact matches 5301..5399 run function main:lib/ability/talent/info_g {num:"2"}
 
 # 锁定
 execute if score @s detect.interact matches 5401 run function main:state/1/ability/check

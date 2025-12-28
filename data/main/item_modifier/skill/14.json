@@ -35,7 +35,7 @@
             },
             {
                 "translate":"ms.skill.104.desc.b",
-                "fallback":"若没有未被诅咒的灵魂宝物盒则生成 2 个；移速 +40%%，",
+                "fallback":"若没有未被诅咒的灵魂宝物盒则生成 2 个；移速 +20%%，",
                 "color":"white",
                 "italic":false
             },

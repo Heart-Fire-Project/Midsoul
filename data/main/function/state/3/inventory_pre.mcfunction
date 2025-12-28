@@ -5,7 +5,9 @@ execute store result storage ms:inventory talent_1 int 1 run scoreboard players 
 execute store result storage ms:inventory talent_2 int 1 run scoreboard players get @s talent_2
 
 execute store result storage ms:inventory T004 int 1 run scoreboard players get @s talent.004
-execute store result storage ms:inventory T007 int 1 run scoreboard players get $talent_007 data
+scoreboard players set $value temp 1
+scoreboard players operation $value temp += $aura_rank data
+execute store result storage ms:inventory T007 int 5 run scoreboard players get $value temp
 execute store result storage ms:inventory T107 int 1 run scoreboard players get @s talent.107
 execute store result storage ms:inventory S004 int 1 run scoreboard players get @s skill.004
 execute if data storage ms:inventory {S004:0s} run data modify storage ms:inventory S004 set value 1s

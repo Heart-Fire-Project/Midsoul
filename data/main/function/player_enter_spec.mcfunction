@@ -3,12 +3,7 @@ effect clear @s
 
 # 基础数值设定
 team join spectator @s
-attribute @s movement_speed base set 0.1
-attribute @s sneaking_speed base set 0.3
-attribute @s water_movement_efficiency base set 0.0
-attribute @s scale base set 1.0
-attribute @s gravity base set 0.08
-attribute @s jump_strength base set 0.42
+function main:lib/action/reset_attribute
 
 # 去除游戏内标签
 tag @s remove hidden_parkour
@@ -28,7 +23,7 @@ tag @s remove talent_2_on
 scoreboard players reset @s music
 execute if score $state data matches 0 run function main:state/0/player_enter
 execute if score $state data matches 1 run function main:state/1/player_enter/spectator
-execute if score $state data matches 2..5 run function main:state/3/music_roll
-execute if score $state data matches 2..5 run gamemode spectator @s
-execute if score $state data matches 2..5 run tp @s @r[limit=1,tag=game_player]
-execute if score $state data matches 2..5 run tellraw @s [{text:"» ",bold:true},{translate:"ms.info.mid_spec",fallback:"游戏正在进行中，请稍作等候……",bold:false}]
+execute if score $state data matches 2.. run function main:lib/event/music_roll
+execute if score $state data matches 2.. run gamemode spectator @s
+execute if score $state data matches 2.. run tp @s @r[limit=1,tag=game_player]
+execute if score $state data matches 2.. run tellraw @s [{text:"» ",bold:true},{translate:"ms.info.mid_spec",fallback:"游戏正在进行中，请稍作等候……",bold:false}]

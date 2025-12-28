@@ -111,12 +111,15 @@ $execute if entity @s[team=guardian,scores={talent_2=4}] run item modify block 0
 $execute if entity @s[team=guardian,scores={talent_2=5}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
 $execute if entity @s[team=guardian,scores={talent_2=7,talent.107=0}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
 
-# 光效处理
+# 基础光效处理
 execute if entity @s[tag=skill_on] run item modify block 0 -7 0 container.4 {function:"set_components",components:{enchantment_glint_override:true}}
 execute if entity @s[tag=talent_1_on] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
 execute if entity @s[tag=talent_2_on] run item modify block 0 -7 0 container.8 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[team=guardian,scores={tick.enhance=0}] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:false}}
 execute if entity @s[team=soul,tag=item_on] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
+
+# 特殊光效处理
+execute if entity @s[team=soul,scores={talent_1=4},tag=T004_s] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[team=soul,scores={talent_2=4},tag=T004_s] run item modify block 0 -7 0 container.8 {function:"set_components",components:{enchantment_glint_override:true}}
 
 # 进行完全部处理之后再发到玩家手里
 item replace entity @s hotbar.1 from block 0 -7 0 container.1

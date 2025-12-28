@@ -1,1 +1,1 @@
-tellraw @a [{text:"» ",color:"gold",bold:true},{translate:"ms.info.3.down.000",fallback:"%s 陷入垂死状态，一盏灵魂之灯已经出现……",bold:false,with:[{selector:"@s"}]}]
+tellraw @a [{text:"» ",color:"gold",bold:true},{translate:"ms.info.down.000",fallback:"%s 陷入垂死状态，一盏灵魂之灯已经出现……",bold:false,with:[{selector:"@s"}]}]

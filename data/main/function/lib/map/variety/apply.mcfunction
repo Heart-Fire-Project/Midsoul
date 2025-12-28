@@ -1,9 +1,3 @@
-# 计算收集比例
-scoreboard players operation $value temp = $shard_collect data
-scoreboard players operation $value temp *= #100 data
-$scoreboard players set $goal temp $(shard_goal)
-scoreboard players operation $value temp /= $goal temp
-
 # 聚光圣殿 - 6*2
 execute if score $map data matches 1 if score $value temp matches 017.. run fill 1184 13 1127 1182 13 1129 pearlescent_froglight replace bone_block
 execute if score $map data matches 1 if score $value temp matches 017.. run fill 1196 13 1133 1198 13 1131 pearlescent_froglight replace bone_block
@@ -13,8 +7,8 @@ execute if score $map data matches 1 if score $value temp matches 050.. run fill
 execute if score $map data matches 1 if score $value temp matches 050.. run fill 1197 13 1127 1195 13 1125 pearlescent_froglight replace bone_block
 execute if score $map data matches 1 if score $value temp matches 067.. run fill 1186 13 1137 1188 13 1135 pearlescent_froglight replace bone_block
 execute if score $map data matches 1 if score $value temp matches 067.. run fill 1194 13 1125 1192 13 1123 pearlescent_froglight replace bone_block
-execute if score $map data matches 1 if score $value temp matches 083.. run fill 1189 15 1135 1191 15 1137 pearlescent_froglight replace bone_block
-execute if score $map data matches 1 if score $value temp matches 083.. run fill 1191 15 1123 1189 15 1125 pearlescent_froglight replace bone_block
+execute if score $map data matches 1 if score $value temp matches 083.. run fill 1189 13 1135 1191 13 1137 pearlescent_froglight replace bone_block
+execute if score $map data matches 1 if score $value temp matches 083.. run fill 1191 13 1123 1189 13 1125 pearlescent_froglight replace bone_block
 execute if score $map data matches 1 if score $value temp matches 100.. run fill 1192 13 1136 1193 13 1137 pearlescent_froglight replace bone_block
 execute if score $map data matches 1 if score $value temp matches 100.. run fill 1188 13 1124 1187 13 1123 pearlescent_froglight replace bone_block
 

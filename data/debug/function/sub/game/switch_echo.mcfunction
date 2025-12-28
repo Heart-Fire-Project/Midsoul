@@ -8,18 +8,18 @@ execute if score $echo data matches 9 run function debug:sub/game/shard/summon
 
 # 正式修改
 $scoreboard players set $echo data $(value)
-execute as @a[tag=game_player] run function main:state/3/player/effect
+execute if data storage ms:mode {logic:"1"} as @a[tag=game_player] run function main:state/3/player/effect
 playsound entity.mooshroom.convert player @a 0 1000000 0 120000
 tellraw @a [{text:"» ",bold:true,color:"light_purple"},{translate:"ms.info.switch_echo",fallback:"回响已更迭！",bold:false}]
-execute as @a run function main:lib/echo
+execute as @a run function main:lib/map/echo
 
 # 现行获取当前数据
 execute store result score $prev_goal data run data get storage ms:map shard_goal
 
 # 重置计时器
-execute if score $echo data matches 1 run function main:state/3/echo/init {min:"45",max:"80"}
-execute if score $echo data matches 4 run function main:state/3/echo/init {min:"20",max:"60"}
-execute if score $echo data matches 7 run function main:state/3/echo/init {min:"30",max:"120"}
+execute if score $echo data matches 1 run function main:lib/echo/init {min:"45",max:"80"}
+execute if score $echo data matches 4 run function main:lib/echo/init {min:"20",max:"60"}
+execute if score $echo data matches 7 run function main:lib/echo/init {min:"30",max:"120"}
 
 # 重置地图数据
 function main:lib/map/data
@@ -37,7 +37,7 @@ function debug:sub/game/renew_bossbar with storage ms:map
 
 # 需要对新回响进行额外设置的场合
 execute if score $echo data matches 2 store result storage ms:temp num int 1 run data get storage ms:map shard_summon 0.3
-execute if score $echo data matches 2 run function main:state/3/echo/02 with storage ms:temp
+execute if score $echo data matches 2 run function main:lib/echo/02 with storage ms:temp
 execute if score $echo data matches 4 run weather thunder 88614
 scoreboard players set $minus_shard temp 0
 execute if score $echo data matches 9 run function debug:sub/game/shard/destroy

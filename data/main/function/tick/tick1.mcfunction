@@ -17,15 +17,6 @@ execute as @a at @s unless block ~ ~-0.5 ~ farmland run effect clear @s slow_fal
 spawnpoint @a 0 -5 0
 execute as @a unless score @s detect.interact matches 0 run scoreboard players enable @s detect.interact
 
-# 对剩余玩家进行一次计数，以供函数使用
-scoreboard players reset $alive data
-execute as @a[team=soul] run scoreboard players add $alive data 1
-scoreboard players reset $undying data
-execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
-
-# 地图特殊机制，一般是即时效果
-execute if score $state data matches 3..5 run function main:lib/map/tick1/general
-
 # 隐身侦测
 tag @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] add invisible
 tag @a[gamemode=spectator] add invisible
@@ -33,7 +24,7 @@ execute as @a[tag=invisible] unless entity @s[nbt={active_effects:[{id:"minecraf
 
 # 定向至其他函数
 function debug:tick1
-execute if score $state data matches 5 run function main:state/5/tick1
+execute if score $state data matches 99 run function main:state/99/tick1
 execute if score $state data matches 4 run function main:state/4/tick1
 execute if score $state data matches 3 run function main:state/3/tick1
 execute if score $state data matches 2 run function main:state/2/tick1

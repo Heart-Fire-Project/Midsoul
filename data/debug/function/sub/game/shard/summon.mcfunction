@@ -6,4 +6,4 @@ execute store result score $original_goal temp run data get storage ms:map origi
 execute if score $echo data matches 9 run scoreboard players operation $original_summon temp -= $summon temp
 execute if score $echo data matches 9 run execute store result storage ms:temp num int 1 run scoreboard players get $original_summon temp
 
-execute run function main:state/3/event/summon/blue with storage ms:temp
+execute run function main:lib/event/summon/blue with storage ms:temp

@@ -1,7 +1,3 @@
-# 创立专用计分板
-scoreboard objectives remove info
-scoreboard objectives add info dummy ["     ",{translate:"ms.scoreboard.info",fallback:"接下来……"},"     "]
-
 scoreboard players set $blank0 info 8
 scoreboard players display name $blank0 info ""
 scoreboard players display numberformat $blank0 info blank

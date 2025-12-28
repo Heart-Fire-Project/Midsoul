@@ -14,5 +14,5 @@ execute if score $0_start tick.general matches ..10 if score $prepare data match
 $execute if score $prepare data matches ..$(cancel) store result bossbar midsoul:info value run scoreboard players get $prepare data
 $execute if score $prepare data matches ..$(cancel) run bossbar set midsoul:info max $(start)
 $execute if score $prepare data matches ..$(cancel) run bossbar set midsoul:info color red
-$execute if score $mode setting matches 1 if score $prepare data matches ..$(cancel) run bossbar set midsoul:info name [{translate:"ms.bossbar.0.wait",fallback:"等待玩家中 | 需要 %s 人以开始",color:"red",with:["5"]}]
-$execute if score $mode setting matches 2 if score $prepare data matches ..$(cancel) run bossbar set midsoul:info name [{translate:"ms.bossbar.0.wait",fallback:"等待玩家中 | 需要 %s 人以开始",color:"red",with:["2"]}]
+$execute if data storage ms:mode {start:"5"} if score $prepare data matches ..$(cancel) run bossbar set midsoul:info name [{translate:"ms.bossbar.0.wait",fallback:"等待玩家中 | 需要 %s 人以开始",color:"red",with:["5"]}]
+$execute if data storage ms:mode {start:"2"} if score $prepare data matches ..$(cancel) run bossbar set midsoul:info name [{translate:"ms.bossbar.0.wait",fallback:"等待玩家中 | 需要 %s 人以开始",color:"red",with:["2"]}]

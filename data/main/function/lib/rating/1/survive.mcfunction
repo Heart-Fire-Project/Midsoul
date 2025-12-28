@@ -1,0 +1,1 @@
+tellraw @s [{text:" +50 | ",color:"#4B9F5D"},{translate:"ms.rating.survive",fallback:"存活时长"}," ",{score:{name:"$min",objective:"temp2"}},":00"]

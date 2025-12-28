@@ -42,10 +42,22 @@ scoreboard objectives remove temp
 scoreboard objectives add temp dummy "临时数据"
 scoreboard objectives remove temp2
 scoreboard objectives add temp2 dummy "临时数据"
+scoreboard objectives remove setting
+scoreboard objectives add setting dummy "游戏设定"
+scoreboard objectives remove state
+scoreboard objectives add state dummy "个人状态"
+scoreboard objectives remove music
+scoreboard objectives add music dummy "背景音乐"
+scoreboard objectives remove info
+scoreboard objectives add info dummy ["     ",{translate:"ms.scoreboard.info",fallback:"接下来……"},"     "]
+scoreboard objectives remove entity_id
+scoreboard objectives add entity_id dummy "实体识别码"
+
 scoreboard objectives remove exp.max
 scoreboard objectives add exp.max dummy "经验上限"
 scoreboard objectives remove exp.temp
 scoreboard objectives add exp.temp dummy "待计经验"
+
 scoreboard objectives remove skill
 scoreboard objectives add skill dummy "携带技能"
 scoreboard objectives remove talent_1
@@ -54,16 +66,9 @@ scoreboard objectives remove talent_2
 scoreboard objectives add talent_2 dummy "携带天赋 2"
 scoreboard objectives remove item
 scoreboard objectives add item dummy "携带宝物"
-scoreboard objectives remove state
-scoreboard objectives add state dummy "个人状态"
+
 scoreboard objectives remove health
 scoreboard objectives add health health "生命值"
-scoreboard objectives remove setting
-scoreboard objectives add setting dummy "游戏设定"
-scoreboard objectives remove entity_id
-scoreboard objectives add entity_id dummy "实体识别码"
-scoreboard objectives remove music
-scoreboard objectives add music dummy "背景音乐"
 
 scoreboard objectives remove tick.general
 scoreboard objectives add tick.general dummy "全局计时"
@@ -79,6 +84,10 @@ scoreboard objectives remove tick.using
 scoreboard objectives add tick.using dummy "使用物品计时"
 scoreboard objectives remove tick.enhance
 scoreboard objectives add tick.enhance dummy "伤害加成计时"
+scoreboard objectives remove tick.disable
+scoreboard objectives add tick.disable dummy "无法出伤计时"
+scoreboard objectives remove tick.disable_max
+scoreboard objectives add tick.disable_max dummy "无法出伤上限"
 scoreboard objectives remove tick.invincible
 scoreboard objectives add tick.invincible dummy "被动无敌计时"
 scoreboard objectives remove tick.off_ground
@@ -88,6 +97,31 @@ scoreboard objectives add tick.parkour dummy "跑酷计时"
 scoreboard objectives remove tick.music
 scoreboard objectives add tick.music dummy "音乐计时"
 
+scoreboard objectives remove temp.collect
+scoreboard objectives add temp.collect dummy "单局碎片收集"
+scoreboard objectives remove temp.heal
+scoreboard objectives add temp.heal dummy "单局队友救助"
+scoreboard objectives remove temp.open
+scoreboard objectives add temp.open dummy "单局宝盒开启"
+scoreboard objectives remove temp.dying
+scoreboard objectives add temp.dying dummy "单局陷入垂死"
+scoreboard objectives remove temp.hit
+scoreboard objectives add temp.hit dummy "单局目标命中"
+scoreboard objectives remove temp.down
+scoreboard objectives add temp.down dummy "单局玩家击倒"
+scoreboard objectives remove temp.skill
+scoreboard objectives add temp.skill dummy "单局技能使用"
+scoreboard objectives remove temp.talent
+scoreboard objectives add temp.talent dummy "单局天赋使用"
+scoreboard objectives remove temp.item
+scoreboard objectives add temp.item dummy "单局宝物使用"
+scoreboard objectives remove temp.time
+scoreboard objectives add temp.time dummy "单局游玩时间"
+scoreboard objectives remove temp.track
+scoreboard objectives add temp.track dummy "单局追踪时间"
+scoreboard objectives remove temp.tie
+scoreboard objectives add temp.tie dummy "单局牵制时间"
+
 scoreboard objectives remove detect.sneak
 scoreboard objectives add detect.sneak custom:sneak_time "蹲下检测"
 scoreboard objectives remove detect.sleep
@@ -96,6 +130,10 @@ scoreboard objectives remove detect.crossbow
 scoreboard objectives add detect.crossbow used:crossbow "弩箭检测"
 scoreboard objectives remove detect.drop
 scoreboard objectives add detect.drop custom:drop "丢弃检测"
+scoreboard objectives remove detect.die
+scoreboard objectives add detect.die deathCount "死亡检测"
+scoreboard objectives remove detect.kill
+scoreboard objectives add detect.kill playerKillCount "击杀检测"
 scoreboard objectives remove detect.using
 scoreboard objectives add detect.using dummy "使用检测"
 scoreboard objectives remove detect.interact
@@ -262,12 +300,10 @@ scoreboard players set #2 data 2
 scoreboard players set #3 data 3
 scoreboard players set #4 data 4
 scoreboard players set #5 data 5
-scoreboard players set #6 data 6
 scoreboard players set #7 data 7
 scoreboard players set #8 data 8
 scoreboard players set #9 data 9
 scoreboard players set #10 data 10
-scoreboard players set #15 data 15
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
@@ -275,8 +311,8 @@ scoreboard players set #30 data 30
 scoreboard players set #35 data 35
 scoreboard players set #50 data 50
 scoreboard players set #60 data 60
-scoreboard players set #65 data 65
 scoreboard players set #61 data 61
+scoreboard players set #65 data 65
 scoreboard players set #64 data 64
 scoreboard players set #100 data 100
 scoreboard players set #115 data 115
@@ -285,10 +321,10 @@ scoreboard players set #256 data 256
 scoreboard players set #800 data 800
 scoreboard players set #10000 data 10000
 scoreboard players set #18000 data 18000
-scoreboard players set #80000 data 80000
+scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 269
+scoreboard players set $build data 270
 scoreboard players set $map_max data 4
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7

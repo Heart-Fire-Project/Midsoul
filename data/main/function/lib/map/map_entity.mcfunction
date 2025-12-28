@@ -1,5 +1,6 @@
 kill @e[tag=map_entity]
 
+# 心火特区
 summon text_display 1985.55 62.15 2101.99 {Tags:[map_entity],brightness:{block:15,sky:15},text:"A",background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[2.7f,2.7f,2.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon text_display 2000.55 69.15 2014.99 {Tags:[map_entity],brightness:{block:15,sky:15},text:"B",background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[2.7f,2.7f,2.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon text_display 1946.45 74.15 2037.01 {Tags:[map_entity],brightness:{block:15,sky:15},text:"C",background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[2.7f,2.7f,2.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
@@ -22,3 +23,5 @@ summon text_display 1894.436 62.2 2052.0 {Tags:[map_entity],brightness:{block:15
 summon text_display 1954.55 58.15 2061.99 {Tags:[map_entity],brightness:{block:15,sky:15},text:"A",background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[2.7f,2.7f,2.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon text_display 1953.55 58.15 2061.99 {Tags:[map_entity],brightness:{block:15,sky:15},text:"B",background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[2.7f,2.7f,2.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon text_display 1947.55 58.15 2061.99 {Tags:[map_entity],brightness:{block:15,sky:15},text:"D",background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[2.7f,2.7f,2.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
+
+summon cat 1989.0 72.5 2082.0 {Tags:[map_entity],CustomName:{translate:"ms.map.4.cat.qiu",fallback:"球球"},variant:"all_black",Invulnerable:true,PersistenceRequired:true,attributes:[{id:"scale",base:1.2}],home_pos:[I;1989,73,2082],home_radius:10}

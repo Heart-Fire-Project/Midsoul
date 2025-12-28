@@ -34,28 +34,17 @@ tag @s[tag=!interact_gold] remove hint_gold
 tag @s[tag=!interact_gray] remove hint_gray
 
 # 判定：交互中断时
-execute as @s[scores={talent_1=1,tick.general=1..},tag=interact_blue,tag=!interacting,tag=talent_1_on] run function main:state/3/ability/talent/001f
-execute as @s[scores={talent_2=1,tick.general=1..},tag=interact_blue,tag=!interacting,tag=talent_2_on] run function main:state/3/ability/talent/001f
+execute as @s[scores={tick.general=1..},tag=!interacting] run function main:lib/action/interact/break
 
 # 刷新进程
 scoreboard players reset @s[tag=!interacting] tick.general
 scoreboard players operation @s[tag=interacting] temp = $interact_speed setting
 
 # 判定：进行交互时
-execute as @s[scores={talent_1=1},tag=interact_blue,tag=interacting,tag=talent_1_on] run function main:state/3/ability/talent/001a
-execute as @s[scores={talent_2=1},tag=interact_blue,tag=interacting,tag=talent_2_on] run function main:state/3/ability/talent/001a
-execute as @s[team=soul,scores={talent_1=7},tag=interacting] run function main:state/3/ability/talent/007
-execute as @s[team=soul,scores={talent_2=7},tag=interacting] run function main:state/3/ability/talent/007
-execute if score $echo data matches 5 as @s[team=soul,tag=interacting] run function main:state/3/echo/05
-execute if score $echo data matches 8 as @s[tag=interact_blue,tag=interacting] run function main:state/3/echo/08
-
-# 额外判定与结算
-execute if score $undying data matches 1 run scoreboard players operation @s[tag=interact_gold] temp += $interact_speed setting
-execute if data storage ms:setting {balanced_speed:true} as @s[team=soul] run function main:state/3/interaction/balanced_speed
-scoreboard players operation @s[tag=interacting] tick.general += @s temp
+execute as @s[tag=interacting] run function main:lib/action/interact/tick
 
 # 收集完成
 execute as @s[tag=interact_blue,scores={tick.general=7000..}] as @e[tag=blue,distance=..0.7] run function main:state/3/interaction/blue with storage ms:map
 execute as @s[tag=interact_gold,scores={tick.general=14000..}] as @e[tag=gold,distance=..0.7] run function main:state/3/interaction/gold
 execute as @s[tag=interact_gray,scores={tick.general=10000..}] as @e[tag=gray,distance=..0.7] run function main:state/3/interaction/gray
-execute as @s[tag=E02,scores={tick.general=7000..}] as @e[tag=fake_blue,distance=..0.7] run function main:state/3/echo/02a
+execute as @s[tag=E02,scores={tick.general=7000..}] as @e[tag=fake_blue,distance=..0.7] run function main:lib/echo/02a

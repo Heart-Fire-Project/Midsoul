@@ -1,0 +1,2 @@
+tellraw @s[scores={temp.tie=60}] [{text:" +85 | ",color:"#F2850D"},{translate:"ms.rating.tie",fallback:"守卫牵制"}," 60s"]
+tellraw @s[scores={temp.tie=120}] [{text:" +105 | ",color:"#F2850D"},{translate:"ms.rating.tie",fallback:"守卫牵制"}," 120s"]

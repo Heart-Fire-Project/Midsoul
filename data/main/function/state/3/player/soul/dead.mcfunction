@@ -13,16 +13,10 @@ kill @e[tag=gold,limit=1]
 effect clear @s
 
 # 判定：灵魂消亡时
-execute as @a[team=soul,scores={talent_1=3,state=0}] run function main:state/3/ability/talent/003f
-execute as @a[team=soul,scores={talent_2=3,state=0}] run function main:state/3/ability/talent/003f
+function main:lib/action/player/dead
 
 # 恢复玩家属性
-attribute @s movement_speed base set 0.1
-attribute @s sneaking_speed base set 0.3
-attribute @s water_movement_efficiency base set 0.0
-attribute @s scale base set 1.0
-attribute @s gravity base set 0.08
-attribute @s jump_strength base set 0.42
+function main:lib/action/reset_attribute
 
 # 统计数据
 scoreboard players add @a[team=guardian] stat.kill 1
@@ -30,5 +24,4 @@ scoreboard players add @s stat.death 1
 scoreboard players add $soul_death data 1
 
 # 即时表现分
-execute if score $soul_death data matches ..5 run tellraw @a[team=guardian,scores={setting.instant_rating=1}] [{text:" +115 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}]
-execute if score $soul_death data matches 3 run tellraw @a[team=guardian,scores={setting.instant_rating=1}] [{text:" +50 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}," ×3"]
+execute as @a[team=guardian,scores={setting.instant_rating=1}] run function main:lib/rating/1/dead

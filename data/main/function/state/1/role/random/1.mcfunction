@@ -1,6 +1,5 @@
 # 灵能反噬 | 好了我做权重系统还不行吗
 # 基础权重是 7，每连续成为一次灵魂则权重 +1
-scoreboard players set $total temp2 0
 
 # 确定性自选 | 玩家计数，判定是否直接全属灵魂
 scoreboard players set $player temp 0
@@ -12,8 +11,7 @@ execute if score $guardian temp matches ..0 run team join soul @a[team=prepare]
 
 # 第一次 | 遍历
 scoreboard players reset * temp2
-scoreboard players set $num temp 1
-execute as @a[scores={entity_id=1}] run function main:state/1/role/random/1r
+execute as @a[team=prepare] run function main:state/1/role/random/1r
 
 # 第一次 | 选定
 function main:state/1/role/random/1a
@@ -32,9 +30,7 @@ scoreboard players set $player temp 0
 execute as @a[tag=game_player] run scoreboard players add $player temp 1
 
 # 第二次 | 遍历
-scoreboard players set $num temp 1
-execute as @a[team=guardian,scores={entity_id=1}] run scoreboard players add $num temp 1
-execute if score $player temp matches 7.. as @a if score @s entity_id = $num temp run function main:state/1/role/random/1r
+execute if score $player temp matches 7.. as @a[team=prepare] run function main:state/1/role/random/1r
 
 # 第二次 | 选定
 execute if score $player temp matches 7.. run function main:state/1/role/random/1a

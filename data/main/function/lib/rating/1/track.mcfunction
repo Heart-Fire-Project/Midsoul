@@ -1,0 +1,2 @@
+tellraw @s[scores={temp.track=60}] [{text:" +120 | ",color:"#EC7042"},{translate:"ms.rating.track",fallback:"追灵寻踪"}," 60s"]
+tellraw @s[scores={temp.track=120}] [{text:" +145 | ",color:"#EC7042"},{translate:"ms.rating.track",fallback:"追灵寻踪"}," 120s"]

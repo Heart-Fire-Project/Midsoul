@@ -71,7 +71,7 @@ execute if score $1_process tick.general matches 1261 run scoreboard objectives 
 execute if score $1_process tick.general matches 1260 run scoreboard objectives setdisplay sidebar info
 
 # 1260 | 详情信息
-execute if score $1_process tick.general matches 1260 unless score $echo data matches 0 as @a run function main:lib/echo
+execute if score $1_process tick.general matches 1260 unless score $echo data matches 0 as @a run function main:lib/echo/info
 execute if score $1_process tick.general matches 1260 unless score $echo data matches 0 run advancement grant @a[tag=game_player] only main:tutorial/mechanic/4
 
 # 1239 | 阵营选择 跳过判定
@@ -211,14 +211,14 @@ execute if score $1_process tick.general matches 158 unless score $ability_assig
 execute if score $1_process tick.general matches 159 as @a[tag=game_player] run function main:state/1/ability/random
 
 # 150 >> 110 | 展示最终技能组
-execute if score $1_process tick.general matches 150 as @a[team=soul] run function main:lib/ability/skill/soul
-execute if score $1_process tick.general matches 150 as @a[team=guardian] run function main:lib/ability/skill/guar
+execute if score $1_process tick.general matches 150 as @a[team=soul] run function main:lib/ability/skill/info_s
+execute if score $1_process tick.general matches 150 as @a[team=guardian] run function main:lib/ability/skill/info_g
 execute if score $1_process tick.general matches 150 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 120000
-execute if score $1_process tick.general matches 130 as @a[team=soul] run function main:lib/ability/talent/soul {num:"1"}
-execute if score $1_process tick.general matches 130 as @a[team=guardian] run function main:lib/ability/talent/guar {num:"1"}
+execute if score $1_process tick.general matches 130 as @a[team=soul] run function main:lib/ability/talent/info_s {num:"1"}
+execute if score $1_process tick.general matches 130 as @a[team=guardian] run function main:lib/ability/talent/info_g {num:"1"}
 execute if score $1_process tick.general matches 130 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 120000
-execute if score $1_process tick.general matches 110 as @a[team=soul] run function main:lib/ability/talent/soul {num:"2"}
-execute if score $1_process tick.general matches 110 as @a[team=guardian] run function main:lib/ability/talent/guar {num:"2"}
+execute if score $1_process tick.general matches 110 as @a[team=soul] run function main:lib/ability/talent/info_s {num:"2"}
+execute if score $1_process tick.general matches 110 as @a[team=guardian] run function main:lib/ability/talent/info_g {num:"2"}
 execute if score $1_process tick.general matches 110 run playsound block.dispenser.fail ambient @a[tag=game_player] 0 1000000 0 120000
 
 # 60 | Tip!
@@ -240,4 +240,4 @@ execute if score $1_process tick.general matches 1 run bossbar set midsoul:3 nam
 execute if score $1_process tick.general matches 0 run bossbar set midsoul:3 name [{text:"⚕ ",color:"red"},{translate:"ms.guardian",fallback:"灵魂守卫者"}," ⚕ ",{translate:"ms.guardian.desc",fallback:"阻止灵魂，让他们永困于此",color:"white"}]
 
 # 0 | 进入入场阶段
-execute if score $1_process tick.general matches 0 run function main:state/2/enter
+execute if score $1_process tick.general matches 0 if data storage ms:mode {logic:"1"} run function main:state/2/enter
