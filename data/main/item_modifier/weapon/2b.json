@@ -44,6 +44,7 @@
                     "enchantments"
                 ]
             },
+            "enchantment_glint_override":true,
             "attribute_modifiers":[
                 {
                     "slot":"mainhand",

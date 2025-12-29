@@ -8,8 +8,7 @@ playsound block.shulker_box.open player @a
 # 灵魂效果 | 不包含宝物同步
 tag @e[team=soul,distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add target
 execute if entity @p[tag=target,scores={item=1..}] run effect give @p[team=guardian] glowing 3 0
-effect give @p[tag=target,scores={item=1..,health=..19}] regeneration 3 2
-effect give @p[tag=target,scores={item=1..,health=20}] absorption infinite 0 true
+effect give @p[tag=target,scores={item=1..}] regeneration 3 2
 advancement grant @p[tag=target,scores={item=0}] only main:tutorial/mechanic/2
 data modify storage ms:temp min set value 1
 execute store result storage ms:temp max int 1 run scoreboard players get $item_max data

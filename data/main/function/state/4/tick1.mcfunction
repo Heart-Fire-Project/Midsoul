@@ -24,6 +24,7 @@ execute as @e[tag=purple] at @s run function main:state/4/set_progress
 execute as @a[tag=game_player] at @s run function main:state/4/set_exp
 
 # 计时部分
+scoreboard players set @a[team=guardian] tick.enhance 3
 scoreboard players remove $4_portal tick.general 1
 scoreboard players add $4_process tick.general 1
 

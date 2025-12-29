@@ -16,6 +16,7 @@ execute as @a[tag=game_player] run function main:state/3/set_exp
 
 # 计时部分
 scoreboard players add $3_process tick.general 1
+execute if score $3_process tick.general matches 18000.. run scoreboard players set @a[team=guardian] tick.enhance 3
 
 # 进程判定
 function main:state/3/check_end

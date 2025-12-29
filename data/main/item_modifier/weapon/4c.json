@@ -37,6 +37,7 @@
             "!max_damage":{},
             "item_model":"blaze_rod",
             "enchantments":{},
+            "enchantment_glint_override":false,
             "attribute_modifiers":[
                 {
                     "slot":"mainhand",
