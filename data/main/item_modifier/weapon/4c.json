@@ -37,6 +37,13 @@
             "!max_damage":{},
             "item_model":"blaze_rod",
             "enchantments":{},
+            "tooltip_display":{
+                "hidden_components":[
+                    "enchantments",
+                    "damage"
+                ]
+            },
+            "max_stack_size":1,
             "enchantment_glint_override":false,
             "attribute_modifiers":[
                 {

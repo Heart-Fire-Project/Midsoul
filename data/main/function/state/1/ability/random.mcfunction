@@ -1,5 +1,5 @@
 # 仅在当前是 0 时写入结果
-data modify storage ms:temp min set value 1
+data merge storage ms:temp {min:1}
 execute store result storage ms:temp max int 1 run scoreboard players get $skill_max data
 function base:random with storage ms:temp
 execute if score @s skill matches 0 run scoreboard players operation @s skill = $random temp2

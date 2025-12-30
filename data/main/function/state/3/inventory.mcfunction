@@ -60,8 +60,10 @@ execute if entity @s[team=guardian] run item replace block 0 -7 0 container.1 wi
 $execute if entity @s[team=guardian,scores={state=0}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)a
 $execute if entity @s[team=guardian,scores={state=0,tick.enhance=1..}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)b
 $execute if entity @s[team=guardian,scores={state=1}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
+$execute if entity @s[team=guardian,scores={tick.disable=1..}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
 $execute if entity @s[team=guardian,scores={skill=5},tag=skill_on] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
 execute if entity @s[team=guardian,scores={state=1}] run item modify block 0 -7 0 container.1 {function:"set_components",components:{item_model:"barrier"}}
+$execute if score @s tick.disable matches 1.. run item modify block 0 -7 0 container.1 {function:"set_components",components:{damage:$(disable),max_damage:$(disable_max)}}
 
 # 灵魂宝物
 execute if entity @s[team=soul] run item replace block 0 -7 0 container.1 with firework_star

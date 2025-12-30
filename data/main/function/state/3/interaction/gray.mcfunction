@@ -13,7 +13,7 @@ tag @e[team=soul,distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] 
 execute if entity @p[tag=target,scores={item=1..}] run effect give @p[team=guardian] glowing 3 0
 effect give @p[tag=target,scores={item=1..}] regeneration 3 2
 advancement grant @p[tag=target,scores={item=0}] only main:tutorial/mechanic/2
-data modify storage ms:temp min set value 1
+data merge storage ms:temp {min:1}
 execute store result storage ms:temp max int 1 run scoreboard players get $item_max data
 function base:random with storage ms:temp
 

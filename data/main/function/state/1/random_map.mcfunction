@@ -1,6 +1,6 @@
 # 随机地图
-execute if data storage ms:setting {random_custom:false} run data modify storage ms:temp min set value 1
-execute if data storage ms:setting {random_custom:true} run data modify storage ms:temp min set value -9
+execute if data storage ms:setting {random_custom:false} run data merge storage ms:temp {min:1}
+execute if data storage ms:setting {random_custom:true} run data merge storage ms:temp {min:-9}
 execute store result storage ms:temp max int 1 run scoreboard players get $map_max data
 function base:random with storage ms:temp
 scoreboard players operation $map data = $random temp2

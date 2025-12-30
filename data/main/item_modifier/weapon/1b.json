@@ -41,9 +41,11 @@
             },
             "tooltip_display":{
                 "hidden_components":[
-                    "enchantments"
+                    "enchantments",
+                    "damage"
                 ]
             },
+            "max_stack_size":1,
             "enchantment_glint_override":true,
             "attribute_modifiers":[
                 {

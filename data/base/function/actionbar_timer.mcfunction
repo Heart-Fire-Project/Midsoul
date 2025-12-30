@@ -23,20 +23,20 @@ scoreboard players operation $bar temp *= #24 data
 $scoreboard players operation $bar temp /= @s $(max)
 execute if score $bar temp matches 13.. run scoreboard players remove $bar temp 12
 execute if score $bar temp matches 7.. run scoreboard players remove $bar temp 6
-execute if score $bar temp matches 0 run data modify storage r7s:temp front set value ""
-execute if score $bar temp matches 1 run data modify storage r7s:temp front set value "|"
-execute if score $bar temp matches 2 run data modify storage r7s:temp front set value "||"
-execute if score $bar temp matches 3 run data modify storage r7s:temp front set value "|||"
-execute if score $bar temp matches 4 run data modify storage r7s:temp front set value "||||"
-execute if score $bar temp matches 5 run data modify storage r7s:temp front set value "|||||"
-execute if score $bar temp matches 6 run data modify storage r7s:temp front set value "||||||"
-execute if score $bar temp matches 0 run data modify storage r7s:temp behind set value "||||||"
-execute if score $bar temp matches 1 run data modify storage r7s:temp behind set value "|||||"
-execute if score $bar temp matches 2 run data modify storage r7s:temp behind set value "||||"
-execute if score $bar temp matches 3 run data modify storage r7s:temp behind set value "|||"
-execute if score $bar temp matches 4 run data modify storage r7s:temp behind set value "||"
-execute if score $bar temp matches 5 run data modify storage r7s:temp behind set value "|"
-execute if score $bar temp matches 6 run data modify storage r7s:temp behind set value ""
+execute if score $bar temp matches 0 run data merge storage r7s:temp {front:""}
+execute if score $bar temp matches 1 run data merge storage r7s:temp {front:"|"}
+execute if score $bar temp matches 2 run data merge storage r7s:temp {front:"||"}
+execute if score $bar temp matches 3 run data merge storage r7s:temp {front:"|||"}
+execute if score $bar temp matches 4 run data merge storage r7s:temp {front:"||||"}
+execute if score $bar temp matches 5 run data merge storage r7s:temp {front:"|||||"}
+execute if score $bar temp matches 6 run data merge storage r7s:temp {front:"||||||"}
+execute if score $bar temp matches 0 run data merge storage r7s:temp {behind:"||||||"}
+execute if score $bar temp matches 1 run data merge storage r7s:temp {behind:"|||||"}
+execute if score $bar temp matches 2 run data merge storage r7s:temp {behind:"||||"}
+execute if score $bar temp matches 3 run data merge storage r7s:temp {behind:"|||"}
+execute if score $bar temp matches 4 run data merge storage r7s:temp {behind:"||"}
+execute if score $bar temp matches 5 run data merge storage r7s:temp {behind:"|"}
+execute if score $bar temp matches 6 run data merge storage r7s:temp {behind:""}
 
 # 显示部分 | 粗略分类
 scoreboard players operation $bar temp = $current temp

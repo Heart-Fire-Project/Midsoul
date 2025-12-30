@@ -81,10 +81,10 @@ execute store result storage ms:string B int 1 run scoreboard players get $digit
 execute store result storage ms:string C int 1 run scoreboard players get $digit_3 temp2
 execute store result storage ms:string D int 1 run scoreboard players get $digit_2 temp2
 execute store result storage ms:string E int 1 run scoreboard players get $digit_1 temp2
-execute if score $digit_5 temp2 matches 0 run data modify storage ms:string A set value ""
-execute if score $digit_4 temp2 matches 0 if data storage ms:string {A:""} run data modify storage ms:string B set value ""
-execute if score $digit_3 temp2 matches 0 if data storage ms:string {B:""} run data modify storage ms:string C set value ""
-execute if score $digit_2 temp2 matches 0 if data storage ms:string {C:""} run data modify storage ms:string D set value ""
+execute if score $digit_5 temp2 matches 0 run data merge storage ms:string {A:""}
+execute if score $digit_4 temp2 matches 0 if data storage ms:string {A:""} run data merge storage ms:string {B:""}
+execute if score $digit_3 temp2 matches 0 if data storage ms:string {B:""} run data merge storage ms:string {C:""}
+execute if score $digit_2 temp2 matches 0 if data storage ms:string {C:""} run data merge storage ms:string {D:""}
 execute if score @s stat.rating matches ..4999 run summon text_display -992.8 0.5 -972.02 {brightness:{block:15,sky:15},Tags:[extra_entity,query_entity],text:[{nbt:"B",storage:"ms:string",color:"#D0CBC5"},{nbt:"C",storage:"ms:string",color:"#D7D3CD"},{nbt:"D",storage:"ms:string",color:"#DDDAD5"},{nbt:"E",storage:"ms:string",color:"#E4E2DD"}],background:0,billboard:"fixed",alignment:"center",line_width:200,transformation:{scale:[2.0f,2.0f,2.0f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 execute if score @s stat.rating matches 5000..5999 run summon text_display -992.8 0.5 -972.02 {brightness:{block:15,sky:15},Tags:[extra_entity,query_entity],text:[{nbt:"B",storage:"ms:string",color:"#E9BCAD"},{nbt:"C",storage:"ms:string",color:"#E6BDB5"},{nbt:"D",storage:"ms:string",color:"#E3BFBE"},{nbt:"E",storage:"ms:string",color:"#E0C0C6"}],background:0,billboard:"fixed",alignment:"center",line_width:200,transformation:{scale:[2.0f,2.0f,2.0f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 execute if score @s stat.rating matches 6000..6799 run summon text_display -992.8 0.5 -972.02 {brightness:{block:15,sky:15},Tags:[extra_entity,query_entity],text:[{nbt:"B",storage:"ms:string",color:"#18D950"},{nbt:"C",storage:"ms:string",color:"#2EDB4F"},{nbt:"D",storage:"ms:string",color:"#43DE4E"},{nbt:"E",storage:"ms:string",color:"#59E04D"}],background:0,billboard:"fixed",alignment:"center",line_width:200,transformation:{scale:[2.0f,2.0f,2.0f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}

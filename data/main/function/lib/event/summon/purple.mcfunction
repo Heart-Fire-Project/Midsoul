@@ -14,7 +14,7 @@ execute at @n[tag=new_purple] run scoreboard players add @e[tag=marker_purple,di
 execute at @n[tag=new_purple] unless entity @e[tag=marker_purple,distance=50..120] run scoreboard players add @e[tag=marker_purple,distance=..50,limit=1,sort=furthest] temp 100
 execute at @n[tag=new_purple] unless entity @e[tag=marker_purple,distance=50..120] run scoreboard players add @n[tag=marker_purple,distance=120..] temp 100
 execute as @e[tag=marker_purple,scores={temp=1..}] run function main:lib/event/summon/purple_repeat
-data modify storage ms:temp min set value 1
+data merge storage ms:temp {min:1}
 execute store result storage ms:temp max int 1 run scoreboard players get $total temp2
 function base:random with storage ms:temp
 execute as @e[tag=marker_purple,scores={temp=1..}] run scoreboard players operation @s temp2 -= $random temp2

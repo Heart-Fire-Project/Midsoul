@@ -14,7 +14,7 @@ bossbar set midsoul:warn max 1200
 
 # 视为灵气等级 3
 scoreboard players set $aura_rank data 3
-execute as @e[tag=blue] run data modify entity @s Glowing set value 1b
+execute as @e[tag=blue] run data merge entity @s {Glowing:1b}
 
 # 教程
 advancement grant @a[tag=game_player] only main:tutorial/mechanic/3

@@ -1,27 +1,27 @@
-data modify block ~1 ~ ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~1 ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~ ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~ ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~-1 ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~ ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~1 ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~ ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~1 ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~-1 ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~ ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~-1 ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~-1 ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~ ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~1 ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~1 ~ lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~ ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~ ~-1 ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~1 ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~1 ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~-1 ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~1 ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~-1 ~1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~1 ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~1 ~-1 ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
-data modify block ~-1 ~-1 ~-1 lock set value {components:{custom_name:'"别开谢谢"'}}
+data merge block ~1 ~ ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~1 ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~ ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~ ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~-1 ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~ ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~1 ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~ ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~1 ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~-1 ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~ ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~-1 ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~-1 ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~ ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~1 ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~1 ~ {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~ ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~ ~-1 ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~1 ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~1 ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~-1 ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~1 ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~-1 ~1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~1 ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~1 ~-1 ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
+data merge block ~-1 ~-1 ~-1 {lock:{components:{custom_name:"别开谢谢"}}}
 title @n[team=admin,type=player] actionbar {translate:"ms.mark.locked",fallback:"周围容器已锁定",color:"white"}

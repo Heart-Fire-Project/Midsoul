@@ -8,7 +8,7 @@ execute as @a[scores={tick.music=..-1}] run function main:lib/event/music_roll
 
 # 灵气效果处理
 scoreboard players remove @e[tag=blue,scores={tick.general=1..}] tick.general 1
-execute as @e[tag=blue,scores={tick.general=0}] run data modify entity @s Glowing set value 0b
+execute as @e[tag=blue,scores={tick.general=0}] run data merge entity @s {Glowing:0b}
 execute as @e[tag=blue,scores={tick.general=0}] run scoreboard players reset @s tick.general
 
 # 灵魂宝物箱计时

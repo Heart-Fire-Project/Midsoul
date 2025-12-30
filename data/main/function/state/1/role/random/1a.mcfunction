@@ -1,5 +1,5 @@
 # 随机数
-data modify storage ms:temp min set value 1
+data merge storage ms:temp {min:1}
 execute store result storage ms:temp max int 1 run scoreboard players get $total temp2
 function base:random with storage ms:temp
 
