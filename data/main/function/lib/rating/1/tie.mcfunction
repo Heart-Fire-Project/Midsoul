@@ -1,2 +1,2 @@
-tellraw @s[scores={temp.tie=60}] [{text:" +85 | ",color:"#F2850D"},{translate:"ms.rating.tie",fallback:"守卫牵制"}," 60s"]
-tellraw @s[scores={temp.tie=120}] [{text:" +105 | ",color:"#F2850D"},{translate:"ms.rating.tie",fallback:"守卫牵制"}," 120s"]
+tellraw @s[scores={temp.tie=45}] [{text:" +50 | ",color:"#F2850D"},{translate:"ms.rating.tie",fallback:"困缚守卫"}," 45s"]
+tellraw @s[scores={temp.tie=90}] [{text:" +70 | ",color:"#F2850D"},{translate:"ms.rating.tie",fallback:"困缚守卫"}," 90s"]

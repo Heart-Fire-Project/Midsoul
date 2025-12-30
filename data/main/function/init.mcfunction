@@ -117,10 +117,15 @@ scoreboard objectives remove temp.item
 scoreboard objectives add temp.item dummy "单局宝物使用"
 scoreboard objectives remove temp.time
 scoreboard objectives add temp.time dummy "单局游玩时间"
+
 scoreboard objectives remove temp.track
 scoreboard objectives add temp.track dummy "单局追踪时间"
 scoreboard objectives remove temp.tie
 scoreboard objectives add temp.tie dummy "单局牵制时间"
+scoreboard objectives remove temp.charge
+scoreboard objectives add temp.charge dummy "单局充能进度"
+scoreboard objectives remove temp.rated_collect
+scoreboard objectives add temp.rated_collect dummy "单局计分收集"
 
 scoreboard objectives remove detect.sneak
 scoreboard objectives add detect.sneak custom:sneak_time "蹲下检测"
@@ -307,24 +312,24 @@ scoreboard players set #10 data 10
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
+scoreboard players set #25 data 25
 scoreboard players set #30 data 30
-scoreboard players set #35 data 35
 scoreboard players set #50 data 50
 scoreboard players set #60 data 60
 scoreboard players set #61 data 61
-scoreboard players set #65 data 65
 scoreboard players set #64 data 64
+scoreboard players set #75 data 75
 scoreboard players set #100 data 100
-scoreboard players set #115 data 115
 scoreboard players set #182 data 182
 scoreboard players set #256 data 256
-scoreboard players set #800 data 800
+scoreboard players set #600 data 600
+scoreboard players set #1000 data 1000
 scoreboard players set #10000 data 10000
 scoreboard players set #18000 data 18000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 272
+scoreboard players set $build data 273
 scoreboard players set $map_max data 4
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7

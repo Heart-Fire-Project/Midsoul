@@ -1,3 +1,3 @@
-tellraw @s [{text:" +35 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}]
-tellraw @s[scores={temp.down=2}] [{text:" +25 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}," ×2"]
-tellraw @s[scores={temp.down=4}] [{text:" +40 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"击倒灵魂"}," ×4"]
+tellraw @s [{text:" +25 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"镇压游魂"}]
+tellraw @s[scores={temp.down=4}] [{text:" +20 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"镇压游魂"}," ×4"]
+tellraw @s[scores={temp.down=7}] [{text:" +30 | ",color:"#E47227"},{translate:"ms.rating.down",fallback:"镇压游魂"}," ×7"]

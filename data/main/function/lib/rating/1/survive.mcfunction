@@ -1,1 +1,2 @@
-tellraw @s [{text:" +50 | ",color:"#4B9F5D"},{translate:"ms.rating.survive",fallback:"存活时长"}," ",{score:{name:"$min",objective:"temp2"}},":00"]
+execute if score $min temp2 matches ..9 run tellraw @s [{text:" +30 | ",color:"#4B9F5D"},{translate:"ms.rating.survive",fallback:"魂灵不灭"}," 0",{score:{name:"$min",objective:"temp2"}},":00"]
+execute if score $min temp2 matches 10.. run tellraw @s [{text:" +30 | ",color:"#4B9F5D"},{translate:"ms.rating.survive",fallback:"魂灵不灭"}," ",{score:{name:"$min",objective:"temp2"}},":00"]

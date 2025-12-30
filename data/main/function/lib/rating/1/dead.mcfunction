@@ -1,3 +1,3 @@
-execute if score $soul_death data matches ..5 run tellraw @s [{text:" +115 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}]
-execute if score $soul_death data matches 3 run tellraw @s [{text:" +50 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}," ×3"]
-execute unless entity @a[team=soul] run tellraw @s [{text:" +70 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵魂消亡"}," MAX"]
+execute if score $soul_death data matches ..5 run tellraw @s [{text:" +75 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵躯消亡"}]
+execute if score $soul_death data matches 3 run tellraw @s [{text:" +50 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵躯消亡"}," ×3"]
+execute unless entity @a[team=soul] unless entity @a[team=revive] run tellraw @s [{text:" +75 | ",color:"#C6101E"},{translate:"ms.rating.dead",fallback:"灵躯消亡"}," MAX"]

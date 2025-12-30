@@ -8,7 +8,7 @@ execute if score $undying data matches 1 unless score $alive data matches 1 if e
 
 # 若灵魂已死光
 execute unless entity @a[team=soul,scores={state=0}] as @a[team=guardian,scores={setting.instant_rating=1}] run function main:lib/rating/1/offense
-execute unless entity @a[team=soul,scores={state=0}] unless entity @e[tag=open_purple] run scoreboard players set $guardian_offense data 120
+execute unless entity @a[team=soul,scores={state=0}] unless entity @e[tag=open_purple] run scoreboard players set $guardian_offense data 180
 execute unless entity @a[team=soul,scores={state=0}] if entity @e[tag=open_purple] run scoreboard players operation $guardian_offense data = $sec temp2
 execute unless entity @a[team=soul,scores={state=0}] run function main:state/99/enter
 

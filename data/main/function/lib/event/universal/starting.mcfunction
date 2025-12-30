@@ -32,13 +32,19 @@ scoreboard players reset * temp.skill
 scoreboard players reset * temp.talent
 scoreboard players reset * temp.item
 scoreboard players reset * temp.time
+
 scoreboard players reset * temp.track
 scoreboard players reset * temp.tie
+scoreboard players reset * temp.charge
+scoreboard players reset * temp.rated_collect
 
 tag @a[team=soul] add no_hit
 tag @a remove echo_target
 tag @a remove rated_victim
 tag @a remove hit_soul
+tag @a remove charge_rating_1
+tag @a remove charge_rating_2
+tag @a remove charge_rating_3
 
 execute if score $echo data matches 1 run function main:lib/echo/init {min:"45",max:"80"}
 execute if score $echo data matches 4 run function main:lib/echo/init {min:"20",max:"60"}

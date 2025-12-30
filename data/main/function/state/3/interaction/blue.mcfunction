@@ -9,7 +9,8 @@ playsound block.respawn_anchor.charge player @a ~ ~ ~ 0.5 1
 
 # 实时表现分
 scoreboard players add @a[tag=interact_fin] temp.collect 1
-execute as @a[tag=interact_fin,scores={setting.instant_rating=1}] run function main:lib/rating/1/collect
+execute if score $state data matches 3 run scoreboard players add @a[tag=interact_fin] temp.rated_collect 1
+execute if score $state data matches 3 as @a[tag=interact_fin,scores={setting.instant_rating=1}] run function main:lib/rating/1/collect
 
 # 判定：收集到灵魂碎片时
 function main:lib/action/interact/blue
