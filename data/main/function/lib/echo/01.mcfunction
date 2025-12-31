@@ -18,4 +18,4 @@ effect give @a[tag=echo_target] glowing infinite 0 true
 function main:lib/echo/init {min:"45",max:"80"}
 scoreboard players operation $value temp = $echo tick.general
 scoreboard players operation $value temp *= #20 data
-scoreboard players operation @a[tag=!echo_target] tick.invincible > $value temp
+scoreboard players operation @a[tag=!echo_target,team=soul] tick.invincible > $value temp

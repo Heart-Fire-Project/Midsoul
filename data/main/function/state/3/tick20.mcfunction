@@ -6,4 +6,4 @@ execute at @a[scores={state=1,tick.general=0..},team=soul] run playsound block.b
 
 # 实时表现分
 function base:caculate/time {unit:"min",tick:"$stat_gametime",source:"tick.general"}
-execute if score $min temp2 matches 1..10 if score $sec temp2 matches 0 as @a[team=soul,scores={setting.instant_rating=1}] run function main:lib/rating/1/survive
+execute if score $min temp2 matches 1..10 if score $sec temp2 matches 0 as @a[team=soul,scores={setting.instant_rating=1}] run function main:lib/rating/1/soul/survive

@@ -6,7 +6,7 @@ playsound entity.evoker.prepare_summon player @a
 
 # 实时表现分
 scoreboard players add @a[tag=interact_fin] temp.heal 1
-execute as @a[tag=interact_fin,scores={setting.instant_rating=1}] run function main:lib/rating/1/heal
+execute as @a[tag=interact_fin,scores={setting.instant_rating=1}] run function main:lib/rating/1/soul/heal
 
 # 按照病情进行救治
 scoreboard players set $heal temp 1010000

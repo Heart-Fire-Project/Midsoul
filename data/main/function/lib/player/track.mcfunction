@@ -17,5 +17,5 @@ tag @e remove tie_pend
 execute if score $pending temp matches 1 run scoreboard players add @s[team=soul] temp.tie 1
 
 # 即时表现分
-execute if score $pending temp matches 1 if data storage ms:mode {logic:"1"} as @s[team=soul,scores={setting.instant_rating=1}] run function main:lib/rating/1/tie
-execute if entity @e[tag=tracker,distance=..4] if data storage ms:mode {logic:"1"} as @s[team=guardian,scores={setting.instant_rating=1}] run function main:lib/rating/1/track
+execute if score $pending temp matches 1 if data storage ms:mode {logic:"1"} as @s[team=soul,scores={setting.instant_rating=1}] run function main:lib/rating/1/soul/tie
+execute if entity @e[tag=tracker,distance=..4] if data storage ms:mode {logic:"1"} as @s[team=guardian,scores={setting.instant_rating=1}] run function main:lib/rating/1/guardian/track

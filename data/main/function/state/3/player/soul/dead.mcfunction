@@ -24,4 +24,4 @@ scoreboard players add @s stat.death 1
 scoreboard players add $soul_death data 1
 
 # 即时表现分
-execute as @a[team=guardian,scores={setting.instant_rating=1}] run function main:lib/rating/1/dead
+execute as @a[team=guardian,scores={setting.instant_rating=1}] run function main:lib/rating/1/guardian/dead

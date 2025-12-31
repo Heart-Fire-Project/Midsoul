@@ -19,4 +19,4 @@ scoreboard players add @s stat.revive 1
 scoreboard players add $soul_revive data 1
 
 # 实时表现分
-execute as @s[scores={setting.instant_rating=1}] run function main:lib/rating/1/revive
+execute as @s[scores={setting.instant_rating=1}] run function main:lib/rating/1/soul/revive

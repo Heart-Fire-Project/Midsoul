@@ -23,4 +23,4 @@ scoreboard players operation @s[tag=interact_purple,tag=interacting] temp = $int
 function main:lib/action/interact/tick
 
 # 存储进充能进度
-execute as @s[tag=interact_purple,tag=interacting] run function main:lib/rating/1/charge
+execute as @s[tag=interact_purple,tag=interacting] run function main:lib/rating/1/soul/charge

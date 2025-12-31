@@ -10,7 +10,7 @@ function main:lib/action/player/hit
 
 # 实时表现分
 scoreboard players add @s[tag=rated_attack] temp.hit 1
-execute as @s[tag=rated_attack,scores={setting.instant_rating=1}] run function main:lib/rating/1/hit
+execute as @s[tag=rated_attack,scores={setting.instant_rating=1}] run function main:lib/rating/1/guardian/hit
 
 # 取消正在进行的所有能力，并重设冷却
 execute as @s[tag=skill_on] run function main:lib/ability/skill/reset
