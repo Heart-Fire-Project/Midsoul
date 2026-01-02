@@ -9,7 +9,6 @@ execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed ba
 effect give @a[team=soul,scores={state=0}] glowing infinite 6 true
 
 # 回响再加速！
-execute if score $echo data matches 5 as @a[team=soul,scores={state=0}] run attribute @s movement_speed base set 0.132
 execute if score $echo data matches 6 as @a[team=soul,scores={state=0}] run attribute @s movement_speed base set 0.24
 execute if score $echo data matches 6 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.32
 

@@ -13,7 +13,7 @@
         "lore":[
             {
                 "translate":"ms.item.0.desc",
-                "fallback":"开启灵魂宝物盒以获取宝物",
+                "fallback":"打开灵魂宝物盒以获取宝物",
                 "color":"white",
                 "italic":false
             }

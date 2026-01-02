@@ -4,8 +4,8 @@ tellraw @a [{text:"",color:"light_purple"},{text:"» ",bold:true},{translate:"ms
 execute at @e[tag=E04] run summon lightning_bolt
 
 # 把守卫者劈懵
-execute at @e[tag=E04] as @a[distance=..3,team=guardian,scores={state=0}] run function main:lib/player/strike
-tag @e remove E04
+execute at @e[tag=E04] as @a[distance=..4,team=guardian,scores={state=0}] run function main:lib/player/strike
 
-# 重设倒计时
+# 准备下一次
+tag @e remove E04
 function main:lib/echo/init {min:"20",max:"60"}

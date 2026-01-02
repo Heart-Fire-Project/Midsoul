@@ -10,8 +10,8 @@ scoreboard players set @s state 1
 scoreboard players add @s temp.dying 1
 
 # 实时表现分
-scoreboard players add @p[scores={detect.kill=1..}] temp.down 1
-execute as @p[scores={detect.kill=1..,setting.instant_rating=1}] run function main:lib/rating/1/guardian/down
+scoreboard players add @p[scores={detect.kill=1..}] temp.stun 1
+execute as @p[scores={detect.kill=1..,setting.instant_rating=1}] run function main:lib/rating/1/guardian/stun
 scoreboard players reset @p[scores={detect.kill=1..}] detect.kill
 
 # 设置时间

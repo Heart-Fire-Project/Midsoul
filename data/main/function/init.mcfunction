@@ -6,34 +6,34 @@ forceload remove all
 time set midnight
 weather clear
 difficulty normal
-gamerule playersSleepingPercentage 101
-gamerule randomTickSpeed 0
-gamerule spawnRadius 0
-gamerule allowEnteringNetherUsingPortals false
-gamerule doDaylightCycle false
-gamerule doEntityDrops false
-gamerule doFireTick false
-gamerule doImmediateRespawn true
-gamerule doMobLoot false
-gamerule doMobSpawning false
-gamerule doTileDrops false
-gamerule doVinesSpread false
-gamerule doWeatherCycle false
-gamerule drowningDamage false
-gamerule fallDamage false
-gamerule fireDamage false
-gamerule freezeDamage false
-gamerule keepInventory true
-gamerule locatorBar false
-gamerule mobGriefing false
-gamerule naturalRegeneration false
-gamerule projectilesCanBreakBlocks false
+gamerule players_sleeping_percentage 101
+gamerule fire_spread_radius_around_player 0
+gamerule random_tick_speed 0
+gamerule respawn_radius 0
+gamerule advance_time false
+gamerule advance_weather false
+gamerule allow_entering_nether_using_portals false
+gamerule block_drops false
+gamerule drowning_damage false
+gamerule entity_drops false
+gamerule fall_damage false
+gamerule fire_damage false
+gamerule freeze_damage false
+gamerule immediate_respawn true
+gamerule keep_inventory true
+gamerule locator_bar false
+gamerule mob_drops false
+gamerule mob_griefing false
+gamerule natural_health_regeneration false
+gamerule projectiles_can_break_blocks false
 gamerule pvp true
-gamerule reducedDebugInfo true
-gamerule sendCommandFeedback false
-gamerule showDeathMessages false
-gamerule spawnerBlocksEnabled false
-gamerule tntExplodes false
+gamerule reduced_debug_info true
+gamerule spawner_blocks_work false
+gamerule send_command_feedback false
+gamerule show_death_messages false
+gamerule spawn_mobs false
+gamerule spread_vines false
+gamerule tnt_explodes false
 
 # 计分板
 scoreboard objectives remove data
@@ -88,6 +88,10 @@ scoreboard objectives remove tick.disable
 scoreboard objectives add tick.disable dummy "无法出伤计时"
 scoreboard objectives remove tick.disable_max
 scoreboard objectives add tick.disable_max dummy "无法出伤上限"
+scoreboard objectives remove tick.silent
+scoreboard objectives add tick.silent dummy "技能沉默计时"
+scoreboard objectives remove tick.silent_max
+scoreboard objectives add tick.silent_max dummy "技能沉默上限"
 scoreboard objectives remove tick.invincible
 scoreboard objectives add tick.invincible dummy "被动无敌计时"
 scoreboard objectives remove tick.off_ground
@@ -102,13 +106,13 @@ scoreboard objectives add temp.collect dummy "单局碎片收集"
 scoreboard objectives remove temp.heal
 scoreboard objectives add temp.heal dummy "单局队友救助"
 scoreboard objectives remove temp.open
-scoreboard objectives add temp.open dummy "单局宝盒开启"
+scoreboard objectives add temp.open dummy "单局宝盒打开"
 scoreboard objectives remove temp.dying
 scoreboard objectives add temp.dying dummy "单局陷入垂死"
 scoreboard objectives remove temp.hit
-scoreboard objectives add temp.hit dummy "单局目标命中"
-scoreboard objectives remove temp.down
-scoreboard objectives add temp.down dummy "单局玩家击倒"
+scoreboard objectives add temp.hit dummy "单局玩家命中"
+scoreboard objectives remove temp.stun
+scoreboard objectives add temp.stun dummy "单局玩家击倒"
 scoreboard objectives remove temp.skill
 scoreboard objectives add temp.skill dummy "单局技能使用"
 scoreboard objectives remove temp.talent
@@ -149,10 +153,10 @@ scoreboard objectives add soul_combo dummy "灵魂连击"
 
 scoreboard objectives add stat.collect dummy "总计碎片收集"
 scoreboard objectives add stat.heal dummy "总计队友救助"
-scoreboard objectives add stat.open dummy "总计宝盒开启"
+scoreboard objectives add stat.open dummy "总计宝盒打开"
 scoreboard objectives add stat.dying dummy "总计陷入垂死"
-scoreboard objectives add stat.hit dummy "总计目标命中"
-scoreboard objectives add stat.down dummy "总计玩家击倒"
+scoreboard objectives add stat.hit dummy "总计玩家命中"
+scoreboard objectives add stat.stun dummy "总计玩家击倒"
 scoreboard objectives add stat.skill dummy "总计技能使用"
 scoreboard objectives add stat.talent dummy "总计天赋使用"
 scoreboard objectives add stat.item dummy "总计宝物使用"
@@ -326,7 +330,7 @@ scoreboard players set #18000 data 18000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 275
+scoreboard players set $build data 276
 scoreboard players set $map_max data 4
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7

@@ -17,7 +17,7 @@ $scoreboard players set $(target) stat.heal 0
 $scoreboard players set $(target) stat.open 0
 $scoreboard players set $(target) stat.dying 0
 $scoreboard players set $(target) stat.hit 0
-$scoreboard players set $(target) stat.down 0
+$scoreboard players set $(target) stat.stun 0
 $scoreboard players set $(target) stat.skill 0
 $scoreboard players set $(target) stat.talent 0
 $scoreboard players set $(target) stat.item 0

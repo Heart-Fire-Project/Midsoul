@@ -1,6 +1,6 @@
 tag @r[distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add interact_fin
 
-# 完成灵魂宝物盒开启
+# 完成灵魂宝物盒打开
 particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0.1 0.2 0 7 force @a
 playsound block.shulker_box.open player @a
 
@@ -21,7 +21,7 @@ function base:random with storage ms:temp
 effect give @r[team=guardian,tag=interact_fin] speed 10 1
 execute if entity @a[team=guardian,tag=interact_fin] run effect give @p[team=soul,scores={state=0}] glowing 5 0
 
-# 判定：开启灵魂宝物盒时
+# 判定：打开灵魂宝物盒时
 function main:lib/action/interact/gray
 
 # 灵魂最终同步宝物结果

@@ -36,30 +36,30 @@ execute if score $1_process tick.general matches 1319 if score $random temp2 <= 
 # 1319 | 普通标题
 execute if score $1_process tick.general matches 1319 run title @a[tag=game_player] times 3 50 4
 execute if score $1_process tick.general matches 1319 run playsound block.beacon.activate ambient @a[tag=game_player] 0 1000000 0 120000 1
-execute if score $1_process tick.general matches 1319 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#7367F0"}
+execute if score $1_process tick.general matches 1319 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#7367F0"}
 
 # 1295 >> 1261 | 回响标题
 execute if score $1_process tick.general matches 1295 unless score $echo data matches 0 run title @a[tag=game_player] times 0 20 4
-execute if score $1_process tick.general matches 1291 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#7367F0"}
+execute if score $1_process tick.general matches 1291 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#7367F0"}
 execute if score $1_process tick.general matches 1290 unless score $echo data matches 0 run playsound event.mob_effect.trial_omen player @a[tag=game_player] 0 1000000 0 120000 0.8
 execute if score $1_process tick.general matches 1290 unless score $echo data matches 0 run title @a[tag=game_player] subtitle {translate:"ms.echo.name",fallback:"回响占位符",color:"#8966EF",obfuscated:true}
-execute if score $1_process tick.general matches 1290 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#8966EF"}
+execute if score $1_process tick.general matches 1290 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#8966EF"}
 execute if score $1_process tick.general matches 1289 unless score $echo data matches 0 run title @a[tag=game_player] subtitle {translate:"ms.echo.name",fallback:"回响占位符",color:"#9F64EE",obfuscated:true}
-execute if score $1_process tick.general matches 1289 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#9F64EE"}
+execute if score $1_process tick.general matches 1289 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#9F64EE"}
 execute if score $1_process tick.general matches 1288 unless score $echo data matches 0 run title @a[tag=game_player] subtitle {translate:"ms.echo.name",fallback:"回响占位符",color:"#B563EE",obfuscated:true}
-execute if score $1_process tick.general matches 1288 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#B563EE"}
+execute if score $1_process tick.general matches 1288 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#B563EE"}
 execute if score $1_process tick.general matches 1287 unless score $echo data matches 0 run title @a[tag=game_player] subtitle {translate:"ms.echo.name",fallback:"回响占位符",color:"#CB61ED",obfuscated:true}
-execute if score $1_process tick.general matches 1287 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#CB61ED"}
+execute if score $1_process tick.general matches 1287 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#CB61ED"}
 execute if score $1_process tick.general matches 1286 unless score $echo data matches 0 run title @a[tag=game_player] subtitle {translate:"ms.echo.name",fallback:"回响占位符",color:"#E160EC",obfuscated:true}
-execute if score $1_process tick.general matches 1286 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#E160EC"}
+execute if score $1_process tick.general matches 1286 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#E160EC"}
 execute if score $1_process tick.general matches 1285 unless score $echo data matches 0 run function main:state/1/echo_subtitle
-execute if score $1_process tick.general matches 1285 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#F75EEB"}
+execute if score $1_process tick.general matches 1285 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#F75EEB"}
 execute if score $1_process tick.general matches 1269 unless score $echo data matches 0 run title @a[tag=game_player] clear
 execute if score $1_process tick.general matches 1267 unless score $echo data matches 0 run function main:state/1/echo_subtitle
-execute if score $1_process tick.general matches 1267 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#F75EEB"}
+execute if score $1_process tick.general matches 1267 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#F75EEB"}
 execute if score $1_process tick.general matches 1263 unless score $echo data matches 0 run title @a[tag=game_player] clear
 execute if score $1_process tick.general matches 1262 unless score $echo data matches 0 run function main:state/1/echo_subtitle
-execute if score $1_process tick.general matches 1262 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#F75EEB"}
+execute if score $1_process tick.general matches 1262 unless score $echo data matches 0 run title @a[tag=game_player] title {translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#F75EEB"}
 execute if score $1_process tick.general matches 1261 unless score $echo data matches 0 run title @a[tag=game_player] clear
 
 # 1265 >> 1260 | 本场详情 & 选定地图
@@ -85,7 +85,7 @@ execute if score $1_process tick.general matches 1239 run bossbar set midsoul:1 
 execute if score $1_process tick.general matches 1239 run bossbar set midsoul:1 max 200
 execute if score $1_process tick.general matches 1239 run bossbar set midsoul:1 style notched_10
 execute if score $1_process tick.general matches 1239 run bossbar set midsoul:1 visible true
-execute if score $1_process tick.general matches 1239 run bossbar set midsoul:1 players @a[team=!spectator]
+execute if score $1_process tick.general matches 1239 run bossbar set midsoul:1 players @a[tag=game_player]
 execute if score $1_process tick.general matches 1239 run scoreboard players set @a[tag=game_player] state 0
 execute if score $1_process tick.general matches 1239 run playsound weather.end_flash player @a[tag=game_player] 0 1000000 0 120000
 execute if score $1_process tick.general matches 1239 as @a[tag=game_player] run function main:state/1/role/panel

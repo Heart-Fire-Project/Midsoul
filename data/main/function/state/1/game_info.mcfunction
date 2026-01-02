@@ -70,8 +70,8 @@ scoreboard players display name $blank2 info ""
 scoreboard players display numberformat $blank2 info blank
 
 # 第七日，回响标题
-execute if score $echo data matches 1..9 run scoreboard players set $echo info 1
-execute if score $echo data matches 1..9 run scoreboard players display name $echo info [{translate:"ms.echo",fallback:"回响"},{text:" »"}]
+execute if score $echo data matches 1.. run scoreboard players set $echo info 1
+execute if score $echo data matches 1.. run scoreboard players display name $echo info [{translate:"ms.echo",fallback:"回响"},{text:" »"}]
 
 # 然后，在第八日……
 execute if score $echo data matches 1 run scoreboard players display numberformat $echo info fixed {translate:"ms.echo.1",fallback:"强制性引导",color:"#F75EEB"}

@@ -38,7 +38,7 @@ execute if score $echo data matches 6 as @a[team=soul,scores={state=0}] run attr
 execute if score $echo data matches 6 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.21
 
 # 回响效果
-execute if score $echo data matches 8 run scoreboard players set @e[tag=purple] tick.general 999999999
+execute if score $echo data matches 8 run scoreboard players set @e[tag=purple] tick.general 1010000
 
 # 教程
 advancement grant @a[tag=game_player] only main:tutorial/interact/4

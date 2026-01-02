@@ -1,4 +1,5 @@
 # 最基础玩家属性
+attribute @s attack_damage base set 0
 attribute @s movement_speed base set 0.1
 attribute @s sneaking_speed base set 0.3
 attribute @s water_movement_efficiency base set 0.0

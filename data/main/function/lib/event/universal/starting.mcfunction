@@ -11,6 +11,9 @@ scoreboard players set @a tick.enhance 0
 scoreboard players reset @a tick.disable
 scoreboard players set @a tick.disable 0
 scoreboard players reset @a tick.disable_max
+scoreboard players reset @a tick.silent
+scoreboard players set @a tick.silent 0
+scoreboard players reset @a tick.silent_max
 scoreboard players reset @a tick.invincible
 scoreboard players set @a tick.invincible 0
 scoreboard players reset @a detect.die
@@ -27,7 +30,7 @@ scoreboard players reset * temp.heal
 scoreboard players reset * temp.open
 scoreboard players reset * temp.dying
 scoreboard players reset * temp.hit
-scoreboard players reset * temp.down
+scoreboard players reset * temp.stun
 scoreboard players reset * temp.skill
 scoreboard players reset * temp.talent
 scoreboard players reset * temp.item

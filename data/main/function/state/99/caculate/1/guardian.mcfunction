@@ -14,15 +14,15 @@ tellraw @s[scores={temp=100..}] [{translate:"ms.rating.hit",fallback:"利刃出�
 scoreboard players operation @s exp.temp += @s temp
 
 # 镇压游魂
-execute unless score @s temp.down matches -2147483648..2147483647 run scoreboard players set @s temp.down 0
-scoreboard players operation @s temp = @s temp.down
+execute unless score @s temp.stun matches -2147483648..2147483647 run scoreboard players set @s temp.stun 0
+scoreboard players operation @s temp = @s temp.stun
 scoreboard players operation @s temp *= #10 data
-scoreboard players add @s[scores={temp.down=3..}] temp 20
-scoreboard players add @s[scores={temp.down=8..}] temp 40
+scoreboard players add @s[scores={temp.stun=3..}] temp 20
+scoreboard players add @s[scores={temp.stun=8..}] temp 40
 execute if score $two_guardian state matches 1 run function main:lib/rating/1/guardian/multiple
-tellraw @s[scores={temp=..9}] [{translate:"ms.rating.down",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"00",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.down",name:"@s"}},"×)"]
-tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.down",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"0",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.down",name:"@s"}},"×)"]
-tellraw @s[scores={temp=100..}] [{translate:"ms.rating.down",fallback:"镇压游魂",color:"#F1C207"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.down",name:"@s"}},"×)"]
+tellraw @s[scores={temp=..9}] [{translate:"ms.rating.stun",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"00",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.stun",name:"@s"}},"×)"]
+tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.stun",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"0",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.stun",name:"@s"}},"×)"]
+tellraw @s[scores={temp=100..}] [{translate:"ms.rating.stun",fallback:"镇压游魂",color:"#F1C207"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.stun",name:"@s"}},"×)"]
 scoreboard players operation @s exp.temp += @s temp
 
 # 追灵寻踪

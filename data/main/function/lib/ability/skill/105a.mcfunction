@@ -2,7 +2,7 @@
 tag @a[team=soul,distance=..4,scores={state=0,tick.invincible=0}] add S105
 
 # 释放剑气
-execute at @a[tag=S105] run particle minecraft:sweep_attack ~ ~1 ~ 0 0 0 1 1 force @a
+execute at @a[tag=S105] run particle sweep_attack ~ ~1 ~ 0 0 0 1 1 force @a
 playsound entity.player.attack.sweep player @a
 execute if entity @s[scores={tick.enhance=..0}] as @a[tag=S105] run damage @s 5
 execute if entity @s[scores={tick.enhance=1..}] as @a[tag=S105] run damage @s 10

@@ -2,7 +2,5 @@ tellraw @a [{text:"",color:"light_purple"},{text:"» ",bold:true},{translate:"ms
 playsound block.respawn_anchor.deplete player @a 0 1000000 0 120000
 scoreboard players set $echo tick.general -1
 
-# 取消所有标记
-effect clear @a[tag=echo_target] glowing
-scoreboard players set @a[tag=!echo_target] tick.invincible 0
+# 移除所有标记
 tag @a remove echo_target

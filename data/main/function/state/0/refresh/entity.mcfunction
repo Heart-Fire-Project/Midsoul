@@ -5,7 +5,7 @@ kill @e[tag=lobby_entity]
 summon item_frame 0 1 23 {Tags:["lobby_entity"],Facing:3b}
 
 # 主标题
-summon text_display 3.99 2.2 0.5 {Tags:[lobby_entity],text:[{translate:"ms.title",fallback:"午夜 🔯 灵魂",color:"#7367F0"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[2.8f,2.8f,2.8f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display 3.99 2.2 0.5 {Tags:[lobby_entity],text:[{translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#7367F0"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[2.8f,2.8f,2.8f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 summon text_display 3.99 1.8 0.5 {Tags:[lobby_entity],text:[{translate:"ms.lobby.ver",fallback:"2.0 💠 混沌回响",color:"white"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 
 # 路标

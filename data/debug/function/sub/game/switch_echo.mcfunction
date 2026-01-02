@@ -11,7 +11,7 @@ $scoreboard players set $echo data $(value)
 execute if data storage ms:mode {logic:"1"} as @a[tag=game_player] run function main:state/3/player/effect
 playsound entity.mooshroom.convert player @a 0 1000000 0 120000
 tellraw @a [{text:"» ",bold:true,color:"light_purple"},{translate:"ms.info.switch_echo",fallback:"回响已更迭！",bold:false}]
-execute as @a run function main:lib/map/echo
+execute as @a run function main:lib/echo/info
 
 # 现行获取当前数据
 execute store result score $prev_goal data run data get storage ms:map shard_goal

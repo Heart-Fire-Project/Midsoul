@@ -75,9 +75,11 @@ execute if entity @s[team=soul,scores={state=1}] run item modify block 0 -7 0 co
 item replace block 0 -7 0 container.4 with firework_star
 $execute if entity @s[team=soul] run item modify block 0 -7 0 container.4 main:skill/0$(skill)
 $execute if entity @s[team=guardian] run item modify block 0 -7 0 container.4 main:skill/1$(skill)
+item modify block 0 -7 0 container.4 {function:set_components,components:{max_stack_size:99}}
 $execute if entity @s[team=soul,scores={skill=4}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S004)}
 execute if entity @s[scores={state=0,tick.skill=1..}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"firework_star"}}
 execute if entity @s[scores={state=1}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"barrier"}}
+$execute if score @s tick.silent matches 1.. run item modify block 0 -7 0 container.4 {function:"set_components",components:{damage:$(silent),max_damage:$(silent_max),max_stack_size:1,tooltip_display:{hidden_components:[damage]}}}
 
 # 一天赋物品
 item replace block 0 -7 0 container.7 with firework_star

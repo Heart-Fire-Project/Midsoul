@@ -17,7 +17,7 @@ execute store result score $extra temp run data get storage ms:map original_summ
 execute store result score $goal temp run data get storage ms:map original_goal
 scoreboard players operation $extra temp -= $goal temp
 scoreboard players operation $remain temp += $extra temp
-execute if score $echo data matches 9 run scoreboard players set $remain temp 3
+execute if score $echo data matches 9 store result score $remain temp run data get storage ms:map size
 execute store result storage ms:temp num int 1 run scoreboard players get $remain temp
 function main:lib/event/summon/blue with storage ms:temp
 

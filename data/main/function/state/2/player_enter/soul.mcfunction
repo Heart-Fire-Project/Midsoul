@@ -18,7 +18,6 @@ execute unless entity @a[x=0,y=0,z=0,distance=..300,tag=game_player] run tag @e 
 execute unless entity @a[x=0,y=0,z=0,distance=..300,tag=game_player] run tag @e remove enter_soul
 
 # 回响效果
-execute if score $echo data matches 5 run attribute @s movement_speed base set 0.11
 execute if score $echo data matches 5 run attribute @s scale base set 0.7
 execute if score $echo data matches 6 run attribute @s movement_speed base set 0.15
 

@@ -2,8 +2,8 @@
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 # 同步改变了 gamerule 的设定
-execute store result storage ms:setting reduce_f3 byte 1 run gamerule reducedDebugInfo
-execute store result storage ms:setting send_feedback byte 1 run gamerule sendCommandFeedback
+execute store result storage ms:setting reduce_f3 byte 1 run gamerule reduced_debug_info
+execute store result storage ms:setting send_feedback byte 1 run gamerule send_command_feedback
 
 # 信息
 tellraw @s {text:"午夜灵魂 // Midnight Soul",color:"#988FF4"}
