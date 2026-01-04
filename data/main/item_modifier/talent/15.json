@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 60  ⌚ 5 > ",
+                    "text":"⌚ 6 > ",
                     "color":"gold",
                     "italic":false
                 },
@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.105.desc",
-                "fallback":"使距离你较远的至多 2 位灵魂发光",
+                "fallback":"擦刀状态结束时，使最远的至多 2 个灵魂发光",
                 "color":"white",
                 "italic":false
             }

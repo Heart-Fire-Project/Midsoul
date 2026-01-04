@@ -1,1 +1,0 @@
-$effect give @s speed $(value) 1

@@ -30,13 +30,13 @@
             },
             {
                 "translate":"ms.skill.103.desc.b",
-                "fallback":"标记最远的灵魂传送至其附近并令其发光 3 秒，",
+                "fallback":"标记最远的灵魂传送至其附近并令其发光 5 秒，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.103.desc.c",
-                "fallback":"技能持续时间内被标记的灵魂会持续留下尾迹",
+                "fallback":"技能期间内被标记的灵魂会持续留下尾迹",
                 "color":"white",
                 "italic":false
             }

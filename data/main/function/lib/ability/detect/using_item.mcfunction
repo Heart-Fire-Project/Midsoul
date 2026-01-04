@@ -1,6 +1,6 @@
 # 确认计时
 execute if score @s detect.using matches 1 run scoreboard players add @s tick.using 1
-execute unless score @s detect.using matches 1 if score @s tick.using matches 1.. run title @s actionbar ""
+execute unless score @s detect.using matches 1 if score @s tick.using matches 1.. run title @s[tag=!status_display] actionbar ""
 execute unless score @s detect.using matches 1 run scoreboard players reset @s tick.using
 
 # 按照选中的格子判定触发的是哪种能力

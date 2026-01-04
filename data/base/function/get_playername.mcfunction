@@ -5,4 +5,4 @@
 
 loot replace entity @s container.0 loot base:get_playername
 $item replace entity @n[type=item_frame,x=$(x),y=$(y),z=$(z),distance=..3] contents from entity @s container.0
-$data modify storage r7s:base playername set string entity @n[type=item_frame,x=$(x),y=$(y),z=$(z)] Item.components."minecraft:profile".name
+$data modify storage r7s:base playername set string entity @n[type=item_frame,x=$(x),y=$(y),z=$(z),distance=..3] Item.components."minecraft:profile".name

@@ -38,6 +38,12 @@
                 "fallback":"第二次及之后施放时传送至上一个虚影锚点",
                 "color":"white",
                 "italic":false
+            },
+            {
+                "translate":"ms.skill.005.desc.c",
+                "fallback":"初始冷却减半；生成的锚点仅己方可见",
+                "color":"gray",
+                "italic":false
             }
         ],
         "mode":"replace_all"

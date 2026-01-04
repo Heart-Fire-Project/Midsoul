@@ -12,8 +12,8 @@ tag @s remove quering
 tag @s remove game_player
 tag @s remove check_join
 tag @s remove check_ability
+tag @a remove status_display
 tag @s remove echo_target
-tag @s remove rated_victim
 tag @s remove item_on
 tag @s remove skill_on
 tag @s remove talent_1_on

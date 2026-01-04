@@ -14,7 +14,7 @@ execute if score $noguar tick.general matches 600 run playsound entity.wandering
 
 # 确认显示者
 tag @a remove show_title
-execute as @a[tag=game_player] unless score @s tick.using matches 1.. run tag @s add show_title
+execute as @a[tag=game_player] unless score @s tick.using matches 1.. run tag @s[tag=!status_display] add show_title
 
 # 快捷栏提示
 execute if score $color temp matches 0 run title @a[tag=show_title] actionbar [{text:"⏳ ",color:"#DD2200"},{translate:"ms.info.no_guardian",fallback:"守卫者掉线，游戏将在 %s 秒后结束",with:[{score:{name:"$sec",objective:"temp2"}}]}," ⏳"]

@@ -1,5 +1,5 @@
 # 若守卫者不在
-execute if entity @a[team=guardian] if score $noguar tick.general matches ..599 run title @a actionbar ""
+execute if entity @a[team=guardian] if score $noguar tick.general matches ..599 as @a unless score @s tick.using matches 1.. run title @s[tag=!status_display] actionbar ""
 execute if entity @a[team=guardian] run scoreboard players set $noguar tick.general 600
 execute unless entity @a[team=guardian] run function main:lib/event/no_guardian
 

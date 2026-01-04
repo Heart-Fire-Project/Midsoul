@@ -42,9 +42,8 @@ scoreboard players reset * temp.charge
 scoreboard players reset * temp.rated_collect
 
 tag @a[team=soul] add no_hit
+tag @a remove status_display
 tag @a remove echo_target
-tag @a remove rated_victim
-tag @a remove hit_soul
 tag @a remove charge_rating_1
 tag @a remove charge_rating_2
 tag @a remove charge_rating_3

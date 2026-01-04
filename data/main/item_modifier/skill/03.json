@@ -35,13 +35,19 @@
             },
             {
                 "translate":"ms.skill.003.desc.b",
-                "fallback":"守卫者距离你越近其所获得效果的时长越长",
+                "fallback":"自身获得等同于其中最长发光时长的移速 +40%% 效果",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.003.desc.c",
-                "fallback":"距离 12 格以内时达到上限发光 30 秒与减速 15 秒",
+                "fallback":"守卫者距离你越近其所获得效果的时长越长，",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.003.desc.d",
+                "fallback":"距离 12 格以内时达到上限发光 20 秒与减速 10 秒",
                 "color":"gray",
                 "italic":false
             }

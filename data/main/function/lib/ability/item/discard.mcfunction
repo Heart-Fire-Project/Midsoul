@@ -4,7 +4,7 @@ execute if score @s tick.item matches 0.. run tag @s add item_on
 execute if score @s tick.item matches 0.. run scoreboard players set @s tick.item -4000
 
 # 第二次丢弃
-execute if score @s tick.item matches -3900..-1 run title @s actionbar ""
+execute if score @s tick.item matches -3900..-1 run title @s[tag=!status_display] actionbar ""
 execute if score @s tick.item matches -3900..-1 run scoreboard players set @s item 0
 execute if score @s tick.item matches -3900..-1 run tag @s remove item_on
 execute if score @s tick.item matches -3900..-1 run playsound block.composter.ready player @s

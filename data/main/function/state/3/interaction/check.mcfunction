@@ -15,7 +15,7 @@ tag @s[tag=!interact_blue,tag=!interact_gold,tag=!interact_gray,tag=!E02] remove
 
 # 交互提示
 tag @s remove show_title
-execute unless score @s tick.using matches 1.. run tag @s add show_title
+execute unless score @s tick.using matches 1.. run tag @s[tag=!status_display] add show_title
 execute as @s[tag=hint_blue,tag=show_title] run title @s actionbar [{translate:"ms.hint.blue",fallback:"长按 [%s] 以收集",with:[{keybind:"key.sneak"}],color:"#50A7D9"}]
 execute as @s[tag=hint_gold,tag=show_title] run title @s actionbar [{translate:"ms.hint.gold",fallback:"长按 [%s] 以点亮",with:[{keybind:"key.sneak"}],color:"gold"}]
 execute as @s[tag=hint_gray,tag=show_title] run title @s actionbar [{translate:"ms.hint.gray",fallback:"长按 [%s] 以打开",with:[{keybind:"key.sneak"}],color:"gray"}]
@@ -23,9 +23,9 @@ execute as @s[tag=!interacting,tag=interact_blue,scores={setting.interact_hint=1
 execute as @s[tag=!interacting,tag=interact_gold,scores={setting.interact_hint=1}] run tag @s add hint_gold
 execute as @s[tag=!interacting,tag=interact_gray,scores={setting.interact_hint=1}] run tag @s add hint_gray
 execute as @s[tag=!interacting,tag=E02,scores={setting.interact_hint=1}] run tag @s add hint_blue
-execute as @s[tag=hint_blue,tag=!interact_blue,tag=!E02] run title @s actionbar ""
-execute as @s[tag=hint_gold,tag=!interact_gold] run title @s actionbar ""
-execute as @s[tag=hint_gray,tag=!interact_gray] run title @s actionbar ""
+execute as @s[tag=hint_blue,tag=!interact_blue,tag=!E02] run title @s[tag=!status_display] actionbar ""
+execute as @s[tag=hint_gold,tag=!interact_gold] run title @s[tag=!status_display] actionbar ""
+execute as @s[tag=hint_gray,tag=!interact_gray] run title @s[tag=!status_display] actionbar ""
 tag @s[tag=interacting] remove hint_blue
 tag @s[tag=interacting] remove hint_gold
 tag @s[tag=interacting] remove hint_gray

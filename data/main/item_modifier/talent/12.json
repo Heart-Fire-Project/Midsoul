@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⌚ 3 > ",
+                    "text":"⌚ 4 > ",
                     "color":"gold",
                     "italic":false
                 },
@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.102.desc",
-                "fallback":"灵魂解除垂死状态时，使全体灵魂发光且移速 -15%%",
+                "fallback":"灵魂解除垂死状态时，使全体灵魂移速 -15%%",
                 "color":"white",
                 "italic":false
             }

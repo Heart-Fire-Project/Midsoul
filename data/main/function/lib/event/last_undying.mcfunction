@@ -6,7 +6,7 @@ execute if score $color temp matches ..-1 run scoreboard players operation $colo
 
 # 确认显示者
 tag @a remove show_title
-execute as @a[tag=game_player] unless score @s tick.using matches 1.. run tag @s add show_title
+execute as @a[tag=game_player] unless score @s tick.using matches 1.. run tag @s[tag=!status_display] add show_title
 
 # 快捷栏提示
 execute if score $color temp matches 0 run title @a[tag=show_title] actionbar [{text:"⚕ ",color:"#FFA50F"},{translate:"ms.info.last_undying",fallback:"最终锚点 · 灵魂之灯点亮速度加倍",with:[{score:{name:"$sec",objective:"temp2"}}]}," ⚕"]

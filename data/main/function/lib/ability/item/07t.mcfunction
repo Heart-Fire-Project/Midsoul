@@ -1,5 +1,5 @@
 # 显示进度条
-scoreboard players set @s temp 300
+scoreboard players set @s temp 200
 function base:actionbar_timer {current:"tick.using",max:"temp",color:"#33FFAA"}
 
 # 持续性特效
@@ -10,4 +10,4 @@ particle dust_color_transition{from_color:[0.6,0.2,0.7],to_color:[0.9,0.7,1.0],s
 execute if score @s tick.item matches ..-1 run scoreboard players set @s tick.item 0
 
 # 完成判定
-execute if score @s tick.using matches 300.. run function main:lib/ability/item/07f
+execute if score @s tick.using matches 200.. run function main:lib/ability/item/07f

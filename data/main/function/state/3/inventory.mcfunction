@@ -61,8 +61,8 @@ $execute if entity @s[team=guardian,scores={state=0}] run item modify block 0 -7
 $execute if entity @s[team=guardian,scores={state=0,tick.enhance=1..}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)b
 $execute if entity @s[team=guardian,scores={state=1}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
 $execute if entity @s[team=guardian,scores={tick.disable=1..}] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
-$execute if entity @s[team=guardian,scores={skill=5},tag=skill_on] run item modify block 0 -7 0 container.1 main:weapon/$(weapon)c
 execute if entity @s[team=guardian,scores={state=1}] run item modify block 0 -7 0 container.1 {function:"set_components",components:{item_model:"barrier"}}
+execute if score @s tick.disable matches 1.. run item modify block 0 -7 0 container.1 {function:"set_count",count:1}
 $execute if score @s tick.disable matches 1.. run item modify block 0 -7 0 container.1 {function:"set_components",components:{damage:$(disable),max_damage:$(disable_max)}}
 
 # 灵魂宝物
@@ -79,6 +79,7 @@ item modify block 0 -7 0 container.4 {function:set_components,components:{max_st
 $execute if entity @s[team=soul,scores={skill=4}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S004)}
 execute if entity @s[scores={state=0,tick.skill=1..}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"firework_star"}}
 execute if entity @s[scores={state=1}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"barrier"}}
+execute if score @s tick.silent matches 1.. run item modify block 0 -7 0 container.4 {function:"set_count",count:1}
 $execute if score @s tick.silent matches 1.. run item modify block 0 -7 0 container.4 {function:"set_components",components:{damage:$(silent),max_damage:$(silent_max),max_stack_size:1,tooltip_display:{hidden_components:[damage]}}}
 
 # 一天赋物品
@@ -95,7 +96,7 @@ $execute if entity @s[team=soul,scores={talent_1=1}] run item modify block 0 -7 
 $execute if entity @s[team=soul,scores={talent_1=2}] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
 $execute if entity @s[team=soul,scores={talent_1=4}] run item modify block 0 -7 0 container.7 {function:set_count,count:$(T004)}
 $execute if entity @s[team=guardian,scores={talent_1=4}] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
-$execute if entity @s[team=guardian,scores={talent_1=5}] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
+$execute if entity @s[team=guardian,scores={talent_1=6}] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
 $execute if entity @s[team=guardian,scores={talent_1=7,talent.107=0}] run item modify block 0 -7 0 container.7 {function:set_count,count:$(tick_talent_1)}
 
 # 二天赋物品
@@ -112,7 +113,7 @@ $execute if entity @s[team=soul,scores={talent_2=1}] run item modify block 0 -7 
 $execute if entity @s[team=soul,scores={talent_2=2}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
 $execute if entity @s[team=soul,scores={talent_2=4}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(T004)}
 $execute if entity @s[team=guardian,scores={talent_2=4}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
-$execute if entity @s[team=guardian,scores={talent_2=5}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
+$execute if entity @s[team=guardian,scores={talent_2=6}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
 $execute if entity @s[team=guardian,scores={talent_2=7,talent.107=0}] run item modify block 0 -7 0 container.8 {function:set_count,count:$(tick_talent_2)}
 
 # 基础光效处理

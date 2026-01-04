@@ -2,7 +2,7 @@ tp @e[tag=lobby_entity,type=mannequin] 0 -100 0
 kill @e[tag=lobby_entity]
 
 # 申必展示框
-summon item_frame 0 1 23 {Tags:["lobby_entity"],Facing:3b}
+execute unless entity @e[tag=key_frame] run summon item_frame 0 -8 0 {Tags:[key_frame],Invulnerable:1b,Fixed:1b,Invisible:1b,Facing:0b,Silent:1b}
 
 # 主标题
 summon text_display 3.99 2.2 0.5 {Tags:[lobby_entity],text:[{translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#7367F0"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[2.8f,2.8f,2.8f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

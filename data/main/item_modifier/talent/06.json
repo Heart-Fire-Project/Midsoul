@@ -30,7 +30,7 @@
             },
             {
                 "translate":"ms.talent.006.desc.b",
-                "fallback":"所有垂死灵魂的垂死状态持续时间 +5 秒",
+                "fallback":"所有垂死灵魂的垂死状态持续时间 +8 秒",
                 "color":"white",
                 "italic":false
             }

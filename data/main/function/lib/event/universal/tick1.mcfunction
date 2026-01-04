@@ -34,14 +34,18 @@ scoreboard players remove @a[scores={tick.disable=1..}] tick.disable 1
 scoreboard players remove @a[scores={tick.silent=1..}] tick.silent 1
 scoreboard players remove @a[scores={tick.invincible=1..}] tick.invincible 1
 effect give @a[scores={tick.invincible=20..}] resistance 1 4
-tag @a[tag=rated_victim,scores={tick.invincible=..138}] remove rated_victim
+scoreboard players add $status_color tick.general 1
+execute if score $status_color tick.general matches 10.. run scoreboard players set $status_color tick.general -8
+scoreboard players operation $color temp = $status_color tick.general
+execute if score $color temp matches ..-1 run scoreboard players operation $color temp *= #-1 data
+execute as @a unless score @s tick.using matches 1.. run function main:lib/ability/base/status
 
 # 其他的部分
-execute as @a[scores={detect.sleep=1..},team=soul] run function main:lib/event/wake_up
+execute as @a[team=soul,scores={detect.sleep=1..}] run function main:lib/event/wake_up
 kill @e[type=item,tag=!game_entity]
 execute as @a at @s if block ~ ~ ~ powder_snow run scoreboard players reset @s tick.off_ground
 execute as @a at @s if block ~ ~ ~ #geode_invalid_blocks run scoreboard players reset @s tick.off_ground
 execute as @a at @s if block ~ ~ ~ #climbable run scoreboard players reset @s tick.off_ground
 execute as @a unless data entity @s {OnGround:0b} run scoreboard players reset @s tick.off_ground
-scoreboard players reset @a[gamemode=spectator] tick.off_ground
+scoreboard players reset @a[gamemode=!adventure] tick.off_ground
 execute as @a if data entity @s {OnGround:0b} run scoreboard players add @s tick.off_ground 1

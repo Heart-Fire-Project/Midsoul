@@ -1,6 +1,5 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.skill.active",fallback:"技能施放",color:"#5599FF"}," » ",{translate:"ms.skill.002",fallback:"灵灯熔铸"}]
-playsound block.amethyst_block.chime player @s ~ ~ ~ 7
-particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a
+playsound block.amethyst_block.chime player @a ~ ~ ~ 7
 scoreboard players add @s temp.skill 1
 tag @s add skill_on
 

@@ -30,7 +30,7 @@
             },
             {
                 "translate":"ms.talent.107.desc.b",
-                "fallback":"至多同时对 3 个碎片生效",
+                "fallback":"无初始冷却；至多同时对 3 个碎片生效",
                 "color":"gray",
                 "italic":false
             }

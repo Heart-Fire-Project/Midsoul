@@ -1,6 +1,6 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.skill.active",fallback:"技能施放",color:"#5599FF"}," » ",{translate:"ms.skill.001",fallback:"幻影迷踪"}]
-playsound entity.illusioner.mirror_move player @s
-particle cloud ~ ~1 ~ 0.2 0.1 0.2 0.7 256 force @a
+playsound entity.illusioner.mirror_move player @a
+particle cloud ~ ~1 ~ 0.2 1 0.2 0.5 144 force @a
 scoreboard players add @s temp.skill 1
 tag @s add skill_on
 

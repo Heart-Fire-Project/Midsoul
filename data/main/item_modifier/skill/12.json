@@ -29,19 +29,19 @@
             ],
             {
                 "translate":"ms.skill.102.desc.a",
-                "fallback":"获得伤害加成；",
+                "fallback":"获得伤害加成且造成的伤害 +6；",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.b",
-                "fallback":"标记最近的灵魂并持续发射粒子追踪其位置",
+                "fallback":"标记最近的灵魂令其沉默并持续发射粒子追踪其位置",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.102.desc.c",
-                "fallback":"粒子仅你可见",
+                "fallback":"追踪粒子仅你可见",
                 "color":"gray",
                 "italic":false
             }

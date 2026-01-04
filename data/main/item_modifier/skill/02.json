@@ -20,11 +20,6 @@
                 {
                     "translate":"ms.tag.heal",
                     "fallback":"救助"
-                },
-                "/",
-                {
-                    "translate":"ms.tag.debuff",
-                    "fallback":"妨害"
                 }
             ],
             {
@@ -35,13 +30,19 @@
             },
             {
                 "translate":"ms.skill.002.desc.b",
-                "fallback":"若无则使最近的守卫者在 10 秒内发光且移速 -60%%",
+                "fallback":"若无则使最近的守卫者发光 5 秒，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.c",
-                "fallback":"触发点亮灵魂之灯效果后，本次技能冷却时间 +12 秒",
+                "fallback":"离其最近的灵魂在 5 秒内移速 +80%%",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.002.desc.d",
+                "fallback":"触发点亮灵魂之灯效果后，当次技能冷却时间 +12 秒",
                 "color":"gray",
                 "italic":false
             }

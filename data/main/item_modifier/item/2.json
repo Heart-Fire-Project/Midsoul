@@ -23,14 +23,8 @@
                 }
             ],
             {
-                "translate":"ms.item.2.desc.a",
-                "fallback":"生成一个灵魂碎片，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.item.2.desc.b",
-                "fallback":"并将半径 15 格内的灵魂碎片聚集至脚下",
+                "translate":"ms.item.2.desc",
+                "fallback":"生成一个灵魂碎片并聚集半径 12 格内的灵魂碎片",
                 "color":"white",
                 "italic":false
             }

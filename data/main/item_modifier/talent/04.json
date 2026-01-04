@@ -30,7 +30,7 @@
             },
             {
                 "translate":"ms.talent.004.desc.b",
-                "fallback":"蓄能初始需要收集 2 碎片，每次蓄能后 +3",
+                "fallback":"蓄能初始需要收集 3 碎片，每次蓄能后 +3",
                 "color":"gray",
                 "italic":false
             },

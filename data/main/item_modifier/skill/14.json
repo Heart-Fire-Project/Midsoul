@@ -54,19 +54,19 @@
             },
             {
                 "translate":"ms.special.curse.desc.a",
-                "fallback":"灵魂经过时自身发光且移速 -15%%，",
+                "fallback":"有灵魂经过时使其发光且移速 -15%%，开启后使其发光 3 秒，",
                 "color":"gray",
                 "italic":false
             },
             {
                 "translate":"ms.special.curse.desc.b",
-                "fallback":"守卫者经过时全体灵魂发光且自身移速 +20%%；",
+                "fallback":"并在 7 秒内移速 -30%%；有守卫者经过时使最近的灵魂发光，",
                 "color":"gray",
                 "italic":false
             },
             {
                 "translate":"ms.special.curse.desc.c",
-                "fallback":"开启该灵魂宝物盒时获取更强的上述效果",
+                "fallback":"开启后使全体灵魂发光 3 秒并在 15 秒内速度 +40%%",
                 "color":"gray",
                 "italic":false
             }

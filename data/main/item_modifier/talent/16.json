@@ -13,23 +13,18 @@
         "lore":[
             [
                 {
-                    "text":"⌚ 3 > ",
+                    "text":"⚡ 60  ⌚ 3 > ",
                     "color":"gold",
                     "italic":false
                 },
                 {
                     "translate":"ms.tag.detect",
                     "fallback":"感知"
-                },
-                "/",
-                {
-                    "translate":"ms.tag.kill",
-                    "fallback":"杀戮"
                 }
             ],
             {
                 "translate":"ms.talent.106.desc",
-                "fallback":"擦刀状态结束时，使最近的灵魂发光",
+                "fallback":"使距离你最近的至多 2 个灵魂发光",
                 "color":"white",
                 "italic":false
             }

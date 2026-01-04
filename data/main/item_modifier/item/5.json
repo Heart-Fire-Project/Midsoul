@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.item.5.desc.a",
-                "fallback":"于当前位置与方向放置一个高效制冷模块，",
+                "fallback":"于当前位置与方向部署一个高效制冷模块，",
                 "color":"white",
                 "italic":false
             },
@@ -36,7 +36,13 @@
             },
             {
                 "translate":"ms.item.5.desc.c",
-                "fallback":"另一模块被部署或被拆除时模块消失",
+                "fallback":"场上至多存在 2 个同名模块，",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.item.5.desc.d",
+                "fallback":"超出上限时清除先被部署的模块",
                 "color":"gray",
                 "italic":false
             }

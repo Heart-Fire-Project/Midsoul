@@ -29,32 +29,20 @@
             ],
             {
                 "translate":"ms.talent.104.desc.a",
-                "fallback":"天赋生效时:",
+                "fallback":"天赋触发时使全体灵魂在 5 秒内陷入黑暗；",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.b",
-                "fallback":"· 使全体灵魂获得 5 秒黑暗",
+                "fallback":"生效期间自身隐身，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.c",
-                "fallback":"· 自身获得持续隐身",
+                "fallback":"并使周围 40 格内不存在守卫者的灵魂发光",
                 "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.104.desc.d",
-                "fallback":"· 持续使距离 40 格以外的灵魂获得发光",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.104.desc.e",
-                "fallback":"距离 20 格内有灵魂时结束；攻击到灵魂时重置",
-                "color":"gray",
                 "italic":false
             }
         ],

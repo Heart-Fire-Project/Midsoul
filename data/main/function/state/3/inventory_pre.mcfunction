@@ -47,4 +47,9 @@ execute store result storage ms:inventory silent int 1 run scoreboard players ge
 execute store result storage ms:inventory silent_max int 1 run scoreboard players get @s tick.silent_max
 execute if data storage ms:inventory {silent_max:0} run data merge storage ms:inventory {silent_max:1}
 
+# 根据特定需求修改部分数据
+execute if entity @s[team=guardian,scores={skill=5},tag=skill_on] run data merge storage ms:inventory {disable_max:70}
+execute if entity @s[team=guardian,scores={skill=5,skill.105=0},tag=skill_on] run data merge storage ms:inventory {disable:1}
+execute if entity @s[team=guardian,scores={skill=5,skill.105=1},tag=skill_on] run data merge storage ms:inventory {disable:35}
+
 function main:state/3/inventory with storage ms:inventory

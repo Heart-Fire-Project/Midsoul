@@ -1,18 +1,15 @@
 # 技能
-execute as @a[team=soul,scores={tick.skill=-23700..-23500,skill=4}] run function main:lib/ability/skill/004t
-execute at @e[tag=S005] run particle portal ~ ~0.2 ~ 0.2 0.3 0.2 1 4 force @a[team=soul]
+execute as @a[team=soul,scores={skill=4,tick.skill=-23700..-23500}] run function main:lib/ability/skill/004t
+execute at @e[tag=S005] run particle portal ~ ~0.2 ~ 0 0 0 0.1 1 force @a[team=soul]
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:lib/ability/skill/102t
-execute as @a[scores={skill.103=1..},team=soul] at @s run function main:lib/ability/skill/103t
-execute as @a[scores={skill.105s=1..}] at @s run function main:lib/ability/skill/105t
-execute at @a[scores={skill=5},team=guardian,tag=skill_on] as @a[team=soul,distance=..4] at @s run function main:lib/event/mark/prepare {color:10693415,offset:2.25}
+execute as @a[team=soul,scores={skill.103=1..}] at @s run function main:lib/ability/skill/103t
+execute as @a[team=guardian,scores={skill=5},tag=skill_on] at @s run function main:lib/ability/skill/105t
 
 # 天赋
-effect give @a[scores={talent_1=3,state=0},team=soul,tag=talent_1_on] speed 1 0
-effect give @a[scores={talent_2=3,state=0},team=soul,tag=talent_2_on] speed 1 0
-execute as @a[team=soul,tag=T004,scores={talent_1=4,tick.talent_1=0,health=..19}] at @s run function main:lib/ability/talent/004
-execute as @a[team=soul,tag=T004,scores={talent_2=4,tick.talent_2=0,health=..19}] at @s run function main:lib/ability/talent/004
-execute at @a[scores={talent_1=4,state=0},tag=talent_1_on,team=guardian] run effect give @a[team=soul,distance=40..,scores={state=0}] glowing 1 0
-execute at @a[scores={talent_2=4,state=0},tag=talent_2_on,team=guardian] run effect give @a[team=soul,distance=40..,scores={state=0}] glowing 1 0
+effect give @a[team=soul,scores={talent_1=3,state=0},tag=talent_1_on] speed 1 0
+effect give @a[team=soul,scores={talent_2=3,state=0},tag=talent_2_on] speed 1 0
+execute if entity @a[team=guardian,scores={talent_1=4},tag=talent_1_on] at @a[team=soul,scores={state=0}] unless entity @a[team=guardian,distance=..40] run effect give @s glowing 1 0
+execute if entity @a[team=guardian,scores={talent_2=4},tag=talent_1_on] at @a[team=soul,scores={state=0}] unless entity @a[team=guardian,distance=..40] run effect give @s glowing 1 0
 
 # 宝物
 execute at @e[tag=I5] positioned ^ ^1 ^2 as @a[team=guardian,distance=..3] at @s run function main:lib/ability/item/05t
