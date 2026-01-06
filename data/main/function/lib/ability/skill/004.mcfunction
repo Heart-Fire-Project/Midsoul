@@ -14,7 +14,7 @@ execute if score @s skill.004 < $random temp2 run function main:lib/ability/skil
 execute if score @s skill.004 >= $random temp2 run function main:lib/ability/skill/004b
 
 # 设置计时
-scoreboard players set @s tick.skill -24000
+scoreboard players set @s tick.skill -12000
 
 # 提升失败概率
 scoreboard players add @s[scores={skill.004=..39}] skill.004 7

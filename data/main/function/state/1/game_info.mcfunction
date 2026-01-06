@@ -70,6 +70,7 @@ scoreboard players display name $blank2 info ""
 scoreboard players display numberformat $blank2 info blank
 
 # 第七日，回响标题
+execute if score $echo data matches 0 run scoreboard players reset $echo info
 execute if score $echo data matches 1.. run scoreboard players set $echo info 1
 execute if score $echo data matches 1.. run scoreboard players display name $echo info [{translate:"ms.echo",fallback:"回响"},{text:" »"}]
 

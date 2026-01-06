@@ -1,6 +1,6 @@
 # 技能
 execute as @a[team=soul,scores={skill=4,tick.skill=-23700..-23500}] run function main:lib/ability/skill/004t
-execute at @e[tag=S005] run particle portal ~ ~0.2 ~ 0 0 0 0.1 1 force @a[team=soul]
+execute at @e[tag=S005] run particle portal ~ ~0.2 ~ 0 0 0 0.1 1 force @a[team=!guardian]
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:lib/ability/skill/102t
 execute as @a[team=soul,scores={skill.103=1..}] at @s run function main:lib/ability/skill/103t
 execute as @a[team=guardian,scores={skill=5},tag=skill_on] at @s run function main:lib/ability/skill/105t
@@ -12,7 +12,7 @@ execute if entity @a[team=guardian,scores={talent_1=4},tag=talent_1_on] at @a[te
 execute if entity @a[team=guardian,scores={talent_2=4},tag=talent_1_on] at @a[team=soul,scores={state=0}] unless entity @a[team=guardian,distance=..40] run effect give @s glowing 1 0
 
 # 宝物
-execute at @e[tag=I5] positioned ^ ^1 ^2 as @a[team=guardian,distance=..3] at @s run function main:lib/ability/item/05t
+execute at @e[tag=I5] positioned ^ ^1 ^2 as @a[team=guardian,distance=..4] at @s run function main:lib/ability/item/05t
 
 # 杂项
 execute as @a[tag=game_player] run function main:lib/ability/detect/using_item

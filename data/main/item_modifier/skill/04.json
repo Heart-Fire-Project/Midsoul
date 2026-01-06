@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 60  ⌚ 12 > ",
+                    "text":"⚡ 70  ⌚ 6 > ",
                     "color":"#5599FF",
                     "italic":false
                 },
@@ -30,7 +30,7 @@
             },
             {
                 "translate":"ms.skill.004.desc.b",
-                "fallback":"+ 自身移速 +100%% 且使 20 格内的守卫者无法攻击",
+                "fallback":"+ 自身移速 +140%% 且使 8 格内的守卫者无法攻击",
                 "color":"green",
                 "italic":false
             },
@@ -48,7 +48,7 @@
             },
             {
                 "translate":"ms.skill.004.desc.e",
-                "fallback":"+ 使最近的守卫者发光且移速 -30%%",
+                "fallback":"+ 使最近的守卫者发光且移速 -60%%",
                 "color":"green",
                 "italic":false
             },

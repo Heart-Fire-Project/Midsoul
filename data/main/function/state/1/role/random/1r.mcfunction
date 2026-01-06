@@ -6,3 +6,4 @@ scoreboard players operation @s temp += @s soul_combo
 scoreboard players set @s[scores={state=1}] temp 0
 scoreboard players operation $total temp2 += @s temp
 scoreboard players operation @s temp2 = $total temp2
+scoreboard players set @s[scores={state=1}] temp2 0

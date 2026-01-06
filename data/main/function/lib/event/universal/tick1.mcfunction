@@ -28,7 +28,7 @@ execute if score $state data matches 2.. run function main:lib/map/tick1/general
 
 # 计时部分
 scoreboard players add $stat_gametime tick.general 1
-scoreboard players add @a[tag=game_player] temp.time 1
+scoreboard players add @a[tag=game_player,team=!revive,team=!dead] temp.time 1
 scoreboard players remove @a[scores={tick.enhance=1..}] tick.enhance 1
 scoreboard players remove @a[scores={tick.disable=1..}] tick.disable 1
 scoreboard players remove @a[scores={tick.silent=1..}] tick.silent 1

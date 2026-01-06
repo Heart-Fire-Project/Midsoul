@@ -1,13 +1,13 @@
 # 判定成功
 # 触发近距离效果
-execute if entity @a[team=guardian,distance=..20] run effect give @s speed 12 4
-scoreboard players set @a[team=guardian,distance=..20,scores={tick.disable=..240}] tick.disable_max 240
-scoreboard players set @a[team=guardian,distance=..20,scores={tick.disable=..240}] tick.disable 240
+execute if entity @a[team=guardian,distance=..20] run effect give @s speed 6 6
+scoreboard players set @a[team=guardian,distance=..8,scores={tick.disable=..120}] tick.disable_max 120
+scoreboard players set @a[team=guardian,distance=..8,scores={tick.disable=..120}] tick.disable 120
 
 # 触发远距离效果
 execute unless entity @a[team=guardian,distance=..20] run tag @p[team=guardian] add S004
-effect give @a[tag=S004] glowing 12 0
-effect give @a[tag=S004] slowness 12 1
+effect give @a[tag=S004] glowing 6 0
+effect give @a[tag=S004] slowness 6 3
 tag @a remove S004
 
 # 补充效果

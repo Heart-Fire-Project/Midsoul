@@ -8,7 +8,7 @@ scoreboard players operation @s stat.stun += @s temp.stun
 scoreboard players operation @s stat.skill += @s temp.skill
 scoreboard players operation @s stat.talent += @s temp.talent
 scoreboard players operation @s stat.item += @s temp.item
-scoreboard players operation @s stat.time += @s temp.time
+scoreboard players operation @s stat.time += $stat_gametime tick.general
 
 # 胜 / 平 / 输 / 总
 scoreboard players add @s[tag=game_player] stat.play 1
