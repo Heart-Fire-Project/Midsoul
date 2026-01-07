@@ -4,19 +4,19 @@ tellraw @s [{text:"-------------- ",color:"#7367F0"},{translate:"ms.info.end.11"
 # 破魂斩击
 execute unless score @s temp.hit matches -2147483648..2147483647 run scoreboard players set @s temp.hit 0
 scoreboard players operation @s temp = @s temp.hit
-scoreboard players operation @s temp *= #10 data
+scoreboard players operation @s temp *= #12 data
 scoreboard players add @s[scores={temp.hit=5..}] temp 20
 scoreboard players add @s[scores={temp.hit=12..}] temp 40
 execute if score $two_guardian state matches 1 run function main:lib/rating/1/guardian/multiple
-tellraw @s[scores={temp=..9}] [{translate:"ms.rating.hit",fallback:"利刃出击",color:"#FCEF01"}," | +",{text:"00",color:"#666107"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
-tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.hit",fallback:"利刃出击",color:"#FCEF01"}," | +",{text:"0",color:"#666107"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
-tellraw @s[scores={temp=100..}] [{translate:"ms.rating.hit",fallback:"利刃出击",color:"#FCEF01"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
+tellraw @s[scores={temp=..9}] [{translate:"ms.rating.hit",fallback:"破魂斩击",color:"#FCEF01"}," | +",{text:"00",color:"#666107"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
+tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.hit",fallback:"破魂斩击",color:"#FCEF01"}," | +",{text:"0",color:"#666107"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
+tellraw @s[scores={temp=100..}] [{translate:"ms.rating.hit",fallback:"破魂斩击",color:"#FCEF01"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
 scoreboard players operation @s exp.temp += @s temp
 
 # 镇压游魂
 execute unless score @s temp.stun matches -2147483648..2147483647 run scoreboard players set @s temp.stun 0
 scoreboard players operation @s temp = @s temp.stun
-scoreboard players operation @s temp *= #10 data
+scoreboard players operation @s temp *= #12 data
 scoreboard players add @s[scores={temp.stun=3..}] temp 20
 scoreboard players add @s[scores={temp.stun=8..}] temp 40
 execute if score $two_guardian state matches 1 run function main:lib/rating/1/guardian/multiple

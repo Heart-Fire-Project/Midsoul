@@ -1,4 +1,4 @@
-scoreboard players set @s temp 10
+scoreboard players set @s temp 12
 execute if score $two_guardian state matches 1 run function main:lib/rating/1/guardian/multiple
 tellraw @s [{text:" +",color:"#F1C207"},{score:{name:"@s",objective:"temp"}}," | ",{translate:"ms.rating.stun",fallback:"镇压游魂"}]
 

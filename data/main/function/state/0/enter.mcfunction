@@ -26,6 +26,9 @@ execute if score $mode setting matches 2 run data merge storage ms:mode {start:"
 # 重设速率
 execute if data storage ms:setting {reset_speed:true} run function debug:sub/game/restore_speed
 
+# 守卫者重连附属
+team empty guardian
+
 # 计分板
 scoreboard objectives setdisplay list stat.level
 scoreboard objectives setdisplay below_name stat.level

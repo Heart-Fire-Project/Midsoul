@@ -48,6 +48,6 @@ tag @a remove charge_rating_1
 tag @a remove charge_rating_2
 tag @a remove charge_rating_3
 
-execute if score $echo data matches 1 run function main:lib/echo/init {min:"45",max:"80"}
+execute if score $echo data matches 1 run scoreboard players set $echo tick.general 1
 execute if score $echo data matches 4 run function main:lib/echo/init {min:"20",max:"60"}
 execute if score $echo data matches 7 run function main:lib/echo/init {min:"30",max:"120"}
