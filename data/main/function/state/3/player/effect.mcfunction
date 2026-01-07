@@ -4,7 +4,7 @@ effect give @s saturation infinite 10 true
 effect give @a[team=guardian] resistance infinite 49 true
 effect give @s[scores={state=1}] darkness infinite 49 true
 effect give @s[scores={state=1}] resistance infinite 49 true
-execute if score $two_guardian state matches 1 run effect give @a[team=soul] resistance infinite 0 true
+execute if score $muiti_guardian state matches 1 run effect give @a[team=soul] resistance infinite 0 true
 
 attribute @s attack_damage base set 0
 function main:lib/action/reset_attribute

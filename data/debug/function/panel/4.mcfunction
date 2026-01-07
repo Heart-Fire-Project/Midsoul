@@ -2,7 +2,9 @@
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 # 读取
-function debug:sub/custom/check
+function debug:sub/custom/read_all
+execute store result storage ms:temp num int -1 run scoreboard players get $map setting
+function debug:sub/custom/sync with storage ms:temp
 
 # 显示当前地图信息（若有）
 scoreboard players set $num temp 0
