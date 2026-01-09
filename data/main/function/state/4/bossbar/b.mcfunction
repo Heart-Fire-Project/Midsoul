@@ -22,11 +22,11 @@ execute if score $4_process tick.general matches 10005 run bossbar set midsoul:i
 execute if score $4_process tick.general matches 10006 run bossbar set midsoul:info visible true
 
 # 设置闪烁 - 剩余时间不足
-execute if score $4_portal tick.general matches 599 run bossbar set midsoul:info visible false
-execute if score $4_portal tick.general matches 598 run bossbar set midsoul:info visible true
-execute if score $4_portal tick.general matches 597 run bossbar set midsoul:info visible false
-execute if score $4_portal tick.general matches 596 run bossbar set midsoul:info visible true
-execute if score $4_portal tick.general matches 595 run bossbar set midsoul:info visible false
-execute if score $4_portal tick.general matches 594 run bossbar set midsoul:info visible true
-execute if score $4_portal tick.general matches 593 run bossbar set midsoul:info visible false
-execute if score $4_portal tick.general matches 592 run bossbar set midsoul:info visible true
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 599 run bossbar set midsoul:info visible false
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 598 run bossbar set midsoul:info visible true
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 597 run bossbar set midsoul:info visible false
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 596 run bossbar set midsoul:info visible true
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 595 run bossbar set midsoul:info visible false
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 594 run bossbar set midsoul:info visible true
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 593 run bossbar set midsoul:info visible false
+execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 592 run bossbar set midsoul:info visible true

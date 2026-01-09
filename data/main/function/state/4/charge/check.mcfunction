@@ -10,9 +10,9 @@ tag @s[tag=!interact_purple] remove interacting
 # 交互提示
 tag @s remove show_title
 execute unless score @s tick.using matches 1.. run tag @s[tag=!status_display] add show_title
-execute as @s[tag=hint_purple,tag=show_title] run title @s actionbar [{translate:"ms.hint.purple",fallback:"长按 [%s] 以充能",with:[{keybind:"key.sneak"}],color:"light_purple"}]
-execute as @s[tag=!interacting,tag=interact_purple,scores={setting.interact_hint=1}] run tag @s add hint_purple
-execute as @s[tag=hint_purple,tag=!interact_purple] run title @s[tag=!status_display] actionbar ""
+title @s[tag=hint_purple,tag=show_title] actionbar [{translate:"ms.hint.purple",fallback:"长按 [%s] 以充能",with:[{keybind:"key.sneak"}],color:"light_purple"}]
+tag @s[tag=!interacting,tag=interact_purple,scores={setting.interact_hint=1},tag=show_title] add hint_purple
+title @s[tag=hint_purple,tag=!interact_purple] actionbar ""
 tag @s[tag=interacting] remove hint_purple
 tag @s[tag=!interact_purple] remove hint_purple
 

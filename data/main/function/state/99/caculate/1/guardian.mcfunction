@@ -16,9 +16,9 @@ scoreboard players operation @s exp.temp += @s temp
 # 镇压游魂
 execute unless score @s temp.stun matches -2147483648..2147483647 run scoreboard players set @s temp.stun 0
 scoreboard players operation @s temp = @s temp.stun
-scoreboard players operation @s temp *= #15 data
-scoreboard players add @s[scores={temp.stun=3..}] temp 20
-scoreboard players add @s[scores={temp.stun=8..}] temp 40
+scoreboard players operation @s temp *= #18 data
+scoreboard players add @s[scores={temp.stun=3..}] temp 25
+scoreboard players add @s[scores={temp.stun=8..}] temp 50
 execute if score $muiti_guardian state matches 1 run function main:lib/rating/1/guardian/multiple
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.stun",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"00",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.stun",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.stun",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"0",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.stun",name:"@s"}},"×)"]
@@ -69,16 +69,16 @@ tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.general.g",fallback:"镇
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.general.g",fallback:"镇灵功成",color:"#C6101E"}," | +",{score:{objective:"temp",name:"@s"}}]
 scoreboard players operation @s exp.temp += @s temp
 
-# 最终得分
-execute if score @s exp.temp matches 1280.. run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#7C67FE"},{text:"E",color:"#8A57FE"},{text:"X",color:"#9050FE"},{text:"+",color:"#A03DFF"},{text:"]",color:"#AE2CFF"}]
-execute if score @s exp.temp matches 1080..1279 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#778CF7"},{text:"E",color:"#7B7DE2"},{text:"X",color:"#806FCE"},{text:"]",color:"#8364BF"}]
-execute if score @s exp.temp matches 1000..1079 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#FB858A"},{text:"S",color:"#FB8F81"},{text:"+",color:"#FC9D76"},{text:"]",color:"#FCA86D"}]
-execute if score @s exp.temp matches 960..999 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#FB858A"},{text:"S",color:"#FB8F81"},{text:"+",color:"#FC9D76"},{text:"]",color:"#FCA86D"}]
-execute if score @s exp.temp matches 860..959 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#FBAB7E"},{text:"S",color:"#FAB876"},{text:"]",color:"#F8C66D"}]
-execute if score @s exp.temp matches 780..859 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#7B57CD"},{text:"A",color:"#8066E2"},{text:"]",color:"#6C5BCE"}]
-execute if score @s exp.temp matches 680..779 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#357FFF"},{text:"B",color:"#2898FE"},{text:"]",color:"#3088FF"}]
-execute if score @s exp.temp matches 580..679 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#18D950"},{text:"C",color:"#3EDD4E"},{text:"]",color:"#59E04D"}]
-execute if score @s exp.temp matches 480..579 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#E9BCAD"},{text:"D",color:"#E4BEBC"},{text:"]",color:"#E0C0C6"}]
-execute if score @s exp.temp matches 100..479 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#D0CBC5"},{text:"F",color:"#DDDBD5"},{text:"]",color:"#E4E2DD"}]
-execute if score @s exp.temp matches 10..99 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"00",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#D0CBC5"},{text:"F",color:"#DDDBD5"},{text:"]",color:"#E4E2DD"}]
-execute if score @s exp.temp matches 0..9 run tellraw @s [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"000",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#D0CBC5"},{text:"F",color:"#DDDBD5"},{text:"]",color:"#E4E2DD"}]
+# 最终得�?
+tellraw @s[scores={exp.temp=1280..}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#7C67FE"},{text:"E",color:"#8A57FE"},{text:"X",color:"#9050FE"},{text:"+",color:"#A03DFF"},{text:"]",color:"#AE2CFF"}]
+tellraw @s[scores={exp.temp=1080..1279}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#778CF7"},{text:"E",color:"#7B7DE2"},{text:"X",color:"#806FCE"},{text:"]",color:"#8364BF"}]
+tellraw @s[scores={exp.temp=1000..1079}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#FB858A"},{text:"S",color:"#FB8F81"},{text:"+",color:"#FC9D76"},{text:"]",color:"#FCA86D"}]
+tellraw @s[scores={exp.temp=960..999}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#FB858A"},{text:"S",color:"#FB8F81"},{text:"+",color:"#FC9D76"},{text:"]",color:"#FCA86D"}]
+tellraw @s[scores={exp.temp=860..959}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#FBAB7E"},{text:"S",color:"#FAB876"},{text:"]",color:"#F8C66D"}]
+tellraw @s[scores={exp.temp=780..859}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#7B57CD"},{text:"A",color:"#8066E2"},{text:"]",color:"#6C5BCE"}]
+tellraw @s[scores={exp.temp=680..779}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#357FFF"},{text:"B",color:"#2898FE"},{text:"]",color:"#3088FF"}]
+tellraw @s[scores={exp.temp=580..679}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#18D950"},{text:"C",color:"#3EDD4E"},{text:"]",color:"#59E04D"}]
+tellraw @s[scores={exp.temp=480..579}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#E9BCAD"},{text:"D",color:"#E4BEBC"},{text:"]",color:"#E0C0C6"}]
+tellraw @s[scores={exp.temp=100..479}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"0",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#D0CBC5"},{text:"F",color:"#DDDBD5"},{text:"]",color:"#E4E2DD"}]
+tellraw @s[scores={exp.temp=10..99}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"00",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#D0CBC5"},{text:"F",color:"#DDDBD5"},{text:"]",color:"#E4E2DD"}]
+tellraw @s[scores={exp.temp=0..9}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{text:"000",color:"#2A2756"},{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#D0CBC5"},{text:"F",color:"#DDDBD5"},{text:"]",color:"#E4E2DD"}]

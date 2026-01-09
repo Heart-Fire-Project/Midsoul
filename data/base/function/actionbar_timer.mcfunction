@@ -11,11 +11,7 @@ scoreboard players operation $time temp -= $current temp
 scoreboard players add $current temp 5
 function base:caculate/time {unit:"sec",tick:"$time",source:"temp"}
 execute store result storage r7s:temp tenth int 0.1 run scoreboard players get $ms temp2
-execute if score $sec temp2 matches 10.. store result storage r7s:temp sec int 1 run scoreboard players get $sec temp2
-data merge storage r7s:temp {A:"0",B:"",C:"",D:"",E:""}
-execute if score $sec temp2 matches ..9 store result storage r7s:temp B int 1 run scoreboard players get $sec temp2
-execute if score $sec temp2 matches ..9 run function base:craft_string with storage r7s:temp
-execute if score $sec temp2 matches ..9 run data modify storage r7s:temp sec set from storage r7s:base string
+execute store result storage r7s:temp sec int 1 run scoreboard players get $sec temp2
 
 # 条状部分 | 细致分类
 scoreboard players operation $bar temp = $current temp

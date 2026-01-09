@@ -21,8 +21,8 @@ scoreboard players set $4_finale state 0
 scoreboard players set $4_timeout state 0
 scoreboard players set $4_process tick.general 0
 execute store result score $4_portal tick.general run data get storage ms:map original_goal
-scoreboard players operation $4_portal tick.general *= #100 data
-scoreboard players add $4_portal tick.general 1600
+scoreboard players operation $4_portal tick.general *= #80 data
+scoreboard players add $4_portal tick.general 1200
 
 # 初始化 Bossbar
 bossbar set midsoul:info style notched_12

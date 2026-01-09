@@ -48,6 +48,7 @@ execute if score @s detect.interact matches -1502 run function debug:sub/next {t
 # 管理
 execute if score @s detect.interact matches -1601 run function debug:sub/binary {storage:"setting",target:setting_lock}
 execute if score @s detect.interact matches -1602 run function debug:sub/binary {storage:"setting",target:game_lock}
+execute if score @s detect.interact matches -1603 run function debug:sub/binary {storage:"setting",target:hide_rating}
 
 ## 对局
 # 地图
@@ -93,8 +94,7 @@ execute if score @s detect.interact matches -2450 run function debug:sub/speed_s
 execute if score @s detect.interact matches -2490 run function debug:sub/speed_select {type:"cooldown",value:"1000"}
 execute if score @s detect.interact matches -2499 run function debug:sub/speed_select {type:"cooldown",value:"1010000"}
 execute if score @s detect.interact matches -2500 run function debug:sub/game/restore_speed
-execute if score @s detect.interact matches -2501 run function debug:sub/binary {storage:"setting",target:balanced_speed}
-execute if score @s detect.interact matches -2502 run function debug:sub/binary {storage:"setting",target:reset_speed}
+execute if score @s detect.interact matches -2501 run function debug:sub/binary {storage:"setting",target:reset_speed}
 
 ## 杂项
 # 显示

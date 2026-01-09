@@ -3,6 +3,7 @@ particle campfire_cosy_smoke -6.0 17.7 -6.0 0.1 0.1 0.1 0.1 96
 
 # 额外区域往返侦测
 execute as @a[x=-8,y=-24,z=-8,dx=3,dy=5,dz=3] run function main:state/0/extra/enter
+execute as @a[x=-1003,y=-2,z=-1038,dx=2,dy=2,dz=5] unless entity @a[distance=0.01..100] run kill @e[tag=extra_entity]
 execute as @a[x=-1003,y=-2,z=-1038,dx=2,dy=2,dz=5] at @s run tp @s ~994 ~2 ~1046
 
 # 三层跳板侦测

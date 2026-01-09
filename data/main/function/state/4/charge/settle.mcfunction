@@ -18,10 +18,12 @@ execute if score $4_chargesound tick.general matches 11.. run scoreboard players
 scoreboard players operation $minus temp = $interact_speed setting
 scoreboard players operation $minus temp /= #5 data
 execute unless score $num temp matches 1.. if score @s tick.general matches 1.. run scoreboard players operation @s tick.general -= $minus temp
-execute if score @s tick.general matches ..-1 run scoreboard players set @s tick.general 0
+execute if score @s[scores={state=0}] tick.general matches ..-1 run scoreboard players set @s tick.general 0
+execute if score @s[scores={state=1}] tick.general matches ..30000 run scoreboard players set @s tick.general 30000
+execute if score @s[scores={state=2}] tick.general matches ..60000 run scoreboard players set @s tick.general 60000
 
 # 极速充能结算
-execute if score $4_finale state matches 1 if entity @a[team=soul,distance=..3,scores={state=0}] run function main:state/4/charge/finale
+execute if score $4_finale state matches 1 if entity @s[scores={tick.general=..90000}] if entity @a[team=soul,distance=..3,scores={state=0}] run function main:state/4/charge/finale
 
 # 充能进度结算 | 求平均值，再乘相应倍率
 # 交互人数 |   1   |   2   |   3   |   4
@@ -34,6 +36,12 @@ execute if score $num temp matches 2 store result score $plus temp run data get 
 execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 1.4
 execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 1.5
 execute if score $num temp matches 1.. run scoreboard players operation @s tick.general += $plus temp
+
+# 检查节点
+execute as @s[scores={state=0,tick.general=35000..}] run playsound block.chiseled_bookshelf.insert.enchanted block @a ~ ~1.2 ~ 1
+execute as @s[scores={state=1,tick.general=70000..}] run playsound block.chiseled_bookshelf.insert.enchanted block @a ~ ~1.2 ~ 1
+scoreboard players set @s[scores={state=0,tick.general=35000..}] state 1
+scoreboard players set @s[scores={state=1,tick.general=70000..}] state 2
 
 # 充能完毕？
 execute if score @s tick.general matches 100000.. run function main:state/4/charge/finish

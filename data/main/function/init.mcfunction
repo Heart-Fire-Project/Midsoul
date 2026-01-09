@@ -300,7 +300,7 @@ scoreboard players set $cooldown_speed setting 100
 scoreboard players set $interact_speed setting 100
 scoreboard players set $role_assign setting 0
 scoreboard players set $initcheck data 7419147
-data merge storage ms:setting {show_mark:false,setting_lock:false,game_lock:false,balanced_speed:true,reset_speed:false,random_custom:false}
+data merge storage ms:setting {show_mark:false,setting_lock:false,game_lock:false,hide_rating:false,reset_speed:false,random_custom:false}
 data merge storage ms:echo {01:true,02:true,03:true,04:true,05:true,06:true,07:true,08:true,09:true}
 
 # 常数项
@@ -314,14 +314,16 @@ scoreboard players set #8 data 8
 scoreboard players set #9 data 9
 scoreboard players set #10 data 10
 scoreboard players set #12 data 12
-scoreboard players set #12 data 15
+scoreboard players set #15 data 15
 scoreboard players set #16 data 16
+scoreboard players set #18 data 18
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
 scoreboard players set #50 data 50
 scoreboard players set #60 data 60
 scoreboard players set #61 data 61
 scoreboard players set #64 data 64
+scoreboard players set #80 data 80
 scoreboard players set #100 data 100
 scoreboard players set #182 data 182
 scoreboard players set #256 data 256
@@ -332,7 +334,7 @@ scoreboard players set #18000 data 18000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 280
+scoreboard players set $build data 281
 scoreboard players set $map_max data 4
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7

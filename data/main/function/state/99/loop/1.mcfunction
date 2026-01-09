@@ -50,7 +50,7 @@ execute if score $5_ending tick.general matches 115 as @a[team=guardian] run fun
 # 短期分判定
 execute if score $affact_rating data matches 0 run data merge storage ms:mode {affact_rating:false}
 execute if score $5_ending tick.general matches 115 if data storage ms:mode {affact_rating:true} as @a[tag=game_player] run function main:state/99/rating
-execute if score $5_ending tick.general matches 115 if data storage ms:mode {affact_rating:false} run tellraw @a[tag=game_player] [{text:" × ",color:"gray"},{translate:"ms.info.no_rating",fallback:"本局游戏不影响短期分",bold:false}]
+execute if score $5_ending tick.general matches 115 unless data storage ms:setting {hide_rating:true} if data storage ms:mode {affact_rating:false} run tellraw @a[tag=game_player] [{text:" × ",color:"gray"},{translate:"ms.info.no_rating",fallback:"本局游戏不影响短期分",bold:false}]
 
 # 记录数据
 execute if score $5_ending tick.general matches 115 run tag @a remove mvp

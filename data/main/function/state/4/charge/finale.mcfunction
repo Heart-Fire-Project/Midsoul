@@ -1,6 +1,6 @@
 # 闪电快充速度结算
 scoreboard players operation $plus temp = $interact_speed setting
-scoreboard players operation $plus temp *= #5 data
+scoreboard players operation $plus temp *= #3 data
 scoreboard players operation @s tick.general += $plus temp
 
 # 特效

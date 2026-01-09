@@ -23,7 +23,10 @@ execute if score $4_portal tick.general matches ..600 run scoreboard players set
 
 # 若只剩一位存活或仅剩 20 秒，开启终局
 execute if score $alive data matches 1 if score $4_finale state matches 0 run function main:state/4/finale
-execute if score $4_portal tick.general matches ..400 if score $4_finale state matches 0 run function main:state/4/finale
+execute if score $4_portal tick.general matches ..600 if score $4_finale state matches 0 run function main:state/4/finale
 
 # 若时间已到
+execute if score $4_portal tick.general matches ..0 run function main:lib/rating/1/guardian/offense
+execute if score $4_portal tick.general matches ..0 unless entity @e[tag=open_purple] run scoreboard players set $guardian_offense data 180
+execute if score $4_portal tick.general matches ..0 if entity @e[tag=open_purple] run scoreboard players operation $guardian_offense data = $sec temp2
 execute if score $4_portal tick.general matches ..0 run function main:state/99/enter
