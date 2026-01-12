@@ -8,6 +8,8 @@ execute if score $muiti_guardian state matches 1 run effect give @a[team=soul] r
 
 attribute @s attack_damage base set 0
 function main:lib/action/reset_attribute
+attribute @s[team=soul] water_movement_efficiency base set 0.0
+attribute @s[team=guardian] water_movement_efficiency base set 0.33
 attribute @s[scores={state=1}] movement_speed base set 0
 attribute @s[scores={state=1}] jump_strength base set 0
 attribute @s[scores={state=1}] water_movement_efficiency base set 10

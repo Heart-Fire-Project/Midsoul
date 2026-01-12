@@ -15,7 +15,7 @@ execute if score $echo data matches 8 as @s[tag=interact_blue,tag=interacting] r
 execute if score $undying data matches 1 as @s[tag=interact_gold,tag=interacting] run function main:lib/ability/base/modify_interact {value:"100"}
 execute store result storage ms:temp value int 1 run scoreboard players get $balanced_speed state
 execute as @s[team=soul] run function main:lib/ability/base/modify_interact with storage ms:temp
-scoreboard players operation @s temp *= $collect_extend state
-scoreboard players operation @s temp /= #100 data
+scoreboard players operation @s[tag=interact_blue,tag=interacting] temp *= $collect_extend state
+scoreboard players operation @s[tag=interact_blue,tag=interacting] temp /= #100 data
 
 scoreboard players operation @s[tag=interacting] tick.general += @s temp

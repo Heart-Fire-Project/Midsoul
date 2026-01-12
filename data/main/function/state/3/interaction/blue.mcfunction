@@ -45,9 +45,9 @@ execute if score $aura_rank data matches -3..-1 run advancement grant @a[tag=gam
 
 # 解析灵气等级变化
 execute if score $aura_rank data matches -3..-1 run playsound block.sculk_shrieker.shriek player @a 0 1000000 0 120000
-execute if score $aura_rank data matches -1 run tellraw @a [{text:"» ",color:"#80FFFF",bold:true},{translate:"ms.info.rank.1",fallback:"灵气初起 ◆◇◇ 灵魂收集碎片时将与附近的碎片共鸣",bold:false}]
-execute if score $aura_rank data matches -2 run tellraw @a [{text:"» ",color:"#80D5FF",bold:true},{translate:"ms.info.rank.2",fallback:"灵气弥散 ◆◆◇ 灵魂将与附近的碎片持续共鸣",bold:false}]
-execute if score $aura_rank data matches -3 run tellraw @a [{text:"» ",color:"#80AAFF",bold:true},{translate:"ms.info.rank.3",fallback:"灵气充盈 ◆◆◆ 场上所有剩余碎片持续进行共鸣",bold:false}]
+execute if score $aura_rank data matches -1 run tellraw @a [{text:"» ",color:"#80FFFF",bold:true},{translate:"ms.info.aura.1",fallback:"灵气初起 ◆◇◇ 灵魂收集碎片时将与附近的碎片共鸣",bold:false}]
+execute if score $aura_rank data matches -2 run tellraw @a [{text:"» ",color:"#80D5FF",bold:true},{translate:"ms.info.aura.2",fallback:"灵气弥散 ◆◆◇ 灵魂将与附近的碎片持续共鸣",bold:false}]
+execute if score $aura_rank data matches -3 run tellraw @a [{text:"» ",color:"#80AAFF",bold:true},{translate:"ms.info.aura.3",fallback:"灵气充盈 ◆◆◆ 场上所有剩余碎片持续进行共鸣",bold:false}]
 execute if score $aura_rank data matches -3 as @e[tag=blue] run data merge entity @s {Glowing:1b}
 execute if score $aura_rank data matches -3..-1 run scoreboard players operation $aura_rank data *= #-1 data
 execute if score $aura_rank data matches 1 at @a[tag=interact_fin] as @e[tag=blue,distance=..12] run function main:lib/event/aura/1
