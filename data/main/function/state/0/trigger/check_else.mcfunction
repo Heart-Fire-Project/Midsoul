@@ -5,11 +5,11 @@ execute if score @s detect.interact matches 3 run scoreboard players set @s temp
 execute if score @s detect.interact matches 1..99 run function main:lib/notice
 
 # 图鉴类型
-execute if score @s detect.interact matches 601 run function debug:sub/select {type:"index_page",num:"1"}
-execute if score @s detect.interact matches 602 run function debug:sub/select {type:"index_page",num:"2"}
-execute if score @s detect.interact matches 603 run function debug:sub/select {type:"index_page",num:"3"}
-execute if score @s detect.interact matches 604 run function debug:sub/select {type:"index_page",num:"4"}
-execute if score @s detect.interact matches 605 run function debug:sub/select {type:"index_page",num:"5"}
+execute if score @s detect.interact matches 601 run function debug:sub/select {type:"index_page",num:"11"}
+execute if score @s detect.interact matches 602 run function debug:sub/select {type:"index_page",num:"21"}
+execute if score @s detect.interact matches 603 run function debug:sub/select {type:"index_page",num:"31"}
+execute if score @s detect.interact matches 604 run function debug:sub/select {type:"index_page",num:"41"}
+execute if score @s detect.interact matches 605 run function debug:sub/select {type:"index_page",num:"51"}
 execute if score @s detect.interact matches 601..605 run function main:state/0/refresh/index
 
 # 鸣谢类

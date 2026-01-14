@@ -295,7 +295,7 @@ scoreboard players set $echo_chance setting 30
 scoreboard players set $mode_page setting 1
 scoreboard players set $map_page setting 1
 scoreboard players set $echo_page setting 1
-scoreboard players set $index_page setting 1
+scoreboard players set $index_page setting 11
 scoreboard players set $cooldown_speed setting 100
 scoreboard players set $interact_speed setting 100
 scoreboard players set $role_assign setting 0
@@ -334,7 +334,7 @@ scoreboard players set #18000 data 18000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 282
+scoreboard players set $build data 283
 scoreboard players set $map_max data 4
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7
