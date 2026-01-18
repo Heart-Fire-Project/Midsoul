@@ -18,9 +18,19 @@ spawnpoint @a 0 -5 0
 execute as @a unless score @s detect.interact matches 0 run scoreboard players enable @s detect.interact
 
 # 隐身侦测
+tag @a[tag=invisible] remove invisible
 tag @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] add invisible
 tag @a[gamemode=spectator] add invisible
-execute as @a[tag=invisible] unless entity @s[nbt={active_effects:[{id:"minecraft:invisibility"}]}] unless entity @s[gamemode=spectator] run tag @s remove invisible
+
+# 蹲下侦测
+tag @a[tag=sneaking] remove sneaking
+tag @a[scores={detect.sneak=1..}] add sneaking
+scoreboard players reset @a[scores={detect.sneak=1..}] detect.sneak
+
+# 游泳侦测
+tag @a[tag=swimming] remove swimming
+tag @a[scores={detect.swim=1..}] add swimming
+scoreboard players reset @a[scores={detect.swim=1..}] detect.swim
 
 # 定向至其他函数
 function debug:tick1

@@ -133,6 +133,8 @@ scoreboard objectives add temp.rated_collect dummy "单局计分收集"
 
 scoreboard objectives remove detect.sneak
 scoreboard objectives add detect.sneak custom:sneak_time "蹲下检测"
+scoreboard objectives remove detect.swim
+scoreboard objectives add detect.swim custom:swim_one_cm "游泳侦测"
 scoreboard objectives remove detect.sleep
 scoreboard objectives add detect.sleep custom:sleep_in_bed "入睡检测"
 scoreboard objectives remove detect.crossbow
@@ -301,7 +303,7 @@ scoreboard players set $interact_speed setting 100
 scoreboard players set $role_assign setting 0
 scoreboard players set $initcheck data 7419147
 data merge storage ms:setting {show_mark:false,setting_lock:false,game_lock:false,hide_rating:false,reset_speed:false,random_custom:false}
-data merge storage ms:echo {01:true,02:true,03:true,04:true,05:true,06:true,07:true,08:true,09:true}
+data merge storage ms:echo {01:true,02:true,03:true,04:true,05:true,06:true,07:true,08:true,09:true,10:true}
 
 # 常数项
 scoreboard players set #-1 data -1
@@ -316,7 +318,6 @@ scoreboard players set #10 data 10
 scoreboard players set #12 data 12
 scoreboard players set #15 data 15
 scoreboard players set #16 data 16
-scoreboard players set #18 data 18
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
 scoreboard players set #50 data 50
@@ -330,7 +331,7 @@ scoreboard players set #256 data 256
 scoreboard players set #600 data 600
 scoreboard players set #1000 data 1000
 scoreboard players set #10000 data 10000
-scoreboard players set #18000 data 18000
+scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据

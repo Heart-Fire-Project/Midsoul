@@ -10,3 +10,6 @@ execute if score $echo data matches 4 if score $echo tick.general matches 0 run 
 # 命运交响曲 | 有提示音……有人会用这战略？
 execute if score $echo data matches 7 if score $echo tick.general matches 5 run function main:lib/echo/warn
 execute if score $echo data matches 7 if score $echo tick.general matches 0 run function main:lib/echo/07
+
+# 一瞥惊鸿影
+execute if score $echo data matches 10 if score $echo tick.general matches 0 run function main:lib/echo/10

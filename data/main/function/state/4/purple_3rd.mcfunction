@@ -11,7 +11,7 @@ execute at @e[tag=marker_purple,tag=!summon_bad,tag=!summon_no,limit=1,sort=rand
 # 如果没有那就无视原则吧
 execute unless entity @e[tag=new_purple] at @e[tag=marker_purple,tag=!summon_no,limit=1,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple,purple_3rd],Glowing:0b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 
-execute as @e[tag=new_purple] run team join portal @s
+team join portal @e[tag=new_purple]
 scoreboard players set @e[tag=new_purple] tick.general 0
 scoreboard players set @e[tag=new_purple] state 0
 execute at @e[tag=new_purple] run summon text_display ~ ~1.2 ~ {Tags:[game_entity,purple_progress],interpolation_duration:0,billboard:"center",alignment:"center",background:-2134114303,line_width:200,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

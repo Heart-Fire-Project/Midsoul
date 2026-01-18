@@ -14,7 +14,7 @@ execute if score @s[advancements={main:extra/particle/8=true}] temp matches 8 ru
 execute if score @s[advancements={main:extra/particle/9=true}] temp matches 9 run tag @s add can_equip
 
 # 可以使用
-execute as @s[tag=can_equip] run scoreboard players operation @s extra.particle = @s temp
+scoreboard players operation @s[tag=can_equip] extra.particle = @s temp
 playsound entity.arrow.hit_player player @s[tag=can_equip] 0 1000000 0 120000
 tellraw @s[tag=can_equip,scores={temp=0}] ["",{text:"» ",color:"green",bold:true},{translate:"ms.particle",fallback:"粒子效果"},{translate:"ms.extra.switch",fallback:"已切换至 %s",with:[{translate:"ms.particle.0",fallback:"无粒子效果",color:"green"}]}]
 tellraw @s[tag=can_equip,scores={temp=1}] ["",{text:"» ",color:"green",bold:true},{translate:"ms.particle",fallback:"粒子效果"},{translate:"ms.extra.switch",fallback:"已切换至 %s",with:[{translate:"ms.particle.1",fallback:"午夜繁星",color:"green"}]}]

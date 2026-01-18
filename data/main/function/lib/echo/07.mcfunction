@@ -9,4 +9,4 @@ execute as @a[tag=game_player,team=!revive,team=!dead] at @s run function main:l
 kill @e[tag=E07]
 
 # 重设倒计时
-function main:lib/echo/init {min:"30",max:"120"}
+execute store result score $echo tick.general run random value 30..120

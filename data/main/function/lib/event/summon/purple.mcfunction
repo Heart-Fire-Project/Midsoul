@@ -25,7 +25,7 @@ execute as @e[tag=marker_purple,scores={temp=1..}] if score @s temp2 = $min temp
 execute at @e[tag=summon_select] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 
 # 善后工作
-execute as @e[tag=new_purple] run team join portal @s
+team join portal @e[tag=new_purple]
 scoreboard players set @e[tag=new_purple] tick.general 0
 scoreboard players set @e[tag=new_purple] state 0
 execute at @e[tag=new_purple] run summon text_display ~ ~1.2 ~ {Tags:[game_entity,purple_progress],interpolation_duration:0,billboard:"center",alignment:"center",background:-2134114303,line_width:200,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

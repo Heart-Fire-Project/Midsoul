@@ -7,6 +7,6 @@ $execute if score $prepare data matches $(start).. if score $0_start tick.genera
 $execute if score $prepare data matches $(start).. if score $0_start tick.general matches 20.. run function main:state/0/bossbar with storage ms:mode
 
 # 计时转等待
-$execute if score $prepare data matches ..$(cancel) if score $0_start tick.general matches ..20 as @a run playsound block.note_block.didgeridoo player @s 0 1000000 0 120000
+$execute if score $prepare data matches ..$(cancel) if score $0_start tick.general matches ..20 run playsound block.note_block.didgeridoo player @a 0 1000000 0 120000
 $execute if score $prepare data matches ..$(cancel) if score $0_start tick.general matches ..20 run function main:state/0/bossbar with storage ms:mode
 $execute if score $prepare data matches ..$(cancel) if score $0_start tick.general matches ..20 run scoreboard players set $0_start tick.general 1010000

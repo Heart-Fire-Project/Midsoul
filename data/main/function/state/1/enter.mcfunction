@@ -9,7 +9,7 @@ tag @a remove check_ability
 
 # 强制结算经验
 execute as @a run scoreboard players operation @s stat.exp += @s exp.temp
-execute as @a run scoreboard players set @s exp.temp 0
+scoreboard players set @a exp.temp 0
 
 # 入场
 execute as @a[team=prepare,limit=10,sort=random] run function main:state/1/player_enter/prepare

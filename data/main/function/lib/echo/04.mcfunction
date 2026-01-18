@@ -8,4 +8,4 @@ execute at @e[tag=E04] as @a[distance=..4,team=guardian,scores={state=0}] run fu
 
 # 准备下一次
 tag @e remove E04
-function main:lib/echo/init {min:"20",max:"60"}
+execute store result score $echo tick.general run random value 20..60

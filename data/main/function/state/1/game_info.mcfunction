@@ -84,3 +84,4 @@ execute if score $echo data matches 6 run scoreboard players display numberforma
 execute if score $echo data matches 7 run scoreboard players display numberformat $echo info fixed {translate:"ms.echo.7",fallback:"命运交响曲",color:"#F75EEB"}
 execute if score $echo data matches 8 run scoreboard players display numberformat $echo info fixed {translate:"ms.echo.8",fallback:"先抑再后扬",color:"#F75EEB"}
 execute if score $echo data matches 9 run scoreboard players display numberformat $echo info fixed {translate:"ms.echo.9",fallback:"九次九重片",color:"#F75EEB"}
+execute if score $echo data matches 10 run scoreboard players display numberformat $echo info fixed {translate:"ms.echo.10",fallback:"一瞥惊鸿影",color:"#F75EEB"}

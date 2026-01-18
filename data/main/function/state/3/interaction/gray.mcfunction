@@ -25,7 +25,7 @@ execute if entity @a[team=guardian,tag=interact_fin] run effect give @p[team=sou
 function main:lib/action/interact/gray
 
 # 灵魂最终同步宝物结果
-execute as @p[tag=target,scores={item=0}] run scoreboard players operation @s item = $random temp2
+scoreboard players operation @p[tag=target,scores={item=0}] item = $random temp2
 
 tag @a remove interact_fin
 tag @a remove target

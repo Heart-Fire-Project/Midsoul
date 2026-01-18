@@ -46,7 +46,7 @@ execute if block -13 14 -7 redstone_block if block -11 11 -8 polished_blackstone
 execute if block -13 14 -7 redstone_block if entity @a[x=-14.4,y=11,z=-8,dx=2.1,dy=1,dz=1] unless score $0_secret tick.general matches 1..9 run setblock -13 14 -7 air
 
 # 数据查询
-execute as @p[x=-994,y=-1,z=-977,dx=0,dy=1.2,dz=0] run tag @s add queryer
+tag @p[x=-994,y=-1,z=-977,dx=0,dy=1.2,dz=0] add queryer
 tag @a[tag=!queryer] remove quering
 execute as @a[tag=queryer,tag=!quering] run function main:state/0/extra/query
 execute unless entity @a[tag=queryer] run setblock -994 -2 -977 redstone_lamp[lit=false]
@@ -60,13 +60,13 @@ execute if data storage ms:setting {game_lock:false} run function main:state/0/s
 function main:state/0/bossbar/general
 
 # 额外区域粒子效果
-execute as @e[tag=particle-1] at @s run particle electric_spark ~ ~0.2 ~ 0.1 0.1 0.1 0 1
-execute as @e[tag=particle-2] at @s run particle glow ~ ~0.2 ~ 0.15 0.15 0.15 0 1
-execute as @e[tag=particle-3] at @s run particle ominous_spawning ~ ~0.2 ~ 0.15 0.05 0.15 0 1
-execute as @e[tag=particle-4] at @s run particle wax_on ~ ~0.2 ~ 0.15 0.15 0.15 1 1
-execute as @e[tag=particle-5] at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0 1
-execute as @e[tag=particle-6] at @s run particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.1 0.1 0.1 0 2
-execute as @e[tag=particle-7] at @s run particle witch ~ ~0.2 ~ 0.15 0.05 0.15 0 1
-execute as @e[tag=particle-8] at @s run particle cherry_leaves ~ ~0.4 ~ 0.12 0.12 0.12 0 1
-execute as @e[tag=particle-9] at @s run particle flame ~ ~0.2 ~ 0.12 0.12 0.12 0 1
-execute as @e[tag=particle-9] at @s run particle soul_fire_flame ~ ~0.2 ~ 0.1 0.1 0.1 0 1
+execute at @e[tag=particle-1] run particle electric_spark ~ ~0.2 ~ 0.1 0.1 0.1 0 1
+execute at @e[tag=particle-2] run particle glow ~ ~0.2 ~ 0.15 0.15 0.15 0 1
+execute at @e[tag=particle-3] run particle ominous_spawning ~ ~0.2 ~ 0.15 0.05 0.15 0 1
+execute at @e[tag=particle-4] run particle wax_on ~ ~0.2 ~ 0.15 0.15 0.15 1 1
+execute at @e[tag=particle-5] run particle end_rod ~ ~0.5 ~ 0 0 0 0 1
+execute at @e[tag=particle-6] run particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.1 0.1 0.1 0 2
+execute at @e[tag=particle-7] run particle witch ~ ~0.2 ~ 0.15 0.05 0.15 0 1
+execute at @e[tag=particle-8] run particle cherry_leaves ~ ~0.4 ~ 0.12 0.12 0.12 0 1
+execute at @e[tag=particle-9] run particle flame ~ ~0.2 ~ 0.12 0.12 0.12 0 1
+execute at @e[tag=particle-9] run particle soul_fire_flame ~ ~0.2 ~ 0.1 0.1 0.1 0 1

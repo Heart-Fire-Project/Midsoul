@@ -22,4 +22,3 @@ advancement grant @a[team=guardian] only main:tutorial/player/4
 
 # 可以调整的就调整基础速度
 execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.14
-execute if score $echo data matches 6 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.21

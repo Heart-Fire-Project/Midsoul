@@ -9,7 +9,7 @@ execute as @a[scores={tick.music=..-1}] run function main:lib/event/music_roll
 # 灵气效果处理
 scoreboard players remove @e[tag=blue,scores={tick.general=1..}] tick.general 1
 execute as @e[tag=blue,scores={tick.general=0}] run data merge entity @s {Glowing:0b}
-execute as @e[tag=blue,scores={tick.general=0}] run scoreboard players reset @s tick.general
+scoreboard players reset @e[tag=blue,scores={tick.general=0}] tick.general
 
 # 灵魂宝物箱计时
 execute if score $chest_refresh tick.general matches 1.. run scoreboard players remove $chest_refresh tick.general 1
@@ -29,7 +29,7 @@ execute if score $echo data matches 1.. run function main:lib/echo/general
 
 # 追踪牵制计时
 scoreboard players remove @e[tag=tracker] tick.general 1
-execute as @e[tag=tracker] if score @s tick.general matches 0 run kill @s
+kill @e[tag=tracker,scores={tick.general=0}]
 execute as @a[tag=game_player] at @s run function main:lib/player/track
 
 # 宝盒提示

@@ -1,4 +1,5 @@
 # 最基础玩家属性
+function main:lib/action/remove_modifiers
 attribute @s attack_damage base set 0
 attribute @s movement_speed base set 0.1
 attribute @s sneaking_speed base set 0.3

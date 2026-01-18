@@ -43,6 +43,7 @@ execute if score $echo_page setting matches 2 if data storage ms:echo {06:true} 
 execute if score $echo_page setting matches 2 if data storage ms:echo {07:true} run setblock -5 7 4 waxed_copper_bulb[lit=true]
 execute if score $echo_page setting matches 2 if data storage ms:echo {08:true} run setblock -6 7 4 waxed_copper_bulb[lit=true]
 execute if score $echo_page setting matches 2 if data storage ms:echo {09:true} run setblock -7 7 4 waxed_copper_bulb[lit=true]
+execute if score $echo_page setting matches 2 if data storage ms:echo {10:true} run setblock -8 7 4 waxed_copper_bulb[lit=true]
 fill -4 6 3 -8 6 3 crimson_wall_sign[facing=north]
 execute if score $echo_page setting matches 1 if data storage ms:echo {01:true} run setblock -4 6 3 warped_wall_sign[facing=north]
 execute if score $echo_page setting matches 1 if data storage ms:echo {02:true} run setblock -5 6 3 warped_wall_sign[facing=north]
@@ -53,6 +54,7 @@ execute if score $echo_page setting matches 2 if data storage ms:echo {06:true} 
 execute if score $echo_page setting matches 2 if data storage ms:echo {07:true} run setblock -5 6 3 warped_wall_sign[facing=north]
 execute if score $echo_page setting matches 2 if data storage ms:echo {08:true} run setblock -6 6 3 warped_wall_sign[facing=north]
 execute if score $echo_page setting matches 2 if data storage ms:echo {09:true} run setblock -7 6 3 warped_wall_sign[facing=north]
+execute if score $echo_page setting matches 2 if data storage ms:echo {10:true} run setblock -8 6 3 warped_wall_sign[facing=north]
 
 # 能力分配
 fill 4 7 0 4 7 2 waxed_copper_bulb[lit=false]

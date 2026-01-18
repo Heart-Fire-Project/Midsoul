@@ -1,8 +1,8 @@
 # 能力确认
-execute as @a[team=soul,scores={talent_1=5,detect.sneak=1..}] run tag @s add T005
-execute as @a[team=guardian,scores={talent_1=1}] run tag @s add T101
-execute as @a[team=soul,scores={talent_2=5,detect.sneak=1..}] run tag @s add T005
-execute as @a[team=guardian,scores={talent_2=1}] run tag @s add T101
+tag @a[team=soul,scores={talent_1=5},tag=sneaking] add T005
+tag @a[team=guardian,scores={talent_1=1}] add T101
+tag @a[team=soul,scores={talent_2=5},tag=sneaking] add T005
+tag @a[team=guardian,scores={talent_2=1}] add T101
 
 # 范围选取 - 为保证覆盖越小的范围约靠后
 execute as @a[team=guardian] at @s if entity @a[distance=..24,team=soul,tag=!T005,scores={state=0}] run tag @s add heed

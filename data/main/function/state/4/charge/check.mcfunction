@@ -3,7 +3,7 @@ tag @s add interacting
 tag @s add interact_purple
 
 # 判断交互类型
-execute unless score @s detect.sneak matches 1.. run tag @s remove interacting
+tag @s[tag=!sneaking] remove interacting
 execute unless entity @e[tag=purple,distance=..0.7,tag=!open_purple] run tag @s remove interact_purple
 tag @s[tag=!interact_purple] remove interacting
 

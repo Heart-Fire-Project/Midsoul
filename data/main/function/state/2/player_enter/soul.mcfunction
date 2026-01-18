@@ -18,8 +18,9 @@ execute unless entity @a[x=0,y=0,z=0,distance=..300,tag=game_player] run tag @e 
 execute unless entity @a[x=0,y=0,z=0,distance=..300,tag=game_player] run tag @e remove enter_soul
 
 # 回响效果
-execute if score $echo data matches 5 run attribute @s scale base set 0.7
-execute if score $echo data matches 6 run attribute @s movement_speed base set 0.15
+function main:lib/action/remove_modifiers
+execute if score $echo data matches 5 run attribute @s scale modifier add ms:echo -0.3 add_multiplied_base
+execute if score $echo data matches 6 run attribute @s movement_speed modifier add ms:echo 0.5 add_multiplied_base
 
 # 设置状态
 effect clear @s

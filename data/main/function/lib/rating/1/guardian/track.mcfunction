@@ -1,2 +1,2 @@
-tellraw @s[scores={temp.track=60}] [{text:" +90 | ",color:"#E6960D"},{translate:"ms.rating.track",fallback:"追灵寻踪"}," 60s"]
-tellraw @s[scores={temp.track=150}] [{text:" +150 | ",color:"#E6960D"},{translate:"ms.rating.track",fallback:"追灵寻踪"}," 150s"]
+tellraw @s[scores={temp.track=60}] [{text:" +70 | ",color:"#E6960D"},{translate:"ms.rating.track",fallback:"追灵寻踪"}," 60s"]
+tellraw @s[scores={temp.track=150}] [{text:" +130 | ",color:"#E6960D"},{translate:"ms.rating.track",fallback:"追灵寻踪"}," 150s"]

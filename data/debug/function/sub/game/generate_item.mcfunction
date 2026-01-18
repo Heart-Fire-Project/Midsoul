@@ -28,7 +28,7 @@ execute if score $echo data matches 2 run function main:lib/echo/02 with storage
 function debug:sub/game/renew_bossbar with storage ms:map
 
 # 灵魂之灯重新生成 | 每个垂死的灵魂都该来一个
-execute as @a[team=soul,scores={state=1}] at @s run function main:lib/event/summon/gold
+execute as @a[team=soul,scores={state=1}] run function main:lib/event/summon/gold
 
 # 灵魂宝物盒重新生成 | 直接按照原数量生成即可
 function main:lib/event/summon/gray with storage ms:map

@@ -4,9 +4,9 @@ tellraw @s [{text:"-------------- ",color:"#7367F0"},{translate:"ms.info.end.11"
 # 破魂斩击
 execute unless score @s temp.hit matches -2147483648..2147483647 run scoreboard players set @s temp.hit 0
 scoreboard players operation @s temp = @s temp.hit
-scoreboard players operation @s temp *= #12 data
-scoreboard players add @s[scores={temp.hit=5..}] temp 20
-scoreboard players add @s[scores={temp.hit=12..}] temp 40
+scoreboard players operation @s temp *= #10 data
+scoreboard players add @s[scores={temp.hit=5..}] temp 30
+scoreboard players add @s[scores={temp.hit=12..}] temp 50
 execute if score $muiti_guardian state matches 1 run function main:lib/rating/1/guardian/multiple
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.hit",fallback:"破魂斩击",color:"#FCEF01"}," | +",{text:"00",color:"#666107"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.hit",fallback:"破魂斩击",color:"#FCEF01"}," | +",{text:"0",color:"#666107"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.hit",name:"@s"}},"×)"]
@@ -16,9 +16,9 @@ scoreboard players operation @s exp.temp += @s temp
 # 镇压游魂
 execute unless score @s temp.stun matches -2147483648..2147483647 run scoreboard players set @s temp.stun 0
 scoreboard players operation @s temp = @s temp.stun
-scoreboard players operation @s temp *= #18 data
-scoreboard players add @s[scores={temp.stun=3..}] temp 25
-scoreboard players add @s[scores={temp.stun=8..}] temp 50
+scoreboard players operation @s temp *= #12 data
+scoreboard players add @s[scores={temp.stun=3..}] temp 40
+scoreboard players add @s[scores={temp.stun=8..}] temp 70
 execute if score $muiti_guardian state matches 1 run function main:lib/rating/1/guardian/multiple
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.stun",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"00",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.stun",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.stun",fallback:"镇压游魂",color:"#F1C207"}," | +",{text:"0",color:"#806705"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.stun",name:"@s"}},"×)"]
@@ -28,8 +28,10 @@ scoreboard players operation @s exp.temp += @s temp
 # 追灵寻踪
 execute unless score @s temp.track matches -2147483648..2147483647 run scoreboard players set @s temp.track 0
 scoreboard players operation @s temp = @s temp.track
-scoreboard players add @s[scores={temp.track=60..}] temp 30
-scoreboard players add @s[scores={temp.track=150..}] temp 60
+scoreboard players operation @s temp *= #4 data
+scoreboard players operation @s temp /= #5 data
+scoreboard players add @s[scores={temp.track=60..}] temp 32
+scoreboard players add @s[scores={temp.track=150..}] temp 48
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.track",fallback:"追灵寻踪",color:"#E6960D"}," | +",{text:"00",color:"#754E09"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.track",name:"@s"}},"s)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.track",fallback:"追灵寻踪",color:"#E6960D"}," | +",{text:"0",color:"#754E09"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.track",name:"@s"}},"s)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.track",fallback:"追灵寻踪",color:"#E6960D"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.track",name:"@s"}},"s)"]
@@ -38,9 +40,9 @@ scoreboard players operation @s exp.temp += @s temp
 # 夺宝破法
 execute unless score @s temp.open matches -2147483648..2147483647 run scoreboard players set @s temp.open 0
 scoreboard players operation @s temp = @s temp.open
-scoreboard players operation @s temp *= #20 data
-scoreboard players add @s[scores={temp.open=2..}] temp 15
-scoreboard players add @s[scores={temp.open=5..}] temp 30
+scoreboard players operation @s temp *= #15 data
+scoreboard players add @s[scores={temp.open=4..}] temp 35
+scoreboard players add @s[scores={temp.open=10..}] temp 60
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{text:"00",color:"#75380A"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{text:"0",color:"#75380A"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
@@ -60,7 +62,7 @@ scoreboard players operation @s temp = $soul_death data
 scoreboard players operation @s temp *= #50 data
 execute if score $soul_death data matches 3.. run scoreboard players add @s temp 50
 execute if score @s temp matches 301.. run scoreboard players set @s temp 300
-execute unless entity @a[team=revive] run scoreboard players add @s temp 75
+execute unless entity @a[team=revive] run scoreboard players add @s temp 60
 execute if score $result data matches ..-3 run scoreboard players add @s temp 90
 execute if score $result data matches -2..-1 run scoreboard players add @s temp 50
 execute if score $result data matches 0 run scoreboard players add @s temp 35

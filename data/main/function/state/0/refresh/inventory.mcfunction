@@ -36,11 +36,11 @@ item replace entity @s armor.feet with air
 # 改动侦测
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:70000}}}}}] run function main:lib/event/prepare
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:70001}}}}}] run function main:lib/event/spectator
-execute as @s[nbt=!{Inventory:[{Slot:8b}]}] run clear @s closed_eyeblossom[custom_data={id:70000}]
-execute as @s[nbt=!{Inventory:[{Slot:8b}]}] run clear @s open_eyeblossom[custom_data={id:70001}]
-execute as @s[scores={extra.headset=1},tag=!invisible,nbt=!{equipment:{head:{}}}] run clear @s end_rod[custom_data={id:75101}]
-execute as @s[scores={extra.headset=2},tag=!invisible,nbt=!{equipment:{head:{}}}] run clear @s lightning_rod[custom_data={id:75102}]
-execute as @s[scores={extra.headset=3},tag=!invisible,nbt=!{equipment:{head:{}}}] run clear @s small_amethyst_bud[custom_data={id:75103}]
+clear @s[nbt=!{Inventory:[{Slot:8b}]}] closed_eyeblossom[custom_data={id:70000}]
+clear @s[nbt=!{Inventory:[{Slot:8b}]}] open_eyeblossom[custom_data={id:70001}]
+clear @s[scores={extra.headset=1},tag=!invisible,nbt=!{equipment:{head:{}}}] end_rod[custom_data={id:75101}]
+clear @s[scores={extra.headset=2},tag=!invisible,nbt=!{equipment:{head:{}}}] lightning_rod[custom_data={id:75102}]
+clear @s[scores={extra.headset=3},tag=!invisible,nbt=!{equipment:{head:{}}}] small_amethyst_bud[custom_data={id:75103}]
 execute as @s[nbt=!{Inventory:[{Slot:20b}]}] run function main:lib/event/personal_setting {setting:"instant_rating",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:21b}]}] run function main:lib/event/personal_setting {setting:"interact_hint",limit:"2"}
 execute as @s[nbt=!{Inventory:[{Slot:22b}]}] run function main:lib/event/personal_setting {setting:"ability_status",limit:"3"}

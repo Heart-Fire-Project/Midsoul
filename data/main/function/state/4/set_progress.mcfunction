@@ -6,7 +6,7 @@ execute as @e[tag=purple_progress,scores={state=0,tick.general=100},distance=..2
 execute as @e[tag=purple_progress,scores={state=1,tick.general=0},distance=..2] unless entity @a[gamemode=adventure,distance=..1] run data merge entity @s {transformation:{translation:[0f,0f,0f]},interpolation_duration:3}
 execute as @e[tag=purple_progress,scores={state=1,tick.general=0},distance=..2] unless entity @a[gamemode=adventure,distance=..1] run scoreboard players set @s tick.general 100
 execute as @e[tag=purple_progress,scores={state=1,tick.general=100},distance=..2] unless entity @a[gamemode=adventure,distance=..1] run scoreboard players set @s state 0
-execute as @e[tag=purple_progress,scores={tick.general=100},distance=..2] run scoreboard players set @s tick.general 3
+scoreboard players set @e[tag=purple_progress,scores={tick.general=100},distance=..2] tick.general 3
 
 # 计算百分比
 function base:caculate/percent {valueA:"@s",valueB:"#100000",sourceA:"tick.general",sourceB:"data"}

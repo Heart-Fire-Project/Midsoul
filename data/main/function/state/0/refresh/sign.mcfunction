@@ -56,7 +56,8 @@ execute if score $echo_page setting matches 2 if data storage ms:echo {08:true} 
 execute if score $echo_page setting matches 2 if data storage ms:echo {08:false} run function base:merge_sign {x:"-6",y:"6",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.echo.8",fallb_2:"08",fallb_3:"先抑再后扬",command:"trigger detect.interact set 408"}
 execute if score $echo_page setting matches 2 if data storage ms:echo {09:true} run function base:merge_sign {x:"-7",y:"6",z:"3",glow:"1",color:"green",trans_2:"",trans_3:"ms.echo.9",fallb_2:"09",fallb_3:"九次九重片",command:"trigger detect.interact set 409"}
 execute if score $echo_page setting matches 2 if data storage ms:echo {09:false} run function base:merge_sign {x:"-7",y:"6",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.echo.9",fallb_2:"09",fallb_3:"九次九重片",command:"trigger detect.interact set 409"}
-execute if score $echo_page setting matches 2 run function base:merge_sign {x:"-8",y:"6",z:"3",glow:"0",color:"white",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
+execute if score $echo_page setting matches 2 if data storage ms:echo {10:true} run function base:merge_sign {x:"-8",y:"6",z:"3",glow:"1",color:"green",trans_2:"",trans_3:"ms.echo.10",fallb_2:"10",fallb_3:"一瞥惊鸿影",command:"trigger detect.interact set 410"}
+execute if score $echo_page setting matches 2 if data storage ms:echo {10:false} run function base:merge_sign {x:"-8",y:"6",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.echo.10",fallb_2:"10",fallb_3:"一瞥惊鸿影",command:"trigger detect.interact set 410"}
 
 # 能力分配
 execute if score $ability_assign setting matches 0 run function base:merge_sign {x:"3",y:"6",z:"1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.ability.0",fallb_2:"◆◇◇◇◇◇",fallb_3:"全部随机",command:"trigger detect.interact set 500"}

@@ -17,9 +17,10 @@ execute as @a run function main:lib/echo/info
 execute store result score $prev_goal data run data get storage ms:map shard_goal
 
 # 重置计时器
-execute if score $echo data matches 1 run scoreboard players set $echo tick.general 1
+execute if score $echo data matches 1 run function main:lib/echo/init {min:"0",max:"0"}
 execute if score $echo data matches 4 run function main:lib/echo/init {min:"20",max:"60"}
 execute if score $echo data matches 7 run function main:lib/echo/init {min:"30",max:"120"}
+execute if score $echo data matches 10 run function main:lib/echo/init {min:"0",max:"0"}
 
 # 重置地图数据
 function main:lib/map/data

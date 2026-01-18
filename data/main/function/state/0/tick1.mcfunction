@@ -5,7 +5,7 @@ scoreboard players set @a[scores={detect.interact=100..500}] detect.interact 0
 execute as @a[scores={detect.interact=1..}] at @s run function main:state/0/trigger/check_else
 
 # 跑酷计时
-execute as @a[scores={state=1}] run scoreboard players add @s tick.parkour 1
+scoreboard players add @a[scores={state=1}] tick.parkour 1
 execute as @a[scores={state=1}] run function main:state/0/parkour/timer
 execute as @a[scores={state=0,tick.parkour=..-1}] run function main:state/0/parkour/new_pb
 

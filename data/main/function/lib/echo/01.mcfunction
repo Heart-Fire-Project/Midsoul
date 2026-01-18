@@ -11,4 +11,4 @@ playsound block.trial_spawner.detect_player player @a[tag=!echo_target] 0 100000
 playsound block.bell.use player @a[tag=echo_target] 0 1000000 0 120000
 
 # 重设倒计时
-function main:lib/echo/init {min:"45",max:"80"}
+execute store result score $echo tick.general run random value 45..80

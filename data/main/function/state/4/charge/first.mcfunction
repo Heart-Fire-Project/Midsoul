@@ -9,8 +9,8 @@ execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed ba
 effect give @a[team=soul,scores={state=0}] glowing infinite 6 true
 
 # 回响再加速！
-execute if score $echo data matches 6 as @a[team=soul,scores={state=0}] run attribute @s movement_speed base set 0.24
-execute if score $echo data matches 6 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.32
+execute if score $echo data matches 6 as @a[tag=game_player] run attribute @s movement_speed modifier remove ms:echo
+execute if score $echo data matches 6 as @a[tag=game_player] run attribute @s movement_speed modifier add ms:echo 1 add_multiplied_base
 
 # 气息探测全失效！
 bossbar set midsoul:info players @a

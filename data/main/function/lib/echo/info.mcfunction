@@ -9,6 +9,7 @@ execute if score $echo data matches 6 run tellraw @s [{text:"",color:"light_purp
 execute if score $echo data matches 7 run tellraw @s [{text:"",color:"light_purple"},{translate:"ms.echo",fallback:"回响"}," ❖ ",{translate:"ms.echo.7",fallback:"命运交响曲"}]
 execute if score $echo data matches 8 run tellraw @s [{text:"",color:"light_purple"},{translate:"ms.echo",fallback:"回响"}," ❖ ",{translate:"ms.echo.8",fallback:"先抑再后扬"}]
 execute if score $echo data matches 9 run tellraw @s [{text:"",color:"light_purple"},{translate:"ms.echo",fallback:"回响"}," ❖ ",{translate:"ms.echo.9",fallback:"九次九重片"}]
+execute if score $echo data matches 10 run tellraw @s [{text:"",color:"light_purple"},{translate:"ms.echo",fallback:"回响"}," ❖ ",{translate:"ms.echo.10",fallback:"一瞥惊鸿影"}]
 
 execute if score $echo data matches 1 run tellraw @s [{translate:"ms.echo.1.desc",fallback:"每过 45~80 秒，清除已有标记并随机标记 2~3 个灵魂；被标记的灵魂将持续发光，未被标记的灵魂不会受到伤害"},"\n",{translate:"ms.echo.1.desc.sub",fallback:"对局开始时立刻触发一次，剩余灵魂 <3 人时回响失效",color:"gray"}]
 execute if score $echo data matches 2 run tellraw @s [{translate:"ms.echo.2.desc",fallback:"碎片收集需求降低 30%%，但有 30%% 的碎片为收集后只会生成一个烟花的假碎片"},"\n",{translate:"ms.echo.2.desc.sub",fallback:"与碎片有关的效果不会选中假碎片",color:"gray"}]
@@ -19,6 +20,7 @@ execute if score $echo data matches 6 run tellraw @s [{translate:"ms.echo.6.desc
 execute if score $echo data matches 7 run tellraw @s [{translate:"ms.echo.7.desc",fallback:"每过 30~120 秒，所有玩家将随机交换位置"}]
 execute if score $echo data matches 8 run tellraw @s [{translate:"ms.echo.8.desc",fallback:"碎片收集速度 -50%%；进入充能阶段时所有传送门将立即充能完毕"}]
 execute if score $echo data matches 9 run tellraw @s [{translate:"ms.echo.9.desc",fallback:"碎片收集需求固定为 9；初始仅会生成极少碎片，收集碎片时生成 1 个碎片"}]
+execute if score $echo data matches 10 run tellraw @s [{translate:"ms.echo.10.desc",fallback:"守卫者进行周期性判定：若距离灵魂 8 格以外则隐身且无法攻击并生成发光的残影；若距离灵魂 8 格以内则发光"},"\n",{translate:"ms.echo.10.desc.sub",fallback:"残影将在下一次判定时自毁",color:"gray"}]
 
 # 重设倒计时
 scoreboard players set $echo_info tick.general 75

@@ -2,7 +2,7 @@ tag @r[distance=..0.7,tag=interact_blue,scores={tick.general=700..}] add interac
 
 # 完成碎片收集
 scoreboard players add $shard_collect data 1
-execute if score $3_process tick.general matches 18001.. run scoreboard players add $3_process tick.general 100
+execute if score $3_process tick.general matches 12001.. run scoreboard players add $3_process tick.general 100
 execute if score $state data matches 4 run scoreboard players add $4_portal tick.general 200
 particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 playsound block.respawn_anchor.charge player @a ~ ~ ~ 0.5 1

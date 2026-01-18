@@ -20,7 +20,6 @@ scoreboard players set @a tick.invincible 0
 scoreboard players reset @a detect.die
 scoreboard players set @a[team=soul] detect.die 0
 scoreboard players reset @a detect.kill
-scoreboard players reset @a detect.sneak
 scoreboard players reset @a detect.sleep
 scoreboard players reset @a detect.drop
 scoreboard players reset @a tick.general
@@ -49,6 +48,7 @@ tag @a remove charge_rating_1
 tag @a remove charge_rating_2
 tag @a remove charge_rating_3
 
-execute if score $echo data matches 1 run scoreboard players set $echo tick.general 1
+execute if score $echo data matches 1 run function main:lib/echo/init {min:"0",max:"0"}
 execute if score $echo data matches 4 run function main:lib/echo/init {min:"20",max:"60"}
 execute if score $echo data matches 7 run function main:lib/echo/init {min:"30",max:"120"}
+execute if score $echo data matches 10 run function main:lib/echo/init {min:"0",max:"0"}

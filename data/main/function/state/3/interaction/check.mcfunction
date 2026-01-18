@@ -6,7 +6,7 @@ tag @s add interact_gray
 execute if score $echo data matches 2 run tag @s[team=soul] add E02
 
 # 判断交互类型
-execute unless score @s detect.sneak matches 1.. run tag @s remove interacting
+tag @s[tag=!sneaking] remove interacting
 execute unless entity @e[tag=blue,distance=..0.7] run tag @s remove interact_blue
 execute unless entity @e[tag=gold,distance=..0.7] run tag @s remove interact_gold
 execute unless entity @e[tag=gray,distance=..0.7] run tag @s remove interact_gray

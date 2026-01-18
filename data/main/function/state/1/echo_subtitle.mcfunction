@@ -8,3 +8,4 @@ execute if score $echo data matches 6 run title @a[tag=game_player] subtitle {tr
 execute if score $echo data matches 7 run title @a[tag=game_player] subtitle {translate:"ms.echo.7",fallback:"命运交响曲",color:"#F75EEB"}
 execute if score $echo data matches 8 run title @a[tag=game_player] subtitle {translate:"ms.echo.8",fallback:"先抑再后扬",color:"#F75EEB"}
 execute if score $echo data matches 9 run title @a[tag=game_player] subtitle {translate:"ms.echo.9",fallback:"九次九重片",color:"#F75EEB"}
+execute if score $echo data matches 10 run title @a[tag=game_player] subtitle {translate:"ms.echo.10",fallback:"一瞥惊鸿影",color:"#F75EEB"}

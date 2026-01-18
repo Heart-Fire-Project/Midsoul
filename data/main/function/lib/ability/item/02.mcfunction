@@ -9,8 +9,8 @@ tp @e[tag=blue,distance=..12] ~ ~0.2 ~
 
 # 生成额外碎片
 summon item ~ ~0.2 ~ {Tags:[game_entity,new_blue,blue],Item:{id:"echo_shard",count:1},PickupDelay:32767s,Age:-32768s,NoGravity:1b,Invulnerable:1b}
-execute as @e[tag=new_blue] run team join shard @s
-execute as @e[tag=new_blue] run tag @s remove new_blue
+team join shard @e[tag=new_blue]
+tag @e[tag=new_blue] remove new_blue
 
 # 灵气判定
 execute if score $aura_rank data matches 3 run function main:lib/event/aura/3

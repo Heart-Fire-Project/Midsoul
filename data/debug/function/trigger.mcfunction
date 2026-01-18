@@ -40,6 +40,7 @@ execute if score @s detect.interact matches -1406 run function debug:sub/binary 
 execute if score @s detect.interact matches -1407 run function debug:sub/binary {storage:"echo",target:"07"}
 execute if score @s detect.interact matches -1408 run function debug:sub/binary {storage:"echo",target:"08"}
 execute if score @s detect.interact matches -1409 run function debug:sub/binary {storage:"echo",target:"09"}
+execute if score @s detect.interact matches -1410 run function debug:sub/binary {storage:"echo",target:"10"}
 
 # 分配
 execute if score @s detect.interact matches -1501 run function debug:sub/next {type:"ability_assign",limit:"6"}
@@ -67,16 +68,17 @@ execute if score @s detect.interact matches -2198 if score $state data matches 3
 execute if score @s detect.interact matches -2199 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-9"}
 
 # 回响
-execute if score @s detect.interact matches -2200 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"0"}
-execute if score @s detect.interact matches -2201 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"1"}
-execute if score @s detect.interact matches -2202 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"2"}
-execute if score @s detect.interact matches -2203 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"3"}
-execute if score @s detect.interact matches -2204 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"4"}
-execute if score @s detect.interact matches -2205 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"5"}
-execute if score @s detect.interact matches -2206 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"6"}
-execute if score @s detect.interact matches -2207 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"7"}
-execute if score @s detect.interact matches -2208 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"8"}
-execute if score @s detect.interact matches -2209 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"9"}
+execute if score @s detect.interact matches -2200 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"00"}
+execute if score @s detect.interact matches -2201 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"01"}
+execute if score @s detect.interact matches -2202 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"02"}
+execute if score @s detect.interact matches -2203 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"03"}
+execute if score @s detect.interact matches -2204 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"04"}
+execute if score @s detect.interact matches -2205 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"05"}
+execute if score @s detect.interact matches -2206 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"06"}
+execute if score @s detect.interact matches -2207 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"07"}
+execute if score @s detect.interact matches -2208 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"08"}
+execute if score @s detect.interact matches -2209 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"09"}
+execute if score @s detect.interact matches -2210 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"10"}
 
 # 速率
 execute if score @s detect.interact matches -2300 run function debug:sub/speed_minus {type:"interact"}

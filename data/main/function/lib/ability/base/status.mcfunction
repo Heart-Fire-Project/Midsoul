@@ -1,5 +1,5 @@
 # 无需显示的场合
-execute as @a[tag=status_display,scores={tick.disable=0,tick.silent=0}] run title @s actionbar ""
+title @s[tag=status_display,scores={tick.disable=0,tick.silent=0}] actionbar ""
 
 # 快捷栏提示 - 仅无法攻击
 execute if score $color temp matches 0 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8F8F"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]

@@ -1,6 +1,6 @@
 # 计算剩余时间
 scoreboard players operation $tick temp = $3_process tick.general
-scoreboard players operation $tick temp -= #18000 data
+scoreboard players operation $tick temp -= #12000 data
 function base:caculate/time {tick:"$tick",source:"temp",unit:"sec"}
 
 # 设置 Bossbar 值
@@ -16,12 +16,12 @@ bossbar set midsoul:heed name [{text:"❖   ",color:"yellow"},{translate:"ms.bos
 bossbar set midsoul:warn name [{text:"❖   ",color:"red"},{translate:"ms.bossbar.3.emerge",fallback:"传送门形成"}," » ",{score:{objective:"temp2",name:"$sec"},color:"#E80505"},"   ❖"]
 
 # 仍在闪烁
-execute if score $3_process tick.general matches 18002 run bossbar set midsoul:info name ""
-execute if score $3_process tick.general matches 18004 run bossbar set midsoul:info name ""
-execute if score $3_process tick.general matches 18006 run bossbar set midsoul:info name ""
-execute if score $3_process tick.general matches 18002 run bossbar set midsoul:heed name ""
-execute if score $3_process tick.general matches 18004 run bossbar set midsoul:heed name ""
-execute if score $3_process tick.general matches 18006 run bossbar set midsoul:heed name ""
-execute if score $3_process tick.general matches 18002 run bossbar set midsoul:warn name ""
-execute if score $3_process tick.general matches 18004 run bossbar set midsoul:warn name ""
-execute if score $3_process tick.general matches 18006 run bossbar set midsoul:warn name ""
+execute if score $3_process tick.general matches 12002 run bossbar set midsoul:info name ""
+execute if score $3_process tick.general matches 12004 run bossbar set midsoul:info name ""
+execute if score $3_process tick.general matches 12006 run bossbar set midsoul:info name ""
+execute if score $3_process tick.general matches 12002 run bossbar set midsoul:heed name ""
+execute if score $3_process tick.general matches 12004 run bossbar set midsoul:heed name ""
+execute if score $3_process tick.general matches 12006 run bossbar set midsoul:heed name ""
+execute if score $3_process tick.general matches 12002 run bossbar set midsoul:warn name ""
+execute if score $3_process tick.general matches 12004 run bossbar set midsoul:warn name ""
+execute if score $3_process tick.general matches 12006 run bossbar set midsoul:warn name ""

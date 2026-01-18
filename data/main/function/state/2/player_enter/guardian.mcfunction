@@ -11,6 +11,7 @@ execute at @s unless entity @n[tag=map_center,distance=..1000] run tp @s 0 -5 0
 execute as @r[x=0,y=0,z=0,distance=..300,team=guardian] run function main:state/2/player_enter/guardian
 
 # 设置状态
+function main:lib/action/remove_modifiers
 effect clear @s
 attribute @s movement_speed base set 0
 attribute @s jump_strength base set 0

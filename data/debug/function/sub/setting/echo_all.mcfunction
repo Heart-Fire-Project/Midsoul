@@ -1,4 +1,4 @@
-data merge storage ms:echo {01:true,02:true,03:true,04:true,05:true,06:true,07:true,08:true,09:true}
+data merge storage ms:echo {01:true,02:true,03:true,04:true,05:true,06:true,07:true,08:true,09:true,10:true}
 
 # 刷新
 execute if score $state data matches 0 run function main:state/0/refresh/block

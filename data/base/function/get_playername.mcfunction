@@ -3,6 +3,5 @@
 # 前置条件：loot_table/get_playername
 # 输出结果：r7s:base{playername}
 
-loot replace entity @s container.0 loot base:get_playername
-$item replace entity @n[type=item_frame,x=$(x),y=$(y),z=$(z),distance=..3] contents from entity @s container.0
+$loot replace entity @n[type=item_frame,x=$(x),y=$(y),z=$(z),distance=..3] contents loot base:get_playername
 $data modify storage r7s:base playername set string entity @n[type=item_frame,x=$(x),y=$(y),z=$(z),distance=..3] Item.components."minecraft:profile".name

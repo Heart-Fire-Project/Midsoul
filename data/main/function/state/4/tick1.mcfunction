@@ -10,7 +10,6 @@ execute as @a[tag=game_player] run function main:state/3/inventory_pre
 # 蹲下交互侦测
 execute as @a[tag=game_player,scores={state=0}] at @s run function main:state/3/interaction/check
 execute as @a[team=soul,scores={state=0}] at @s run function main:state/4/charge/check
-scoreboard players remove @a[scores={detect.sneak=1..}] detect.sneak 1
 
 # 刷新传送门开启进度
 scoreboard players add $4_color tick.general 1
@@ -31,7 +30,7 @@ scoreboard players add $4_process tick.general 1
 # 其他的部分
 execute if entity @e[tag=open_purple] run effect give @e[team=soul,scores={state=0}] glowing infinite 6 true
 execute as @a[team=soul,scores={state=0}] at @s if entity @e[tag=open_purple,distance=..0.7] run function main:state/4/revive
-execute as @e[tag=open_purple] at @s run particle end_rod ~ ~1.6 ~ 0 24 0 0 10 force @a
+execute at @e[tag=open_purple] run particle end_rod ~ ~1.6 ~ 0 24 0 0 10 force @a
 execute at @e[tag=purple_3rd] unless data entity @n[tag=purple_3rd] Glowing if entity @a[team=soul,distance=..3.5] run function main:state/4/announce_door
 
 # 最后的侦测

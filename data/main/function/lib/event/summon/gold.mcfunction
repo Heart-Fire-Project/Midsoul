@@ -16,8 +16,8 @@ execute unless entity @e[tag=summon_select] run tag @e[tag=marker_gold,tag=!summ
 # 至少得到一个点位，进行生成
 execute at @e[tag=summon_select] run summon block_display ~ ~ ~ {Tags:[game_entity,new_gold,gold],Glowing:1b,block_state:{Name:soul_lantern},transformation:{scale:[1.4f,1.4f,1.4f],translation:[-0.7f,0f,-0.7f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 execute at @e[tag=new_gold] run particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 5 32 force @a
-execute as @e[tag=new_gold] run team join light @s
-execute as @e[tag=new_gold] run tag @s remove new_gold
+team join light @e[tag=new_gold]
+tag @e remove new_gold
 
 # 剩下的标签全部去掉
 tag @e remove summon_no

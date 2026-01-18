@@ -1,13 +1,10 @@
-# 消除技能效果是刻意的游戏设计
-execute as @a[team=soul,scores={state=0}] run attribute @s movement_speed base set 0.10
-execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.14
-execute if score $4_finale state matches 1 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.16
+# 不会消除技能效果
+attribute @s[team=soul,scores={state=0}] movement_speed base set 0.10
+attribute @s[team=guardian,scores={state=0}] movement_speed base set 0.14
+execute if score $4_finale state matches 1 run attribute @s[team=guardian,scores={state=0}] movement_speed base set 0.16
 
-attribute @s[scores={talent_1=5},team=soul] sneaking_speed base set 0.6
-attribute @s[scores={talent_2=5},team=soul] sneaking_speed base set 0.6
+attribute @s[scores={talent_1=5},team=soul] sneaking_speed modifier add ms:t005 1.0 add_multiplied_base
+attribute @s[scores={talent_2=5},team=soul] sneaking_speed modifier add ms:t005 1.0 add_multiplied_base
 
-execute if score $echo data matches 5 as @a[team=!soul] run attribute @s scale base set 1.0
-execute if score $echo data matches 5 as @a[team=soul] run attribute @s scale base set 0.7
-execute if score $echo data matches 6 as @a[team=soul,scores={state=0}] run attribute @s movement_speed base set 0.175
-execute if score $echo data matches 6 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.21
-execute if score $echo data matches 6 if score $4_finale state matches 1 as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.28
+execute if score $echo data matches 5 run attribute @s[team=soul] scale modifier add ms:echo -0.3 add_multiplied_base
+execute if score $echo data matches 6 run attribute @s[tag=game_player] movement_speed modifier add ms:echo 0.75 add_multiplied_base

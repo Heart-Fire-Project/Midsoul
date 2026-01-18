@@ -2,7 +2,7 @@ $function base:modify_setting/binary {storage:"ms:$(storage)",target:"$(target)"
 
 # 部分项目特殊调整
 execute if score $state data matches 0 if data storage ms:setting {setting_lock:true} unless entity @e[tag=lobby_entity,tag=setting_lock] run summon text_display -9 6.05 -9 {Tags:[lobby_entity,setting_lock],text:[{translate:"ms.lobby.setting_lock",fallback:"当前设定已被管理员锁定",color:"red"}],background:-1,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-execute if score $state data matches 0 if data storage ms:setting {setting_lock:false} as @e[tag=lobby_entity,tag=setting_lock] run kill @s
+execute if score $state data matches 0 if data storage ms:setting {setting_lock:false} run kill @e[tag=lobby_entity,tag=setting_lock]
 execute if data storage ms:setting {reduce_f3:true} run gamerule reduced_debug_info true
 execute if data storage ms:setting {reduce_f3:false} run gamerule reduced_debug_info false
 execute if data storage ms:setting {send_feedback:true} run gamerule send_command_feedback true

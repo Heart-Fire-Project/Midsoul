@@ -27,4 +27,4 @@ summon text_display 1947.55 58.15 2061.99 {Tags:[map_entity],brightness:{block:1
 summon cat 1989.0 72.5 2082.0 {Tags:[map_entity],CustomName:{translate:"ms.map.4.cat.qiu",fallback:"球球"},variant:"all_black",Invulnerable:1b,PersistenceRequired:1b,attributes:[{id:"scale",base:1.2}],home_pos:[I;1989,73,2082],home_radius:10}
 summon mannequin 1996.5 79.0 2080.5 {Tags:[map_entity],profile:{name:"1KYR_CN"},Rotation:[-332.0f,-20.0f],attributes:[{id:"scale",base:0.4d}],pose:"crouching",Invulnerable:1b,immovable:1b}
 summon mannequin 1994.5 79.0 2080.5 {Tags:[map_entity],profile:{name:"huanmeng_yc"},Rotation:[-18.0f,0.0f],attributes:[{id:"scale",base:0.5d}],pose:"standing",Invulnerable:1b,immovable:1b}
-summon mannequin 1985.3 78.0 2091.0 {Tags:[map_entity],profile:{name:"Mol1Sama"},Rotation:[-125.0f,-11.0f],Motion:[0.142d,0d,-0.76d],pose:"sleeping",Invulnerable:1b,immovable:1b}
+summon mannequin 1985.3 78.0 2091.0 {Tags:[map_entity],profile:{name:"Mol1Sama"},Rotation:[-125.0f,-11.0f],pose:"sleeping",Invulnerable:1b,immovable:1b}

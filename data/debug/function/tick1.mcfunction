@@ -8,7 +8,7 @@ execute as @e[tag=summon_gold,type=shulker] at @s run function debug:sub/mark/go
 execute as @e[tag=summon_gray,type=shulker] at @s run function debug:sub/mark/gray
 execute as @e[tag=summon_red,type=shulker] at @s run function debug:sub/mark/red
 execute as @e[tag=summon_lock,type=shulker] at @s run function debug:sub/mark/lock
-execute as @e[tag=summon_marker] at @s run kill @s
+kill @e[tag=summon_marker]
 
 # 自定义房间
 xp set @a[x=6,y=-14,z=9,dx=5,dy=3,dz=11] 7419 levels
