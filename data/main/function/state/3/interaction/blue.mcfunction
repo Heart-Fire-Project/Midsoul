@@ -1,4 +1,4 @@
-tag @r[distance=..0.7,tag=interact_blue,scores={tick.general=700..}] add interact_fin
+tag @p[distance=..0.7,tag=interact_blue,scores={tick.general=700..}] add interact_fin
 
 # 完成碎片收集
 scoreboard players add $shard_collect data 1

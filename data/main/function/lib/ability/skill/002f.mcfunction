@@ -10,7 +10,7 @@ scoreboard players operation $value temp = @s entity_id
 execute unless entity @e[tag=gold] run effect give @p[team=guardian] glowing 5 0
 execute unless entity @e[tag=gold] at @p[team=guardian] run effect give @p[team=soul] speed 5 3
 execute unless entity @e[tag=gold] at @p[team=guardian] run playsound block.vault.deactivate player @a ~ ~ ~ 1 0.5
-execute unless entity @e[tag=gold] at @p[team=guardian] as @p[team=soul] at @s unless score @s entity_id = $value temp run playsound block.vault.activate player @a ~ ~ ~ 1 0.5
+execute unless entity @e[tag=gold] at @p[team=guardian] at @p[team=soul] unless score @s entity_id = $value temp run playsound block.vault.activate player @a ~ ~ ~ 1 0.5
 execute unless entity @e[tag=gold] run playsound block.vault.activate player @a ~ ~ ~ 1 0.5
 execute unless entity @e[tag=gold] run particle trial_spawner_detection ~ ~0.1 ~ 0.2 0.2 0.2 0 32
 
