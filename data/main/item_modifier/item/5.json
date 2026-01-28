@@ -35,13 +35,13 @@
                 "italic":false
             },
             {
-                "translate":"ms.item.5.sub.a",
+                "translate":"ms.item.5.desc.sub.a",
                 "fallback":"场上至多存在 2 个同名模块，",
                 "color":"gray",
                 "italic":false
             },
             {
-                "translate":"ms.item.5.sub.b",
+                "translate":"ms.item.5.desc.sub.b",
                 "fallback":"超出上限时清除先被部署的模块",
                 "color":"gray",
                 "italic":false
