@@ -23,19 +23,19 @@
                 }
             ],
             {
-                "translate":"ms.talent.004.desc.a",
+                "translate":"ms.talent.004.desc",
                 "fallback":"已蓄能且生命未满时，在 2 秒内回复 6 血量",
                 "color":"white",
                 "italic":false
             },
             {
-                "translate":"ms.talent.004.desc.b",
+                "translate":"ms.talent.004.desc.sub.a",
                 "fallback":"蓄能初始需要收集 3 碎片，每次蓄能后 +3",
                 "color":"gray",
                 "italic":false
             },
             {
-                "translate":"ms.talent.004.desc.c",
+                "translate":"ms.talent.004.desc.sub.b",
                 "fallback":"可蓄能 2 次",
                 "color":"gray",
                 "italic":false

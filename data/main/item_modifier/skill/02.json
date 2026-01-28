@@ -41,7 +41,7 @@
                 "italic":false
             },
             {
-                "translate":"ms.skill.002.desc.d",
+                "translate":"ms.skill.002.desc.sub",
                 "fallback":"触发点亮灵魂之灯效果后，当次技能冷却时间 +12 秒",
                 "color":"gray",
                 "italic":false

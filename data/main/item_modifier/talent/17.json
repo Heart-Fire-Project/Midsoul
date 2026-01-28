@@ -29,7 +29,7 @@
                 "italic":false
             },
             {
-                "translate":"ms.talent.107.desc.b",
+                "translate":"ms.talent.107.desc.sub",
                 "fallback":"无初始冷却；至多同时对 3 个碎片生效",
                 "color":"gray",
                 "italic":false

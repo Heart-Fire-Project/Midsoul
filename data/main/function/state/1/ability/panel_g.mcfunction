@@ -1,7 +1,7 @@
 tellraw @s ""
 
 # 技能
-execute if data storage ms:ability {0:true} run tellraw @s [{translate:"ms.skill.0",fallback:"技能",color:"red"}," »"]
+execute if data storage ms:ability {0:true} run tellraw @s [{translate:"ms.skill_0",fallback:"技能",color:"red"}," »"]
 execute if score @s skill matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[skill-0,ability_entity]}
 execute unless score @s skill matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[skill-0,ability_entity]}
 execute if score @s skill matches 1 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.skill.101",fallback:"虔诚力场"},{text:"]"}],Tags:[skill-1,ability_entity]}

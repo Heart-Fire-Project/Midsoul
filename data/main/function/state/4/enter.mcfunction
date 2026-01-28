@@ -8,12 +8,12 @@ function main:lib/event/summon/purple
 
 # 播报传送门生成
 title @a title ""
-title @a subtitle {translate:"ms.title.4.portal",fallback:"⚜ 传送门已出现 ⚜",color:"#7367F0"}
+title @a subtitle {translate:"ms.title.4.spawn",fallback:"⚜ 传送门已出现 ⚜",color:"#7367F0"}
 playsound entity.warden.attack_impact player @a 0 1000000 0 120000 0.7
 
 # 生成第三传送门？
 execute if score $muiti_guardian state matches 1 run playsound entity.villager.work_toolsmith player @a 0 1000000 0 120000
-execute if score $muiti_guardian state matches 1 run tellraw @a ["\n",{text:"🔧 ",color:"#9896F1"},{translate:"ms.info.two_guardian",fallback:"多守卫特殊机制",color:"#9896F1"},"\n",{translate:"ms.info.two_guardian.desc.2",fallback:"本局游戏中额外生成一个隐藏传送门"}]
+execute if score $muiti_guardian state matches 1 run tellraw @a ["\n",{text:"🔧 ",color:"#9896F1"},{translate:"ms.info.two_guardian",fallback:"多守卫特殊机制",color:"#9896F1"},"\n",{translate:"ms.info.two_guardian.desc.4",fallback:"本局游戏中额外生成一个隐藏传送门"}]
 execute if score $muiti_guardian state matches 1 run function main:state/4/purple_3rd
 
 # 设置计时

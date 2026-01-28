@@ -59,13 +59,13 @@
                 "italic":false
             },
             {
-                "translate":"ms.skill.004.desc.g",
+                "translate":"ms.skill.004.desc.sub.a",
                 "fallback":"触发上述负面效果的概率初始为 5%%，",
                 "color":"gray",
                 "italic":false
             },
             {
-                "translate":"ms.skill.004.desc.h",
+                "translate":"ms.skill.004.desc.sub.b",
                 "fallback":"但每次使用该技能都会 +7%%，至多提升至 40%%",
                 "color":"gray",
                 "italic":false

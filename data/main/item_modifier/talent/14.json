@@ -44,6 +44,12 @@
                 "fallback":"并使周围 40 格内不存在守卫者的灵魂发光",
                 "color":"white",
                 "italic":false
+            },
+            {
+                "translate":"ms.talent.104.desc.sub",
+                "fallback":"周围 20 格内有灵魂时结束；攻击到灵魂时重置",
+                "color":"gray",
+                "italic":false
             }
         ],
         "mode":"replace_all"

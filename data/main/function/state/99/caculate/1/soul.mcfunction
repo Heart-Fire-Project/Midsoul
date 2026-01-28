@@ -1,5 +1,5 @@
 scoreboard players set @s exp.temp 0
-tellraw @s [{text:"-------------- ",color:"#7367F0"},{translate:"ms.info.end.11",fallback:"个人表现"}," --------------"]
+tellraw @s [{text:"-------------- ",color:"#7367F0"},{translate:"ms.rating.title",fallback:"个人表现"}," --------------"]
 
 # 碎片凝淬
 execute unless score @s temp.rated_collect matches -2147483648..2147483647 run scoreboard players set @s temp.rated_collect 0

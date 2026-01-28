@@ -12,16 +12,16 @@ execute if score $index_page setting matches 21 run fill 0 15 2 -8 15 2 red_stai
 execute if score $index_page setting matches 31 run fill 0 15 2 -8 15 2 light_blue_stained_glass
 execute if score $index_page setting matches 41 run fill 0 15 2 -8 15 2 orange_stained_glass
 execute if score $index_page setting matches 51 run fill 0 15 2 -8 15 2 lime_stained_glass
-execute if score $index_page setting matches 11 run function base:merge_sign {x:"-11",y:"12",z:"1",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.index.0",fallb_2:"S0",fallb_3:"灵魂技能",command:"trigger detect.interact set 601"}
-execute unless score $index_page setting matches 11 run function base:merge_sign {x:"-11",y:"12",z:"1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.0",fallb_2:"S0",fallb_3:"灵魂技能",command:"trigger detect.interact set 601"}
-execute if score $index_page setting matches 21 run function base:merge_sign {x:"-11",y:"12",z:"0",glow:"1",color:"red",trans_2:"",trans_3:"ms.index.1",fallb_2:"S1",fallb_3:"守卫者技能",command:"trigger detect.interact set 602"}
-execute unless score $index_page setting matches 21 run function base:merge_sign {x:"-11",y:"12",z:"0",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.1",fallb_2:"S1",fallb_3:"守卫者技能",command:"trigger detect.interact set 602"}
-execute if score $index_page setting matches 31 run function base:merge_sign {x:"-11",y:"12",z:"-1",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.index.2",fallb_2:"T0",fallb_3:"灵魂天赋",command:"trigger detect.interact set 603"}
-execute unless score $index_page setting matches 31 run function base:merge_sign {x:"-11",y:"12",z:"-1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.2",fallb_2:"T0",fallb_3:"灵魂天赋",command:"trigger detect.interact set 603"}
-execute if score $index_page setting matches 41 run function base:merge_sign {x:"-11",y:"12",z:"-2",glow:"1",color:"orange",trans_2:"",trans_3:"ms.index.3",fallb_2:"T1",fallb_3:"守卫者天赋",command:"trigger detect.interact set 604"}
-execute unless score $index_page setting matches 41 run function base:merge_sign {x:"-11",y:"12",z:"-2",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.3",fallb_2:"T1",fallb_3:"守卫者天赋",command:"trigger detect.interact set 604"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.index.4",fallb_2:"I",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
-execute unless score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.4",fallb_2:"I",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
+execute if score $index_page setting matches 11 run function base:merge_sign {x:"-11",y:"12",z:"1",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.index.1",fallb_2:"S0",fallb_3:"灵魂技能",command:"trigger detect.interact set 601"}
+execute unless score $index_page setting matches 11 run function base:merge_sign {x:"-11",y:"12",z:"1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.1",fallb_2:"S0",fallb_3:"灵魂技能",command:"trigger detect.interact set 601"}
+execute if score $index_page setting matches 21 run function base:merge_sign {x:"-11",y:"12",z:"0",glow:"1",color:"red",trans_2:"",trans_3:"ms.index.2",fallb_2:"S1",fallb_3:"守卫者技能",command:"trigger detect.interact set 602"}
+execute unless score $index_page setting matches 21 run function base:merge_sign {x:"-11",y:"12",z:"0",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.2",fallb_2:"S1",fallb_3:"守卫者技能",command:"trigger detect.interact set 602"}
+execute if score $index_page setting matches 31 run function base:merge_sign {x:"-11",y:"12",z:"-1",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.index.3",fallb_2:"T0",fallb_3:"灵魂天赋",command:"trigger detect.interact set 603"}
+execute unless score $index_page setting matches 31 run function base:merge_sign {x:"-11",y:"12",z:"-1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.3",fallb_2:"T0",fallb_3:"灵魂天赋",command:"trigger detect.interact set 603"}
+execute if score $index_page setting matches 41 run function base:merge_sign {x:"-11",y:"12",z:"-2",glow:"1",color:"orange",trans_2:"",trans_3:"ms.index.4",fallb_2:"T1",fallb_3:"守卫者天赋",command:"trigger detect.interact set 604"}
+execute unless score $index_page setting matches 41 run function base:merge_sign {x:"-11",y:"12",z:"-2",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.4",fallb_2:"T1",fallb_3:"守卫者天赋",command:"trigger detect.interact set 604"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.index.5",fallb_2:"I",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
+execute unless score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.5",fallb_2:"I",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
 
 # 图鉴 S0
 execute if score $index_page setting matches 11 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.001",fallb_2:"S001",fallb_3:"幻影迷踪",command:"trigger detect.interact set 1001"}

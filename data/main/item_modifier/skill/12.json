@@ -40,7 +40,7 @@
                 "italic":false
             },
             {
-                "translate":"ms.skill.102.desc.c",
+                "translate":"ms.skill.102.desc.sub",
                 "fallback":"追踪粒子仅你可见",
                 "color":"gray",
                 "italic":false

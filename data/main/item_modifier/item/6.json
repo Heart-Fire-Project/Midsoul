@@ -41,13 +41,13 @@
                 }
             ],
             {
-                "translate":"ms.item.6.desc.a",
+                "translate":"ms.item.6.desc",
                 "fallback":"若击中守卫者，使其在 12 秒内失明且发光",
                 "color":"white",
                 "italic":false
             },
             {
-                "translate":"ms.item.6.desc.b",
+                "translate":"ms.item.6.desc.sub",
                 "fallback":"短按 [%s] 发射以使用",
                 "color":"gray",
                 "italic":false,

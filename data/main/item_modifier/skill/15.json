@@ -40,7 +40,7 @@
                 "italic":false
             },
             {
-                "translate":"ms.skill.105.desc.c",
+                "translate":"ms.skill.105.desc.sub.a",
                 "fallback":"选中武器并短按 [%s] 以释放剑气，对周围 4 格内所有灵魂造成 10 伤害",
                 "with":[
                     {
@@ -51,7 +51,7 @@
                 "italic":false
             },
             {
-                "translate":"ms.skill.105.desc.d",
+                "translate":"ms.skill.105.desc.sub.b",
                 "fallback":"技能期间内最多可以再释放 2 次剑气，次数用尽后技能立即结束",
                 "color":"gray",
                 "italic":false

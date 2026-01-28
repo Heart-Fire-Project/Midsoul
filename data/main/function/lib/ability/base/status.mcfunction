@@ -2,16 +2,16 @@
 title @s[tag=status_display,scores={tick.disable=0,tick.silent=0}] actionbar ""
 
 # 快捷栏提示 - 仅无法攻击
-execute if score $color temp matches 0 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8F8F"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 1 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8C8C"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 2 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8989"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 3 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8787"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 4 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8484"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 5 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8181"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 6 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7F7F"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 7 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7C7C"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 8 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7979"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
-execute if score $color temp matches 9 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7676"},{translate:"ms.info.disabled",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 0 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8F8F"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 1 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8C8C"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 2 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8989"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 3 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8787"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 4 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8484"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 5 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF8181"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 6 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7F7F"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 7 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7C7C"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 8 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7979"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
+execute if score $color temp matches 9 run title @s[scores={tick.disable=1..,tick.silent=0}] actionbar [{text:"🚫 ",color:"#FF7676"},{translate:"ms.info.disable",fallback:"你当前无法进行攻击"}," 🚫"]
 
 # 快捷栏提示 - 仅技能沉默
 execute if score $color temp matches 0 run title @s[scores={tick.disable=0,tick.silent=1..}] actionbar [{text:"🚫 ",color:"#99D2FF"},{translate:"ms.info.silent",fallback:"你当前无法使用技能"}," 🚫"]

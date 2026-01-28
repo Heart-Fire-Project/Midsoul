@@ -23,13 +23,13 @@
                 }
             ],
             {
-                "translate":"ms.talent.001.desc.a",
+                "translate":"ms.talent.001.desc",
                 "fallback":"碎片收集速度 +25%%",
                 "color":"white",
                 "italic":false
             },
             {
-                "translate":"ms.talent.001.desc.b",
+                "translate":"ms.talent.001.desc.sub",
                 "fallback":"持续时间无限，收集中断时重置",
                 "color":"gray",
                 "italic":false
