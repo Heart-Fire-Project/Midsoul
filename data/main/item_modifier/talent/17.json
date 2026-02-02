@@ -23,7 +23,7 @@
                 }
             ],
             {
-                "translate":"ms.talent.107.desc.a",
+                "translate":"ms.talent.107.desc",
                 "fallback":"污染场上的一个碎片；被污染的碎片将在被收集时发射一个烟花",
                 "color":"white",
                 "italic":false

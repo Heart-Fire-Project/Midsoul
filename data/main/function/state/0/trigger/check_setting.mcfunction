@@ -14,8 +14,16 @@ execute if score @s detect.interact matches 301 run function debug:sub/chance_ad
 execute if score @s detect.interact matches 302 run function debug:sub/chance_minus {type:"echo"}
 
 # 回响选配
+execute if score @s detect.interact matches 303..304 run scoreboard players operation $value temp = $echo_max data
+execute if score @s detect.interact matches 303..304 run scoreboard players operation $value temp /= #5 data
+execute if score @s detect.interact matches 303..304 run scoreboard players operation $valueA temp = $echo_max data
+execute if score @s detect.interact matches 303..304 run scoreboard players operation $valueA temp %= #5 data
+execute if score @s detect.interact matches 303..304 unless score $valueA temp matches 0 run scoreboard players add $value temp 1
 execute if score @s detect.interact matches 303 run function debug:sub/prev {type:"echo_page",max:"1"}
-execute if score @s detect.interact matches 304 run function debug:sub/next {type:"echo_page",limit:"3"}
+execute if score @s detect.interact matches 304 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches 304 store result storage ms:temp limit int 1 run scoreboard players get $value temp
+execute if score @s detect.interact matches 304 run data merge storage ms:temp {type:"echo_page"}
+execute if score @s detect.interact matches 304 run function debug:sub/next with storage ms:temp
 execute if score @s detect.interact matches 401 run function debug:sub/binary {storage:"echo",target:"01"}
 execute if score @s detect.interact matches 402 run function debug:sub/binary {storage:"echo",target:"02"}
 execute if score @s detect.interact matches 403 run function debug:sub/binary {storage:"echo",target:"03"}

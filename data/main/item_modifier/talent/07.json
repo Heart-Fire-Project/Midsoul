@@ -23,13 +23,13 @@
                 }
             ],
             {
-                "translate":"ms.talent.007.desc.a",
+                "translate":"ms.talent.007.desc",
                 "fallback":"交互速度 +5%%；灵气等级每提升 1 级额外 +5%%",
                 "color":"white",
                 "italic":false
             },
             {
-                "translate":"ms.talent.007.desc.b",
+                "translate":"ms.talent.007.desc.sub",
                 "fallback":"至多提升至 +20%%",
                 "color":"gray",
                 "italic":false

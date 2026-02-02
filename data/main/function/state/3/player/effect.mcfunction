@@ -15,6 +15,6 @@ attribute @s[scores={state=1}] jump_strength base set 0
 attribute @s[scores={state=1}] water_movement_efficiency base set 10
 
 # 分流
-execute if score $state data matches 99 run attribute @s movement_speed base set 0.12
+execute if score $state data matches 99 run attribute @s[team=guardian] movement_speed base set 0.12
 execute if score $state data matches 4 run function main:state/4/effect/pend
 execute if score $state data matches 3 run function main:state/3/effect

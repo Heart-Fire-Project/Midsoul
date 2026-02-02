@@ -31,7 +31,7 @@ execute if score $1_process tick.general matches 1320 run scoreboard players ope
 # 1319 | 回响判定
 execute if score $1_process tick.general matches 1319 run scoreboard players set $echo data 0
 execute if score $1_process tick.general matches 1319 store result score $random temp2 run random value 1..100
-execute if score $1_process tick.general matches 1319 unless entity @a[scores={stat.play=..1}] if score $random temp2 <= $echo_chance setting run function main:state/1/echo
+execute if score $1_process tick.general matches 1319 unless entity @a[tag=game_player,scores={stat.play=..1}] if score $random temp2 <= $echo_chance setting run function main:state/1/echo
 
 # 1319 | 普通标题
 execute if score $1_process tick.general matches 1319 run title @a[tag=game_player] times 3 50 4
@@ -240,4 +240,4 @@ execute if score $1_process tick.general matches 1 run bossbar set midsoul:3 nam
 execute if score $1_process tick.general matches 0 run bossbar set midsoul:3 name [{text:"⚕ ",color:"red"},{translate:"ms.guardian",fallback:"灵魂守卫者"}," ⚕ ",{translate:"ms.guardian.desc",fallback:"阻止灵魂，让他们永困于此",color:"white"}]
 
 # 0 | 进入入场阶段
-execute if score $1_process tick.general matches 0 if data storage ms:mode {logic:"1"} run function main:state/2/enter
+execute if score $1_process tick.general matches 0 run function main:state/2/enter

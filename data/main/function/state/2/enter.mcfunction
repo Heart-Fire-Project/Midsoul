@@ -28,4 +28,4 @@ scoreboard players set $soul_count data 0
 scoreboard players set $guardian_count data 0
 execute as @a[team=guardian] run scoreboard players add $guardian_count data 1
 execute as @a[team=soul] run scoreboard players add $soul_count data 1
-function main:state/2/player_enter/general with storage ms:map
+execute if data storage ms:mode {logic:"1"} run function main:state/2/player_enter/1/general with storage ms:map

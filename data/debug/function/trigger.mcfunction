@@ -21,6 +21,16 @@ execute if score @s detect.interact matches -1201 run function debug:sub/select 
 execute if score @s detect.interact matches -1202 run function debug:sub/select {type:"map",num:"2"}
 execute if score @s detect.interact matches -1203 run function debug:sub/select {type:"map",num:"3"}
 execute if score @s detect.interact matches -1204 run function debug:sub/select {type:"map",num:"4"}
+execute if score @s detect.interact matches -1298..-1297 run scoreboard players operation $value temp = $map_max data
+execute if score @s detect.interact matches -1298..-1297 run scoreboard players operation $value temp /= #6 data
+execute if score @s detect.interact matches -1298..-1297 run scoreboard players operation $valueA temp = $map_max data
+execute if score @s detect.interact matches -1298..-1297 run scoreboard players operation $valueA temp %= #6 data
+execute if score @s detect.interact matches -1298..-1297 unless score $valueA temp matches 0 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -1297 run function debug:sub/prev {type:"debug_map",max:"1"}
+execute if score @s detect.interact matches -1298 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -1298 store result storage ms:temp limit int 1 run scoreboard players get $value temp
+execute if score @s detect.interact matches -1298 run data merge storage ms:temp {type:"debug_map"}
+execute if score @s detect.interact matches -1298 run function debug:sub/next with storage ms:temp
 execute if score @s detect.interact matches -1299 run function debug:sub/setting/map_tp
 
 # 回响
@@ -41,6 +51,16 @@ execute if score @s detect.interact matches -1407 run function debug:sub/binary 
 execute if score @s detect.interact matches -1408 run function debug:sub/binary {storage:"echo",target:"08"}
 execute if score @s detect.interact matches -1409 run function debug:sub/binary {storage:"echo",target:"09"}
 execute if score @s detect.interact matches -1410 run function debug:sub/binary {storage:"echo",target:"10"}
+execute if score @s detect.interact matches -1498..-1497 run scoreboard players operation $value temp = $echo_max data
+execute if score @s detect.interact matches -1498..-1497 run scoreboard players operation $value temp /= #5 data
+execute if score @s detect.interact matches -1498..-1497 run scoreboard players operation $valueA temp = $echo_max data
+execute if score @s detect.interact matches -1498..-1497 run scoreboard players operation $valueA temp %= #5 data
+execute if score @s detect.interact matches -1498..-1497 unless score $valueA temp matches 0 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -1497 run function debug:sub/prev {type:"debug_echo",max:"1"}
+execute if score @s detect.interact matches -1498 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -1498 store result storage ms:temp limit int 1 run scoreboard players get $value temp
+execute if score @s detect.interact matches -1498 run data merge storage ms:temp {type:"debug_echo"}
+execute if score @s detect.interact matches -1498 run function debug:sub/next with storage ms:temp
 
 # 分配
 execute if score @s detect.interact matches -1501 run function debug:sub/next {type:"ability_assign",limit:"6"}
@@ -53,19 +73,20 @@ execute if score @s detect.interact matches -1603 run function debug:sub/binary 
 
 ## 对局
 # 地图
-execute if score @s detect.interact matches -2101 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"1"}
-execute if score @s detect.interact matches -2102 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"2"}
-execute if score @s detect.interact matches -2103 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"3"}
-execute if score @s detect.interact matches -2104 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"4"}
-execute if score @s detect.interact matches -2191 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-1"}
-execute if score @s detect.interact matches -2192 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-2"}
-execute if score @s detect.interact matches -2193 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-3"}
-execute if score @s detect.interact matches -2194 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-4"}
-execute if score @s detect.interact matches -2195 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-5"}
-execute if score @s detect.interact matches -2196 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-6"}
-execute if score @s detect.interact matches -2197 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-7"}
-execute if score @s detect.interact matches -2198 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-8"}
-execute if score @s detect.interact matches -2199 if score $state data matches 3..98 run function debug:sub/game/switch_map_pre {value:"-9"}
+execute if score @s detect.interact matches -2101 run function debug:sub/game/switch_map_pre {value:"1"}
+execute if score @s detect.interact matches -2102 run function debug:sub/game/switch_map_pre {value:"2"}
+execute if score @s detect.interact matches -2103 run function debug:sub/game/switch_map_pre {value:"3"}
+execute if score @s detect.interact matches -2104 run function debug:sub/game/switch_map_pre {value:"4"}
+execute if score @s detect.interact matches -2198..-2197 run scoreboard players operation $value temp = $map_max data
+execute if score @s detect.interact matches -2198..-2197 run scoreboard players operation $value temp /= #6 data
+execute if score @s detect.interact matches -2198..-2197 run scoreboard players operation $valueA temp = $map_max data
+execute if score @s detect.interact matches -2198..-2197 run scoreboard players operation $valueA temp %= #6 data
+execute if score @s detect.interact matches -2198..-2197 unless score $valueA temp matches 0 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -2197 run function debug:sub/prev {type:"debug_map",max:"1"}
+execute if score @s detect.interact matches -2198 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -2198 store result storage ms:temp limit int 1 run scoreboard players get $value temp
+execute if score @s detect.interact matches -2198 run data merge storage ms:temp {type:"debug_map"}
+execute if score @s detect.interact matches -2198 run function debug:sub/next with storage ms:temp
 
 # 回响
 execute if score @s detect.interact matches -2200 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"00"}
@@ -79,6 +100,16 @@ execute if score @s detect.interact matches -2207 if score $state data matches 3
 execute if score @s detect.interact matches -2208 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"08"}
 execute if score @s detect.interact matches -2209 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"09"}
 execute if score @s detect.interact matches -2210 if score $state data matches 3..98 run function debug:sub/game/switch_echo {value:"10"}
+execute if score @s detect.interact matches -2298..-2297 run scoreboard players operation $value temp = $echo_max data
+execute if score @s detect.interact matches -2298..-2297 run scoreboard players operation $value temp /= #5 data
+execute if score @s detect.interact matches -2298..-2297 run scoreboard players operation $valueA temp = $echo_max data
+execute if score @s detect.interact matches -2298..-2297 run scoreboard players operation $valueA temp %= #5 data
+execute if score @s detect.interact matches -2298..-2297 unless score $valueA temp matches 0 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -2297 run function debug:sub/prev {type:"debug_echo",max:"1"}
+execute if score @s detect.interact matches -2298 run scoreboard players add $value temp 1
+execute if score @s detect.interact matches -2298 store result storage ms:temp limit int 1 run scoreboard players get $value temp
+execute if score @s detect.interact matches -2298 run data merge storage ms:temp {type:"debug_echo"}
+execute if score @s detect.interact matches -2298 run function debug:sub/next with storage ms:temp
 
 # 速率
 execute if score @s detect.interact matches -2300 run function debug:sub/speed_minus {type:"interact"}
@@ -104,17 +135,25 @@ execute if score @s detect.interact matches -3001 run function debug:sub/binary 
 execute if score @s detect.interact matches -3002 run function debug:sub/binary {storage:"setting",target:send_feedback}
 
 # 进程
-execute if score @s detect.interact matches -3101 run function debug:sub/other/start
-execute if score @s detect.interact matches -3102 if score $state data matches 3..98 run function debug:sub/other/rematch
-execute if score @s detect.interact matches -3103 if score $state data matches 3 run function debug:sub/other/aura4
-execute if score @s detect.interact matches -3104 if score $state data matches 3 run function debug:sub/other/state4
-execute if score @s detect.interact matches -3105 if score $state data matches 3..98 run function debug:sub/other/end
-execute if score @s detect.interact matches -3201 run scoreboard players remove $4_portal tick.general 300
-execute if score @s detect.interact matches -3202 run scoreboard players add $4_portal tick.general 400
-execute if score @s detect.interact matches -3203 run scoreboard players add $4_portal tick.general 1200
-execute if score @s detect.interact matches -3204 run function debug:sub/other/portal_max
-execute if score @s detect.interact matches -3205 run scoreboard players set $4_portal tick.general 631152000
-execute if score @s detect.interact matches -3299..-3100 run playsound ui.button.click player @s 0 1000000 0 120000
+execute if score @s detect.interact matches -3011 run function debug:sub/other/start
+execute if score @s detect.interact matches -3012 run function debug:sub/other/all_prepare
+execute if score @s detect.interact matches -3013 run function debug:sub/other/start
+execute if score @s detect.interact matches -3014 run function debug:sub/other/rematch
+execute if score @s detect.interact matches -3015 run function debug:sub/other/add_aura
+execute if score @s detect.interact matches -3016 run function debug:sub/other/next_state
+execute if score @s detect.interact matches -3017 run function debug:sub/other/ending
+execute if score @s detect.interact matches -3018 run function debug:sub/other/finale
+execute if score @s detect.interact matches -3031 run scoreboard players set $shard_collect data 0
+execute if score @s detect.interact matches -3032 run scoreboard players remove $shard_collect data 3
+execute if score @s detect.interact matches -3033 run scoreboard players remove $shard_collect data 1
+execute if score @s detect.interact matches -3034 run scoreboard players add $shard_collect data 1
+execute if score @s detect.interact matches -3035 run scoreboard players add $shard_collect data 3
+execute if score @s detect.interact matches -3041 run scoreboard players remove $4_portal tick.general 300
+execute if score @s detect.interact matches -3042 run scoreboard players add $4_portal tick.general 400
+execute if score @s detect.interact matches -3043 run scoreboard players add $4_portal tick.general 1200
+execute if score @s detect.interact matches -3044 run function debug:sub/other/portal_max
+execute if score @s detect.interact matches -3045 run scoreboard players set $4_portal tick.general 631152000
+execute if score @s detect.interact matches -3989..-3010 run function debug:panel/3
 
 ## 自定义
 # 地图
@@ -138,6 +177,7 @@ execute if score @s detect.interact matches -4304 run give @s breeze_spawn_egg[c
 execute if score @s detect.interact matches -4303 run give @s evoker_spawn_egg[custom_name={translate:"ms.gray",fallback:"灵魂宝物盒",color:"gray",italic:false},entity_data={id:shulker,Color:8,Tags:[summon_marker,summon_gray]}]
 execute if score @s detect.interact matches -4305 run give @s strider_spawn_egg[custom_name={translate:"ms.red",fallback:"删除标记",color:"red",italic:false},entity_data={id:shulker,Color:14,Tags:[summon_marker,summon_red]}]
 execute if score @s detect.interact matches -4306 run give @s ghast_spawn_egg[custom_name={translate:"ms.lock",fallback:"容器上锁",color:"white",italic:false},entity_data={id:shulker,Color:0,Tags:[summon_marker,summon_lock]}]
+execute if score @s detect.interact matches -4307 run give @s slime_spawn_egg[custom_name={translate:"ms.turn",fallback:"灵灯转向",color:"#85C077",italic:false},entity_data={id:shulker,Color:5,Tags:[summon_marker,summon_turn]}]
 execute if score @s detect.interact matches -4399 at @s run function debug:sub/mark/count
 
 scoreboard players set @s detect.interact 0

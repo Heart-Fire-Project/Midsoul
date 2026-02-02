@@ -8,6 +8,7 @@ execute as @e[tag=summon_gold,type=shulker] at @s run function debug:sub/mark/go
 execute as @e[tag=summon_gray,type=shulker] at @s run function debug:sub/mark/gray
 execute as @e[tag=summon_red,type=shulker] at @s run function debug:sub/mark/red
 execute as @e[tag=summon_lock,type=shulker] at @s run function debug:sub/mark/lock
+execute as @e[tag=summon_turn,type=shulker] at @s run function debug:sub/mark/turn
 kill @e[tag=summon_marker]
 
 # 自定义房间

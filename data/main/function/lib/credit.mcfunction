@@ -16,7 +16,7 @@ tellraw @s[scores={temp=3}] [{text:"",color:"white"},{text:"» ",bold:true},{tra
 tellraw @s[scores={temp=3}] [{text:"✒ ",color:"gray"},{translate:"ms.credit.3.note",fallback:"想得到幸福的话，就视而不见吧"}]
 
 # 4 - 翻译 | *翻译者自己填
-tellraw @s[scores={temp=4}] [{text:"",color:"#C3AC98"},{text:"\n» ",bold:true},{translate:"ms.credit.4",fallback:"翻译"}," | ",{translate:"ms.credit.translator",fallback:"[译者名]"}]
+tellraw @s[scores={temp=4}] [{text:"",color:"#C3AC98"},{text:"\n» ",bold:true},{translate:"ms.credit.4",fallback:"翻译"}," | ",{translate:"ms.credit.translator",fallback:"--"}]
 tellraw @s[scores={temp=4}] [{text:"",color:"white"},{text:"» ",bold:true},{translate:"ms.credit.4.desc",fallback:"[介绍你自己]"}]
 tellraw @s[scores={temp=4}] [{text:"✒ ",color:"gray"},{translate:"ms.credit.4.note",fallback:"[在这里留言，不要骂我的文案谢谢]"}]
 

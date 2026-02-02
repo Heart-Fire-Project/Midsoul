@@ -201,49 +201,38 @@ team remove soul
 team add soul "灵魂"
 team modify soul color aqua
 team modify soul collisionRule never
-team modify soul deathMessageVisibility never
-team modify soul seeFriendlyInvisibles true
 team modify soul friendlyFire false
 team modify soul nametagVisibility hideForOtherTeams
 team remove guardian
 team add guardian "灵魂守卫者"
 team modify guardian color red
 team modify guardian collisionRule never
-team modify guardian deathMessageVisibility never
-team modify guardian seeFriendlyInvisibles true
 team modify guardian friendlyFire false
 team modify guardian nametagVisibility hideForOtherTeams
 team remove dead
 team add dead "消亡"
 team modify dead color dark_gray
 team modify dead collisionRule never
-team modify dead deathMessageVisibility never
-team modify dead seeFriendlyInvisibles false
 team remove revive
 team add revive "复活"
 team modify revive color green
 team modify revive collisionRule never
-team modify revive deathMessageVisibility never
-team modify revive seeFriendlyInvisibles false
 
 team remove prepare
 team add prepare "已准备"
 team modify prepare color white
 team modify prepare collisionRule never
-team modify prepare deathMessageVisibility never
 team modify prepare seeFriendlyInvisibles false
 team remove spectator
 team add spectator "旁观者"
 team modify spectator color gray
 team modify spectator collisionRule never
-team modify spectator deathMessageVisibility never
 team modify spectator seeFriendlyInvisibles false
 team remove admin
 team add admin "管理员"
 team modify admin color light_purple
 team modify admin collisionRule never
-team modify admin deathMessageVisibility never
-team modify admin seeFriendlyInvisibles false
+team modify admin nametagVisibility hideForOtherTeams
 
 team remove shard
 team add shard "灵魂碎片"
@@ -293,14 +282,15 @@ advancement revoke @a only main:detect/using_item
 scoreboard players set $mode setting 1
 scoreboard players set $map setting 0
 scoreboard players set $ability_assign setting 0
-scoreboard players set $echo_chance setting 30
-scoreboard players set $mode_page setting 1
+scoreboard players set $role_assign setting 0
 scoreboard players set $map_page setting 1
+scoreboard players set $debug_map setting 1
+scoreboard players set $debug_echo setting 1
+scoreboard players set $echo_chance setting 30
 scoreboard players set $echo_page setting 1
 scoreboard players set $index_page setting 11
 scoreboard players set $cooldown_speed setting 100
 scoreboard players set $interact_speed setting 100
-scoreboard players set $role_assign setting 0
 scoreboard players set $initcheck data 7419147
 data merge storage ms:setting {show_mark:false,setting_lock:false,game_lock:false,hide_rating:false,reset_speed:false,random_custom:false}
 data merge storage ms:echo {01:true,02:true,03:true,04:true,05:true,06:true,07:true,08:true,09:true,10:true}
@@ -311,6 +301,7 @@ scoreboard players set #2 data 2
 scoreboard players set #3 data 3
 scoreboard players set #4 data 4
 scoreboard players set #5 data 5
+scoreboard players set #6 data 6
 scoreboard players set #7 data 7
 scoreboard players set #8 data 8
 scoreboard players set #9 data 9
@@ -335,8 +326,9 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 289
+scoreboard players set $build data 290
 scoreboard players set $map_max data 4
+scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7
 scoreboard players set $item_max data 7
