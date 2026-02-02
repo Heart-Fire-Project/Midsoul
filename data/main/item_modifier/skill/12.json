@@ -35,7 +35,7 @@
             },
             {
                 "translate":"ms.skill.102.desc.b",
-                "fallback":"标记最近的灵魂令其沉默并持续发射粒子追踪其位置",
+                "fallback":"标记最近的灵魂令其沉默 6 秒并持续发射粒子追踪其位置",
                 "color":"white",
                 "italic":false
             },

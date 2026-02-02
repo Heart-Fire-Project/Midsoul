@@ -8,6 +8,7 @@ execute as @s[team=soul,scores={talent_1=7},tag=interacting] run function main:l
 execute as @s[team=soul,scores={talent_2=7},tag=interacting] run function main:lib/ability/base/modify_interact with storage ms:temp
 
 # 回响
+execute if score $echo data matches 1 if entity @a[tag=echo_target] as @s[team=soul,tag=!echo_target,tag=interacting] run function main:lib/ability/base/modify_interact {value:"-50"}
 execute if score $echo data matches 5 as @s[team=soul,tag=interacting] run function main:lib/ability/base/modify_interact {value:"-10"}
 execute if score $echo data matches 8 as @s[tag=interact_blue,tag=interacting] run function main:lib/ability/base/modify_interact {value:"-50"}
 

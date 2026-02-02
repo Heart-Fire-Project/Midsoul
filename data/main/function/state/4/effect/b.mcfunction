@@ -8,4 +8,4 @@ attribute @s[scores={talent_1=5},team=soul] sneaking_speed modifier add ms:t005 
 attribute @s[scores={talent_2=5},team=soul] sneaking_speed modifier add ms:t005 1.0 add_multiplied_base
 
 execute if score $echo data matches 5 run attribute @s[team=soul] scale modifier add ms:echo -0.3 add_multiplied_base
-execute if score $echo data matches 6 run attribute @s[tag=game_player] movement_speed modifier add ms:echo 1 add_multiplied_base
+execute if score $echo data matches 6 run attribute @s[tag=game_player,scores={state=0}] movement_speed modifier add ms:echo 0.1 add_value

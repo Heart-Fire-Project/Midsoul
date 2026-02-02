@@ -41,8 +41,9 @@ scoreboard players operation @s exp.temp += @s temp
 execute unless score @s temp.open matches -2147483648..2147483647 run scoreboard players set @s temp.open 0
 scoreboard players operation @s temp = @s temp.open
 scoreboard players operation @s temp *= #15 data
-scoreboard players add @s[scores={temp.open=4..}] temp 35
-scoreboard players add @s[scores={temp.open=10..}] temp 60
+scoreboard players add @s[scores={temp.open=3..}] temp 30
+scoreboard players add @s[scores={temp.open=8..}] temp 60
+execute if score @s temp matches 241.. run scoreboard players set @s temp 240
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{text:"00",color:"#75380A"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{text:"0",color:"#75380A"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]

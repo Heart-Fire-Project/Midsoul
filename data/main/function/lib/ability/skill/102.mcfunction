@@ -6,13 +6,12 @@ tag @s add skill_on
 
 # 设置计时
 scoreboard players set @s tick.skill -24000
-scoreboard players set $temp temp 240
-execute unless score @s tick.enhance >= $temp temp run scoreboard players set @s tick.enhance 240
+scoreboard players set @s[scores={tick.enhance=..240}] tick.enhance 240
 effect give @s strength 12 1
 
 # 选择目标
 tag @p[team=soul,scores={state=0}] add S102
 scoreboard players operation @s skill.102 = @a[tag=S102] entity_id
-scoreboard players set @a[tag=S102] tick.silent_max 240
-scoreboard players set @a[tag=S102] tick.silent 240
+scoreboard players set @a[tag=S102,scores={tick.silent=..120}] tick.silent_max 120
+scoreboard players set @a[tag=S102,scores={tick.silent=..120}] tick.silent 120
 tag @a remove S102

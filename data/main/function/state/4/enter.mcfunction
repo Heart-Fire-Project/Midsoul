@@ -35,10 +35,10 @@ execute store result bossbar midsoul:warn max run scoreboard players get $4_port
 # 设置速度
 execute as @a[team=guardian,scores={state=0}] run attribute @s movement_speed base set 0.14
 execute if score $echo data matches 6 as @a[tag=game_player] run attribute @s movement_speed modifier remove ms:echo
-execute if score $echo data matches 6 as @a[tag=game_player] run attribute @s movement_speed modifier add ms:echo 0.75 add_multiplied_base
+execute if score $echo data matches 6 as @a[tag=game_player,scores={state=0}] run attribute @s movement_speed modifier add ms:echo 0.075 add_value
 
 # 回响效果
-execute if score $echo data matches 8 run scoreboard players set @e[tag=purple] tick.general 1010000
+execute if score $echo data matches 8 run scoreboard players set @e[tag=purple] tick.general 50000
 
 # 教程
 advancement grant @a[tag=game_player] only main:tutorial/interact/4
