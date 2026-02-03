@@ -1,6 +1,6 @@
 # 通用开场
 scoreboard players set $aura_rank data 0
-scoreboard players set $affact_rating data 1
+scoreboard players set $rated_play data 1
 scoreboard players set $stat_gametime tick.general 0
 scoreboard players set $echo tick.general -1
 scoreboard players set $echo_info tick.general 10

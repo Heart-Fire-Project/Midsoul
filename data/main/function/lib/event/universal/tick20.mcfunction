@@ -25,7 +25,7 @@ execute if score $echo_info tick.general matches 0 as @a[scores={setting.echo_in
 
 # 回响计时
 execute if score $echo tick.general matches 1.. run scoreboard players remove $echo tick.general 1
-execute if score $echo data matches 1.. run function main:lib/echo/general
+execute if score $echo data matches 1.. run function main:lib/echo/tick20
 
 # 追踪牵制计时
 scoreboard players remove @e[tag=tracker] tick.general 1
