@@ -33,7 +33,7 @@ scoreboard players reset * temp.hit
 scoreboard players reset * temp.stun
 scoreboard players reset * temp.skill
 scoreboard players reset * temp.talent
-scoreboard players reset * temp.item
+scoreboard players reset * temp.relic
 scoreboard players reset * temp.time
 
 scoreboard players reset * temp.track

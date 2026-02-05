@@ -2,7 +2,7 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.item.2",
+            "translate":"ms.relic.2",
             "fallback":"共鸣引力",
             "color":"#33FFAA",
             "italic":false
@@ -23,7 +23,7 @@
                 }
             ],
             {
-                "translate":"ms.item.2.desc",
+                "translate":"ms.relic.2.desc",
                 "fallback":"生成一个灵魂碎片并聚集半径 12 格内的灵魂碎片",
                 "color":"white",
                 "italic":false

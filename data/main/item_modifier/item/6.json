@@ -2,7 +2,7 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.item.6",
+            "translate":"ms.relic.6",
             "fallback":"灵能冲击",
             "color":"#33FFAA",
             "italic":false
@@ -41,13 +41,13 @@
                 }
             ],
             {
-                "translate":"ms.item.6.desc",
+                "translate":"ms.relic.6.desc",
                 "fallback":"若击中守卫者，使其在 12 秒内失明且发光",
                 "color":"white",
                 "italic":false
             },
             {
-                "translate":"ms.item.6.desc.sub",
+                "translate":"ms.relic.6.desc.sub",
                 "fallback":"短按 [%s] 发射以使用",
                 "color":"gray",
                 "italic":false,

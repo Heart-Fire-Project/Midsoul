@@ -31,8 +31,8 @@ function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
 execute if score $sec temp2 matches ..0 run scoreboard players set $sec temp2 1
 execute store result storage ms:inventory tick_talent_2 int 1 run scoreboard players get $sec temp2
 
-scoreboard players operation $tick temp = @s tick.item
-execute if score @s tick.item matches ..-1 run scoreboard players operation $tick temp *= #-1 data
+scoreboard players operation $tick temp = @s tick.relic
+execute if score @s tick.relic matches ..-1 run scoreboard players operation $tick temp *= #-1 data
 scoreboard players operation $tick temp /= #100 data
 scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}

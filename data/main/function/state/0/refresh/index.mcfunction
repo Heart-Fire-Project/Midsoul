@@ -20,8 +20,8 @@ execute if score $index_page setting matches 31 run function base:merge_sign {x:
 execute unless score $index_page setting matches 31 run function base:merge_sign {x:"-11",y:"12",z:"-1",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.3",fallb_2:"T0",fallb_3:"灵魂天赋",command:"trigger detect.interact set 603"}
 execute if score $index_page setting matches 41 run function base:merge_sign {x:"-11",y:"12",z:"-2",glow:"1",color:"orange",trans_2:"",trans_3:"ms.index.4",fallb_2:"T1",fallb_3:"守卫者天赋",command:"trigger detect.interact set 604"}
 execute unless score $index_page setting matches 41 run function base:merge_sign {x:"-11",y:"12",z:"-2",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.4",fallb_2:"T1",fallb_3:"守卫者天赋",command:"trigger detect.interact set 604"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.index.5",fallb_2:"I",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
-execute unless score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.5",fallb_2:"I",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.index.5",fallb_2:"R",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
+execute unless score $index_page setting matches 51 run function base:merge_sign {x:"-11",y:"12",z:"-3",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.index.5",fallb_2:"R",fallb_3:"灵魂宝物",command:"trigger detect.interact set 605"}
 
 # 图鉴 S0
 execute if score $index_page setting matches 11 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.001",fallb_2:"S001",fallb_3:"幻影迷踪",command:"trigger detect.interact set 1001"}
@@ -91,14 +91,14 @@ execute if score $index_page setting matches 41 run summon item -4 12.1 4 {Tags:
 execute if score $index_page setting matches 41 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"redstone"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 41 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"amethyst_shard"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
-# 图鉴 I
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.1",fallb_2:"I01",fallb_3:"无懈可击",command:"trigger detect.interact set 3001"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-1",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.2",fallb_2:"I02",fallb_3:"共鸣引力",command:"trigger detect.interact set 3002"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.3",fallb_2:"I03",fallb_3:"无垠时界",command:"trigger detect.interact set 3003"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.4",fallb_2:"I04",fallb_3:"相位替换",command:"trigger detect.interact set 3004"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.5",fallb_2:"I05",fallb_3:"高效制冷",command:"trigger detect.interact set 3005"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.6",fallb_2:"I06",fallb_3:"灵能冲击",command:"trigger detect.interact set 3006"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.item.7",fallb_2:"I07",fallb_3:"再生疗愈",command:"trigger detect.interact set 3007"}
+# 图鉴 R
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.1",fallb_2:"R01",fallb_3:"无懈可击",command:"trigger detect.interact set 3001"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-1",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.2",fallb_2:"R02",fallb_3:"共鸣引力",command:"trigger detect.interact set 3002"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.3",fallb_2:"R03",fallb_3:"无垠时界",command:"trigger detect.interact set 3003"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.4",fallb_2:"R04",fallb_3:"相位替换",command:"trigger detect.interact set 3004"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.5",fallb_2:"R05",fallb_3:"高效制冷",command:"trigger detect.interact set 3005"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.6",fallb_2:"R06",fallb_3:"灵能冲击",command:"trigger detect.interact set 3006"}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.7",fallb_2:"R07",fallb_3:"再生疗愈",command:"trigger detect.interact set 3007"}
 execute if score $index_page setting matches 51 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 51 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 51 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"iron_chestplate",components:{trim:{material:diamond,pattern:snout}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}

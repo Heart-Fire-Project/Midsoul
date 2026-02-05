@@ -2,7 +2,7 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.item.1",
+            "translate":"ms.relic.1",
             "fallback":"无懈可击",
             "color":"#33FFAA",
             "italic":false
@@ -23,7 +23,7 @@
                 }
             ],
             {
-                "translate":"ms.item.1.desc",
+                "translate":"ms.relic.1.desc",
                 "fallback":"宝物生效期间不会受到伤害",
                 "color":"white",
                 "italic":false

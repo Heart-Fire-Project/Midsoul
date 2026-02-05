@@ -1,4 +1,4 @@
-scoreboard players set @s tick.item 0
+scoreboard players set @s tick.relic 0
 
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:73001}}}}}] run function main:lib/ability/item/01
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:73002}}}}}] run function main:lib/ability/item/02

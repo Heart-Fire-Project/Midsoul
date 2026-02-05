@@ -78,8 +78,8 @@ scoreboard objectives remove tick.talent_1
 scoreboard objectives add tick.talent_1 dummy "天赋 1 计时"
 scoreboard objectives remove tick.talent_2
 scoreboard objectives add tick.talent_2 dummy "天赋 2 计时"
-scoreboard objectives remove tick.item
-scoreboard objectives add tick.item dummy "宝物计时"
+scoreboard objectives remove tick.relic
+scoreboard objectives add tick.relic dummy "宝物计时"
 scoreboard objectives remove tick.using
 scoreboard objectives add tick.using dummy "使用物品计时"
 scoreboard objectives remove tick.enhance
@@ -117,8 +117,8 @@ scoreboard objectives remove temp.skill
 scoreboard objectives add temp.skill dummy "单局技能使用"
 scoreboard objectives remove temp.talent
 scoreboard objectives add temp.talent dummy "单局天赋使用"
-scoreboard objectives remove temp.item
-scoreboard objectives add temp.item dummy "单局宝物使用"
+scoreboard objectives remove temp.relic
+scoreboard objectives add temp.relic dummy "单局宝物使用"
 scoreboard objectives remove temp.time
 scoreboard objectives add temp.time dummy "单局游玩时间"
 
@@ -161,7 +161,7 @@ scoreboard objectives add stat.hit dummy "总计玩家命中"
 scoreboard objectives add stat.stun dummy "总计玩家击倒"
 scoreboard objectives add stat.skill dummy "总计技能使用"
 scoreboard objectives add stat.talent dummy "总计天赋使用"
-scoreboard objectives add stat.item dummy "总计宝物使用"
+scoreboard objectives add stat.relic dummy "总计宝物使用"
 scoreboard objectives add stat.time dummy "总计游玩时间"
 scoreboard objectives add stat.kill dummy "有效击杀"
 scoreboard objectives add stat.death dummy "消亡次数"
@@ -326,7 +326,7 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 292
+scoreboard players set $build data 293
 scoreboard players set $map_max data 4
 scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 5

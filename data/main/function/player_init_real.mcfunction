@@ -20,7 +20,7 @@ $scoreboard players set $(target) stat.hit 0
 $scoreboard players set $(target) stat.stun 0
 $scoreboard players set $(target) stat.skill 0
 $scoreboard players set $(target) stat.talent 0
-$scoreboard players set $(target) stat.item 0
+$scoreboard players set $(target) stat.relic 0
 $scoreboard players set $(target) stat.kill 0
 $scoreboard players set $(target) stat.death 0
 $scoreboard players set $(target) stat.revive 0

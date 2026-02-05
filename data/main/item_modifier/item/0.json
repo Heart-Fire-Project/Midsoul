@@ -2,7 +2,7 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.item.0",
+            "translate":"ms.relic.0",
             "fallback":"空",
             "color":"gray",
             "italic":false
@@ -12,7 +12,7 @@
         "function":"set_lore",
         "lore":[
             {
-                "translate":"ms.item.0.desc",
+                "translate":"ms.relic.0.desc",
                 "fallback":"打开灵魂宝物盒以获取宝物",
                 "color":"white",
                 "italic":false
