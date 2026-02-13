@@ -37,4 +37,4 @@ summon mannequin -3.5 12 -9.5 {profile:{name:"1KYR_CN"},Rotation:[0,0],Invulnera
 summon mannequin -5.5 12 -9.5 {profile:{name:"huanmeng_yc"},Rotation:[0,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}],Tags:[lobby_entity]}
 summon mannequin -17.5 12 -7.5 {profile:{name:"Mol1Sama"},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}],Tags:[lobby_entity]}
 
-summon text_display 3.99 1.4 0.5 {Tags:[lobby_entity],text:[{translate:"ms.lobby.test",fallback:"测试版本，不代表最终品质",color:"white"}],background:1073758336,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+#summon text_display 3.99 1.4 0.5 {Tags:[lobby_entity],text:[{translate:"ms.lobby.test",fallback:"测试版本，不代表最终品质",color:"white"}],background:1073758336,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
