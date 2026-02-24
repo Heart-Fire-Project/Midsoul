@@ -9,7 +9,7 @@ function debug:sub/custom/check
 
 # 显示当前地图信息（若有）
 scoreboard players set $num temp 0
-execute unless data storage ms:temp {forceload1:"×"} run scoreboard players add $num temp 1
+execute unless data storage ms:temp {forceload1:"-"} run scoreboard players add $num temp 1
 execute unless data storage ms:temp {forceload2:""} run scoreboard players add $num temp 1
 execute unless data storage ms:temp {forceload3:""} run scoreboard players add $num temp 1
 scoreboard players reset $size temp
@@ -30,18 +30,18 @@ execute if score $map setting matches -9..-1 if score $check_failure temp matche
 execute if score $map setting matches -9..-1 run tellraw @s [{translate:"ms.debug.custom.selected",fallback:"当前选中"},"  »  ",{storage:"ms:temp",nbt:"name",color:"aqua"},"  «  ",{translate:"ms.debug.custom.map_area",fallback:"[地图区域详情]",hover_event:{action:"show_text",value:[{translate:"ms.debug.custom.force_count",fallback:"已设定 %s 个加载区",with:[{score:{name:"$num",objective:"temp"}}]},"\n",{storage:"ms:temp",nbt:"forceload1"},"\n",{storage:"ms:temp",nbt:"forceload2"},"\n",{storage:"ms:temp",nbt:"forceload3"},"\n",{translate:"ms.debug.custom.center",fallback:"地图中心点"},"\n",{storage:"ms:temp",nbt:"center"}]}}]
 execute if score $map setting matches -9..-1 run tellraw @s [" ◈ ",{translate:"ms.debug.custom.shard",fallback:"碎片生成量/收集目标"}," ",{storage:"ms:temp",nbt:"shard_summon",color:"#50A7D9"},"/",{storage:"ms:temp",nbt:"shard_goal",color:"#63C3FA"}]
 execute if score $map setting matches -9..-1 run tellraw @s [" ◈ ",{translate:"ms.debug.custom.chest",fallback:"宝盒周期刷新量/上限"}," ",{storage:"ms:temp",nbt:"chest_summon",color:"#CCCCCC"},"/",{storage:"ms:temp",nbt:"chest_max",color:"#DEDEDE"}]
-execute if score $map setting matches -9..-1 if score $size temp matches 1 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »",color:"aqua"},{text:"»»»»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $size temp matches 2 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»",color:"green"},{text:"»»»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $size temp matches 3 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»",color:"yellow"},{text:"»»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $size temp matches 4 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»»",color:"gold"},{text:"»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $size temp matches 5 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»»»",color:"red"},{text:"",color:"white"}]
-execute if score $map setting matches -9..-1 unless score $size temp matches 1..5 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»»»",color:"gray"},{text:"",color:"white"}]
-execute if score $map setting matches -9..-1 if score $complex temp matches 1 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »",color:"aqua"},{text:"»»»»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $complex temp matches 2 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»",color:"green"},{text:"»»»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $complex temp matches 3 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»",color:"yellow"},{text:"»»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $complex temp matches 4 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»»",color:"gold"},{text:"»",color:"white"}]
-execute if score $map setting matches -9..-1 if score $complex temp matches 5 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»»»",color:"red"},{text:"",color:"white"}]
-execute if score $map setting matches -9..-1 unless score $complex temp matches 1..5 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»»»",color:"gray"},{text:"",color:"white"}]
+execute if score $map setting matches -9..-1 if score $size temp matches 1 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »",color:"aqua"},"»»»» · ",{text:"1",color:"aqua"}]
+execute if score $map setting matches -9..-1 if score $size temp matches 2 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»",color:"green"},"»»» · ",{text:"2",color:"green"}]
+execute if score $map setting matches -9..-1 if score $size temp matches 3 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»",color:"yellow"},"»» · ",{text:"3",color:"yellow"}]
+execute if score $map setting matches -9..-1 if score $size temp matches 4 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»»",color:"gold"},"» · ",{text:"4",color:"gold"}]
+execute if score $map setting matches -9..-1 if score $size temp matches 5 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»»»",color:"red"}," · ",{text:"5",color:"red"}]
+execute if score $map setting matches -9..-1 unless score $size temp matches 1..5 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»»»",color:"gray"}," · ",{text:"-",color:"gray"}]
+execute if score $map setting matches -9..-1 if score $complex temp matches 1 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »",color:"aqua"},"»»»» · ",{text:"1",color:"aqua"}]
+execute if score $map setting matches -9..-1 if score $complex temp matches 2 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»",color:"green"},"»»» · ",{text:"2",color:"green"}]
+execute if score $map setting matches -9..-1 if score $complex temp matches 3 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»",color:"yellow"},"»» · ",{text:"3",color:"yellow"}]
+execute if score $map setting matches -9..-1 if score $complex temp matches 4 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»»",color:"gold"},"» · ",{text:"4",color:"gold"}]
+execute if score $map setting matches -9..-1 if score $complex temp matches 5 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»»»",color:"red"}," · ",{text:"5",color:"red"}]
+execute if score $map setting matches -9..-1 unless score $complex temp matches 1..5 run tellraw @s [" ◈ ",{translate:"ms.map.complex",fallback:"复杂程度"},{text:" | »»»»»",color:"gray"}," · ",{text:"-",color:"gray"}]
 tellraw @s ""
 
 # 附加地图选择

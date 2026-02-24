@@ -1,6 +1,6 @@
 # 读取自定义地图数据
 # 重置已有数据
-$data merge storage ms:custom_$(num) {name:"----",size:"-",complex:"-",shard_goal:"×",shard_summon:"×",chest_summon:"×",chest_max:"×",forceload1:"×",forceload2:"",forceload3:"",center:"×"}
+$data merge storage ms:custom_$(num) {name:"----",size:"-",size_plus:false,complex:"-",complex_plus:false,shard_goal:"-",shard_summon:"-",chest_summon:"-",chest_max:"-",forceload1:"-",forceload2:"",forceload3:"",center:"-"}
 
 # 强加载区域
 # 如果某个位置是空气，那就添加占位符

@@ -49,7 +49,7 @@ scoreboard objectives add state dummy "个人状态"
 scoreboard objectives remove music
 scoreboard objectives add music dummy "背景音乐"
 scoreboard objectives remove info
-scoreboard objectives add info dummy ["     ",{translate:"ms.scoreboard.info",fallback:"接下来……"},"     "]
+scoreboard objectives add info dummy ["       ",{translate:"ms.scoreboard.info",fallback:"接下来……"},"       "]
 scoreboard objectives remove entity_id
 scoreboard objectives add entity_id dummy "实体识别码"
 
@@ -326,7 +326,7 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 294
+scoreboard players set $build data 295
 scoreboard players set $map_max data 4
 scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 5

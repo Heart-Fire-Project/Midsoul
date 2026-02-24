@@ -31,6 +31,6 @@ tellraw @s[scores={temp=6}] [{text:"",color:"#A28CF3"},{text:"\n» ",bold:true},
 tellraw @s[scores={temp=6}] [{text:"",color:"white"},{text:"» ",bold:true},{translate:"ms.credit.6.desc",fallback:"最重要的，万分感谢你的游玩与支持！"}]
 
 # 7 - 喵？
-tellraw @s[scores={temp=7}] [{text:"",color:"#97B9E0"},{text:"\n» ",bold:true},{translate:"ms.credit.7",fallback:"特殊"}," | ",{translate:"ms.credit.mol1sama",fallback:"Mol1Sama"}]
-tellraw @s[scores={temp=7}] [{text:"",color:"white"},{text:"» ",bold:true},{translate:"ms.credit.7.desc",fallback:"参与甚至自己组织了多场测试的优秀小猫，提供了诸多宝贵意见"}]
-tellraw @s[scores={temp=7}] [{text:"✒ ",color:"gray"},{translate:"ms.credit.7.note",fallback:"加强灵灯之筑喵，加强灵灯之筑谢谢喵"}]
+tellraw @s[scores={temp=7}] [{text:"",color:"#97B9E0"},{text:"\n» ",bold:true},{translate:"ms.credit.7",fallback:"打杂"}," | ",{translate:"ms.credit.mol1sama",fallback:"Mol1Sama"}]
+tellraw @s[scores={temp=7}] [{text:"",color:"white"},{text:"» ",bold:true},{translate:"ms.credit.7.desc",fallback:"在很多方面大展身手的优秀小猫，大家公认的气人担当！"}]
+tellraw @s[scores={temp=7}] [{text:"✒ ",color:"gray"},{translate:"ms.credit.7.note",fallback:"你知道吗？这个 ID 为 Mol1Sama 的玩家不是真实存在的！"}]

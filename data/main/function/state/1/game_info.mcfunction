@@ -34,35 +34,43 @@ execute if score $map data matches 4 run scoreboard players display numberformat
 # 第五日，地图大小
 scoreboard players set $size info 4
 scoreboard players reset $size temp
-execute if data storage ms:temp {size:0} run scoreboard players set $size temp 0
 execute if data storage ms:temp {size:1} run scoreboard players set $size temp 1
 execute if data storage ms:temp {size:2} run scoreboard players set $size temp 2
 execute if data storage ms:temp {size:3} run scoreboard players set $size temp 3
 execute if data storage ms:temp {size:4} run scoreboard players set $size temp 4
 execute if data storage ms:temp {size:5} run scoreboard players set $size temp 5
 scoreboard players display name $size info {translate:"ms.map.size",fallback:"地图大小",color:"gray"}
-execute if score $size temp matches 1 run scoreboard players display numberformat $size info fixed {text:"«",color:"aqua"}
-execute if score $size temp matches 2 run scoreboard players display numberformat $size info fixed {text:"««",color:"green"}
-execute if score $size temp matches 3 run scoreboard players display numberformat $size info fixed {text:"«««",color:"yellow"}
-execute if score $size temp matches 4 run scoreboard players display numberformat $size info fixed {text:"««««",color:"gold"}
-execute if score $size temp matches 5 run scoreboard players display numberformat $size info fixed {text:"«««««",color:"red"}
+execute if score $size temp matches 1 if data storage ms:temp {size_plus:false} run scoreboard players display numberformat $size info fixed [{text:"1",color:"aqua"},{text:" · ",color:"white"},{text:"«"}]
+execute if score $size temp matches 1 if data storage ms:temp {size_plus:true} run scoreboard players display numberformat $size info fixed [{text:"1⁺",color:"aqua"},{text:" · ",color:"white"},{text:"«",color:"#AAFFFF"},{text:"«"}]
+execute if score $size temp matches 2 if data storage ms:temp {size_plus:false} run scoreboard players display numberformat $size info fixed [{text:"2",color:"green"},{text:" · ",color:"white"},{text:"««"}]
+execute if score $size temp matches 2 if data storage ms:temp {size_plus:true} run scoreboard players display numberformat $size info fixed [{text:"2⁺",color:"green"},{text:" · ",color:"white"},{text:"«",color:"#AAFFAA"},{text:"««"}]
+execute if score $size temp matches 3 if data storage ms:temp {size_plus:false} run scoreboard players display numberformat $size info fixed [{text:"3",color:"yellow"},{text:" · ",color:"white"},{text:"«««"}]
+execute if score $size temp matches 3 if data storage ms:temp {size_plus:true} run scoreboard players display numberformat $size info fixed [{text:"3⁺",color:"yellow"},{text:" · ",color:"white"},{text:"«",color:"#FFFFAA"},{text:"«««"}]
+execute if score $size temp matches 4 if data storage ms:temp {size_plus:false} run scoreboard players display numberformat $size info fixed [{text:"4",color:"gold"},{text:" · ",color:"white"},{text:"««««"}]
+execute if score $size temp matches 4 if data storage ms:temp {size_plus:true} run scoreboard players display numberformat $size info fixed [{text:"4⁺",color:"gold"},{text:" · ",color:"white"},{text:"«",color:"#FFD580"},{text:"««««"}]
+execute if score $size temp matches 5 if data storage ms:temp {size_plus:false} run scoreboard players display numberformat $size info fixed [{text:"5",color:"red"},{text:" · ",color:"white"},{text:"«««««"}]
+execute if score $size temp matches 5 if data storage ms:temp {size_plus:true} run scoreboard players display numberformat $size info fixed [{text:"5⁺",color:"#AA0000"},{text:" · ",color:"white"},{text:"«",color:"#AA0000"},{text:"«",color:"#BB1111"},{text:"«",color:"#CC2222"},{text:"«",color:"#DD3333"},{text:"«",color:"#EE4444"}]
 execute unless score $size temp matches 1..5 run scoreboard players display numberformat $size info fixed {text:"-",color:"gray"}
 
 # 第六日，地图复杂度
 scoreboard players set $complex info 3
 scoreboard players reset $complex temp
-execute if data storage ms:temp {complex:0} run scoreboard players set $complex temp 0
 execute if data storage ms:temp {complex:1} run scoreboard players set $complex temp 1
 execute if data storage ms:temp {complex:2} run scoreboard players set $complex temp 2
 execute if data storage ms:temp {complex:3} run scoreboard players set $complex temp 3
 execute if data storage ms:temp {complex:4} run scoreboard players set $complex temp 4
 execute if data storage ms:temp {complex:5} run scoreboard players set $complex temp 5
 scoreboard players display name $complex info {translate:"ms.map.complex",fallback:"复杂程度",color:"gray"}
-execute if score $complex temp matches 1 run scoreboard players display numberformat $complex info fixed {text:"«",color:"aqua"}
-execute if score $complex temp matches 2 run scoreboard players display numberformat $complex info fixed {text:"««",color:"green"}
-execute if score $complex temp matches 3 run scoreboard players display numberformat $complex info fixed {text:"«««",color:"yellow"}
-execute if score $complex temp matches 4 run scoreboard players display numberformat $complex info fixed {text:"««««",color:"gold"}
-execute if score $complex temp matches 5 run scoreboard players display numberformat $complex info fixed {text:"«««««",color:"red"}
+execute if score $complex temp matches 1 if data storage ms:temp {complex_plus:false} run scoreboard players display numberformat $complex info fixed [{text:"1",color:"aqua"},{text:" · ",color:"white"},{text:"«"}]
+execute if score $complex temp matches 1 if data storage ms:temp {complex_plus:true} run scoreboard players display numberformat $complex info fixed [{text:"1⁺",color:"aqua"},{text:" · ",color:"white"},{text:"«",color:"#AAFFFF"},{text:"«"}]
+execute if score $complex temp matches 2 if data storage ms:temp {complex_plus:false} run scoreboard players display numberformat $complex info fixed [{text:"2",color:"green"},{text:" · ",color:"white"},{text:"««"}]
+execute if score $complex temp matches 2 if data storage ms:temp {complex_plus:true} run scoreboard players display numberformat $complex info fixed [{text:"2⁺",color:"green"},{text:" · ",color:"white"},{text:"«",color:"#AAFFAA"},{text:"««"}]
+execute if score $complex temp matches 3 if data storage ms:temp {complex_plus:false} run scoreboard players display numberformat $complex info fixed [{text:"3",color:"yellow"},{text:" · ",color:"white"},{text:"«««"}]
+execute if score $complex temp matches 3 if data storage ms:temp {complex_plus:true} run scoreboard players display numberformat $complex info fixed [{text:"3⁺",color:"yellow"},{text:" · ",color:"white"},{text:"«",color:"#FFFFAA"},{text:"«««"}]
+execute if score $complex temp matches 4 if data storage ms:temp {complex_plus:false} run scoreboard players display numberformat $complex info fixed [{text:"4",color:"gold"},{text:" · ",color:"white"},{text:"««««"}]
+execute if score $complex temp matches 4 if data storage ms:temp {complex_plus:true} run scoreboard players display numberformat $complex info fixed [{text:"4⁺",color:"gold"},{text:" · ",color:"white"},{text:"«",color:"#FFD580"},{text:"««««"}]
+execute if score $complex temp matches 5 if data storage ms:temp {complex_plus:false} run scoreboard players display numberformat $complex info fixed [{text:"5",color:"red"},{text:" · ",color:"white"},{text:"«««««"}]
+execute if score $complex temp matches 5 if data storage ms:temp {complex_plus:true} run scoreboard players display numberformat $complex info fixed [{text:"5⁺",color:"#AA0000"},{text:" · ",color:"white"},{text:"«",color:"#AA0000"},{text:"«",color:"#BB1111"},{text:"«",color:"#CC2222"},{text:"«",color:"#DD3333"},{text:"«",color:"#EE4444"}]
 execute unless score $complex temp matches 1..5 run scoreboard players display numberformat $complex info fixed {text:"-",color:"gray"}
 
 scoreboard players set $blank2 info 2

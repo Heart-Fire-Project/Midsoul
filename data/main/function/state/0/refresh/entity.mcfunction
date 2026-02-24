@@ -5,8 +5,9 @@ kill @e[tag=lobby_entity]
 execute unless entity @e[tag=key_frame] run summon item_frame 0 -8 0 {Tags:[key_frame],Invulnerable:1b,Fixed:1b,Invisible:1b,Facing:0b,Silent:1b}
 
 # 主标题
-summon text_display 3.99 2.2 0.5 {Tags:[lobby_entity],text:[{translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#7367F0"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[2.8f,2.8f,2.8f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display 3.99 1.8 0.5 {Tags:[lobby_entity],text:[{translate:"ms.lobby.ver",fallback:"2.0 💠 混沌回响",color:"white"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display 3.99 2.1 0.5 {Tags:[lobby_entity],text:[{translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#7367F0"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[2.8f,2.8f,2.8f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display 3.99 1.8 0.5 {Tags:[lobby_entity],text:[{translate:"ms.lobby.ver",fallback:"回响纪元",color:"white"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display 3.99 1.68 0.5 {Tags:[lobby_entity],text:["💠 2.0 💠"],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 
 # 路标
 summon text_display -6.0 1.3 -6.0 {Tags:[lobby_entity],text:[{translate:"ms.lobby.extra",fallback:"额外区域",color:"dark_gray"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
@@ -32,7 +33,7 @@ summon skeleton 8 22 25 {CustomName:"HPG6",equipment:{feet:{id:"leather_boots"},
 
 # 鸣谢
 summon text_display -14.01 12.3 -7.5 {brightness:{block:15,sky:15},Tags:[lobby_entity],text:{translate:"ms.credit.secret",fallback:"贴近以开门"},background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[0.6f,0.6f,0.6f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon mannequin -1.5 12 -9.5 {profile:{name:"R7sr"},Rotation:[0,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}],Tags:[lobby_entity]}
+summon mannequin -1.5 12 -9.5 {profile:{name:"_Arky"},Rotation:[0,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}],Tags:[lobby_entity]}
 summon mannequin -3.5 12 -9.5 {profile:{name:"1KYR_CN"},Rotation:[0,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}],Tags:[lobby_entity]}
 summon mannequin -5.5 12 -9.5 {profile:{name:"huanmeng_yc"},Rotation:[0,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}],Tags:[lobby_entity]}
 summon mannequin -17.5 12 -7.5 {profile:{name:"Mol1Sama"},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}],Tags:[lobby_entity]}
