@@ -55,15 +55,15 @@ execute if score @s detect.interact matches 2107 run scoreboard players set @s t
 execute if score @s detect.interact matches 2101..2199 run function main:lib/ability/talent/info_g {num:"1"}
 
 # 宝物类
-execute if score @s detect.interact matches 3001 run scoreboard players set @s item 1
-execute if score @s detect.interact matches 3002 run scoreboard players set @s item 2
-execute if score @s detect.interact matches 3003 run scoreboard players set @s item 3
-execute if score @s detect.interact matches 3004 run scoreboard players set @s item 4
-execute if score @s detect.interact matches 3005 run scoreboard players set @s item 5
-execute if score @s detect.interact matches 3006 run scoreboard players set @s item 6
-execute if score @s detect.interact matches 3007 run scoreboard players set @s item 7
-execute if score @s detect.interact matches 3100 run scoreboard players set @s item -1
-execute if score @s detect.interact matches 3001..3100 run function main:lib/ability/item/info
+execute if score @s detect.interact matches 3001 run scoreboard players set @s relic 1
+execute if score @s detect.interact matches 3002 run scoreboard players set @s relic 2
+execute if score @s detect.interact matches 3003 run scoreboard players set @s relic 3
+execute if score @s detect.interact matches 3004 run scoreboard players set @s relic 4
+execute if score @s detect.interact matches 3005 run scoreboard players set @s relic 5
+execute if score @s detect.interact matches 3006 run scoreboard players set @s relic 6
+execute if score @s detect.interact matches 3007 run scoreboard players set @s relic 7
+execute if score @s detect.interact matches 3100 run scoreboard players set @s relic -1
+execute if score @s detect.interact matches 3001..3100 run function main:lib/ability/relic/info
 
 execute if score @s detect.interact matches 1001..3999 run playsound item.book.page_turn block @s ~ ~ ~
 

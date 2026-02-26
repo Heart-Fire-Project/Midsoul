@@ -26,7 +26,7 @@ execute as @s[tag=talent_2_on] run function main:lib/ability/talent/reset {num:"
 tag @s remove skill_on
 tag @s remove talent_1_on
 tag @s remove talent_2_on
-tag @s remove item_on
+tag @s remove relic_on
 
 # 判定：灵魂被击倒时
 function main:lib/action/player/dying

@@ -1,7 +1,3 @@
-# 为确保正确获取数据，借位
-scoreboard players operation $value temp = $map data
-scoreboard players operation $map data = $map setting
-
 function main:lib/map/data
 scoreboard players set $check_failure temp 0
 
@@ -20,6 +16,3 @@ execute if data storage ms:temp {shard_summon:"-"} run scoreboard players set $c
 execute if data storage ms:temp {shard_goal:"-"} run scoreboard players set $check_failure temp 2
 execute if data storage ms:temp {chest_summon:"-"} run scoreboard players set $check_failure temp 2
 execute if data storage ms:temp {chest_max:"-"} run scoreboard players set $check_failure temp 2
-
-# 把借位还回去
-scoreboard players operation $map data = $value temp

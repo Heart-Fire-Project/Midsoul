@@ -10,4 +10,4 @@ particle dust_color_transition{from_color:[0.6,0.2,0.7],to_color:[0.9,0.7,1.0],s
 scoreboard players set @s[scores={tick.relic=..-1}] tick.relic 0
 
 # 完成判定
-execute if score @s tick.using matches 200.. run function main:lib/ability/item/07f
+execute if score @s tick.using matches 200.. run function main:lib/ability/relic/07f

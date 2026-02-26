@@ -5,7 +5,12 @@ tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 function debug:sub/custom/read_all
 execute store result storage ms:temp num int -1 run scoreboard players get $map setting
 function debug:sub/custom/sync with storage ms:temp
+
+# 可用性检测 | 为确保正确获取数据，借位
+scoreboard players operation $value temp = $map data
+scoreboard players operation $map data = $map setting
 function debug:sub/custom/check
+scoreboard players operation $map data = $value temp
 
 # 显示当前地图信息（若有）
 scoreboard players set $num temp 0

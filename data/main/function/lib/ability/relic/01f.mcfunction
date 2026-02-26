@@ -1,7 +1,7 @@
 title @s[scores={setting.ability_status=1..}] actionbar [{translate:"ms.relic.over",fallback:"宝物终止",color:"#33FFAA"}," 🔁 ",{translate:"ms.relic.1",fallback:"无懈可击"}]
 playsound item.armor.equip_iron player @a
-tag @s remove item_on
-scoreboard players set @s item 0
+tag @s remove relic_on
+scoreboard players set @s relic 0
 
 # 人为清除
 effect clear @s[scores={tick.invincible=..0}] resistance

@@ -1,0 +1,25 @@
+execute if score $state data matches 0 run tellraw @s ""
+
+tellraw @s[scores={relic=1}] [{translate:"ms.relic",fallback:"[宝物] ",color:"#33FFAA"},{translate:"ms.relic.1",fallback:"无懈可击"}]
+tellraw @s[scores={relic=2}] [{translate:"ms.relic",fallback:"[宝物] ",color:"#33FFAA"},{translate:"ms.relic.2",fallback:"共鸣引力"}]
+tellraw @s[scores={relic=3}] [{translate:"ms.relic",fallback:"[宝物] ",color:"#33FFAA"},{translate:"ms.relic.3",fallback:"无垠时界"}]
+tellraw @s[scores={relic=4}] [{translate:"ms.relic",fallback:"[宝物] ",color:"#33FFAA"},{translate:"ms.relic.4",fallback:"相位替换"}]
+tellraw @s[scores={relic=5}] [{translate:"ms.relic",fallback:"[宝物] ",color:"#33FFAA"},{translate:"ms.relic.5",fallback:"高效制冷"}]
+tellraw @s[scores={relic=6}] [{translate:"ms.relic",fallback:"[宝物] ",color:"#33FFAA"},{translate:"ms.relic.6",fallback:"灵能冲击"}]
+tellraw @s[scores={relic=7}] [{translate:"ms.relic",fallback:"[宝物] ",color:"#33FFAA"},{translate:"ms.relic.7",fallback:"再生疗愈"}]
+
+tellraw @s[scores={relic=1}] [{text:"⌚ 0.8 > ",color:"#33FFAA"},{translate:"ms.tag.survive",fallback:"生存"}]
+tellraw @s[scores={relic=2}] [{text:"> ",color:"#33FFAA"},{translate:"ms.tag.collect",fallback:"收集"}]
+tellraw @s[scores={relic=3}] [{text:"> ",color:"#33FFAA"},{translate:"ms.tag.strategy",fallback:"策略"}]
+tellraw @s[scores={relic=4}] [{text:"> ",color:"#33FFAA"},{translate:"ms.tag.survive",fallback:"生存",strikethrough:true},"/",{translate:"ms.tag.debuff",fallback:"妨害",strikethrough:true},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
+tellraw @s[scores={relic=5}] [{text:"> ",color:"#33FFAA"},{translate:"ms.tag.debuff",fallback:"妨害"}]
+tellraw @s[scores={relic=6}] [{text:"> ",color:"#33FFAA"},{translate:"ms.tag.survive",fallback:"生存"},"/",{translate:"ms.tag.debuff",fallback:"妨害"},{text:" >> ",color:"#A77CFC"},{translate:"enchantment.minecraft.punch",color:"#A77CFC"}," ",{translate:"enchantment.level.3",color:"#A77CFC"}]
+tellraw @s[scores={relic=7}] [{text:"⏳ 10 > ",color:"#33FFAA"},{translate:"ms.tag.survive",fallback:"生存"}]
+
+tellraw @s[scores={relic=1}] [{translate:"ms.relic.1.desc",fallback:"宝物生效期间不会受到伤害"}]
+tellraw @s[scores={relic=2}] [{translate:"ms.relic.2.desc",fallback:"生成一个灵魂碎片并聚集半径 12 格内的灵魂碎片"}]
+tellraw @s[scores={relic=3}] [{translate:"ms.relic.3.desc",fallback:"即刻减少 30 秒技能冷却"}]
+tellraw @s[scores={relic=4}] [{translate:"ms.relic.4.desc",fallback:"与最远的灵魂交换位置，交换双方在 3 秒内移速 +100%%"}]
+tellraw @s[scores={relic=5}] [{translate:"ms.relic.5.desc",fallback:"于当前位置与方向部署一个高效制冷模块，守卫者经过其面前时移速 -45%%"},"\n",{translate:"ms.relic.5.desc.sub",fallback:"场上至多存在 2 个同名模块，超出上限时清除先被部署的模块",color:"gray"}]
+tellraw @s[scores={relic=6}] [{translate:"ms.relic.6.desc",fallback:"若击中守卫者，使其在 12 秒内失明且发光"},"\n",{translate:"ms.relic.6.desc.sub",fallback:"短按 [%s] 发射以使用",color:"gray",with:[{keybind:"key.use"}]}]
+tellraw @s[scores={relic=7}] [{translate:"ms.relic.7.desc",fallback:"在 3 秒内回复 10 血量"},"\n",{translate:"ms.relic.7.desc.sub",fallback:"长按 [%s] 以使用；双击 [%s] 可丢弃该宝物",color:"gray",with:[{keybind:"key.use"},{keybind:"key.drop"}]}]

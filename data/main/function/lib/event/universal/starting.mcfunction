@@ -6,7 +6,7 @@ scoreboard players set $echo tick.general -1
 scoreboard players set $echo_info tick.general 10
 scoreboard players set $noguar tick.general 200
 scoreboard players set @a state 0
-scoreboard players set @a item 0
+scoreboard players set @a relic 0
 scoreboard players reset @a tick.enhance
 scoreboard players set @a tick.enhance 0
 scoreboard players reset @a tick.disable

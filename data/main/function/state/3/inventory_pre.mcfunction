@@ -1,5 +1,5 @@
 # 刷新物品栏 - 设置 storage 前置
-execute store result storage ms:inventory item int 1 run scoreboard players get @s item
+execute store result storage ms:inventory relic int 1 run scoreboard players get @s relic
 execute store result storage ms:inventory skill int 1 run scoreboard players get @s skill
 execute store result storage ms:inventory talent_1 int 1 run scoreboard players get @s talent_1
 execute store result storage ms:inventory talent_2 int 1 run scoreboard players get @s talent_2
@@ -37,7 +37,7 @@ scoreboard players operation $tick temp /= #100 data
 scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
 execute if score $sec temp2 matches ..0 run scoreboard players set $sec temp2 1
-execute store result storage ms:inventory tick_item int 1 run scoreboard players get $sec temp2
+execute store result storage ms:inventory tick_relic int 1 run scoreboard players get $sec temp2
 
 execute store result storage ms:inventory weapon int 1 run scoreboard players get @s extra.weapon
 execute store result storage ms:inventory disable int 1 run scoreboard players get @s tick.disable

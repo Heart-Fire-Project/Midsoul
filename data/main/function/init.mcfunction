@@ -64,8 +64,8 @@ scoreboard objectives remove talent_1
 scoreboard objectives add talent_1 dummy "携带天赋 1"
 scoreboard objectives remove talent_2
 scoreboard objectives add talent_2 dummy "携带天赋 2"
-scoreboard objectives remove item
-scoreboard objectives add item dummy "携带宝物"
+scoreboard objectives remove relic
+scoreboard objectives add relic dummy "携带宝物"
 
 scoreboard objectives remove health
 scoreboard objectives add health health "生命值"
@@ -326,12 +326,12 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 295
+scoreboard players set $build data 296
 scoreboard players set $map_max data 4
 scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 5
 scoreboard players set $talent_max data 7
-scoreboard players set $item_max data 7
+scoreboard players set $relic_max data 7
 
 # 进入大厅状态
 function main:state/0/enter

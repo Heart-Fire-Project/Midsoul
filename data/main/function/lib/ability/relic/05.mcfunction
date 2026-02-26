@@ -1,7 +1,7 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.relic.active",fallback:"宝物施放",color:"#33FFAA"}," » ",{translate:"ms.relic.5",fallback:"高效制冷"}]
 playsound block.piston.extend player @a
 particle snowflake ~ ~0.2 ~ 0.2 0.3 0.2 0.1 36 force @a
-scoreboard players set @s item 0
+scoreboard players set @s relic 0
 scoreboard players add @s temp.relic 1
 
 # 生成

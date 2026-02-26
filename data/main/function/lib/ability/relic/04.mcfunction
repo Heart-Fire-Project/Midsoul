@@ -1,7 +1,7 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.relic.active",fallback:"宝物施放",color:"#33FFAA"}," » ",{translate:"ms.relic.4",fallback:"相位替换"}]
 playsound entity.enderman.teleport player @s 0 1000000 0 120000
 particle glow_squid_ink ~ ~1 ~ 0.2 0.3 0.2 0.2 128 force @a
-scoreboard players set @s item 0
+scoreboard players set @s relic 0
 scoreboard players add @s temp.relic 1
 
 # 寻找幸运观众

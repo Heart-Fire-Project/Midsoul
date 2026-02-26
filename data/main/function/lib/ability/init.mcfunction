@@ -54,7 +54,7 @@ scoreboard players set @a[team=guardian,scores={talent_2=7}] tick.talent_2 00000
 tag @a remove skill_on
 tag @a remove talent_1_on
 tag @a remove talent_2_on
-tag @a remove item_on
+tag @a remove relic_on
 tag @a remove T004
 tag @a remove T004_s
 tag @a remove S004_a

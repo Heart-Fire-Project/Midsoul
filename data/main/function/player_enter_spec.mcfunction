@@ -14,7 +14,7 @@ tag @s remove check_join
 tag @s remove check_ability
 tag @a remove status_display
 tag @s remove echo_target
-tag @s remove item_on
+tag @s remove relic_on
 tag @s remove skill_on
 tag @s remove talent_1_on
 tag @s remove talent_2_on

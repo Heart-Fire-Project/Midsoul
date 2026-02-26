@@ -12,7 +12,7 @@ execute if entity @a[team=guardian,scores={talent_1=4},tag=talent_1_on] at @a[te
 execute if entity @a[team=guardian,scores={talent_2=4},tag=talent_2_on] at @a[team=soul,scores={state=0}] unless entity @a[team=guardian,distance=..40] run effect give @s glowing 1 0
 
 # 宝物
-execute at @e[tag=R5] positioned ^ ^1 ^2 as @a[team=guardian,distance=..3] at @s run function main:lib/ability/item/05t
+execute at @e[tag=R5] positioned ^ ^1 ^2 as @a[team=guardian,distance=..3] at @s run function main:lib/ability/relic/05t
 
 # 杂项
 execute as @a[tag=game_player] run function main:lib/ability/detect/using_item

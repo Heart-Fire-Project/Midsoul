@@ -1,6 +1,6 @@
 # 能力
 execute as @s[scores={talent_1=1},tag=interact_blue,tag=talent_1_on] run function main:lib/ability/base/modify_interact {value:"25"}
-execute as @s[scores={talent_2=1},tag=interact_blue,tag=interacting,tag=talent_2_on] run function main:lib/ability/base/modify_interact {value:"25"}
+execute as @s[scores={talent_2=1},tag=interact_blue,tag=talent_2_on] run function main:lib/ability/base/modify_interact {value:"25"}
 scoreboard players set $value temp 1
 scoreboard players operation $value temp += $aura_rank data
 execute store result storage ms:temp value int 5 run scoreboard players get $value temp

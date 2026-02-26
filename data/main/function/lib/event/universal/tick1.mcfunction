@@ -6,7 +6,7 @@ scoreboard players reset $undying data
 execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
 
 # 能力施放与冷却
-execute as @a[team=soul,tag=!item_on,scores={state=0}] at @s run function main:lib/ability/item/pend_on
+execute as @a[team=soul,tag=!relic_on,scores={state=0}] at @s run function main:lib/ability/relic/pend_on
 execute as @a[tag=game_player,tag=!skill_on,scores={state=0}] at @s run function main:lib/ability/skill/pend_on
 execute as @a[tag=game_player,tag=!talent_1_on,scores={state=0}] at @s run function main:lib/ability/talent/pend_on {num:"1"}
 execute as @a[tag=game_player,tag=!talent_2_on,scores={state=0}] at @s run function main:lib/ability/talent/pend_on {num:"2"}
@@ -15,7 +15,7 @@ execute as @a[tag=game_player,tag=!talent_2_on,scores={state=0}] at @s run funct
 function main:lib/ability/tick1
 
 # 能力结束与判定
-execute as @a[team=soul,tag=item_on,scores={state=0}] at @s run function main:lib/ability/item/pend_off
+execute as @a[team=soul,tag=relic_on,scores={state=0}] at @s run function main:lib/ability/relic/pend_off
 execute as @a[tag=game_player,tag=skill_on,scores={state=0}] at @s run function main:lib/ability/skill/pend_off
 execute as @a[tag=game_player,tag=talent_1_on,scores={state=0}] at @s run function main:lib/ability/talent/pend_off {num:"1"}
 execute as @a[tag=game_player,tag=talent_2_on,scores={state=0}] at @s run function main:lib/ability/talent/pend_off {num:"2"}

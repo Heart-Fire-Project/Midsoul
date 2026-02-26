@@ -67,8 +67,8 @@ $execute if score @s tick.disable matches 1.. run item modify block 0 -7 0 conta
 
 # 灵魂宝物
 execute if entity @s[team=soul] run item replace block 0 -7 0 container.1 with firework_star
-execute if entity @s[team=soul,scores={item=6,state=0}] run item replace block 0 -7 0 container.1 with crossbow
-$execute if entity @s[team=soul] run item modify block 0 -7 0 container.1 main:item/$(item)
+execute if entity @s[team=soul,scores={relic=6,state=0}] run item replace block 0 -7 0 container.1 with crossbow
+$execute if entity @s[team=soul] run item modify block 0 -7 0 container.1 main:relic/$(relic)
 execute if entity @s[team=soul,scores={state=1}] run item modify block 0 -7 0 container.1 {function:"set_components",components:{item_model:"barrier"}}
 
 # 技能物品
@@ -120,7 +120,7 @@ $execute if entity @s[team=guardian,scores={talent_2=7,talent.107=0}] run item m
 execute if entity @s[tag=skill_on] run item modify block 0 -7 0 container.4 {function:"set_components",components:{enchantment_glint_override:true}}
 execute if entity @s[tag=talent_1_on] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
 execute if entity @s[tag=talent_2_on] run item modify block 0 -7 0 container.8 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[team=soul,tag=item_on] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[team=soul,tag=relic_on] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
 
 # 特殊光效处理
 execute if entity @s[team=soul,scores={talent_1=4},tag=T004_s] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
