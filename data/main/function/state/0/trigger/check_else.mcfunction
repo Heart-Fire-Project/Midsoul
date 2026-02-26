@@ -93,6 +93,8 @@ execute if score @s detect.interact matches 4300 run scoreboard players set @s t
 execute if score @s detect.interact matches 4301 run scoreboard players set @s temp 1
 execute if score @s detect.interact matches 4302 run scoreboard players set @s temp 2
 execute if score @s detect.interact matches 4303 run scoreboard players set @s temp 3
+execute if score @s detect.interact matches 4304 run scoreboard players set @s temp 4
+execute if score @s detect.interact matches 4305 run scoreboard players set @s temp 5
 execute if score @s detect.interact matches 4300..4399 run function main:state/0/extra/headset
 
 # 文本套组
@@ -101,8 +103,5 @@ execute if score @s detect.interact matches 4401 run scoreboard players set @s t
 execute if score @s detect.interact matches 4402 run scoreboard players set @s temp 2
 execute if score @s detect.interact matches 4403 run scoreboard players set @s temp 3
 execute if score @s detect.interact matches 4400..4499 run function main:state/0/extra/text
-
-# ???
-execute if score @s detect.interact matches 7001 run advancement grant @s only main:hidden/1
 
 scoreboard players set @s detect.interact 0

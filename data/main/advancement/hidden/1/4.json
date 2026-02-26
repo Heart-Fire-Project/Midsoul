@@ -1,13 +1,13 @@
 {
-    "parent":"main:hidden/4",
+    "parent":"main:hidden/1/3",
     "display":{
         "icon":{
-            "id":"ominous_bottle"
+            "id":"music_disc_creator_music_box"
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.5",
-                "fallback":"你是真渴了"
+                "translate":"ms.adv.hidden.1-4",
+                "fallback":"臻粹的乐声"
             }
         ],
         "description":[
@@ -16,13 +16,13 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.5.goal",
-                "fallback":"喝掉不该喝的东西"
+                "translate":"ms.adv.hidden.1-4.goal",
+                "fallback":"聆听空灵而优雅的韵律"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.5.desc",
-                "fallback":"喝不祥之瓶会变成祥子吗？",
+                "translate":"ms.adv.hidden.1-4.desc",
+                "fallback":"这 1%% 的概率，为你献上",
                 "color":"gray",
                 "italic":true
             },
@@ -43,15 +43,20 @@
     },
     "criteria":{
         "secret":{
-            "trigger":"consume_item",
+            "trigger":"location",
             "conditions":{
-                "item":{
-                    "components":{
-                        "custom_data":{
-                            "id":71104
-                        }
+                "player":[
+                    {
+                        "scores":{
+                            "music":{
+                                "min":0,
+                                "max":0
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
                     }
-                }
+                ]
             }
         }
     },

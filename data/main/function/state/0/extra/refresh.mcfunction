@@ -1,3 +1,4 @@
+tp @e[tag=extra_entity,type=mannequin] -1000 -100 -1000
 kill @e[tag=extra_entity]
 
 # 路标
@@ -50,12 +51,14 @@ function base:merge_sign {x:"-997",y:"0",z:"-991",glow:"1",color:"light_gray",tr
 function base:merge_sign {x:"-998",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.1",fallb_2:"01",fallb_3:"银辉独角",command:"trigger detect.interact set 4301"}
 function base:merge_sign {x:"-999",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.2",fallb_2:"02",fallb_3:"声波通讯",command:"trigger detect.interact set 4302"}
 function base:merge_sign {x:"-1000",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.3",fallb_2:"03",fallb_3:"紫晶冠冕",command:"trigger detect.interact set 4303"}
-summon item_display -998 -0.48 -990 {Tags:[extra_entity],item:{id:"player_head",components:{profile:"_Arky"}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.9f,0.9f,0.9f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
-summon item_display -999 -0.48 -990 {Tags:[extra_entity],item:{id:"player_head",components:{profile:"1KYR_CN"}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.9f,0.9f,0.9f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
-summon item_display -1000 -0.48 -990 {Tags:[extra_entity],item:{id:"player_head",components:{profile:"huanmeng_yc"}},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.9f,0.9f,0.9f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
-summon item_display -998 -0.7 -990 {Tags:[extra_entity],item:{id:"end_rod"},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.6f,0.6f,0.6f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
-summon item_display -999 -0.7 -990 {Tags:[extra_entity],item:{id:"lightning_rod"},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.7f,0.7f,0.7f],translation:[-0.05f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
-summon item_display -1000 -0.7 -990 {Tags:[extra_entity],item:{id:"small_amethyst_bud"},billboard:"fixed",interpolation_duration:0,item_display:"head",transformation:{scale:[0.7f,0.7f,0.7f],translation:[0f,-0.05f,0.05f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,1f,0f,1f]}}
+function base:merge_sign {x:"-1001",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.4",fallb_2:"04",fallb_3:"游刃有鱼",command:"trigger detect.interact set 4304"}
+function base:merge_sign {x:"-1001",y:"0",z:"-992",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.5",fallb_2:"05",fallb_3:"垂落绿荫",command:"trigger detect.interact set 4305"}
+summon mannequin -997 -2 -990 {Tags:[extra_entity],profile:{name:"_Arky"},Rotation:[180,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
+summon mannequin -998 -2 -990 {Tags:[extra_entity],profile:{name:"1KYR_CN"},equipment:{head:{id:"end_rod",count:1}},Rotation:[180,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
+summon mannequin -999 -2 -990 {Tags:[extra_entity],profile:{name:"huanmeng_yc"},equipment:{head:{id:"lightning_rod",count:1}},Rotation:[180,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
+summon mannequin -1000 -2 -990 {Tags:[extra_entity],profile:{name:"SmallSkrua"},equipment:{head:{id:"small_amethyst_bud",count:1}},Rotation:[180,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
+summon mannequin -1002 -2 -991 {Tags:[extra_entity],profile:{name:"BY0_"},equipment:{head:{id:"cod",count:1}},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
+summon mannequin -1002 -2 -992 {Tags:[extra_entity],profile:{name:"HPG6"},equipment:{head:{id:"big_dripleaf",count:1}},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
 
 # 文本套组
 summon text_display -997 -0.7 -1007 {Tags:[extra_entity],text:[{translate:"ms.text",fallback:"文本套组",color:"blue"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
@@ -90,7 +93,7 @@ summon item_display -992.0 -0.15 -972.01 {brightness:{block:15,sky:15},Tags:[ext
 summon item_display -993.0 -0.15 -972.01 {brightness:{block:15,sky:15},Tags:[extra_entity],item:{id:"light_gray_shulker_box"},billboard:"fixed",transformation:{scale:[0.3f,0.3f,0.3f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon item_display -994.0 -0.15 -972.01 {brightness:{block:15,sky:15},Tags:[extra_entity],item:{id:"spectral_arrow"},billboard:"fixed",transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon item_display -995.0 -0.17 -972.01 {brightness:{block:15,sky:15},Tags:[extra_entity],item:{id:"glow_ink_sac"},billboard:"fixed",transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
-summon item_display -996.0 -0.15 -972.01 {brightness:{block:15,sky:15},Tags:[extra_entity],item:{id:"iron_chestplate",components:{trim:{material:diamond,pattern:snout}}},billboard:"fixed",transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
+summon item_display -996.0 -0.15 -972.01 {brightness:{block:15,sky:15},Tags:[extra_entity],item:{id:"iron_chestplate",components:{trim:{material:"diamond",pattern:"snout"}}},billboard:"fixed",transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon text_display -994.1 -0.33 -972.03 {brightness:{block:15,sky:15},Tags:[extra_entity],text:[{text:"S"}],background:0,billboard:"fixed",alignment:"center",line_width:200,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon text_display -995.1 -0.33 -972.03 {brightness:{block:15,sky:15},Tags:[extra_entity],text:[{text:"T"}],background:0,billboard:"fixed",alignment:"center",line_width:200,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}
 summon text_display -996.1 -0.33 -972.03 {brightness:{block:15,sky:15},Tags:[extra_entity],text:[{text:"R"}],background:0,billboard:"fixed",alignment:"center",line_width:200,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,-1f,0f,1f]}}

@@ -94,7 +94,7 @@ tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.general.s",fallback:"归
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.general.s",fallback:"归魂之旅",color:"#8A6EDB"}," | +",{score:{objective:"temp",name:"@s"}}]
 scoreboard players operation @s exp.temp += @s temp
 
-# 最终得�?
+# 最终得分
 tellraw @s[scores={exp.temp=1280..}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#7C67FE"},{text:"E",color:"#8A57FE"},{text:"X",color:"#9050FE"},{text:"+",color:"#A03DFF"},{text:"]",color:"#AE2CFF"}]
 tellraw @s[scores={exp.temp=1080..1279}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#778CF7"},{text:"E",color:"#7B7DE2"},{text:"X",color:"#806FCE"},{text:"]",color:"#8364BF"}]
 tellraw @s[scores={exp.temp=1000..1079}] [{translate:"ms.rating.total",fallback:"总计得分",color:"#7367F0"}," | ",{score:{objective:"exp.temp",name:"@s"}}," ",{text:"[",color:"#FB858A"},{text:"S",color:"#FB8F81"},{text:"+",color:"#FC9D76"},{text:"]",color:"#FCA86D"}]

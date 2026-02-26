@@ -1,13 +1,13 @@
 {
-    "parent":"main:extra/weapon/2",
+    "parent":"main:extra/headset/3",
     "display":{
         "icon":{
-            "id":"mace"
+            "id":"cod"
         },
         "title":[
             {
-                "translate":"ms.weapon.3",
-                "fallback":"破魂锤"
+                "translate":"ms.headset.4",
+                "fallback":"游刃有鱼"
             }
         ],
         "description":[
@@ -16,15 +16,16 @@
                 "fallback":"· 达成进度 “%s”",
                 "with":[
                     {
-                        "text":"???"
+                        "translate":"ms.adv.collect.4",
+                        "fallback":"500 Channels"
                     }
                 ],
                 "color":"white"
             },
             "\n\n",
             {
-                "translate":"ms.weapon.3.desc",
-                "fallback":"这一击，贯穿脑门！",
+                "translate":"ms.headset.4.desc",
+                "fallback":"或许是另一种应急食品……？",
                 "color":"gray",
                 "italic":true
             }
@@ -35,7 +36,7 @@
         "hidden":false
     },
     "criteria":{
-        "secret":{
+        "milestone":{
             "trigger":"location",
             "conditions":{
                 "player":[
@@ -46,7 +47,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:hidden/1/3":true
+                                    "main:general/collect/4":true
                                 }
                             }
                         }

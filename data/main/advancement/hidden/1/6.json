@@ -1,16 +1,13 @@
 {
-    "parent":"main:hidden/2",
+    "parent":"main:hidden/1/5",
     "display":{
         "icon":{
-            "id":"nether_star",
-            "components":{
-                "!enchantment_glint_override":{}
-            }
+            "id":"ominous_bottle"
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.3",
-                "fallback":"自星辰而来"
+                "translate":"ms.adv.hidden.1-6",
+                "fallback":"你是真渴了"
             }
         ],
         "description":[
@@ -19,13 +16,13 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.3.goal",
-                "fallback":"试图运用重力砸瘪灵魂"
+                "translate":"ms.adv.hidden.1-6.goal",
+                "fallback":"以肉身吸纳你手中的恶灵"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.3.desc",
-                "fallback":"可惜灵魂不吃这一套",
+                "translate":"ms.adv.hidden.1-6.desc",
+                "fallback":"看起来……味道不错？",
                 "color":"gray",
                 "italic":true
             },
@@ -37,17 +34,6 @@
                     "10"
                 ],
                 "color":"aqua"
-            },
-            "\n",
-            {
-                "translate":"ms.adv.reward",
-                "fallback":"奖励：",
-                "color":"green"
-            },
-            {
-                "translate":"ms.weapon.3",
-                "fallback":"破魂锤",
-                "color":"#C5D2E7"
             }
         ],
         "frame":"task",
@@ -57,7 +43,16 @@
     },
     "criteria":{
         "secret":{
-            "trigger":"impossible"
+            "trigger":"consume_item",
+            "conditions":{
+                "item":{
+                    "components":{
+                        "custom_data":{
+                            "id":71104
+                        }
+                    }
+                }
+            }
         }
     },
     "rewards":{

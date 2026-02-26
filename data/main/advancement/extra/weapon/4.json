@@ -16,8 +16,8 @@
                 "fallback":"· 达成进度 “%s”",
                 "with":[
                     {
-                        "translate":"ms.adv.kill.3",
-                        "fallback":"瀚海阑干百丈冰"
+                        "translate":"ms.adv.kill.4",
+                        "fallback":"事去人亡二百载"
                     }
                 ],
                 "color":"white"
@@ -47,7 +47,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:general/kill/3":true
+                                    "main:general/kill/4":true
                                 }
                             }
                         }

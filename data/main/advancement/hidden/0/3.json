@@ -1,13 +1,14 @@
 {
-    "parent":"main:hidden/5",
+    "parent":"main:hidden/0/2",
     "display":{
         "icon":{
             "id":"iron_boots"
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.6",
-                "fallback":"钢铁般的意志"
+                "translate":"ms.adv.hidden.0-3",
+                "fallback":"EXPERT",
+                "color":"red"
             }
         ],
         "description":[
@@ -16,13 +17,13 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.6.goal",
+                "translate":"ms.adv.hidden.0-3.goal",
                 "fallback":"完成隐藏跑酷"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.6.desc",
-                "fallback":"这片大地上怎会有如此邪恶的跑酷",
+                "translate":"ms.adv.hidden.0-3.desc",
+                "fallback":"浮水绿蔓，石窟万难",
                 "color":"gray",
                 "italic":true
             },
@@ -31,12 +32,12 @@
                 "translate":"ms.adv.pts",
                 "fallback":"💠 进度点 +%s",
                 "with":[
-                    "20"
+                    "10"
                 ],
                 "color":"aqua"
             }
         ],
-        "frame":"challenge",
+        "frame":"task",
         "show_toast":true,
         "announce_to_chat":false,
         "hidden":true
@@ -60,6 +61,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/prize/20"
+        "function":"main:lib/advancement/prize/10"
     }
 }

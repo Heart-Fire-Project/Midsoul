@@ -1,13 +1,14 @@
 {
-    "parent":"main:hidden/6",
+    "parent":"main:hidden/0/4",
     "display":{
         "icon":{
             "id":"diamond_boots"
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.7",
-                "fallback":"打车般的速度"
+                "translate":"ms.adv.hidden.0-5",
+                "fallback":"Re:MASTER",
+                "color":"#CFC2D1"
             }
         ],
         "description":[
@@ -16,13 +17,13 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.7.goal",
+                "translate":"ms.adv.hidden.0-5.goal",
                 "fallback":"在 486 秒内完成隐藏跑酷"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.7.desc",
-                "fallback":"至少你不用花六七十",
+                "translate":"ms.adv.hidden.0-5.desc",
+                "fallback":"或许您可以考虑成为跑酷鼓手",
                 "color":"gray",
                 "italic":true
             },

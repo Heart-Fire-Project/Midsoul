@@ -17,7 +17,7 @@ function main:state/0/refresh/block
 function main:state/0/refresh/sign
 function main:state/0/refresh/entity
 function main:state/0/refresh/index
-execute at @a if entity @e[tag=extra_entity,distance=..30] run function main:state/0/refresh/extra
+execute at @a if entity @e[tag=extra_entity,distance=..30] run function main:state/0/extra/refresh
 
 # 设置变量组
 execute if score $mode setting matches 1 run data merge storage ms:mode {start:"5",cancel:"4",logic:"1",role:"1",affact_rating:true,affact_exp:true,affact_data:true}

@@ -1,13 +1,14 @@
 {
-    "parent":"main:hidden/3",
+    "parent":"main:hidden/0/3",
     "display":{
         "icon":{
-            "id":"music_disc_creator_music_box"
+            "id":"golden_boots"
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.4",
-                "fallback":"1%% 的世界线"
+                "translate":"ms.adv.hidden.0-4",
+                "fallback":"MASTER",
+                "color":"#703BE7"
             }
         ],
         "description":[
@@ -16,13 +17,16 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.4.goal",
-                "fallback":"听到一首纯粹的乐曲"
+                "translate":"ms.adv.hidden.0-2/4.goal",
+                "fallback":"在 %s 秒内完成大厅跑酷",
+                "with":[
+                    "32.5"
+                ]
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.4.desc",
-                "fallback":"为什么要演奏八音盒版本？",
+                "translate":"ms.adv.hidden.0-4.desc",
+                "fallback":"苦也，这也言周",
                 "color":"gray",
                 "italic":true
             },
@@ -31,12 +35,12 @@
                 "translate":"ms.adv.pts",
                 "fallback":"💠 进度点 +%s",
                 "with":[
-                    "10"
+                    "20"
                 ],
                 "color":"aqua"
             }
         ],
-        "frame":"task",
+        "frame":"challenge",
         "show_toast":true,
         "announce_to_chat":false,
         "hidden":true
@@ -48,9 +52,9 @@
                 "player":[
                     {
                         "scores":{
-                            "music":{
-                                "min":0,
-                                "max":0
+                            "stat.parkour_5":{
+                                "min":1,
+                                "max":650
                             }
                         },
                         "condition":"entity_scores",
@@ -61,6 +65,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/prize/10"
+        "function":"main:lib/advancement/prize/20"
     }
 }

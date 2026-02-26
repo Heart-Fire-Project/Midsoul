@@ -1,13 +1,14 @@
 {
-    "parent":"main:hidden/root",
+    "parent":"main:hidden/0/root",
     "display":{
         "icon":{
-            "id":"waxed_weathered_copper"
+            "id":"copper_boots"
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.1",
-                "fallback":"蓦然回首"
+                "translate":"ms.adv.hidden.0-1",
+                "fallback":"BASIC",
+                "color":"green"
             }
         ],
         "description":[
@@ -16,13 +17,13 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.1.goal",
-                "fallback":"回顾走来的路"
+                "translate":"ms.adv.hidden.0-1.goal",
+                "fallback":"完成大厅跑酷"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.1.desc",
-                "fallback":"游戏一贯的套路罢了",
+                "translate":"ms.adv.hidden.0-1.desc",
+                "fallback":"先精进，再超越",
                 "color":"gray",
                 "italic":true
             },
@@ -34,17 +35,6 @@
                     "5"
                 ],
                 "color":"aqua"
-            },
-            "\n",
-            {
-                "translate":"ms.adv.reward",
-                "fallback":"奖励：",
-                "color":"green"
-            },
-            {
-                "translate":"ms.text.2",
-                "fallback":"闲嬉",
-                "color":"#6281F1"
             }
         ],
         "frame":"task",
@@ -54,7 +44,20 @@
     },
     "criteria":{
         "secret":{
-            "trigger":"impossible"
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "stat.parkour_5":{
+                                "min":1
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
         }
     },
     "rewards":{

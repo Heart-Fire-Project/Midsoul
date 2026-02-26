@@ -52,4 +52,4 @@ execute if entity @s[team=guardian,scores={skill=5},tag=skill_on] run data merge
 execute if entity @s[team=guardian,scores={skill=5,skill.105=0},tag=skill_on] run data merge storage ms:inventory {disable:1}
 execute if entity @s[team=guardian,scores={skill=5,skill.105=1},tag=skill_on] run data merge storage ms:inventory {disable:35}
 
-function main:state/3/inventory with storage ms:inventory
+function main:lib/event/universal/inventory_ability with storage ms:inventory

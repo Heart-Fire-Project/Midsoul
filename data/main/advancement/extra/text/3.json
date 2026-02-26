@@ -24,7 +24,7 @@
             "\n\n",
             {
                 "translate":"ms.text.3.desc",
-                "fallback":"喵？",
+                "fallback":"喵？哈！",
                 "color":"gray",
                 "italic":true
             }
@@ -46,7 +46,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:hidden/2":true
+                                    "main:hidden/1/1":true
                                 }
                             }
                         }

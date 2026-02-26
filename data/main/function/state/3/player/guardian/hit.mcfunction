@@ -21,7 +21,7 @@ tag @s remove talent_1_on
 tag @s remove talent_2_on
 
 # 进度
-execute if score @s tick.off_ground matches 40.. run advancement grant @s only main:hidden/3
+execute if score @s tick.off_ground matches 40.. run advancement grant @s only main:hidden/1/3
 
 # 教程
 advancement grant @s[tag=!striked] only main:tutorial/player/2

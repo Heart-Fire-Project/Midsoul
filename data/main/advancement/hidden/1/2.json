@@ -1,0 +1,55 @@
+{
+    "parent":"main:hidden/1/1",
+    "display":{
+        "icon":{
+            "id":"note_block",
+            "components":{
+                "!enchantment_glint_override":{}
+            }
+        },
+        "title":[
+            {
+                "translate":"ms.adv.hidden.1-2",
+                "fallback":"结束这一切"
+            }
+        ],
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.1-2.goal",
+                "fallback":"让你身边的键盘手逃走"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.hidden.1-2.desc",
+                "fallback":"为什么要演奏春日影？！！",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点 +%s",
+                "with":[
+                    "5"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"task",
+        "show_toast":true,
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/prize/5"
+    }
+}

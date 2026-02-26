@@ -12,12 +12,10 @@
         ],
         "description":[
             {
-                "translate":"ms.goal.adv",
-                "fallback":"· 达成进度 “%s”",
+                "translate":"ms.goal.single_record",
+                "fallback":"· 表现分纪录达到 %s 分",
                 "with":[
-                    {
-                        "text":"???"
-                    }
+                    "1000"
                 ],
                 "color":"white"
             },
@@ -39,17 +37,14 @@
             "trigger":"location",
             "conditions":{
                 "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific":{
-                                "type":"player",
-                                "advancements":{
-                                    "main:hidden/1":true
-                                }
+                   {
+                        "scores":{
+                            "stat.single_record":{
+                                "min":1000
                             }
-                        }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
                     }
                 ]
             }

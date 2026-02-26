@@ -2,7 +2,7 @@
 execute as @e[tag=marker_purple] at @s unless entity @a[tag=game_player,distance=..1000] run tag @s add summon_no
 
 # 生成第一传送门
-execute at @e[tag=!summon_no,tag=marker_purple,limit=1,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+execute at @e[tag=!summon_no,tag=marker_purple,limit=1,sort=random] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:"sculk_shrieker"},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 
 # 生成第二传送门 | 间隔 60~80 格 +4 权重，间隔 50~90 格 +3 权重，距离 91~120 格 +2 权重；若完全没有，则 50 格内最远与 120 格外最近获得权重
 scoreboard players set $total temp2 0
@@ -22,7 +22,7 @@ scoreboard players reset @e[tag=marker_purple,scores={temp2=..-1}] temp2
 scoreboard players set $min temp2 1010000
 scoreboard players operation $min temp2 < @e[tag=marker_purple,scores={temp2=0..}] temp2
 execute as @e[tag=marker_purple,scores={temp=1..}] if score @s temp2 = $min temp2 run tag @s add summon_select
-execute at @e[tag=summon_select] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:sculk_shrieker},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
+execute at @e[tag=summon_select] run summon block_display ~ ~ ~ {Tags:[game_entity,new_purple,purple],Glowing:1b,block_state:{Name:"sculk_shrieker"},transformation:{scale:[1f,1f,1f],translation:[-0.5f,0f,-0.5f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]},Rotation:[0f,0f]}
 
 # 善后工作
 team join portal @e[tag=new_purple]

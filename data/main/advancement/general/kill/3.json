@@ -34,17 +34,6 @@
                     "10"
                 ],
                 "color":"aqua"
-            },
-            "\n",
-            {
-                "translate":"ms.adv.reward",
-                "fallback":"奖励：",
-                "color":"green"
-            },
-            {
-                "translate":"ms.weapon.4",
-                "fallback":"散炽棍",
-                "color":"gold"
             }
         ],
         "frame":"task",

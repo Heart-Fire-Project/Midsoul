@@ -1,28 +1,32 @@
 {
-    "parent":"main:general/play/3",
+    "parent":"main:hidden/0/1",
     "display":{
         "icon":{
-            "id":"resin_brick"
+            "id":"chainmail_boots"
         },
         "title":[
             {
-                "translate":"ms.adv.play.4",
-                "fallback":"百年孤独"
+                "translate":"ms.adv.hidden.0-2",
+                "fallback":"ADVANCED",
+                "color":"yellow"
             }
         ],
         "description":[
             {
-                "translate":"ms.goal.play",
-                "fallback":"· 完成 %s 场游戏",
-                "with":[
-                    "100"
-                ],
+                "text":"· ",
                 "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.0-2/4.goal",
+                "fallback":"在 %s 秒内完成大厅跑酷",
+                "with":[
+                    "60"
+                ]
             },
             "\n\n",
             {
-                "translate":"ms.adv.play.4.desc",
-                "fallback":"您持之以恒。",
+                "translate":"ms.adv.hidden.0-2.desc",
+                "fallback":"踏晶体，循铜光",
                 "color":"gray",
                 "italic":true
             },
@@ -31,25 +35,26 @@
                 "translate":"ms.adv.pts",
                 "fallback":"💠 进度点 +%s",
                 "with":[
-                    "10"
+                    "5"
                 ],
                 "color":"aqua"
             }
         ],
         "frame":"task",
         "show_toast":true,
-        "announce_to_chat":true,
-        "hidden":false
+        "announce_to_chat":false,
+        "hidden":true
     },
     "criteria":{
-        "play_single":{
+        "secret":{
             "trigger":"location",
             "conditions":{
                 "player":[
                     {
                         "scores":{
-                            "stat.play":{
-                                "min":100
+                            "stat.parkour_5":{
+                                "min":1,
+                                "max":1200
                             }
                         },
                         "condition":"entity_scores",
@@ -60,6 +65,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/prize/10"
+        "function":"main:lib/advancement/prize/5"
     }
 }

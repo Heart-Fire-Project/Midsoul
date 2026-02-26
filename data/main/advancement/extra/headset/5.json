@@ -1,13 +1,13 @@
 {
-    "parent":"main:extra/weapon/2",
+    "parent":"main:extra/headset/4",
     "display":{
         "icon":{
-            "id":"mace"
+            "id":"big_dripleaf"
         },
         "title":[
             {
-                "translate":"ms.weapon.3",
-                "fallback":"破魂锤"
+                "translate":"ms.headset.5",
+                "fallback":"垂落绿荫"
             }
         ],
         "description":[
@@ -23,8 +23,8 @@
             },
             "\n\n",
             {
-                "translate":"ms.weapon.3.desc",
-                "fallback":"这一击，贯穿脑门！",
+                "translate":"ms.headset.5.desc",
+                "fallback":"没人知道大晚上在遮什么",
                 "color":"gray",
                 "italic":true
             }
@@ -35,7 +35,7 @@
         "hidden":false
     },
     "criteria":{
-        "secret":{
+        "milestone":{
             "trigger":"location",
             "conditions":{
                 "player":[
@@ -46,7 +46,7 @@
                             "type_specific":{
                                 "type":"player",
                                 "advancements":{
-                                    "main:hidden/1/3":true
+                                    "main:hidden/0/6":true
                                 }
                             }
                         }

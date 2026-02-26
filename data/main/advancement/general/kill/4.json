@@ -31,12 +31,23 @@
                 "translate":"ms.adv.pts",
                 "fallback":"💠 进度点 +%s",
                 "with":[
-                    "20"
+                    "10"
                 ],
                 "color":"aqua"
+            },
+            "\n",
+            {
+                "translate":"ms.adv.reward",
+                "fallback":"奖励：",
+                "color":"green"
+            },
+            {
+                "translate":"ms.weapon.4",
+                "fallback":"散炽棍",
+                "color":"gold"
             }
         ],
-        "frame":"challenge",
+        "frame":"task",
         "show_toast":true,
         "announce_to_chat":true,
         "hidden":false
@@ -60,6 +71,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/prize/20"
+        "function":"main:lib/advancement/prize/10"
     }
 }

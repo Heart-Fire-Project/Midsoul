@@ -1,5 +1,5 @@
 {
-    "parent":"main:extra/headset/3",
+    "parent":"main:extra/headset/5",
     "criteria":{
         "unlock":{
             "trigger":"location"

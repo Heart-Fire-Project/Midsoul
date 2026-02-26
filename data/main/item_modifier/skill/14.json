@@ -78,23 +78,5 @@
         "tag":{
             "id":71104
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"ominous_bottle",
-            "consumable":{
-                "animation":"drink",
-                "consume_seconds":1.6,
-                "sound":"entity.generic.drink",
-                "has_consume_particles":false,
-                "on_consume_effects":[
-                    {
-                        "type":"play_sound",
-                        "sound":"item.ominous_bottle.dispose"
-                    }
-                ]
-            }
-        }
     }
 ]

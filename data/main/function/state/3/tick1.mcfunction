@@ -5,7 +5,7 @@ function main:lib/event/universal/tick1
 function main:state/3/bossbar/general
 
 # 刷新物品栏
-execute as @a[tag=game_player] run function main:state/3/inventory_pre
+execute as @a[tag=game_player] run function main:state/3/inventory
 
 # 蹲下交互侦测
 execute as @a[tag=game_player,scores={state=0}] at @s run function main:state/3/interaction/check

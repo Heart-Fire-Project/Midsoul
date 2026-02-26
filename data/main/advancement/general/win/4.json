@@ -41,12 +41,12 @@
                 "translate":"ms.adv.pts",
                 "fallback":"💠 进度点 +%s",
                 "with":[
-                    "20"
+                    "10"
                 ],
                 "color":"aqua"
             }
         ],
-        "frame":"challenge",
+        "frame":"task",
         "show_toast":true,
         "announce_to_chat":true,
         "hidden":false
@@ -70,6 +70,6 @@
         }
     },
     "rewards":{
-        "function":"main:lib/advancement/prize/20"
+        "function":"main:lib/advancement/prize/10"
     }
 }

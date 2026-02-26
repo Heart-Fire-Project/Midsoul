@@ -1,5 +1,5 @@
 {
-    "parent":"main:hidden/1",
+    "parent":"main:hidden/1/root",
     "display":{
         "icon":{
             "id":"player_head",
@@ -9,8 +9,8 @@
         },
         "title":[
             {
-                "translate":"ms.adv.hidden.2",
-                "fallback":"谁是最好的小猫？"
+                "translate":"ms.adv.hidden.1-1",
+                "fallback":"最好的小猫"
             }
         ],
         "description":[
@@ -19,13 +19,13 @@
                 "color":"white"
             },
             {
-                "translate":"ms.adv.hidden.2.goal",
-                "fallback":"答案就在你面前喵"
+                "translate":"ms.adv.hidden.1-1.desc",
+                "fallback":"找到猫的躲藏点"
             },
             "\n\n",
             {
-                "translate":"ms.adv.hidden.2.desc",
-                "fallback":"其实是键帽哦。",
+                "translate":"ms.adv.hidden.1-1.goal",
+                "fallback":"也是史上最气人的猫",
                 "color":"gray",
                 "italic":true
             },
