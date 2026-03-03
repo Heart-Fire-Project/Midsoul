@@ -1,7 +1,7 @@
 ## 🔯 欢迎来到午夜灵魂~~的多次重写版~~  
 
 > 最后一次编辑版本号 » Beta 10.0 | 2026/01/05  
-> Click [Here](https://github.com/Heart-Fire-Project/Midsoul/blob/plus/README_en.md) for English version  
+> Click [Here](https://github.com/Heart-Fire-Project/Midsoul/blob/main/README_en.md) for English version  
 
 再一次地，这里是**午夜灵魂**的数据包仓库，只不过这次是 plus 分支午夜灵魂生不逢时，几乎就是和 Mojang 不断的数据包重构一起写的……所以这个数据包已经大概也重构了七七四十九遍。总之，大概更新有：  
 - 正式升级到 1.21.11
