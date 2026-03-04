@@ -48,9 +48,7 @@
             }
         ],
         "frame":"task",
-        "show_toast":true,
-        "announce_to_chat":true,
-        "hidden":false
+        "announce_to_chat":true
     },
     "criteria":{
         "kill_single":{

@@ -31,7 +31,8 @@ execute if score $1_process tick.general matches 1320 run scoreboard players ope
 # 1319 | 回响判定
 execute if score $1_process tick.general matches 1319 run scoreboard players set $echo data 0
 execute if score $1_process tick.general matches 1319 store result score $random temp2 run random value 1..100
-execute if score $1_process tick.general matches 1319 unless entity @a[tag=game_player,scores={stat.play=..1}] if score $random temp2 <= $echo_chance setting run function main:state/1/echo
+execute if score $1_process tick.general matches 1319 if score $random temp2 <= $echo_chance setting run function main:state/1/echo
+execute if score $1_process tick.general matches 1319 unless score $echo_chance setting matches 100.. if entity @a[tag=game_player,scores={stat.play=..1}] run scoreboard players set $echo data 0
 
 # 1319 | 普通标题
 execute if score $1_process tick.general matches 1319 run title @a[tag=game_player] times 3 50 4
