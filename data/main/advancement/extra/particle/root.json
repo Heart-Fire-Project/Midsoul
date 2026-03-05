@@ -1,0 +1,23 @@
+{
+    "parent":"main:extra/root",
+    "display":{
+        "icon":{
+            "id":"pink_petals"
+        },
+        "title":{
+            "translate":"ms.particle",
+            "fallback":"粒子效果"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

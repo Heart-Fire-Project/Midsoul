@@ -1,0 +1,46 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.105",
+            "fallback":"舍近求远",
+            "color":"gold",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⌚ 6 > ",
+                    "color":"gold",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                }
+            ],
+            {
+                "translate":"ms.talent.105.desc",
+                "fallback":"擦刀状态结束时，使最远的至多 2 个灵魂发光",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72105
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"recovery_compass"
+        }
+    }
+]

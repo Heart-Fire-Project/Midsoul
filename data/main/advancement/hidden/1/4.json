@@ -1,0 +1,65 @@
+{
+    "parent":"main:hidden/1/3",
+    "display":{
+        "icon":{
+            "id":"music_disc_creator_music_box"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.hidden.1-4",
+                "fallback":"臻粹的乐声"
+            }
+        ],
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.1-4.goal",
+                "fallback":"聆听空灵而优雅的韵律"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.hidden.1-4.desc",
+                "fallback":"这 1%% 的概率，为你献上",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点 +%s",
+                "with":[
+                    "10"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"task",
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "music":{
+                                "min":0,
+                                "max":0
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/prize/10"
+    }
+}

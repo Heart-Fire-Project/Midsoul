@@ -1,0 +1,23 @@
+{
+    "parent":"main:tutorial/root",
+    "display":{
+        "icon":{
+            "id":"piston"
+        },
+        "title":{
+            "translate":"ms.tutorial.3",
+            "fallback":"游戏机制"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/interact/3",
+    "display":{
+        "icon":{
+            "id":"sculk_shrieker"
+        },
+        "title":[
+            {
+                "translate":"ms.purple",
+                "fallback":"传送门"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.1-4.desc",
+                "fallback":"传送门一般会持续发光，它可以被多人同时充能并存储进度。与其交互即可将其充能，充能完毕后传送门便会开启以供灵魂复活。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/interact/4"
+    }
+}

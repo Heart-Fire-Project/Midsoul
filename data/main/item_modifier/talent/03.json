@@ -1,0 +1,51 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.003",
+            "fallback":"同生共死",
+            "color":"aqua",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.heal",
+                    "fallback":"救助"
+                }
+            ],
+            {
+                "translate":"ms.talent.003.desc",
+                "fallback":"有灵魂处于垂死状态时，移速 +20%%",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72003
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"magma_cream"
+        }
+    }
+]

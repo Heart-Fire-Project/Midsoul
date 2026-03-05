@@ -1,0 +1,23 @@
+{
+    "parent":"main:tutorial/root",
+    "display":{
+        "icon":{
+            "id":"player_head"
+        },
+        "title":{
+            "translate":"ms.tutorial.2",
+            "fallback":"玩家事件"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

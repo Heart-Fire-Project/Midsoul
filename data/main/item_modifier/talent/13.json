@@ -1,0 +1,46 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.103",
+            "fallback":"祛灵十字",
+            "color":"gold",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"gold",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.kill",
+                    "fallback":"杀戮"
+                }
+            ],
+            {
+                "translate":"ms.talent.103.desc",
+                "fallback":"擦刀状态持续时间 -20%%",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72103
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"blade_pottery_sherd"
+        }
+    }
+]

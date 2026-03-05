@@ -1,0 +1,82 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.104",
+            "fallback":"恶灵诅咒",
+            "color":"red",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 60  ⌚ 10 > ",
+                    "color":"red",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.kill",
+                    "fallback":"杀戮"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
+                }
+            ],
+            {
+                "translate":"ms.skill.104.desc.a",
+                "fallback":"为一个随机的灵魂宝物盒附加诅咒效果，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.104.desc.b",
+                "fallback":"若没有未被诅咒的灵魂宝物盒则生成 2 个；移速 +20%%，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.104.desc.c",
+                "fallback":"场上每有一个被诅咒的灵魂宝物盒额外 +20%%，上限 +140%%",
+                "color":"white",
+                "italic":false
+            },
+            "",
+            {
+                "translate":"ms.special.curse",
+                "fallback":"「诅咒」",
+                "color":"dark_red",
+                "italic":false
+            },
+            {
+                "translate":"ms.special.curse.desc.a",
+                "fallback":"有灵魂经过时使其发光且移速 -15%%，开启后使其发光 3 秒，",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.special.curse.desc.b",
+                "fallback":"并在 7 秒内移速 -30%%；有守卫者经过时使最近的灵魂发光，",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.special.curse.desc.c",
+                "fallback":"开启后使全体灵魂发光 3 秒并在 15 秒内速度 +40%%",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71104
+        }
+    }
+]

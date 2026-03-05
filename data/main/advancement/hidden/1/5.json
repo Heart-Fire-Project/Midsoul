@@ -1,0 +1,51 @@
+{
+    "parent":"main:hidden/1/4",
+    "display":{
+        "icon":{
+            "id":"dragon_breath"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.hidden.1-5",
+                "fallback":"戒社欢迎您"
+            }
+        ],
+        "description":[
+            {
+                "text":"· ",
+                "color":"white"
+            },
+            {
+                "translate":"ms.adv.hidden.1-5.goal",
+                "fallback":"恭喜，一发出“险”"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.hidden.1-5.desc",
+                "fallback":"高概率的小概率事件",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点 +%s",
+                "with":[
+                    "10"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"task",
+        "announce_to_chat":false,
+        "hidden":true
+    },
+    "criteria":{
+        "secret":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/prize/10"
+    }
+}

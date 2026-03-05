@@ -1,0 +1,36 @@
+{
+    "parent":"main:extra/weapon/root",
+    "display":{
+        "icon":{
+            "id":"golden_sword"
+        },
+        "title":[
+            {
+                "translate":"ms.weapon.0",
+                "fallback":"祛灵刃"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.init",
+                "fallback":"· 开始游戏",
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.weapon.0.desc",
+                "fallback":"以锐利之刃斩不净之物",
+                "color":"gray",
+                "italic":true
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "free":{
+            "trigger":"location"
+        }
+    }
+}

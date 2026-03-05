@@ -1,0 +1,52 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.001",
+            "fallback":"幻影迷踪",
+            "color":"#5599FF",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 60  ⌚ 10 > ",
+                    "color":"#5599FF",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
+                }
+            ],
+            {
+                "translate":"ms.skill.001.desc.a",
+                "fallback":"隐身且移速 +100%%；",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.001.desc.b",
+                "fallback":"若距离守卫者 12 格以内则改为移速 +140%%",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71001
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"phantom_membrane"
+        }
+    }
+]

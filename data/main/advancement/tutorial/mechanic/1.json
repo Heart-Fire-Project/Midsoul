@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/mechanic/root",
+    "display":{
+        "icon":{
+            "id":"yellow_dye"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.3-1",
+                "fallback":"气息探测"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.3-1.desc",
+                "fallback":"气息探测是游戏中的警戒机制，在双方距离较近时上方计量条将会变色。守卫者和灵魂都可以触发黄条，但只有灵魂会触发红条。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/mechanic/1"
+    }
+}

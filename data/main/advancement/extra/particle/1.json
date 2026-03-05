@@ -1,0 +1,56 @@
+
+{
+    "parent":"main:extra/particle/root",
+    "display":{
+        "icon":{
+            "id":"lightning_rod"
+        },
+        "title":[
+            {
+                "translate":"ms.particle.1",
+                "fallback":"午夜繁星"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.level",
+                "fallback":"· 游戏等级达到 Lv.%s",
+                "with":[
+                    "10"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.particle.1.desc",
+                "fallback":"繁星指引归路。",
+                "color":"gray",
+                "italic":true
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "level":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "stat.level":{
+                                "min":10
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/extra"
+    }
+}

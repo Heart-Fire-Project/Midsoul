@@ -1,0 +1,44 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.setting.ingame_tip",
+            "fallback":"Tip!",
+            "color":"green",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            {
+                "translate":"ms.setting.enable",
+                "fallback":"✦ 已启用",
+                "color":"green",
+                "italic":false
+            },
+            {
+                "translate":"ms.setting.ingame_tip.desc",
+                "fallback":"游戏内不定时出现的小提示",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":74041
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"light",
+            "block_state":{
+                "level":"7"
+            }
+        }
+    }
+]

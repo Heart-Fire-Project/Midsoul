@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/player/root",
+    "display":{
+        "icon":{
+            "id":"resin_clump"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.2-1",
+                "fallback":"受击/疾行"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.2-1.desc",
+                "fallback":"一般来说，受到来自灵魂守卫者的攻击会损失半条命。趁着受击后的加速与无敌时间，你最好能跑多远跑多远，别被抓着第二次。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/player/1"
+    }
+}

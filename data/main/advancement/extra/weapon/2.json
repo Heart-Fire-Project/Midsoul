@@ -1,0 +1,55 @@
+{
+    "parent":"main:extra/weapon/1",
+    "display":{
+        "icon":{
+            "id":"netherite_sword"
+        },
+        "title":[
+            {
+                "translate":"ms.weapon.2",
+                "fallback":"祛灵刃 β"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.adv_pts",
+                "fallback":"· 进度点达到 %s 点",
+                "with":[
+                    "250"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.weapon.2.desc",
+                "fallback":"以历战之刃斩不净之物",
+                "color":"gray",
+                "italic":true
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "adv":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "stat.adv_pt":{
+                                "min":250
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/extra"
+    }
+}

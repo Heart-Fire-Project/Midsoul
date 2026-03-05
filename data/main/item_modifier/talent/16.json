@@ -1,0 +1,46 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.106",
+            "fallback":"共振感应",
+            "color":"gold",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 60  ⌚ 3 > ",
+                    "color":"gold",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                }
+            ],
+            {
+                "translate":"ms.talent.106.desc",
+                "fallback":"使距离你最近的至多 2 个灵魂发光",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72106
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"redstone"
+        }
+    }
+]

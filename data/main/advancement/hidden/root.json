@@ -1,0 +1,23 @@
+{
+    "display":{
+        "icon":{
+            "id":"structure_block"
+        },
+        "title":{
+            "translate":"ms.adv.hidden",
+            "fallback":"未定义"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "background":"block/blackstone"
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

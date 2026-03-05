@@ -1,0 +1,42 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.setting.echo_info",
+            "fallback":"回响提示",
+            "color":"green",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            {
+                "translate":"ms.setting.enable",
+                "fallback":"✦ 已启用",
+                "color":"green",
+                "italic":false
+            },
+            {
+                "translate":"ms.setting.echo_info.desc",
+                "fallback":"周期性提示回响效果",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":74051
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "enchantment_glint_override":true,
+            "item_model":"chorus_flower"
+        }
+    }
+]

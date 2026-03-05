@@ -1,0 +1,52 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.107",
+            "fallback":"碎片侵蚀",
+            "color":"gold",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 40 > ",
+                    "color":"gold",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
+                }
+            ],
+            {
+                "translate":"ms.talent.107.desc",
+                "fallback":"污染场上的一个碎片；被污染的碎片将在被收集时发射一个烟花",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.107.desc.sub",
+                "fallback":"无初始冷却；至多同时对 3 个碎片生效",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72107
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"amethyst_shard"
+        }
+    }
+]

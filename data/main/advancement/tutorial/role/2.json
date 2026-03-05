@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/role/1",
+    "display":{
+        "icon":{
+            "id":"golden_sword"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.0-2",
+                "fallback":"灵魂守卫者"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.0-2.desc",
+                "fallback":"作为灵魂守卫者，你的目标很简单，就是将灵魂统统斩杀。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/role/2"
+    }
+}

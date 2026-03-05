@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.skill.003\",\"fallback\":\"逆向追踪\",\"italic\":false,\"color\":\"#5599FF\"}',Lore:['[{\"text\":\"⏲ 70s  ▶ 10s~30s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.skill.003.desc.a\",\"fallback\":\"即刻高亮灵魂守卫者；守卫者距离你越近\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.003.desc.b\",\"fallback\":\"则效果越强，且可能会使其移速 -30%\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:71003}"
-}

@@ -1,0 +1,25 @@
+execute if score $state data matches 0 run tellraw @s ""
+
+$tellraw @s[scores={talent_$(num)=1}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.101",fallback:"抱火寝薪"}]
+$tellraw @s[scores={talent_$(num)=2}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.102",fallback:"火冒三丈"}]
+$tellraw @s[scores={talent_$(num)=3}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.103",fallback:"祛灵十字"}]
+$tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.104",fallback:"隐于迷雾"}]
+$tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.105",fallback:"舍近求远"}]
+$tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.106",fallback:"共振感应"}]
+$tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.107",fallback:"碎片侵蚀"}]
+
+$tellraw @s[scores={talent_$(num)=1}] [{text:"> ",color:"gold"},{translate:"ms.tag.debuff",fallback:"妨害"}]
+$tellraw @s[scores={talent_$(num)=2}] [{text:"⌚ 4 > ",color:"gold"},{translate:"ms.tag.detect",fallback:"感知"}]
+$tellraw @s[scores={talent_$(num)=3}] [{text:"> ",color:"gold"},{translate:"ms.tag.kill",fallback:"杀戮"}]
+$tellraw @s[scores={talent_$(num)=4}] [{text:"⚡ 90 > ",color:"gold"},{translate:"ms.tag.detect",fallback:"感知"},"/",{translate:"ms.tag.kill",fallback:"杀戮"}]
+$tellraw @s[scores={talent_$(num)=5}] [{text:"⌚ 6 > ",color:"gold"},{translate:"ms.tag.detect",fallback:"感知"}]
+$tellraw @s[scores={talent_$(num)=6}] [{text:"⚡ 60  ⌚ 3 > ",color:"gold"},{translate:"ms.tag.detect",fallback:"感知"}]
+$tellraw @s[scores={talent_$(num)=7}] [{text:"⚡ 40 > ",color:"gold"},{translate:"ms.tag.debuff",fallback:"妨害"}]
+
+$tellraw @s[scores={talent_$(num)=1}] [{translate:"ms.talent.101.desc",fallback:"对自身的气息探测生效距离 -33%%"}]
+$tellraw @s[scores={talent_$(num)=2}] [{translate:"ms.talent.102.desc",fallback:"灵魂解除垂死状态时，使全体灵魂移速 -15%%"}]
+$tellraw @s[scores={talent_$(num)=3}] [{translate:"ms.talent.103.desc",fallback:"擦刀状态持续时间 -20%%"}]
+$tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent.104.desc",fallback:"天赋触发时使全体灵魂在 5 秒内陷入黑暗；生效期间自身隐身，并使周围 40 格内不存在守卫者的灵魂发光"},"\n",{translate:"ms.talent.104.desc.sub",fallback:"周围 20 格内有灵魂时结束；攻击到灵魂时重置",color:"gray"}]
+$tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.105.desc",fallback:"擦刀状态结束时，使最远的至多 2 个灵魂发光"}]
+$tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent.106.desc",fallback:"使距离你最近的至多 2 个灵魂发光"}]
+$tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent.107.desc",fallback:"污染场上的一个碎片；被污染的碎片将在被收集时发射一个烟花"},"\n",{translate:"ms.talent.107.desc.sub",fallback:"无初始冷却；至多同时对 3 个碎片生效",color:"gray"}]

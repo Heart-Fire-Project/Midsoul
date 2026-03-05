@@ -1,0 +1,46 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.101",
+            "fallback":"抱火寝薪",
+            "color":"gold",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"gold",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
+                }
+            ],
+            {
+                "translate":"ms.talent.101.desc",
+                "fallback":"对自身的气息探测生效距离 -33%%",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72101
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"crimson_fungus"
+        }
+    }
+]

@@ -1,0 +1,63 @@
+{
+    "parent":"main:general/collect/4",
+    "display":{
+        "icon":{
+            "id":"sculk"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.collect.5",
+                "fallback":"A Thousand Kisses Deep"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.collect",
+                "fallback":"· 累计收集 %s 个碎片",
+                "with":[
+                    "1000"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.collect.5.desc",
+                "fallback":"深境回响",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点 +%s",
+                "with":[
+                    "20"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"challenge",
+        "hidden":true
+    },
+    "criteria":{
+        "collect_single":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "stat.collect":{
+                                "min":1000
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/prize/20"
+    }
+}

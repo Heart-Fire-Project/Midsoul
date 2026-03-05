@@ -1,0 +1,69 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.104",
+            "fallback":"隐于迷雾",
+            "color":"gold",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 90 > ",
+                    "color":"gold",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.kill",
+                    "fallback":"杀戮"
+                }
+            ],
+            {
+                "translate":"ms.talent.104.desc.a",
+                "fallback":"天赋触发时使全体灵魂在 5 秒内陷入黑暗；",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.104.desc.b",
+                "fallback":"生效期间自身隐身，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.104.desc.c",
+                "fallback":"并使周围 40 格内不存在守卫者的灵魂发光",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.104.desc.sub",
+                "fallback":"周围 20 格内有灵魂时结束；攻击到灵魂时重置",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72104
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"black_candle"
+        }
+    }
+]

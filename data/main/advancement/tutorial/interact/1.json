@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/interact/root",
+    "display":{
+        "icon":{
+            "id":"echo_shard"
+        },
+        "title":[
+            {
+                "translate":"ms.blue",
+                "fallback":"灵魂碎片"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.1-1.desc",
+                "fallback":"与灵魂碎片持续交互就可以收集它们，填满计量条后就会使传送门出现。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/interact/1"
+    }
+}

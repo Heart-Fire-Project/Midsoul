@@ -1,0 +1,17 @@
+{
+    "criteria":{
+        "hurt":{
+            "trigger":"entity_hurt_player",
+            "conditions":{
+                "damage":{
+                    "taken":{
+                        "min":0.1
+                    }
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/player/hurt"
+    }
+}

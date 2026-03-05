@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.102\",\"fallback\":\"火冒三丈\",\"italic\":false,\"color\":\"gold\"}',Lore:['[{\"text\":\"⏲ 60s  ▶ 3s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.talent.102.desc.a\",\"fallback\":\"当有灵魂解除垂死状态时，高亮全体灵魂\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.102.desc.b\",\"fallback\":\"并使其移速 -15%\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72102}"
-}

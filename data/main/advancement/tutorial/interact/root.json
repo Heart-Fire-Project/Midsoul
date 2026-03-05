@@ -1,0 +1,23 @@
+{
+    "parent":"main:tutorial/root",
+    "display":{
+        "icon":{
+            "id":"glow_squid_spawn_egg"
+        },
+        "title":{
+            "translate":"ms.tutorial.1",
+            "fallback":"交互物件"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+# 被击倒
+scoreboard players operation $value temp = @s entity_id
+execute as @e[tag=death_mark] if score @s entity_id = $value temp run tag @s add target
+tp @s @e[limit=1,tag=target]
+execute unless entity @e[tag=target] run tp @s @e[limit=1,tag=death_mark]
+kill @n[tag=death_mark]
+scoreboard players set @s state 1
+
+# 统计数据
+scoreboard players add @s temp.dying 1
+
+# 实时表现分
+scoreboard players add @p[scores={detect.kill=1..}] temp.stun 1
+execute as @p[scores={detect.kill=1..,setting.instant_rating=1}] run function main:lib/rating/1/guardian/stun
+scoreboard players reset @p[scores={detect.kill=1..}] detect.kill
+
+# 设置时间
+scoreboard players set @s[scores={temp.dying=1}] tick.general 120000
+scoreboard players set @s[scores={temp.dying=2}] tick.general 80000
+scoreboard players set @s[scores={temp.dying=3..}] tick.general 40000
+
+# 取消正在进行的所有能力，并重设冷却
+execute as @s[tag=skill_on] run function main:lib/ability/skill/reset
+execute as @s[tag=talent_1_on] run function main:lib/ability/talent/reset {num:"1"}
+execute as @s[tag=talent_2_on] run function main:lib/ability/talent/reset {num:"2"}
+tag @s remove skill_on
+tag @s remove talent_1_on
+tag @s remove talent_2_on
+tag @s remove relic_on
+
+# 判定：灵魂被击倒时
+function main:lib/action/player/dying
+
+# 刷新效果
+function main:state/3/player/effect
+
+# 受文本套组影响
+execute unless score @s extra.text matches 1..3 run function main:lib/player/dying/0
+execute if score @s extra.text matches 1 run function main:lib/player/dying/1
+execute if score @s extra.text matches 2 run function main:lib/player/dying/2
+execute if score @s extra.text matches 3 run function main:lib/player/dying/3
+
+# 灯噔咚
+function main:lib/event/summon/gold
+playsound block.conduit.deactivate player @a 0 1000000 0 120000
+
+# 最终防线？
+scoreboard players reset $undying data
+execute as @a[team=soul,scores={state=0}] run scoreboard players add $undying data 1
+execute if score $undying data matches 1 run playsound block.bell.use player @a 0 1000000 0 120000
+
+# 教程
+advancement grant @s only main:tutorial/player/3

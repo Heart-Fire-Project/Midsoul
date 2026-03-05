@@ -1,0 +1,1 @@
+$particle trail{target:[$(x),$(y),$(z)],color:$(color),duration:3} ~ ~$(offset) ~ 0.1 0.1 0.1 1 3 force @a

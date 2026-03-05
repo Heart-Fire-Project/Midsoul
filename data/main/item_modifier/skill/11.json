@@ -1,0 +1,52 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.101",
+            "fallback":"虔诚力场",
+            "color":"red",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 70  ⌚ 7 > ",
+                    "color":"red",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                }
+            ],
+            {
+                "translate":"ms.skill.101.desc.a",
+                "fallback":"移速 +40%%；即刻使全部灵魂发光，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.101.desc.b",
+                "fallback":"其中距离你最近的灵魂效果时长翻倍",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71101
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"spectral_arrow"
+        }
+    }
+]

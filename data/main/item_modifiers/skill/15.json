@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.skill.105\",\"fallback\":\"残影迷踪\",\"italic\":false,\"color\":\"red\"}',Lore:['[{\"text\":\"⏲ 75s  ▶ 15s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.skill.105.desc.a\",\"fallback\":\"移速 +140% 且隐身，但在此期间\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.105.desc.b\",\"fallback\":\"你无法进行攻击；结束时视为对周\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.105.desc.c\",\"fallback\":\"围 2 格内的所有灵魂发动斩击\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:71105}"
-}

@@ -1,0 +1,23 @@
+{
+    "display":{
+        "icon":{
+            "id":"creeper_banner_pattern"
+        },
+        "title":{
+            "translate":"ms.adv.general",
+            "fallback":"历程"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "background":"block/chiseled_quartz_block"
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

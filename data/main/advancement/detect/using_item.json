@@ -1,0 +1,10 @@
+{
+    "criteria":{
+        "consume":{
+            "trigger":"using_item"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/player/using"
+    }
+}

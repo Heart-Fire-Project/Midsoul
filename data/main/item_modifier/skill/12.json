@@ -1,0 +1,63 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.102",
+            "fallback":"灵力掌控",
+            "color":"red",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 60  ⌚ 12 > ",
+                    "color":"red",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.kill",
+                    "fallback":"杀戮"
+                }
+            ],
+            {
+                "translate":"ms.skill.102.desc.a",
+                "fallback":"获得伤害加成且造成的伤害 +6；",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.102.desc.b",
+                "fallback":"标记最近的灵魂令其沉默 6 秒并持续发射粒子追踪其位置",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.102.desc.sub",
+                "fallback":"追踪粒子仅你可见",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71102
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"resin_clump"
+        }
+    }
+]

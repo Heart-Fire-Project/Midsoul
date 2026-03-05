@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.005\",\"fallback\":\"蹑手蹑脚\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.005.desc.a\",\"fallback\":\"蹲下时不作为守卫者气息探测目标\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72005}"
-}

@@ -1,0 +1,46 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.005",
+            "fallback":"蹑手蹑脚",
+            "color":"aqua",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
+                }
+            ],
+            {
+                "translate":"ms.talent.005.desc",
+                "fallback":"潜行速度提升至 200%%；潜行时不作为气息探测目标",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72005
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"feather"
+        }
+    }
+]

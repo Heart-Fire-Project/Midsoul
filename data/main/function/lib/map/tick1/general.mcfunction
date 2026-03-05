@@ -1,0 +1,1 @@
+execute if score $map data matches 4 as @a[tag=game_player] at @s if block ~ ~-1 ~ gray_concrete run effect give @s[y=58,dy=1] speed 1 1 true

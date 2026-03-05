@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/mechanic/2",
+    "display":{
+        "icon":{
+            "id":"cyan_dye"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.3-3",
+                "fallback":"灵气"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.3-3.desc",
+                "fallback":"灵气机制会随收集进度或游戏形势触发；当前的灵气等级在计量条上有所体现。前者会帮助玩家找到剩余碎片，后者则会推进游戏。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/mechanic/3"
+    }
+}

@@ -1,0 +1,1 @@
+tellraw @a [{text:"» ",color:"red",bold:true},{translate:"ms.info.dead.000",fallback:"%s 已消亡！",bold:false,with:[{selector:"@s"}]}]

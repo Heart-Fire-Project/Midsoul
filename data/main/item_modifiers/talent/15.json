@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.105\",\"fallback\":\"舍近求远\",\"italic\":false,\"color\":\"gold\"}',Lore:['[{\"text\":\"⏲ 60s  ▶ 5s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.talent.105.desc.a\",\"fallback\":\"高亮距离你最远的灵魂\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72105}"
-}

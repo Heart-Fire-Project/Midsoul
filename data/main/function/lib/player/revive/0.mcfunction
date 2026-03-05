@@ -1,0 +1,1 @@
+tellraw @a [{text:"» ",color:"green",bold:true},{translate:"ms.info.revive.000",fallback:"%s 已复活！",bold:false,with:[{selector:"@s"}]}]

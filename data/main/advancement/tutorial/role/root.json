@@ -1,0 +1,23 @@
+{
+    "parent":"main:tutorial/root",
+    "display":{
+        "icon":{
+            "id":"copper_golem_statue"
+        },
+        "title":{
+            "translate":"ms.tutorial.0",
+            "fallback":"对局阵营"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

@@ -1,0 +1,2 @@
+# 管理员提示
+tellraw @s ["\n",{text:"» ",color:"light_purple",bold:true},{translate:"ms.info.1.admin",fallback:"是否加入游戏？",color:"light_purple"}," ",{translate:"ms.info.1.admin.t",fallback:"[加入]",color:"green","click_event":{action:"run_command",command:"trigger detect.interact set 5000"}}," ",{translate:"ms.info.1.admin.f",fallback:"[取消]",color:"red","click_event":{action:"run_command",command:"trigger detect.interact set 5001"}}]

@@ -1,0 +1,33 @@
+{
+    "display":{
+        "icon":{
+            "id":"player_head",
+            "components":{
+                "profile":{
+                    "properties":[
+                        {
+                            "name":"textures",
+                            "value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDhhYTJmOWJmZmQ4ODUzNjQ2YzEzNzVkM2RlNzFiODE4N2JkNDI2MzMyZDlmOWQ3MTIyMTZmN2U5MmE5MzBkIn19fQ=="
+                        }
+                    ]
+                }
+            }
+        },
+        "title":{
+            "translate":"ms.adv.extra.root",
+            "fallback":"装饰品"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false,
+        "background":"block/deepslate_tiles"
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

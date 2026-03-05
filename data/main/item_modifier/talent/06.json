@@ -1,0 +1,52 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.006",
+            "fallback":"碎片注入",
+            "color":"aqua",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.heal",
+                    "fallback":"救助"
+                }
+            ],
+            {
+                "translate":"ms.talent.006.desc.a",
+                "fallback":"收集到灵魂碎片时，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.006.desc.b",
+                "fallback":"所有垂死灵魂的垂死状态持续时间 +8 秒",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72006
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"prismarine_crystals"
+        }
+    }
+]

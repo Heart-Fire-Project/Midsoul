@@ -1,0 +1,52 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.001",
+            "fallback":"全神贯注",
+            "color":"aqua",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 50 > ",
+                    "color":"aqua",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.collect",
+                    "fallback":"收集"
+                }
+            ],
+            {
+                "translate":"ms.talent.001.desc",
+                "fallback":"碎片收集速度 +25%%",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.001.desc.sub",
+                "fallback":"持续时间无限，收集中断时重置",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72001
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"glow_ink_sac"
+        }
+    }
+]

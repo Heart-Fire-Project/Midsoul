@@ -1,0 +1,41 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.setting.interact_hint",
+            "fallback":"交互提示",
+            "color":"red",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            {
+                "translate":"ms.setting.disable",
+                "fallback":"✧ 已关闭",
+                "color":"red",
+                "italic":false
+            },
+            {
+                "translate":"ms.setting.interact_hint.desc",
+                "fallback":"在可进行交互时显示提示",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":74020
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"structure_void"
+        }
+    }
+]

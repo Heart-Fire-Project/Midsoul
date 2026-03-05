@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/role/root",
+    "display":{
+        "icon":{
+            "id":"soul_campfire"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.0-1",
+                "fallback":"灵魂"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.0-1.desc",
+                "fallback":"作为灵魂，你的目标是收集散落的碎片，开启传送门，然后成功复活。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/role/1"
+    }
+}

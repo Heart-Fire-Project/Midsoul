@@ -1,0 +1,23 @@
+{
+    "parent":"main:general/root",
+    "display":{
+        "icon":{
+            "id":"golden_sword"
+        },
+        "title":{
+            "translate":"ms.adv.kill",
+            "fallback":"处决"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

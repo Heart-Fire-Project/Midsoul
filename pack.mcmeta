@@ -1,1 +1,1 @@
-{"pack":{"pack_format":26,"description":"午夜灵魂\nMidnight Soul\nVer 1.0.1"},"filter":{"block":[{"namespace":"minecraft","path":"recipes/.*"},{"namespace":"minecraft","path":"advancements/.*"}]}}
+{"pack":{"min_format":94,"max_format":94,"description":[{"translate":"ms.datapack","fallback":"午夜灵魂数据包","color":"#7367F0"}]},"filter":{"block":[{"namespace":"minecraft","path":"recipe/.*"},{"namespace":"minecraft","path":"advancement/.*"}]}}

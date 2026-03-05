@@ -1,0 +1,36 @@
+{
+    "parent":"main:extra/text/root",
+    "display":{
+        "icon":{
+            "id":"soul_campfire"
+        },
+        "title":[
+            {
+                "translate":"ms.text.0",
+                "fallback":"趋光"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.init",
+                "fallback":"· 开始游戏",
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.text.0.desc",
+                "fallback":"遵循你的本能。",
+                "color":"gray",
+                "italic":true
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "free":{
+            "trigger":"location"
+        }
+    }
+}

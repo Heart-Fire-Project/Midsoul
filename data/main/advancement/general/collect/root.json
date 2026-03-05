@@ -1,0 +1,23 @@
+{
+    "parent":"main:general/root",
+    "display":{
+        "icon":{
+            "id":"prismarine_shard"
+        },
+        "title":{
+            "translate":"ms.adv.collect",
+            "fallback":"捡拾"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

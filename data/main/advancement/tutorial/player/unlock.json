@@ -1,0 +1,8 @@
+{
+    "parent":"main:tutorial/player/5",
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/player/1",
+    "display":{
+        "icon":{
+            "id":"redstone"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.2-2",
+                "fallback":"出击/擦刀"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.2-2.desc",
+                "fallback":"只要你的出击击中了目标，无论是否造成伤害你都会进入 7 秒的擦刀状态。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/player/2"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "parent":"main:tutorial/role/2",
+    "display":{
+        "icon":{
+            "id":"light_gray_dye"
+        },
+        "title":[
+            {
+                "translate":"ms.tutorial.0-3",
+                "fallback":"旁观者"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.tutorial.0-3.desc",
+                "fallback":"作为旁观者，按下 1~9 可以便捷地旁观各位玩家，尽量不要报点哦。",
+                "color":"white"
+            }
+        ],
+        "frame":"task",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "tutorial":{
+            "trigger":"impossible"
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/tutorial/role/3"
+    }
+}

@@ -1,0 +1,88 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.004",
+            "fallback":"铤而走险",
+            "color":"#5599FF",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 70  ⌚ 6 > ",
+                    "color":"#5599FF",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
+            {
+                "translate":"ms.skill.004.desc.a",
+                "fallback":"若距离守卫者 20 格以内，则",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.004.desc.b",
+                "fallback":"+ 自身移速 +140%% 且使 8 格内的守卫者无法攻击",
+                "color":"green",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.004.desc.c",
+                "fallback":"- 或自身移速 -60%%",
+                "color":"red",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.004.desc.d",
+                "fallback":"若距离守卫者 20 格以外，则",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.004.desc.e",
+                "fallback":"+ 使最近的守卫者发光且移速 -60%%",
+                "color":"green",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.004.desc.f",
+                "fallback":"- 或自身传送至最近的守卫者附近并移速 -90%%",
+                "color":"red",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.004.desc.sub.a",
+                "fallback":"触发上述负面效果的概率初始为 5%%，",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.004.desc.sub.b",
+                "fallback":"但每次使用该技能都会 +7%%，至多提升至 40%%",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71004
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"dragon_breath"
+        }
+    }
+]

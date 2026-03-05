@@ -1,0 +1,3 @@
+# 以后会有更多模式，更多状态的吧……
+
+execute if data storage ms:mode {logic:"1"} as @s[team=guardian] at @s run function main:state/3/player/guardian/strike

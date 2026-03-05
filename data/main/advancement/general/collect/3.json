@@ -1,0 +1,63 @@
+{
+    "parent":"main:general/collect/2",
+    "display":{
+        "icon":{
+            "id":"sculk_sensor"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.collect.3",
+                "fallback":"200 More Miles"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.collect",
+                "fallback":"· 累计收集 %s 个碎片",
+                "with":[
+                    "200"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.collect.3.desc",
+                "fallback":"碎影为伴",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点 +%s",
+                "with":[
+                    "10"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"task",
+        "announce_to_chat":true
+    },
+    "criteria":{
+        "collect_single":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "stat.collect":{
+                                "min":200
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/prize/10"
+    }
+}

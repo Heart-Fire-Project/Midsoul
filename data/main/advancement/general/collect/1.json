@@ -1,0 +1,63 @@
+{
+    "parent":"main:general/collect/root",
+    "display":{
+        "icon":{
+            "id":"disc_fragment_5"
+        },
+        "title":[
+            {
+                "translate":"ms.adv.collect.1",
+                "fallback":"40oz. to Freedom"
+            }
+        ],
+        "description":[
+            {
+                "translate":"ms.goal.collect",
+                "fallback":"· 累计收集 %s 个碎片",
+                "with":[
+                    "40"
+                ],
+                "color":"white"
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.collect.1.desc",
+                "fallback":"微光初绽",
+                "color":"gray",
+                "italic":true
+            },
+            "\n\n",
+            {
+                "translate":"ms.adv.pts",
+                "fallback":"💠 进度点 +%s",
+                "with":[
+                    "5"
+                ],
+                "color":"aqua"
+            }
+        ],
+        "frame":"task",
+        "announce_to_chat":true
+    },
+    "criteria":{
+        "collect_single":{
+            "trigger":"location",
+            "conditions":{
+                "player":[
+                    {
+                        "scores":{
+                            "stat.collect":{
+                                "min":40
+                            }
+                        },
+                        "condition":"entity_scores",
+                        "entity":"this"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "function":"main:lib/advancement/prize/5"
+    }
+}

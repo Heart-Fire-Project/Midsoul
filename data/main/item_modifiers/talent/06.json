@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.talent.006\",\"fallback\":\"碎片注入\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"translate\":\"ms.talent.006.desc.a\",\"fallback\":\"收集到灵魂碎片时，延长所有处于垂死\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.talent.006.desc.b\",\"fallback\":\"状态的灵魂 5 秒倒计时\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:72006}"
-}

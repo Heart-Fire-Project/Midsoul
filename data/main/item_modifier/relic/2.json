@@ -1,0 +1,46 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.relic.2",
+            "fallback":"共鸣引力",
+            "color":"#33FFAA",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"#33FFAA",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.collect",
+                    "fallback":"收集"
+                }
+            ],
+            {
+                "translate":"ms.relic.2.desc",
+                "fallback":"生成一个灵魂碎片并聚集半径 12 格内的灵魂碎片",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":73002
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"prismarine_shard"
+        }
+    }
+]

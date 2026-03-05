@@ -1,0 +1,41 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.setting.echo_info",
+            "fallback":"回响提示",
+            "color":"red",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            {
+                "translate":"ms.setting.disable",
+                "fallback":"✧ 已关闭",
+                "color":"red",
+                "italic":false
+            },
+            {
+                "translate":"ms.setting.echo_info.desc",
+                "fallback":"周期性提示回响效果",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":74050
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"chorus_plant"
+        }
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "parent":"main:extra/root",
+    "display":{
+        "icon":{
+            "id":"golden_helmet"
+        },
+        "title":{
+            "translate":"ms.headset",
+            "fallback":"饰品装配"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

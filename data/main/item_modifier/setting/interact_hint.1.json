@@ -1,0 +1,42 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.setting.interact_hint",
+            "fallback":"交互提示",
+            "color":"green",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            {
+                "translate":"ms.setting.enable",
+                "fallback":"✦ 已启用",
+                "color":"green",
+                "italic":false
+            },
+            {
+                "translate":"ms.setting.interact_hint.desc",
+                "fallback":"在可进行交互时显示提示",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":74021
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "enchantment_glint_override":true,
+            "item_model":"echo_shard"
+        }
+    }
+]

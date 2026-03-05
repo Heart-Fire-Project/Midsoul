@@ -1,0 +1,52 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.007",
+            "fallback":"灵气感知",
+            "color":"aqua",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.collect",
+                    "fallback":"收集"
+                }
+            ],
+            {
+                "translate":"ms.talent.007.desc",
+                "fallback":"交互速度 +5%%；灵气等级每提升 1 级额外 +5%%",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.007.desc.sub",
+                "fallback":"至多提升至 +20%%",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72007
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"cyan_dye"
+        }
+    }
+]

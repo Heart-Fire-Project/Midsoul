@@ -1,0 +1,23 @@
+{
+    "parent":"main:extra/root",
+    "display":{
+        "icon":{
+            "id":"mace"
+        },
+        "title":{
+            "translate":"ms.weapon",
+            "fallback":"武器样式"
+        },
+        "description":[
+            ""
+        ],
+        "frame":"goal",
+        "show_toast":false,
+        "announce_to_chat":false
+    },
+    "criteria":{
+        "unlock":{
+            "trigger":"location"
+        }
+    }
+}

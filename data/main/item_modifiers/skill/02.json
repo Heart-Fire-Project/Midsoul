@@ -1,4 +1,0 @@
-{
-    "function":"set_nbt",
-    "tag":"{display:{Name:'{\"translate\":\"ms.skill.002\",\"fallback\":\"灵灯之筑\",\"italic\":false,\"color\":\"#5599FF\"}',Lore:['[{\"text\":\"⏲ 75s  ▶ 15s\",\"italic\":false,\"color\":\"#7367F0\"}]','{\"translate\":\"ms.skill.002.desc.a\",\"fallback\":\"持续高亮且移速 -60%；结束后使一\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.002.desc.b\",\"fallback\":\"个灵魂脱离垂死状态，若无则使守卫者\",\"italic\":false,\"color\":\"white\"}','{\"translate\":\"ms.skill.002.desc.c\",\"fallback\":\"持续高亮且移速 -75%\",\"italic\":false,\"color\":\"white\"}']},HideFlags:63,CustomModelData:71002}"
-}

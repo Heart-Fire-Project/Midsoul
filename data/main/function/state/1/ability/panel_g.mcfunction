@@ -1,0 +1,79 @@
+tellraw @s ""
+
+# 技能
+execute if data storage ms:ability {0:true} run tellraw @s [{translate:"ms.skill_0",fallback:"技能",color:"red"}," »"]
+execute if score @s skill matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[skill-0,ability_entity]}
+execute unless score @s skill matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[skill-0,ability_entity]}
+execute if score @s skill matches 1 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.skill.101",fallback:"虔诚力场"},{text:"]"}],Tags:[skill-1,ability_entity]}
+execute unless score @s skill matches 1 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.skill.101",fallback:"虔诚力场"},{text:"]"}],Tags:[skill-1,ability_entity]}
+execute if score @s skill matches 2 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.skill.102",fallback:"灵力掌控"},{text:"]"}],Tags:[skill-2,ability_entity]}
+execute unless score @s skill matches 2 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.skill.102",fallback:"灵力掌控"},{text:"]"}],Tags:[skill-2,ability_entity]}
+execute if score @s skill matches 3 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.skill.103",fallback:"唤灵留迹"},{text:"]"}],Tags:[skill-3,ability_entity]}
+execute unless score @s skill matches 3 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.skill.103",fallback:"唤灵留迹"},{text:"]"}],Tags:[skill-3,ability_entity]}
+execute if score @s skill matches 4 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.skill.104",fallback:"恶灵诅咒"},{text:"]"}],Tags:[skill-4,ability_entity]}
+execute unless score @s skill matches 4 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.skill.104",fallback:"恶灵诅咒"},{text:"]"}],Tags:[skill-4,ability_entity]}
+execute if score @s skill matches 5 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"red"},{translate:"ms.skill.105",fallback:"雾影阴霾"},{text:"]"}],Tags:[skill-5,ability_entity]}
+execute unless score @s skill matches 5 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.skill.105",fallback:"雾影阴霾"},{text:"]"}],Tags:[skill-5,ability_entity]}
+execute if data storage ms:ability {0:true} run tellraw @s ["",{selector:"@e[tag=skill-0]","click_event":{action:"run_command",command:"trigger detect.interact set 5100"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=skill-1]","click_event":{action:"run_command",command:"trigger detect.interact set 5101"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=skill-2]","click_event":{action:"run_command",command:"trigger detect.interact set 5102"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=skill-3]","click_event":{action:"run_command",command:"trigger detect.interact set 5103"},"hover_event":{action:"show_text",value:""}}]
+execute if data storage ms:ability {0:true} run tellraw @s ["",{selector:"@e[tag=skill-4]","click_event":{action:"run_command",command:"trigger detect.interact set 5104"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=skill-5]","click_event":{action:"run_command",command:"trigger detect.interact set 5105"},"hover_event":{action:"show_text",value:""}}]
+
+# 一天赋
+execute if data storage ms:ability {1:true} run tellraw @s [{translate:"ms.talent_1",fallback:"一天赋",color:"gold"}," »"]
+execute if score @s talent_1 matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[talent_1-0,ability_entity]}
+execute unless score @s talent_1 matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[talent_1-0,ability_entity]}
+execute if score @s talent_1 matches 1 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.101",fallback:"抱火寝薪"},{text:"]"}],Tags:[talent_1-1,ability_entity]}
+execute unless score @s talent_1 matches 1 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.101",fallback:"抱火寝薪"},{text:"]"}],Tags:[talent_1-1,ability_entity]}
+execute if score @s talent_2 matches 1 run data merge entity @e[tag=talent_1-1,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.101",fallback:"抱火寝薪"},{text:"]"}]}
+execute if score @s talent_1 matches 2 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.102",fallback:"火冒三丈"},{text:"]"}],Tags:[talent_1-2,ability_entity]}
+execute unless score @s talent_1 matches 2 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.102",fallback:"火冒三丈"},{text:"]"}],Tags:[talent_1-2,ability_entity]}
+execute if score @s talent_2 matches 2 run data merge entity @e[tag=talent_1-2,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.102",fallback:"火冒三丈"},{text:"]"}]}
+execute if score @s talent_1 matches 3 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.103",fallback:"祛灵十字"},{text:"]"}],Tags:[talent_1-3,ability_entity]}
+execute unless score @s talent_1 matches 3 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.103",fallback:"祛灵十字"},{text:"]"}],Tags:[talent_1-3,ability_entity]}
+execute if score @s talent_2 matches 3 run data merge entity @e[tag=talent_1-3,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.103",fallback:"祛灵十字"},{text:"]"}]}
+execute if score @s talent_1 matches 4 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.104",fallback:"隐于迷雾"},{text:"]"}],Tags:[talent_1-4,ability_entity]}
+execute unless score @s talent_1 matches 4 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.104",fallback:"隐于迷雾"},{text:"]"}],Tags:[talent_1-4,ability_entity]}
+execute if score @s talent_2 matches 4 run data merge entity @e[tag=talent_1-4,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.104",fallback:"隐于迷雾"},{text:"]"}]}
+execute if score @s talent_1 matches 5 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.105",fallback:"舍近求远"},{text:"]"}],Tags:[talent_1-5,ability_entity]}
+execute unless score @s talent_1 matches 5 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.105",fallback:"舍近求远"},{text:"]"}],Tags:[talent_1-5,ability_entity]}
+execute if score @s talent_2 matches 5 run data merge entity @e[tag=talent_1-5,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.105",fallback:"舍近求远"},{text:"]"}]}
+execute if score @s talent_1 matches 6 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.106",fallback:"共振感应"},{text:"]"}],Tags:[talent_1-6,ability_entity]}
+execute unless score @s talent_1 matches 6 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.106",fallback:"共振感应"},{text:"]"}],Tags:[talent_1-6,ability_entity]}
+execute if score @s talent_2 matches 6 run data merge entity @e[tag=talent_1-6,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.106",fallback:"共振感应"},{text:"]"}]}
+execute if score @s talent_1 matches 7 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.107",fallback:"碎片侵蚀"},{text:"]"}],Tags:[talent_1-7,ability_entity]}
+execute unless score @s talent_1 matches 7 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.107",fallback:"碎片侵蚀"},{text:"]"}],Tags:[talent_1-7,ability_entity]}
+execute if score @s talent_2 matches 7 run data merge entity @e[tag=talent_1-7,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.107",fallback:"碎片侵蚀"},{text:"]"}]}
+execute if data storage ms:ability {1:true} run tellraw @s ["",{selector:"@e[tag=talent_1-0]",click_event:{action:"run_command",command:"trigger detect.interact set 5200"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_1-1]",click_event:{action:"run_command",command:"trigger detect.interact set 5201"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_1-2]",click_event:{action:"run_command",command:"trigger detect.interact set 5202"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_1-3]",click_event:{action:"run_command",command:"trigger detect.interact set 5203"},"hover_event":{action:"show_text",value:""}}]
+execute if data storage ms:ability {1:true} run tellraw @s ["",{selector:"@e[tag=talent_1-4]","click_event":{action:"run_command",command:"trigger detect.interact set 5204"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_1-5]","click_event":{action:"run_command",command:"trigger detect.interact set 5205"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_1-6]","click_event":{action:"run_command",command:"trigger detect.interact set 5206"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_1-7]","click_event":{action:"run_command",command:"trigger detect.interact set 5207"},"hover_event":{action:"show_text",value:""}}]
+
+# 二天赋
+execute if data storage ms:ability {2:true} run tellraw @s [{translate:"ms.talent_2",fallback:"二天赋",color:"gold"}," »"]
+execute if score @s talent_2 matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[talent_2-0,ability_entity]}
+execute unless score @s talent_2 matches 0 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.ability.random",fallback:"随机选择"},{text:"]"}],Tags:[talent_2-0,ability_entity]}
+execute if score @s talent_2 matches 1 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.101",fallback:"抱火寝薪"},{text:"]"}],Tags:[talent_2-1,ability_entity]}
+execute unless score @s talent_2 matches 1 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.101",fallback:"抱火寝薪"},{text:"]"}],Tags:[talent_2-1,ability_entity]}
+execute if score @s talent_1 matches 1 run data merge entity @e[tag=talent_2-1,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.101",fallback:"抱火寝薪"},{text:"]"}]}
+execute if score @s talent_2 matches 2 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.102",fallback:"火冒三丈"},{text:"]"}],Tags:[talent_2-2,ability_entity]}
+execute unless score @s talent_2 matches 2 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.102",fallback:"火冒三丈"},{text:"]"}],Tags:[talent_2-2,ability_entity]}
+execute if score @s talent_1 matches 2 run data merge entity @e[tag=talent_2-2,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.102",fallback:"火冒三丈"},{text:"]"}]}
+execute if score @s talent_2 matches 3 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.103",fallback:"祛灵十字"},{text:"]"}],Tags:[talent_2-3,ability_entity]}
+execute unless score @s talent_2 matches 3 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.103",fallback:"祛灵十字"},{text:"]"}],Tags:[talent_2-3,ability_entity]}
+execute if score @s talent_1 matches 3 run data merge entity @e[tag=talent_2-3,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.103",fallback:"祛灵十字"},{text:"]"}]}
+execute if score @s talent_2 matches 4 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.104",fallback:"隐于迷雾"},{text:"]"}],Tags:[talent_2-4,ability_entity]}
+execute unless score @s talent_2 matches 4 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.104",fallback:"隐于迷雾"},{text:"]"}],Tags:[talent_2-4,ability_entity]}
+execute if score @s talent_1 matches 4 run data merge entity @e[tag=talent_2-4,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.104",fallback:"隐于迷雾"},{text:"]"}]}
+execute if score @s talent_2 matches 5 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.105",fallback:"舍近求远"},{text:"]"}],Tags:[talent_2-5,ability_entity]}
+execute unless score @s talent_2 matches 5 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.105",fallback:"舍近求远"},{text:"]"}],Tags:[talent_2-5,ability_entity]}
+execute if score @s talent_1 matches 5 run data merge entity @e[tag=talent_2-5,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.105",fallback:"舍近求远"},{text:"]"}]}
+execute if score @s talent_2 matches 6 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.106",fallback:"共振感应"},{text:"]"}],Tags:[talent_2-6,ability_entity]}
+execute unless score @s talent_2 matches 6 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.106",fallback:"共振感应"},{text:"]"}],Tags:[talent_2-6,ability_entity]}
+execute if score @s talent_1 matches 6 run data merge entity @e[tag=talent_2-6,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.106",fallback:"共振感应"},{text:"]"}]}
+execute if score @s talent_2 matches 7 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gold"},{translate:"ms.talent.107",fallback:"碎片侵蚀"},{text:"]"}],Tags:[talent_2-7,ability_entity]}
+execute unless score @s talent_2 matches 7 run summon marker ~ ~ ~ {CustomName:[{text:"[",color:"gray"},{translate:"ms.talent.107",fallback:"碎片侵蚀"},{text:"]"}],Tags:[talent_2-7,ability_entity]}
+execute if score @s talent_1 matches 7 run data merge entity @e[tag=talent_2-7,limit=1] {CustomName:[{text:"[",color:"dark_gray"},{translate:"ms.talent.107",fallback:"碎片侵蚀"},{text:"]"}]}
+execute if data storage ms:ability {2:true} run tellraw @s ["",{selector:"@e[tag=talent_2-0]",click_event:{action:"run_command",command:"trigger detect.interact set 5300"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_2-1]",click_event:{action:"run_command",command:"trigger detect.interact set 5301"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_2-2]",click_event:{action:"run_command",command:"trigger detect.interact set 5302"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_2-3]",click_event:{action:"run_command",command:"trigger detect.interact set 5303"},"hover_event":{action:"show_text",value:""}}]
+execute if data storage ms:ability {2:true} run tellraw @s ["",{selector:"@e[tag=talent_2-4]","click_event":{action:"run_command",command:"trigger detect.interact set 5304"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_2-5]","click_event":{action:"run_command",command:"trigger detect.interact set 5305"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_2-6]","click_event":{action:"run_command",command:"trigger detect.interact set 5306"},"hover_event":{action:"show_text",value:""}}," ",{selector:"@e[tag=talent_2-7]","click_event":{action:"run_command",command:"trigger detect.interact set 5307"},"hover_event":{action:"show_text",value:""}}]
+
+execute unless score @s detect.interact matches 5400 run tellraw @s [{text:"» ",color:"yellow",bold:true},{translate:"ms.ability.check",fallback:"点此以确认并结束你的能力选择",bold:false,"click_event":{action:"run_command",command:"trigger detect.interact set 5400"}}]
+execute if score @s detect.interact matches 5400 run tellraw @s [{text:"» ",color:"yellow",bold:true},{translate:"ms.ability.confirm",fallback:"再次点击以确认并结束你的能力选择",bold:false,"click_event":{action:"run_command",command:"trigger detect.interact set 5401"}}]
+
+kill @e[tag=ability_entity]
