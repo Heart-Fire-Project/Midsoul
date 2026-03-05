@@ -4,6 +4,9 @@ scoreboard players set $state data 2
 # 地图初始化
 function main:state/2/map_init
 
+# 重置能力
+function main:lib/ability/init
+
 # Bossbar
 bossbar set midsoul:info style notched_12
 bossbar set midsoul:info max 120

@@ -30,9 +30,6 @@ $bossbar set midsoul:info max $(shard_goal)
 $bossbar set midsoul:heed max $(shard_goal)
 $bossbar set midsoul:warn max $(shard_goal)
 
-# 重置能力
-function main:lib/ability/init
-
 # 刷新初始状态
 execute as @a[tag=game_player] run function main:state/3/player/effect
 
@@ -48,8 +45,3 @@ item replace entity @a[tag=game_player] inventory.15 from block 0 -7 0 container
 
 # 去逃避
 execute if score $mode data matches 2 run function main:state/4/enter
-scoreboard players set $guardian temp 0
-execute as @a[team=guardian] run scoreboard players add $guardian temp 1
-execute unless score $guardian_count data = $guardian temp run scoreboard players set $rated_play data 0
-execute unless score $guardian_count data = $guardian temp as @a[team=soul] at @s run function main:state/4/revive
-execute unless score $guardian_count data = $guardian temp run function main:state/99/enter
