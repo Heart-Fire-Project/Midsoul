@@ -1,5 +1,5 @@
 # 判定条件
-tag @a[team=soul,distance=..4,scores={state=0,tick.invincible=0}] add S105
+tag @a[team=soul,distance=..3,scores={state=0,tick.invincible=0}] add S105
 
 # 释放剑气
 execute at @a[tag=S105] run particle sweep_attack ~ ~1 ~ 0 0 0 1 1 force @a

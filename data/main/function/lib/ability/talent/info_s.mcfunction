@@ -17,7 +17,7 @@ $tellraw @s[scores={talent_$(num)=6}] [{text:"> ",color:"aqua"},{translate:"ms.t
 $tellraw @s[scores={talent_$(num)=7}] [{text:"> ",color:"aqua"},{translate:"ms.tag.collect",fallback:"收集"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{translate:"ms.talent.001.desc",fallback:"碎片收集速度 +25%%"},"\n",{translate:"ms.talent.001.desc.sub",fallback:"持续时间无限，收集中断时重置",color:"gray"}]
-$tellraw @s[scores={talent_$(num)=2}] [{translate:"ms.talent.002.desc",fallback:"周围 12 格内有守卫者时，移速 +80%%"}]
+$tellraw @s[scores={talent_$(num)=2}] [{translate:"ms.talent.002.desc",fallback:"距离守卫者 12 格以内时，移速 +80%%"}]
 $tellraw @s[scores={talent_$(num)=3}] [{translate:"ms.talent.003.desc",fallback:"有灵魂处于垂死状态时，移速 +20%%"}]
 $tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent.004.desc",fallback:"已蓄能且生命未满时，在 2 秒内回复 6 血量"},"\n",{translate:"ms.talent.004.desc.sub",fallback:"蓄能初始需要收集 3 碎片，每次蓄能后 +3\n可蓄能 2 次",color:"gray"}]
 $tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.005.desc",fallback:"潜行速度提升至 200%%；潜行时不作为气息探测目标"}]

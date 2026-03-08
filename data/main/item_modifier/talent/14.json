@@ -47,7 +47,7 @@
             },
             {
                 "translate":"ms.talent.104.desc.sub",
-                "fallback":"周围 20 格内有灵魂时结束；攻击到灵魂时重置",
+                "fallback":"距离灵魂 20 格以内时结束；攻击到灵魂时重置",
                 "color":"gray",
                 "italic":false
             }

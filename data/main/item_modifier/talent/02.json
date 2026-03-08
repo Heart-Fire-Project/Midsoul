@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.002.desc",
-                "fallback":"周围 12 格内有守卫者时，移速 +80%%",
+                "fallback":"距离守卫者 12 格以内时，移速 +80%%",
                 "color":"white",
                 "italic":false
             }

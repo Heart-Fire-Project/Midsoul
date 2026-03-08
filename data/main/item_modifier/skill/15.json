@@ -52,7 +52,7 @@
             },
             {
                 "translate":"ms.skill.105.desc.sub.b",
-                "fallback":"对周围 4 格内所有灵魂造成可加成的 10 伤害",
+                "fallback":"对周围 3 格内的灵魂造成可加成的 10 伤害",
                 "color":"gray",
                 "italic":false
             },
