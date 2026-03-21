@@ -1,9 +1,9 @@
 # 强制性引导 | 剩余灵魂数小于等于 2 时失效
-execute if score $echo data matches 1 if score $alive data matches ..2 if score $echo tick.general matches 0.. run function main:lib/echo/01f
+execute if score $echo data matches 1 unless score $echo tick.general matches -1 if score $alive data matches ..2 run function main:lib/echo/01f
 execute if score $echo data matches 1 if score $echo tick.general matches 0 run function main:lib/echo/01
 
-# 天幕降落雷 | 闪电召唤数为碎片生成数的 30%
-execute if score $echo data matches 4 if score $echo tick.general matches 5 store result storage ms:temp num int 1 run data get storage ms:map shard_summon 0.3
+# 天幕降落雷 | 闪电召唤数为碎片生成数的 40%
+execute if score $echo data matches 4 if score $echo tick.general matches 5 store result storage ms:temp num int 1 run data get storage ms:map shard_summon 0.4
 execute if score $echo data matches 4 if score $echo tick.general matches 5 run function main:lib/echo/04a with storage ms:temp
 execute if score $echo data matches 4 if score $echo tick.general matches 0 run function main:lib/echo/04
 

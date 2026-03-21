@@ -1,5 +1,5 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.skill.active",fallback:"技能施放",color:"#5599FF"}," » ",{translate:"ms.skill.004",fallback:"铤而走险"}]
-playsound block.brewing_stand.brew player @a[distance=0.01..]
+playsound block.brewing_stand.brew player @a[distance=0.001..]
 playsound block.brewing_stand.brew player @s 0 1000000 0 120000
 scoreboard players add @s temp.skill 1
 tag @s add skill_on

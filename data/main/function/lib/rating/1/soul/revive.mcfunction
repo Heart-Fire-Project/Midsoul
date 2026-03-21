@@ -2,4 +2,4 @@ tellraw @s[tag=no_hit] [{text:" +200 | ",color:"#8A6EDB"},{translate:"ms.rating.
 tellraw @s[scores={temp.dying=0},tag=!no_hit] [{text:" +180 | ",color:"#8A6EDB"},{translate:"ms.rating.revive.a",fallback:"不屈复活"}]
 tellraw @s[scores={temp.dying=1}] [{text:" +160 | ",color:"#8A6EDB"},{translate:"ms.rating.revive.b",fallback:"成功复活"}]
 tellraw @s[scores={temp.dying=2..}] [{text:" +140 | ",color:"#8A6EDB"},{translate:"ms.rating.revive.b",fallback:"成功复活"}]
-execute unless entity @a[team=soul] if score $soul_revive data matches 1 run tellraw @s [{text:" +40 | ",color:"#8A6EDB"},{translate:"ms.rating.revive.sp",fallback:"最终祈愿"}]
+execute unless entity @a[team=soul,scores={state=0}] if score $soul_revive data matches 1 run tellraw @s [{text:" +40 | ",color:"#8A6EDB"},{translate:"ms.rating.revive.sp",fallback:"最终祈愿"}]

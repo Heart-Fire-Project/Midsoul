@@ -38,7 +38,7 @@ scoreboard players add $status_color tick.general 1
 execute if score $status_color tick.general matches 10.. run scoreboard players set $status_color tick.general -8
 scoreboard players operation $color temp = $status_color tick.general
 execute if score $color temp matches ..-1 run scoreboard players operation $color temp *= #-1 data
-execute as @a unless score @s tick.using matches 1.. run function main:lib/ability/base/status
+execute as @a unless score @s tick.using matches 1.. run function main:lib/action/player/status
 
 # 其他的部分
 execute as @a[team=soul,scores={detect.sleep=1..}] run function main:lib/event/wake_up

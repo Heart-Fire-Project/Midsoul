@@ -5,6 +5,8 @@ scoreboard players set $stat_gametime tick.general 0
 scoreboard players set $echo tick.general -1
 scoreboard players set $echo_info tick.general 10
 scoreboard players set $noguar tick.general 200
+scoreboard players operation $alive data = $soul_count data
+scoreboard players operation $undying data = $soul_count data
 scoreboard players set @a state 0
 scoreboard players set @a relic 0
 scoreboard players reset @a tick.enhance

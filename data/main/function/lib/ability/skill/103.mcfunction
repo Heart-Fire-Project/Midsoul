@@ -1,5 +1,5 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.skill.active",fallback:"技能施放",color:"red"}," » ",{translate:"ms.skill.103",fallback:"唤灵留迹"}]
-playsound block.bell.resonate player @a[distance=0.01..] ~ ~ ~ 1 1.5
+playsound block.bell.resonate player @a[distance=0.001..] ~ ~ ~ 1 1.5
 playsound block.bell.resonate player @s 0 1000000 0 120000 1.5
 particle end_rod ~ ~1 ~ 0.2 0.5 0.2 0.2 64 force @a
 scoreboard players add @s temp.skill 1

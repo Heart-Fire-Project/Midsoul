@@ -11,8 +11,10 @@ scoreboard players set @s leave_game 0
 
 # 重新设置各个 Bossbar
 execute if score $state data matches 0 run bossbar set midsoul:info players @a
-execute if score $state data matches 1 run bossbar set midsoul:info players @a[team=spectator]
+execute if score $state data matches 1 run function main:state/1/bossbar/set_player
 execute if score $state data matches 2 run bossbar set midsoul:info players @a[team=spectator]
+execute if score $state data matches 2 run bossbar set midsoul:2 players @a[team=soul]
+execute if score $state data matches 2 run bossbar set midsoul:3 players @a[team=guardian]
 
 # 守卫者刷新当前状态
 execute if data storage ms:mode {logic:"1"} as @s[team=guardian] run function main:state/3/player/effect

@@ -10,7 +10,7 @@ playsound entity.enderman.teleport player @a[tag=R4s] 0 1000000 0 120000
 execute at @a[tag=R4s] run particle glow_squid_ink ~ ~1 ~ 0.2 0.3 0.2 0.2 128 force @a
 
 # 互！换！位！置！
-playsound entity.enderman.teleport player @a[distance=0.01..,tag=!R4s]
+playsound entity.enderman.teleport player @a[distance=0.001..,tag=!R4s]
 summon marker ~ ~ ~ {Tags:[R4,game_entity]}
 tp @e[tag=R4] @s
 tp @s @a[limit=1,tag=R4s]
