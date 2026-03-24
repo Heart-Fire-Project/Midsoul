@@ -5,8 +5,8 @@ scoreboard players add @s temp.skill 1
 tag @s add skill_on
 
 # 初始化 | 快捷栏动画在持续效果里，粒子效果在判定里
-tag @s remove S004_a
-tag @s remove S004_b
+tag @s remove S004a
+tag @s remove S004b
 
 # 反向跑团判定
 execute store result score $random temp2 run random value 1..100

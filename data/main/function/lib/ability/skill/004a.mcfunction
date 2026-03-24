@@ -11,5 +11,5 @@ effect give @a[tag=S004] slowness 6 3
 tag @a remove S004
 
 # 补充效果
-tag @s add S004_a
+tag @s add S004a
 particle dust_color_transition{from_color:[0.5,0.5,1.0],to_color:[0,1,0],scale:1} ~ ~1.6 ~ 0.3 0.2 0.3 0.1 48 force @a

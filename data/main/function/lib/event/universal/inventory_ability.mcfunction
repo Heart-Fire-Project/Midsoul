@@ -68,5 +68,5 @@ execute if entity @s[team=soul,tag=relic_on] run item modify block 0 -7 0 contai
 
 # 特殊光效处理
 execute if entity @s[team=guardian,scores={skill=5,tick.enhance=1..},tag=skill_on] run item modify block 0 -7 0 container.1 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[team=soul,scores={talent_1=4},tag=T004_s] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
-execute if entity @s[team=soul,scores={talent_2=4},tag=T004_s] run item modify block 0 -7 0 container.8 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[team=soul,scores={talent_1=4},tag=T004s] run item modify block 0 -7 0 container.7 {function:"set_components",components:{enchantment_glint_override:true}}
+execute if entity @s[team=soul,scores={talent_2=4},tag=T004s] run item modify block 0 -7 0 container.8 {function:"set_components",components:{enchantment_glint_override:true}}

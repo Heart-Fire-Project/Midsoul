@@ -56,6 +56,6 @@ tag @a remove talent_1_on
 tag @a remove talent_2_on
 tag @a remove relic_on
 tag @a remove T004
-tag @a remove T004_s
-tag @a remove S004_a
-tag @a remove S004_b
+tag @a remove T004s
+tag @a remove S004a
+tag @a remove S004b

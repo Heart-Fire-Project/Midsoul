@@ -28,6 +28,7 @@ execute at @e[tag=summon_select] run summon block_display ~ ~ ~ {Tags:[game_enti
 team join portal @e[tag=new_purple]
 scoreboard players set @e[tag=new_purple] tick.general 0
 scoreboard players set @e[tag=new_purple] state 0
+execute at @e[tag=new_purple] run particle witch ~ ~0.2 ~ 0.3 0.1 0.3 0.2 12 force @a
 execute at @e[tag=new_purple] run summon text_display ~ ~1.2 ~ {Tags:[game_entity,purple_progress],interpolation_duration:0,billboard:"center",alignment:"center",background:-2134114303,line_width:200,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 scoreboard players set @e[tag=purple_progress] tick.general 0
 scoreboard players set @e[tag=purple_progress] state 0

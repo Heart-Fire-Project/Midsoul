@@ -7,10 +7,10 @@ scoreboard players add @s temp.talent 1
 effect give @s regeneration 2 3
 
 # 消耗一次充能
-tag @s[scores={talent_1=4},tag=!T004_s] remove T004
-tag @s[scores={talent_2=4},tag=!T004_s] remove T004
-tag @s[scores={talent_1=4},tag=T004_s] remove T004_s
-tag @s[scores={talent_2=4},tag=T004_s] remove T004_s
+tag @s[scores={talent_1=4},tag=!T004s] remove T004
+tag @s[scores={talent_2=4},tag=!T004s] remove T004
+tag @s[scores={talent_1=4},tag=T004s] remove T004s
+tag @s[scores={talent_2=4},tag=T004s] remove T004s
 
 # 重置冷却
 scoreboard players set @s[scores={talent_1=4}] tick.talent_1 6000
