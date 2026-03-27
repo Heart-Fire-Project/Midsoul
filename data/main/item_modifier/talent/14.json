@@ -13,15 +13,10 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 90 > ",
+                    "text":"⚡ 75 > ",
                     "color":"gold",
                     "italic":false
                 },
-                {
-                    "translate":"ms.tag.detect",
-                    "fallback":"感知"
-                },
-                "/",
                 {
                     "translate":"ms.tag.kill",
                     "fallback":"杀戮"
@@ -35,19 +30,13 @@
             },
             {
                 "translate":"ms.talent.104.desc.b",
-                "fallback":"生效期间自身隐身，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.104.desc.c",
-                "fallback":"并使周围 40 格内不存在守卫者的灵魂发光",
+                "fallback":"生效期间自身隐身",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.talent.104.desc.sub",
-                "fallback":"距离灵魂 20 格以内时结束；攻击到灵魂时重置",
+                "fallback":"距离灵魂 8 格以内时结束；攻击到灵魂时重置",
                 "color":"gray",
                 "italic":false
             }

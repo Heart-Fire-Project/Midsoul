@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 90 > ",
+                    "text":"⚡ 90  ⌚ 1.2 > ",
                     "color":"#5599FF",
                     "italic":false
                 },
@@ -29,13 +29,19 @@
             ],
             {
                 "translate":"ms.skill.005.desc.a",
-                "fallback":"施放时原地生成一个虚影锚点，",
+                "fallback":"首次施放时原地生成锚点；第二次及之后施放时原地生成阵法，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.005.desc.b",
-                "fallback":"第二次及之后施放时传送至上一个虚影锚点",
+                "fallback":"技能结束时若位于阵法中则原地生成一个锚点并传送至上一锚点，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.005.desc.c",
+                "fallback":"否则本次技能冷却 -70 秒",
                 "color":"white",
                 "italic":false
             },

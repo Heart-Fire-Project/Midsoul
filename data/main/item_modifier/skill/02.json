@@ -20,29 +20,40 @@
                 {
                     "translate":"ms.tag.heal",
                     "fallback":"救助"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
                 }
             ],
             {
                 "translate":"ms.skill.002.desc.a",
-                "fallback":"持续发光且移速 -75%%；技能结束时点亮最近的灵魂之灯，",
+                "fallback":"持续发光且移速 -75%%；",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.b",
-                "fallback":"若无则使最近的守卫者发光 5 秒，",
+                "fallback":"技能结束时消耗一次蓄能以点亮最近的灵魂之灯，",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.c",
+                "fallback":"不满足生效条件时使最近的守卫者发光 5 秒，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.002.desc.d",
                 "fallback":"离其最近的灵魂在 5 秒内移速 +80%%",
                 "color":"white",
                 "italic":false
             },
             {
                 "translate":"ms.skill.002.desc.sub",
-                "fallback":"触发点亮灵魂之灯效果后，当次技能冷却时间 +12 秒",
+                "fallback":"蓄能需要点亮 1 灵魂之灯，本技能效果不会计入；可蓄能 2 次",
                 "color":"gray",
                 "italic":false
             }

@@ -22,6 +22,7 @@ scoreboard players set @a tick.invincible 0
 scoreboard players reset @a detect.die
 scoreboard players set @a[team=soul] detect.die 0
 scoreboard players reset @a detect.kill
+execute as @a[team=soul,scores={detect.sleep=1..}] run function main:lib/event/wake_up
 scoreboard players reset @a detect.sleep
 scoreboard players reset @a detect.drop
 scoreboard players reset @a tick.general

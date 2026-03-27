@@ -18,6 +18,11 @@
                     "italic":false
                 },
                 {
+                    "translate":"ms.tag.teleport",
+                    "fallback":"跃迁"
+                },
+                "/",
+                {
                     "translate":"ms.tag.detect",
                     "fallback":"感知"
                 }
@@ -30,7 +35,7 @@
             },
             {
                 "translate":"ms.skill.103.desc.b",
-                "fallback":"标记最远的灵魂传送至其附近并令其发光 5 秒，",
+                "fallback":"标记较远的灵魂传送至其附近并令其发光 5 秒，",
                 "color":"white",
                 "italic":false
             },
