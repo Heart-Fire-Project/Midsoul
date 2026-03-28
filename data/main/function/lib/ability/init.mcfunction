@@ -11,6 +11,9 @@ scoreboard objectives remove talent.107
 scoreboard objectives add talent.107 dummy "碎片侵蚀 / 污染数"
 scoreboard players set @a[team=guardian,scores={talent_1=7}] talent.107 0
 scoreboard players set @a[team=guardian,scores={talent_2=7}] talent.107 0
+scoreboard objectives remove skill.002
+scoreboard objectives add skill.002 dummy "灵灯熔铸 / 蓄能层数"
+scoreboard players set @a[team=soul,scores={skill=2}] skill.002 1
 scoreboard objectives remove skill.004
 scoreboard objectives add skill.004 dummy "铤而走险 / 负面效果几率"
 scoreboard players set @a[team=soul,scores={skill=4}] skill.004 5
@@ -37,16 +40,16 @@ scoreboard players set @a[team=guardian,scores={skill=2}] tick.skill 120000
 scoreboard players set @a[team=guardian,scores={skill=3}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=4}] tick.skill 120000
 scoreboard players set @a[team=guardian,scores={skill=5}] tick.skill 140000
-scoreboard players set @a[team=soul,scores={talent_1=1}] tick.talent_1 100000
+scoreboard players set @a[team=soul,scores={talent_1=1}] tick.talent_1 060000
 scoreboard players set @a[team=soul,scores={talent_1=2}] tick.talent_1 120000
 scoreboard players set @a[team=soul,scores={talent_1=4}] tick.talent_1 006000
-scoreboard players set @a[team=guardian,scores={talent_1=4}] tick.talent_1 180000
+scoreboard players set @a[team=guardian,scores={talent_1=4}] tick.talent_1 150000
 scoreboard players set @a[team=guardian,scores={talent_1=6}] tick.talent_1 120000
 scoreboard players set @a[team=guardian,scores={talent_1=7}] tick.talent_1 000000
-scoreboard players set @a[team=soul,scores={talent_2=1}] tick.talent_2 100000
+scoreboard players set @a[team=soul,scores={talent_2=1}] tick.talent_2 060000
 scoreboard players set @a[team=soul,scores={talent_2=2}] tick.talent_2 120000
 scoreboard players set @a[team=soul,scores={talent_2=4}] tick.talent_2 006000
-scoreboard players set @a[team=guardian,scores={talent_2=4}] tick.talent_2 180000
+scoreboard players set @a[team=guardian,scores={talent_2=4}] tick.talent_2 150000
 scoreboard players set @a[team=guardian,scores={talent_2=6}] tick.talent_2 120000
 scoreboard players set @a[team=guardian,scores={talent_2=7}] tick.talent_2 000000
 

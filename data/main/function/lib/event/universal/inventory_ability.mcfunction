@@ -19,7 +19,9 @@ item replace block 0 -7 0 container.4 with firework_star
 $execute if entity @s[team=soul] run item modify block 0 -7 0 container.4 main:skill/0$(skill)
 $execute if entity @s[team=guardian] run item modify block 0 -7 0 container.4 main:skill/1$(skill)
 item modify block 0 -7 0 container.4 {function:"set_components",components:{max_stack_size:99}}
+$execute if entity @s[team=soul,scores={skill=2}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S002)}
 $execute if entity @s[team=soul,scores={skill=4}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S004)}
+execute if entity @s[team=soul,scores={skill=2,tick.skill=..0,skill.002=1..}] if entity @e[tag=gold] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"soul_lantern"}}
 execute if entity @s[team=guardian,scores={skill=4,tick.skill=..0}] run item modify block 0 -7 0 container.4 {"function":"set_components","components":{"item_model":"ominous_bottle","consumable":{"animation":"drink","consume_seconds":1.6,"sound":"entity.generic.drink","has_consume_particles":false,"on_consume_effects":[{"type":"play_sound","sound":"item.ominous_bottle.dispose"}]}}}
 execute if entity @s[scores={state=0,tick.skill=1..}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"firework_star"}}
 execute if entity @s[scores={state=1}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"barrier"}}

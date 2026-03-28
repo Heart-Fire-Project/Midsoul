@@ -7,9 +7,9 @@ tag @a[team=guardian,scores={talent_2=1}] add T101
 # 范围选取 - 为保证覆盖越小的范围约靠后
 execute as @a[team=guardian] at @s if entity @a[distance=..24,team=soul,tag=!T005,scores={state=0}] run tag @s add heed
 execute as @a[team=soul] at @s if entity @a[distance=..24,team=guardian,tag=!T101] run tag @s add heed
-execute as @a[team=soul] at @s if entity @a[distance=..16,team=guardian] run tag @s add heed
+execute as @a[team=soul] at @s if entity @a[distance=..14.4,team=guardian] run tag @s add heed
 execute as @a[team=soul] at @s if entity @a[distance=..12,team=guardian,tag=!T101] run tag @s add warn
-execute as @a[team=soul] at @s if entity @a[distance=..8,team=guardian] run tag @s add warn
+execute as @a[team=soul] at @s if entity @a[distance=..7.2,team=guardian] run tag @s add warn
 
 # 设置可见玩家
 bossbar set midsoul:info players @a[tag=!warn,tag=!heed]

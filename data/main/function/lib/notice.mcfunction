@@ -9,5 +9,5 @@ tellraw @s[scores={temp=2}] [{text:"\n",color:"#ff720e"},{text:"» ",bold:true},
 tellraw @s[scores={temp=2}] ["",{translate:"ms.notice.2.1",fallback:"欢迎来到午夜灵魂 2.0：回响纪元！本次更新在升级至新版本的同时还新增了回响机制，此外还有大量的调整和优化……查看完整更新日志来了解更多！"},"\n",{translate:"ms.notice.2.2",fallback:"[查看完整更新日志]",click_event:{action:"open_url",url:"https://github.com/Heart-Fire-Project/Midsoul/blob/main/changelog.md"}}]
 
 # 3 - 官方服务器？
-tellraw @s[scores={temp=3}] [{text:"\n",color:"#6bb2fe"},{text:"» ",bold:true},{translate:"ms.notice.event",fallback:"[活动]"}," ",{translate:"ms.notice.3",fallback:"粒方 · 公众测试"}]
-tellraw @s[scores={temp=3}] ["",{translate:"ms.notice.3.1",fallback:"🔒 当前版本下尚未开放"}]
+tellraw @s[scores={temp=3}] [{text:"\n",color:"#6bb2fe"},{text:"» ",bold:true},{translate:"ms.notice.event",fallback:"[活动]"}," ",{translate:"ms.notice.3",fallback:"常驻服务器"}]
+tellraw @s[scores={temp=3}] ["",{translate:"ms.notice.3.1",fallback:"欢迎加入 %s 来和更多的玩家一起游玩午夜灵魂！",with:[{translate:"ms.notice.3.2",fallback:"[QQ 群聊]",click_event:{action:"open_url",url:"https://qm.qq.com/q/5mzL6rr5V6"}}]}]

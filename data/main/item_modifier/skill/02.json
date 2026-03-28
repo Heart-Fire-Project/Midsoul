@@ -52,8 +52,14 @@
                 "italic":false
             },
             {
-                "translate":"ms.skill.002.desc.sub",
-                "fallback":"蓄能需要点亮 1 灵魂之灯，本技能效果不会计入；可蓄能 2 次",
+                "translate":"ms.skill.002.desc.sub.a",
+                "fallback":"蓄能需要点亮 1 灵魂之灯，以本技能点亮的不计；",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.002.desc.sub.b",
+                "fallback":"可蓄能 2 次，初始蓄能 1 次",
                 "color":"gray",
                 "italic":false
             }
@@ -69,7 +75,7 @@
     {
         "function":"set_components",
         "components":{
-            "item_model":"soul_lantern"
+            "item_model":"lantern"
         }
     }
 ]

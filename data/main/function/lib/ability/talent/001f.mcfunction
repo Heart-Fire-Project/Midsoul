@@ -4,5 +4,5 @@ tag @s[scores={talent_1=1}] remove talent_1_on
 tag @s[scores={talent_2=1}] remove talent_2_on
 
 # 重置冷却
-scoreboard players set @s[scores={talent_1=1}] tick.talent_1 100000
-scoreboard players set @s[scores={talent_2=1}] tick.talent_2 100000
+scoreboard players set @s[scores={talent_1=1}] tick.talent_1 060000
+scoreboard players set @s[scores={talent_2=1}] tick.talent_2 060000

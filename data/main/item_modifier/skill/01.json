@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.skill.001.desc.a",
-                "fallback":"隐身且移速 +100%%；",
+                "fallback":"隐身 5 秒且移速 +100%%；",
                 "color":"white",
                 "italic":false
             },

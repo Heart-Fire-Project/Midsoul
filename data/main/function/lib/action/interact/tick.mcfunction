@@ -4,7 +4,7 @@ execute as @s[scores={talent_1=1},tag=interact_blue,tag=talent_1_on] run functio
 execute as @s[scores={talent_2=1},tag=interact_blue,tag=talent_2_on] run function main:lib/action/interact/modify {value:"25"}
 scoreboard players set $value temp 1
 scoreboard players operation $value temp += $aura_rank data
-execute store result storage ms:temp value int 5 run scoreboard players get $value temp
+execute store result storage ms:temp value int 3 run scoreboard players get $value temp
 execute as @s[team=soul,scores={talent_1=7},tag=interacting] run function main:lib/action/interact/modify with storage ms:temp
 execute as @s[team=soul,scores={talent_2=7},tag=interacting] run function main:lib/action/interact/modify with storage ms:temp
 

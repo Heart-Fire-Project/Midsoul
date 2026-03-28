@@ -8,6 +8,9 @@ playsound entity.evoker.prepare_summon player @a
 scoreboard players add @a[tag=interact_fin] temp.heal 1
 execute as @a[tag=interact_fin,scores={setting.instant_rating=1}] run function main:lib/rating/1/soul/heal
 
+# 判定：点亮灵魂之灯时
+function main:lib/action/interact/gold
+
 # 按照病情进行救治
 scoreboard players set $heal temp 1010000
 execute as @a[team=soul,scores={state=1}] run scoreboard players operation $heal temp < @s tick.general

@@ -20,7 +20,7 @@ execute if score $echo data matches 6 run tellraw @s [{translate:"ms.echo.6.desc
 execute if score $echo data matches 7 run tellraw @s [{translate:"ms.echo.7.desc",fallback:"每过 30~120 秒，所有玩家将在同阵营内随机交换位置"}]
 execute if score $echo data matches 8 run tellraw @s [{translate:"ms.echo.8.desc",fallback:"碎片收集速度 -50%%；进入充能阶段时所有传送门将立即充能至 50%%"}]
 execute if score $echo data matches 9 run tellraw @s [{translate:"ms.echo.9.desc",fallback:"碎片收集需求固定为 9；初始仅会生成极少碎片，收集碎片时生成 1 个碎片"}]
-execute if score $echo data matches 10 run tellraw @s [{translate:"ms.echo.10.desc",fallback:"守卫者进行周期性判定：若距离灵魂 8 格以外则隐身且无法攻击并生成残影；若距离灵魂 8 格以内则发光"},"\n",{translate:"ms.echo.10.desc.sub",fallback:"残影将在下一次判定时自毁，生成时若其周围 24 格内有灵魂则会发光",color:"gray"}]
+execute if score $echo data matches 10 run tellraw @s [{translate:"ms.echo.10.desc",fallback:"守卫者进行周期性判定：若距离灵魂 8 格以外则隐身且无法攻击并生成残影；若距离灵魂 8 格以内则发光"},"\n",{translate:"ms.echo.10.desc.sub",fallback:"残影将在下一次判定时自毁，生成时若其周围 12 格内有灵魂则会发光",color:"gray"}]
 
 # 重设倒计时
 scoreboard players set $echo_info tick.general 75

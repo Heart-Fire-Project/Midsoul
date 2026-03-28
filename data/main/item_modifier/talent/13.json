@@ -24,7 +24,7 @@
             ],
             {
                 "translate":"ms.talent.103.desc",
-                "fallback":"擦刀状态持续时间 -20%%",
+                "fallback":"擦刀状态持续时间 -15%%",
                 "color":"white",
                 "italic":false
             }

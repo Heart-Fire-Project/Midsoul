@@ -1,12 +1,14 @@
 # 平衡性调速判定
 scoreboard players set $balanced_speed state 0
-scoreboard players operation $value temp = $soul_count data
-scoreboard players operation $value temp *= #10 data
-scoreboard players operation $value temp /= $guardian_count data
-execute if score $value temp matches ..29 run scoreboard players set $balanced_speed state 35
-execute if score $value temp matches 30..34 run scoreboard players set $balanced_speed state 20
-execute if score $value temp matches 35..39 run scoreboard players set $balanced_speed state 10
-execute if score $value temp matches 50.. run scoreboard players set $balanced_speed state -20
+scoreboard players operation $valueA temp = $guardian_count data
+scoreboard players operation $valueA temp *= #600 data
+scoreboard players operation $valueB temp = $soul_count data
+scoreboard players remove $valueB temp 1
+scoreboard players operation $valueA temp /= $valueB temp
+execute if score $valueA temp matches ..159 run scoreboard players set $balanced_speed state -20
+execute if score $valueA temp matches 160..179 run scoreboard players set $balanced_speed state -15
+execute if score $valueA temp matches 210..249 run scoreboard players set $balanced_speed state 15
+execute if score $valueA temp matches 250.. run scoreboard players set $balanced_speed state 40
 scoreboard players set $collect_extend state 100
 execute if score $soul_count data matches 5 run scoreboard players set $collect_extend state 88
 execute if score $soul_count data matches 6 run scoreboard players set $collect_extend state 78

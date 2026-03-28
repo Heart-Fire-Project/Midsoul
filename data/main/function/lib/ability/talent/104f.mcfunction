@@ -6,7 +6,7 @@ particle spit ~ ~1 ~ 0.2 0.5 0.2 0.1 48 force @a
 effect clear @s invisibility
 
 # 重置冷却/状态
-scoreboard players set @s[scores={talent_1=4}] tick.talent_1 180000
+scoreboard players set @s[scores={talent_1=4}] tick.talent_1 150000
 tag @s[scores={talent_1=4}] remove talent_1_on
-scoreboard players set @s[scores={talent_2=4}] tick.talent_2 180000
+scoreboard players set @s[scores={talent_2=4}] tick.talent_2 150000
 tag @s[scores={talent_2=4}] remove talent_2_on
