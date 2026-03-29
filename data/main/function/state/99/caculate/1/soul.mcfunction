@@ -29,7 +29,7 @@ execute unless score @s temp.time matches -2147483648..2147483647 run scoreboard
 function base:caculate/time {tick:"@s",source:"temp.time",unit:"sec"}
 scoreboard players operation @s temp = $sec temp2
 scoreboard players operation @s temp /= #2 data
-execute if score @s temp matches 300.. run scoreboard players set @s temp 300
+scoreboard players set @s[scores={temp=301..}] temp 300
 scoreboard players set @s[team=revive] temp 300
 function base:caculate/time {tick:"@s",source:"temp.time",unit:"min"}
 execute if score $sec temp2 matches ..9 run tellraw @s[scores={temp=..9}] [{translate:"ms.rating.survive",fallback:"魂灵不灭",color:"#4B9F5D"}," | +",{text:"00",color:"#486241"},{score:{objective:"temp",name:"@s"}}," (00:0",{score:{objective:"temp2",name:"$sec"}},")"]
@@ -48,6 +48,7 @@ scoreboard players operation @s temp = @s temp.heal
 scoreboard players operation @s temp *= #50 data
 scoreboard players add @s[scores={temp.heal=2..}] temp 30
 scoreboard players add @s[scores={temp.heal=4..}] temp 50
+scoreboard players set @s[scores={temp=481..}] temp 480
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.heal",fallback:"点灯续航",color:"#EEC400"}," | +",{text:"00",color:"#7D623C"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.heal",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.heal",fallback:"点灯续航",color:"#EEC400"}," | +",{text:"0",color:"#7D623C"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.heal",name:"@s"}},"×)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.heal",fallback:"点灯续航",color:"#EEC400"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.heal",name:"@s"}},"×)"]
@@ -60,6 +61,7 @@ scoreboard players operation @s temp *= #2 data
 scoreboard players operation @s temp /= #3 data
 scoreboard players add @s[scores={temp.tie=45..}] temp 20
 scoreboard players add @s[scores={temp.tie=90..}] temp 40
+scoreboard players set @s[scores={temp=181..}] temp 180
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.tie",fallback:"困缚守卫",color:"#F2850D"}," | +",{text:"00",color:"#7F4330"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.tie",name:"@s"}},"s)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.tie",fallback:"困缚守卫",color:"#F2850D"}," | +",{text:"0",color:"#7F4330"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.tie",name:"@s"}},"s)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.tie",fallback:"困缚守卫",color:"#F2850D"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.tie",name:"@s"}},"s)"]

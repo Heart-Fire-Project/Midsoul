@@ -32,6 +32,7 @@ scoreboard players operation @s temp *= #4 data
 scoreboard players operation @s temp /= #5 data
 scoreboard players add @s[scores={temp.track=60..}] temp 32
 scoreboard players add @s[scores={temp.track=150..}] temp 48
+scoreboard players set @s[scores={temp=281..}] temp 280
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.track",fallback:"追灵寻踪",color:"#E6960D"}," | +",{text:"00",color:"#754E09"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.track",name:"@s"}},"s)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.track",fallback:"追灵寻踪",color:"#E6960D"}," | +",{text:"0",color:"#754E09"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.track",name:"@s"}},"s)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.track",fallback:"追灵寻踪",color:"#E6960D"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.track",name:"@s"}},"s)"]
@@ -43,7 +44,7 @@ scoreboard players operation @s temp = @s temp.open
 scoreboard players operation @s temp *= #15 data
 scoreboard players add @s[scores={temp.open=3..}] temp 30
 scoreboard players add @s[scores={temp.open=8..}] temp 60
-execute if score @s temp matches 241.. run scoreboard players set @s temp 240
+scoreboard players set @s[scores={temp=241..}] temp 240
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{text:"00",color:"#75380A"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{text:"0",color:"#75380A"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
 tellraw @s[scores={temp=100..}] [{translate:"ms.rating.open",fallback:"夺宝破法",color:"#DC6912"}," | +",{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp.open",name:"@s"}},"×)"]
