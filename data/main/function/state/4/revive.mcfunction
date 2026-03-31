@@ -8,6 +8,7 @@ execute if score @s extra.text matches 3 run function main:lib/player/revive/3
 execute at @s run particle firework ~ ~0.4 ~ 0.2 0.1 0.2 0.5 256 force @a
 team join revive @s
 gamemode spectator @s
+tag @s remove echo_target
 playsound block.respawn_anchor.set_spawn player @a 0 1000000 0 120000 0.7
 effect clear @s
 

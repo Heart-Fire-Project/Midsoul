@@ -11,7 +11,7 @@ execute if score $echo data matches 8 run tellraw @s [{text:"",color:"light_purp
 execute if score $echo data matches 9 run tellraw @s [{text:"",color:"light_purple"},{translate:"ms.echo",fallback:"回响"}," ❖ ",{translate:"ms.echo.9",fallback:"九次九重片"}]
 execute if score $echo data matches 10 run tellraw @s [{text:"",color:"light_purple"},{translate:"ms.echo",fallback:"回响"}," ❖ ",{translate:"ms.echo.10",fallback:"一瞥惊鸿影"}]
 
-execute if score $echo data matches 1 run tellraw @s [{translate:"ms.echo.1.desc",fallback:"每过 45~80 秒，清除已有标记并随机标记 2~4 个灵魂；被标记的灵魂将持续发光，未被标记的灵魂不会受到伤害但传送门充能速度降低至 20%%"},"\n",{translate:"ms.echo.1.desc.sub",fallback:"对局开始时立刻触发一次，剩余灵魂 <3 人时回响失效",color:"gray"}]
+execute if score $echo data matches 1 run tellraw @s [{translate:"ms.echo.1.desc",fallback:"每过 45~80 秒，清除已有标记并随机标记 2~4 个灵魂；被标记的灵魂将持续发光，未被标记的灵魂不会受到伤害但传送门充能速度降低至 20%%，灵魂垂死流速 +25%%"},"\n",{translate:"ms.echo.1.desc.sub",fallback:"对局开始时立刻触发一次，剩余灵魂 <3 人时回响失效",color:"gray"}]
 execute if score $echo data matches 2 run tellraw @s [{translate:"ms.echo.2.desc",fallback:"碎片收集需求降低 30%%，但有 30%% 的碎片为收集后只会生成一个烟花的假碎片"},"\n",{translate:"ms.echo.2.desc.sub",fallback:"与碎片有关的效果不会选中假碎片",color:"gray"}]
 execute if score $echo data matches 3 run tellraw @s [{translate:"ms.echo.3.desc",fallback:"技能冷却速度 -50%%，但灵魂宝物盒刷新间隔降低至 60s；灵魂打开宝盒时产出无垠时界的概率提升至 60%%，守卫者打开宝盒时 -35s 技能冷却"}]
 execute if score $echo data matches 4 run tellraw @s [{translate:"ms.echo.4.desc",fallback:"游戏天气变为雷雨，每过 20~60 秒降下多处落雷；落雷会造成伤害，击中守卫者时使其强制擦刀"}]

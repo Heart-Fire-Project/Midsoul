@@ -8,6 +8,7 @@ execute if score @s extra.text matches 3 run function main:lib/player/dead/3
 execute run particle sculk_soul ~ ~1 ~ 0.2 0.1 0.2 0.3 512 force @a
 team join dead @s
 gamemode spectator @s
+tag @s remove echo_target
 playsound entity.wither.hurt player @a 0 1000000 0 120000 0.7
 kill @e[tag=gold,limit=1]
 effect clear @s
