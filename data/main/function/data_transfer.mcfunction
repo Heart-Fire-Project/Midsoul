@@ -25,6 +25,7 @@ $scoreboard players operation $(to) stat.level += $(from) stat.level
 $scoreboard players operation $(to) stat.exp += $(from) stat.exp
 $scoreboard players operation $(to) stat.adv += $(from) stat.adv
 $scoreboard players operation $(to) stat.adv_pt += $(from) stat.adv_pt
+$scoreboard players operation $(to) stat.rating > $(from) stat.rating
 $scoreboard players operation $(to) stat.single_record > $(from) stat.single_record
 $scoreboard players operation $(to) stat.rating_record > $(from) stat.rating_record
 $execute unless score $(from) stat.parkour_5 matches ..-1 run scoreboard players operation $(to) stat.parkour_5 < $(from) stat.parkour_5
