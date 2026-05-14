@@ -72,8 +72,8 @@ execute unless score @s temp.charge matches -2147483648..2147483647 run scoreboa
 scoreboard players operation @s temp2 = @s temp.charge
 scoreboard players operation @s temp2 /= #1000 data
 scoreboard players operation @s temp = @s temp2
-scoreboard players add @s[scores={temp2=45..}] temp 20
-scoreboard players add @s[scores={temp2=90..}] temp 30
+scoreboard players add @s[scores={temp2=40..}] temp 20
+scoreboard players add @s[scores={temp2=80..}] temp 30
 scoreboard players set @s[scores={temp=171..}] temp 170
 tellraw @s[scores={temp=..9}] [{translate:"ms.rating.charge",fallback:"注能启门",color:"#DF6EA1"}," | +",{text:"00",color:"#704250"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp2",name:"@s"}},"%)"]
 tellraw @s[scores={temp=10..99}] [{translate:"ms.rating.charge",fallback:"注能启门",color:"#DF6EA1"}," | +",{text:"0",color:"#704250"},{score:{objective:"temp",name:"@s"}}," (",{score:{objective:"temp2",name:"@s"}},"%)"]
