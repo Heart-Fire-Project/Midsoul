@@ -2,7 +2,6 @@
 execute at @s[team=soul,scores={state=0}] run summon marker ~ ~ ~ {Tags:[new_tracker,tracker,game_entity]}
 tp @n[tag=new_tracker] @s
 scoreboard players operation @n[tag=new_tracker] entity_id = @s entity_id
-scoreboard players set @n[tag=new_tracker] tick.general 4
 tag @e remove new_tracker
 
 # 守卫者出现在标记半径四格内，视为正在追逐

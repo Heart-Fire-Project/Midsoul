@@ -30,6 +30,8 @@ execute if score $map data matches 1 run scoreboard players display numberformat
 execute if score $map data matches 2 run scoreboard players display numberformat $map info fixed {translate:"ms.map.2",fallback:"镇灵塔楼",color:"#7367F0"}
 execute if score $map data matches 3 run scoreboard players display numberformat $map info fixed {translate:"ms.map.3",fallback:"山间湖谷",color:"#7367F0"}
 execute if score $map data matches 4 run scoreboard players display numberformat $map info fixed {translate:"ms.map.4",fallback:"心火特区",color:"#7367F0"}
+execute if score $map data matches 5 run scoreboard players display numberformat $map info fixed {translate:"ms.map.5",fallback:"昔居浮屿",color:"#7367F0"}
+execute if score $map data matches 6 run scoreboard players display numberformat $map info fixed {translate:"ms.map.6",fallback:"苏园夜游",color:"#7367F0"}
 
 # 第五日，地图大小
 scoreboard players set $size info 4

@@ -14,12 +14,12 @@ execute if score $4_finale state matches 1 if score $ms temp2 matches ..09 run b
 execute if score $4_finale state matches 1 if score $ms temp2 matches 10.. run bossbar set midsoul:info name [{translate:"ms.bossbar.4.portal",fallback:"传送门 »",color:"#FF77EE"}," ",{score:{objective:"temp2",name:"$sec"},color:"#FF96F9"},{text:".",color:"#FF96F9"},{score:{objective:"temp2",name:"$ms"},color:"#FF96F9"}," ",{translate:"ms.bossbar.4.portal.2",fallback:"« 已开启"}]
 
 # 设置闪烁 - 气息探测失效
-execute if score $4_process tick.general matches 10001 run bossbar set midsoul:info visible false
-execute if score $4_process tick.general matches 10002 run bossbar set midsoul:info visible true
-execute if score $4_process tick.general matches 10003 run bossbar set midsoul:info visible false
-execute if score $4_process tick.general matches 10004 run bossbar set midsoul:info visible true
-execute if score $4_process tick.general matches 10005 run bossbar set midsoul:info visible false
-execute if score $4_process tick.general matches 10006 run bossbar set midsoul:info visible true
+execute if score $4_process tick.general matches 1000001 run bossbar set midsoul:info visible false
+execute if score $4_process tick.general matches 1000002 run bossbar set midsoul:info visible true
+execute if score $4_process tick.general matches 1000003 run bossbar set midsoul:info visible false
+execute if score $4_process tick.general matches 1000004 run bossbar set midsoul:info visible true
+execute if score $4_process tick.general matches 1000005 run bossbar set midsoul:info visible false
+execute if score $4_process tick.general matches 1000006 run bossbar set midsoul:info visible true
 
 # 设置闪烁 - 剩余时间不足
 execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 599 run bossbar set midsoul:info visible false

@@ -56,3 +56,6 @@ execute if score $2_starting tick.general matches 60 run playsound block.note_bl
 execute if score $2_starting tick.general matches 40 run playsound block.note_block.harp player @a 0 1000000 0 120000
 execute if score $2_starting tick.general matches 20 run playsound block.note_block.harp player @a 0 1000000 0 120000
 execute if score $2_starting tick.general matches 0 if data storage ms:mode {logic:"1"} run function main:state/3/enter with storage ms:map
+
+# 即时效果型地图机制生效
+function main:lib/map/tick1/general

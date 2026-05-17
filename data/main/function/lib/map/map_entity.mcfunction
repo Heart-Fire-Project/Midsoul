@@ -28,3 +28,9 @@ summon cat 1989.0 72.5 2082.0 {Tags:[map_entity],CustomName:{translate:"ms.map.4
 summon mannequin 1996.5 79.0 2080.5 {Tags:[map_entity],profile:{name:"1KYR_CN"},Rotation:[-332.0f,-20.0f],attributes:[{id:"scale",base:0.4d}],pose:"crouching",Invulnerable:1b,immovable:1b}
 summon mannequin 1994.5 79.0 2080.5 {Tags:[map_entity],profile:{name:"huanmeng_yc"},Rotation:[-18.0f,0.0f],attributes:[{id:"scale",base:0.5d}],pose:"standing",Invulnerable:1b,immovable:1b}
 summon mannequin 1985.3 78.0 2091.0 {Tags:[map_entity],profile:{name:"Mol1Sama"},Rotation:[-125.0f,-11.0f],pose:"sleeping",Invulnerable:1b,immovable:1b}
+
+# 昔居浮屿
+#summon text_display 2104.5 87.5 -1918.5 {brightness:{block:15,sky:15},Tags:[map_entity],text:"<<<",billboard:"fixed",alignment:"center",background:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0.696f,0.403f,-0.126f,0.581f]}}
+
+# 苏园夜游
+summon mannequin -1805.6 69.0 2183.6 {Tags:[map_entity],profile:{name:"SowingFlyer7716"},Rotation:[49.64f,17.34f],pose:"crouching",Invulnerable:1b,immovable:1b}

@@ -6,8 +6,12 @@ tellraw @s[scores={temp=1}] ["",{translate:"ms.notice.1.1",fallback:"[QQ 群]",c
 
 # 2 - 2.0 更新日志
 tellraw @s[scores={temp=2}] [{text:"\n",color:"#ff720e"},{text:"» ",bold:true},{translate:"ms.notice.major_update",fallback:"[重大更新]"}," ",{translate:"ms.notice.2",fallback:"2.0 💠 回响纪元"}]
-tellraw @s[scores={temp=2}] ["",{translate:"ms.notice.2.1",fallback:"欢迎来到午夜灵魂 2.0：回响纪元！本次更新在升级至新版本的同时还新增了回响机制，此外还有大量的调整和优化……查看完整更新日志来了解更多！"},"\n",{translate:"ms.notice.2.2",fallback:"[查看完整更新日志]",click_event:{action:"open_url",url:"https://github.com/Heart-Fire-Project/Midsoul/blob/main/changelog.md"}}]
+tellraw @s[scores={temp=2}] ["",{translate:"ms.notice.2.1",fallback:"欢迎来到午夜灵魂 2.0：回响纪元！本次更新在升级至新版本的同时还新增了回响机制，此外还有大量的调整和优化……查看完整更新日志来了解更多！"},"\n",{translate:"ms.notice.changelog",fallback:"[查看完整更新日志]",click_event:{action:"open_url",url:"https://github.com/Heart-Fire-Project/Midsoul/blob/main/changelog.md"}}]
 
 # 3 - 官方服务器？
 tellraw @s[scores={temp=3}] [{text:"\n",color:"#6bb2fe"},{text:"» ",bold:true},{translate:"ms.notice.event",fallback:"[活动]"}," ",{translate:"ms.notice.3",fallback:"常驻服务器"}]
 tellraw @s[scores={temp=3}] ["",{translate:"ms.notice.3.1",fallback:"欢迎加入 %s 来和更多的玩家一起游玩午夜灵魂！",with:[{translate:"ms.notice.3.2",fallback:"[QQ 群聊]",click_event:{action:"open_url",url:"https://qm.qq.com/q/5mzL6rr5V6"}}]}]
+
+# 4 - 2.1 更新日志
+tellraw @s[scores={temp=4}] [{text:"\n",color:"#ffc265"},{text:"» ",bold:true},{translate:"ms.notice.regular_update",fallback:"[常态更新]"}," ",{translate:"ms.notice.4",fallback:"2.1 💠 觅于湖屿间"}]
+tellraw @s[scores={temp=4}] ["",{translate:"ms.notice.4.1",fallback:"这里是午夜灵魂 2.1 版本：觅于湖屿间！在新地图中上天入“水”吧！"},"\n",{translate:"ms.notice.changelog",fallback:"[查看完整更新日志]",click_event:{action:"open_url",url:"https://github.com/Heart-Fire-Project/Midsoul/blob/main/changelog.md"}}]

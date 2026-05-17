@@ -4,6 +4,20 @@ execute if score $map data matches 2 run fill 1049 41 -999 1053 41 -995 red_cand
 execute if score $map data matches 3 run fill -870 20 1100 -868 20 1098 obsidian replace crying_obsidian
 execute if score $map data matches 4 run fill 1980 80 2101 2000 80 2101 air
 execute if score $map data matches 4 run fill 2002 80 2101 2005 80 2101 air
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 white_stained_glass replace light_blue_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 white_stained_glass replace lime_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 white_stained_glass replace yellow_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 light_gray_stained_glass replace cyan_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 light_gray_stained_glass replace orange_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 light_gray_stained_glass replace pink_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 gray_stained_glass replace red_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 gray_stained_glass replace purple_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 gray_stained_glass replace magenta_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 black_stained_glass replace green_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 black_stained_glass replace brown_stained_glass
+execute if score $map data matches 5 run fill 2087 82 -1932 2107 83 -1947 black_stained_glass replace blue_stained_glass
+execute if score $map data matches 6 run fill -1876 66 2209 -1872 66 2213 obsidian replace crying_obsidian
+execute if score $map data matches 6 run fill -1876 66 2209 -1872 66 2213 netherrack replace magma_block
 
 # 修复地图内“变量”
 execute if score $map data matches 3 run clone -827 9 1199 -850 17 1221 -814 30 1204 strict

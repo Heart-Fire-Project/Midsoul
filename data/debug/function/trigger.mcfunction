@@ -21,6 +21,8 @@ execute if score @s detect.interact matches -1201 run function debug:sub/select 
 execute if score @s detect.interact matches -1202 run function debug:sub/select {type:"map",num:"2"}
 execute if score @s detect.interact matches -1203 run function debug:sub/select {type:"map",num:"3"}
 execute if score @s detect.interact matches -1204 run function debug:sub/select {type:"map",num:"4"}
+execute if score @s detect.interact matches -1205 run function debug:sub/select {type:"map",num:"5"}
+execute if score @s detect.interact matches -1206 run function debug:sub/select {type:"map",num:"6"}
 execute if score @s detect.interact matches -1298..-1297 run scoreboard players operation $value temp = $map_max data
 execute if score @s detect.interact matches -1298..-1297 run scoreboard players operation $value temp /= #6 data
 execute if score @s detect.interact matches -1298..-1297 run scoreboard players operation $valueA temp = $map_max data
@@ -77,6 +79,8 @@ execute if score @s detect.interact matches -2101 run function debug:sub/game/sw
 execute if score @s detect.interact matches -2102 run function debug:sub/game/switch_map_pre {value:"2"}
 execute if score @s detect.interact matches -2103 run function debug:sub/game/switch_map_pre {value:"3"}
 execute if score @s detect.interact matches -2104 run function debug:sub/game/switch_map_pre {value:"4"}
+execute if score @s detect.interact matches -2105 run function debug:sub/game/switch_map_pre {value:"5"}
+execute if score @s detect.interact matches -2106 run function debug:sub/game/switch_map_pre {value:"6"}
 execute if score @s detect.interact matches -2198..-2197 run scoreboard players operation $value temp = $map_max data
 execute if score @s detect.interact matches -2198..-2197 run scoreboard players operation $value temp /= #6 data
 execute if score @s detect.interact matches -2198..-2197 run scoreboard players operation $valueA temp = $map_max data

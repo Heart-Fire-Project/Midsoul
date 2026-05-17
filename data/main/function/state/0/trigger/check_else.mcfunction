@@ -2,6 +2,7 @@
 execute if score @s detect.interact matches 1 run scoreboard players set @s temp 1
 execute if score @s detect.interact matches 2 run scoreboard players set @s temp 2
 execute if score @s detect.interact matches 3 run scoreboard players set @s temp 3
+execute if score @s detect.interact matches 4 run scoreboard players set @s temp 4
 execute if score @s detect.interact matches 1..99 run function main:lib/notice
 
 # 图鉴类型

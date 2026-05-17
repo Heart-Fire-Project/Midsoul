@@ -1,6 +1,3 @@
-# 杀光光
-kill @e[tag=game_entity]
-
 # 生成地图中心实体
 $summon marker $(center) {Tags:[map_center]}
 

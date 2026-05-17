@@ -1,3 +1,7 @@
+# 杀光光
+kill @e[tag=game_entity]
+kill @e[tag=animation_entity]
+
 # 重置地图变量
 function main:lib/map/variety/reset
 

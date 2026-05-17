@@ -15,6 +15,8 @@ execute if score $map_page setting matches 1 if score $map setting matches 1 run
 execute if score $map_page setting matches 1 if score $map setting matches 2 run setblock -12 7 -6 waxed_copper_bulb[lit=true]
 execute if score $map_page setting matches 1 if score $map setting matches 3 run setblock -12 7 -5 waxed_copper_bulb[lit=true]
 execute if score $map_page setting matches 1 if score $map setting matches 4 run setblock -12 7 -4 waxed_copper_bulb[lit=true]
+execute if score $map_page setting matches 1 if score $map setting matches 5 run setblock -12 7 -3 waxed_copper_bulb[lit=true]
+execute if score $map_page setting matches 1 if score $map setting matches 6 run setblock -12 7 -2 waxed_copper_bulb[lit=true]
 
 # 模式
 fill -8 7 -12 0 7 -12 waxed_copper_bulb[lit=false]

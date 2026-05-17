@@ -56,3 +56,39 @@ execute if score $map data matches 4 if score $value temp matches 088.. run setb
 execute if score $map data matches 4 if score $value temp matches 092.. run setblock 2003 80 2101 redstone_block
 execute if score $map data matches 4 if score $value temp matches 096.. run setblock 2004 80 2101 redstone_block
 execute if score $map data matches 4 if score $value temp matches 100.. run setblock 2005 80 2101 redstone_block
+
+# 昔居浮屿 - 12*
+execute if score $map data matches 5 if score $value temp matches 008.. run fill 2105 83 -1936 2107 83 -1938 blue_stained_glass
+execute if score $map data matches 5 if score $value temp matches 016.. run fill 2097 82 -1943 2099 82 -1941 orange_stained_glass
+execute if score $map data matches 5 if score $value temp matches 025.. run fill 2103 82 -1932 2105 82 -1934 magenta_stained_glass
+execute if score $map data matches 5 if score $value temp matches 033.. run fill 2096 82 -1938 2098 82 -1940 red_stained_glass
+execute if score $map data matches 5 if score $value temp matches 041.. run fill 2090 82 -1945 2092 82 -1947 green_stained_glass
+execute if score $map data matches 5 if score $value temp matches 050.. run fill 2089 82 -1939 2091 82 -1941 light_blue_stained_glass
+execute if score $map data matches 5 if score $value temp matches 058.. run fill 2102 83 -1937 2104 83 -1939 purple_stained_glass
+execute if score $map data matches 5 if score $value temp matches 066.. run fill 2096 83 -1944 2098 83 -1946 yellow_stained_glass
+execute if score $map data matches 5 if score $value temp matches 075.. run fill 2099 82 -1936 2101 82 -1938 pink_stained_glass
+execute if score $map data matches 5 if score $value temp matches 083.. run fill 2087 83 -1944 2089 83 -1946 cyan_stained_glass
+execute if score $map data matches 5 if score $value temp matches 091.. run fill 2103 82 -1943 2105 82 -1941 brown_stained_glass
+execute if score $map data matches 5 if score $value temp matches 100.. run fill 2093 82 -1943 2095 82 -1945 lime_stained_glass
+
+# 苏园夜游 - 20*
+execute if score $map data matches 6 if score $value temp matches 005.. run setblock -1873 66 2212 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 010.. run setblock -1875 66 2210 magma_block
+execute if score $map data matches 6 if score $value temp matches 015.. run setblock -1872 66 2212 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 020.. run setblock -1876 66 2210 magma_block
+execute if score $map data matches 6 if score $value temp matches 025.. run setblock -1873 66 2211 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 030.. run setblock -1875 66 2211 magma_block
+execute if score $map data matches 6 if score $value temp matches 035.. run setblock -1872 66 2211 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 040.. run setblock -1876 66 2211 magma_block
+execute if score $map data matches 6 if score $value temp matches 045.. run setblock -1872 66 2210 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 050.. run setblock -1876 66 2212 magma_block
+execute if score $map data matches 6 if score $value temp matches 055.. run setblock -1873 66 2210 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 060.. run setblock -1875 66 2212 magma_block
+execute if score $map data matches 6 if score $value temp matches 065.. run setblock -1874 66 2210 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 070.. run setblock -1874 66 2212 magma_block
+execute if score $map data matches 6 if score $value temp matches 075.. run setblock -1873 66 2209 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 080.. run setblock -1875 66 2213 magma_block
+execute if score $map data matches 6 if score $value temp matches 085.. run setblock -1874 66 2209 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 090.. run setblock -1874 66 2213 magma_block
+execute if score $map data matches 6 if score $value temp matches 095.. run setblock -1875 66 2209 crying_obsidian
+execute if score $map data matches 6 if score $value temp matches 100.. run setblock -1873 66 2213 magma_block

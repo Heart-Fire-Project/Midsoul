@@ -4,6 +4,8 @@ execute if score @s detect.interact matches 101 run function debug:sub/select {t
 execute if score @s detect.interact matches 102 run function debug:sub/select {type:"map",num:"2"}
 execute if score @s detect.interact matches 103 run function debug:sub/select {type:"map",num:"3"}
 execute if score @s detect.interact matches 104 run function debug:sub/select {type:"map",num:"4"}
+execute if score @s detect.interact matches 105 run function debug:sub/select {type:"map",num:"5"}
+execute if score @s detect.interact matches 106 run function debug:sub/select {type:"map",num:"6"}
 
 # 模式
 execute if score @s detect.interact matches 201 run function debug:sub/select {type:"mode",num:"1"}

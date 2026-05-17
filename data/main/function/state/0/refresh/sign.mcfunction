@@ -1,7 +1,8 @@
 # 公告栏
 function base:merge_sign {x:"2",y:"1",z:"3",glow:"1",color:"white",trans_2:"ms.notice.contact",trans_3:"ms.notice.1.sign",fallb_2:"[联系我们]",fallb_3:"> 交流与反馈 <",command:"trigger detect.interact set 1"}
-function base:merge_sign {x:"1",y:"1",z:"3",glow:"1",color:"orange",trans_2:"ms.notice.major_update",trans_3:"ms.notice.2.sign",fallb_2:"[重大更新]",fallb_3:"2.0 💠 回响纪元",command:"trigger detect.interact set 2"}
+#function base:merge_sign {x:"1",y:"1",z:"3",glow:"1",color:"orange",trans_2:"ms.notice.major_update",trans_3:"ms.notice.2.sign",fallb_2:"[重大更新]",fallb_3:"2.0 💠 回响纪元",command:"trigger detect.interact set 2"}
 function base:merge_sign {x:"0",y:"1",z:"3",glow:"1",color:"light_blue",trans_2:"ms.notice.event",trans_3:"ms.notice.3.sign",fallb_2:"[活动]",fallb_3:"· 常驻服务器 ·",command:"trigger detect.interact set 3"}
+function base:merge_sign {x:"1",y:"1",z:"3",glow:"1",color:"yellow",trans_2:"ms.notice.regular_update",trans_3:"ms.notice.4.sign",fallb_2:"[常态更新]",fallb_3:"2.1 💠 觅于湖屿间",command:"trigger detect.interact set 4"}
 
 # 鸣谢列表
 function base:merge_sign {x:"-2",y:"11",z:"-9",glow:"1",color:"white",trans_2:"ms.credit.roser",trans_3:"ms.credit.1.title",fallb_2:"Roser",fallb_3:"架构者",command:"trigger detect.interact set 901"}
@@ -23,6 +24,10 @@ execute if score $map_page setting matches 1 if score $map setting matches 3 run
 execute if score $map_page setting matches 1 unless score $map setting matches 3 run function base:merge_sign {x:"-11",y:"6",z:"-5",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.3",fallb_2:"03",fallb_3:"山间湖谷",command:"trigger detect.interact set 103"}
 execute if score $map_page setting matches 1 if score $map setting matches 4 run function base:merge_sign {x:"-11",y:"6",z:"-4",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.map.4",fallb_2:"04",fallb_3:"心火特区",command:"trigger detect.interact set 104"}
 execute if score $map_page setting matches 1 unless score $map setting matches 4 run function base:merge_sign {x:"-11",y:"6",z:"-4",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.4",fallb_2:"04",fallb_3:"心火特区",command:"trigger detect.interact set 104"}
+execute if score $map_page setting matches 1 if score $map setting matches 5 run function base:merge_sign {x:"-11",y:"6",z:"-3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.map.5",fallb_2:"05",fallb_3:"昔居浮屿",command:"trigger detect.interact set 105"}
+execute if score $map_page setting matches 1 unless score $map setting matches 5 run function base:merge_sign {x:"-11",y:"6",z:"-3",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.5",fallb_2:"05",fallb_3:"昔居浮屿",command:"trigger detect.interact set 105"}
+execute if score $map_page setting matches 1 if score $map setting matches 6 run function base:merge_sign {x:"-11",y:"6",z:"-2",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.map.6",fallb_2:"06",fallb_3:"苏园夜游",command:"trigger detect.interact set 106"}
+execute if score $map_page setting matches 1 unless score $map setting matches 6 run function base:merge_sign {x:"-11",y:"6",z:"-2",glow:"1",color:"white",trans_2:"",trans_3:"ms.map.6",fallb_2:"06",fallb_3:"苏园夜游",command:"trigger detect.interact set 106"}
 
 # 模式设定
 execute if score $mode setting matches 1 run function base:merge_sign {x:"-8",y:"6",z:"-11",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.mode.1",fallb_2:"01",fallb_3:"灵气碎片",command:"trigger detect.interact set 201"}
