@@ -1,2 +1,3 @@
-# 灵气充盈 | 场上所有碎片持续发光
-execute as @e[tag=blue] run data merge entity @s {Glowing:1b}
+# 灵气充盈 | 去除碎片发光，若有灵魂在 12 格内再回调
+data merge entity @s {Glowing:0b}
+execute if entity @a[team=soul,distance=..12,scores={state=0}] run data merge entity @s {Glowing:1b}

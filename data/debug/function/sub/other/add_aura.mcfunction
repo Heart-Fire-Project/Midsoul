@@ -9,7 +9,6 @@ execute if score $aura_rank data matches 0 run scoreboard players set $aura_rank
 execute if score $aura_rank data matches 1 run scoreboard players set $aura_rank data -2
 execute if score $aura_rank data matches 2 run scoreboard players set $aura_rank data -3
 execute if score $aura_rank data matches -1 run tellraw @a [{text:"» ",color:"#80FFFF",bold:true},{translate:"ms.info.3.aura.1",fallback:"灵气初起 ◆◇◇ 灵魂收集碎片时将与附近的碎片共鸣",bold:false}]
-execute if score $aura_rank data matches -2 run tellraw @a [{text:"» ",color:"#80D5FF",bold:true},{translate:"ms.info.3.aura.2",fallback:"灵气弥散 ◆◆◇ 灵魂将与附近的碎片持续共鸣",bold:false}]
-execute if score $aura_rank data matches -3 run tellraw @a [{text:"» ",color:"#80AAFF",bold:true},{translate:"ms.info.3.aura.3",fallback:"灵气充盈 ◆◆◆ 场上所有剩余碎片持续进行共鸣",bold:false}]
-execute if score $aura_rank data matches -3 as @e[tag=blue] run data merge entity @s {Glowing:1b}
+execute if score $aura_rank data matches -2 run tellraw @a [{text:"» ",color:"#80D5FF",bold:true},{translate:"ms.info.3.aura.2",fallback:"灵气弥散 ◆◆◇ 灵魂与附近碎片的共鸣范围提升",bold:false}]
+execute if score $aura_rank data matches -3 run tellraw @a [{text:"» ",color:"#80AAFF",bold:true},{translate:"ms.info.3.aura.3",fallback:"灵气充盈 ◆◆◆ 灵魂将持续与附近的碎片共鸣",bold:false}]
 execute if score $aura_rank data matches -3..-1 run scoreboard players operation $aura_rank data *= #-1 data

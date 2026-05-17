@@ -3,8 +3,8 @@
 execute as @a[tag=game_player] at @s if entity @e[tag=blue,distance=..3] run advancement grant @s only main:tutorial/interact/1
 execute as @a[tag=game_player] at @s if entity @e[tag=gray,distance=..3] run advancement grant @s only main:tutorial/interact/3
 
-# 灵气弥散
-execute if score $aura_rank data matches 2 as @e[tag=blue] at @s run function main:lib/event/aura/2
+# 灵气充盈
+execute if score $aura_rank data matches 3 as @e[tag=blue] at @s run function main:lib/event/aura/3
 
 # 特殊效果
 # 诅咒

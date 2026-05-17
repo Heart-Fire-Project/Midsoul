@@ -8,7 +8,4 @@ execute at @e[tag=new_blue] run particle glow ~ ~0.2 ~ 0.2 0.1 0.2 5 15 force @a
 team join shard @e[tag=new_blue]
 tag @e remove new_blue
 
-# 灵气判定
-execute if score $aura_rank data matches 3 run function main:lib/event/aura/3
-
 tag @e remove summon_no
