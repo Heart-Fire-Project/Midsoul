@@ -1,8 +1,10 @@
 # 杀光光
 kill @e[tag=game_entity]
 kill @e[tag=animation_entity]
+execute as @e[tag=map_entity] run tp @s ~ -100 ~
 
 # 重置地图变量
+function main:lib/map/entity/general
 function main:lib/map/variety/reset
 
 # 设置地图信息

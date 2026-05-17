@@ -28,3 +28,7 @@ execute if score $map data matches 3 run clone -862 9 1186 -877 10 1204 -852 13 
 execute if score $map data matches 3 run clone -867 15 1192 -877 16 1204 -867 21 1121 strict
 execute if score $map data matches 3 run clone -853 9 1200 -859 11 1207 -871 45 1069 strict
 execute if score $map data matches 3 run clone -853 14 1210 -862 17 1221 -702 50 1162 strict
+execute if score $map data matches 6 run setblock -1865 68 2226 air
+execute if score $map data matches 6 run setblock -1823 68 2213 air
+execute if score $map data matches 6 run setblock -1835 68 2173 air
+execute if score $map data matches 6 run setblock -1874 67 2174 air

@@ -23,3 +23,7 @@ execute if score $map_animation tick.general matches 11 run function main:lib/ma
 execute if score $map_animation tick.general matches 13 run function main:lib/map/tick1/5b
 execute if score $map_animation tick.general matches 21 run function main:lib/map/tick1/5a
 execute if score $map_animation tick.general matches 23 run function main:lib/map/tick1/5b
+
+# 滑索机制 - 实际部分
+execute positioned 2096.5 84.1 -1910.5 run kill @e[tag=M05,distance=..1.25]
+execute positioned 2112.5 93.1 -1926.5 as @a[tag=game_player,distance=..0.7,nbt=!{RootVehicle:{}}] run function main:lib/map/tick1/5c
