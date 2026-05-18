@@ -1,7 +1,7 @@
 # 先查看是否有充能的玩家
 tag @s remove charging_purple
 execute if entity @a[tag=interact_purple,tag=interacting,distance=..0.7] run tag @s add charging_purple
-execute if score $4_finale state matches 1 if entity @a[team=soul,distance=..3,scores={state=0}] run tag @s add charging_purple
+execute if score $4_finale state matches 1 if entity @a[team=soul,distance=..3,scores={state=0}] run tag @s[scores={tick.general=..90000}] add charging_purple
 
 # 人数结算
 scoreboard players reset $num temp
