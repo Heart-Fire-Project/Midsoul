@@ -9,7 +9,7 @@ summon text_display -994 -0.85 -989 {Tags:[extra_entity],text:[{translate:"ms.ex
 
 # 粒子效果
 summon text_display -991 -0.7 -1006 {Tags:[extra_entity],text:[{translate:"ms.particle",fallback:"粒子效果",color:"dark_blue"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display -991 -0.85 -1006 {Tags:[extra_entity],text:[{translate:"ms.particle.desc",fallback:"放心，你的粒子效果敌方看不见",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display -991 -0.85 -1006 {Tags:[extra_entity],text:[{translate:"ms.particle.desc",fallback:"放心，你的粒子效果敌方看不见",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:350,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 function base:merge_sign {x:"-991",y:"0",z:"-1011",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.particle.0",fallb_2:"--",fallb_3:"无粒子效果",command:"trigger detect.interact set 4100"}
 function base:merge_sign {x:"-990",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.1",fallb_2:"01",fallb_3:"午夜繁星",command:"trigger detect.interact set 4101"}
 function base:merge_sign {x:"-989",y:"0",z:"-1011",glow:"1",color:"white",trans_2:"",trans_3:"ms.particle.2",fallb_2:"02",fallb_3:"氤氲灵气",command:"trigger detect.interact set 4102"}
@@ -32,7 +32,7 @@ summon marker -986 -1 -1006 {Tags:[extra_entity,particle-9]}
 
 # 武器样式
 summon text_display -991 -0.7 -996 {Tags:[extra_entity],text:[{translate:"ms.weapon",fallback:"武器样式",color:"#7C33B8"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display -991 -0.85 -996 {Tags:[extra_entity],text:[{translate:"ms.weapon.desc",fallback:"高级武器可提供高达 0.00%% 的加成",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display -991 -0.85 -996 {Tags:[extra_entity],text:[{translate:"ms.weapon.desc",fallback:"高级武器可提供高达 0.00%% 的加成",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:350,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 function base:merge_sign {x:"-987",y:"0",z:"-996",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.weapon.0",fallb_2:"00",fallb_3:"祛灵刃",command:"trigger detect.interact set 4200"}
 function base:merge_sign {x:"-987",y:"0",z:"-995",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.1",fallb_2:"01",fallb_3:"祛灵刃 α",command:"trigger detect.interact set 4201"}
 function base:merge_sign {x:"-987",y:"0",z:"-994",glow:"1",color:"white",trans_2:"",trans_3:"ms.weapon.2",fallb_2:"02",fallb_3:"祛灵刃 β",command:"trigger detect.interact set 4202"}
@@ -46,7 +46,7 @@ summon item -986 -1.1 -992 {Tags:[extra_entity],Item:{id:"blaze_rod"},PickupDela
 
 # 饰品装配
 summon text_display -997 -0.7 -995 {Tags:[extra_entity],text:[{translate:"ms.headset",fallback:"饰品装配",color:"dark_purple"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display -997 -0.85 -995 {Tags:[extra_entity],text:[{translate:"ms.headset.desc",fallback:"我去，是时尚小垃圾，我们有救了",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display -997 -0.85 -995 {Tags:[extra_entity],text:[{translate:"ms.headset.desc",fallback:"我去，是时尚小垃圾，我们有救了",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:350,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 function base:merge_sign {x:"-997",y:"0",z:"-991",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.headset.0",fallb_2:"--",fallb_3:"空气",command:"trigger detect.interact set 4300"}
 function base:merge_sign {x:"-998",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.1",fallb_2:"01",fallb_3:"银辉独角",command:"trigger detect.interact set 4301"}
 function base:merge_sign {x:"-999",y:"0",z:"-991",glow:"1",color:"white",trans_2:"",trans_3:"ms.headset.2",fallb_2:"02",fallb_3:"声波通讯",command:"trigger detect.interact set 4302"}
@@ -62,7 +62,7 @@ summon mannequin -1002 -2 -992 {Tags:[extra_entity],profile:{name:"HPG6"},equipm
 
 # 文本套组
 summon text_display -997 -0.7 -1007 {Tags:[extra_entity],text:[{translate:"ms.text",fallback:"文本套组",color:"blue"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display -997 -0.85 -1007 {Tags:[extra_entity],text:[{translate:"ms.text.desc",fallback:"天啊！翻译组最讨厌的一集！",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:240,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display -997 -0.85 -1007 {Tags:[extra_entity],text:[{translate:"ms.text.desc",fallback:"天啊！翻译组最讨厌的一集！",color:"white"}],background:0,billboard:"center",alignment:"center",line_width:350,interpolation_duration:0,transformation:{scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 function base:merge_sign {x:"-1001",y:"0",z:"-1007",glow:"1",color:"light_gray",trans_2:"",trans_3:"ms.text.0",fallb_2:"00",fallb_3:"趋光",command:"trigger detect.interact set 4400"}
 function base:merge_sign {x:"-1001",y:"0",z:"-1008",glow:"1",color:"white",trans_2:"",trans_3:"ms.text.1",fallb_2:"01",fallb_3:"溯回",command:"trigger detect.interact set 4401"}
 function base:merge_sign {x:"-1001",y:"0",z:"-1009",glow:"1",color:"white",trans_2:"",trans_3:"ms.text.2",fallb_2:"02",fallb_3:"闲嬉",command:"trigger detect.interact set 4402"}

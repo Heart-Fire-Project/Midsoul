@@ -12,12 +12,9 @@
         ],
         "description":[
             {
-                "text":"· ",
+                "translate":"ms.goal.series",
+                "fallback":"· 完成本系列全部其他进度",
                 "color":"white"
-            },
-            {
-                "translate":"ms.adv.goal.series",
-                "fallback":"完成本系列全部其他进度"
             },
             "\n\n",
             {

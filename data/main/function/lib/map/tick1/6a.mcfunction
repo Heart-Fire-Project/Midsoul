@@ -14,5 +14,5 @@ particle cloud -1874 67.5 2174.3 0.2 0.3 0.2 0.05 12 force @a
 tp @s ~60 ~-25 ~-33
 
 # 提示与音效
-tellraw @a [{text:"🗘 ",bold:true,color:"#DDDDDD"},{translate:"ms.info.map.6a",fallback:"游船节点已恢复运行",bold:false}]
+tellraw @a [{text:"🗘 ",bold:true,color:"#DDDDDD"},{translate:"ms.map.6.refresh",fallback:"游船节点已恢复运行",bold:false}]
 playsound block.piston.contract ambient @a ~ ~ ~ 10000
