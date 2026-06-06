@@ -1,6 +1,6 @@
 # Midnight Soul
 
-> Last Edited: 2.0.0 | 2026/03/05  
+> Last Edited: 2.1.1 | 2026/06/06  
 > 点击[这里](https://github.com/Heart-Fire-Project/Midsoul/blob/main/README.md)来查阅中文版 
 
 This is the datapack repository of the original ABA map by Heart Fire Project: **Midsoul**!
@@ -20,10 +20,11 @@ Please join the [DC Group](https://discord.gg/jxUxX283Jd) and consult the mods f
 
 ### Multi-language (i18n)
 
-English translation is now open on Paratranz. Please apply to become a member [here](https://paratranz.cn/projects/17920) using code `Midsoul-i18n`. At the same time, you are also welcome to localize the project into other languages on your own.
+We have now supported English: Download `Midsoul LP` from [Releases](https://github.com/Heart-Fire-Project/Midsoul/releases) and install it as a resourcepack, then switch your game language to English (US).  
+Some text may not shown as it expected to be, a rejoin is required in that case.
 
 ## Related Links
-- [Project Website](https://hfpro.top/) Check out other works from Heart Fire Project
+- [Project Website](https://hfpro.dev/) Check out other works from Heart Fire Project
 - [Sponsor us](https://ko-fi.com/heartfireproject) Support us for further development
 - [TG Group](t.me/HFPro_EN) Another discussion group of Heart Fire Project
 
@@ -60,4 +61,6 @@ Drong\_haoye, FeatheredBall, fanjiayu, FoolCrucian, HLXQZ, hmsrRABBIT555, juin12
 
 If you like this map, giving us a Star would be a great help.
 
-Wish you a smooth chase and escape.
+---
+
+*Wish you a smooth chase and escape.*

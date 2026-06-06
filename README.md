@@ -1,6 +1,6 @@
 # 午夜灵魂
 
-> 最后一次编辑版本号 » 2.0.0 | 2026/03/05  
+> 最后一次编辑版本号 » 2.1.1 | 2026/06/06  
 > Click [here](https://github.com/Heart-Fire-Project/Midsoul/blob/main/README_en.md) for English version  
 
 这里是心火计划的原创非对称竞技地图：**午夜灵魂**的数据包仓库!
@@ -20,10 +20,11 @@
 
 ### 多语言 (i18n)
 
-当前已开放 Paratranz 平台的英语翻译，请在 [这里](https://paratranz.cn/projects/17920) 使用口令 `Midsoul-i18n` 成为成员；与此同时，您也可以自行进行各语言的本地化。
+当前已初步提供英文支持：在 [Releases](https://github.com/Heart-Fire-Project/Midsoul/releases) 中下载 `Midsoul LP` 后将其作为资源包安装，并切换游戏语言即可。  
+部分文本可能不会如期显示，需要重新进入游戏。
 
 ## 相关链接
-- [团队官网](https://hfpro.top/) 在此查看心火计划的其他作品
+- [团队官网](https://hfpro.dev/) 在此查看心火计划的其他作品
 - [赞助团队](https://ifdian.net/a/roser) 激励我们进行更多后续开发
 - [心火群组](https://qm.qq.com/q/jdKDqbZ0Kk) 心火计划的综合性交流群组
 
@@ -60,4 +61,6 @@ Drong\_haoye, FeatheredBall, fanjiayu, FoolCrucian, HLXQZ, hmsrRABBIT555, juin12
 
 如果你喜欢这张地图，那不妨帮我们点个 Star 吧，那将对我们有很大的帮助。
 
-祝您的追逃之旅一路顺风。
+---
+
+*祝您的追逃之旅一路顺风。*
