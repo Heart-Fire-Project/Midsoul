@@ -1,13 +1,13 @@
 # Midnight Soul
 
-> Last Edited: 2.1.1 | 2026/06/06  
+> Last Edited: 2.1.1 | 2026/06/07  
 > 点击[这里](https://github.com/Heart-Fire-Project/Midsoul/blob/main/README.md)来查阅中文版 
 
 This is the datapack repository of the original ABA map by Heart Fire Project: **Midsoul**!
 
 ## How to Play
 
-You can download the map directly from [Releases](https://github.com/Heart-Fire-Project/Midsoul/releases) or go [here](https://www.bilibili.com/read/cv46487047) to read the introduction (sry that it's Chinese) and download the map.
+You can download the map directly from [Releases](https://github.com/Heart-Fire-Project/Midsoul/releases) or go [here](https://www.minecraftmaps.com/52453-midnight-soul) to read the introduction and download the map.
 
 ## Help Us
 
