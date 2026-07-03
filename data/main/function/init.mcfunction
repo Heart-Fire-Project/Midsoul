@@ -175,7 +175,7 @@ scoreboard objectives add stat.play dummy "游玩次数"
 scoreboard objectives add stat.play_soul dummy "游玩次数 - 灵魂"
 scoreboard objectives add stat.play_guar dummy "游玩次数 - 守卫"
 scoreboard objectives add stat.mvp dummy "全场最佳次数"
-scoreboard objectives add stat.level dummy "玩家等级"
+scoreboard objectives add stat.level dummy {translate:"ms.scoreboard.level",fallback:"玩家等级"}
 scoreboard objectives add stat.exp dummy "玩家经验"
 scoreboard objectives add stat.adv dummy "达成进度数"
 scoreboard objectives add stat.adv_pt dummy "进度点"
@@ -326,7 +326,7 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 323
+scoreboard players set $build data 324
 scoreboard players set $map_max data 6
 scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 5
