@@ -1,5 +1,5 @@
 # 设定 - 与大厅设定同步
-tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "
 
 # 模式
 tellraw @s {translate:"ms.debug.mode",fallback:"模式 »",color:"#988FF4"}

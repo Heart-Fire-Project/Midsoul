@@ -1,5 +1,5 @@
 # 对局 - 直接对当前对局修改
-tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "
 
 # 地图
 tellraw @s {translate:"ms.debug.map",fallback:"地图 »",color:"#988FF4"}

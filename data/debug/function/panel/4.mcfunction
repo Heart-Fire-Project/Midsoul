@@ -1,5 +1,5 @@
 # 自定义 - 自己加图
-tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "
 
 # 读取
 function debug:sub/custom/read_all
@@ -32,9 +32,9 @@ execute if score $map setting matches -9..-1 if data storage ms:temp {complex:5}
 execute if score $map setting matches -9..-1 if score $check_failure temp matches 0 run tellraw @s [{translate:"ms.debug.custom.info",fallback:"请检查以下数据无误后再开始游戏，若游戏异常则需要全局重置",color:"yellow"}]
 execute if score $map setting matches -9..-1 if score $check_failure temp matches 1 run tellraw @s [{translate:"ms.debug.custom.warn",fallback:"当前地图的部分数据可能有误，从而导致游戏无法正常推进",color:"gold"}]
 execute if score $map setting matches -9..-1 if score $check_failure temp matches 2 run tellraw @s [{translate:"ms.debug.custom.error",fallback:"当前地图的关键数据有所缺失，将无法正常进行游戏！",color:"red"}]
-execute if score $map setting matches -9..-1 run tellraw @s [{translate:"ms.debug.custom.selected",fallback:"当前选中"},"  »  ",{storage:"ms:temp",nbt:"name",color:"aqua"},"  «  ",{translate:"ms.debug.custom.map_area",fallback:"[地图区域详情]",hover_event:{action:"show_text",value:[{translate:"ms.debug.custom.force_count",fallback:"已设定 %s 个加载区",with:[{score:{name:"$num",objective:"temp"}}]},"\n",{storage:"ms:temp",nbt:"forceload1"},"\n",{storage:"ms:temp",nbt:"forceload2"},"\n",{storage:"ms:temp",nbt:"forceload3"},"\n",{translate:"ms.debug.custom.center",fallback:"地图中心点"},"\n",{storage:"ms:temp",nbt:"center"}]}}]
-execute if score $map setting matches -9..-1 run tellraw @s [" ◈ ",{translate:"ms.debug.custom.shard",fallback:"碎片生成量/收集目标"}," ",{storage:"ms:temp",nbt:"shard_summon",color:"#50A7D9"},"/",{storage:"ms:temp",nbt:"shard_goal",color:"#63C3FA"}]
-execute if score $map setting matches -9..-1 run tellraw @s [" ◈ ",{translate:"ms.debug.custom.chest",fallback:"宝盒周期刷新量/上限"}," ",{storage:"ms:temp",nbt:"chest_summon",color:"#CCCCCC"},"/",{storage:"ms:temp",nbt:"chest_max",color:"#DEDEDE"}]
+execute if score $map setting matches -9..-1 run tellraw @s [{translate:"ms.debug.custom.selected",fallback:"当前选中"},"  »  ",{storage:"ms:temp",nbt:"name",color:"aqua",interpret:true},"  «  ",{translate:"ms.debug.custom.map_area",fallback:"[地图区域详情]",hover_event:{action:"show_text",value:[{translate:"ms.debug.custom.force_count",fallback:"已设定 %s 个加载区",with:[{score:{name:"$num",objective:"temp"}}]},"\n",{storage:"ms:temp",nbt:"forceload1",interpret:true},"\n",{storage:"ms:temp",nbt:"forceload2",interpret:true},"\n",{storage:"ms:temp",nbt:"forceload3",interpret:true},"\n",{translate:"ms.debug.custom.center",fallback:"地图中心点"},"\n",{storage:"ms:temp",nbt:"center",interpret:true}]}}]
+execute if score $map setting matches -9..-1 run tellraw @s [" ◈ ",{translate:"ms.debug.custom.shard",fallback:"碎片生成量/收集目标"}," ",{storage:"ms:temp",nbt:"shard_summon",color:"#50A7D9",plain:true},"/",{storage:"ms:temp",nbt:"shard_goal",color:"#63C3FA",plain:true}]
+execute if score $map setting matches -9..-1 run tellraw @s [" ◈ ",{translate:"ms.debug.custom.chest",fallback:"宝盒周期刷新量/上限"}," ",{storage:"ms:temp",nbt:"chest_summon",color:"#CCCCCC",plain:true},"/",{storage:"ms:temp",nbt:"chest_max",color:"#DEDEDE",plain:true}]
 execute if score $map setting matches -9..-1 if score $size temp matches 1 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »",color:"aqua"},"»»»» · ",{text:"1",color:"aqua"}]
 execute if score $map setting matches -9..-1 if score $size temp matches 2 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»",color:"green"},"»»» · ",{text:"2",color:"green"}]
 execute if score $map setting matches -9..-1 if score $size temp matches 3 run tellraw @s [" ◈ ",{translate:"ms.map.size",fallback:"地图大小"},{text:" | »»»",color:"yellow"},"»» · ",{text:"3",color:"yellow"}]

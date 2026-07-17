@@ -1,5 +1,5 @@
 # 杂项 - 乱七八糟
-tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "
 
 # 同步改变了 gamerule 的设定
 execute store result storage ms:setting reduce_f3 byte 1 run gamerule reduced_debug_info
@@ -7,7 +7,7 @@ execute store result storage ms:setting send_feedback byte 1 run gamerule send_c
 
 # 信息
 tellraw @s {text:"午夜灵魂 // Midnight Soul",color:"#988FF4"}
-tellraw @s ["Version 2.1.1 (",{score:{name:"$build",objective:"data"}},")"]
+tellraw @s ["Version 2.2 (",{score:{name:"$build",objective:"data"}},")"]
 tellraw @s {translate:"ms.version",fallback:"未装载语言包"}
 tellraw @s {translate:"ms.copyright",fallback:"© 2022-2026 心火计划"}
 tellraw @s ""

@@ -25,7 +25,7 @@ execute if score $map setting matches 0 run function main:state/1/random_map
 execute if score $map setting matches ..-9 run function main:state/1/random_map
 execute if score $map setting > $map_max data run function main:state/1/random_map
 function main:lib/map/data
-execute if score $map data matches -9..-1 run scoreboard players display numberformat $map info fixed {nbt:"name",storage:"ms:temp",color:"#7367F0"}
+execute if score $map data matches -9..-1 run scoreboard players display numberformat $map info fixed {nbt:"name",storage:"ms:temp",color:"#7367F0",interpret:true}
 execute if score $map data matches 1 run scoreboard players display numberformat $map info fixed {translate:"ms.map.1",fallback:"聚光圣殿",color:"#7367F0"}
 execute if score $map data matches 2 run scoreboard players display numberformat $map info fixed {translate:"ms.map.2",fallback:"镇灵塔楼",color:"#7367F0"}
 execute if score $map data matches 3 run scoreboard players display numberformat $map info fixed {translate:"ms.map.3",fallback:"山间湖谷",color:"#7367F0"}

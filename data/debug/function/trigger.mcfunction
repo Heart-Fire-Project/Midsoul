@@ -5,7 +5,7 @@ execute if score @s detect.interact matches -3 run function debug:panel/3
 execute if score @s detect.interact matches -4 run function debug:panel/4
 
 # 主要选项
-execute if score @s detect.interact matches -999..-100 run tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+execute if score @s detect.interact matches -999..-100 run tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "
 execute if score @s detect.interact matches -777 run function debug:leave_admin
 execute if score @s detect.interact matches -888 run function debug:end_game
 execute if score @s detect.interact matches -999 run function main:init

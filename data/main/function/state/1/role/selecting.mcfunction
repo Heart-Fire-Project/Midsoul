@@ -1,4 +1,4 @@
-tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "
 
 # 和随机分配一起换队伍
 execute if score @s detect.interact matches 5401 run scoreboard players set @s state 0

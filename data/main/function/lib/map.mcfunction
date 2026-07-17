@@ -10,7 +10,7 @@ execute if score $map setting matches -8 run function debug:sub/custom/sync {num
 execute if score $map setting matches -9 run function debug:sub/custom/sync {num:"9"}
 
 # 显示地图名称&介绍
-execute if score $map setting matches ..-1 run tellraw @a [{text:"\n» ",bold:true,color:"#7367F0"},{translate:"ms.map.select",fallback:"选定游戏地图",bold:false}," ",{storage:"ms:temp",nbt:"name",bold:false,color:"aqua"}]
+execute if score $map setting matches ..-1 run tellraw @a [{text:"\n» ",bold:true,color:"#7367F0"},{translate:"ms.map.select",fallback:"选定游戏地图",bold:false}," ",{storage:"ms:temp",nbt:"name",bold:false,color:"aqua",interpret:true}]
 
 execute if score $map setting matches 0 run tellraw @a [{text:"\n» ",bold:true,color:"#7367F0"},{translate:"ms.map.select",fallback:"选定游戏地图",bold:false}," ",{translate:"ms.map.0",fallback:"随机地图",bold:false,color:"aqua"}]
 execute if score $map setting matches 0 run tellraw @a [{text:"» ",bold:true},{translate:"ms.map.0.desc",fallback:"在现有的所有地图中随机选择一张",bold:false}]

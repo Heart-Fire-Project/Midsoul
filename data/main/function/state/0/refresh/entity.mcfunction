@@ -6,8 +6,8 @@ execute unless entity @e[tag=key_frame] run summon item_frame 0 -8 0 {Tags:[key_
 
 # 主标题
 summon text_display 3.99 2.1 0.5 {Tags:[lobby_entity],text:[{translate:"ms.title",fallback:"◈ 午夜灵魂 ◈",color:"#7367F0"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[2.8f,2.8f,2.8f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display 3.99 1.8 0.5 {Tags:[lobby_entity],text:[{translate:"ms.lobby.ver",fallback:"觅于湖屿间",color:"white"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
-summon text_display 3.99 1.68 0.5 {Tags:[lobby_entity],text:["💠 2.1 💠"],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display 3.99 1.8 0.5 {Tags:[lobby_entity],text:[{translate:"ms.lobby.ver",fallback:"内部开发",color:"white"}],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
+summon text_display 3.99 1.68 0.5 {Tags:[lobby_entity],text:["💠 2.2 💠"],background:0,billboard:"fixed",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 
 # 路标
 summon text_display -6.0 1.3 -6.0 {Tags:[lobby_entity],text:[{translate:"ms.lobby.extra",fallback:"额外区域",color:"dark_gray"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

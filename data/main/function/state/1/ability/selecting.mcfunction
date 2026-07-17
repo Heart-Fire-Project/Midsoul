@@ -1,4 +1,4 @@
-tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n "
 
 # 技能
 execute if score @s detect.interact matches 5100 run scoreboard players set @s skill 0

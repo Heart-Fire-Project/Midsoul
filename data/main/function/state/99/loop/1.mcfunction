@@ -26,7 +26,7 @@ execute if score $5_ending tick.general matches 121 run title @a title ""
 # 全局总览
 execute if score $5_ending tick.general matches 115 run function base:caculate/time {tick:"$stat_gametime",source:"tick.general",unit:"min"}
 execute if score $5_ending tick.general matches 115 run playsound ui.button.click player @a 0 1000000 0 120000
-execute if score $5_ending tick.general matches 115 run tellraw @a ["\n\n\n\n\n\n\n\n\n\n"]
+execute if score $5_ending tick.general matches 115 run tellraw @a ["\n\n\n\n\n\n\n\n\n\n "]
 execute if score $5_ending tick.general matches 115 run tellraw @a [{text:"-------------- ",color:"#7367F0"},{translate:"ms.info.end.1.1",fallback:"对局总览"}," --------------"]
 execute if score $5_ending tick.general matches 115 run tellraw @a [{translate:"ms.info.end.1.2",fallback:"灵魂守卫者",color:"red"}," » ",{selector:"@a[team=guardian]"}]
 execute if score $5_ending tick.general matches 115 run tellraw @a [{translate:"ms.info.end.1.3",fallback:"复活灵魂",color:"green"}," ×",{score:{name:"$soul_revive",objective:"data"}}," » ",{selector:"@a[team=revive]"}]
