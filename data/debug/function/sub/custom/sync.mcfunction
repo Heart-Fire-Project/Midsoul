@@ -12,3 +12,5 @@ $data modify storage ms:temp forceload1 set from storage ms:custom_$(num) forcel
 $data modify storage ms:temp forceload2 set from storage ms:custom_$(num) forceload2
 $data modify storage ms:temp forceload3 set from storage ms:custom_$(num) forceload3
 $data modify storage ms:temp center set from storage ms:custom_$(num) center
+
+function debug:sub/custom/string with storage ms:temp

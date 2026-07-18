@@ -177,11 +177,13 @@ execute if score @s detect.interact matches -4201 run function debug:sub/binary 
 execute if score @s detect.interact matches -4300 run function debug:sub/binary {storage:"setting",target:"show_mark"}
 execute if score @s detect.interact matches -4301 run give @s warden_spawn_egg[custom_name={translate:"ms.blue",fallback:"灵魂碎片",color:"#50A7D9",italic:false},entity_data={id:"shulker",Color:11,Tags:[summon_marker,summon_blue]}]
 execute if score @s detect.interact matches -4302 run give @s blaze_spawn_egg[custom_name={translate:"ms.gold",fallback:"灵魂之灯",color:"gold",italic:false},entity_data={id:"shulker",Color:1,Tags:[summon_marker,summon_gold]}]
-execute if score @s detect.interact matches -4304 run give @s breeze_spawn_egg[custom_name={translate:"ms.purple",fallback:"传送门",color:"light_purple",italic:false},entity_data={id:"shulker",Color:2,Tags:[summon_marker,summon_purple]}]
 execute if score @s detect.interact matches -4303 run give @s evoker_spawn_egg[custom_name={translate:"ms.gray",fallback:"灵魂宝物盒",color:"gray",italic:false},entity_data={id:"shulker",Color:8,Tags:[summon_marker,summon_gray]}]
-execute if score @s detect.interact matches -4305 run give @s strider_spawn_egg[custom_name={translate:"ms.red",fallback:"删除标记",color:"red",italic:false},entity_data={id:"shulker",Color:14,Tags:[summon_marker,summon_red]}]
-execute if score @s detect.interact matches -4306 run give @s ghast_spawn_egg[custom_name={translate:"ms.lock",fallback:"容器上锁",color:"white",italic:false},entity_data={id:"shulker",Color:0,Tags:[summon_marker,summon_lock]}]
-execute if score @s detect.interact matches -4307 run give @s slime_spawn_egg[custom_name={translate:"ms.turn",fallback:"灵灯转向",color:"#85C077",italic:false},entity_data={id:"shulker",Color:5,Tags:[summon_marker,summon_turn]}]
+execute if score @s detect.interact matches -4304 run give @s breeze_spawn_egg[custom_name={translate:"ms.purple",fallback:"传送门",color:"light_purple",italic:false},entity_data={id:"shulker",Color:2,Tags:[summon_marker,summon_purple]}]
+execute if score @s detect.interact matches -4305 run give @s sulfur_cube_spawn_egg[custom_name={translate:"ms.block",fallback:"交互阻断",color:"#ECF390",italic:false},entity_data={id:"shulker",Color:4,Tags:[summon_marker,summon_block]}]
+execute if score @s detect.interact matches -4306 run give @s strider_spawn_egg[custom_name={translate:"ms.red",fallback:"删除标记",color:"red",italic:false},entity_data={id:"shulker",Color:14,Tags:[summon_marker,summon_red]}]
+execute if score @s detect.interact matches -4307 run give @s ghast_spawn_egg[custom_name={translate:"ms.lock",fallback:"容器上锁",color:"white",italic:false},entity_data={id:"shulker",Color:0,Tags:[summon_marker,summon_lock]}]
+execute if score @s detect.interact matches -4308 run give @s slime_spawn_egg[custom_name={translate:"ms.turn",fallback:"灵灯转向",color:"#85C077",italic:false},entity_data={id:"shulker",Color:5,Tags:[summon_marker,summon_turn]}]
+execute if score @s detect.interact matches -4398 at @s run function debug:sub/mark/invulnerable
 execute if score @s detect.interact matches -4399 at @s run function debug:sub/mark/count
 
 scoreboard players set @s detect.interact 0

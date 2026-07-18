@@ -6,6 +6,7 @@ execute as @e[tag=summon_blue,type=shulker] at @s run function debug:sub/mark/bl
 execute as @e[tag=summon_purple,type=shulker] at @s run function debug:sub/mark/purple
 execute as @e[tag=summon_gold,type=shulker] at @s run function debug:sub/mark/gold
 execute as @e[tag=summon_gray,type=shulker] at @s run function debug:sub/mark/gray
+execute as @e[tag=summon_block,type=shulker] at @s run function debug:sub/mark/block
 execute as @e[tag=summon_red,type=shulker] at @s run function debug:sub/mark/red
 execute as @e[tag=summon_lock,type=shulker] at @s run function debug:sub/mark/lock
 execute as @e[tag=summon_turn,type=shulker] at @s run function debug:sub/mark/turn

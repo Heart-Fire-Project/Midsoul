@@ -4,6 +4,7 @@ execute at @e[tag=marker_purple] run particle witch ~ ~0.2 ~ 0.25 0.1 0.25 0 1 f
 execute at @e[tag=marker_gold] run particle wax_on ~ ~0.5 ~ 0.25 0.3 0.25 2 1 force @a
 execute at @e[tag=marker_gold] positioned ^ ^ ^0.7 run particle copper_fire_flame ~ ~0.5 ~ 0 0 0 0 1 force @a
 execute at @e[tag=marker_gray] run particle dust{color:[1,1,1],scale:1.0} ~ ~0.2 ~ 0.2 0.1 0.2 0 1 force @a
+execute at @e[tag=marker_block] run particle sulfur_cube_goo ~ ~0.5 ~ 0 0 0 0 1 force @a
 
 execute at @e[tag=marker_blue] run particle glow ~ 120 ~ 1 0.1 1 0 10 force @a
 execute at @e[tag=marker_purple] run particle witch ~ 120 ~ 1 0.1 1 0 10 force @a
