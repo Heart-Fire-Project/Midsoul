@@ -6,6 +6,14 @@
                 "damage":{
                     "taken":{
                         "min":0.1
+                    },
+                    "type":{
+                        "tags":[
+                            {
+                                "id":"main:bypass_detect",
+                                "expected":false
+                            }
+                        ]
                     }
                 }
             }
