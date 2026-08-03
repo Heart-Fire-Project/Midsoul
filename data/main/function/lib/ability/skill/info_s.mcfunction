@@ -7,7 +7,7 @@ tellraw @s[scores={skill=4}] [{translate:"ms.skill",fallback:"[技能] ",color:"
 tellraw @s[scores={skill=5}] [{translate:"ms.skill",fallback:"[技能] ",color:"#5599FF"},{translate:"ms.skill.005",fallback:"锚定虚影"}]
 
 tellraw @s[scores={skill=1}] [{text:"⚡ 60  ⌚ 10 > ",color:"#5599FF"},{translate:"ms.tag.survive",fallback:"生存"}]
-tellraw @s[scores={skill=2}] [{text:"⚡ 75  ⌚ 15 > ",color:"#5599FF"},{translate:"ms.tag.heal",fallback:"救助"},"/",{translate:"ms.tag.detect",fallback:"感知"}]
+tellraw @s[scores={skill=2}] [{text:"⚡ 75  ⌚ 10 > ",color:"#5599FF"},{translate:"ms.tag.heal",fallback:"救助"},"/",{translate:"ms.tag.detect",fallback:"感知"}]
 tellraw @s[scores={skill=3}] [{text:"⚡ 70 > ",color:"#5599FF"},{translate:"ms.tag.detect",fallback:"感知"},"/",{translate:"ms.tag.debuff",fallback:"妨害"}]
 tellraw @s[scores={skill=4}] [{text:"⚡ 70  ⌚ 6 > ",color:"#5599FF"},{translate:"ms.tag.strategy",fallback:"策略"}]
 tellraw @s[scores={skill=5}] [{text:"⚡ 90  ⌚ 1.2 > ",color:"#5599FF"},{translate:"ms.tag.survive",fallback:"生存"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]

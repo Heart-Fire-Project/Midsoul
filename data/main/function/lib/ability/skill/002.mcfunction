@@ -4,8 +4,8 @@ scoreboard players add @s temp.skill 1
 tag @s add skill_on
 
 # 给予效果
-effect give @s glowing 15 0
-effect give @s slowness 15 4
+effect give @s glowing 10 0
+effect give @s slowness 10 4
 
 # 设置计时
-scoreboard players set @s tick.skill -30000
+scoreboard players set @s tick.skill -20000

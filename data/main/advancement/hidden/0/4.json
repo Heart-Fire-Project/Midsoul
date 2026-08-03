@@ -20,13 +20,13 @@
                 "translate":"ms.adv.hidden.0-2/4.goal",
                 "fallback":"在 %s 秒内完成大厅跑酷",
                 "with":[
-                    "32.5"
+                    "34"
                 ]
             },
             "\n\n",
             {
                 "translate":"ms.adv.hidden.0-4.desc",
-                "fallback":"苦也，这也言周",
+                "fallback":"若其存在，那么……",
                 "color":"gray",
                 "italic":true
             },
@@ -53,7 +53,7 @@
                         "scores":{
                             "stat.parkour_5":{
                                 "min":1,
-                                "max":650
+                                "max":680
                             }
                         },
                         "condition":"entity_scores",

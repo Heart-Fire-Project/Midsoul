@@ -35,8 +35,7 @@
                         "condition":"entity_properties",
                         "entity":"this",
                         "predicate":{
-                            "type_specific":{
-                                "type":"player",
+                            "type_specific/player":{
                                 "advancements":{
                                     "main:hidden/0/1":true
                                 }
@@ -54,8 +53,7 @@
                         "condition":"entity_properties",
                         "entity":"this",
                         "predicate":{
-                            "type_specific":{
-                                "type":"player",
+                            "type_specific/player":{
                                 "advancements":{
                                     "main:hidden/0/3":true
                                 }

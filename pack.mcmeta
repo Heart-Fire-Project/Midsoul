@@ -1,1 +1,1 @@
-{"pack":{"min_format":101,"max_format":101,"description":[{"translate":"ms.datapack","fallback":"午夜灵魂数据包","color":"#7367F0"}]},"filter":{"block":[{"namespace":"minecraft","path":"recipe/.*"},{"namespace":"minecraft","path":"advancement/.*"}]}}
+{"pack":{"min_format":107,"max_format":107,"description":[{"translate":"ms.datapack","fallback":"午夜灵魂数据包","color":"#7367F0"}]},"filter":{"block":[{"namespace":"minecraft","path":"recipe/.*"},{"namespace":"minecraft","path":"advancement/.*"}]}}
