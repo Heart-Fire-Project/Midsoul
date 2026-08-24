@@ -153,6 +153,10 @@ scoreboard objectives add detect.interact trigger "交互检测"
 scoreboard objectives add leave_game custom:leave_game "离开游戏"
 scoreboard objectives add soul_combo dummy "灵魂连击"
 
+scoreboard objectives add ui.skill dummy "技能选择页"
+scoreboard objectives add ui.talent_1 dummy "天赋 1 选择页"
+scoreboard objectives add ui.talent_2 dummy "天赋 2 选择页"
+
 scoreboard objectives add stat.collect dummy "总计碎片收集"
 scoreboard objectives add stat.heal dummy "总计队友救助"
 scoreboard objectives add stat.open dummy "总计宝盒打开"
@@ -326,7 +330,7 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 330
+scoreboard players set $build data 331
 scoreboard players set $map_max data 6
 scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 5
