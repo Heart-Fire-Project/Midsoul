@@ -39,12 +39,12 @@ function main:lib/event/universal/inventory_other
 # 准备/旁观侦测
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:70000}}}}}] run function main:lib/event/prepare
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:70001}}}}}] run function main:lib/event/spectator
-clear @s[nbt=!{Inventory:[{Slot:8b}]}] closed_eyeblossom[custom_data={id:70000}]
-clear @s[nbt=!{Inventory:[{Slot:8b}]}] open_eyeblossom[custom_data={id:70001}]
+clear @s[nbt=!{Inventory:[{Slot:8b}]}] firework_star[custom_data={id:70000}]
+clear @s[nbt=!{Inventory:[{Slot:8b}]}] firework_star[custom_data={id:70001}]
 
 # 刷新物品
-item replace entity @s[team=spectator] hotbar.8 with closed_eyeblossom[item_name={translate:"ms.lobby.spectator",fallback:"未准备 - 按 [%s] 准备",italic:false,color:"gray",with:[{keybind:"key.swapOffhand"}]},custom_data={id:70000}]
-item replace entity @s[team=prepare] hotbar.8 with open_eyeblossom[item_name={translate:"ms.lobby.prepare",fallback:"已准备 - 按 [%s] 取消",italic:false,color:"#FC9341",with:[{keybind:"key.swapOffhand"}]},custom_data={id:70001}]
+item replace entity @s[team=spectator] hotbar.8 with firework_star[item_name={translate:"ms.lobby.spectator",fallback:"未准备 - 按 [%s] 准备",italic:false,color:"gray",with:[{keybind:"key.swapOffhand"}]},item_model="closed_eyeblossom",custom_data={id:70000}]
+item replace entity @s[team=prepare] hotbar.8 with firework_star[item_name={translate:"ms.lobby.prepare",fallback:"已准备 - 按 [%s] 取消",italic:false,color:"#FC9341",with:[{keybind:"key.swapOffhand"}]},item_model="open_eyeblossom",custom_data={id:70001}]
 function main:lib/event/universal/inventory_setting
 
 item replace entity @s weapon.offhand with air
