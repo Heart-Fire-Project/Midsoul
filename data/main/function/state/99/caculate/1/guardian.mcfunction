@@ -63,7 +63,7 @@ scoreboard players set @s temp 0
 scoreboard players operation @s temp = $soul_death data
 scoreboard players operation @s temp *= #50 data
 execute if score $soul_death data matches 3.. run scoreboard players add @s temp 50
-execute if score @s temp matches 301.. run scoreboard players set @s temp 300
+scoreboard players set @s[scores={temp=301..}] temp 300
 execute unless entity @a[team=revive] run scoreboard players add @s temp 60
 execute if score $result data matches ..-3 run scoreboard players add @s temp 90
 execute if score $result data matches -2..-1 run scoreboard players add @s temp 50

@@ -18,4 +18,4 @@ execute as @a[scores={detect.crossbow=1..}] at @s run function main:lib/ability/
 execute as @a[scores={detect.drop=1..}] at @s run function main:lib/ability/detect/drop
 execute as @e[type=#arrows] run data merge entity @s {pickup:0}
 execute as @e[type=#arrows] store result score @s temp run data get entity @s life
-execute as @e[type=#arrows] if score @s temp matches 1..1099 run data merge entity @s {life:1100s}
+execute as @e[type=#arrows,scores={temp=1..1099}] run data merge entity @s {life:1100s}

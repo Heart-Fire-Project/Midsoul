@@ -3,7 +3,7 @@ execute unless entity @s[team=guardian] run function main:player_enter_spec
 execute if entity @s[team=guardian] unless score $state data matches 3..98 run function main:player_enter_spec
 
 # 将音效最提前处理以适配管理员退出
-execute if score @s leave_game matches 1.. run playsound entity.experience_orb.pickup player @a 0 1000000 0 120000 1
+execute as @s[scores={leave_game=1..}] run playsound entity.experience_orb.pickup player @a 0 1000000 0 120000 1
 
 # 都需进行的流程
 execute if score $state data matches 3.. run function main:lib/event/music_roll

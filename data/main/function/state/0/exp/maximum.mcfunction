@@ -1,9 +1,9 @@
 # 基础经验 300 点
-execute if score @s temp2 matches 0 run scoreboard players set @s exp.max 300
+scoreboard players set @s[scores={temp2=0}] exp.max 300
 
 # 刷新等级结算值
-execute if score @s temp matches 1.. run scoreboard players add @s temp2 1
-execute if score @s temp matches 1.. run scoreboard players remove @s temp 1
+scoreboard players add @s[scores={temp=1..}] temp2 1
+scoreboard players remove @s[scores={temp=1..}] temp 1
 
 # 每一级所需经验量为上一级所需经验量+当前等级数*[(100+当前等级数)%]
 scoreboard players operation $exp_rise temp = @s temp2
@@ -14,4 +14,4 @@ scoreboard players operation $exp_rise temp /= #100 data
 scoreboard players operation @s exp.max += $exp_rise temp
 
 # 如果还没完，则再来一次
-execute if score @s temp matches 1.. run function main:state/0/exp/maximum
+execute as @s[scores={temp=1..}] run function main:state/0/exp/maximum

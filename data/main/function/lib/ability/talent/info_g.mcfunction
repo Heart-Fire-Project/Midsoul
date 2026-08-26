@@ -7,6 +7,8 @@ $tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent",fallback:"[天赋]
 $tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.105",fallback:"舍近求远"}]
 $tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.106",fallback:"共振感应"}]
 $tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.107",fallback:"碎片侵蚀"}]
+$tellraw @s[scores={talent_$(num)=8}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.108",fallback:"寂域威压"}]
+$tellraw @s[scores={talent_$(num)=9}] [{translate:"ms.talent",fallback:"[天赋] ",color:"gold"},{translate:"ms.talent.109",fallback:"截镫留鞭"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{text:"> ",color:"gold"},{translate:"ms.tag.debuff",fallback:"妨害"}]
 $tellraw @s[scores={talent_$(num)=2}] [{text:"⌚ 4 > ",color:"gold"},{translate:"ms.tag.detect",fallback:"感知"}]
@@ -15,6 +17,8 @@ $tellraw @s[scores={talent_$(num)=4}] [{text:"⚡ 75 > ",color:"gold"},{translat
 $tellraw @s[scores={talent_$(num)=5}] [{text:"⌚ 6 > ",color:"gold"},{translate:"ms.tag.detect",fallback:"感知"}]
 $tellraw @s[scores={talent_$(num)=6}] [{text:"⚡ 60  ⌚ 3 > ",color:"gold"},{translate:"ms.tag.detect",fallback:"感知"}]
 $tellraw @s[scores={talent_$(num)=7}] [{text:"⚡ 35 > ",color:"gold"},{translate:"ms.tag.debuff",fallback:"妨害"}]
+$tellraw @s[scores={talent_$(num)=8}] [{text:"> ",color:"gold"},{translate:"ms.tag.debuff",fallback:"妨害"}]
+$tellraw @s[scores={talent_$(num)=9}] [{text:"> ",color:"gold"},{translate:"ms.tag.debuff",fallback:"妨害"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{translate:"ms.talent.101.desc",fallback:"对自身的气息探测生效距离 -40%%"}]
 $tellraw @s[scores={talent_$(num)=2}] [{translate:"ms.talent.102.desc",fallback:"灵魂解除垂死状态时，使全体灵魂移速 -15%%"}]
@@ -23,3 +27,5 @@ $tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent.104.desc",fallback:
 $tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.105.desc",fallback:"擦刀状态结束时，使最远的至多 2 个灵魂发光"}]
 $tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent.106.desc",fallback:"使距离你最近的至多 2 个灵魂发光"}]
 $tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent.107.desc",fallback:"污染场上的一个碎片；被污染的碎片将在被收集时发射一个烟花"},"\n",{translate:"ms.talent.107.desc.sub",fallback:"无初始冷却；至多同时对 3 个碎片生效",color:"gray"}]
+$tellraw @s[scores={talent_$(num)=8}] [{translate:"ms.talent.108.desc",fallback:"距离 24 格以内的灵魂交互速度 -20%，对正在点亮灵灯的灵魂效果减半"}]
+$tellraw @s[scores={talent_$(num)=9}] [{translate:"ms.talent.109.desc",fallback:"靠近未开启的传送门时，其交互进度损失速率提升至 250%"}]

@@ -2,16 +2,16 @@ tag @s remove can_equip
 tellraw @s ""
 
 # 解锁条件
-execute if score @s temp matches 0 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/1=true}] temp matches 1 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/2=true}] temp matches 2 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/3=true}] temp matches 3 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/4=true}] temp matches 4 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/5=true}] temp matches 5 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/6=true}] temp matches 6 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/7=true}] temp matches 7 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/8=true}] temp matches 8 run tag @s add can_equip
-execute if score @s[advancements={main:extra/particle/9=true}] temp matches 9 run tag @s add can_equip
+tag @s[scores={temp=0}] add can_equip
+tag @s[advancements={main:extra/particle/1=true},scores={temp=1}] add can_equip
+tag @s[advancements={main:extra/particle/2=true},scores={temp=2}] add can_equip
+tag @s[advancements={main:extra/particle/3=true},scores={temp=3}] add can_equip
+tag @s[advancements={main:extra/particle/4=true},scores={temp=4}] add can_equip
+tag @s[advancements={main:extra/particle/5=true},scores={temp=5}] add can_equip
+tag @s[advancements={main:extra/particle/6=true},scores={temp=6}] add can_equip
+tag @s[advancements={main:extra/particle/7=true},scores={temp=7}] add can_equip
+tag @s[advancements={main:extra/particle/8=true},scores={temp=8}] add can_equip
+tag @s[advancements={main:extra/particle/9=true},scores={temp=9}] add can_equip
 
 # 可以使用
 scoreboard players operation @s[tag=can_equip] extra.particle = @s temp

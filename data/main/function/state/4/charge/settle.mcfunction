@@ -17,10 +17,10 @@ execute if score $4_chargesound tick.general matches 11.. run scoreboard players
 # 逸散进度结算
 scoreboard players operation $minus temp = $interact_speed setting
 scoreboard players operation $minus temp /= #5 data
-execute unless score $num temp matches 1.. if score @s tick.general matches 1.. run scoreboard players operation @s tick.general -= $minus temp
-execute if score @s[scores={state=0}] tick.general matches ..-1 run scoreboard players set @s tick.general 0
-execute if score @s[scores={state=1}] tick.general matches ..30000 run scoreboard players set @s tick.general 30000
-execute if score @s[scores={state=2}] tick.general matches ..60000 run scoreboard players set @s tick.general 60000
+execute unless score $num temp matches 1.. run scoreboard players operation @s[scores={tick.general=1..}] tick.general -= $minus temp
+scoreboard players set @s[scores={state=0,tick.general=..-1}] tick.general 0
+scoreboard players set @s[scores={state=1,tick.general=..30000}] tick.general 30000
+scoreboard players set @s[scores={state=2,tick.general=..60000}] tick.general 60000
 
 # 极速充能结算
 execute if score $4_finale state matches 1 if entity @s[scores={tick.general=..90000}] if entity @a[team=soul,distance=..3,scores={state=0}] run function main:state/4/charge/finale
@@ -44,4 +44,4 @@ scoreboard players set @s[scores={state=0,tick.general=35000..}] state 1
 scoreboard players set @s[scores={state=1,tick.general=70000..}] state 2
 
 # 充能完毕？
-execute if score @s tick.general matches 100000.. run function main:state/4/charge/finish
+execute as @s[scores={tick.general=100000..}] run function main:state/4/charge/finish

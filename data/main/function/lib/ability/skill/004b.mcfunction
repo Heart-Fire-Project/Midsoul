@@ -13,4 +13,4 @@ tag @s add S004b
 particle dust_color_transition{from_color:[0.5,0.5,1.0],to_color:[1,0,0],scale:1} ~ ~1.6 ~ 0.3 0.2 0.3 0.1 48 force @a
 
 # 进度
-execute if score @s temp.skill matches 1 run advancement grant @s only main:hidden/1/5
+advancement grant @s[scores={temp.skill=1}] only main:hidden/1/5

@@ -1,8 +1,8 @@
 # 还是受文本套组影响
 execute unless score @s extra.text matches 1..3 run function main:lib/player/revive/0
-execute if score @s extra.text matches 1 run function main:lib/player/revive/1
-execute if score @s extra.text matches 2 run function main:lib/player/revive/2
-execute if score @s extra.text matches 3 run function main:lib/player/revive/3
+execute as @s[scores={extra.text=1}] run function main:lib/player/revive/1
+execute as @s[scores={extra.text=2}] run function main:lib/player/revive/2
+execute as @s[scores={extra.text=3}] run function main:lib/player/revive/3
 
 # 由于队伍会使信息内玩家名变色，后置处理
 execute at @s run particle firework ~ ~0.4 ~ 0.2 0.1 0.2 0.5 256 force @a

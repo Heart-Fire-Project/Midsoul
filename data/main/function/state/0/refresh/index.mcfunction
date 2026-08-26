@@ -63,8 +63,8 @@ execute if score $index_page setting matches 31 run function base:merge_sign {x:
 execute if score $index_page setting matches 31 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.005",fallb_2:"T005",fallb_3:"蹑手蹑脚",command:"trigger detect.interact set 2005"}
 execute if score $index_page setting matches 31 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.006",fallb_2:"T006",fallb_3:"碎片注入",command:"trigger detect.interact set 2006"}
 execute if score $index_page setting matches 31 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.007",fallb_2:"T007",fallb_3:"灵气感知",command:"trigger detect.interact set 2007"}
-execute if score $index_page setting matches 31 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
-execute if score $index_page setting matches 31 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
+execute if score $index_page setting matches 31 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.008",fallb_2:"T008",fallb_3:"幽脉同频",command:"trigger detect.interact set 2008"}
+execute if score $index_page setting matches 31 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.009",fallb_2:"T009",fallb_3:"矢志不渝",command:"trigger detect.interact set 2009"}
 execute if score $index_page setting matches 31 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"glow_ink_sac"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 31 run summon item -1 12.1 4 {Tags:[index_entity],Item:{id:"blaze_powder"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 31 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"magma_cream"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
@@ -72,6 +72,8 @@ execute if score $index_page setting matches 31 run summon item -3 12.1 4 {Tags:
 execute if score $index_page setting matches 31 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"feather"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 31 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"prismarine_crystals"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 31 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"cyan_dye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 31 run summon item -7 12.1 4 {Tags:[index_entity],Item:{id:"sculk_vein"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 31 run summon item -8 12.1 4 {Tags:[index_entity],Item:{id:"rose_bush"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 图鉴 T1
 execute if score $index_page setting matches 41 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.101",fallb_2:"T101",fallb_3:"抱火寝薪",command:"trigger detect.interact set 2101"}
@@ -81,8 +83,8 @@ execute if score $index_page setting matches 41 run function base:merge_sign {x:
 execute if score $index_page setting matches 41 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.105",fallb_2:"T105",fallb_3:"舍近求远",command:"trigger detect.interact set 2105"}
 execute if score $index_page setting matches 41 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.106",fallb_2:"T106",fallb_3:"共振感应",command:"trigger detect.interact set 2106"}
 execute if score $index_page setting matches 41 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.107",fallb_2:"T107",fallb_3:"碎片侵蚀",command:"trigger detect.interact set 2107"}
-execute if score $index_page setting matches 41 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
-execute if score $index_page setting matches 41 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
+execute if score $index_page setting matches 41 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.108",fallb_2:"T108",fallb_3:"寂域威压",command:"trigger detect.interact set 2108"}
+execute if score $index_page setting matches 41 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.109",fallb_2:"T109",fallb_3:"截镫留鞭",command:"trigger detect.interact set 2109"}
 execute if score $index_page setting matches 41 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"crimson_fungus"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 41 run summon item -1 12.1 4 {Tags:[index_entity],Item:{id:"red_dye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 41 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"blade_pottery_sherd"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
@@ -90,6 +92,8 @@ execute if score $index_page setting matches 41 run summon item -3 12.1 4 {Tags:
 execute if score $index_page setting matches 41 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"recovery_compass"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 41 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"redstone"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 41 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"amethyst_shard"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 41 run summon item -7 12.1 4 {Tags:[index_entity],Item:{id:"fermented_spider_eye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 41 run summon item -8 12.1 4 {Tags:[index_entity],Item:{id:"lead"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 图鉴 R
 execute if score $index_page setting matches 51 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.1",fallb_2:"R01",fallb_3:"无懈可击",command:"trigger detect.interact set 3001"}
@@ -99,12 +103,13 @@ execute if score $index_page setting matches 51 run function base:merge_sign {x:
 execute if score $index_page setting matches 51 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.5",fallb_2:"R05",fallb_3:"高效制冷",command:"trigger detect.interact set 3005"}
 execute if score $index_page setting matches 51 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.6",fallb_2:"R06",fallb_3:"灵能冲击",command:"trigger detect.interact set 3006"}
 execute if score $index_page setting matches 51 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.7",fallb_2:"R07",fallb_3:"再生疗愈",command:"trigger detect.interact set 3007"}
-execute if score $index_page setting matches 51 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
+execute if score $index_page setting matches 51 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"ms.relic.8",fallb_2:"R08",fallb_3:"投石成绊",command:"trigger detect.interact set 3008"}
 execute if score $index_page setting matches 51 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"lime",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 51 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"iron_chestplate",components:{trim:{material:"diamond",pattern:"snout"}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 51 run summon item -1 12.1 4 {Tags:[index_entity],Item:{id:"prismarine_shard"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 51 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"clock"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 51 run summon item -3 12.1 4 {Tags:[index_entity],Item:{id:"shaper_armor_trim_smithing_template"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-execute if score $index_page setting matches 51 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"player_head",components:{profile:{id:[I;-2028710611,-535870698,-1464817086,-1561423040],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk4Njc5NDUyMTg2OWU4MzI3ZWY4MWRiYzM1Yzk4NTZiYzQwNTFkZjk4ODhkODFlYWIyMTI0NDJiMTc2YTgyZiJ9fX0="}]}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 51 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"player_head",components:{profile:{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk4Njc5NDUyMTg2OWU4MzI3ZWY4MWRiYzM1Yzk4NTZiYzQwNTFkZjk4ODhkODFlYWIyMTI0NDJiMTc2YTgyZiJ9fX0="}]}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 51 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"crossbow",components:{charged_projectiles:[{id:"tipped_arrow"}]}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 51 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"tipped_arrow",components:{potion_contents:{custom_color:12754943}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 51 run summon item -7 12.1 4 {Tags:[index_entity],Item:{id:"player_head",components:{profile:{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTcwMWM1MDVhZGFjY2VmMGRiOTMzZTBmNDA2MTc2M2Y4MGVjMzUwN2RlZmU1ZGY2OGViMmMyMTgyODE5NmJjMyJ9fX0="}]}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}

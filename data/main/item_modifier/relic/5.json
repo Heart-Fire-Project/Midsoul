@@ -60,12 +60,6 @@
         "components":{
             "item_model":"player_head",
             "profile":{
-                "id":[
-                    -2028710611,
-                    -535870698,
-                    -1464817086,
-                    -1561423040
-                ],
                 "properties":[
                     {
                         "name":"textures",

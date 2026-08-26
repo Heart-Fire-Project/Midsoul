@@ -43,4 +43,4 @@ execute if score $echo data matches 4 run weather thunder 88614
 scoreboard players set $minus_shard temp 0
 execute if score $echo data matches 9 run function debug:sub/game/shard/destroy
 
-execute if score @s detect.interact matches -2999..-2000 run function debug:panel/2
+execute as @s[scores={detect.interact=-2999..-2000}] run function debug:panel/2

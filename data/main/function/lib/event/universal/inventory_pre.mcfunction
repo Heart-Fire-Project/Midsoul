@@ -18,7 +18,7 @@ execute if entity @s[team=soul,scores={talent_2=4},tag=talent_2_on] run data mer
 execute if data storage ms:inventory {T004:0} run data merge storage ms:inventory {T004:1}
 execute if data storage ms:inventory {T107:0} run data merge storage ms:inventory {T107:1}
 scoreboard players operation $tick temp = @s tick.talent_1
-execute if score @s tick.talent_1 matches ..-1 run scoreboard players operation $tick temp *= #-1 data
+execute as @s[scores={tick.talent_1=..-1}] run scoreboard players operation $tick temp *= #-1 data
 scoreboard players operation $tick temp /= #100 data
 scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
@@ -26,7 +26,7 @@ execute if score $sec temp2 matches ..0 run scoreboard players set $sec temp2 1
 execute store result storage ms:inventory tick_talent_1 int 1 run scoreboard players get $sec temp2
 
 scoreboard players operation $tick temp = @s tick.talent_2
-execute if score @s tick.talent_2 matches ..-1 run scoreboard players operation $tick temp *= #-1 data
+execute as @s[scores={tick.talent_2=..-1}] run scoreboard players operation $tick temp *= #-1 data
 scoreboard players operation $tick temp /= #100 data
 scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}
@@ -34,7 +34,7 @@ execute if score $sec temp2 matches ..0 run scoreboard players set $sec temp2 1
 execute store result storage ms:inventory tick_talent_2 int 1 run scoreboard players get $sec temp2
 
 scoreboard players operation $tick temp = @s tick.relic
-execute if score @s tick.relic matches ..-1 run scoreboard players operation $tick temp *= #-1 data
+execute as @s[scores={tick.relic=..-1}] run scoreboard players operation $tick temp *= #-1 data
 scoreboard players operation $tick temp /= #100 data
 scoreboard players add $tick temp 19
 function base:caculate/time {unit:"sec",tick:"$tick",source:"temp"}

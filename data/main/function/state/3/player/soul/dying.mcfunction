@@ -36,9 +36,9 @@ function main:state/3/player/effect
 
 # 受文本套组影响
 execute unless score @s extra.text matches 1..3 run function main:lib/player/dying/0
-execute if score @s extra.text matches 1 run function main:lib/player/dying/1
-execute if score @s extra.text matches 2 run function main:lib/player/dying/2
-execute if score @s extra.text matches 3 run function main:lib/player/dying/3
+execute as @s[scores={extra.text=1}] run function main:lib/player/dying/1
+execute as @s[scores={extra.text=2}] run function main:lib/player/dying/2
+execute as @s[scores={extra.text=3}] run function main:lib/player/dying/3
 
 # 灯噔咚
 function main:lib/event/summon/gold

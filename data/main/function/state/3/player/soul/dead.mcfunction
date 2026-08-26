@@ -1,8 +1,8 @@
 # 依旧受文本套组影响
 execute unless score @s extra.text matches 1..3 run function main:lib/player/dead/0
-execute if score @s extra.text matches 1 run function main:lib/player/dead/1
-execute if score @s extra.text matches 2 run function main:lib/player/dead/2
-execute if score @s extra.text matches 3 run function main:lib/player/dead/3
+execute as @s[scores={extra.text=1}] run function main:lib/player/dead/1
+execute as @s[scores={extra.text=2}] run function main:lib/player/dead/2
+execute as @s[scores={extra.text=3}] run function main:lib/player/dead/3
 
 # 由于队伍会使信息内玩家名变色，后置处理
 execute run particle sculk_soul ~ ~1 ~ 0.2 0.1 0.2 0.3 512 force @a

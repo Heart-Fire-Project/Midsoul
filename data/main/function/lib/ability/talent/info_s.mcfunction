@@ -7,6 +7,8 @@ $tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent",fallback:"[天赋]
 $tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent",fallback:"[天赋] ",color:"aqua"},{translate:"ms.talent.005",fallback:"蹑手蹑脚"}]
 $tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent",fallback:"[天赋] ",color:"aqua"},{translate:"ms.talent.006",fallback:"碎片注入"}]
 $tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent",fallback:"[天赋] ",color:"aqua"},{translate:"ms.talent.007",fallback:"灵气感知"}]
+$tellraw @s[scores={talent_$(num)=8}] [{translate:"ms.talent",fallback:"[天赋] ",color:"aqua"},{translate:"ms.talent.008",fallback:"幽脉同频"}]
+$tellraw @s[scores={talent_$(num)=9}] [{translate:"ms.talent",fallback:"[天赋] ",color:"aqua"},{translate:"ms.talent.009",fallback:"矢志不渝"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{text:"⚡ 30 > ",color:"aqua"},{translate:"ms.tag.collect",fallback:"收集"}]
 $tellraw @s[scores={talent_$(num)=2}] [{text:"⚡ 60  ⌚ 3 > ",color:"aqua"},{translate:"ms.tag.survive",fallback:"生存"}]
@@ -15,6 +17,8 @@ $tellraw @s[scores={talent_$(num)=4}] [{text:"⚡ 3 > ",color:"aqua"},{translate
 $tellraw @s[scores={talent_$(num)=5}] [{text:"> ",color:"aqua"},{translate:"ms.tag.survive",fallback:"生存"}]
 $tellraw @s[scores={talent_$(num)=6}] [{text:"> ",color:"aqua"},{translate:"ms.tag.heal",fallback:"救助"}]
 $tellraw @s[scores={talent_$(num)=7}] [{text:"> ",color:"aqua"},{translate:"ms.tag.collect",fallback:"收集"}]
+$tellraw @s[scores={talent_$(num)=8}] [{text:"> ",color:"aqua"},{translate:"ms.tag.detect",fallback:"感知"}]
+$tellraw @s[scores={talent_$(num)=9}] [{text:"> ",color:"aqua"},{translate:"ms.tag.heal",fallback:"救助"}]
 
 $tellraw @s[scores={talent_$(num)=1}] [{translate:"ms.talent.001.desc",fallback:"碎片收集速度 +25%%"},"\n",{translate:"ms.talent.001.desc.sub",fallback:"持续时间无限，收集中断时重置",color:"gray"}]
 $tellraw @s[scores={talent_$(num)=2}] [{translate:"ms.talent.002.desc",fallback:"距离守卫者 12 格以内时，移速 +80%%"}]
@@ -23,3 +27,5 @@ $tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent.004.desc",fallback:
 $tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.005.desc",fallback:"潜行速度提升至 200%%；潜行时不作为气息探测目标"}]
 $tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent.006.desc",fallback:"收集到灵魂碎片时，所有垂死灵魂的垂死状态持续时间 +8 秒"}]
 $tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent.007.desc",fallback:"交互速度 +3%%；灵气等级每提升 1 级额外 +3%%"},"\n",{translate:"ms.talent.007.desc.sub",fallback:"至多提升至 +12%%",color:"gray"}]
+$tellraw @s[scores={talent_$(num)=8}] [{translate:"ms.talent.008.desc",fallback:"充能传送门时，对守卫者的气息探测生效距离 +8 格"}]
+$tellraw @s[scores={talent_$(num)=9}] [{translate:"ms.talent.009.desc",fallback:"点亮灵灯所需时间 -1.5 秒，期间受到的击退效果 -75%"}]

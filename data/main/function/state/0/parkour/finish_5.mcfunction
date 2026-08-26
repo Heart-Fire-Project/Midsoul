@@ -14,10 +14,10 @@ title @s actionbar [{translate:"ms.parkour.finish",fallback:"跑酷已完成",co
 tellraw @s [{text:"» ",bold:true,color:"green"},{translate:"ms.parkour.5",fallback:"大厅跑酷完成",bold:false}]
 tellraw @s ["   ",{translate:"ms.parkour.time",fallback:"本次用时"}," » ",{storage:"ms:string",nbt:"result",interpret:true}]
 execute if entity @s[scores={stat.parkour_5=1..}] run function main:state/0/parkour/time_format {source:"stat.parkour_5"}
-execute if score @s stat.parkour_5 matches ..0 run tellraw @s ["   ",{translate:"ms.parkour.pb",fallback:"个人最佳"}," » ","--:--.--"]
-execute if score @s stat.parkour_5 matches 1.. run tellraw @s ["   ",{translate:"ms.parkour.pb",fallback:"个人最佳"}," » ",{storage:"ms:string",nbt:"result",interpret:true}]
+tellraw @s[scores={stat.parkour_5=..0}] ["   ",{translate:"ms.parkour.pb",fallback:"个人最佳"}," » ","--:--.--"]
+tellraw @s[scores={stat.parkour_5=1..}] ["   ",{translate:"ms.parkour.pb",fallback:"个人最佳"}," » ",{storage:"ms:string",nbt:"result",interpret:true}]
 
 # 个人最佳
 execute if score @s temp2 < @s stat.parkour_5 run scoreboard players set @s tick.parkour -54
-execute if score @s stat.parkour_5 matches ..0 run scoreboard players set @s tick.parkour -54
-execute if score @s tick.parkour matches -54 run scoreboard players operation @s stat.parkour_5 = @s temp2
+scoreboard players set @s[scores={stat.parkour_5=..0}] tick.parkour -54
+scoreboard players operation @s[scores={tick.parkour=-54}] stat.parkour_5 = @s temp2

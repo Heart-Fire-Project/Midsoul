@@ -3,10 +3,10 @@ scoreboard players add @s temp.skill 1
 tag @s add skill_on
 
 # 首次施放
-execute if score @s temp.skill matches 1 run function main:lib/ability/skill/005a
+execute as @s[scores={temp.skill=1}] run function main:lib/ability/skill/005a
 
 # 并非首次施放
-execute if score @s temp.skill matches 2.. run function main:lib/ability/skill/005b
+execute as @s[scores={temp.skill=2..}] run function main:lib/ability/skill/005b
 
 # 设置计时
 scoreboard players set @s tick.skill -2400
