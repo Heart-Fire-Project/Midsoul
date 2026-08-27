@@ -25,4 +25,4 @@ tellraw @s[scores={relic=4}] [{translate:"ms.relic.4.desc",fallback:"与最远�
 tellraw @s[scores={relic=5}] [{translate:"ms.relic.5.desc",fallback:"于当前位置与方向部署一个高效制冷模块，守卫者经过其面前时移速 -45%%"},"\n",{translate:"ms.relic.5.desc.sub",fallback:"场上至多存在 2 个同名模块，超出上限时清除先被部署的模块",color:"gray"}]
 tellraw @s[scores={relic=6}] [{translate:"ms.relic.6.desc",fallback:"若击中守卫者，使其在 12 秒内失明且发光"},"\n",{translate:"ms.relic.6.desc.sub",fallback:"短按 [%s] 发射以使用",color:"gray",with:[{keybind:"key.use"}]}]
 tellraw @s[scores={relic=7}] [{translate:"ms.relic.7.desc",fallback:"在 3 秒内回复 10 血量"},"\n",{translate:"ms.relic.7.desc.sub",fallback:"长按 [%s] 以使用；双击 [%s] 可丢弃该宝物",color:"gray",with:[{keybind:"key.use"},{keybind:"key.drop"}]}]
-tellraw @s[scores={relic=8}] [{translate:"ms.relic.8.desc",fallback:"在落点生成一片持续 7 秒的砾石区域，令位于其中的守卫者沉默且移速 -30%"},"\n",{translate:"ms.relic.8.desc.sub",fallback:"短按 [右键] 掷出以使用",color:"gray",with:[{keybind:"key.use"}]}]
+tellraw @s[scores={relic=8}] [{translate:"ms.relic.8.desc",fallback:"在落点生成一片持续 7 秒的砾石区域，令位于其中的守卫者沉默且移速 -30%"},"\n",{translate:"ms.relic.8.desc.sub",fallback:"短按 [%s] 掷出以使用",color:"gray",with:[{keybind:"key.use"}]}]

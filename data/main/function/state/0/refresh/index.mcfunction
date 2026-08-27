@@ -72,8 +72,8 @@ execute if score $index_page setting matches 31 run summon item -3 12.1 4 {Tags:
 execute if score $index_page setting matches 31 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"feather"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 31 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"prismarine_crystals"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 31 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"cyan_dye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-execute if score $index_page setting matches 31 run summon item -7 12.1 4 {Tags:[index_entity],Item:{id:"sculk_vein"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
-execute if score $index_page setting matches 31 run summon item -8 12.1 4 {Tags:[index_entity],Item:{id:"rose_bush"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 31 run summon item -7 12.1 4 {Tags:[index_entity],Item:{id:"tube_coral"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 31 run summon item -8 12.1 4 {Tags:[index_entity],Item:{id:"wither_rose"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 图鉴 T1
 execute if score $index_page setting matches 41 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"orange",trans_2:"",trans_3:"ms.talent.101",fallb_2:"T101",fallb_3:"抱火寝薪",command:"trigger detect.interact set 2101"}

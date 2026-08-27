@@ -27,5 +27,5 @@ $tellraw @s[scores={talent_$(num)=4}] [{translate:"ms.talent.004.desc",fallback:
 $tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.005.desc",fallback:"潜行速度提升至 200%%；潜行时不作为气息探测目标"}]
 $tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent.006.desc",fallback:"收集到灵魂碎片时，所有垂死灵魂的垂死状态持续时间 +8 秒"}]
 $tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent.007.desc",fallback:"交互速度 +3%%；灵气等级每提升 1 级额外 +3%%"},"\n",{translate:"ms.talent.007.desc.sub",fallback:"至多提升至 +12%%",color:"gray"}]
-$tellraw @s[scores={talent_$(num)=8}] [{translate:"ms.talent.008.desc",fallback:"充能传送门时，对守卫者的气息探测生效距离 +8 格"}]
+$tellraw @s[scores={talent_$(num)=8}] [{translate:"ms.talent.008.desc",fallback:"充能传送门时，对守卫者的气息探测生效距离 +8 格，并使所有处于红色气息探测范围的守卫者发光"}]
 $tellraw @s[scores={talent_$(num)=9}] [{translate:"ms.talent.009.desc",fallback:"点亮灵灯所需时间 -1.5 秒，期间受到的击退效果 -75%"}]

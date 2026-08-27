@@ -28,4 +28,4 @@ $tellraw @s[scores={talent_$(num)=5}] [{translate:"ms.talent.105.desc",fallback:
 $tellraw @s[scores={talent_$(num)=6}] [{translate:"ms.talent.106.desc",fallback:"使距离你最近的至多 2 个灵魂发光"}]
 $tellraw @s[scores={talent_$(num)=7}] [{translate:"ms.talent.107.desc",fallback:"污染场上的一个碎片；被污染的碎片将在被收集时发射一个烟花"},"\n",{translate:"ms.talent.107.desc.sub",fallback:"无初始冷却；至多同时对 3 个碎片生效",color:"gray"}]
 $tellraw @s[scores={talent_$(num)=8}] [{translate:"ms.talent.108.desc",fallback:"距离 24 格以内的灵魂交互速度 -20%，对正在点亮灵灯的灵魂效果减半"}]
-$tellraw @s[scores={talent_$(num)=9}] [{translate:"ms.talent.109.desc",fallback:"靠近未开启的传送门时，其交互进度损失速率提升至 250%"}]
+$tellraw @s[scores={talent_$(num)=9}] [{translate:"ms.talent.109.desc",fallback:"位于未开启的传送门周围 3 格内时，其交互进度流失速率提升至 250%"}]
