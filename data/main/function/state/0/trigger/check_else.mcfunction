@@ -29,12 +29,16 @@ scoreboard players set @s[scores={detect.interact=1002}] skill 2
 scoreboard players set @s[scores={detect.interact=1003}] skill 3
 scoreboard players set @s[scores={detect.interact=1004}] skill 4
 scoreboard players set @s[scores={detect.interact=1005}] skill 5
+scoreboard players set @s[scores={detect.interact=1006}] skill 6
+scoreboard players set @s[scores={detect.interact=1007}] skill 7
 execute as @s[scores={detect.interact=1001..1099}] run function main:lib/ability/skill/info_s
 scoreboard players set @s[scores={detect.interact=1101}] skill 1
 scoreboard players set @s[scores={detect.interact=1102}] skill 2
 scoreboard players set @s[scores={detect.interact=1103}] skill 3
 scoreboard players set @s[scores={detect.interact=1104}] skill 4
 scoreboard players set @s[scores={detect.interact=1105}] skill 5
+scoreboard players set @s[scores={detect.interact=1106}] skill 6
+scoreboard players set @s[scores={detect.interact=1107}] skill 7
 execute as @s[scores={detect.interact=1101..1199}] run function main:lib/ability/skill/info_g
 
 # 天赋类

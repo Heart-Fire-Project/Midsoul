@@ -29,8 +29,8 @@ execute if score $index_page setting matches 11 run function base:merge_sign {x:
 execute if score $index_page setting matches 11 run function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.003",fallb_2:"S003",fallb_3:"逆向追踪",command:"trigger detect.interact set 1003"}
 execute if score $index_page setting matches 11 run function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.004",fallb_2:"S004",fallb_3:"铤而走险",command:"trigger detect.interact set 1004"}
 execute if score $index_page setting matches 11 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.005",fallb_2:"S005",fallb_3:"锚定虚影",command:"trigger detect.interact set 1005"}
-execute if score $index_page setting matches 11 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
-execute if score $index_page setting matches 11 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
+execute if score $index_page setting matches 11 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.006",fallb_2:"S006",fallb_3:"济困扶危",command:"trigger detect.interact set 1006"}
+execute if score $index_page setting matches 11 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"ms.skill.007",fallb_2:"S007",fallb_3:"同气连枝",command:"trigger detect.interact set 1007"}
 execute if score $index_page setting matches 11 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 11 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"light_blue",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 11 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"phantom_membrane"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
@@ -38,6 +38,8 @@ execute if score $index_page setting matches 11 run summon item -1 12.1 4 {Tags:
 execute if score $index_page setting matches 11 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"recovery_compass"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 11 run summon item -3 12.1 4 {Tags:[index_entity],Item:{id:"dragon_breath"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 11 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"shulker_shell"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 11 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"pumpkin_pie"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 11 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"exposed_copper_chain"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 图鉴 S1
 execute if score $index_page setting matches 21 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.101",fallb_2:"S101",fallb_3:"虔诚力场",command:"trigger detect.interact set 1101"}
@@ -45,8 +47,8 @@ execute if score $index_page setting matches 21 run function base:merge_sign {x:
 execute if score $index_page setting matches 21 run function base:merge_sign {x:"-2",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.103",fallb_2:"S103",fallb_3:"唤灵留迹",command:"trigger detect.interact set 1103"}
 execute if score $index_page setting matches 21 run function base:merge_sign {x:"-3",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.104",fallb_2:"S104",fallb_3:"恶灵诅咒",command:"trigger detect.interact set 1104"}
 execute if score $index_page setting matches 21 run function base:merge_sign {x:"-4",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.105",fallb_2:"S105",fallb_3:"雾影阴霾",command:"trigger detect.interact set 1105"}
-execute if score $index_page setting matches 21 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
-execute if score $index_page setting matches 21 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
+execute if score $index_page setting matches 21 run function base:merge_sign {x:"-5",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.106",fallb_2:"S106",fallb_3:"请君入阱",command:"trigger detect.interact set 1106"}
+execute if score $index_page setting matches 21 run function base:merge_sign {x:"-6",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"ms.skill.107",fallb_2:"S107",fallb_3:"洞若观火",command:"trigger detect.interact set 1107"}
 execute if score $index_page setting matches 21 run function base:merge_sign {x:"-7",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 21 run function base:merge_sign {x:"-8",y:"11",z:"3",glow:"1",color:"red",trans_2:"",trans_3:"",fallb_2:"",fallb_3:"",command:""}
 execute if score $index_page setting matches 21 run summon item 0 12.1 4 {Tags:[index_entity],Item:{id:"spectral_arrow"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
@@ -54,6 +56,8 @@ execute if score $index_page setting matches 21 run summon item -1 12.1 4 {Tags:
 execute if score $index_page setting matches 21 run summon item -2 12.1 4 {Tags:[index_entity],Item:{id:"compass"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 21 run summon item -3 12.1 4 {Tags:[index_entity],Item:{id:"ominous_bottle"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 execute if score $index_page setting matches 21 run summon item -4 12.1 4 {Tags:[index_entity],Item:{id:"light_gray_dye"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 21 run summon item -5 12.1 4 {Tags:[index_entity],Item:{id:"smooth_stone_slab"},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
+execute if score $index_page setting matches 21 run summon item -6 12.1 4 {Tags:[index_entity],Item:{id:"player_head",components:{profile:{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE3NDQxZjBjMmNmYTYyZmVkOWUxMzk0ZjBkM2VkMjJlOTNkNGEzYjE1ZjNmNWQ0MGYzMzAwMGVmNDk1YzUzZSJ9fX0="}]}}},PickupDelay:32767s,Age:-32768s,NoGravity:1b}
 
 # 图鉴 T0
 execute if score $index_page setting matches 31 run function base:merge_sign {x:"0",y:"11",z:"3",glow:"1",color:"cyan",trans_2:"",trans_3:"ms.talent.001",fallb_2:"T001",fallb_3:"全神贯注",command:"trigger detect.interact set 2001"}
