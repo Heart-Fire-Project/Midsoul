@@ -1,0 +1,69 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.007",
+            "fallback":"同气连枝",
+            "color":"#5599FF",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 70  ⌚ 12 > ",
+                    "color":"#5599FF",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.support",
+                    "fallback":"协同"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
+            {
+                "translate":"ms.skill.007.desc.a",
+                "fallback":"移速 +20%；",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.007.desc.b",
+                "fallback":"与周围 16 格内最近的灵魂形成谊链使其技能冷却速度 +200%，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.007.desc.c",
+                "fallback":"期间你获得与其同等级的速度效果",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.007.desc.sub",
+                "fallback":"谊链将在长度超过 32 格或任意一方垂死时断开并使技能立即结束",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71007
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"exposed_copper_chain"
+        }
+    }
+]

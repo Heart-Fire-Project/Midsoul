@@ -1,0 +1,75 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.106",
+            "fallback":"请君入阱",
+            "color":"red",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 50 > ",
+                    "color":"red",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.kill",
+                    "fallback":"杀戮"
+                },
+                "/",
+                {
+                    "translate":"ms.tag.strategy",
+                    "fallback":"策略"
+                }
+            ],
+            {
+                "translate":"ms.skill.106.desc",
+                "fallback":"原地放置诡雷",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.106.desc.sub.a",
+                "fallback":"诡雷被灵魂触发 0.4 秒后爆炸，",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.106.desc.sub.b",
+                "fallback":"对周围 2 格内的单位造成 7 伤害并使其发光 7 秒",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.106.desc.sub.c",
+                "fallback":"每存在 1 个属于你的诡雷，技能冷却速度 -25%；",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.106.desc.sub.d",
+                "fallback":"可以与诡雷交互以将其拆除",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71106
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"minecraft:smooth_stone_slab"
+        }
+    }
+]

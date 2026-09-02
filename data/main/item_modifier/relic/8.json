@@ -1,0 +1,72 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.relic.8",
+            "fallback":"投石成绊",
+            "color":"#33FFAA",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"#33FFAA",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.debuff",
+                    "fallback":"妨害"
+                }
+            ],
+            {
+                "translate":"ms.relic.8.desc.a",
+                "fallback":"在落点生成一片持续 7 秒的砾石区域，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.relic.8.desc.b",
+                "fallback":"令位于其中的守卫者沉默且移速 -30%",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.relic.8.desc.sub",
+                "fallback":"短按 [%s] 掷出以使用",
+                "color":"gray",
+                "italic":false,
+                "with":[
+                    {
+                        "keybind":"key.use"
+                    }
+                ]
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":73008
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"player_head",
+            "profile":{
+                "properties":[
+                    {
+                        "name":"textures",
+                        "value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTcwMWM1MDVhZGFjY2VmMGRiOTMzZTBmNDA2MTc2M2Y4MGVjMzUwN2RlZmU1ZGY2OGViMmMyMTgyODE5NmJjMyJ9fX0="
+                    }
+                ]
+            }
+           
+        }
+    }
+]

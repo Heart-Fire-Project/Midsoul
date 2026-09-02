@@ -179,7 +179,7 @@ give @s[scores={detect.interact=-4301}] warden_spawn_egg[custom_name={translate:
 give @s[scores={detect.interact=-4302}] blaze_spawn_egg[custom_name={translate:"ms.gold",fallback:"灵魂之灯",color:"gold",italic:false},entity_data={id:"shulker",Color:1,Tags:[summon_marker,summon_gold]}]
 give @s[scores={detect.interact=-4303}] evoker_spawn_egg[custom_name={translate:"ms.gray",fallback:"灵魂宝物盒",color:"gray",italic:false},entity_data={id:"shulker",Color:8,Tags:[summon_marker,summon_gray]}]
 give @s[scores={detect.interact=-4304}] breeze_spawn_egg[custom_name={translate:"ms.purple",fallback:"传送门",color:"light_purple",italic:false},entity_data={id:"shulker",Color:2,Tags:[summon_marker,summon_purple]}]
-give @s[scores={detect.interact=-4305}] sulfur_cube_spawn_egg[custom_name={translate:"ms.block",fallback:"交互阻断",color:"#ECF390",italic:false},entity_data={id:"shulker",Color:4,Tags:[summon_marker,summon_block]}]
+give @s[scores={detect.interact=-4305}] sulfur_cube_spawn_egg[custom_name={translate:"ms.pot",fallback:"花盆阻断",color:"#ECF390",italic:false},entity_data={id:"shulker",Color:4,Tags:[summon_marker,summon_block]}]
 give @s[scores={detect.interact=-4306}] strider_spawn_egg[custom_name={translate:"ms.red",fallback:"删除标记",color:"red",italic:false},entity_data={id:"shulker",Color:14,Tags:[summon_marker,summon_red]}]
 give @s[scores={detect.interact=-4307}] ghast_spawn_egg[custom_name={translate:"ms.lock",fallback:"容器上锁",color:"white",italic:false},entity_data={id:"shulker",Color:0,Tags:[summon_marker,summon_lock]}]
 give @s[scores={detect.interact=-4308}] slime_spawn_egg[custom_name={translate:"ms.turn",fallback:"灵灯转向",color:"#85C077",italic:false},entity_data={id:"shulker",Color:5,Tags:[summon_marker,summon_turn]}]

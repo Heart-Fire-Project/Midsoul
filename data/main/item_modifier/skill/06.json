@@ -1,0 +1,64 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.skill.006",
+            "fallback":"济困扶危",
+            "color":"#5599FF",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"⚡ 70  ⌚ 7 > ",
+                    "color":"#5599FF",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.survive",
+                    "fallback":"生存"
+                }
+            ],
+            {
+                "translate":"ms.skill.006.desc.a",
+                "fallback":"使周围 2 格内血量最低的灵魂获得 4 吸收，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.006.desc.b",
+                "fallback":"并使其在 20 秒内回复 8 血量",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.006.desc.sub.a",
+                "fallback":"每次使用该技能都会使技能冷却 +10 秒，",
+                "color":"gray",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.006.desc.sub.b",
+                "fallback":"至多提升至 120 秒",
+                "color":"gray",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":71006
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"pumpkin_pie"
+        }
+    }
+]

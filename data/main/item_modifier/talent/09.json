@@ -1,0 +1,46 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.009",
+            "fallback":"矢志不渝",
+            "color":"aqua",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.heal",
+                    "fallback":"救助"
+                }
+            ],
+            {
+                "translate":"ms.talent.009.desc",
+                "fallback":"点亮灵灯所需时间 -1.5 秒，期间受到的击退效果 -75%",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72009
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"wither_rose"
+        }
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "function":"set_name",
+        "name":{
+            "translate":"ms.talent.008",
+            "fallback":"幽脉同频",
+            "color":"aqua",
+            "italic":false
+        }
+    },
+    {
+        "function":"set_lore",
+        "lore":[
+            [
+                {
+                    "text":"> ",
+                    "color":"aqua",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.tag.detect",
+                    "fallback":"感知"
+                }
+            ],
+            {
+                "translate":"ms.talent.008.desc.a",
+                "fallback":"充能传送门时，对守卫者的气息探测生效距离 +8 格，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.talent.008.desc.b",
+                "fallback":"并使所有处于红色气息探测范围的守卫者发光",
+                "color":"white",
+                "italic":false
+            }
+        ],
+        "mode":"replace_all"
+    },
+    {
+        "function":"set_custom_data",
+        "tag":{
+            "id":72008
+        }
+    },
+    {
+        "function":"set_components",
+        "components":{
+            "item_model":"tube_coral"
+        }
+    }
+]

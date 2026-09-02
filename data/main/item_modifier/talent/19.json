@@ -2,8 +2,8 @@
     {
         "function":"set_name",
         "name":{
-            "translate":"ms.talent.107",
-            "fallback":"碎片侵蚀",
+            "translate":"ms.talent.109",
+            "fallback":"截镫留鞭",
             "color":"gold",
             "italic":false
         }
@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 35 > ",
+                    "text":"> ",
                     "color":"gold",
                     "italic":false
                 },
@@ -23,21 +23,15 @@
                 }
             ],
             {
-                "translate":"ms.talent.107.desc.a",
-                "fallback":"污染场上的一个碎片；",
+                "translate":"ms.talent.109.desc.a",
+                "fallback":"位于未开启的传送门周围 3 格内时，",
                 "color":"white",
                 "italic":false
             },
             {
-                "translate":"ms.talent.107.desc.b",
-                "fallback":"被污染的碎片将在被收集时发射一个烟花",
+                "translate":"ms.talent.109.desc.b",
+                "fallback":"其交互进度流失速度提升至 250%",
                 "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.107.desc.sub",
-                "fallback":"无初始冷却；至多同时对 3 个碎片生效",
-                "color":"gray",
                 "italic":false
             }
         ],
@@ -46,13 +40,13 @@
     {
         "function":"set_custom_data",
         "tag":{
-            "id":72107
+            "id":72109
         }
     },
     {
         "function":"set_components",
         "components":{
-            "item_model":"amethyst_shard"
+            "item_model":"lead"
         }
     }
 ]
