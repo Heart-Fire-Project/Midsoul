@@ -35,6 +35,7 @@ scoreboard players set @a[team=soul,scores={skill=2}] tick.skill 150000
 scoreboard players set @a[team=soul,scores={skill=3}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={skill=4}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={skill=5}] tick.skill 090000
+scoreboard players set @a[team=soul,scores={skill=6}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=1}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=2}] tick.skill 120000
 scoreboard players set @a[team=guardian,scores={skill=3}] tick.skill 140000

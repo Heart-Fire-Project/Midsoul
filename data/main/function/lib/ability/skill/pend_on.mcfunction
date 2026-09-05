@@ -12,6 +12,7 @@ execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:7
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71003}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/003
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71004}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/004
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71005}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/005
+execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71006}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/006
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71101}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/101
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71102}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/102
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71103}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/103
