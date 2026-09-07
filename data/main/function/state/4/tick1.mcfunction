@@ -28,7 +28,7 @@ scoreboard players remove $4_portal tick.general 1
 scoreboard players add $4_process tick.general 1
 
 # 其他的部分
-execute if entity @e[tag=open_purple] run effect give @e[team=soul,scores={state=0}] glowing infinite 6 true
+execute if entity @e[tag=open_purple] run effect give @a[team=soul,scores={state=0}] glowing infinite 6 true
 execute as @a[team=soul,scores={state=0}] at @s if entity @e[tag=open_purple,distance=..0.7] run function main:state/4/revive
 execute at @e[tag=open_purple] run particle end_rod ~ ~1.6 ~ 0 24 0 0 10 force @a
 execute at @e[tag=purple_3rd] unless data entity @n[tag=purple_3rd] Glowing if entity @a[team=soul,distance=..3.5] run function main:state/4/announce_door

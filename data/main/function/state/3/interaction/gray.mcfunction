@@ -9,7 +9,7 @@ scoreboard players add @a[tag=interact_fin] temp.open 1
 execute as @a[tag=interact_fin,scores={setting.instant_rating=1},team=guardian] run function main:lib/rating/1/guardian/open
 
 # 灵魂效果 | 不包含宝物同步
-tag @e[team=soul,distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add target
+tag @a[team=soul,distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add target
 execute if entity @p[tag=target,scores={relic=1..}] run effect give @p[team=guardian] glowing 3 0
 effect give @p[tag=target,scores={relic=1..}] regeneration 3 2
 advancement grant @p[tag=target,scores={relic=0}] only main:tutorial/mechanic/2
