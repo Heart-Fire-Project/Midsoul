@@ -11,7 +11,7 @@ execute if entity @e[tag=tracker,distance=..4] run scoreboard players add @s[tea
 scoreboard players operation $entity_id temp = @s entity_id
 execute as @e[tag=tracker] if score @s entity_id = $entity_id temp run tag @s add tie_pend
 scoreboard players set $pending temp 0
-execute at @e[tag=tie_pend] if entity @p[team=guardian,distance=..4] run scoreboard players set $pending temp 1
+execute at @e[tag=tie_pend] if entity @a[team=guardian,distance=..4] run scoreboard players set $pending temp 1
 tag @e remove tie_pend
 execute if score $pending temp matches 1 run scoreboard players add @s[team=soul] temp.tie 1
 
