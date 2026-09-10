@@ -1,41 +1,41 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.skill.active",fallback:"技能施放",color:"#5599FF"}," » ",{translate:"ms.skill.006",fallback:"济困扶危"}]
 playsound entity.villager.celebrate player @a ~ ~ ~ 3 1.2
-particle happy_villager ~2.000 ~0.3 ~0.000 0 0 0 0 1
-particle happy_villager ~1.970 ~0.3 ~0.347 0 0 0 0 1
-particle happy_villager ~1.879 ~0.3 ~0.684 0 0 0 0 1
-particle happy_villager ~1.732 ~0.3 ~1.000 0 0 0 0 1
-particle happy_villager ~1.532 ~0.3 ~1.286 0 0 0 0 1
-particle happy_villager ~1.286 ~0.3 ~1.532 0 0 0 0 1
-particle happy_villager ~1.000 ~0.3 ~1.732 0 0 0 0 1
-particle happy_villager ~0.684 ~0.3 ~1.879 0 0 0 0 1
-particle happy_villager ~0.347 ~0.3 ~1.970 0 0 0 0 1
-particle happy_villager ~0.000 ~0.3 ~2.000 0 0 0 0 1
-particle happy_villager ~-0.347 ~0.3 ~1.970 0 0 0 0 1
-particle happy_villager ~-0.684 ~0.3 ~1.879 0 0 0 0 1
-particle happy_villager ~-1.000 ~0.3 ~1.732 0 0 0 0 1
-particle happy_villager ~-1.286 ~0.3 ~1.532 0 0 0 0 1
-particle happy_villager ~-1.532 ~0.3 ~1.286 0 0 0 0 1
-particle happy_villager ~-1.732 ~0.3 ~1.000 0 0 0 0 1
-particle happy_villager ~-1.879 ~0.3 ~0.684 0 0 0 0 1
-particle happy_villager ~-1.970 ~0.3 ~0.347 0 0 0 0 1
-particle happy_villager ~-2.000 ~0.3 ~0.000 0 0 0 0 1
-particle happy_villager ~-1.970 ~0.3 ~-0.347 0 0 0 0 1
-particle happy_villager ~-1.879 ~0.3 ~-0.684 0 0 0 0 1
-particle happy_villager ~-1.732 ~0.3 ~-1.000 0 0 0 0 1
-particle happy_villager ~-1.532 ~0.3 ~-1.286 0 0 0 0 1
-particle happy_villager ~-1.286 ~0.3 ~-1.532 0 0 0 0 1
-particle happy_villager ~-1.000 ~0.3 ~-1.732 0 0 0 0 1
-particle happy_villager ~-0.684 ~0.3 ~-1.879 0 0 0 0 1
-particle happy_villager ~-0.347 ~0.3 ~-1.970 0 0 0 0 1
-particle happy_villager ~0.000 ~0.3 ~-2.000 0 0 0 0 1
-particle happy_villager ~0.347 ~0.3 ~-1.970 0 0 0 0 1
-particle happy_villager ~0.684 ~0.3 ~-1.879 0 0 0 0 1
-particle happy_villager ~1.000 ~0.3 ~-1.732 0 0 0 0 1
-particle happy_villager ~1.286 ~0.3 ~-1.532 0 0 0 0 1
-particle happy_villager ~1.532 ~0.3 ~-1.286 0 0 0 0 1
-particle happy_villager ~1.732 ~0.3 ~-1.000 0 0 0 0 1
-particle happy_villager ~1.879 ~0.3 ~-0.684 0 0 0 0 1
-particle happy_villager ~1.970 ~0.3 ~-0.347 0 0 0 0 1
+particle happy_villager ~2.000 ~0.3 ~0.000 0 0 0 0 1 force @a
+particle happy_villager ~1.970 ~0.3 ~0.347 0 0 0 0 1 force @a
+particle happy_villager ~1.879 ~0.3 ~0.684 0 0 0 0 1 force @a
+particle happy_villager ~1.732 ~0.3 ~1.000 0 0 0 0 1 force @a
+particle happy_villager ~1.532 ~0.3 ~1.286 0 0 0 0 1 force @a
+particle happy_villager ~1.286 ~0.3 ~1.532 0 0 0 0 1 force @a
+particle happy_villager ~1.000 ~0.3 ~1.732 0 0 0 0 1 force @a
+particle happy_villager ~0.684 ~0.3 ~1.879 0 0 0 0 1 force @a
+particle happy_villager ~0.347 ~0.3 ~1.970 0 0 0 0 1 force @a
+particle happy_villager ~0.000 ~0.3 ~2.000 0 0 0 0 1 force @a
+particle happy_villager ~-0.347 ~0.3 ~1.970 0 0 0 0 1 force @a
+particle happy_villager ~-0.684 ~0.3 ~1.879 0 0 0 0 1 force @a
+particle happy_villager ~-1.000 ~0.3 ~1.732 0 0 0 0 1 force @a
+particle happy_villager ~-1.286 ~0.3 ~1.532 0 0 0 0 1 force @a
+particle happy_villager ~-1.532 ~0.3 ~1.286 0 0 0 0 1 force @a
+particle happy_villager ~-1.732 ~0.3 ~1.000 0 0 0 0 1 force @a
+particle happy_villager ~-1.879 ~0.3 ~0.684 0 0 0 0 1 force @a
+particle happy_villager ~-1.970 ~0.3 ~0.347 0 0 0 0 1 force @a
+particle happy_villager ~-2.000 ~0.3 ~0.000 0 0 0 0 1 force @a
+particle happy_villager ~-1.970 ~0.3 ~-0.347 0 0 0 0 1 force @a
+particle happy_villager ~-1.879 ~0.3 ~-0.684 0 0 0 0 1 force @a
+particle happy_villager ~-1.732 ~0.3 ~-1.000 0 0 0 0 1 force @a
+particle happy_villager ~-1.532 ~0.3 ~-1.286 0 0 0 0 1 force @a
+particle happy_villager ~-1.286 ~0.3 ~-1.532 0 0 0 0 1 force @a
+particle happy_villager ~-1.000 ~0.3 ~-1.732 0 0 0 0 1 force @a
+particle happy_villager ~-0.684 ~0.3 ~-1.879 0 0 0 0 1 force @a
+particle happy_villager ~-0.347 ~0.3 ~-1.970 0 0 0 0 1 force @a
+particle happy_villager ~0.000 ~0.3 ~-2.000 0 0 0 0 1 force @a
+particle happy_villager ~0.347 ~0.3 ~-1.970 0 0 0 0 1 force @a
+particle happy_villager ~0.684 ~0.3 ~-1.879 0 0 0 0 1 force @a
+particle happy_villager ~1.000 ~0.3 ~-1.732 0 0 0 0 1 force @a
+particle happy_villager ~1.286 ~0.3 ~-1.532 0 0 0 0 1 force @a
+particle happy_villager ~1.532 ~0.3 ~-1.286 0 0 0 0 1 force @a
+particle happy_villager ~1.732 ~0.3 ~-1.000 0 0 0 0 1 force @a
+particle happy_villager ~1.879 ~0.3 ~-0.684 0 0 0 0 1 force @a
+particle happy_villager ~1.970 ~0.3 ~-0.347 0 0 0 0 1 force @a
 scoreboard players add @s temp.skill 1
 tag @s add skill_on
 

@@ -12,6 +12,7 @@ scoreboard players set @s[scores={temp2=..0}] temp2 0
 scoreboard players set @s[tag=interact_blue] temp 7000
 scoreboard players set @s[tag=interact_gold] temp 14000
 scoreboard players set @s[tag=interact_gray] temp 10000
+scoreboard players set @s[tag=S106i] temp 4000
 scoreboard players set @s[tag=E02] temp 7000
 scoreboard players set @s[scores={state=1,temp.dying=1},team=soul] temp 120000
 scoreboard players set @s[scores={state=1,temp.dying=2},team=soul] temp 80000
@@ -23,4 +24,5 @@ function base:set_exp {current:"tick.general",max:"temp",level:"temp2"}
 tag @s remove interact_blue
 tag @s remove interact_gold
 tag @s remove interact_gray
+tag @s remove S106i
 tag @s remove E02

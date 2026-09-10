@@ -12,7 +12,7 @@ title @s[scores={tick.parkour=-36}] actionbar ""
 title @s[scores={tick.parkour=-35}] actionbar [{translate:"ms.parkour.finish",fallback:"跑酷已完成",color:"green"}," | ",{storage:"ms:string",nbt:"result",interpret:true}]
 title @s[scores={tick.parkour=-34}] actionbar ""
 
-execute as @s[scores={tick.parkour=-33}] at @s run particle totem_of_undying ~ ~0.2 ~ 0.1 0.1 0.1 0.5 1024 force @s
+execute as @s[scores={tick.parkour=-33}] at @s run particle totem_of_undying ~ ~0.2 ~ 0.1 0.1 0.1 0.5 1024
 playsound item.totem.use player @s[scores={tick.parkour=-33}] 0 1000000 0 120000
 title @s[scores={tick.parkour=-33}] actionbar [{text:"< ",color:"gold"},{translate:"ms.parkour.newpb",fallback:"新个人最佳"}," | ",{storage:"ms:string",nbt:"result",interpret:true}," >"]
 title @s[scores={tick.parkour=-32}] actionbar [{text:"<< ",color:"gold"},{translate:"ms.parkour.newpb",fallback:"新个人最佳"}," | ",{storage:"ms:string",nbt:"result",interpret:true}," >>"]

@@ -1,4 +1,6 @@
 $scoreboard players set $$(type)_speed setting $(value)
+scoreboard players operation $interact_pity data = $interact_speed setting
+scoreboard players operation $interact_pity data /= #4 data
 
 # 若通过调试面板触发，则再次呼起
 execute as @s[scores={detect.interact=-2999..-2000}] run function debug:panel/2

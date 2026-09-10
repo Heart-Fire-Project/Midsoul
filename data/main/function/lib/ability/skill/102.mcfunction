@@ -1,6 +1,6 @@
 title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.skill.active",fallback:"技能施放",color:"red"}," » ",{translate:"ms.skill.102",fallback:"灵力掌控"}]
 playsound item.lodestone_compass.lock player @a ~ ~ ~ 1 0.7
-particle vault_connection ~ ~1 ~ 0 0 0 0.8 48
+particle vault_connection ~ ~1 ~ 0 0 0 0.8 48 force @a
 scoreboard players add @s temp.skill 1
 tag @s add skill_on
 

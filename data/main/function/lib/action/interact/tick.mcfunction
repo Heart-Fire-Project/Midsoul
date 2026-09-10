@@ -17,6 +17,9 @@ execute if score $undying data matches 1 as @s[tag=interact_gold,tag=interacting
 execute store result storage ms:temp value int 1 run scoreboard players get $balanced_speed state
 execute as @s[team=soul] run function main:lib/action/interact/modify with storage ms:temp
 
+# 保底
+execute if score @s temp < $interact_pity data run scoreboard players operation @s temp = $interact_pity data
+
 ## 乘算
 # 能力
 

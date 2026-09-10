@@ -2,7 +2,7 @@
 # 需要参数：setting(设定项) limit{该值应为最大值 +1}
 # 注意超限后回复到的值是 0
 $scoreboard players add @s setting.$(setting) 1
-$execute if score @s setting.$(setting) matches $(limit).. run scoreboard players set @s setting.$(setting) 0
+$scoreboard players set @s[scores={setting.$(setting)=$(limit)..}] setting.$(setting) 0
 playsound ui.button.click player @s 0 1000000 0 120000
 
 # 清除设定项对应的物品，以免影响连续调整

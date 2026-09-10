@@ -5,7 +5,7 @@ function main:state/0/parkour/time_format {source:"tick.parkour"}
 
 # 完成特效
 execute run summon firework_rocket ~ ~2 ~ {LifeTime:7,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{flight_duration:1,explosions:[{has_twinkle:1b,has_trail:1b,shape:"small_ball",colors:[6688755],fade_colors:[6648575]}]}}}}
-execute anchored eyes positioned ^ ^ ^0.1 run particle flash{color:[1,1,1,1]} ~ ~ ~ 0 0 0 1 1 force @s
+execute anchored eyes positioned ^ ^ ^0.1 run particle flash{color:[1,1,1,1]} ~ ~ ~ 0 0 0 1 1
 
 # 停止计时
 title @s actionbar [{translate:"ms.parkour.finish",fallback:"跑酷已完成",color:"green"}," | ",{storage:"ms:string",nbt:"result",interpret:true}]

@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 50 > ",
+                    "text":"⚡ 40 > ",
                     "color":"red",
                     "italic":false
                 },
@@ -47,7 +47,7 @@
             },
             {
                 "translate":"ms.skill.106.desc.sub.c",
-                "fallback":"每存在 1 个属于你的诡雷，技能冷却速度 -25%；",
+                "fallback":"每存在 1 个属于你的诡雷，技能冷却速度 -20%；",
                 "color":"gray",
                 "italic":false
             },
@@ -69,7 +69,7 @@
     {
         "function":"set_components",
         "components":{
-            "item_model":"minecraft:smooth_stone_slab"
+            "item_model":"smooth_stone_slab"
         }
     }
 ]
