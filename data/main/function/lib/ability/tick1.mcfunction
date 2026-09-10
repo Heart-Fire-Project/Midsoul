@@ -1,5 +1,5 @@
 # 技能
-execute as @a[team=soul,scores={state=0,skill=4,tick.skill=-23700..-23500}] run function main:lib/ability/skill/004t
+execute as @a[team=soul,scores={skill=4,tick.skill=-23700..-23500}] run function main:lib/ability/skill/004t
 execute as @e[tag=S005] at @s run function main:lib/ability/skill/005t
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:lib/ability/skill/102t
 execute as @a[team=soul,scores={skill.103=1..}] at @s run function main:lib/ability/skill/103t
