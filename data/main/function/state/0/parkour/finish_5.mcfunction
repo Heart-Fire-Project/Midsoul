@@ -5,7 +5,7 @@ function main:state/0/parkour/time_format {source:"tick.parkour"}
 
 # 完成特效
 playsound entity.firework_rocket.blast player @s 0 1000000 0 120000
-execute anchored eyes positioned ^ ^ ^0.1 run particle flash{color:[1,1,1,1]} ~ ~ ~ 0 0 0 1 1
+execute anchored eyes run particle flash{color:[1,1,1,1]} ^ ^ ^0.1 0 0 0 1 1
 
 # 停止计时
 title @s actionbar [{translate:"ms.parkour.finish",fallback:"跑酷已完成",color:"green"}," | ",{storage:"ms:string",nbt:"result",interpret:true}]
