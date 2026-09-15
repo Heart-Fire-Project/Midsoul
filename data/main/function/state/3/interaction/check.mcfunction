@@ -21,7 +21,7 @@ execute unless score @s tick.using matches 1.. run tag @s[tag=!status_display] a
 title @s[tag=hint_blue,tag=show_title] actionbar [{translate:"ms.hint.blue",fallback:"长按 [%s] 以收集",with:[{keybind:"key.sneak"}],color:"#50A7D9"}]
 title @s[tag=hint_gold,tag=show_title] actionbar [{translate:"ms.hint.gold",fallback:"长按 [%s] 以点亮",with:[{keybind:"key.sneak"}],color:"gold"}]
 title @s[tag=hint_gray,tag=show_title] actionbar [{translate:"ms.hint.gray",fallback:"长按 [%s] 以打开",with:[{keybind:"key.sneak"}],color:"gray"}]
-title @s[tag=hint_S106,tag=show_title] actionbar [{translate:"ms.hint.S106",fallback:"长按 [%s] 以拆除",with:[{keybind:"key.sneak"}],color:"#FF9899"}]
+title @s[tag=hint_S106,tag=show_title] actionbar [{translate:"ms.hint.S106",fallback:"长按 [%s] 以拆除",with:[{keybind:"key.sneak"}],color:"#D0342C"}]
 tag @s[tag=!interacting,tag=interact_blue,scores={setting.interact_hint=1},tag=show_title] add hint_blue
 tag @s[tag=!interacting,tag=interact_gold,scores={setting.interact_hint=1},tag=show_title] add hint_gold
 tag @s[tag=!interacting,tag=interact_gray,scores={setting.interact_hint=1},tag=show_title] add hint_gray

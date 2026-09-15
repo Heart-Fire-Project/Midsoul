@@ -1,6 +1,6 @@
 # 显示动作栏进度条
 # 需要参数：max(进度最大值) current(进度当前值) color(进度条颜色)
-# 前置条件：caculate/time craft_string
+# 前置条件：caculate/time
 
 # 获取信息
 $scoreboard players operation $current temp = @s $(current)
