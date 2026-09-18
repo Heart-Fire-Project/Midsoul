@@ -1,7 +1,11 @@
 scoreboard players operation @s[scores={tick.skill=0..}] temp = $cooldown_speed setting
 execute if score $state data matches 4 run function main:lib/ability/base/modify_cooldown {value:"100"}
 execute if score $echo data matches 3 run function main:lib/ability/base/modify_cooldown {value:"-50"}
-execute as @a[team=guardian,scores={skill=6,skill.106=1..}] run function main:lib/ability/skill/106c
+scoreboard players set $pending temp 0
+scoreboard players operation $value temp = @s entity_id
+execute as @a[team=soul,scores={skill=7},tag=skill_on] if score @s skill.007 = $value temp run scoreboard players set $pending temp 1
+execute if score $pending temp matches 1 run function main:lib/ability/base/modify_cooldown {value:"200"}
+execute as @s[team=guardian,scores={skill=6,skill.106=1..}] run function main:lib/ability/skill/106c
 scoreboard players set @s[scores={temp=..0}] temp 0
 scoreboard players operation @s[scores={tick.skill=0..}] tick.skill -= @s temp
 scoreboard players set @s[scores={tick.skill=..0}] tick.skill 0
@@ -15,6 +19,7 @@ execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:7
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71004}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/004
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71005}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/005
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71006}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/006
+execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71007}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/007
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71101}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/101
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71102}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/102
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71103}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/103

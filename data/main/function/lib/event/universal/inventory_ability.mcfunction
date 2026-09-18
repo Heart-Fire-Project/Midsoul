@@ -21,10 +21,12 @@ $execute if entity @s[team=guardian] run item modify block 0 -7 0 container.4 ma
 item modify block 0 -7 0 container.4 {function:"set_components",components:{max_stack_size:99}}
 $execute if entity @s[team=soul,scores={skill=2}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S002)}
 $execute if entity @s[team=soul,scores={skill=4}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S004)}
+$execute if entity @s[team=soul,scores={skill=7}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S007)}
 $execute if entity @s[team=guardian,scores={skill=6}] run item modify block 0 -7 0 container.4 {function:"set_count",count:$(S106)}
 execute if entity @s[team=soul,scores={skill=2,tick.skill=..0,skill.002=1..}] if entity @e[tag=gold] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"soul_lantern"}}
-execute if entity @s[team=guardian,scores={skill=6,tick.skill=..0,skill.106=0}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"stone_slab"}}
+$execute if entity @s[team=soul,scores={skill=7},tag=skill_on] unless data storage ms:inventory {S007t:"N/A"} run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"player_head","profile":"$(S007t)",tooltip_display:{hidden_components:[profile]}}}
 execute if entity @s[team=guardian,scores={skill=4,tick.skill=..0}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"ominous_bottle",consumable:{animation:"drink",consume_seconds:1.6,sound:"entity.generic.drink",has_consume_particles:false,on_consume_effects:[{type:"play_sound",sound:"item.ominous_bottle.dispose"}]}}}
+execute if entity @s[team=guardian,scores={skill=6,tick.skill=..0,skill.106=0}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"stone_slab"}}
 execute if entity @s[scores={state=0,tick.skill=1..}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"firework_star"}}
 execute if entity @s[scores={state=1}] run item modify block 0 -7 0 container.4 {function:"set_components",components:{item_model:"barrier","!consumable":{}}}
 execute as @s[scores={tick.silent=1..}] run item modify block 0 -7 0 container.4 {function:"set_count",count:1}

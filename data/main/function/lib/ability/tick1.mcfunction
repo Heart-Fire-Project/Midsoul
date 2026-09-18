@@ -1,11 +1,13 @@
 # 技能
 execute as @a[team=soul,scores={skill=4,tick.skill=-23700..-23500}] run function main:lib/ability/skill/004t
 execute as @e[tag=S005] at @s run function main:lib/ability/skill/005t
+execute as @a[team=soul,scores={skill=7},tag=skill_on] at @s run function main:lib/ability/skill/007t
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:lib/ability/skill/102t
 execute as @a[team=soul,scores={skill.103=1..}] at @s run function main:lib/ability/skill/103t
 execute as @a[team=guardian,scores={skill=5},tag=skill_on] at @s run function main:lib/ability/skill/105t
 execute as @e[tag=S106,tag=!S106e] at @s if entity @a[team=soul,scores={state=0},distance=..2] run function main:lib/ability/skill/106t
 execute as @e[tag=S106,tag=S106e] at @s run function main:lib/ability/skill/106u
+execute as @e[tag=S106] at @s as @s[y=-100,dy=36] run function main:lib/ability/skill/106d
 
 # 天赋
 effect give @a[team=soul,scores={talent_1=3,state=0},tag=talent_1_on] speed 1 0

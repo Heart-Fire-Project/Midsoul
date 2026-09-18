@@ -28,7 +28,7 @@ tag @s remove talent_1_on
 tag @s remove talent_2_on
 tag @s remove relic_on
 
-# 判定：灵魂被击倒时
+# 判定：灵魂陷入垂死时
 function main:lib/action/player/dying
 
 # 刷新效果

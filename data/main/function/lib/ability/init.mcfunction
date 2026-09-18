@@ -17,6 +17,8 @@ scoreboard players set @a[team=soul,scores={skill=2}] skill.002 1
 scoreboard objectives remove skill.004
 scoreboard objectives add skill.004 dummy "铤而走险 / 负面效果几率"
 scoreboard players set @a[team=soul,scores={skill=4}] skill.004 5
+scoreboard objectives remove skill.007
+scoreboard objectives add skill.007 dummy "同气连枝 / 谊链目标"
 scoreboard objectives remove skill.102
 scoreboard objectives add skill.102 dummy "灵力掌控 / 生效目标"
 scoreboard objectives remove skill.103
@@ -39,6 +41,7 @@ scoreboard players set @a[team=soul,scores={skill=3}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={skill=4}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={skill=5}] tick.skill 090000
 scoreboard players set @a[team=soul,scores={skill=6}] tick.skill 140000
+scoreboard players set @a[team=soul,scores={skill=7}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=1}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=2}] tick.skill 120000
 scoreboard players set @a[team=guardian,scores={skill=3}] tick.skill 140000

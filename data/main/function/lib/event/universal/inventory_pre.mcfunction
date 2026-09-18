@@ -6,6 +6,9 @@ execute store result storage ms:inventory talent_2 int 1 run scoreboard players 
 
 execute store result storage ms:inventory S002 int 1 run scoreboard players get @s skill.002
 execute store result storage ms:inventory S004 int 1 run scoreboard players get @s skill.004
+data modify storage ms:inventory S007t set value "N/A"
+data modify storage ms:inventory S007 set value 1
+execute as @s[team=soul,scores={skill=7},tag=skill_on] run function main:lib/ability/skill/007u
 execute store result storage ms:inventory S106 int 1 run scoreboard players get @s skill.106
 execute store result storage ms:inventory T004 int 1 run scoreboard players get @s talent.004
 scoreboard players set $value temp 1
@@ -14,6 +17,7 @@ execute store result storage ms:inventory T007 int 3 run scoreboard players get 
 execute store result storage ms:inventory T107 int 1 run scoreboard players get @s talent.107
 execute if data storage ms:inventory {S002:0} run data merge storage ms:inventory {S002:1}
 execute if data storage ms:inventory {S004:0} run data merge storage ms:inventory {S004:1}
+execute if data storage ms:inventory {S007:0} run data merge storage ms:inventory {S007:1}
 execute if data storage ms:inventory {S106:0} run data merge storage ms:inventory {S106:1}
 execute if entity @s[team=soul,scores={talent_1=4},tag=talent_1_on] run data merge storage ms:inventory {T004:1}
 execute if entity @s[team=soul,scores={talent_2=4},tag=talent_2_on] run data merge storage ms:inventory {T004:1}
