@@ -1,4 +1,4 @@
-title @s[scores={setting.ability_status=2}] actionbar [{translate:"ms.skill.over",fallback:"技能终止",color:"#5599FF"}," » ",{translate:"ms.skill.006",fallback:"济困扶危"}]
+title @s[scores={setting.ability_status=1..}] actionbar [{translate:"ms.skill.over",fallback:"技能终止",color:"#5599FF"}," » ",{translate:"ms.skill.006",fallback:"济困扶危"}]
 tag @s remove skill_on
 
 # 计算本次冷却并重置

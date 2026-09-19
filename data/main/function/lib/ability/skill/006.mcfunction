@@ -42,15 +42,15 @@ tag @s add skill_on
 # 选定目标
 scoreboard players set $value temp 1000000
 scoreboard players operation $value temp < @a[team=soul,scores={state=0},distance=..2] health
-execute as @a[team=soul,scores={state=0},distance=..2] if score @s health = $value temp run tag @s add S006r
-tag @r[tag=S006r] add S006
+execute as @a[team=soul,scores={state=0},distance=..2] if score @s health = $value temp run tag @s add S006t
+tag @r[tag=S006t] add S006
 
 # 给予效果并去除标签
 execute at @a[tag=S006] run particle happy_villager ~ ~0.3 ~ 0.2 0.3 0.2 1 14 force @a
 execute at @a[tag=S006] run particle heart ~ ~2 ~ 0.1 0 0.1 1 1 force @a
 effect give @a[tag=S006] absorption 7 0
 effect give @a[tag=S006] regeneration 20 0
-tag @a remove S006r
+tag @a remove S006t
 tag @a remove S006
 
 # 设置计时

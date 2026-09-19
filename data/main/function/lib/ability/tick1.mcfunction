@@ -5,8 +5,8 @@ execute as @a[team=soul,scores={skill=7},tag=skill_on] at @s run function main:l
 execute as @a[team=guardian,scores={skill=2},tag=skill_on] at @s run function main:lib/ability/skill/102t
 execute as @a[team=soul,scores={skill.103=1..}] at @s run function main:lib/ability/skill/103t
 execute as @a[team=guardian,scores={skill=5},tag=skill_on] at @s run function main:lib/ability/skill/105t
-execute as @e[tag=S106,tag=!S106e] at @s if entity @a[team=soul,scores={state=0},distance=..2] run function main:lib/ability/skill/106t
-execute as @e[tag=S106,tag=S106e] at @s run function main:lib/ability/skill/106u
+execute as @e[tag=S106,tag=!S106a] at @s if entity @a[team=soul,scores={state=0},distance=..2] run function main:lib/ability/skill/106t
+execute as @e[tag=S106,tag=S106a] at @s run function main:lib/ability/skill/106u
 execute as @e[tag=S106] at @s as @s[y=-100,dy=36] run function main:lib/ability/skill/106d
 
 # 天赋

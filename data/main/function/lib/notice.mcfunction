@@ -15,3 +15,7 @@ tellraw @s[scores={temp=3}] ["",{translate:"ms.notice.3.1",fallback:"欢迎加�
 # 4 - 2.1 更新日志
 tellraw @s[scores={temp=4}] [{text:"\n",color:"#ffc265"},{text:"» ",bold:true},{translate:"ms.notice.regular_update",fallback:"[常态更新]"}," ",{translate:"ms.notice.4",fallback:"2.1 💠 觅于湖屿间"}]
 tellraw @s[scores={temp=4}] ["",{translate:"ms.notice.4.1",fallback:"这里是午夜灵魂 2.1 版本：觅于湖屿间！在新地图中上天入“水”吧！"},"\n",{translate:"ms.notice.changelog",fallback:"[查看完整更新日志]",click_event:{action:"open_url",url:"https://github.com/Heart-Fire-Project/Midsoul/blob/main/changelog.md"}}]
+
+# 5 - 2.2 更新日志
+tellraw @s[scores={temp=5}] [{text:"\n",color:"#ffc265"},{text:"» ",bold:true},{translate:"ms.notice.regular_update",fallback:"[常态更新]"}," ",{translate:"ms.notice.5",fallback:"2.2 💠 蛆蛆要爆"}]
+tellraw @s[scores={temp=5}] ["",{translate:"ms.notice.5.1",fallback:"这里是午夜灵魂 2.2 版本：蛆蛆要爆！！！"},"\n",{translate:"ms.notice.changelog",fallback:"[查看完整更新日志]",click_event:{action:"open_url",url:"https://github.com/Heart-Fire-Project/Midsoul/blob/main/changelog.md"}}]

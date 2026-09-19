@@ -5,19 +5,19 @@ scoreboard players set @s relic 0
 scoreboard players add @s temp.relic 1
 
 # 寻找幸运观众
-tag @a[limit=1,sort=furthest,team=soul,scores={state=0}] add R04s
-playsound entity.enderman.teleport player @a[tag=R04s] 0 1000000 0 120000
-execute at @a[tag=R04s] run particle glow_squid_ink ~ ~1 ~ 0.2 0.3 0.2 0.2 128 force @a
+tag @a[limit=1,sort=furthest,team=soul,scores={state=0}] add R04t
+playsound entity.enderman.teleport player @a[tag=R04t] 0 1000000 0 120000
+execute at @a[tag=R04t] run particle glow_squid_ink ~ ~1 ~ 0.2 0.3 0.2 0.2 128 force @a
 
 # 互！换！位！置！
-playsound entity.enderman.teleport player @a[distance=0.001..,tag=!R04s]
+playsound entity.enderman.teleport player @a[distance=0.001..,tag=!R04t]
 summon marker ~ ~ ~ {Tags:[R04,game_entity]}
 tp @e[tag=R04] @s
-tp @s @a[limit=1,tag=R04s]
-tp @a[limit=1,tag=R04s] @e[limit=1,tag=R04]
-effect give @a[tag=R04s] speed 3 4
+tp @s @a[limit=1,tag=R04t]
+tp @a[limit=1,tag=R04t] @e[limit=1,tag=R04]
+effect give @a[tag=R04t] speed 3 4
 effect give @s speed 3 4
-tag @a remove R04s
+tag @a remove R04t
 kill @e[tag=R04]
 
 # 自我安慰

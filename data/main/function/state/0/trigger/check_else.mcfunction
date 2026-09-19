@@ -3,6 +3,7 @@ scoreboard players set @s[scores={detect.interact=1}] temp 1
 scoreboard players set @s[scores={detect.interact=2}] temp 2
 scoreboard players set @s[scores={detect.interact=3}] temp 3
 scoreboard players set @s[scores={detect.interact=4}] temp 4
+scoreboard players set @s[scores={detect.interact=5}] temp 5
 execute as @s[scores={detect.interact=1..99}] run function main:lib/notice
 
 # 图鉴类型
