@@ -1,6 +1,6 @@
 # 确认对方
 scoreboard players operation $value temp = @s skill.007
-execute as @a if score @s entity_id = $value temp run tag @s add S007
+execute as @a[team=soul,scores={state=0}] if score @s entity_id = $value temp run tag @s add S007
 
 # 获取玩家名
 execute as @p[tag=S007] run function base:get_playername {x:"0",y:"-7",z:"0"}

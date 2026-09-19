@@ -1,6 +1,6 @@
 # 确认对方
 scoreboard players operation $value temp = @s skill.007
-execute as @a if score @s entity_id = $value temp run tag @s add S007
+execute as @a[team=soul,scores={state=0}] if score @s entity_id = $value temp run tag @s add S007
 
 # 粒子显示 | 将按照双方连线中点作为粒子终点
 function base:get_pos
