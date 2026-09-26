@@ -26,3 +26,4 @@ execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:7
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71104}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/104
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71105}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/105
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71106}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/106
+execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{id:71107}}}}},scores={tick.skill=0,tick.silent=0}] run function main:lib/ability/skill/107

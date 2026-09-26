@@ -8,6 +8,8 @@ execute as @a[team=guardian,scores={skill=5},tag=skill_on] at @s run function ma
 execute as @e[tag=S106,tag=!S106a] at @s if entity @a[team=soul,scores={state=0},distance=..2] run function main:lib/ability/skill/106t
 execute as @e[tag=S106,tag=S106a] at @s run function main:lib/ability/skill/106u
 execute as @e[tag=S106] at @s as @s[y=-100,dy=36] run function main:lib/ability/skill/106d
+execute as @e[tag=S107] at @s run function main:lib/ability/skill/107t
+execute as @a[team=guardian,scores={skill=7,skill.107s=1..},tag=skill_on] run function main:lib/ability/skill/107u
 
 # 天赋
 effect give @a[team=soul,scores={talent_1=3,state=0},tag=talent_1_on] speed 1 0

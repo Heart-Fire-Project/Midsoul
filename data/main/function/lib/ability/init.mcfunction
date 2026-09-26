@@ -28,6 +28,10 @@ scoreboard objectives add skill.105 dummy "雾影阴霾 / 斩击计数"
 scoreboard objectives remove skill.106
 scoreboard objectives add skill.106 dummy "请君入阱 / 诡雷计数"
 scoreboard players set @a[team=guardian,scores={skill=6}] skill.106 0
+scoreboard objectives remove skill.107
+scoreboard objectives add skill.107 dummy "洞若观火 / 传送计数"
+scoreboard objectives remove skill.107s
+scoreboard objectives add skill.107s dummy "洞若观火 / 再设速度计时"
 
 # 初始冷却 | 以 0.01 刻为单位
 # 单次冷却 |  40  |  45  |  50  |  55  |  60  |  65  |  70  |  75  |  80  |  85  |  90
@@ -48,6 +52,7 @@ scoreboard players set @a[team=guardian,scores={skill=3}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=4}] tick.skill 120000
 scoreboard players set @a[team=guardian,scores={skill=5}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=6}] tick.skill 080000
+scoreboard players set @a[team=guardian,scores={skill=7}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={talent_1=1}] tick.talent_1 060000
 scoreboard players set @a[team=soul,scores={talent_1=2}] tick.talent_1 120000
 scoreboard players set @a[team=soul,scores={talent_1=4}] tick.talent_1 006000

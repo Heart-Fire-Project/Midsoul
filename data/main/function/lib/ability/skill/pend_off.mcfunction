@@ -11,3 +11,4 @@ execute as @s[team=guardian,scores={tick.skill=0..,skill=2}] run function main:l
 execute as @s[team=guardian,scores={tick.skill=0..,skill=3}] run function main:lib/ability/skill/103f
 execute as @s[team=guardian,scores={tick.skill=0..,skill=4}] run function main:lib/ability/skill/104f
 execute as @s[team=guardian,scores={tick.skill=0..,skill=5}] run function main:lib/ability/skill/105f
+execute as @s[team=guardian,scores={tick.skill=0..,skill=7}] run function main:lib/ability/skill/107f

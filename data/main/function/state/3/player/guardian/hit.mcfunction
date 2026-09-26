@@ -13,12 +13,14 @@ scoreboard players add @s[tag=rated_attack] temp.hit 1
 execute as @s[tag=rated_attack,scores={setting.instant_rating=1}] run function main:lib/rating/1/guardian/hit
 
 # 取消正在进行的所有能力，并重设冷却
-execute as @s[tag=skill_on] run function main:lib/ability/skill/reset
+tag @s[scores={skill=7},tag=skill_on] add skill_bpr
+execute as @s[tag=skill_on,tag=!skill_bpr] run function main:lib/ability/skill/reset
 execute as @s[tag=talent_1_on] run function main:lib/ability/talent/reset {num:"1"}
 execute as @s[tag=talent_2_on] run function main:lib/ability/talent/reset {num:"2"}
-tag @s remove skill_on
+tag @s[tag=!skill_bpr] remove skill_on
 tag @s remove talent_1_on
 tag @s remove talent_2_on
+tag @s remove skill_bpr
 
 # 进度
 advancement grant @s[scores={tick.off_ground=20..}] only main:hidden/1/3

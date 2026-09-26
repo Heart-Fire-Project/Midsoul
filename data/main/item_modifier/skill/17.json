@@ -28,8 +28,14 @@
                 }
             ],
             {
-                "translate":"ms.skill.107.desc",
-                "fallback":"移速 +20% 并原地释放瞑视之眼，其将凝视 12 格内最近的灵魂并使其发光",
+                "translate":"ms.skill.107.desc.a",
+                "fallback":"移速 +20% 并原地释放瞑视之眼，",
+                "color":"white",
+                "italic":false
+            },
+            {
+                "translate":"ms.skill.107.desc.b",
+                "fallback":"其将注视 12 格内最近的灵魂并使其发光",
                 "color":"white",
                 "italic":false
             },

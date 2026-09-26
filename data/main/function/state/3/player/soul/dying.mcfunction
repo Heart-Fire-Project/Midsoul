@@ -20,13 +20,14 @@ scoreboard players set @s[scores={temp.dying=2}] tick.general 80000
 scoreboard players set @s[scores={temp.dying=3..}] tick.general 40000
 
 # 取消正在进行的所有能力，并重设冷却
-execute as @s[tag=skill_on] run function main:lib/ability/skill/reset
+execute as @s[tag=skill_on,tag=!skill_bpr] run function main:lib/ability/skill/reset
 execute as @s[tag=talent_1_on] run function main:lib/ability/talent/reset {num:"1"}
 execute as @s[tag=talent_2_on] run function main:lib/ability/talent/reset {num:"2"}
-tag @s remove skill_on
+tag @s[tag=!skill_bpr] remove skill_on
 tag @s remove talent_1_on
 tag @s remove talent_2_on
 tag @s remove relic_on
+tag @s remove skill_bpr
 
 # 判定：灵魂陷入垂死时
 function main:lib/action/player/dying
