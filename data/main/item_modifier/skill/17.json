@@ -13,7 +13,7 @@
         "lore":[
             [
                 {
-                    "text":"⚡ 70  ⌚ 20 > ",
+                    "text":"⚡ 70  ⌚ 15 > ",
                     "color":"red",
                     "italic":false
                 },
@@ -29,7 +29,7 @@
             ],
             {
                 "translate":"ms.skill.107.desc",
-                "fallback":"移速 +20% 并原地释放瞑视之眼，其将使周围 12 格内的灵魂发光",
+                "fallback":"移速 +20% 并原地释放瞑视之眼，其将凝视 12 格内最近的灵魂并使其发光",
                 "color":"white",
                 "italic":false
             },

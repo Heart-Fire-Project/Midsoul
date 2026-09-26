@@ -41,7 +41,7 @@
             },
             {
                 "translate":"ms.skill.106.desc.sub.b",
-                "fallback":"对周围 2 格内的单位造成 7 伤害并使其发光 7 秒",
+                "fallback":"对周围 2 格内的单位造成 7 伤害并使其发光 2 秒",
                 "color":"gray",
                 "italic":false
             },
