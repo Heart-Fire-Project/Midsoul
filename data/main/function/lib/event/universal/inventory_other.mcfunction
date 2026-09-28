@@ -13,7 +13,7 @@ clear @s[scores={extra.headset=3},tag=!invisible,nbt=!{equipment:{head:{}}}] sma
 clear @s[scores={extra.headset=4},tag=!invisible,nbt=!{equipment:{head:{}}}] cod[custom_data={id:75104}]
 clear @s[scores={extra.headset=5},tag=!invisible,nbt=!{equipment:{head:{}}}] big_dripleaf[custom_data={id:75105}]
 execute unless score @s extra.headset matches 1..5 run item replace entity @s armor.head with air
-execute if entity @s[scores={extra.headset=1..5},tag=invisible] run item replace entity @s armor.head with air
+item replace entity @s[scores={extra.headset=1..5},tag=invisible] armor.head with air
 item replace entity @s[scores={extra.headset=1},tag=!invisible] armor.head with end_rod[custom_data={id:75101},tooltip_display={hide_tooltip:true}]
 item replace entity @s[scores={extra.headset=2},tag=!invisible] armor.head with lightning_rod[custom_data={id:75102},tooltip_display={hide_tooltip:true}]
 item replace entity @s[scores={extra.headset=3},tag=!invisible] armor.head with small_amethyst_bud[custom_data={id:75103},tooltip_display={hide_tooltip:true}]

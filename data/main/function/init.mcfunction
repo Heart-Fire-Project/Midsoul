@@ -52,6 +52,8 @@ scoreboard objectives remove info
 scoreboard objectives add info dummy ["       ",{translate:"ms.scoreboard.info",fallback:"接下来……"},"       "]
 scoreboard objectives remove entity_id
 scoreboard objectives add entity_id dummy "实体识别码"
+scoreboard objectives remove using_slot
+scoreboard objectives add using_slot dummy "使用物品栏位"
 
 scoreboard objectives remove exp.max
 scoreboard objectives add exp.max dummy "经验上限"
@@ -340,12 +342,12 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 349
+scoreboard players set $build data 350
 scoreboard players set $map_max data 6
 scoreboard players set $echo_max data 10
-scoreboard players set $skill_max data 5
+scoreboard players set $skill_max data 7
 scoreboard players set $talent_max data 7
-scoreboard players set $relic_max data 7
+scoreboard players set $relic_max data 8
 
 # 进入大厅状态
 function main:state/0/enter
