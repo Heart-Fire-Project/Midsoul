@@ -17,6 +17,8 @@ effect give @a[team=soul,scores={talent_2=3,state=0},tag=talent_2_on] speed 1 0
 
 # 宝物
 execute at @e[tag=R05] positioned ^ ^1 ^2 as @a[team=guardian,distance=..3] at @s run function main:lib/ability/relic/05t
+execute as @e[tag=R08,nbt={OnGround:1b}] unless score @s tick.general matches -2147483648..2147483647 run scoreboard players set @s tick.general -140
+execute as @e[tag=R08,scores={tick.general=..0}] at @s run function main:lib/ability/relic/08t
 
 # 杂项
 execute as @a[tag=game_player] run function main:lib/ability/detect/using_item

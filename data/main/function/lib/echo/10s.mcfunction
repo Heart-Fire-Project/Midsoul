@@ -7,4 +7,4 @@ execute if entity @a[team=soul,scores={state=0},distance=..12] run tag @n[tag=E1
 item replace entity @n[tag=E10n] weapon from entity @s weapon
 tp @n[tag=E10n] @s
 
-tag @e[tag=E10n] remove E10n
+tag @e remove E10n

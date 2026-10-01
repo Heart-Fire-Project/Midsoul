@@ -32,7 +32,7 @@ execute at @e[tag=new_purple] run particle witch ~ ~0.2 ~ 0.3 0.1 0.3 0.2 12 for
 execute at @e[tag=new_purple] run summon text_display ~ ~1.2 ~ {Tags:[game_entity,purple_progress],interpolation_duration:0,billboard:"center",alignment:"center",background:-2134114303,line_width:200,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 scoreboard players set @e[tag=purple_progress] tick.general 0
 scoreboard players set @e[tag=purple_progress] state 0
-tag @e[tag=new_purple] remove new_purple
+tag @e remove new_purple
 tag @e remove summon_select
 scoreboard players reset * temp
 scoreboard players reset * temp2
