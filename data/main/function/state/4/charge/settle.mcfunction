@@ -17,6 +17,7 @@ execute if score $4_chargesound tick.general matches 11.. run scoreboard players
 # 逸散进度结算
 scoreboard players operation $minus temp = $interact_speed setting
 scoreboard players operation $minus temp /= #5 data
+function main:lib/ability/talent/109
 execute unless score $num temp matches 1.. run scoreboard players operation @s[scores={tick.general=1..}] tick.general -= $minus temp
 scoreboard players set @s[scores={state=0,tick.general=..-1}] tick.general 0
 scoreboard players set @s[scores={state=1,tick.general=..30000}] tick.general 30000
