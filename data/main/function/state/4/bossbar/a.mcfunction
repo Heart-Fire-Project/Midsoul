@@ -51,4 +51,4 @@ execute if score $4_timeout state matches 0 if score $4_portal tick.general matc
 execute if score $4_timeout state matches 0 if score $4_portal tick.general matches 592 run bossbar set midsoul:warn visible true
 
 # 设置范围
-function main:lib/action/bossbar
+function main:lib/action/bossbar/trigger
