@@ -1,4 +1,4 @@
-## 加算
+## 直接乘算与加算
 # 能力
 execute as @s[scores={talent_1=1},tag=interact_blue,tag=talent_1_on] run function main:lib/action/interact/modify {value:"25"}
 execute as @s[scores={talent_2=1},tag=interact_blue,tag=talent_2_on] run function main:lib/action/interact/modify {value:"25"}
@@ -20,7 +20,7 @@ execute as @s[team=soul] run function main:lib/action/interact/modify with stora
 # 保底
 execute if score @s temp < $interact_pity data run scoreboard players operation @s temp = $interact_pity data
 
-## 乘算
+## 最终乘算
 # 能力
 
 # 回响

@@ -1,15 +1,6 @@
-# 通用
-function main:lib/event/universal/tick1
-
 # 蹲下交互侦测
 execute as @a[tag=game_player,scores={state=0}] at @s run function main:state/3/interaction/check
 execute as @a[team=soul,scores={state=0}] at @s run function main:state/4/charge/check
-
-# 刷新物品栏
-execute as @a[tag=game_player] run function main:state/3/inventory
-
-# 刷新 Bossbar
-function main:state/4/bossbar/pend
 
 # 刷新传送门开启进度
 scoreboard players add $4_color tick.general 1
@@ -18,6 +9,15 @@ scoreboard players operation $value temp = $4_color tick.general
 execute if score $value temp matches ..0 run scoreboard players operation $value temp *= #-1 data
 execute as @e[tag=purple,tag=!open_purple] at @s run function main:state/4/charge/settle
 execute as @e[tag=purple] at @s run function main:state/4/set_progress
+
+# 通用
+function main:lib/event/universal/tick1
+
+# 刷新物品栏
+execute as @a[tag=game_player] run function main:state/3/inventory
+
+# 刷新 Bossbar
+function main:state/4/bossbar/pend
 
 # 刷新经验条
 execute as @a[tag=game_player] at @s run function main:state/4/set_exp

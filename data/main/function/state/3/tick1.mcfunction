@@ -1,8 +1,8 @@
-# 通用
-function main:lib/event/universal/tick1
-
 # 蹲下交互侦测
 execute as @a[tag=game_player,scores={state=0}] at @s run function main:state/3/interaction/check
+
+# 通用
+function main:lib/event/universal/tick1
 
 # 刷新物品栏
 execute as @a[tag=game_player] run function main:state/3/inventory

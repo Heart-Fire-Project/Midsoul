@@ -33,6 +33,12 @@
                 "fallback":"并使所有处于红色气息探测范围的守卫者发光",
                 "color":"white",
                 "italic":false
+            },
+            {
+                "translate":"ms.talent.008.desc.sub",
+                "fallback":"气息探测不可用时天赋失效",
+                "color":"gray",
+                "italic":false
             }
         ],
         "mode":"replace_all"

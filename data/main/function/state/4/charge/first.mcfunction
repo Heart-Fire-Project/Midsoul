@@ -13,6 +13,7 @@ execute if score $echo data matches 6 as @a[tag=game_player] run attribute @s mo
 execute if score $echo data matches 6 as @a[tag=game_player,scores={state=0}] run attribute @s movement_speed modifier add ms:echo 0.1 add_value
 
 # 气息探测全失效！
+scoreboard players set $warning_bar state 1
 bossbar set midsoul:info players @a
 bossbar set midsoul:heed players
 bossbar set midsoul:warn players

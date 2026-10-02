@@ -6,6 +6,7 @@ function main:lib/event/universal/starting
 scoreboard players set $shard_collect data 0
 scoreboard players set $soul_death data 0
 scoreboard players set $soul_revive data 0
+scoreboard players set $warning_bar state 0
 scoreboard players set $3_process tick.general 0
 
 # 生成碎片
