@@ -40,6 +40,9 @@ tag @s[tag=!interact_gold] remove hint_gold
 tag @s[tag=!interact_gray] remove hint_gray
 tag @s[tag=!S106i] remove hint_S106
 
+# 判定：交互开始时
+execute as @s[tag=interacting] unless score @s tick.general matches 1.. run function main:lib/action/interact/start
+
 # 判定：交互中断时
 execute as @s[scores={tick.general=1..},tag=!interacting] run function main:lib/action/interact/break
 
