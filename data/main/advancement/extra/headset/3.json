@@ -38,19 +38,22 @@
         "milestone":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific/player":{
-                                "advancements":{
-                                    "main:general/mvp/4":true
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "type_specific/player":{
+                                    "advancements":{
+                                        "main:general/mvp/4":true
+                                    }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },

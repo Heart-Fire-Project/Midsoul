@@ -1,58 +1,61 @@
-[
-    {
-        "function":"set_name",
-        "name":{
-            "translate":"ms.talent.104",
-            "fallback":"隐于迷雾",
-            "color":"gold",
-            "italic":false
-        }
-    },
-    {
-        "function":"set_lore",
-        "lore":[
-            [
+{
+    "type":"sequence",
+    "functions":[
+        {
+            "type":"set_name",
+            "name":{
+                "translate":"ms.talent.104",
+                "fallback":"隐于迷雾",
+                "color":"gold",
+                "italic":false
+            }
+        },
+        {
+            "type":"set_lore",
+            "lore":[
+                [
+                    {
+                        "text":"⚡ 75 > ",
+                        "color":"gold",
+                        "italic":false
+                    },
+                    {
+                        "translate":"ms.tag.kill",
+                        "fallback":"杀戮"
+                    }
+                ],
                 {
-                    "text":"⚡ 75 > ",
-                    "color":"gold",
+                    "translate":"ms.talent.104.desc.a",
+                    "fallback":"天赋触发时使全体灵魂在 5 秒内陷入黑暗；",
+                    "color":"white",
                     "italic":false
                 },
                 {
-                    "translate":"ms.tag.kill",
-                    "fallback":"杀戮"
+                    "translate":"ms.talent.104.desc.b",
+                    "fallback":"生效期间自身隐身",
+                    "color":"white",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.talent.104.desc.sub",
+                    "fallback":"距离灵魂 8 格以内时结束；攻击到灵魂时重置",
+                    "color":"gray",
+                    "italic":false
                 }
             ],
-            {
-                "translate":"ms.talent.104.desc.a",
-                "fallback":"天赋触发时使全体灵魂在 5 秒内陷入黑暗；",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.104.desc.b",
-                "fallback":"生效期间自身隐身",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.104.desc.sub",
-                "fallback":"距离灵魂 8 格以内时结束；攻击到灵魂时重置",
-                "color":"gray",
-                "italic":false
+            "mode":"replace_all"
+        },
+        {
+            "type":"set_custom_data",
+            "tag":{
+                "id":72104
             }
-        ],
-        "mode":"replace_all"
-    },
-    {
-        "function":"set_custom_data",
-        "tag":{
-            "id":72104
+        },
+        {
+            "type":"set_components",
+            "components":{
+                "item_model":"black_candle"
+            }
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"black_candle"
-        }
-    }
-]
+    ]
+}

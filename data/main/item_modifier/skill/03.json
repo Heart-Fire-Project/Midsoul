@@ -1,69 +1,72 @@
-[
-    {
-        "function":"set_name",
-        "name":{
-            "translate":"ms.skill.003",
-            "fallback":"逆向追踪",
-            "color":"#5599FF",
-            "italic":false
-        }
-    },
-    {
-        "function":"set_lore",
-        "lore":[
-            [
+{
+    "type":"sequence",
+    "functions":[
+        {
+            "type":"set_name",
+            "name":{
+                "translate":"ms.skill.003",
+                "fallback":"逆向追踪",
+                "color":"#5599FF",
+                "italic":false
+            }
+        },
+        {
+            "type":"set_lore",
+            "lore":[
+                [
+                    {
+                        "text":"⚡ 70 > ",
+                        "color":"#5599FF",
+                        "italic":false
+                    },
+                    {
+                        "translate":"ms.tag.detect",
+                        "fallback":"感知"
+                    },
+                    "/",
+                    {
+                        "translate":"ms.tag.debuff",
+                        "fallback":"妨害"
+                    }
+                ],
                 {
-                    "text":"⚡ 70 > ",
-                    "color":"#5599FF",
+                    "translate":"ms.skill.003.desc.a",
+                    "fallback":"使所有守卫者获得一定时长发光，自身在其中最大时长内移速 +40%%；",
+                    "color":"white",
                     "italic":false
                 },
                 {
-                    "translate":"ms.tag.detect",
-                    "fallback":"感知"
+                    "translate":"ms.skill.003.desc.b",
+                    "fallback":"距离 24 格以内的守卫者额外在 5 秒内移速 -30%%",
+                    "color":"white",
+                    "italic":false
                 },
-                "/",
                 {
-                    "translate":"ms.tag.debuff",
-                    "fallback":"妨害"
+                    "translate":"ms.skill.003.desc.sub.a",
+                    "fallback":"发光时长随守卫者与你的距离降低而提升，",
+                    "color":"gray",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.skill.003.desc.sub.b",
+                    "fallback":"距离 12 格以内时达到上限 20 秒",
+                    "color":"gray",
+                    "italic":false
                 }
             ],
-            {
-                "translate":"ms.skill.003.desc.a",
-                "fallback":"使所有守卫者获得一定时长发光，自身在其中最大时长内移速 +40%%；",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.003.desc.b",
-                "fallback":"距离 24 格以内的守卫者额外在 5 秒内移速 -30%%",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.003.desc.sub.a",
-                "fallback":"发光时长随守卫者与你的距离降低而提升，",
-                "color":"gray",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.003.desc.sub.b",
-                "fallback":"距离 12 格以内时达到上限 20 秒",
-                "color":"gray",
-                "italic":false
+            "mode":"replace_all"
+        },
+        {
+            "type":"set_custom_data",
+            "tag":{
+                "id":71003
             }
-        ],
-        "mode":"replace_all"
-    },
-    {
-        "function":"set_custom_data",
-        "tag":{
-            "id":71003
+        },
+        {
+            "type":"set_components",
+            "components":{
+                "item_model":"recovery_compass"
+            }
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"recovery_compass"
-        }
-    }
-]
+    ]
+}

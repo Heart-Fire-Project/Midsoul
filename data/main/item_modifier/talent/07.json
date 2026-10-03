@@ -1,52 +1,55 @@
-[
-    {
-        "function":"set_name",
-        "name":{
-            "translate":"ms.talent.007",
-            "fallback":"灵气感知",
-            "color":"aqua",
-            "italic":false
-        }
-    },
-    {
-        "function":"set_lore",
-        "lore":[
-            [
+{
+    "type":"sequence",
+    "functions":[
+        {
+            "type":"set_name",
+            "name":{
+                "translate":"ms.talent.007",
+                "fallback":"灵气感知",
+                "color":"aqua",
+                "italic":false
+            }
+        },
+        {
+            "type":"set_lore",
+            "lore":[
+                [
+                    {
+                        "text":"> ",
+                        "color":"aqua",
+                        "italic":false
+                    },
+                    {
+                        "translate":"ms.tag.collect",
+                        "fallback":"收集"
+                    }
+                ],
                 {
-                    "text":"> ",
-                    "color":"aqua",
+                    "translate":"ms.talent.007.desc",
+                    "fallback":"交互速度 +3%%；灵气等级每提升 1 级额外 +3%%",
+                    "color":"white",
                     "italic":false
                 },
                 {
-                    "translate":"ms.tag.collect",
-                    "fallback":"收集"
+                    "translate":"ms.talent.007.desc.sub",
+                    "fallback":"至多提升至 +12%%",
+                    "color":"gray",
+                    "italic":false
                 }
             ],
-            {
-                "translate":"ms.talent.007.desc",
-                "fallback":"交互速度 +3%%；灵气等级每提升 1 级额外 +3%%",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.007.desc.sub",
-                "fallback":"至多提升至 +12%%",
-                "color":"gray",
-                "italic":false
+            "mode":"replace_all"
+        },
+        {
+            "type":"set_custom_data",
+            "tag":{
+                "id":72007
             }
-        ],
-        "mode":"replace_all"
-    },
-    {
-        "function":"set_custom_data",
-        "tag":{
-            "id":72007
+        },
+        {
+            "type":"set_components",
+            "components":{
+                "item_model":"cyan_dye"
+            }
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"cyan_dye"
-        }
-    }
-]
+    ]
+}

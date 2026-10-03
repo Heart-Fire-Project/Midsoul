@@ -44,18 +44,21 @@
         "secret":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "scores":{
-                            "music":{
-                                "min":0,
-                                "max":0
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_scores",
+                            "entity":"this",
+                            "scores":{
+                                "music":{
+                                    "min":0,
+                                    "max":0
+                                }
                             }
-                        },
-                        "condition":"entity_scores",
-                        "entity":"this"
-                    }
-                ]
+                        }
+                    ]
+                }
             }
         }
     },

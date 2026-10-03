@@ -1,4 +1,4 @@
-particle block_marker{block_state:{Name:"barrier"}} ~ ~ ~ 0 0 0 0 1 force @a
+particle block_marker{block_state:{id:"barrier"}} ~ ~ ~ 0 0 0 0 1 force @a
 effect give @s blindness 3 0 true
 effect give @s glowing 7 0 true
 effect give @s slowness 7 1 true

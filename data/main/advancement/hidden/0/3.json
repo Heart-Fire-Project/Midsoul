@@ -45,17 +45,20 @@
         "secret":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "scores":{
-                            "stat.parkour_7":{
-                                "min":1
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_scores",
+                            "entity":"this",
+                            "scores":{
+                                "stat.parkour_7":{
+                                    "min":1
+                                }
                             }
-                        },
-                        "condition":"entity_scores",
-                        "entity":"this"
-                    }
-                ]
+                        }
+                    ]
+                }
             }
         }
     },

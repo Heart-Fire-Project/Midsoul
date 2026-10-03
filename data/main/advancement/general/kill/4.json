@@ -54,17 +54,20 @@
         "kill_single":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "scores":{
-                            "stat.kill":{
-                                "min":200
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_scores",
+                            "entity":"this",
+                            "scores":{
+                                "stat.kill":{
+                                    "min":200
+                                }
                             }
-                        },
-                        "condition":"entity_scores",
-                        "entity":"this"
-                    }
-                ]
+                        }
+                    ]
+                }
             }
         }
     },

@@ -43,17 +43,20 @@
         "mvp_single":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "scores":{
-                            "stat.mvp":{
-                                "min":1
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_scores",
+                            "entity":"this",
+                            "scores":{
+                                "stat.mvp":{
+                                    "min":1
+                                }
                             }
-                        },
-                        "condition":"entity_scores",
-                        "entity":"this"
-                    }
-                ]
+                        }
+                    ]
+                }
             }
         }
     },

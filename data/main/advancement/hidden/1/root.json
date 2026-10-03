@@ -30,109 +30,127 @@
         "1":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific/player":{
-                                "advancements":{
-                                    "main:hidden/1/1":true
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "type_specific/player":{
+                                    "advancements":{
+                                        "main:hidden/1/1":true
+                                    }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         },
         "2":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific/player":{
-                                "advancements":{
-                                    "main:hidden/1/2":true
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "type_specific/player":{
+                                    "advancements":{
+                                        "main:hidden/1/2":true
+                                    }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         },
         "3":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific/player":{
-                                "advancements":{
-                                    "main:hidden/1/3":true
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "type_specific/player":{
+                                    "advancements":{
+                                        "main:hidden/1/3":true
+                                    }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         },
         "4":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific/player":{
-                                "advancements":{
-                                    "main:hidden/1/4":true
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "type_specific/player":{
+                                    "advancements":{
+                                        "main:hidden/1/4":true
+                                    }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         },
         "5":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific/player":{
-                                "advancements":{
-                                    "main:hidden/1/5":true
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "type_specific/player":{
+                                    "advancements":{
+                                        "main:hidden/1/5":true
+                                    }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         },
         "6":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "type_specific/player":{
-                                "advancements":{
-                                    "main:hidden/1/6":true
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "type_specific/player":{
+                                    "advancements":{
+                                        "main:hidden/1/6":true
+                                    }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },

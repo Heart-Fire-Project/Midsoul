@@ -1,58 +1,61 @@
-[
-    {
-        "function":"set_name",
-        "name":{
-            "translate":"ms.talent.109",
-            "fallback":"截镫留鞭",
-            "color":"gold",
-            "italic":false
-        }
-    },
-    {
-        "function":"set_lore",
-        "lore":[
-            [
+{
+    "type":"sequence",
+    "functions":[
+        {
+            "type":"set_name",
+            "name":{
+                "translate":"ms.talent.109",
+                "fallback":"截镫留鞭",
+                "color":"gold",
+                "italic":false
+            }
+        },
+        {
+            "type":"set_lore",
+            "lore":[
+                [
+                    {
+                        "text":"> ",
+                        "color":"gold",
+                        "italic":false
+                    },
+                    {
+                        "translate":"ms.tag.debuff",
+                        "fallback":"妨害"
+                    }
+                ],
                 {
-                    "text":"> ",
-                    "color":"gold",
+                    "translate":"ms.talent.109.desc.a",
+                    "fallback":"位于未开启的传送门周围 3 格内时，",
+                    "color":"white",
                     "italic":false
                 },
                 {
-                    "translate":"ms.tag.debuff",
-                    "fallback":"妨害"
+                    "translate":"ms.talent.109.desc.b",
+                    "fallback":"其交互进度流失速度提升至 250%",
+                    "color":"white",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.talent.109.desc.sub",
+                    "fallback":"同名天赋效果不叠加",
+                    "color":"gray",
+                    "italic":false
                 }
             ],
-            {
-                "translate":"ms.talent.109.desc.a",
-                "fallback":"位于未开启的传送门周围 3 格内时，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.109.desc.b",
-                "fallback":"其交互进度流失速度提升至 250%",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.109.desc.sub",
-                "fallback":"同名天赋效果不叠加",
-                "color":"gray",
-                "italic":false
+            "mode":"replace_all"
+        },
+        {
+            "type":"set_custom_data",
+            "tag":{
+                "id":72109
             }
-        ],
-        "mode":"replace_all"
-    },
-    {
-        "function":"set_custom_data",
-        "tag":{
-            "id":72109
+        },
+        {
+            "type":"set_components",
+            "components":{
+                "item_model":"lead"
+            }
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"lead"
-        }
-    }
-]
+    ]
+}

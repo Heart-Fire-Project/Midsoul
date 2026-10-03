@@ -1,69 +1,72 @@
-[
-    {
-        "function":"set_name",
-        "name":{
-            "translate":"ms.skill.005",
-            "fallback":"锚定虚影",
-            "color":"#5599FF",
-            "italic":false
-        }
-    },
-    {
-        "function":"set_lore",
-        "lore":[
-            [
+{
+    "type":"sequence",
+    "functions":[
+        {
+            "type":"set_name",
+            "name":{
+                "translate":"ms.skill.005",
+                "fallback":"锚定虚影",
+                "color":"#5599FF",
+                "italic":false
+            }
+        },
+        {
+            "type":"set_lore",
+            "lore":[
+                [
+                    {
+                        "text":"⚡ 90  ⌚ 1.2 > ",
+                        "color":"#5599FF",
+                        "italic":false
+                    },
+                    {
+                        "translate":"ms.tag.survive",
+                        "fallback":"生存"
+                    },
+                    "/",
+                    {
+                        "translate":"ms.tag.strategy",
+                        "fallback":"策略"
+                    }
+                ],
                 {
-                    "text":"⚡ 90  ⌚ 1.2 > ",
-                    "color":"#5599FF",
+                    "translate":"ms.skill.005.desc.a",
+                    "fallback":"首次施放时原地生成锚点；第二次及之后施放时原地生成阵法，",
+                    "color":"white",
                     "italic":false
                 },
                 {
-                    "translate":"ms.tag.survive",
-                    "fallback":"生存"
+                    "translate":"ms.skill.005.desc.b",
+                    "fallback":"技能结束时若位于阵法中则原地生成一个锚点并传送至上一锚点，",
+                    "color":"white",
+                    "italic":false
                 },
-                "/",
                 {
-                    "translate":"ms.tag.strategy",
-                    "fallback":"策略"
+                    "translate":"ms.skill.005.desc.c",
+                    "fallback":"否则本次技能冷却 -70 秒",
+                    "color":"white",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.skill.005.desc.sub",
+                    "fallback":"初始冷却减半；生成的锚点仅己方可见",
+                    "color":"gray",
+                    "italic":false
                 }
             ],
-            {
-                "translate":"ms.skill.005.desc.a",
-                "fallback":"首次施放时原地生成锚点；第二次及之后施放时原地生成阵法，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.005.desc.b",
-                "fallback":"技能结束时若位于阵法中则原地生成一个锚点并传送至上一锚点，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.005.desc.c",
-                "fallback":"否则本次技能冷却 -70 秒",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.skill.005.desc.sub",
-                "fallback":"初始冷却减半；生成的锚点仅己方可见",
-                "color":"gray",
-                "italic":false
+            "mode":"replace_all"
+        },
+        {
+            "type":"set_custom_data",
+            "tag":{
+                "id":71005
             }
-        ],
-        "mode":"replace_all"
-    },
-    {
-        "function":"set_custom_data",
-        "tag":{
-            "id":71005
+        },
+        {
+            "type":"set_components",
+            "components":{
+                "item_model":"shulker_shell"
+            }
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"shulker_shell"
-        }
-    }
-]
+    ]
+}

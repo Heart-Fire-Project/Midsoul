@@ -10,7 +10,7 @@
                     "type":{
                         "tags":[
                             {
-                                "id":"main:bypass_detect",
+                                "id":"#main:bypass_detect",
                                 "expected":false
                             }
                         ]

@@ -38,6 +38,6 @@ function base:craft_string with storage ms:string
 data modify entity @s CustomName.text set from storage r7s:base string
 
 # 处死
-execute as @s[scores={tick.general=0..}] run particle block{block_state:{Name:"smooth_stone"}} ~ ~0.1 ~ 0.1 0.1 0.1 1 24 force @a
+execute as @s[scores={tick.general=0..}] run particle block{block_state:{id:"smooth_stone"}} ~ ~0.1 ~ 0.1 0.1 0.1 1 24 force @a
 execute as @s[scores={tick.general=0..}] on passengers run kill @s
 kill @s[scores={tick.general=0..}]

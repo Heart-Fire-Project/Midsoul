@@ -1,52 +1,55 @@
-[
-    {
-        "function":"set_name",
-        "name":{
-            "translate":"ms.talent.108",
-            "fallback":"寂域威压",
-            "color":"gold",
-            "italic":false
-        }
-    },
-    {
-        "function":"set_lore",
-        "lore":[
-            [
+{
+    "type":"sequence",
+    "functions":[
+        {
+            "type":"set_name",
+            "name":{
+                "translate":"ms.talent.108",
+                "fallback":"寂域威压",
+                "color":"gold",
+                "italic":false
+            }
+        },
+        {
+            "type":"set_lore",
+            "lore":[
+                [
+                    {
+                        "text":"> ",
+                        "color":"gold",
+                        "italic":false
+                    },
+                    {
+                        "translate":"ms.tag.debuff",
+                        "fallback":"妨害"
+                    }
+                ],
                 {
-                    "text":"> ",
-                    "color":"gold",
+                    "translate":"ms.talent.108.desc.a",
+                    "fallback":"距离 24 格以内的灵魂交互速度 -20%，",
+                    "color":"white",
                     "italic":false
                 },
                 {
-                    "translate":"ms.tag.debuff",
-                    "fallback":"妨害"
+                    "translate":"ms.talent.108.desc.b",
+                    "fallback":"对正在点亮灵灯的灵魂效果减半",
+                    "color":"white",
+                    "italic":false
                 }
             ],
-            {
-                "translate":"ms.talent.108.desc.a",
-                "fallback":"距离 24 格以内的灵魂交互速度 -20%，",
-                "color":"white",
-                "italic":false
-            },
-            {
-                "translate":"ms.talent.108.desc.b",
-                "fallback":"对正在点亮灵灯的灵魂效果减半",
-                "color":"white",
-                "italic":false
+            "mode":"replace_all"
+        },
+        {
+            "type":"set_custom_data",
+            "tag":{
+                "id":72108
             }
-        ],
-        "mode":"replace_all"
-    },
-    {
-        "function":"set_custom_data",
-        "tag":{
-            "id":72108
+        },
+        {
+            "type":"set_components",
+            "components":{
+                "item_model":"fermented_spider_eye"
+            }
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"fermented_spider_eye"
-        }
-    }
-]
+    ]
+}

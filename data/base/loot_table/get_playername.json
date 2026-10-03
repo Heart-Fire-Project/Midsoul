@@ -6,9 +6,9 @@
           {
             "type":"item",
             "name":"player_head",
-            "functions":[
+            "modifier":[
               {
-                "function":"fill_player_head",
+                "type":"fill_player_head",
                 "entity":"this"
               }
             ]

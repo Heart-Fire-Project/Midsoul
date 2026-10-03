@@ -1,46 +1,49 @@
-[
-    {
-        "function":"set_name",
-        "name":{
-            "translate":"ms.talent.002",
-            "fallback":"赴汤蹈火",
-            "color":"aqua",
-            "italic":false
-        }
-    },
-    {
-        "function":"set_lore",
-        "lore":[
-            [
-                {
-                    "text":"⚡ 60  ⌚ 3 > ",
-                    "color":"aqua",
-                    "italic":false
-                },
-                {
-                    "translate":"ms.tag.survive",
-                    "fallback":"生存"
-                }
-            ],
-            {
-                "translate":"ms.talent.002.desc",
-                "fallback":"距离守卫者 12 格以内时，移速 +80%%",
-                "color":"white",
+{
+    "type":"sequence",
+    "functions":[
+        {
+            "type":"set_name",
+            "name":{
+                "translate":"ms.talent.002",
+                "fallback":"赴汤蹈火",
+                "color":"aqua",
                 "italic":false
             }
-        ],
-        "mode":"replace_all"
-    },
-    {
-        "function":"set_custom_data",
-        "tag":{
-            "id":72002
+        },
+        {
+            "type":"set_lore",
+            "lore":[
+                [
+                    {
+                        "text":"⚡ 60  ⌚ 3 > ",
+                        "color":"aqua",
+                        "italic":false
+                    },
+                    {
+                        "translate":"ms.tag.survive",
+                        "fallback":"生存"
+                    }
+                ],
+                {
+                    "translate":"ms.talent.002.desc",
+                    "fallback":"距离守卫者 12 格以内时，移速 +80%%",
+                    "color":"white",
+                    "italic":false
+                }
+            ],
+            "mode":"replace_all"
+        },
+        {
+            "type":"set_custom_data",
+            "tag":{
+                "id":72002
+            }
+        },
+        {
+            "type":"set_components",
+            "components":{
+                "item_model":"blaze_powder"
+            }
         }
-    },
-    {
-        "function":"set_components",
-        "components":{
-            "item_model":"blaze_powder"
-        }
-    }
-]
+    ]
+}

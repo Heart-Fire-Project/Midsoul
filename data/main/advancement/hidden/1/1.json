@@ -58,30 +58,33 @@
         "secret":{
             "trigger":"location",
             "conditions":{
-                "player":[
-                    {
-                        "condition":"entity_properties",
-                        "entity":"this",
-                        "predicate":{
-                            "location":{
-                                "position":{
-                                    "x":{
-                                        "min":-18,
-                                        "max":-14
-                                    },
-                                    "y":{
-                                        "min":11,
-                                        "max":12
-                                    },
-                                    "z":{
-                                        "min":-9,
-                                        "max":-6
+                "player":{
+                    "type":"all_of",
+                    "terms":[
+                        {
+                            "type":"entity_properties",
+                            "entity":"this",
+                            "predicate":{
+                                "location":{
+                                    "position":{
+                                        "x":{
+                                            "min":-18,
+                                            "max":-14
+                                        },
+                                        "y":{
+                                            "min":11,
+                                            "max":12
+                                        },
+                                        "z":{
+                                            "min":-9,
+                                            "max":-6
+                                        }
                                     }
                                 }
                             }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },
