@@ -5,4 +5,4 @@ tag @s remove skill_on
 scoreboard players reset @s skill.007
 
 # 重置冷却
-scoreboard players set @s tick.skill 140000
+scoreboard players set @s tick.skill 150000

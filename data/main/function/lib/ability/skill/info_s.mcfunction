@@ -13,8 +13,8 @@ tellraw @s[scores={skill=2}] [{text:"⚡ 75  ⌚ 10 > ",color:"#5599FF"},{transl
 tellraw @s[scores={skill=3}] [{text:"⚡ 70 > ",color:"#5599FF"},{translate:"ms.tag.detect",fallback:"感知"},"/",{translate:"ms.tag.debuff",fallback:"妨害"}]
 tellraw @s[scores={skill=4}] [{text:"⚡ 70  ⌚ 6 > ",color:"#5599FF"},{translate:"ms.tag.strategy",fallback:"策略"}]
 tellraw @s[scores={skill=5}] [{text:"⚡ 90  ⌚ 1.2 > ",color:"#5599FF"},{translate:"ms.tag.survive",fallback:"生存"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
-tellraw @s[scores={skill=6}] [{text:"⚡ 80  ⌚ 7 > ",color:"#5599FF"},{translate:"ms.tag.survive",fallback:"生存"}]
-tellraw @s[scores={skill=7}] [{text:"⚡ 70  ⌚ 12 > ",color:"#5599FF"},{translate:"ms.tag.support",fallback:"协同"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
+tellraw @s[scores={skill=6}] [{text:"⚡ 80  ⌚ 5 > ",color:"#5599FF"},{translate:"ms.tag.survive",fallback:"生存"}]
+tellraw @s[scores={skill=7}] [{text:"⚡ 75  ⌚ 12 > ",color:"#5599FF"},{translate:"ms.tag.support",fallback:"协同"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
 
 tellraw @s[scores={skill=1}] [{translate:"ms.skill.001.desc",fallback:"隐身 5 秒且移速 +100%%；若距离守卫者 12 格以内则改为移速 +140%%"}]
 tellraw @s[scores={skill=2}] [{translate:"ms.skill.002.desc",fallback:"持续发光且移速 -75%%；技能结束时消耗一次蓄能以点亮最近的灵魂之灯，不满足生效条件时使最近的守卫者发光 5 秒，离其最近的灵魂在 5 秒内移速 +80%%"},"\n",{translate:"ms.skill.002.desc.sub",fallback:"蓄能需要点亮 1 灵魂之灯，以本技能点亮的不计；\n可蓄能 2 次，初始蓄能 1 次",color:"gray"}]
@@ -22,4 +22,4 @@ tellraw @s[scores={skill=3}] [{translate:"ms.skill.003.desc",fallback:"使所有
 tellraw @s[scores={skill=4}] [{translate:"ms.skill.004.desc",fallback:"若距离守卫者 20 格以内，则自身移速 +140%% 且使 8 格内的守卫者无法攻击，或自身移速 -60%%；若距离守卫者 20 格以外，则使最近的守卫者发光且移速 -60%%，或自身传送至最近的守卫者附近并移速 -90%%"},"\n",{translate:"ms.skill.004.desc.sub",fallback:"触发上述负面效果的概率初始为 5%%，但每次使用该技能都会 +7%%，至多提升至 40%%",color:"gray"}]
 tellraw @s[scores={skill=5}] [{translate:"ms.skill.005.desc",fallback:"首次施放时原地生成锚点；第二次及之后施放时原地生成阵法，技能结束时若位于阵法中则原地生成一个锚点并传送至上一锚点，否则本次技能冷却 -70 秒"},"\n",{translate:"ms.skill.005.desc.sub",fallback:"初始冷却减半；生成的锚点仅己方可见",color:"gray"}]
 tellraw @s[scores={skill=6}] [{translate:"ms.skill.006.desc",fallback:"使周围 2 格内血量最低的灵魂获得 4 吸收，并使其在 10 秒内回复 8 血量"},"\n",{translate:"ms.skill.006.desc.sub",fallback:"每次使用该技能都会使技能冷却 +20 秒，至多提升至 160 秒",color:"gray"}]
-tellraw @s[scores={skill=7}] [{translate:"ms.skill.007.desc",fallback:"移速 +20%%；与周围 16 格内最近的灵魂形成谊链使其技能冷却速度 +200%%，期间你获得与其同等级的速度效果"},"\n",{translate:"ms.skill.007.desc.sub",fallback:"谊链将在长度超过 32 格或任意一方垂死时断开并使技能立即结束",color:"gray"}]
+tellraw @s[scores={skill=7}] [{translate:"ms.skill.007.desc",fallback:"移速 +20%% 并建立谊链，其将使对方技能冷却速度 +200%% 并使双方的移速加成取两者间的更高值；若无法建立则改为移速 +60%%"},"\n",{translate:"ms.skill.007.desc.sub",fallback:"仅在自身无谊链时方能与 16 格内最近的无谊链灵魂建立谊链\n谊链长度超过 32 格或任意一方垂死时技能立即结束；技能结束时解除谊链",color:"gray"}]

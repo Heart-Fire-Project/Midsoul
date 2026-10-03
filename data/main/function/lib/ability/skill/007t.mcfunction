@@ -27,9 +27,16 @@ execute if score $front temp2 matches 16.. run function main:lib/ability/skill/0
 
 # 速度效果同步
 data merge storage ms:temp {amplifier:-1}
-data modify storage ms:temp amplifier set from entity @p[tag=S007] active_effects[{id:"minecraft:speed"}].amplifier
-execute store result score $value temp run data get entity @p[tag=S007] active_effects[{id:"minecraft:speed"}].duration
-execute if score $value temp matches 20.. run function main:lib/ability/skill/007a with storage ms:temp
+execute store result score $valueA temp run data get entity @s active_effects[{id:"minecraft:speed"}].amplifier
+execute store result score $valueB temp run data get entity @p[tag=S007] active_effects[{id:"minecraft:speed"}].amplifier
+execute unless entity @s[nbt={active_effects:[{id:"minecraft:speed"}]}] run scoreboard players set $valueA temp -1
+execute unless entity @p[tag=S007,nbt={active_effects:[{id:"minecraft:speed"}]}] run scoreboard players set $valueB temp -1
+execute if score $valueA temp > $valueB temp store result storage ms:temp amplifier int 1 run scoreboard players get $valueA temp
+execute if score $valueA temp < $valueB temp store result storage ms:temp amplifier int 1 run scoreboard players get $valueB temp
+execute if score $valueA temp > $valueB temp store result score $value temp run data get entity @s active_effects[{id:"minecraft:speed"}].duration
+execute if score $valueA temp < $valueB temp store result score $value temp run data get entity @p[tag=S007] active_effects[{id:"minecraft:speed"}].duration
+execute if score $value temp matches 20.. if score $valueA temp > $valueB temp as @p[tag=S007] run function main:lib/ability/skill/007a with storage ms:temp
+execute if score $value temp matches 20.. if score $valueA temp < $valueB temp run function main:lib/ability/skill/007a with storage ms:temp
 
 # 去除标签
 tag @a remove S007

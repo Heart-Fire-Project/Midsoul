@@ -15,7 +15,7 @@
             "lore":[
                 [
                     {
-                        "text":"⚡ 70  ⌚ 12 > ",
+                        "text":"⚡ 75  ⌚ 12 > ",
                         "color":"#5599FF",
                         "italic":false
                     },
@@ -31,25 +31,31 @@
                 ],
                 {
                     "translate":"ms.skill.007.desc.a",
-                    "fallback":"移速 +20%%；",
+                    "fallback":"移速 +20%% 并建立谊链，",
                     "color":"white",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.007.desc.b",
-                    "fallback":"与周围 16 格内最近的灵魂形成谊链使其技能冷却速度 +200%%，",
+                    "fallback":"其将使对方技能冷却速度 +200%% 并使双方的移速加成取两者间的更高值；",
                     "color":"white",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.007.desc.c",
-                    "fallback":"期间你获得与其同等级的速度效果",
+                    "fallback":"若无法建立则改为移速 +60%%",
                     "color":"white",
                     "italic":false
                 },
                 {
-                    "translate":"ms.skill.007.desc.sub",
-                    "fallback":"谊链将在长度超过 32 格或任意一方垂死时断开并使技能立即结束",
+                    "translate":"ms.skill.007.desc.sub.a",
+                    "fallback":"仅在自身无谊链时方能与 16 格内最近的无谊链灵魂建立谊链",
+                    "color":"gray",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.skill.007.desc.sub.b",
+                    "fallback":"谊链长度超过 32 格或任意一方垂死时技能立即结束；技能结束时解除谊链",
                     "color":"gray",
                     "italic":false
                 }

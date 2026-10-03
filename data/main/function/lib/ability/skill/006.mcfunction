@@ -48,10 +48,10 @@ tag @r[tag=S006t] add S006
 # 给予效果并去除标签
 execute at @a[tag=S006] run particle happy_villager ~ ~0.3 ~ 0.2 0.3 0.2 1 14 force @a
 execute at @a[tag=S006] run particle heart ~ ~2 ~ 0.1 0 0.1 1 1 force @a
-effect give @a[tag=S006] absorption 7 0
+effect give @a[tag=S006] absorption 5 0
 effect give @a[tag=S006] regeneration 10 1
 tag @a remove S006t
 tag @a remove S006
 
 # 设置计时
-scoreboard players set @s tick.skill -14000
+scoreboard players set @s tick.skill -10000

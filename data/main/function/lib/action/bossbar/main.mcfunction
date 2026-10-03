@@ -11,8 +11,8 @@ scoreboard players operation $warn temp2 = @s temp2
 # 2 | 自身可侦测范围 > 直接乘算
 
 # 3 | 自身可侦测范围 > 加算
-execute as @s[team=soul,scores={talent_1=8},tag=interact_purple,tag=interacting] run function main:lib/action/bossbar/add {type:"both",value:"800"}
-execute as @s[team=soul,scores={talent_2=8},tag=interact_purple,tag=interacting] run function main:lib/action/bossbar/add {type:"both",value:"800"}
+execute as @s[team=soul,scores={talent_1=8},tag=interact_purple,tag=interacting_p] run function main:lib/action/bossbar/add {type:"both",value:"800"}
+execute as @s[team=soul,scores={talent_2=8},tag=interact_purple,tag=interacting_p] run function main:lib/action/bossbar/add {type:"both",value:"800"}
 
 # 4 | 自身可侦测范围 > 最终乘算
 

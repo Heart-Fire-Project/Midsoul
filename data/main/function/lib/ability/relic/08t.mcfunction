@@ -5,7 +5,7 @@ execute store result score $min temp run data get entity @s Pos[1] 1000
 scoreboard players operation $max temp = $min temp
 scoreboard players add $max temp 2000
 execute as @a[team=guardian,distance=..3.5] if score @s temp >= $min temp if score @s temp <= $max temp run tag @s add R08t
-effect give @a[tag=R08t] slowness 1 2
+effect give @a[tag=R08t] slowness 1 4
 scoreboard players set @a[tag=R08t,scores={tick.silent=..1}] tick.silent 2
 scoreboard players set @a[tag=R08t,scores={tick.silent=..1}] tick.silent_max 2
 tag @a remove R08t

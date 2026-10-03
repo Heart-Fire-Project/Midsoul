@@ -35,6 +35,7 @@ scoreboard players operation @s[tag=interact_blue] temp *= $collect_extend state
 scoreboard players operation @s[tag=interact_blue] temp /= #100 data
 
 scoreboard players operation @s[tag=interacting] tick.general += @s temp
+scoreboard players operation @s[tag=interacting_p] tick.general += @s temp
 
 ## 特效存储
 execute if entity @p[team=guardian,scores={talent_1=8},distance=..24] unless entity @s[team=guardian] run particle ash ~ ~0.1 ~ 0.2 0.2 0.2 1 10 force @a
