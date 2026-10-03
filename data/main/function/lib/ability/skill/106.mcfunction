@@ -8,4 +8,4 @@ function main:lib/ability/skill/106s
 scoreboard players add @s skill.106 1
 
 # 重置冷却
-scoreboard players set @s tick.skill 80000
+scoreboard players set @s tick.skill 60000

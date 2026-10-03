@@ -2,7 +2,7 @@ title @s[scores={setting.ability_status=1..}] actionbar [{translate:"ms.skill.ov
 tag @s remove skill_on
 
 # 计算本次冷却并重置
-scoreboard players set @s tick.skill 20000
+scoreboard players set @s tick.skill 30000
 scoreboard players operation @s tick.skill *= @s temp.skill
-scoreboard players add @s tick.skill 140000
-scoreboard players set @s[scores={tick.skill=240001..}] tick.skill 240000
+scoreboard players add @s tick.skill 180000
+scoreboard players set @s[scores={tick.skill=360001..}] tick.skill 360000

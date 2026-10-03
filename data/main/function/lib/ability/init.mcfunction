@@ -34,8 +34,8 @@ scoreboard objectives remove skill.107s
 scoreboard objectives add skill.107s dummy "洞若观火 / 再设速度计时"
 
 # 初始冷却 | 以 0.01 刻为单位
-# 单次冷却 |  40  |  45  |  50  |  55  |  60  |  65  |  70  |  75  |  80  |  85  |  90
-# 实际写入 |  08  |  09  |  10  |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18
+# 单次冷却 |  30  |  35  |  40  |  45  |  50  |  55  |  60  |  65  |  70  |  75  |  80  |  85  |  90
+# 实际写入 |  06  |  07  |  08  |  09  |  10  |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18
 scoreboard players reset * tick.skill
 scoreboard players reset * tick.talent_1
 scoreboard players reset * tick.talent_2
@@ -44,14 +44,14 @@ scoreboard players set @a[team=soul,scores={skill=2}] tick.skill 150000
 scoreboard players set @a[team=soul,scores={skill=3}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={skill=4}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={skill=5}] tick.skill 090000
-scoreboard players set @a[team=soul,scores={skill=6}] tick.skill 140000
+scoreboard players set @a[team=soul,scores={skill=6}] tick.skill 180000
 scoreboard players set @a[team=soul,scores={skill=7}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=1}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=2}] tick.skill 120000
 scoreboard players set @a[team=guardian,scores={skill=3}] tick.skill 140000
 scoreboard players set @a[team=guardian,scores={skill=4}] tick.skill 120000
 scoreboard players set @a[team=guardian,scores={skill=5}] tick.skill 140000
-scoreboard players set @a[team=guardian,scores={skill=6}] tick.skill 080000
+scoreboard players set @a[team=guardian,scores={skill=6}] tick.skill 060000
 scoreboard players set @a[team=guardian,scores={skill=7}] tick.skill 140000
 scoreboard players set @a[team=soul,scores={talent_1=1}] tick.talent_1 060000
 scoreboard players set @a[team=soul,scores={talent_1=2}] tick.talent_1 120000

@@ -15,7 +15,7 @@
             "lore":[
                 [
                     {
-                        "text":"⚡ 70  ⌚ 7 > ",
+                        "text":"⚡ 90  ⌚ 7 > ",
                         "color":"#5599FF",
                         "italic":false
                     },
@@ -32,19 +32,19 @@
                 },
                 {
                     "translate":"ms.skill.006.desc.b",
-                    "fallback":"并使其在 20 秒内回复 8 血量",
+                    "fallback":"并使其在 15 秒内回复 6 血量",
                     "color":"white",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.006.desc.sub.a",
-                    "fallback":"每次使用该技能都会使技能冷却 +10 秒，",
+                    "fallback":"每次使用该技能都会使技能冷却 +15 秒，",
                     "color":"gray",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.006.desc.sub.b",
-                    "fallback":"至多提升至 120 秒",
+                    "fallback":"至多提升至 180 秒",
                     "color":"gray",
                     "italic":false
                 }

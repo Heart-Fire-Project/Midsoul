@@ -8,3 +8,4 @@ attribute @s gravity modifier remove ms:echo
 attribute @s jump_strength modifier remove ms:echo
 
 attribute @s sneaking_speed modifier remove ms:t005
+attribute @s knockback_resistance modifier remove ms:t009

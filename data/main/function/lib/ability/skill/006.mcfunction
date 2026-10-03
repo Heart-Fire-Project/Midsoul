@@ -49,7 +49,7 @@ tag @r[tag=S006t] add S006
 execute at @a[tag=S006] run particle happy_villager ~ ~0.3 ~ 0.2 0.3 0.2 1 14 force @a
 execute at @a[tag=S006] run particle heart ~ ~2 ~ 0.1 0 0.1 1 1 force @a
 effect give @a[tag=S006] absorption 7 0
-effect give @a[tag=S006] regeneration 20 0
+effect give @a[tag=S006] regeneration 15 0
 tag @a remove S006t
 tag @a remove S006
 

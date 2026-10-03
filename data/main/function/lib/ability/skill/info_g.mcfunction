@@ -13,7 +13,7 @@ tellraw @s[scores={skill=2}] [{text:"⚡ 60  ⌚ 12 > ",color:"red"},{translate:
 tellraw @s[scores={skill=3}] [{text:"⚡ 70  ⌚ 20 > ",color:"red"},{translate:"ms.tag.teleport",fallback:"跃迁"},"/",{translate:"ms.tag.detect",fallback:"感知"}]
 tellraw @s[scores={skill=4}] [{text:"⚡ 60  ⌚ 10 > ",color:"red"},{translate:"ms.tag.kill",fallback:"杀戮"},"/",{translate:"ms.tag.debuff",fallback:"妨害"}]
 tellraw @s[scores={skill=5}] [{text:"⚡ 70  ⌚ 12 > ",color:"red"},{translate:"ms.tag.kill",fallback:"杀戮"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
-tellraw @s[scores={skill=6}] [{text:"⚡ 40 > ",color:"red"},{translate:"ms.tag.kill",fallback:"杀戮"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
+tellraw @s[scores={skill=6}] [{text:"⚡ 30 > ",color:"red"},{translate:"ms.tag.kill",fallback:"杀戮"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
 tellraw @s[scores={skill=7}] [{text:"⚡ 70  ⌚ 15 > ",color:"red"},{translate:"ms.tag.teleport",fallback:"跃迁"},"/",{translate:"ms.tag.strategy",fallback:"策略"}]
 
 tellraw @s[scores={skill=1}] [{translate:"ms.skill.101.desc",fallback:"移速 +40%%；即刻使全部灵魂发光，其中距离你最近的灵魂效果时长翻倍"}]

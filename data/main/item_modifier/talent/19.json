@@ -32,7 +32,7 @@
                 },
                 {
                     "translate":"ms.talent.109.desc.b",
-                    "fallback":"其交互进度流失速度提升至 250%",
+                    "fallback":"其交互进度流失速度提升至 200%",
                     "color":"white",
                     "italic":false
                 },
