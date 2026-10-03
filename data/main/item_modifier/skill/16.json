@@ -31,31 +31,38 @@
                 ],
                 {
                     "translate":"ms.skill.106.desc",
-                    "fallback":"原地放置诡雷",
+                    "fallback":"原地放置诡雷，其将在周围有灵魂经过时触发并在 0.4 秒后爆炸",
                     "color":"white",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.106.desc.sub.a",
-                    "fallback":"诡雷被灵魂触发 0.4 秒后爆炸，",
+                    "fallback":"诡雷爆炸时对周围 3 格内的单位造成 7 静默伤害并使其发光 2 秒",
                     "color":"gray",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.106.desc.sub.b",
-                    "fallback":"对周围 2 格内的单位造成 7 伤害并使其发光 2 秒",
+                    "fallback":"每存在 1 个属于你的诡雷，技能冷却速度 -20%%；",
                     "color":"gray",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.106.desc.sub.c",
-                    "fallback":"每存在 1 个属于你的诡雷，技能冷却速度 -20%；",
+                    "fallback":"可以与诡雷交互以将其拆除",
                     "color":"gray",
                     "italic":false
                 },
+                "",
                 {
-                    "translate":"ms.skill.106.desc.sub.d",
-                    "fallback":"可以与诡雷交互以将其拆除",
+                    "translate":"ms.special.bypass_damage",
+                    "fallback":"「静默伤害」",
+                    "color":"dark_red",
+                    "italic":false
+                },
+                {
+                    "translate":"ms.special.bypass_damage.desc",
+                    "fallback":"受到此类伤害后不会触发受击效果",
                     "color":"gray",
                     "italic":false
                 }

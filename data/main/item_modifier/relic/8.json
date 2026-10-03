@@ -32,7 +32,7 @@
                 },
                 {
                     "translate":"ms.relic.8.desc.b",
-                    "fallback":"令位于其中的守卫者沉默且移速 -45%",
+                    "fallback":"令位于其中的守卫者沉默且移速 -45%%",
                     "color":"white",
                     "italic":false
                 },

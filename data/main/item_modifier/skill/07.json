@@ -31,13 +31,13 @@
                 ],
                 {
                     "translate":"ms.skill.007.desc.a",
-                    "fallback":"移速 +20%；",
+                    "fallback":"移速 +20%%；",
                     "color":"white",
                     "italic":false
                 },
                 {
                     "translate":"ms.skill.007.desc.b",
-                    "fallback":"与周围 16 格内最近的灵魂形成谊链使其技能冷却速度 +200%，",
+                    "fallback":"与周围 16 格内最近的灵魂形成谊链使其技能冷却速度 +200%%，",
                     "color":"white",
                     "italic":false
                 },

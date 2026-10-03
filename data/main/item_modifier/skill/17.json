@@ -31,7 +31,7 @@
                 ],
                 {
                     "translate":"ms.skill.107.desc.a",
-                    "fallback":"移速 +20% 并原地释放瞑视之眼，",
+                    "fallback":"移速 +20%% 并原地释放瞑视之眼，",
                     "color":"white",
                     "italic":false
                 },

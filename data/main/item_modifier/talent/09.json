@@ -26,7 +26,7 @@
                 ],
                 {
                     "translate":"ms.talent.009.desc",
-                    "fallback":"点亮灵灯所需时间 -1.5 秒，期间受到的击退效果 -75%",
+                    "fallback":"点亮灵灯所需时间 -1.5 秒，期间受到的击退效果 -75%%",
                     "color":"white",
                     "italic":false
                 }
