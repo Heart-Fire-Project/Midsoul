@@ -32,12 +32,12 @@ item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air
 
 # 通用改动
-function main:lib/event/universal/inventory_other
-function main:lib/event/universal/inventory_pre
+function main:lib/event/universal/inventory/other
+function main:lib/event/universal/inventory/pre
 
 # 进行完全部处理之后再发到玩家手里
 item replace entity @s hotbar.1 from block 0 -7 0 container.1
 item replace entity @s hotbar.4 from block 0 -7 0 container.4
 item replace entity @s hotbar.7 from block 0 -7 0 container.7
 item replace entity @s hotbar.8 from block 0 -7 0 container.8
-function main:lib/event/universal/inventory_setting
+function main:lib/event/universal/inventory/setting

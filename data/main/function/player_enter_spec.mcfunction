@@ -12,12 +12,13 @@ tag @s remove quering
 tag @s remove game_player
 tag @s remove check_join
 tag @s remove check_ability
-tag @a remove status_display
+tag @s remove status_display
 tag @s remove echo_target
 tag @s remove relic_on
 tag @s remove skill_on
 tag @s remove talent_1_on
 tag @s remove talent_2_on
+tag @s remove interacting_p
 
 # 按照阶段进行不同入场流程
 scoreboard players reset @s music

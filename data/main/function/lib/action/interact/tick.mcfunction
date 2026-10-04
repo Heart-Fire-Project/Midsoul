@@ -7,10 +7,10 @@ scoreboard players operation $value temp += $aura_rank data
 execute store result storage ms:temp value int 3 run scoreboard players get $value temp
 execute as @s[team=soul,scores={talent_1=7}] run function main:lib/action/interact/modify with storage ms:temp
 execute as @s[team=soul,scores={talent_2=7}] run function main:lib/action/interact/modify with storage ms:temp
-execute if entity @p[team=guardian,scores={talent_1=8},distance=..24] unless entity @s[team=guardian] run function main:lib/action/interact/modify {value:"-10"}
-execute if entity @p[team=guardian,scores={talent_2=8},distance=..24] unless entity @s[team=guardian] run function main:lib/action/interact/modify {value:"-10"}
-execute if entity @p[team=guardian,scores={talent_1=8},distance=..24] unless entity @s[tag=interact_gold] run function main:lib/action/interact/modify {value:"-10"}
-execute if entity @p[team=guardian,scores={talent_2=8},distance=..24] unless entity @s[tag=interact_gold] run function main:lib/action/interact/modify {value:"-10"}
+execute if entity @p[team=guardian,scores={talent_1=8},distance=..12] unless entity @s[team=guardian] run function main:lib/action/interact/modify {value:"-15"}
+execute if entity @p[team=guardian,scores={talent_2=8},distance=..12] unless entity @s[team=guardian] run function main:lib/action/interact/modify {value:"-15"}
+execute if entity @p[team=guardian,scores={talent_1=8},distance=..12] unless entity @s[tag=interact_gold] run function main:lib/action/interact/modify {value:"-15"}
+execute if entity @p[team=guardian,scores={talent_2=8},distance=..12] unless entity @s[tag=interact_gold] run function main:lib/action/interact/modify {value:"-15"}
 
 # 回响
 execute if score $echo data matches 5 as @s[team=soul] run function main:lib/action/interact/modify {value:"-10"}

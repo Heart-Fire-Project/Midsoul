@@ -50,6 +50,7 @@ tag @a remove echo_target
 tag @a remove charge_rating_1
 tag @a remove charge_rating_2
 tag @a remove charge_rating_3
+tag @a remove interacting_p
 
 execute if score $echo data matches 1 run function main:lib/echo/init {min:"0",max:"0"}
 execute if score $echo data matches 4 run function main:lib/echo/init {min:"20",max:"60"}
