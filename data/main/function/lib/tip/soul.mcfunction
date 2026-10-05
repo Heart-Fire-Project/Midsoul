@@ -1,4 +1,4 @@
-execute store result score $random temp2 run random value 1..6
+execute store result score $random temp2 run random value 1..8
 tellraw @s ""
 
 execute if score $random temp2 matches 1 run tellraw @s [{text:"» ",color:"#7367F0",bold:true},{text:"Tip! ",bold:false},{translate:"ms.tip.soul.1",fallback:"正在赶往灵魂之灯的大概不止有你的队友……",bold:false}]
@@ -7,3 +7,5 @@ execute if score $random temp2 matches 3 run tellraw @s [{text:"» ",color:"#736
 execute if score $random temp2 matches 4 run tellraw @s [{text:"» ",color:"#7367F0",bold:true},{text:"Tip! ",bold:false},{translate:"ms.tip.soul.4",fallback:"点亮灵魂之灯时，会优先以剩余时间最短的垂死灵魂为救助目标",bold:false}]
 execute if score $random temp2 matches 5 run tellraw @s [{text:"» ",color:"#7367F0",bold:true},{text:"Tip! ",bold:false},{translate:"ms.tip.soul.5",fallback:"若场上仅剩最后一个灵魂，游戏将会给予其一定帮助",bold:false}]
 execute if score $random temp2 matches 6 run tellraw @s [{text:"» ",color:"#7367F0",bold:true},{text:"Tip! ",bold:false},{translate:"ms.tip.soul.6",fallback:"即使没有损失血量，受击后也仍会获得无敌与移速提升",bold:false}]
+execute if score $random temp2 matches 7 run tellraw @s [{text:"» ",color:"#7367F0",bold:true},{text:"Tip! ",bold:false},{translate:"ms.tip.soul.7",fallback:"如果你的充能速度很低，参与多人充能反而会降低整体速度",bold:false}]
+execute if score $random temp2 matches 8 run tellraw @s [{text:"» ",color:"#7367F0",bold:true},{text:"Tip! ",bold:false},{translate:"ms.tip.soul.8",fallback:"有些时候延长充能阶段倒计时并不是什么好的选择……",bold:false}]
