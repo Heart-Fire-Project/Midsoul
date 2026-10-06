@@ -2,9 +2,9 @@
 tag @s remove T109a
 scoreboard players reset $pending temp
 scoreboard players reset $lock temp
-execute as @s[scores={tick.general=..0,state=0}] run scoreboard players set $lock temp 1
-execute as @s[scores={tick.general=..30000,state=1}] run scoreboard players set $lock temp 1
-execute as @s[scores={tick.general=..60000,state=2}] run scoreboard players set $lock temp 1
+execute as @s[scores={tick.interact=..0,state=0}] run scoreboard players set $lock temp 1
+execute as @s[scores={tick.interact=..30000,state=1}] run scoreboard players set $lock temp 1
+execute as @s[scores={tick.interact=..60000,state=2}] run scoreboard players set $lock temp 1
 execute unless score $lock temp matches 1 unless score $num temp matches 1.. if entity @p[team=guardian,scores={talent_1=9},distance=..3] run scoreboard players set $pending temp 1
 execute unless score $lock temp matches 1 unless score $num temp matches 1.. if entity @p[team=guardian,scores={talent_2=9},distance=..3] run scoreboard players set $pending temp 1
 

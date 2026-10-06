@@ -16,6 +16,15 @@ execute if score $state data matches 2 run bossbar set midsoul:info players @a[t
 execute if score $state data matches 2 run bossbar set midsoul:2 players @a[team=soul]
 execute if score $state data matches 2 run bossbar set midsoul:3 players @a[team=guardian]
 
+# 异常设置回调
+execute unless score @s setting.auto_prepare matches 0..1 run scoreboard players set @s setting.auto_prepare 0
+execute unless score @s setting.interact_hint matches 0..1 run scoreboard players set @s setting.interact_hint 1
+execute unless score @s setting.ability_status matches 0..2 run scoreboard players set @s setting.ability_status 2
+execute unless score @s setting.echo_info matches 0..1 run scoreboard players set @s setting.echo_info 1
+execute unless score @s setting.instant_rating matches 0..1 run scoreboard players set @s setting.instant_rating 1
+execute unless score @s setting.ingame_tip matches 0..1 run scoreboard players set @s setting.ingame_tip 1
+execute unless score @s setting.inherit_choice matches 0..1 run scoreboard players set @s setting.inherit_choice 0
+
 # 守卫者刷新当前状态
 execute if data storage ms:mode {logic:"1"} as @s[team=guardian] run function main:state/3/player/effect
 execute if score $state data matches 3.. run tellraw @s[team=guardian] [{text:"» ",bold:true,color:"red"},{translate:"ms.info.mid_guar",fallback:"游戏尚未结束，你可以继续进行游戏！",bold:false}]

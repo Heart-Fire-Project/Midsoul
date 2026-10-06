@@ -1,7 +1,7 @@
 # 先查看是否有充能的玩家
 tag @s remove charging_purple
 execute if entity @a[tag=interact_purple,tag=interacting_p,distance=..0.7] run tag @s add charging_purple
-execute if score $4_finale state matches 1 if entity @a[team=soul,distance=..3,scores={state=0}] run tag @s[scores={tick.general=..90000}] add charging_purple
+execute if score $4_finale state matches 1 if entity @a[team=soul,distance=..3,scores={state=0}] run tag @s[scores={tick.interact=..90000}] add charging_purple
 
 # 人数结算
 scoreboard players reset $num temp
@@ -18,13 +18,13 @@ execute if score $4_chargesound tick.general matches 11.. run scoreboard players
 scoreboard players operation $minus temp = $interact_speed setting
 scoreboard players operation $minus temp /= #5 data
 function main:lib/ability/talent/109
-execute unless score $num temp matches 1.. run scoreboard players operation @s[scores={tick.general=1..}] tick.general -= $minus temp
-scoreboard players set @s[scores={state=0,tick.general=..-1}] tick.general 0
-scoreboard players set @s[scores={state=1,tick.general=..30000}] tick.general 30000
-scoreboard players set @s[scores={state=2,tick.general=..60000}] tick.general 60000
+execute unless score $num temp matches 1.. run scoreboard players operation @s[scores={tick.interact=1..}] tick.interact -= $minus temp
+scoreboard players set @s[scores={state=0,tick.interact=..-1}] tick.interact 0
+scoreboard players set @s[scores={state=1,tick.interact=..30000}] tick.interact 30000
+scoreboard players set @s[scores={state=2,tick.interact=..60000}] tick.interact 60000
 
 # 极速充能结算
-execute if score $4_finale state matches 1 if entity @s[scores={tick.general=..90000}] if entity @a[team=soul,distance=..3,scores={state=0}] run function main:state/4/charge/finale
+execute if score $4_finale state matches 1 if entity @s[scores={tick.interact=..90000}] if entity @a[team=soul,distance=..3,scores={state=0}] run function main:state/4/charge/finale
 
 # 充能进度结算 | 求平均值，再乘相应倍率
 # 交互人数 |   1   |   2   |   3   |   4
@@ -36,13 +36,13 @@ execute store result storage ms:temp value int 1 run scoreboard players get $plu
 execute if score $num temp matches 2 store result score $plus temp run data get storage ms:temp value 1.25
 execute if score $num temp matches 3 store result score $plus temp run data get storage ms:temp value 1.4
 execute if score $num temp matches 4.. store result score $plus temp run data get storage ms:temp value 1.5
-execute if score $num temp matches 1.. run scoreboard players operation @s tick.general += $plus temp
+execute if score $num temp matches 1.. run scoreboard players operation @s tick.interact += $plus temp
 
 # 检查节点
-execute as @s[scores={state=0,tick.general=35000..}] run playsound block.chiseled_bookshelf.insert.enchanted block @a ~ ~1.2 ~ 1
-execute as @s[scores={state=1,tick.general=70000..}] run playsound block.chiseled_bookshelf.insert.enchanted block @a ~ ~1.2 ~ 1
-scoreboard players set @s[scores={state=0,tick.general=35000..}] state 1
-scoreboard players set @s[scores={state=1,tick.general=70000..}] state 2
+execute as @s[scores={state=0,tick.interact=35000..}] run playsound block.chiseled_bookshelf.insert.enchanted block @a ~ ~1.2 ~ 1
+execute as @s[scores={state=1,tick.interact=70000..}] run playsound block.chiseled_bookshelf.insert.enchanted block @a ~ ~1.2 ~ 1
+scoreboard players set @s[scores={state=0,tick.interact=35000..}] state 1
+scoreboard players set @s[scores={state=1,tick.interact=70000..}] state 2
 
 # 充能完毕？
-execute as @s[scores={tick.general=100000..}] run function main:state/4/charge/finish
+execute as @s[scores={tick.interact=100000..}] run function main:state/4/charge/finish

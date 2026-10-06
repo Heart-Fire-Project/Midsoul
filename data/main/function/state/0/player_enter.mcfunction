@@ -14,6 +14,7 @@ scoreboard players set @s state 0
 scoreboard players enable @s detect.interact
 gamemode adventure @s
 team join spectator @s
+team join prepare @s[scores={setting.auto_prepare=1}]
 execute unless entity @s[x=-12,y=-1,z=-12,dx=16,dy=16,dz=16] unless entity @s[x=-1011,y=-2,z=-1015,dx=32,dy=18,dz=45] run tp @s[team=!admin] 0 0 0 135.0 -15.0
 execute unless score @s exp.temp matches -2147483648..2147483647 run scoreboard players set @s exp.temp 0
 execute unless score @s music matches -1 run function main:state/0/music_roll
@@ -25,8 +26,10 @@ function main:state/0/exp/maximum
 function main:state/0/exp/loop
 
 # 占位符，以免误调设定
+item replace entity @s inventory.10 from block 0 -7 0 container.10
 item replace entity @s inventory.11 from block 0 -7 0 container.11
 item replace entity @s inventory.12 from block 0 -7 0 container.12
 item replace entity @s inventory.13 from block 0 -7 0 container.13
 item replace entity @s inventory.14 from block 0 -7 0 container.14
 item replace entity @s inventory.15 from block 0 -7 0 container.15
+item replace entity @s inventory.16 from block 0 -7 0 container.16

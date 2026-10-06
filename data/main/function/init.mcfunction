@@ -74,6 +74,8 @@ scoreboard objectives add health health "生命值"
 
 scoreboard objectives remove tick.general
 scoreboard objectives add tick.general dummy "全局计时"
+scoreboard objectives remove tick.interact
+scoreboard objectives add tick.interact dummy "交互计时"
 scoreboard objectives remove tick.skill
 scoreboard objectives add tick.skill dummy "技能计时"
 scoreboard objectives remove tick.talent_1
@@ -159,12 +161,12 @@ scoreboard objectives add ui.talent_1 dummy "天赋 1 选择页"
 scoreboard objectives remove ui.talent_2
 scoreboard objectives add ui.talent_2 dummy "天赋 2 选择页"
 
-scoreboard objectives add rec.skill_soul dummy "技能选择页记录 - 灵魂"
-scoreboard objectives add rec.talent_1_soul dummy "天赋 1 选择页记录 - 灵魂"
-scoreboard objectives add rec.talent_2_soul dummy "天赋 2 选择页记录 - 灵魂"
-scoreboard objectives add rec.skill_guar dummy "技能选择页记录 - 守卫"
-scoreboard objectives add rec.talent_1_guar dummy "天赋 1 选择页记录 - 守卫"
-scoreboard objectives add rec.talent_2_guar dummy "天赋 2 选择页记录 - 守卫"
+scoreboard objectives add rec.skill_soul dummy "技能选择记录 - 灵魂"
+scoreboard objectives add rec.talent_1_soul dummy "天赋 1 选择记录 - 灵魂"
+scoreboard objectives add rec.talent_2_soul dummy "天赋 2 选择记录 - 灵魂"
+scoreboard objectives add rec.skill_guar dummy "技能选择记录 - 守卫"
+scoreboard objectives add rec.talent_1_guar dummy "天赋 1 选择记录 - 守卫"
+scoreboard objectives add rec.talent_2_guar dummy "天赋 2 选择记录 - 守卫"
 
 scoreboard objectives add leave_game custom:leave_game "离开游戏"
 scoreboard objectives add soul_combo dummy "灵魂连击"
@@ -201,11 +203,13 @@ scoreboard objectives add stat.rating_record dummy "最高短期分"
 scoreboard objectives add stat.parkour_5 dummy "普通跑酷纪录"
 scoreboard objectives add stat.parkour_7 dummy "隐藏跑酷纪录"
 
-scoreboard objectives add setting.instant_rating dummy "即时表现分设定"
+scoreboard objectives add setting.auto_prepare dummy "自动准备设定"
 scoreboard objectives add setting.interact_hint dummy "交互提示设定"
 scoreboard objectives add setting.ability_status dummy "能力状态提示设定"
-scoreboard objectives add setting.ingame_tip dummy "Tip! 设定"
 scoreboard objectives add setting.echo_info dummy "回响提示设定"
+scoreboard objectives add setting.instant_rating dummy "即时表现分设定"
+scoreboard objectives add setting.ingame_tip dummy "Tip! 设定"
+scoreboard objectives add setting.inherit_choice dummy "继承自选能力设定"
 
 scoreboard objectives add extra.particle dummy "粒子效果"
 scoreboard objectives add extra.headset dummy "饰品装配"
@@ -343,7 +347,7 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 362
+scoreboard players set $build data 363
 scoreboard players set $map_max data 6
 scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 7

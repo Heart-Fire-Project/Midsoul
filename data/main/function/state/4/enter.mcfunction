@@ -38,7 +38,7 @@ execute if score $echo data matches 6 as @a[tag=game_player] run attribute @s mo
 execute if score $echo data matches 6 as @a[tag=game_player,scores={state=0}] run attribute @s movement_speed modifier add ms:echo 0.075 add_value
 
 # 回响效果
-execute if score $echo data matches 8 run scoreboard players set @e[tag=purple] tick.general 50000
+execute if score $echo data matches 8 run scoreboard players set @e[tag=purple] tick.interact 50000
 
 # 教程
 advancement grant @a[tag=game_player] only main:tutorial/interact/4

@@ -174,20 +174,12 @@ execute if score $1_process tick.general matches 959 run scoreboard players oper
 execute if score $1_process tick.general matches 959 run scoreboard players operation $1_max tick.general = $1_single tick.general
 execute if score $1_process tick.general matches 959 store result bossbar midsoul:2 max run scoreboard players get $1_single tick.general
 execute if score $1_process tick.general matches 959 store result bossbar midsoul:3 max run scoreboard players get $1_single tick.general
-execute if score $1_process tick.general matches 959 as @a[team=soul] run scoreboard players operation @s ui.skill = @s rec.skill_soul
-execute if score $1_process tick.general matches 959 as @a[team=soul] run scoreboard players operation @s ui.talent_1 = @s rec.talent_1_soul
-execute if score $1_process tick.general matches 959 as @a[team=soul] run scoreboard players operation @s ui.talent_2 = @s rec.talent_2_soul
-execute if score $1_process tick.general matches 959 as @a[team=guardian] run scoreboard players operation @s ui.skill = @s rec.skill_guar
-execute if score $1_process tick.general matches 959 as @a[team=guardian] run scoreboard players operation @s ui.talent_1 = @s rec.talent_1_guar
-execute if score $1_process tick.general matches 959 as @a[team=guardian] run scoreboard players operation @s ui.talent_2 = @s rec.talent_2_guar
-execute if score $1_process tick.general matches 959 as @a[tag=game_player] unless score @s ui.skill matches 1..1 run scoreboard players set @s ui.skill 1
-execute if score $1_process tick.general matches 959 as @a[tag=game_player] unless score @s ui.talent_1 matches 1..2 run scoreboard players set @s ui.talent_1 1
-execute if score $1_process tick.general matches 959 as @a[tag=game_player] unless score @s ui.talent_2 matches 1..2 run scoreboard players set @s ui.talent_2 1
 execute if score $1_process tick.general matches 959 if score $ability_assign setting matches 1 run data merge storage ms:ability {0:true,1:false,2:false}
 execute if score $1_process tick.general matches 959 if score $ability_assign setting matches 2 run data merge storage ms:ability {0:false,1:true,2:false}
 execute if score $1_process tick.general matches 959 if score $ability_assign setting matches 3 run data merge storage ms:ability {0:false,1:true,2:true}
 execute if score $1_process tick.general matches 959 if score $ability_assign setting matches 4 run data merge storage ms:ability {0:true,1:true,2:false}
 execute if score $1_process tick.general matches 959 if score $ability_assign setting matches 5 run data merge storage ms:ability {0:true,1:true,2:true}
+execute if score $1_process tick.general matches 959 as @a[tag=game_player] run function main:state/1/ability/snyc
 execute if score $1_process tick.general matches 959 as @a[team=soul] run function main:state/1/ability/panel_s
 execute if score $1_process tick.general matches 959 as @a[team=guardian] run function main:state/1/ability/panel_g
 execute if score $1_process tick.general matches 959 run playsound music_disc.5 music @a[tag=game_player] 0 1000000 0 100000

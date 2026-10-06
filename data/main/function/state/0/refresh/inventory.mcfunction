@@ -9,8 +9,6 @@ item replace entity @s inventory.6 with air
 item replace entity @s inventory.7 with air
 item replace entity @s inventory.8 with air
 item replace entity @s inventory.9 with air
-item replace entity @s inventory.10 with air
-item replace entity @s inventory.16 with air
 item replace entity @s inventory.17 with air
 item replace entity @s inventory.18 with air
 item replace entity @s inventory.19 with air

@@ -14,8 +14,8 @@ scoreboard players remove @s[scores={detect.interact=5107}] skill 1
 execute as @s[team=soul,scores={detect.interact=5100..5107}] run function main:lib/ability/skill/info_s
 execute as @s[team=guardian,scores={detect.interact=5100..5107}] run function main:lib/ability/skill/info_g
 scoreboard players set @s[scores={detect.interact=5191}] ui.skill 1
-scoreboard players operation @s[team=soul,scores={detect.interact=5191..5199}] rec.skill_soul = @s ui.skill
-scoreboard players operation @s[team=guardian,scores={detect.interact=5191..5199}] rec.skill_guar = @s ui.skill
+scoreboard players operation @s[team=soul,scores={detect.interact=5100..5107}] rec.skill_soul = @s skill
+scoreboard players operation @s[team=guardian,scores={detect.interact=5100..5107}] rec.skill_guar = @s skill
 
 # 一天赋
 scoreboard players operation @s[scores={detect.interact=5200..5207}] temp = @s ui.talent_1
@@ -34,8 +34,8 @@ execute as @s[team=soul,scores={detect.interact=5200..5207}] run function main:l
 execute as @s[team=guardian,scores={detect.interact=5200..5207}] run function main:lib/ability/talent/info_g {num:"1"}
 scoreboard players set @s[scores={detect.interact=5291}] ui.talent_1 1
 scoreboard players set @s[scores={detect.interact=5292}] ui.talent_1 2
-scoreboard players operation @s[team=soul,scores={detect.interact=5291..5299}] rec.talent_1_soul = @s ui.talent_1
-scoreboard players operation @s[team=guardian,scores={detect.interact=5291..5299}] rec.talent_1_guar = @s ui.talent_1
+scoreboard players operation @s[team=soul,scores={detect.interact=5200..5207}] rec.talent_1_soul = @s talent_1
+scoreboard players operation @s[team=guardian,scores={detect.interact=5200..5207}] rec.talent_1_guar = @s talent_1
 
 # 二天赋
 scoreboard players operation @s[scores={detect.interact=5300..5307}] temp = @s ui.talent_2
@@ -54,8 +54,8 @@ execute as @s[team=soul,scores={detect.interact=5300..5307}] run function main:l
 execute as @s[team=guardian,scores={detect.interact=5300..5307}] run function main:lib/ability/talent/info_g {num:"2"}
 scoreboard players set @s[scores={detect.interact=5391}] ui.talent_2 1
 scoreboard players set @s[scores={detect.interact=5392}] ui.talent_2 2
-scoreboard players operation @s[team=soul,scores={detect.interact=5391..5399}] rec.talent_2_soul = @s ui.talent_2
-scoreboard players operation @s[team=guardian,scores={detect.interact=5391..5399}] rec.talent_2_guar = @s ui.talent_2
+scoreboard players operation @s[team=soul,scores={detect.interact=5300..5307}] rec.talent_2_soul = @s talent_2
+scoreboard players operation @s[team=guardian,scores={detect.interact=5300..5307}] rec.talent_2_guar = @s talent_2
 
 # 锁定
 execute as @s[scores={detect.interact=5401}] run function main:state/1/ability/check

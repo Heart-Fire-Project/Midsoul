@@ -1,4 +1,4 @@
-tag @p[distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add interact_fin
+tag @p[distance=..0.7,tag=interact_gray,scores={tick.interact=1000..}] add interact_fin
 
 # 完成灵魂宝物盒打开
 particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0.1 0.2 0 7 force @a
@@ -9,10 +9,9 @@ scoreboard players add @a[tag=interact_fin] temp.open 1
 execute as @a[tag=interact_fin,scores={setting.instant_rating=1},team=guardian] run function main:lib/rating/1/guardian/open
 
 # 灵魂效果 | 不包含宝物同步
-tag @a[team=soul,distance=..0.7,tag=interact_gray,scores={tick.general=1000..}] add target
-execute if entity @a[tag=target,scores={relic=1..}] run effect give @p[team=guardian] glowing 3 0
-effect give @p[tag=target,scores={relic=1..}] regeneration 3 2
-advancement grant @p[tag=target,scores={relic=0}] only main:tutorial/mechanic/2
+execute if entity @p[tag=interact_fin,scores={relic=1..}] run effect give @p[team=guardian] glowing 3 0
+effect give @p[tag=interact_fin,scores={relic=1..}] regeneration 3 2
+advancement grant @p[tag=interact_fin,scores={relic=0}] only main:tutorial/mechanic/2
 data merge storage ms:temp {min:1}
 execute store result storage ms:temp max int 1 run scoreboard players get $relic_max data
 function base:random with storage ms:temp
@@ -25,8 +24,7 @@ execute if entity @a[team=guardian,tag=interact_fin] run effect give @p[team=sou
 function main:lib/action/interact/gray
 
 # 灵魂最终同步宝物结果
-scoreboard players operation @p[tag=target,scores={relic=0}] relic = $random temp2
+scoreboard players operation @p[tag=interact_fin,scores={relic=0}] relic = $random temp2
 
 tag @a remove interact_fin
-tag @a remove target
 kill @s

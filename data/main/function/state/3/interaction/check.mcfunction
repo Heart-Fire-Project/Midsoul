@@ -41,21 +41,21 @@ tag @s[tag=!interact_gray] remove hint_gray
 tag @s[tag=!S106i] remove hint_S106
 
 # 判定：交互开始时
-execute as @s[tag=interacting] unless score @s tick.general matches 1.. run function main:lib/action/interact/start
+execute as @s[tag=interacting] unless score @s tick.interact matches 1.. run function main:lib/action/interact/start
 
 # 判定：交互中断时
-execute as @s[scores={tick.general=1..},tag=!interacting] run function main:lib/action/interact/break
+execute as @s[scores={tick.interact=1..},tag=!interacting] run function main:lib/action/interact/break
 
 # 刷新进程
-scoreboard players reset @s[tag=!interacting] tick.general
+scoreboard players reset @s[tag=!interacting] tick.interact
 scoreboard players operation @s[tag=interacting] temp = $interact_speed setting
 
 # 判定：进行交互时
 execute as @s[tag=interacting] run function main:lib/action/interact/tick
 
 # 收集完成
-execute as @s[tag=interact_blue,scores={tick.general=7000..}] as @e[tag=blue,distance=..0.7] run function main:state/3/interaction/blue with storage ms:map
-execute as @s[tag=interact_gold,scores={tick.general=14000..}] as @e[tag=gold,distance=..0.7] run function main:state/3/interaction/gold
-execute as @s[tag=interact_gray,scores={tick.general=10000..}] as @e[tag=gray,distance=..0.7] run function main:state/3/interaction/gray
-execute as @s[tag=S106i,scores={tick.general=4000..}] as @e[tag=S106,distance=..0.7] run function main:lib/ability/skill/106d
-execute as @s[tag=E02,scores={tick.general=7000..}] as @e[tag=fake_blue,distance=..0.7] run function main:lib/echo/02a
+execute as @s[tag=interact_blue,scores={tick.interact=7000..}] as @e[tag=blue,distance=..0.7] run function main:state/3/interaction/blue with storage ms:map
+execute as @s[tag=interact_gold,scores={tick.interact=14000..}] as @e[tag=gold,distance=..0.7] run function main:state/3/interaction/gold
+execute as @s[tag=interact_gray,scores={tick.interact=10000..}] as @e[tag=gray,distance=..0.7] run function main:state/3/interaction/gray
+execute as @s[tag=S106i,scores={tick.interact=4000..}] as @e[tag=S106,distance=..0.7] run function main:lib/ability/skill/106d
+execute as @s[tag=E02,scores={tick.interact=7000..}] as @e[tag=fake_blue,distance=..0.7] run function main:lib/echo/02a

@@ -4,8 +4,8 @@
         {
             "type":"set_name",
             "name":{
-                "translate":"ms.setting.ability_status",
-                "fallback":"能力状态提示",
+                "translate":"ms.setting.auto_prepare",
+                "fallback":"自动准备",
                 "color":"red",
                 "italic":false
             }
@@ -20,8 +20,8 @@
                     "italic":false
                 },
                 {
-                    "translate":"ms.setting.ability_status.desc",
-                    "fallback":"在能力状态改变时显示提示",
+                    "translate":"ms.setting.auto_prepare.desc",
+                    "fallback":"游戏结束后自动准备下一局",
                     "color":"white",
                     "italic":false
                 }
@@ -31,13 +31,13 @@
         {
             "type":"set_custom_data",
             "tag":{
-                "id":74030
+                "id":74010
             }
         },
         {
             "type":"set_components",
             "components":{
-                "item_model":"brown_egg"
+                "item_model":"pitcher_pod"
             }
         }
     ]

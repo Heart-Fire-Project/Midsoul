@@ -31,14 +31,14 @@
         {
             "type":"set_custom_data",
             "tag":{
-                "id":74051
+                "id":74041
             }
         },
         {
             "type":"set_components",
             "components":{
                 "enchantment_glint_override":true,
-                "item_model":"chorus_flower"
+                "item_model":"bubble_coral"
             }
         }
     ]

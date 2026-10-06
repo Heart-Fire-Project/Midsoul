@@ -31,13 +31,13 @@
         {
             "type":"set_custom_data",
             "tag":{
-                "id":74050
+                "id":74040
             }
         },
         {
             "type":"set_components",
             "components":{
-                "item_model":"chorus_plant"
+                "item_model":"dead_bubble_coral"
             }
         }
     ]

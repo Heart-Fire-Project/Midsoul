@@ -6,23 +6,29 @@ $scoreboard players set @s[scores={setting.$(setting)=$(limit)..}] setting.$(set
 playsound ui.button.click player @s 0 1000000 0 120000
 
 # 清除设定项对应的物品，以免影响连续调整
-scoreboard players reset $instant_rating temp
+scoreboard players reset $auto_prepare temp
 scoreboard players reset $interact_hint temp
 scoreboard players reset $ability_status temp
-scoreboard players reset $ingame_tip temp
 scoreboard players reset $echo_info temp
+scoreboard players reset $instant_rating temp
+scoreboard players reset $ingame_tip temp
+scoreboard players reset $inherit_choice temp
 $scoreboard players set $$(setting) temp 1
-execute if score $instant_rating temp matches 1 run clear @s firework_star[custom_data={id:74010}]
-execute if score $instant_rating temp matches 1 run clear @s firework_star[custom_data={id:74011}]
+execute if score $auto_prepare temp matches 1 run clear @s firework_star[custom_data={id:74010}]
+execute if score $auto_prepare temp matches 1 run clear @s firework_star[custom_data={id:74011}]
 execute if score $interact_hint temp matches 1 run clear @s firework_star[custom_data={id:74020}]
 execute if score $interact_hint temp matches 1 run clear @s firework_star[custom_data={id:74021}]
 execute if score $ability_status temp matches 1 run clear @s firework_star[custom_data={id:74030}]
 execute if score $ability_status temp matches 1 run clear @s firework_star[custom_data={id:74031}]
 execute if score $ability_status temp matches 1 run clear @s firework_star[custom_data={id:74032}]
-execute if score $ingame_tip temp matches 1 run clear @s firework_star[custom_data={id:74040}]
-execute if score $ingame_tip temp matches 1 run clear @s firework_star[custom_data={id:74041}]
-execute if score $echo_info temp matches 1 run clear @s firework_star[custom_data={id:74050}]
-execute if score $echo_info temp matches 1 run clear @s firework_star[custom_data={id:74051}]
+execute if score $echo_info temp matches 1 run clear @s firework_star[custom_data={id:74040}]
+execute if score $echo_info temp matches 1 run clear @s firework_star[custom_data={id:74041}]
+execute if score $instant_rating temp matches 1 run clear @s firework_star[custom_data={id:74050}]
+execute if score $instant_rating temp matches 1 run clear @s firework_star[custom_data={id:74051}]
+execute if score $ingame_tip temp matches 1 run clear @s firework_star[custom_data={id:74060}]
+execute if score $ingame_tip temp matches 1 run clear @s firework_star[custom_data={id:74061}]
+execute if score $inherit_choice temp matches 1 run clear @s firework_star[custom_data={id:74070}]
+execute if score $inherit_choice temp matches 1 run clear @s firework_star[custom_data={id:74071}]
 
 # 需要直接调整的场合
 tag @s[tag=hint_blue] remove hint_blue

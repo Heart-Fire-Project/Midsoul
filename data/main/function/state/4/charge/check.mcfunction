@@ -20,7 +20,7 @@ tag @s[tag=!interact_purple] remove hint_purple
 scoreboard players operation @s[tag=interact_purple,tag=interacting_p] temp = $interact_speed setting
 
 # 判定：进行交互时
-execute as @s[tag=interacting_p] run function main:lib/action/interact/tick
+execute as @s[tag=!interacting,tag=interacting_p] run function main:lib/action/interact/tick
 
 # 存储进充能进度
 execute as @s[tag=interact_purple,tag=interacting_p] run function main:lib/rating/1/soul/charge

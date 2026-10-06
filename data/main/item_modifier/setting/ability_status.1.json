@@ -38,7 +38,7 @@
             "type":"set_components",
             "components":{
                 "enchantment_glint_override":true,
-                "item_model":"honey_block"
+                "item_model":"egg"
             }
         }
     ]

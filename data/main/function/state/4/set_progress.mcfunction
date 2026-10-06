@@ -9,11 +9,11 @@ execute as @e[tag=purple_progress,scores={state=1,tick.general=100},distance=..2
 scoreboard players set @e[tag=purple_progress,scores={tick.general=100},distance=..2] tick.general 3
 
 # 计算百分比
-function base:caculate/percent {valueA:"@s",valueB:"#100000",sourceA:"tick.general",sourceB:"data"}
-execute as @s[scores={state=0,tick.general=..99999}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:["◇ ",{score:{name:"$front",objective:"temp2"}},"% ◇"],interpolation_duration:0}
-execute as @s[scores={state=1,tick.general=..99999}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:["◆ ",{score:{name:"$front",objective:"temp2"}},"% ◇"],interpolation_duration:0}
-execute as @s[scores={state=2,tick.general=..99999}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:["◆ ",{score:{name:"$front",objective:"temp2"}},"% ◆"],interpolation_duration:0}
-execute as @s[scores={tick.general=100000..}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:"◆ 100% ◆",interpolation_duration:0}
+function base:caculate/percent {valueA:"@s",valueB:"#100000",sourceA:"tick.interact",sourceB:"data"}
+execute as @s[scores={state=0,tick.interact=..99999}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:["◇ ",{score:{name:"$front",objective:"temp2"}},"% ◇"],interpolation_duration:0}
+execute as @s[scores={state=1,tick.interact=..99999}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:["◆ ",{score:{name:"$front",objective:"temp2"}},"% ◇"],interpolation_duration:0}
+execute as @s[scores={state=2,tick.interact=..99999}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:["◆ ",{score:{name:"$front",objective:"temp2"}},"% ◆"],interpolation_duration:0}
+execute as @s[scores={tick.interact=100000..}] run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {text:"◆ 100% ◆",interpolation_duration:0}
 
 # 设置背景颜色
 execute if entity @s[tag=!charging_purple,tag=!open_purple] if score $value temp matches 00 run data merge entity @n[tag=purple_progress,scores={tick.general=0},distance=..2] {background:-2135218406}

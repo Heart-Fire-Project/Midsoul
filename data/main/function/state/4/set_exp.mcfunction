@@ -9,13 +9,15 @@ scoreboard players operation @s temp2 = $sec temp2
 scoreboard players set @s[scores={temp2=..0}] temp2 0
 
 # 设置经验进度条 | 收集 / 第二状态
+scoreboard players reset @s[scores={state=0}] tick.general
+scoreboard players operation @s[tag=interacting_p] tick.general = @n[tag=purple] tick.interact
+scoreboard players operation @s[scores={state=0},tag=interacting] tick.general = @s tick.interact
+scoreboard players set @s[tag=interact_purple] temp 100000
 scoreboard players set @s[tag=interact_blue] temp 7000
 scoreboard players set @s[tag=interact_gold] temp 14000
 scoreboard players set @s[tag=interact_gray] temp 10000
 scoreboard players set @s[tag=S106i] temp 4000
 scoreboard players set @s[tag=E02] temp 7000
-scoreboard players set @s[tag=interact_purple] temp 100000
-scoreboard players operation @s[tag=interact_purple] tick.general = @n[tag=purple] tick.general
 scoreboard players set @s[scores={state=1,temp.dying=1},team=soul] temp 120000
 scoreboard players set @s[scores={state=1,temp.dying=2},team=soul] temp 80000
 scoreboard players set @s[scores={state=1,temp.dying=3..},team=soul] temp 40000
