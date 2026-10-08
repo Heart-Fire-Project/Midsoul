@@ -57,8 +57,8 @@ summon mannequin -997 -2 -990 {Tags:[extra_entity],profile:{name:"_Arky"},Rotati
 summon mannequin -998 -2 -990 {Tags:[extra_entity],profile:{name:"1KYR_CN"},equipment:{head:{id:"end_rod",count:1}},Rotation:[180,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
 summon mannequin -999 -2 -990 {Tags:[extra_entity],profile:{name:"huanmeng_yc"},equipment:{head:{id:"lightning_rod",count:1}},Rotation:[180,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
 summon mannequin -1000 -2 -990 {Tags:[extra_entity],profile:{name:"SmallSkrua"},equipment:{head:{id:"small_amethyst_bud",count:1}},Rotation:[180,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
-summon mannequin -1002 -2 -991 {Tags:[extra_entity],profile:{name:"BY0_"},equipment:{head:{id:"cod",count:1}},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
-summon mannequin -1002 -2 -992 {Tags:[extra_entity],profile:{name:"HPG6"},equipment:{head:{id:"big_dripleaf",count:1}},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
+summon mannequin -1002 -2 -991 {Tags:[extra_entity],profile:{name:"FoolCrucian"},equipment:{head:{id:"cod",count:1}},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
+summon mannequin -1002 -2 -992 {Tags:[extra_entity],profile:{name:"_LovelyMizuyoo_"},equipment:{head:{id:"big_dripleaf",count:1}},Rotation:[-90,0],Invulnerable:true,attributes:[{id:"scale",base:0.7}]}
 
 # 文本套组
 summon text_display -997 -0.7 -1007 {Tags:[extra_entity],text:[{translate:"ms.text",fallback:"文本套组",color:"blue"}],background:-1,billboard:"center",alignment:"center",line_width:200,interpolation_duration:0,transformation:{scale:[1f,1f,1f],translation:[0f,0f,0f],right_rotation:[0f,0f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

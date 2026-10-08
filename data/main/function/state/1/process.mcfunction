@@ -198,6 +198,9 @@ execute if score $1_process tick.general matches 160 run playsound block.note_bl
 
 # 160 | 能力选择 结束
 execute if score $1_process tick.general matches 160 run scoreboard players operation $1_tick tick.general -= $1_single tick.general
+execute if score $1_process tick.general matches 160 if data storage ms:ability {0:false} run scoreboard players set @a[tag=game_player] skill 0
+execute if score $1_process tick.general matches 160 if data storage ms:ability {1:false} run scoreboard players set @a[tag=game_player] talent_1 0
+execute if score $1_process tick.general matches 160 if data storage ms:ability {2:false} run scoreboard players set @a[tag=game_player] talent_2 0
 
 # 159 | 重设 Bossbar
 execute if score $1_process tick.general matches 159 run bossbar set midsoul:2 value 1010000

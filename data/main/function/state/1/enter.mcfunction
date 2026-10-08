@@ -4,6 +4,7 @@ stopsound @a record
 tp @e[type=mannequin,tag=lobby_entity] 0 -100 0
 kill @e[tag=lobby_entity]
 tag @a remove game_player
+tag @a remove check_prepare
 tag @a remove check_join
 tag @a remove check_ability
 

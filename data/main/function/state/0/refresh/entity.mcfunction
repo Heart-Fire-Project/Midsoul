@@ -29,7 +29,7 @@ summon text_display -2.2 8.3 3.99 {Tags:[lobby_entity],text:["« ",{translate:"m
 summon text_display 3.99 7.3 -1.2 {Tags:[lobby_entity],text:[{translate:"ms.setting.ability",fallback:"能力分配",color:"white"}," »"],background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[1.5f,1.5f,1.5f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}
 
 # 跑酷区的和平鸽
-summon skeleton 8 22 25 {CustomName:"HPG6",equipment:{feet:{id:"leather_boots"},legs:{id:"netherite_leggings"},chest:{id:"iron_chestplate"},head:{id:"player_head",components:{profile:"HPG6"}},mainhand:{id:"bow",components:{enchantments:{punch:2}}}},LeftHanded:false,Invulnerable:true,PersistenceRequired:true,Tags:[lobby_entity]}
+summon skeleton 8 22 25 {CustomName:"White_Fir",equipment:{feet:{id:"leather_boots",components:{dyed_color:3815994}},legs:{id:"leather_leggings",components:{dyed_color:3815994}},chest:{id:"leather_chestplate",components:{dyed_color:4079166}},head:{id:"player_head",components:{profile:"White_Fir"}},mainhand:{id:"bow",components:{enchantments:{punch:2}}}},LeftHanded:false,Invulnerable:true,PersistenceRequired:true,Tags:[lobby_entity]}
 
 # 鸣谢
 summon text_display -14.01 12.3 -7.5 {brightness:{block:15,sky:15},Tags:[lobby_entity],text:{translate:"ms.credit.secret",fallback:"贴近以开门"},background:0,billboard:"fixed",alignment:"center",line_width:100,interpolation_duration:0,transformation:{scale:[0.6f,0.6f,0.6f],translation:[0f,0f,0f],right_rotation:[0f,-1f,0f,1f],left_rotation:[0f,0f,0f,1f]}}

@@ -21,7 +21,7 @@
                 },
                 {
                     "translate":"ms.setting.auto_prepare.desc",
-                    "fallback":"游戏结束后自动准备下一局",
+                    "fallback":"回到大厅并移动后自动准备",
                     "color":"white",
                     "italic":false
                 }

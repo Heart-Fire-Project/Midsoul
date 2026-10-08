@@ -2,6 +2,9 @@
 scoreboard players remove @a tick.music 1
 execute as @a[scores={tick.music=..-1}] run function main:state/0/music_roll
 
+# 检查富裕实体
+#execute as @e[tag=check_prepare_m] run function main:state/0/auto_prepare/cleanup
+
 # 不知道为什么冒险模式也能摘的浆果
 execute unless block 12 23 30 cave_vines_plant[berries=true] run setblock 12 23 30 cave_vines_plant[berries=true]
 execute unless block 11 22 30 cave_vines_plant[berries=true] run setblock 11 22 30 cave_vines_plant[berries=true]

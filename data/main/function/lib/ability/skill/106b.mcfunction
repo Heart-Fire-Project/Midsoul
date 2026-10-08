@@ -1,6 +1,7 @@
 # 炸
 playsound entity.generic.explode player @a
-execute as @e[team=soul,scores={state=0},distance=..3] run damage @s 7 in_wall
+execute as @a[team=soul,scores={state=0},distance=..3] run damage @s 7 in_wall
+execute as @e[team=soul,type=!player,distance=..3] run damage @s 7 in_wall
 effect give @e[team=soul,scores={state=0},distance=..3] glowing 2 0
 
 # 记

@@ -16,6 +16,7 @@ scoreboard players reset $inherit_choice temp
 $scoreboard players set $$(setting) temp 1
 execute if score $auto_prepare temp matches 1 run clear @s firework_star[custom_data={id:74010}]
 execute if score $auto_prepare temp matches 1 run clear @s firework_star[custom_data={id:74011}]
+execute if score $auto_prepare temp matches 1 run tag @s remove check_prepare
 execute if score $interact_hint temp matches 1 run clear @s firework_star[custom_data={id:74020}]
 execute if score $interact_hint temp matches 1 run clear @s firework_star[custom_data={id:74021}]
 execute if score $ability_status temp matches 1 run clear @s firework_star[custom_data={id:74030}]

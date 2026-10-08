@@ -25,5 +25,8 @@ execute as @a[scores={tick.general=0,exp.temp=1..}] at @s run function main:stat
 # 背包刷新
 execute as @a[team=!admin] run function main:state/0/refresh/inventory
 
+# 自动准备侦测
+execute as @a[tag=check_prepare] at @s run function main:state/0/auto_prepare/check
+
 # 清除掉落物
 kill @e[type=item,tag=!game_entity,tag=!lobby_entity,tag=!extra_entity,tag=!index_entity]

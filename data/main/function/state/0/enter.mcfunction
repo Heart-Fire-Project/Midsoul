@@ -1,5 +1,7 @@
 # 阶段 0 - 大厅
 scoreboard players set $state data 0
+scoreboard players reset * entity_id
+scoreboard players set $count entity_id 1
 execute as @a[team=!admin] run function main:state/0/player_enter
 forceload add -16 -16 16 16
 
@@ -18,6 +20,9 @@ function main:state/0/refresh/sign
 function main:state/0/refresh/entity
 function main:state/0/refresh/index
 execute at @a if entity @e[tag=extra_entity,distance=..30] run function main:state/0/extra/refresh
+
+# 自动准备 - 额外生成
+execute as @a[team=!admin,scores={setting.auto_prepare=1}] run function main:state/0/auto_prepare/init
 
 # 设置变量组
 execute if score $mode setting matches 1 run data merge storage ms:mode {start:"5",cancel:"4",logic:"1",role:"1",affact_rating:true,affact_exp:true,affact_data:true}

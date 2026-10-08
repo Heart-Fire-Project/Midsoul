@@ -31,7 +31,8 @@ function debug:sub/game/renew_bossbar with storage ms:map
 execute as @a[team=soul,scores={state=1}] run function main:lib/event/summon/gold
 
 # 灵魂宝物盒重新生成 | 直接按照原数量生成即可
-function main:lib/event/summon/gray with storage ms:map
+data modify storage ms:temp num set from storage ms:map chest_summon
+function main:lib/event/summon/gray with storage mstemp
 
 # 传送门重新生成 | 实际视作游戏回到收集阶段
 execute if score $state data matches 4 store result score $goal temp run data get storage ms:map shard_goal
