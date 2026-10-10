@@ -1,25 +1,45 @@
 附加条款 Additional Terms
 
-对于数据包，我们允许您进行修改或公开修改后的版本，但必须满足以下条件：
-1. 必须继续使用包含附加条款在内的全部协议；你可以附加额外的限制，但不允许删除或修改已有的限制条目。
-2. 必须在适当位置明确标注制作组名单，并附上午夜灵魂官方发布渠道（哔哩哔哩或 Github 仓库）的链接。
-3. 不得添加任何可能引起误解的内容，或以任何方式暗示你的作品与午夜灵魂官方有任何直接关联或认可。
+
+本附加条款是版权持有者在 CC BY-NC-SA 4.0 之外提供的额外许可条件。若您的使用方式符合 CC BY-NC-SA 4.0，则可直接依据 CC 协议使用；若您希望进行商业使用或需要其他额外权利，则必须同时遵守本附加条款。
+
+These Additional Terms are additional permission conditions provided by the copyright holders in addition to CC BY-NC-SA 4.0. If your use complies with CC BY-NC-SA 4.0, you may use the work under that license. If you wish to use the work commercially or need other additional rights, you must also comply with these Additional Terms.
+
+
+- “公开”指通过任何渠道向不特定第三方发布、提供下载、公开展示，或在公开服务器中使用。
+- “私有”指仅供您个人或您明确控制的有限私人群体使用，且不向公众发布。
+- “免费”指不直接或间接收取费用，且不以盈利为目的。
+- “付费 / 商业使用”包括直接销售、付费下载、订阅、内购、广告收入、赞助、付费服务器等直接或间接盈利行为。
+
+- "Public" means releasing, providing for download, publicly displaying, or using in a public server through any channel to an unspecified third party.
+- "Private" means use only by you personally or by a limited private group under your explicit control, and not released to the public.
+- "Free" means without direct or indirect fees and without profit-making purposes.
+- "Paid / Commercial Use" includes direct sales, paid downloads, subscriptions, in-app purchases, advertising revenue, sponsorships, paid servers, and other direct or indirect profit-making activities.
+
+
+对于数据包，我们允许您进行修改或公开修改后的版本；但必须满足以下条件：
+1. 必须继续使用包含该附加条款在内的全部协议；您可以附加额外的限制，但不得删除或修改已有的限制条目。
+2. 必须在适当位置明确标注制作组名单，并附上午夜灵魂官方发布渠道（哔哩哔哩或 GitHub 仓库）的链接。
+3. 不得添加任何可能引起误解的内容，或以任何方式暗示您的作品与午夜灵魂官方有任何直接关联或认可。
 4. 不得加入任何通过付费手段获取的非装饰性内容，例如额外攻击力，额外能力或额外机制（包括但不限于场地机制与游戏机制）。
 
-对于存档文件，我们允许您进行修改或公开修改后的版本，但必须满足以下条件：
-1. 不得在没有得到再次授权的情况下发布包含其他创作者所创作场地的地图，这些场地的版权仍归其各自的创作者所有。
-2. 你所发布的《午夜灵魂》修改版本可以包含带有 "<Original>" 标识的原创地图，但这些地图在取得授权前不得用于任意公开发布的其他地图。
-3. 其他创作者所创作场地的授权可以经由游戏内链接找到其原发布页，并按照原发布页上的授权方式进行授权；午夜灵魂原创地图的授权可以向制作组取得。
-4. 此外，存档文件还适用上文数据包的全部附加条款。
+For the datapack, you are permitted to modify it or publicly release modified versions; however, the following conditions must be met:
+1. You must continue to use the full license including these Additional Terms; you may add additional restrictions, but you may not delete or modify any existing restriction clauses.
+2. You must clearly credit the production team in an appropriate place and include a link to the official release channels of Midnight Soul (Bilibili or the GitHub repository).
+3. You must not add any content that may cause misunderstanding, or in any way imply that your work is directly associated with or endorsed by the official Midnight Soul team.
+4. You must not incorporate any non-cosmetic content obtained through payment, such as additional attack damage, additional abilities, or additional mechanics (including but not limited to venue mechanics and game mechanics).
 
-You are permitted to modify the Midsoul datapack or publicly release modified versions, provided that the following conditions are met:
-1. You must continue to use the full license agreement, including these additional terms; you may impose additional restrictions, but you may not delete or modify any existing restriction clauses.
-2. You must clearly credit the production team in an appropriate location and include a link to the official release channels of Midnight Soul (Bilibili or the GitHub repository).
-3. You must not add any content that may cause misunderstanding, or in any way imply that your work has any direct association with or endorsement from the official Midnight Soul team.
-4. You must not incorporate any non-cosmetic content obtained through paid means, such as additional attack damage, additional abilities, or additional mechanics (including but not limited to terrain mechanics and game mechanics).
 
-You are permitted to modify the Midnight Soul save file or publicly release modified versions, provided that the following conditions are met:
-1. You may not release maps that include terrains created by other creators without further authorization; the copyrights of these terrains remain with their respective creators.
-2. The modified version of Midnight Soul that you release may include original maps marked with "<Original>", but these maps may not be used in any other publicly released map without obtaining authorization.
-3. Authorization for terrains created by other creators can be obtained via the in-game link to their original release pages, and such authorization shall follow the terms specified on those original release pages; authorization for original Midsoul maps can be obtained from the production team.
-4. In addition, the above additional terms for the datapack also apply to the save file.
+对于存档文件，我们允许您进行修改或公开修改后的版本；但在满足上述对于数据包的条件的同时还必须满足以下条件：
+5. 在免费且私有的情形下，您可以直接使用存档内的外部创作者所建造的场地或建筑；但在付费或公开情形下必须向原作者取得相应授权。
+6. 在免费情形下，您所使用或公开的存档可以包含带有 <Original> 标识的原创地图；但在付费情形下必须向制作组取得相应授权。
+7. 若您需要对已有场地或建筑作出修改，则必须另行取得授权并在显著位置明确说明对应场地或建筑并非按原样提供。
+8. 您所使用的存档文件无论是否对已有场地或建筑作出修改，都需要在显著位置标注其原作者。
+9. 将 <Original> 原创地图用于非《午夜灵魂》修改版、其他玩法或其他地图时，须另行向制作组取得授权。
+
+For the save file, you are permitted to modify it or publicly release modified versions; in addition to meeting the above conditions for the datapack, the following conditions must also be met:
+5. In free and private cases, you may directly use venues or buildings created by external creators within the save file; however, in paid or public cases, you must obtain the corresponding authorization from the original creators.
+6. In free cases, the save file you use or publicly release may include original maps marked with <Original>; however, in paid cases, you must obtain the corresponding authorization from the production team.
+7. If you need to modify existing venues or buildings, you must obtain separate authorization and clearly state in a prominent place that the corresponding venue or building is not provided as-is.
+8. Regardless of whether you modify existing venues or buildings, you must clearly credit their original creators in a prominent place in the save file you use.
+9. If you use original maps marked with <Original> in a modified version other than Midnight Soul, in other gameplay, or in other maps, you must obtain separate authorization from the production team.
