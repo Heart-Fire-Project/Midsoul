@@ -38,7 +38,7 @@
                 },
                 {
                     "translate":"ms.skill.006.desc.sub.a",
-                    "fallback":"每次使用该技能都会使技能冷却 +20 秒，",
+                    "fallback":"每次使用该技能都会使技能冷却 +40 秒，",
                     "color":"gray",
                     "italic":false
                 },

@@ -40,7 +40,7 @@
         "announce_to_chat":true
     },
     "criteria":{
-        "kill_single":{
+        "kill":{
             "trigger":"location",
             "conditions":{
                 "player":{

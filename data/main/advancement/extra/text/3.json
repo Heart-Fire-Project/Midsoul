@@ -34,7 +34,7 @@
         "announce_to_chat":false
     },
     "criteria":{
-        "secret":{
+        "adv":{
             "trigger":"location",
             "conditions":{
                 "player":{

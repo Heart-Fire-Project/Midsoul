@@ -26,13 +26,13 @@
                 ],
                 {
                     "translate":"ms.talent.008.desc.a",
-                    "fallback":"充能传送门时，对守卫者的气息探测生效距离 +8 格，",
+                    "fallback":"对守卫者的气息探测生效距离 +8 格；充能传送门时，",
                     "color":"white",
                     "italic":false
                 },
                 {
                     "translate":"ms.talent.008.desc.b",
-                    "fallback":"并使所有处于红色气息探测范围的守卫者发光",
+                    "fallback":"使所有处于红色气息探测范围的守卫者发光",
                     "color":"white",
                     "italic":false
                 },

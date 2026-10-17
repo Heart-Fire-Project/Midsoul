@@ -40,7 +40,7 @@
         "hidden":true
     },
     "criteria":{
-        "collect_single":{
+        "collect":{
             "trigger":"location",
             "conditions":{
                 "player":{

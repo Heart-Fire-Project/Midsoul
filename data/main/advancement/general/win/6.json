@@ -50,7 +50,7 @@
         "hidden":true
     },
     "criteria":{
-        "win_single":{
+        "win":{
             "trigger":"location",
             "conditions":{
                 "player":{

@@ -32,7 +32,7 @@
         "announce_to_chat":false
     },
     "criteria":{
-        "adv":{
+        "adv_pt":{
             "trigger":"location",
             "conditions":{
                 "player":{

@@ -34,7 +34,7 @@
         "announce_to_chat":false
     },
     "criteria":{
-        "milestone":{
+        "adv":{
             "trigger":"location",
             "conditions":{
                 "player":{

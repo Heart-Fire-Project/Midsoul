@@ -40,7 +40,7 @@
         "announce_to_chat":true
     },
     "criteria":{
-        "win_single":{
+        "win":{
             "trigger":"location",
             "conditions":{
                 "player":{

@@ -32,7 +32,7 @@
         "announce_to_chat":false
     },
     "criteria":{
-        "secret":{
+        "single":{
             "trigger":"location",
             "conditions":{
                 "player":{

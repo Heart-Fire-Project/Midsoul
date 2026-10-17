@@ -40,7 +40,7 @@
         "hidden":true
     },
     "criteria":{
-        "kill_single":{
+        "kill":{
             "trigger":"location",
             "conditions":{
                 "player":{

@@ -43,7 +43,7 @@
         "hidden":true
     },
     "criteria":{
-        "mvp_single":{
+        "mvp":{
             "trigger":"location",
             "conditions":{
                 "player":{

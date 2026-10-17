@@ -26,7 +26,7 @@
                 ],
                 {
                     "translate":"ms.talent.109.desc.a",
-                    "fallback":"位于未开启的传送门周围 3 格内时，",
+                    "fallback":"位于未开启的传送门周围 9 格内时，",
                     "color":"white",
                     "italic":false
                 },

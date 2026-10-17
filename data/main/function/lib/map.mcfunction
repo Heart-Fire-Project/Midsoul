@@ -34,12 +34,12 @@ execute if score $map setting matches 3 run data merge storage ms:temp {size:4,s
 execute if score $map setting matches 4 run tellraw @a [{text:"\n» ",bold:true,color:"#7367F0"},{translate:"ms.map.select",fallback:"选定游戏地图",bold:false}," ",{translate:"ms.map.4",fallback:"心火特区",bold:false,color:"aqua"}]
 execute if score $map setting matches 4 run tellraw @a [{text:"» ",bold:true,color:"gray"},{translate:"ms.map.4.desc",fallback:"荒境环抱无处可逃，逸散灵魂如影随梢",bold:false}]
 execute if score $map setting matches 4 run tellraw @a ["  ◈ ",{translate:"ms.map.builder",fallback:"地图构建"}," | Mol1Sama feat. Roser ",{text:"<",color:"#8080FF"},{text:"O",color:"#8E80FF"},{text:"r",color:"#9C80FF"},{text:"i",color:"#AA80FF"},{text:"g",color:"#B880FF"},{text:"i",color:"#C780FF"},{text:"n",color:"#D580FF"},{text:"a",color:"#E380FF"},{text:"l",color:"#F180FF"},{text:">",color:"#FF80FF"}]
-execute if score $map setting matches 4 run data merge storage ms:temp {size:2,size_plus:true,complex:2,complex_plus:true}
+execute if score $map setting matches 4 run data merge storage ms:temp {size:3,size_plus:false,complex:2,complex_plus:true}
 
 execute if score $map setting matches 5 run tellraw @a [{text:"\n» ",bold:true,color:"#7367F0"},{translate:"ms.map.select",fallback:"选定游戏地图",bold:false}," ",{translate:"ms.map.5",fallback:"昔居浮屿",bold:false,color:"aqua"}]
 execute if score $map setting matches 5 run tellraw @a [{text:"» ",bold:true,color:"gray"},{translate:"ms.map.5.desc",fallback:"原浮空城地块，因多起高空事故而封闭",bold:false}]
 execute if score $map setting matches 5 run tellraw @a ["  ◈ ",{translate:"ms.map.builder",fallback:"地图构建"}," | Mol1Sama ",{text:"<",color:"#8080FF"},{text:"O",color:"#8E80FF"},{text:"r",color:"#9C80FF"},{text:"i",color:"#AA80FF"},{text:"g",color:"#B880FF"},{text:"i",color:"#C780FF"},{text:"n",color:"#D580FF"},{text:"a",color:"#E380FF"},{text:"l",color:"#F180FF"},{text:">",color:"#FF80FF"}]
-execute if score $map setting matches 5 run data merge storage ms:temp {size:3,size_plus:false,complex:3,complex_plus:true}
+execute if score $map setting matches 5 run data merge storage ms:temp {size:2,size_plus:true,complex:3,complex_plus:true}
 
 execute if score $map setting matches 6 run tellraw @a [{text:"\n» ",bold:true,color:"#7367F0"},{translate:"ms.map.select",fallback:"选定游戏地图",bold:false}," ",{translate:"ms.map.6",fallback:"苏园夜游",bold:false,color:"aqua"}]
 execute if score $map setting matches 6 run tellraw @a [{text:"» ",bold:true,color:"gray"},{translate:"ms.map.6.desc",fallback:"有堂有庭，有桥有船。有书有酒，有歌有弦。",bold:false}]

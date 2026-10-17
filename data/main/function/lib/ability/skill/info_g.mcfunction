@@ -8,7 +8,7 @@ tellraw @s[scores={skill=5}] [{translate:"ms.skill",fallback:"[技能] ",color:"
 tellraw @s[scores={skill=6}] [{translate:"ms.skill",fallback:"[技能] ",color:"red"},{translate:"ms.skill.106",fallback:"请君入阱"}]
 tellraw @s[scores={skill=7}] [{translate:"ms.skill",fallback:"[技能] ",color:"red"},{translate:"ms.skill.107",fallback:"洞若观火"}]
 
-tellraw @s[scores={skill=1}] [{text:"⚡ 70  ⌚ 7 > ",color:"red"},{translate:"ms.tag.detect",fallback:"感知"}]
+tellraw @s[scores={skill=1}] [{text:"⚡ 50  ⌚ 5 > ",color:"red"},{translate:"ms.tag.detect",fallback:"感知"}]
 tellraw @s[scores={skill=2}] [{text:"⚡ 60  ⌚ 12 > ",color:"red"},{translate:"ms.tag.detect",fallback:"感知"},"/",{translate:"ms.tag.kill",fallback:"杀戮"}]
 tellraw @s[scores={skill=3}] [{text:"⚡ 70  ⌚ 20 > ",color:"red"},{translate:"ms.tag.teleport",fallback:"跃迁"},"/",{translate:"ms.tag.detect",fallback:"感知"}]
 tellraw @s[scores={skill=4}] [{text:"⚡ 60  ⌚ 10 > ",color:"red"},{translate:"ms.tag.kill",fallback:"杀戮"},"/",{translate:"ms.tag.debuff",fallback:"妨害"}]

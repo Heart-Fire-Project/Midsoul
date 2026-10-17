@@ -8,7 +8,7 @@ tag @s[scores={talent_2=9}] add talent_2_on
 
 # 直接增加 1.5 秒进度
 scoreboard players operation $value temp = $interact_speed setting
-scoreboard players operation $value temp *= #30 data
+scoreboard players operation $value temp *= #45 data
 scoreboard players operation @s tick.interact += $value temp
 
 # 属性加成

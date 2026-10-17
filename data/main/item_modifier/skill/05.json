@@ -43,7 +43,7 @@
                 },
                 {
                     "translate":"ms.skill.005.desc.c",
-                    "fallback":"否则本次技能冷却 -70 秒",
+                    "fallback":"否则本次技能冷却 -80 秒",
                     "color":"white",
                     "italic":false
                 },

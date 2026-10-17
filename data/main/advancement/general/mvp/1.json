@@ -40,7 +40,7 @@
         "announce_to_chat":true
     },
     "criteria":{
-        "mvp_single":{
+        "mvp":{
             "trigger":"location",
             "conditions":{
                 "player":{

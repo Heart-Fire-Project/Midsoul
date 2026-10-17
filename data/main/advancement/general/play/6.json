@@ -40,7 +40,7 @@
         "hidden":true
     },
     "criteria":{
-        "play_single":{
+        "play":{
             "trigger":"location",
             "conditions":{
                 "player":{

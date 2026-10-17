@@ -40,7 +40,7 @@
         "announce_to_chat":true
     },
     "criteria":{
-        "collect_single":{
+        "collect":{
             "trigger":"location",
             "conditions":{
                 "player":{
