@@ -331,7 +331,7 @@ scoreboard players set #15 data 15
 scoreboard players set #16 data 16
 scoreboard players set #20 data 20
 scoreboard players set #24 data 24
-scoreboard players set #45 data 30
+scoreboard players set #45 data 45
 scoreboard players set #50 data 50
 scoreboard players set #60 data 60
 scoreboard players set #61 data 61
@@ -347,7 +347,7 @@ scoreboard players set #12000 data 12000
 scoreboard players set #100000 data 100000
 
 # 版本数据
-scoreboard players set $build data 367
+scoreboard players set $build data 368
 scoreboard players set $map_max data 6
 scoreboard players set $echo_max data 10
 scoreboard players set $skill_max data 7

@@ -6,7 +6,7 @@ particle wax_off ~ ~0.2 ~ 0.2 0.3 0.2 1 12 force @a
 tag @s[scores={talent_1=9}] add talent_1_on
 tag @s[scores={talent_2=9}] add talent_2_on
 
-# 直接增加 1.5 秒进度
+# 直接增加 1.8 秒进度
 scoreboard players operation $value temp = $interact_speed setting
 scoreboard players operation $value temp *= #45 data
 scoreboard players operation @s tick.interact += $value temp
