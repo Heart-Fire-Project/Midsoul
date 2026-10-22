@@ -1,4 +1,4 @@
-tag @p[distance=..0.7,tag=interact_gray,scores={tick.interact=1000..}] add interact_fin
+tag @p[distance=..0.7,tag=interact_gray,scores={tick.interact=10000..}] add interact_fin
 
 # 完成灵魂宝物盒打开
 particle dust{color:[1,1,1],scale:1} ~ ~0.2 ~ 0.2 0.1 0.2 0 7 force @a
