@@ -3,6 +3,7 @@
 
 # 设置经验
 $scoreboard players operation $exp temp = @s $(current)
+$scoreboard players operation $exp temp < @s $(max)
 scoreboard players operation $exp temp *= #182 data
 $scoreboard players operation $exp temp /= @s $(max)
 xp set @s 38 levels
